@@ -1,0 +1,1170 @@
+[
+  {
+    "session_id": "session_535709c3-14c5-4ced-af49-f8f55a24bd07",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "DECO",
+    "customer": "CANCCIO",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nCANCCIO: Hi DECO Team! I need help with the badge display problem.\n\nCANCCIO: es wird nur auf der collection seite und nicht product seite angezeigt\n\n  David: Hallo, hier ist David von DECO\n\n  David: Ah, verstehe, kannst du mir die URL zur genannten Produktseite schicken?\n\nCANCCIO: https://www.canccio.com/collections/orna/products/orna-belt-plain\n\nCANCCIO: es ist jedoch bei allen drei produkten so. brauchst du also alle 3 urls\n\n  David: Ah, sieht nach fehlenden Codes aus, lass mich mal nachsehen\n\nCANCCIO: danke\n\n  David: Kannst du mir hier das Passwort geben?\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/f/a/c/d/facdbd3a41c10800/image_12asevu.png]\n\nCANCCIO: ccc\n\n  David: Danke! Lass mich gleich mal nachsehen\n\nCANCCIO: vielen dank\n\n  David: It should be good now, can you have a look and let me know?\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/f/a/c/d/facdbd3a41c10800/image_2jtfno.png]\n\nCANCCIO: great, thank you. its normal that it is only shown on the first picutre, right?\n\n  David: Ah, do you also want the badge to show on every image in your product page?\n\nCANCCIO: no, its alright thank you so much\n\n  David: Would you mind taking a few seconds to leave a short review about my support (David)  today on Shopify App Store? :$  \n      Just 30s to go: https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal\n\n  David: It has been slow going on here today so I would love to hear your feedback today!!!!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David chào hỏi đầy đủ tên và brand, đúng tiêu chí."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp nào gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "David giao tiếp rõ ràng, dễ hiểu, không lạc đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David lắng nghe và hiểu đúng vấn đề của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tone lịch sự, nhã nhặn. Tốc độ phản hồi hợp lý."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không thể hiện sự bức xúc hay lo lắng, David giữ vững thái độ bình thường, duy trì điểm tuyệt đối."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David chủ động giúp đỡ và thể hiện sự nhiệt tình trong suốt cuộc trò chuyện."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "David đã hỏi URL sản phẩm và password cửa hàng để kiểm tra lỗi, đây là hành động điều tra vấn đề rất tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "David đã xác định và khắc phục vấn đề hiển thị badge của khách hàng một cách thành công."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David chủ động hỏi xác nhận lại ('Ah, do you also want the badge to show on every image in your product page?') thay vì đóng chat ngay khi sửa xong một phần. Đây là điểm sáng về sự chủ động."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề nằm trong khả năng xử lý của David và không cần chuyển giao cho đội ngũ khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ tài liệu hoặc link trong cuộc trò chuyện này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "David đã chủ động gợi ý giải pháp khác cho khách hàng khi vấn đề ban đầu đã được giải quyết."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "David đã mời khách hàng để lại review một cách rõ ràng và nhiệt tình."
+        }
+      },
+      "overall_summary": "David đã cung cấp hỗ trợ xuất sắc. Agent chào hỏi đầy đủ, giao tiếp rõ ràng và nhiệt tình. David chủ động điều tra, khắc phục vấn đề hiển thị badge của khách hàng một cách hiệu quả và còn chủ động hỏi thêm về nhu cầu khác của khách. Cuối cùng, David đã mời khách hàng để lại đánh giá một cách lịch sự. Đây là một cuộc trò chuyện mẫu mực.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_9be2207c-a91a-4884-8795-72cd4e01f4df",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "w70i2h-tp",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nw70i2h-tp: Hi, is there anyone help me to optimize my SEO score?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to check your SEO today?\n\nw70i2h-tp: Can you help me check on my speed performance?\n\n  Ivy: Still Ivy here. Please feel free to let me know if you need help~\n\nw70i2h-tp: Can you help me check on my speed performance?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like me to have a look at your site speed?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David chào hỏi đầy đủ tên và brand, đúng tiêu chí."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngôn ngữ ổn, không thấy lỗi ngữ pháp hay từ vựng gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "David giao tiếp rõ ràng và đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David nắm bắt đúng yêu cầu 'speed performance' của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "David phản hồi nhanh và giữ thái độ chuyên nghiệp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách chưa thể hiện sự khó chịu hay lo lắng, nên tiêu chí này đủ điểm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David thể hiện sự sẵn lòng giúp đỡ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "David đã hỏi rõ là có muốn kiểm tra tốc độ trang web hay không, đây là một bước probing tốt để bắt đầu hỗ trợ."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Cuộc trò chuyện chưa đi vào giải pháp cụ thể, nhưng David đã bắt đầu đúng cách để tìm hiểu và đưa ra giải pháp, nên đủ điểm."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David thể hiện sự chủ động muốn giúp đỡ khách hàng ngay từ đầu."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có dấu hiệu cần chuyển tiếp trong đoạn chat này, nên tiêu chí này đủ điểm."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội rõ ràng để chia sẻ tài liệu, nên tiêu chí này đủ điểm."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện còn quá ngắn để David có thể thể hiện sự extra mile. Không trừ điểm theo nguyên tắc chung."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện còn rất sớm và chưa kết thúc, không có cơ hội yêu cầu review."
+        }
+      },
+      "overall_summary": "David có màn chào hỏi tốt và nhanh chóng nắm bắt được vấn đề khách hàng đang quan tâm là tốc độ trang web. Các câu hỏi đưa ra hợp lý, thể hiện sự sẵn sàng hỗ trợ. Cuộc trò chuyện này là một khởi đầu tốt.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_59b56a86-8d5f-44e8-9bae-7133bc5b8eb8",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "42e655",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\n42e655: Hi, is there anyone help me to optimize my SEO score?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like to optimize your SEO score today?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David chào và giới thiệu tên cùng brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng của David hoàn toàn chuẩn mực."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu trả lời của David ngắn gọn và trực tiếp."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David đã nghe và lặp lại câu hỏi của khách hàng, cho thấy sự chú ý."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "David có tone lịch sự và phản hồi nhanh chóng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không thể hiện bất kỳ sự bức xúc hay lo lắng nào nên đây là điểm tối đa."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David sẵn sàng hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "David đã chủ động hỏi lại vấn đề của khách hàng để chuẩn bị hỗ trợ. Đây là bước thăm dò đầu tiên rất tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đoạn chat vẫn còn ở giai đoạn đầu, chưa có đủ thông tin để David đưa ra giải pháp. Việc anh ấy làm tốt nhất là xác nhận lại nhu cầu của khách hàng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David đã chủ động xác nhận lại nhu cầu của khách hàng ngay từ đầu để có thể hỗ trợ tốt nhất."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chưa có cơ hội để chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chat còn ngắn, chưa có cơ hội để David vượt lên trên mong đợi."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc, nên không yêu cầu David phải xin review ở thời điểm này."
+        }
+      },
+      "overall_summary": "David đã có một khởi đầu rất tốt khi chào hỏi chuyên nghiệp, xác định lại đúng vấn đề của khách hàng. Cách tiếp cận của David lịch sự và chủ động, cho thấy sự sẵn sàng hỗ trợ.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_65aba1ac-4143-40de-893a-09853360c904",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "Unknown Site",
+    "customer": "hmuz8s-e1",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nhmuz8s-e1: Hi, is there anyone help me to optimize my SEO score?\n\nhmuz8s-e1: Can you help me check on my speed performance?\n\nhmuz8s-e1: yeah sorry just send a message everytime i change pages\n\nhmuz8s-e1: can we run the page scan? says 0 pages\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/5/4/7/25474dc5b48c1800/image_1xzptz9.png]\n\n  David: Ah, no worries! Does the scan progress still says 0 here?\n\nhmuz8s-e1: yeah\n\nhmuz8s-e1: 0/0\n\nhmuz8s-e1: Scanning: 0/0 page\n\nhmuz8s-e1: Hi, is there anyone help me to optimize my SEO score?\n\nhmuz8s-e1: let me know have password off jsut for this\n\n  David: Ah, no worries, those are just triggers, I can ignore them if you want to\n\nhmuz8s-e1: adding password back for now\n\nhmuz8s-e1: yeah if you can please\n\nhmuz8s-e1: will turn it back off\n\nhmuz8s-e1: password is back off, please run the scan of all pages\n\nhmuz8s-e1: Scanning: 0/0 page\n      \n      shouldnt it scan my pages?\n\n  David: Ah, the pages should be scanned in no time if your store is now password unlocked\n\nhmuz8s-e1: Hi, is there anyone help me to optimize my SEO score?\n\nhmuz8s-e1: any idea when it will start? jsut says Scanning: 0/0 page\n\nhmuz8s-e1: no. i jsut want this to run\n\nhmuz8s-e1: please run the page scan\n\n  David: Normally, it should when you first installed our app. Give it some time and if it is still not running, please let me know right away\n\nhmuz8s-e1: no worries will do it another time. password needs to go back on for now. its not picking it up to scan\n\n  David: Of course, take your time and let me know whenever it is more suitable for you\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent tên David xuất hiện và giao tiếp ngay, không chậm trễ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng của agent sử dụng hợp lý, không gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng, không lạc đề hay gây bối rối cho khách."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe các câu hỏi và vấn đề của khách hàng, phản hồi đúng trọng tâm."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tông giọng của agent thân thiện và giữ nhịp độ phù hợp, không khiến khách chờ đợi lâu."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội rõ ràng để thể hiện sự đồng cảm, nhưng agent duy trì thái độ tích cực và sẵn lòng hỗ trợ."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent chủ động phản hồi và không né tránh các câu hỏi của khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã hỏi 'Does the scan progress still says 0 here?' để làm rõ vấn đề, cho thấy sự chủ động trong việc thu thập thông tin."
+        },
+        "solution": {
+          "score": 2.0,
+          "justification": "Agent hướng dẫn khách rằng việc quét trang 'should be scanned in no time if your store is now password unlocked' và khuyên khách 'Give it some time and if it is still not running, please let me know right away'. Tuy nhiên, agent không có giải pháp hay bước khắc phục cụ thể nào khi khách báo 0/0. Có thể cải thiện bằng cách đề xuất các bước kiểm tra khác hoặc hướng dẫn cách kích hoạt lại scan."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động tương tác với khách hàng, không bỏ qua các câu hỏi lặp lại hay các phản hồi của khách."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có dấu hiệu cần chuyển cuộc trò chuyện cho bộ phận khác trong tình huống này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có bằng chứng rõ ràng cho thấy có tài liệu hoặc liên kết liên quan trực tiếp đến việc 'page scan' mà agent đã bỏ qua."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để agent gợi ý tính năng hoặc gói dịch vụ bổ sung."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện kết thúc một cách tự nhiên mà không có cơ hội rõ ràng để xin review. Không có thông tin khách đã cho review."
+        }
+      },
+      "overall_summary": "Agent David đã làm tốt trong việc giao tiếp và lắng nghe khách hàng. Tuy nhiên, giải pháp cho vấn đề \"0/0 pages scanned\" chưa thực sự triệt để. Agent có thể cung cấp thêm các bước khắc phục hoặc kiểm tra sâu hơn để giúp khách hàng giải quyết vấn đề hiệu quả hơn.",
+      "total_score_20": 19.0,
+      "final_score_10": 9.5
+    }
+  },
+  {
+    "session_id": "session_c1a033b3-7c06-415e-bcad-cd42c129861b",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "ycjih0-4i",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nycjih0-4i: Hi, is there anyone help me to optimize my SEO score?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like to optimize your SEO score today?\n\nycjih0-4i: Fix now\n\n  David: Would you like me to have a look at your meta tags for you?\n\nycjih0-4i: yes\n\n  David: Hey, this is still David here\n\n  David: Would you like me to have a look at your setup and see where we can improve?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent David đã chào hỏi, giới thiệu tên và tên brand (SearchPie) đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng đều chuẩn xác, không có lỗi gây hiểu lầm."
+        },
+        "communication": {
+          "score": 1.5,
+          "justification": "David có vẻ đang cố gắng nhưng lại hỏi đi hỏi lại một vấn đề chưa rõ ràng. Câu hỏi 'Would you like to optimize your SEO score today?' không thực sự mang lại giá trị khi khách đã bày tỏ mong muốn hỗ trợ tối ưu. Sau đó lại tiếp tục dùng 'Would you like me to have a look at your setup and see where we can improve?' trong khi trước đó đã hỏi 'Would you like me to have a look at your meta tags for you?' - có vẻ trùng lặp và thiếu rõ ràng trong việc xác định bước tiếp theo."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David đã tiếp nhận yêu cầu của khách là cần giúp tối ưu SEO score và hỏi lại để xác nhận."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi của David hợp lý, tone độ thân thiện và chuyên nghiệp. Tuy nhiên có một chút lặp lại trong câu hỏi làm giảm đi sự mượt mà của cuộc trò chuyện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách không thể hiện sự bức xúc hay lo lắng, nên agent giữ vững tone độ bình thường là đủ."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David đã thể hiện sự nhiệt tình khi sẵn lòng hỗ trợ khách. Mặc dù có lặp lại câu hỏi nhưng vẫn giữ thái độ muốn giúp đỡ."
+        },
+        "probing": {
+          "score": 1.0,
+          "justification": "Agent đang cố gắng probing khi hỏi 'Would you like to optimize your SEO score today?' và 'Would you like me to have a look at your meta tags for you?'. Tuy nhiên, cách đặt câu hỏi chưa đủ cụ thể để xác định được vấn đề thực sự của khách. Thay vì hỏi chung chung, David có thể hỏi 'Could you tell me more about what specific aspects of your SEO score you'd like to improve?' hoặc 'What specific issues are you facing with your SEO score at the moment?' để có thông tin rõ ràng hơn."
+        },
+        "solution": {
+          "score": 2.5,
+          "justification": "Cuộc trò chuyện chưa đi đến bước giải pháp cụ thể do đang trong giai đoạn hỏi thông tin. David chưa đưa ra hướng dẫn sai hoặc bỏ qua vấn đề."
+        },
+        "proactiveness": {
+          "score": 1.5,
+          "justification": "David đã chủ động gợi ý 'Would you like me to have a look at your setup and see where we can improve?' Tuy nhiên, việc lặp lại câu hỏi có khiến cuộc trò chuyện hơi trì trệ, chưa thể hiện được sự chủ động vượt trội."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề chưa rõ ràng để xác định có cần chuyển team hay không. David đang trong quá trình thu thập thông tin."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội rõ ràng để sử dụng tài nguyên vì cuộc trò chuyện còn ở giai đoạn đầu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện còn quá ngắn để có cơ hội thể hiện sự vượt kỳ vọng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc và chưa có cơ hội để agent hỏi review."
+        }
+      },
+      "overall_summary": "David đã chào hỏi và thể hiện mong muốn hỗ trợ khách hàng khá tốt. Tuy nhiên trong quá trình probing, David có xu hướng lặp lại câu hỏi và chưa thực sự làm rõ được vấn đề cụ thể của khách. Điều này làm cuộc trò chuyện chưa được mạch lạc và hiệu quả. David cần cải thiện cách đặt câu hỏi để thu thập thông tin chính xác hơn từ khách hàng, tránh việc hỏi vòng vo hoặc lặp ý.",
+      "total_score_20": 18.0,
+      "final_score_10": 9.0
+    }
+  },
+  {
+    "session_id": "session_f1c3e329-dd2a-4d74-a528-4ece094ba72b",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "astro-auto-parts",
+    "primary_operator": "Hannah",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Hannah]\n\nastro-auto-parts: Hi, is there anyone help me to optimize my SEO score?\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3\n\n  Hannah: Would you like me to check your SEO?\n\nastro-auto-parts: Hi, is there anyone help me to optimize my SEO score?\n\n  Hannah: Still Hannah here\n      \n      Would you like me to check your SEO?\n\nastro-auto-parts: Can you help me check on my speed performance?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like me to have a look at your site speed?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Hannah chào hỏi đầy đủ tên và tên thương hiệu ngay từ đầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng của Hannah hoàn toàn rõ ràng, dễ hiểu."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Hannah giao tiếp rõ ràng và đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Hannah không bỏ qua bất kỳ câu hỏi nào của khách. Khi khách lặp lại tin nhắn, Hannah vẫn phản hồi lại."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Hannah sử dụng icon trái tim nhỏ thân thiện và chủ động, giữ nhịp độ chat tốt."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đây là một cuộc trò chuyện thẳng thắn đi vào kỹ thuật, không có cơ hội thể hiện sự đồng cảm nhưng Hannah vẫn giữ thái độ tích cực."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Hannah thể hiện sự nhiệt tình, chủ động muốn giúp đỡ khách."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Hannah chủ động đề nghị kiểm tra SEO cho khách khi khách hỏi về tối ưu điểm SEO. Khách sau đó lại chuyển sang hỏi về 'speed performance', lúc này David đã vào và tiếp tục hỏi như vậy. Cuộc trò chuyện của Hannah vẫn ổn và không có lỗi probing nào."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hannah mới ở bước đầu tư vấn, nhưng cô ấy đang đi đúng hướng để khám phá vấn đề của khách. Không có dấu hiệu nào cho thấy Hannah sẽ hướng dẫn sai hoặc bỏ qua vấn đề."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Hannah chủ động đề nghị kiểm tra SEO cho khách. Đây là một hành động pro-active tốt. Sau đó Hannah không được khách trả lời, nhưng không có lỗi nào được ghi nhận."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Cuộc trò chuyện này không yêu cầu transfer và Hannah xử lý tốt phần của cô ấy."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội sử dụng tài nguyên trong bản chat này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đây là giai đoạn đầu của cuộc trò chuyện, chưa có cơ hội thể hiện extra mile. Hannah vẫn cung cấp dịch vụ tốt với những gì cô ấy có thể làm được ở bước này."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc, nên không có cơ hội yêu cầu review."
+        }
+      },
+      "overall_summary": "Hannah đã có một khởi đầu rất tốt trong cuộc trò chuyện này. Cô ấy chào hỏi thân thiện, rõ ràng, và chủ động đề nghị giúp đỡ khách. Mặc dù khách sau đó lặp lại câu hỏi và chuyển chủ đề, phản hồi của Hannah vẫn chuyên nghiệp và sẵn sàng hỗ trợ. Không có bất kỳ lỗi đáng kể nào được tìm thấy trong phần trò chuyện của Hannah.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_94bc2299-6942-4990-b66c-b5c068be3680",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "DECO",
+    "customer": "QEYLI ",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: David]\n\nQEYLI : finns det en gratis plan\n\n  David: Självklart finns det det! Du är med på vårt gratisplan just nu!\n\n  David: Det här är David från DECO\n\n  David: Hur kan jag hjälpa dig idag\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David đã giới thiệu tên và thương hiệu đầy đủ khi bắt đầu hội thoại."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng của David hoàn toàn chính xác, dễ hiểu."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "David giao tiếp rõ ràng và đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David đã trực tiếp trả lời câu hỏi của khách hàng mà không bỏ sót thông tin nào."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "David có tốc độ phản hồi nhanh và giữ được giọng điệu thân thiện xuyên suốt cuộc trò chuyện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không thể hiện sự bức xúc hay lo lắng, nên David không có cơ hội thể hiện sự đồng cảm. Mặc định đủ điểm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David thể hiện sự nhiệt tình khi ngay lập tức xác nhận và trả lời câu hỏi của khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Vấn đề của khách hàng đã rõ ràng và David đã trả lời trực tiếp. Không có nhu cầu dò hỏi thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "David đã cung cấp giải pháp chính xác và ngay lập tức cho câu hỏi của khách hàng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David đã chủ động hỏi 'Hur kan jag hjälpa dig idag' để mở rộng cơ hội hỗ trợ khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề nằm trong khả năng giải quyết của David, không cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để David chia sẻ tài liệu hay link liên quan."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện còn ngắn nên David chưa có cơ hội thể hiện các hành động extra mile. Mặc định đủ điểm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc vì khách hàng chưa phản hồi tin nhắn cuối cùng của David. Không trừ điểm."
+        }
+      },
+      "overall_summary": "David đã có một khởi đầu hội thoại tốt, trả lời chính xác câu hỏi của khách hàng và thể hiện sự sẵn lòng hỗ trợ tiếp. Các tiêu chí giao tiếp đều được David thực hiện tốt, không có lỗi đáng kể nào. Cuộc trò chuyện còn ngắn nên một số tiêu chí chưa có cơ hội thể hiện rõ ràng, nhưng nhìn chung là một chat đạt yêu cầu.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_c2a2f8c2-a1f7-469f-94c6-dabb8a9d8c67",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "DECO",
+    "customer": "Ice Cream Shopper",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nIce Cream Shopper: I just upgraded to STARTER 🎉 Could you help me get the most out of this plan?\n\n  David: Hey, this is David from DECO here\n\n  David: So glad to see you chose our services!!! \n      \n      Would you like me to guide you on how to fully utilize your plan? :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David đã giới thiệu tên và thương hiệu rõ ràng ngay từ đầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp hay từ vựng nào gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Tin nhắn của David rõ ràng và dễ hiểu, không có sự mơ hồ hay lặp lại. Câu hỏi cuối cũng rất cụ thể để khách có thể trả lời."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David đã tiếp nhận thông tin khách hàng vừa nâng cấp gói và đang muốn tận dụng tối đa gói STARTER."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi nhanh và lời chào thân thiện, đúng chuẩn mực."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng đang hào hứng với gói mới, và David đã nắm bắt được cảm xúc đó bằng cách dùng 'So glad to see you chose our services!!!'."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David thể hiện sự nhiệt tình và sẵn sàng hỗ trợ khách hàng ngay từ đầu."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Vấn đề của khách hàng đã rõ ràng là muốn tận dụng gói STARTER. David đã hỏi một câu mở để hiểu sâu hơn nhu cầu cụ thể của khách."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hiện tại David đang ở bước hỏi thêm thông tin để cung cấp giải pháp phù hợp. Chưa có thất bại về giải pháp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David chủ động đề nghị hướng dẫn, cho thấy sự sẵn sàng hỗ trợ khách hàng hết mình để tận dụng gói mới."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có dấu hiệu cho thấy vấn đề của khách hàng cần chuyển giao hay vượt quá thẩm quyền của David."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội rõ ràng để sử dụng tài liệu vì chat đang ở giai đoạn đầu, David đang hỏi để hiểu cụ thể nhu cầu của khách trước."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có cơ hội để David vượt mong đợi do cuộc trò chuyện vẫn đang diễn ra và chưa đi sâu vào vấn đề."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện vẫn đang tiếp diễn, chưa đến thời điểm thích hợp để xin review."
+        }
+      },
+      "overall_summary": "Chat của David rất tốt. Anh ấy chào hỏi chuyên nghiệp, thể hiện sự nhiệt tình và đồng cảm với khách hàng. David cũng chủ động hỏi để hiểu rõ nhu cầu và sẵn sàng hướng dẫn khách tận dụng gói STARTER. Cuộc trò chuyện đang diễn ra rất tích cực.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_b024ab4d-5f38-4b19-8684-bb03f5ba5192",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "nz0g7x-aq",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nnz0g7x-aq: Hi there, I’m seeing an unauthorized access warning when connecting my Google Merchant Center account. Could you help me check it?\n\nnz0g7x-aq: yes\n\n  David: Hi, this is David from SearchPie here\n\nnz0g7x-aq: hi\n\nnz0g7x-aq: Hi, is there anyone help me to optimize my SEO score?\n\n  David: Would you like me to have a look at your Google Merchant Center connecting issues?\n\nnz0g7x-aq: Yes\n\n  David: Of course! May I ask for a screenshot when you tried to connect to your Google Merchant Center?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David đã giới thiệu tên và thương hiệu rõ ràng."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngôn ngữ tự nhiên, không có lỗi ngữ pháp/từ vựng gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng và đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.0,
+          "justification": "Khách ban đầu hỏi về Google Merchant Center, sau đó hỏi về tối ưu SEO score. Agent đã hỏi lại 'Would you like me to have a look at your Google Merchant Center connecting issues?' để xác nhận lại vấn đề ban đầu, mà bỏ qua câu hỏi mới nhất của khách về SEO (khách đã hỏi 'Hi, is there anyone help me to optimize my SEO score?' ngay trước đó). Agent nên xử lý hoặc ít nhất là ghi nhận câu hỏi về SEO của khách trước khi quay lại vấn đề trước."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent phản hồi nhanh chóng, đúng tốc độ."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách không thể hiện sự bức xúc hay lo lắng, nên agent đủ điểm cho tiêu chí này. Không có cơ hội thể hiện sự đồng cảm đặc biệt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent chủ động đưa ra hỗ trợ ('Would you like me to have a look...'), thể hiện thái độ sẵn sàng giúp đỡ."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã chủ động hỏi screenshot ('May I ask for a screenshot...') để có thêm thông tin chi tiết, đây là cách probing hiệu quả."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Cuộc trò chuyện vẫn đang trong quá trình thu thập thông tin để đưa ra giải pháp, chưa đến giai đoạn solution. Agent đang đi đúng hướng để giải quyết vấn đề."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động hỏi chi tiết để giải quyết vấn đề của khách."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chưa có dấu hiệu cần chuyển tiếp case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội rõ ràng để sử dụng tài nguyên."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có cơ hội để agent thể hiện hành động 'extra-mile'."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc, chưa đến thời điểm xin review."
+        }
+      },
+      "overall_summary": "Agent David đã chào hỏi và giới thiệu một cách chuyên nghiệp. Tuy nhiên, David đã bỏ qua câu hỏi mới nhất của khách về tối ưu SEO score khi cố gắng quay lại vấn đề ban đầu. David nên xác nhận và ghi nhận cả hai vấn đề khách đưa ra. Dù vậy, David vẫn thể hiện sự chủ động và tích cực trong việc tìm hiểu vấn đề bằng cách yêu cầu ảnh chụp màn hình.",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_88415799-a03e-4c2e-8e3f-d64582c9dd6a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "fibauy-d0",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Jane]\n\nfibauy-d0: Hi, is there anyone help me to optimize my SEO score?\n\n  Wendy: Hello, it's Wendy from SearchPie\n\n  Wendy: Would you like me to check your SEO?\n\nfibauy-d0: Hello,yes\n\n  Wendy: Glad to hear that\n\nfibauy-d0: Hi, is there anyone help me to optimize my SEO score?\n\n  Wendy: Oh, I see some features in the app should be activated\n\n  Wendy: Would you like me to guide you set up for FREE?\n\nfibauy-d0: yes\n\n  Wendy: Great, let's go\n\n  Wendy: First, please go to Site Speed > choose Instant Page > then toggle on\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/f/b/0/a/fb0a3672e0140000/image_1j8bz93.png]\n\nfibauy-d0: ok\n\n  Wendy: When it's done, please let me know so we can go ahead ;)\n\nfibauy-d0: 完成\n\n  Wendy: 完美\n\n  Wendy: 接下来，我们进入“Onpage”和“内容”>选择“Schema 和 Snippet”\n\n  Wendy: 这里，让我们启用两个片段：面包屑和商店配置文件，然后点击设置以填写所需信息\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/f/b/0/a/fb0a3672e0140000/image_gg3b2d.png]\n\nfibauy-d0: 完成\n\n  Jane: 我是Search Pie团队的Jane\n\n  Jane: 温迪刚下班，我来帮你 :$\n\nfibauy-d0: 好的\n\n  Jane: 请点击这里，为您的图片添加ALT文本\n\n  Jane: [File: alt.png - https://storage.crisp.chat/users/upload/session/-/f/b/0/a/fb0a3672e0140000/alt_1f8x6ut.png]\n\nfibauy-d0: 完成\n\n  Jane: 太好了\n\n  Jane: [File: long url.png - https://storage.crisp.chat/users/upload/session/-/f/b/0/a/fb0a3672e0140000/long-url_o13ihc.png]\n\n  Jane: 然后你可以点击这里扫描长URL。\n\nfibauy-d0: [File: 截屏2026-03-11 下午1.55.58.png - https://storage.crisp.chat/users/upload/session/-/f/b/0/a/fb0a3672e0140000/2026-03-11-15558_1is5tyq.png]\n\n  Jane: 太好了，找不到任何长网址\n\n  Jane: [File: broken scan only.png - https://storage.crisp.chat/users/upload/session/-/f/b/0/a/fb0a3672e0140000/broken-scan-only_yo56x.png]\n\n  Jane: 请点击这里扫描断链\n\n  Jane: 等的时候，我能请你帮个忙吗？\n\n  Jane: 请问你觉得我今天的支持（简）是1到5吗？\n\nfibauy-d0: ？\n\nfibauy-d0: 5\n\n  Jane: 天哪，给我5分，真是荣幸:$<3  \n\n  Jane: 你介意分享一下你对我（Jane）客服的看法吗？在 Shopify App Store 给我留个评价。\n\n  Jane: 只剩30多岁： https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal\n\n  Jane: 对我来说，那简直是全世界，非常感谢!!!!<3<3<3    \n\nfibauy-d0: 完成，没有损坏链接\n\n  Jane: 太棒了，没有断链\n\n  Jane: 另外，如果你不介意，能否告诉我是否已经提交了评论？\n\n  Jane: 迫不及待想看到你的文字\n\nfibauy-d0: 已提交\n\n  Jane: 天哪，你真快\n\n  Jane: 你真是让我今天心情大好\n\n  Jane: 如果可以的话，能分享一张截图吗 :$\n\n  Jane: 由于Shopify的政策，我现在看不到 x)\n\nfibauy-d0: 是的\n\n  Jane: 简还是在这里\n\n  Jane: 我们还连接着吗？\n\nfibauy-d0: 是的\n\n  Jane: 太好了\n\n  Jane: 让我刷新一下SEO报告，看看接下来可以做些什么 [+1]\n\nfibauy-d0: 好的\n\n  Jane: 另外，如果可以的话，能分享一下评论截图吗 :$   由于Shopify的政策，我现在看不到它 x)\n\n  Jane: 我想把它给我的团队看 8)\n\nfibauy-d0: 一会吧，现在我好像什么也没解决哦\n\n  Jane: 哦，我还以为你之前已经给我留了几句话 x)\n\n  Jane: 请点击这里，将您的谷歌搜索控制台与我们的应用连接起来\n\n  Jane: [File: connect gsc in index.png - https://storage.crisp.chat/users/upload/session/-/f/b/0/a/fb0a3672e0140000/connect-gsc-in-index_69qqwh.png]\n\n  Jane: 完成后，您可以点击提交网站地图 [+1]\n\nfibauy-d0: 完成\n\n  Jane: 太好了\n\n  Jane: 我查过了，发现我们已经体验过所有免费功能了\n\n  Jane: 我建议我们再等几天，让应用扫描更多页面，之后再查看SEO报告\n\n  Jane: 与此同时，你可以专注于写博客/文章来提升SEO，并更多地参与社交媒体，为你的店铺带来流量 :$\n\nfibauy-d0: 好的，谢谢，辛苦了\n\n  Jane: 很荣幸能支持你 <3\n\n  Jane: 如果您有任何问题或疑虑，欢迎随时联系我们\n\nfibauy-d0: 已经5星评论了\n\n  Jane: 天哪，非常感谢 <3   这对我意义重大\n\nfibauy-d0: Can you help me check on my speed performance?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like me to have a look at your site speed?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Jane đã tự giới thiệu và có tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngôn ngữ giao tiếp tự nhiên, không có lỗi ngữ pháp/từ vựng gây hiểu lầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Jane hướng dẫn rõ ràng, không lạc đề hay lặp ý. Các bước hướng dẫn được chia nhỏ và có hình ảnh minh họa."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Jane lắng nghe phản hồi của khách hàng và phản ứng phù hợp với từng câu trả lời như '完成' và '?'."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Jane giữ giọng điệu thân thiện, tích cực và phản hồi kịp thời."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khi khách nói '现在我好像什么也没解决哦', Jane đã thể hiện sự hiểu và cố gắng giải quyết. Sự vui vẻ khi khách cho review cũng là một biểu hiện tốt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Jane rất nhiệt tình trong suốt cuộc trò chuyện, đặc biệt khi tương tác về review và đưa ra các gợi ý tiếp theo."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Các hướng dẫn của Jane đã rõ ràng cho vấn đề tối ưu SEO cơ bản. Jane đã hỏi thêm về việc khách đã gửi review hay chưa để xác nhận."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Jane đã hướng dẫn khách các bước tối ưu SEO cơ bản khi tiếp nhận từ Wendy. Cuối đoạn chat cũng đưa ra giải pháp tổng thể là đợi ứng dụng quét và tập trung vào nội dung."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Jane đã rất chủ động khi liên tục đưa ra các bước tối ưu và gợi ý khách hàng viết blog/bài viết để tăng SEO, cũng như tham gia mạng xã hội."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có cơ hội chuyển case cho đội nhóm khác, vì các vấn đề đều nằm trong khả năng hỗ trợ trực tiếp của agent."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Jane đã sử dụng hình ảnh minh họa cho các bước hướng dẫn, giúp khách hàng dễ hình dung và thực hiện hơn."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Jane đã gợi ý khách hàng viết blog/bài viết và tham gia social media để tăng traffic, vượt trên hỗ trợ kỹ thuật thông thường."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách hàng đã cho review 5 sao như thông tin bổ sung, và Jane cũng đã tích cực hỏi xin review, thậm chí là screenshot xác nhận. Điều này cho thấy Jane đã tận dụng tốt cơ hội này."
+        }
+      },
+      "overall_summary": "Jane đã thể hiện một cuộc trò chuyện xuất sắc, từ việc tiếp nhận case từ agent khác một cách liền mạch cho đến việc chủ động hướng dẫn khách hàng các bước tối ưu SEO. Phong thái giao tiếp thân thiện, nhiệt tình cùng khả năng giải quyết vấn đề hiệu quả là những điểm mạnh nổi bật. Đặc biệt, Jane đã rất khéo léo và kiên nhẫn khi hỏi xin review từ khách hàng, cũng như đưa ra những gợi ý hữu ích vượt ngoài phạm vi hỗ trợ kỹ thuật.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_d1f8429c-2748-454c-9044-145042354ca6",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "DECO",
+    "customer": "Valdier",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: David]\n\nValdier: Hi DECO team, I would like to add the comma to the AutoText: 'Discount amount' when displaying on badges (e.g. $1,250 instead of $1250)\n\n  David: Hi, this is David from DECO here!\n\n  David: Ah, of course, let me notify our team for you\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David đã chào, giới thiệu tên và thương hiệu đầy đủ. Rất tốt."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp nào gây hiểu lầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Các câu trả lời của David ngắn gọn và rõ ràng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David đã nắm bắt đúng yêu cầu của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "David giữ thái độ lịch sự, chuyên nghiệp từ đầu đến cuối."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không thể hiện sự bức xúc hay lo lắng, nên không có cơ hội để David trực tiếp thể hiện sự đồng cảm. Nhưng David đã phản hồi rất nhiệt tình khi khách đưa ra vấn đề."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David phản ứng nhanh chóng và sẵn lòng hỗ trợ ('Ah, of course, let me notify our team for you')."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Vấn đề của khách hàng đã rõ ràng, không cần probing thêm. David đã xử lý tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "David đã đưa ra hướng giải quyết hợp lý bằng cách chuyển yêu cầu đến đội ngũ kỹ thuật. Đây là cách xử lý đúng đắn cho vấn đề này."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David đã chủ động thông báo cho đội ngũ ngay sau khi hiểu vấn đề của khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "David đã đề nghị chuyển vấn đề cho đội ngũ liên quan ('let me notify our team for you'), đây là hành động cần thiết và phù hợp."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để sử dụng tài nguyên hoặc tài liệu hỗ trợ trong đoạn hội thoại này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để David gợi ý thêm tính năng hay dịch vụ. David đã xử lý yêu cầu chính rất tốt."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc và khách hàng đã 'SEEN' tin nhắn cuối nhưng chưa trả lời. Không bắt buộc phải xin review trong trường hợp này."
+        }
+      },
+      "overall_summary": "David đã thể hiện sự chuyên nghiệp và nhiệt tình trong suốt cuộc trò chuyện. Anh ấy đã chào hỏi đầy đủ, nhanh chóng nắm bắt vấn đề của khách hàng và đề xuất một giải pháp phù hợp bằng cách chuyển yêu cầu đến đội ngũ liên quan. Mặc dù cuộc trò chuyện ngắn, David đã xử lý rất tốt và không bỏ sót bất kỳ điểm quan trọng nào của tiêu chí đánh giá.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_0ea8178f-370b-4eee-a61e-68defc35e92e",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "sarahomeco",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 4 sao) ---\n\n[Agent được chấm: Wendy]\n\nsarahomeco: Fix now\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like me to have a look at your meta tags\n\nsarahomeco: I want to optimise by site speed\n\nsarahomeco: hey?\n\n  Wendy: Please let me check your speed first\n\nsarahomeco: okay\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/2/c/c/22cc0138f6244c00/image_c8xutp.png]\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/2/c/c/22cc0138f6244c00/image_ha8ckf.png]\n\n  Wendy: This is your site speed result\n\n  Wendy: Actually speed is good if it's 50 Mobile and 80 Desktop\n\nsarahomeco: are you sure?\n\n  Wendy: So I think your result is not bad, you don't need to worry about it\n\n  Wendy: yes i'm sure\n\nsarahomeco: oh okay\n\nsarahomeco: thanks\n\n  Wendy: You're welcome :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Wendy không phải người bắt đầu cuộc trò chuyện nhưng vẫn tiếp nối mạch chat một cách tự nhiên khi tiếp nhận. Agent khác đã giới thiệu tên và thương hiệu đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng của Wendy ổn, không có lỗi nào gây hiểu lầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Wendy trả lời rõ ràng và đi thẳng vào vấn đề của khách, không gây bối rối."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Wendy đã lắng nghe và tập trung vào yêu cầu của khách về tối ưu hóa tốc độ trang web."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tone và nhịp độ của Wendy phù hợp, không khiến khách phải chờ đợi lâu và giữ được sự tương tác tích cực."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách không thể hiện sự lo lắng hay bức xúc, nên tiêu chí này được đủ điểm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Wendy tỏ thái độ sẵn sàng giúp đỡ khi tiếp quản cuộc trò chuyện, thể hiện sự nhiệt tình trong công việc."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Wendy đã hỏi rõ về ý định của khách ('Please let me check your speed first') trước khi đưa ra giải pháp, hành động này là một ví dụ tốt về việc thu thập thông tin để phục vụ khách hàng tốt hơn."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Wendy đã giải quyết đúng vấn đề của khách bằng cách kiểm tra tốc độ trang và đưa ra phân tích chính xác về kết quả, làm khách hàng an tâm với câu trả lời 'You don't need to worry about it'."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Sau khi giải quyết xong vấn đề chính của khách, không có cơ hội rõ ràng nào để Wendy có thể chủ động giúp thêm. Do đó, Wendy đủ điểm cho tiêu chí này."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có dấu hiệu cho thấy cần chuyển vấn đề này cho đội ngũ khác hay người hỗ trợ khác. Wendy đã xử lý hiệu quả vấn đề tốc độ trang web mà không cần sự can thiệp từ bên ngoài."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng nào để Wendy chia sẻ tài liệu hoặc link, vì vấn đề đã được giải quyết trực tiếp thông qua kiểm tra tốc độ và phân tích của agent."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng nào để Wendy có thể gợi ý thêm tính năng hay gói sản phẩm bổ sung cho khách. Vấn đề đã được giải quyết trọn vẹn mà không cần thêm bất kỳ lời khuyên nào."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 4 sao, nên Wendy đủ điểm cho tiêu chí này."
+        }
+      },
+      "overall_summary": "Wendy đã xử lý rất tốt cuộc trò chuyện này, nhanh chóng nắm bắt vấn đề và cung cấp giải pháp, khiến khách hàng hài lòng và cho review 4 sao. Sự chủ động trong việc kiểm tra tốc độ và trấn an khách (`you don't need to worry about it`) là điểm cộng lớn. Cuộc trò chuyện diễn ra mạch lạc, hiệu quả và thân thiện.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_bbcd30ac-7b9b-4cd7-851c-18c66021dd8f",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "0cgajq-61",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: David]\n\n0cgajq-61: Can you help me check on my speed performance?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like me to have a look at your site speed?\n\n0cgajq-61: yeah\n\n  David: Of course! Let me run a few tests and get back to you\n\n  David: While waiting, may I ask for your name?\n\n0cgajq-61: Tanvir Bari\n\n  David: It is my pleasure to assist you today Bari!\n\n  David: I have been trying to run tests for you but it looks like there are some issues in regards of Google PageSpeed\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/d/0/4/ed04bec5ba7c0800/image_1r02qv0.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David đã giới thiệu tên và thương hiệu rõ ràng ngay từ đầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp hay từ vựng gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Các câu trả lời của David ngắn gọn, rõ ràng và dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David đã nắm bắt được yêu cầu của khách hàng về kiểm tra tốc độ trang web ('yeah' sau câu hỏi của David)."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "David duy trì giọng điệu thân thiện, chuyên nghiệp và phản hồi kịp thời, không để khách phải chờ lâu và có cập nhật tình hình."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội rõ ràng để thể hiện sự cảm thông, nhưng David duy trì giọng điệu tích cực hỗ trợ."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David thể hiện sự nhiệt tình và sẵn lòng giúp đỡ khách hàng ('Of course! Let me run a few tests and get back to you', 'It is my pleasure to assist you today Bari!')."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "David đã chủ động hỏi tên khách hàng để cá nhân hóa hỗ trợ, đây là một hành động probing tốt để nắm bắt thông tin cần thiết."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "David đã bắt đầu quá trình kiểm tra tốc độ trang web như khách yêu cầu và cập nhật về tình hình khi gặp vấn đề. Dù chưa có giải pháp hoàn chỉnh cho vấn đề tốc độ, việc thông báo về lỗi và đưa bằng chứng ảnh là một bước xử lý đúng đắn."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David đã chủ động thực hiện kiểm tra và thông báo về tình trạng lỗi ngay khi phát hiện, thể hiện sự chủ động trong việc giải quyết vấn đề."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề vẫn đang trong quá trình được David xử lý, chưa có dấu hiệu cần chuyển giao. David đã cung cấp thông tin chi tiết về lỗi được phát hiện."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ tài liệu hoặc liên kết liên quan trong đoạn chat này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "David đã vượt ngoài mong đợi bằng cách chủ động hỏi tên khách hàng để cá nhân hóa cuộc hội thoại ('It is my pleasure to assist you today Bari!')."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc và vấn đề vẫn đang được xử lý, vì vậy không có cơ hội để hỏi review."
+        }
+      },
+      "overall_summary": "David đã hỗ trợ khách hàng rất tốt từ đầu đến cuối. Anh ấy thể hiện sự chuyên nghiệp, nhiệt tình, và chủ động trong việc xử lý yêu cầu. David nắm bắt vấn đề nhanh chóng, cập nhật kịp thời khi gặp trở ngại và cố gắng cá nhân hóa trải nghiệm cho khách hàng. Mặc dù vấn đề chưa được giải quyết hoàn toàn, cách tiếp cận và xử lý của David là phù hợp.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_6be1768c-e661-4eed-a99d-edb184d74ca3",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "SearchPie",
+    "customer": "65ypec-0z",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Wendy]\n\n65ypec-0z: Hi, is there anyone help me to optimize my SEO score?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to check your SEO today?\n\n65ypec-0z: Hi, is there anyone help me to optimize my SEO score?\n\n  Wendy: Hello it's Wendy from SearchPie\n\n  Wendy: Would you like me to check your SEO?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Wendy đã giới thiệu tên và thương hiệu đầy đủ khi bắt đầu cuộc trò chuyện."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng của Wendy hoàn toàn chính xác."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu hỏi của Wendy rõ ràng, đi thẳng vào vấn đề mà khách hàng đang quan tâm."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Wendy đã lắng nghe và phản hồi trực tiếp câu hỏi của khách hàng (check SEO score)."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu lịch sự, chuyên nghiệp và phản hồi nhanh chóng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng chưa có dấu hiệu lo lắng hay bức xúc, nên Wendy không cần thể hiện sự đồng cảm đặc biệt. Chat đạt điểm tối đa ở tiêu chí này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Wendy thể hiện thái độ sẵn lòng giúp đỡ và tích cực khi hỏi 'Would you like me to check your SEO?'."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Wendy đã đưa ra câu hỏi đóng để xác nhận lại nhu cầu của khách hàng, đây là một bước thăm dò phù hợp khi khách hàng chỉ đưa ra yêu cầu chung chung. Chưa có dấu hiệu cần probing sâu hơn ở thời điểm này."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Chưa có đủ thông tin để đánh giá giải pháp vì đây là giai đoạn đầu của cuộc trò chuyện. Wendy đã đưa ra phản hồi phù hợp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chưa có cơ hội thể hiện sự chủ động vì cuộc trò chuyện mới bắt đầu, nhưng Wendy đã phản hồi một cách nhanh chóng và sẵn sàng hỗ trợ."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chưa có cơ hội để chuyển giao vấn đề cho bộ phận khác. Wendy đang trực tiếp hỗ trợ khách hàng."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội để chia sẻ tài liệu hay link vì cuộc trò chuyện mới bắt đầu và chưa đi sâu vào vấn đề cụ thể."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có cơ hội để đi xa hơn mong đợi của khách hàng. Wendy đã phản hồi tốt ở giai đoạn khởi đầu."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc và chưa có lý do để yêu cầu review vào lúc này."
+        }
+      },
+      "overall_summary": "Wendy đã chào hỏi chuyên nghiệp, thể hiện sự sẵn lòng hỗ trợ và lắng nghe tốt yêu cầu ban đầu của khách hàng. Câu hỏi rõ ràng và đi thẳng vào vấn đề. Tại thời điểm này của cuộc trò chuyện, không có lỗi đáng kể và agent đã xử lý tốt.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_71f384ec-c346-4129-8d2c-a80938716fe3",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "DECO",
+    "customer": "Chel Bella",
+    "primary_operator": "Felicie",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Felicie]\n\nChel Bella: Hi.  I am having an issue with our badges.  Product on our home page have the badge and they are not selected to have the badge.  The product that has the \"Chel Bella Core\" bade on the home page are always in the same position.  It is the first product in the featured designer section.  I have confirmed the products do not have the Badge.  I will send a screenshot of there the section in on the home page\n\n  Wendy: Hi, it's Wendy from DECO\n\n  Wendy: Yes we can help you fix, can you please send me the Product page that doesn't need the badge?\n\nChel Bella: [File: Screenshot 2026-03-10 at 6.40.54 AM.jpeg - https://storage.crisp.chat/users/upload/session/-/8/a/3/1/8a31d5f53b68b800/screenshot-2026-03-10-at-64054_ll1m2h.jpeg]\n\nChel Bella: Is is on the home page of chelbella.com\n\nChel Bella: Why is the first product in this section always receiving the badge?\n\n  Wendy: Yes, so I will ask the team to remove it, please no worries\n\nChel Bella: But I want to know why this is happening and to ensure it will not happen again.\n\nChel Bella: This is the first time using this app and this is concerning\n\n  Wendy: I totally understand your concern\n\n  Wendy: Please let me consult our technical expert about it first\n\nChel Bella: Ok, I would like an explanation.  Thank you very much\n\nChel Bella: To be clear, no matter what designer I select for this page, the first product on the left gets the badge\n\n  Wendy: Hi iI'm back\n\n  Wendy: It's fixed for you\n\n  Wendy: The issue happened because your theme wasn't compatible with our app, but the technical expert fixed it, it will not happen anymore in the future\n\nChel Bella: Thank you very much.\n\nChel Bella: There is something going on with the badges if you click on the same page, Chel Bella Core- the badge is incorrectly sized\n\nChel Bella: Maybe your app does not work with our theme\n\nChel Bella: [File: Screenshot 2026-03-10 at 6.56.42 AM.png - https://storage.crisp.chat/users/upload/session/-/8/a/3/1/8a31d5f53b68b800/screenshot-2026-03-10-at-65642_5v6wij.png]\n\nChel Bella: The badge is zoomed in and incorrectly sized\n\n  Jane: it's Jane from DECO team here\n\n  Jane: our technician team already checked and out the code, so that your theme and our app do not have conflict anymore\n\n  Jane: it's displaying normally at our end\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/a/3/1/8a31d5f53b68b800/image_l8r6d2.png]\n\n  Jane: i think you can try clear the cache, cookies and check again ya [+1]\n\nChel Bella: Ok, I will try\n\n  Jane: sure please give it a try and let me know if it works :$\n\nChel Bella: It is still happening after I cleared the cache\n\n  Jane: oh it's weird, since it's okay at my end\n\nChel Bella: It is happening on mobile as well\n\nChel Bella: [File: Chel Bella.png - https://storage.crisp.chat/users/upload/session/-/8/a/3/1/8a31d5f53b68b800/chel-bella_1gvlq04.png]\n\nChel Bella: This is on mobile\n\n  Jane: sure let me check on mobile now\n\n  Jane: in the meantime, can you try to restart your laptop to check? normally it works\n\nChel Bella: Why would it be doing the same issue on my mobile as well though?\n\nChel Bella: Ok, I will restart and come back to chat.  My mobile does not have the same cookies\n\n  Jane: [File: IMG_8399.jpg - https://storage.crisp.chat/users/upload/operator/-/9/6/1/f/961fd1320a0dd000/177314130865500_twod2p.jpg]\n\nChel Bella: Yes, is that your mobile?\n\n  Jane: yes I see the issue in my mobile view\n\n  Jane: let me notify our team to check, no worry\n\nChel Bella: I don't think this app is working.  Can we please get a refund?\n\nChel Bella: IT is still happening on laptop as well\n\n  Jane: our technician will check and fix the displaying issue for you, no worry\n\n  Jane: in case you want to cancel the plan, please let me notify our team as well\n\nChel Bella: I will wait to see if you can fix it first.  I am concerned there are no pages on the site showing the badge incorrectly\n\n  Jane: sure I notified our team to check already, no worry :$\n\nChel Bella: can you confirm if it can be fixed?\n\n  Jane: still jane here, yes our technician can help you fix the issue\n\n  Jane: the process might be delayed a bit since they changed the shift just now\n\n  Jane: we'll send email to info@chelbella.com to update you once we done\n\nChel Bella: Can you please also send an email to joy@minotwebdesign.com?  If this is not fixed soon we will need a refund.  We are launching an updated website this week and can;t have the broken badges.\n\nChel Bella: What is the time estimate to fix?  I may need to set up another badge app now.\n\n  Tina: Hello, I'm Tina from DECO here\n\n  Tina: Please wait for me\n\n  Tina: I'm asking our dev\n\n  Tina: In order to check further for your issues, could you please grant us access to your store?\n\nChel Bella: Have you requested access?\n\n  Tina: Yes my friend\n\n  Tina: I have sent you a request\n\n  Tina: Could you please check for your mailbox?\n\nChel Bella: I have asked the store owner to check.  She will have to grant access\n\n  Tina: Oki my friend\n\n  Tina: Please inform me soon\n\nChel Bella: The store owner received an email about ending the app.  Please confirm the refund of the month app price.\n\nChel Bella: [File: IMG_9360.jpg - https://storage.crisp.chat/users/upload/session/-/8/a/3/1/8a31d5f53b68b800/img9360_1yw4cey.jpg]\n\nChel Bella: [File: IMG_9360.jpg - https://storage.crisp.chat/users/upload/session/-/8/a/3/1/8a31d5f53b68b800/img9360_1yw4cey.jpg]\n\nChel Bella: She never received an email about access.  Now we need to move on to another app. Please confirm the refund.\n\n  Felicie: Hi, it's Felicie from the DECO team!\n\n  Felicie: We're really sorry for the inconvenience your store has faced during our app's experience!\n\n  Felicie: Let me inform our manager and leadteam to help calculate the refund for you!\n\n  Felicie: However, it's night time from our side, so it may takes several hours before our team can help you with your case!\n\n  Felicie: May I ask if it's fine for you?\n\nChel Bella: Ok, to confirm, the app never worked for us.  It has been adding the badge to products it should not and the badge is enlarged on certain pages.  So the refund will be 100% correct?\n\nChel Bella: I was told it would be fixed and it never was and the store owner received an email about leaving the app.\n\n  Felicie: Thanks for explaining the situation.\n\n  Felicie: I’m not completely certain about the refund details on my end.\n\n  Felicie: It would be best to let our manager review this, as they can check the store activity since the plan was activated and see what actions were taken in the app.\n\n  Felicie: Based on that, they’ll be able to calculate the appropriate refund for you.\n\n  Felicie: I have passed this information along to them and will get back to you as soon as we have an update.\n\n  Felicie: Thank you for your patience!\n\n  David: Dear, \n      \n      This is David from DECO here. Just wanted to give you a quick update. \n      \n      Firstly, I wanted to apologize for any inconvenience that our team have caused. Our team always strive for your success. \n      \n      Our team is currently processing your refund request and I will update you as soon as possible. As of now, to avoid any unwanted issues, can you downgrade to our Free Plan here: (Image) \n      \n      Should you have any other questions, please let me know. \n      \n      Best, \n      David\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/a/3/1/8a31d5f53b68b800/image_n01zb1.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Felicie giới thiệu tên và brand đầy đủ khi bắt đầu cuộc trò chuyện với khách hàng."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Felicie sử dụng ngữ pháp tiếng Anh tốt, không có lỗi nào gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Felicie giao tiếp rõ ràng và đi thẳng vào vấn đề của khách hàng, không lan man hay gây nhầm lẫn."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Felicie lắng nghe và tiếp nhận thông tin từ khách hàng rất tốt, đặc biệt là phần tóm tắt các vấn đề khách đã gặp phải."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Felicie duy trì giọng điệu chuyên nghiệp, lịch sự và giữ nhịp độ phản hồi hợp lý trong cuộc trò chuyện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Felicie nhận thấy sự bất tiện mà khách hàng đang gặp phải và xin lỗi thay mặt cho team, thể hiện sự thấu cảm tốt: 'We're really sorry for the inconvenience your store has faced during our app's experience!'"
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Felicie sẵn sàng giúp đỡ và chủ động trấn an khách hàng về việc xử lý yêu cầu hoàn tiền."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Tại thời điểm Felicie tiếp nhận, thông tin đã khá rõ ràng, nên không có cơ hội để probing thêm. Felicie đã xử lý tốt với những thông tin hiện có."
+        },
+        "solution": {
+          "score": 2.5,
+          "justification": "Felicie đưa ra hướng giải quyết là chuyển yêu cầu hoàn tiền đến quản lý và team. Tuy nhiên, Felicie không thể xác nhận ngay về việc hoàn tiền 100% khi khách hỏi, điều này có thể gây lo lắng cho khách. Nên giải thích rõ hơn lý do không thể xác nhận ngay sẽ tốt hơn."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Felicie đã chủ động thông báo cho khách hàng về việc sẽ chuyển yêu cầu đến quản lý và team để tính toán hoàn tiền."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Felicie đã thông báo rõ ràng về việc chuyển yêu cầu hoàn tiền đến quản lý và lead team, cho thấy một quy trình chuyển giao rõ ràng."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để Felicie chia sẻ tài liệu hoặc liên kết liên quan đến vấn đề được đề cập."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Felicie đã cố gắng hết sức để hỗ trợ khách hàng trong việc hoàn tiền, giải thích rõ quy trình tiếp theo và xin lỗi về trải nghiệm không tốt của khách hàng. Không có cơ hội rõ ràng để đi xa hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc vì khách hàng đã 'SEEN' nhưng chưa trả lời. Felicie đã xử lý tình huống hợp lý và không có cơ hội để hỏi review."
+        }
+      },
+      "overall_summary": "Felicie đã xử lý cuộc trò chuyện này rất tốt. Bạn ấy tiếp nhận tình huống phức tạp từ những agent trước, thể hiện sự thấu cảm và đưa ra hướng giải quyết rõ ràng cho khách hàng về yêu cầu hoàn tiền, mặc dù chưa thể xác nhận chi tiết về số tiền. Felicie cũng rất chủ động trong việc thông báo quy trình tiếp theo và lý do cần thời gian. Tuy nhiên, việc không thể xác nhận ngay về việc hoàn tiền 100% có thể là điểm cần cải thiện, bằng cách giải thích rõ hơn cho khách why.",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_e7909879-6d5a-4c27-8e1c-b81d9c1b2517",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-11",
+    "app": "DECO",
+    "customer": "LSB Group One-Stop Online Shop",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: David]\n\nLSB Group One-Stop Online Shop: Hi DECO team! I just filled the Sidekick survey.\n       My Sidekick prompt/keywords: “Labels”.\n       Please send my discount code. Thanks!\n\n  Hannah: Hi dear, this is Hannah from DECO team <3\n\n  Hannah: Thank you for your information. To help our team better understand your source, can you send me a screenshot of your conversation with Sidekick? This would greatly help our team!\n\n  Hannah: May I ask which plan are you looking to get? The Starter, Growth or Unlimited?\n      \n      Also, may I ask do you prefer a 20% discount on the Monthly plan or 30% off the Annual plan?\n\nLSB Group One-Stop Online Shop: Hi DECO team! I just filled the Sidekick survey.\n       My Sidekick prompt/keywords: “Labels”.\n       Please send my discount code. Thanks!\n\nLSB Group One-Stop Online Shop: 20% monthly\n\nLSB Group One-Stop Online Shop: I not yet try. let me try first then decide plan\n\n  Hannah: I see, just get back to us when you have the decision\n\nLSB Group One-Stop Online Shop: Hi DECO Team! I need help with the badge display problem.\n\n  Hannah: Hi dear, this is Hannah from DECO team <3\n\n  Hannah: Do you need help with the badge display problem?\n\nLSB Group One-Stop Online Shop: problem solved 🙂 thank you\n\nLSB Group One-Stop Online Shop: how to subscribe monthly plan with 20% off?\n\n  Hannah: Ah still waiting for you decision\n\n  Hannah: May I ask which plan are you looking to get? The Starter, Growth or Unlimited?\n\nLSB Group One-Stop Online Shop: starter\n\n  Hannah: I will notify with my team about your case. Our core team will get back to you with the discount for this plan\n\n  Hannah: As our team was offline over the weekend, so it may take a little time for them to review it.\n\n  Hannah: We truly appreciate your patience and understanding. Our team will get back to you on Monday with an update\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/c/c/6/1cc658a82b86b300/image_3tw90m.png]\n\n  David: Dear,\n      \n      This is David from DECO here. Just a quick update in regards of your discount code.\n      \n      You can paste this code here: 20%OFF_LSB Group One-Stop Online Shop\n      \n      Let me know how it goes!\n      \n      Best,\n      David\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David giới thiệu tên và team đầy đủ ngay tin nhắn đầu tiên."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng của David hoàn toàn chính xác."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Thông điệp rõ ràng, đi thẳng vào vấn đề và dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David nắm bắt đúng yêu cầu về mã giảm giá 20% cho gói Starter mà khách đã hỏi trước đó."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ thái độ lịch sự, chuyên nghiệp từ đầu đến cuối."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách không có dấu hiệu bức xúc, David giữ thái độ quan tâm phù hợp."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David chủ động cập nhật và cung cấp mã giảm giá, thể hiện sự nhiệt tình trong việc hỗ trợ khách."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "David không cần thăm dò thêm vì đã có đầy đủ thông tin từ các đoạn hội thoại trước đó do Hannah probe."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "David cung cấp đúng mã giảm giá theo yêu cầu của khách hàng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David chủ động follow-up và cung cấp mã giảm giá mà khách đang chờ, giải quyết vấn đề chính."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có yêu cầu chuyển đổi case hoặc vấn đề phức tạp, nên David hoàn thành việc hỗ trợ trực tiếp."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để sử dụng tài liệu hoặc link trong tình huống này, David giải quyết trực tiếp bằng cách cung cấp mã."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để đề xuất tính năng hay plan khác, David tập trung giải quyết yêu cầu chính của khách."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc vì khách đã SEEN nhưng chưa reply tin nhắn cuối của David. David không cần xin review ở thời điểm này."
+        }
+      },
+      "overall_summary": "David đã hỗ trợ rất tốt khi chủ động cập nhật và cung cấp mã giảm giá cho khách hàng đúng với yêu cầu. Cách chào hỏi chuyên nghiệp, thông tin rõ ràng và chủ động follow-up là những điểm cộng lớn. Nhìn chung, đây là một chat xuất sắc, giải quyết vấn đề cho khách hiệu quả.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "session_id": "session_ee3bee68-636b-4ee9-ab4d-8d0b9be8f2eb",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "DECO",
+    "customer": "Ballers in God",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Jane]\n\nBallers in God: Hi\n\nBallers in God: It's displaying on wrong product and adding huge space of bottom of product\n\n  Wendy: Hello, it's Wendy from DECO\n\n  Wendy: May I confirm if you want to add badge to this product: \n      - 3 Pack Ballers In God Performance 'Cross' Socks White?\n\nBallers in God: Yes exactly\n\nBallers in God: But it's getting added to Single sock product instesd of package product\n\n  Wendy: Can you please send me that page LINK so I can check further?\n\nBallers in God: This is the product where the badge shows https://ballersingod.shop/products/ballers-in-god-performance-cross-socks-white\n\n  Tina: Hello, I’m Tina from DECO app\n\n  Tina: Thank you for your information\n\n  Tina: Let me inform our dev to check it for you\n\nBallers in God: I cannot keep the product active\n\n  Tina: > This is the product where the badge shows https://ballersingod.shop/products/ballers-in-god-performance-cross-socks-white\n      Could you give me the product link which the badge should be displayed?\n\nBallers in God: https://ballersingod.shop/products/3-pack-ballers-in-god-performance-cross-socks-white\n\n  Tina: Thank you\n\n  Tina: I will be back soon\n\nBallers in God: Thanks\n\n  Tina: My pleasure\n\nBallers in God: Any update?\n\n  Tina: Hi, our dev is working on it\n\n  Tina: But it is weekend from our side so could we come back a little late?\n\nBallers in God: OK but would be great if you can sort this out as soon as you guys can\n\nBallers in God: Thank you\n\nBallers in God: I am also going to remove the product from label as it shows the product broken on store\n\nBallers in God: [File: image.png - https://storage.crisp.chat/users/upload/session/-/3/1/2/d/312dc810334f2e00/image_lfh4c7.png]\n\n  Tina: Oki my friend\n\n  Tina: I will inform you when our dev finished fixing it\n\nBallers in God: ok\n\n  Tina: :$\n\n  Tina: Hi friend, are you still there?\n\n  Tina: Our dev finished fixing for your issues\n\n  Tina: You could please enable labels again and check it :$\n\nBallers in God: Hi\n\n  Jane: it's Jane from DECO team here\n\n  Jane: how can I help you?\n\nBallers in God: Hi Jane,\n      \n      In your fee plan, you offer 4 free label but I have only created 2 and it says limit reached\n\n  Jane: Oh let me explain :$\n\n  Jane: you can create upto 2 labels that displaying outside of product images, and upto 2 labels that displaying inside of product images\n\n  Jane: may I ask if it's clear to you?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Jane giới thiệu tên và thương hiệu đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đủ điểm. Không có lỗi ngữ pháp hay từ vựng gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Giải thích rõ ràng và dễ hiểu về hạn mức label."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Jane phản hồi trực tiếp câu hỏi của khách về số lượng label."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đủ điểm. Jane giữ giọng điệu chuyên nghiệp và thân thiện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đủ điểm. Khách không thể hiện sự bức xúc hay lo lắng, nên Jane không cần thể hiện sự đồng cảm đặc biệt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Jane thể hiện sự sẵn lòng giúp đỡ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Jane hỏi xem khách có cần giải thích thêm không sau khi giải thích, đây là một cách chủ động lắng nghe."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Jane cung cấp giải pháp chính xác bằng cách giải thích hạn mức của các loại label, giúp khách hàng hiểu rõ vấn đề."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Jane chủ động hỏi 'may I ask if it's clear to you?' để đảm bảo khách đã hiểu rõ, đây là một hành động pro-active tốt. Ngoài ra, việc Jane tiếp quản chat và hỗ trợ khách cũng rất pro-active."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đủ điểm. Vấn đề không cần chuyển giao cho bộ phận khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đủ điểm. Không có cơ hội rõ ràng để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Chưa có cơ hội để đi xa hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Chat chưa kết thúc."
+        }
+      },
+      "overall_summary": "Jane đã tiếp quản cuộc trò chuyện một cách suôn sẻ và giải thích rõ ràng vấn đề về hạn mức label mà khách hàng đang gặp phải. Cách giao tiếp của Jane rất chuyên nghiệp và chủ động, đảm bảo khách hàng hiểu rõ thông tin được cung cấp.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_0bbf234f-ad00-4fb2-b45c-9cb217077be9",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "DECO",
+    "customer": "Heidy Groot Fine Art",
+    "primary_operator": "Ivy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Ivy]\n\nHeidy Groot Fine Art: Hi DECO Team! I need help with the badge display problem.\n\n  Ivy: Hi there. It's Ivy from DECO app\n\n  Ivy: May I ask if the label doesn't display as expected?\n\nHeidy Groot Fine Art: yes, I cant see it on the overal product page inthe beginning, now I cant see it at all anymore\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/b/a/1/c/ba1c10af79589000/image_1h9adox.png]\n\n  Ivy: May I confirm that you are referring to this pre-order badge, please?\n\nHeidy Groot Fine Art: yes\n\n  Ivy: Thanks for confirming. Upon checking, it seems that the badge is currently deactivated\n\n  Ivy: Could you please activate it again and reload your site to double-check?\n\nHeidy Groot Fine Art: oke, I see active, I will look if there is some were else a button\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/b/a/1/c/ba1c10af79589000/image_g5p937.png]\n\n  Ivy: Ah you can click on three-dot icon and then active your label\n\n  Ivy: Please refer to my screenshot above for references~\n\nHeidy Groot Fine Art: oke, it is a bit solved, I can see it now thanks for that. I cant see it on de overal page with all product, only when I click on the product and go to that product page. is what I want mayno not a feature inde free plan?\n\n  Ivy: You're always welcome, dear <3   Thanks a lot for keeping me updated~\n\n  Ivy: Regarding the overal page, may I have the affected product URL, please?\n\nHeidy Groot Fine Art: https://heidygrootfineart.com/collections/all\n\n  Ivy: I got youu. Please let me forward this to our technical team for further investigation\n\n  Ivy: Please rest assured that I’ll keep an eye on this, and the moment I receive any updates from them, I’ll let you know right away~\n\nHeidy Groot Fine Art: oke thank you!\n\n  Ivy: You're always welcome, dear <3\n\n  Ivy: In the meantime, if possible, would you mind spending few moments to share how do you think about my support service (Ivy) so far? :$\n\n  Ivy: Just 10 secs to go and means the WORLD to me: https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal\n\nHeidy Groot Fine Art: I have done that!\n\n  Ivy: Awwww I can't ask more for it, thank you so so much!!!! <3  <3  :$\n\n  Ivy: Also, regarding the display on the collection page, I will monitor and update you as soon as possible~\n\n  Ivy: Just so you know, if you’re not online when I get back to you, my message will be sent to your email address. So you won’t miss a thing ^^\n\n  John: Hi there, this is John from DECO team :$  \r\n      \r\n      I'm writing to inform you that your label display issue has been fixed. Could you check on your product page, and let us know if it is working well on your end? \r\n      \r\n      If there is any issue, feel free to leave us a message, we're already more than ready to assist ;)  \r\n      \r\n      \r\n      \r\n      Regards, \r\n      John.\n\nHeidy Groot Fine Art: Hi John,\n      \n      Thank you, it is working great now!\n\n  Wendy: Woaa perfect!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Ivy chào khách với tên và thương hiệu đầy đủ ngay từ đầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngôn ngữ tự nhiên, dễ hiểu, không có lỗi ngữ pháp hay từ vựng gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Ivy giải thích rõ ràng, cung cấp ảnh minh họa và hướng dẫn từng bước khi cần thiết, giữ cho cuộc trò chuyện mạch lạc và dễ theo dõi."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Ivy lắng nghe và hiểu rõ vấn đề của khách hàng, xác nhận lại thông tin và trả lời đúng trọng tâm các câu hỏi về hiển thị huy hiệu."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Ivy duy trì giọng điệu thân thiện, tích cực và phản hồi kịp thời, không để khách phải chờ lâu. Sử dụng 'dear <3' tạo cảm giác gần gũi."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Ivy thể hiện sự quan tâm và động viên khách hàng, đặc biệt khi khách báo đã làm review 'Awwww I can't ask more for it, thank you so so much!!!! <3 <3 :$'. Khách không có dấu hiệu bức xúc nên mức độ đồng cảm phù hợp."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Ivy rất nhiệt tình trong việc hỗ trợ, từ việc hướng dẫn kích hoạt huy hiệu đến chuyển vấn đề phức tạp hơn cho đội kỹ thuật và theo dõi sát sao."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Ivy hỏi thêm URL sản phẩm bị ảnh hưởng để phục vụ cho việc điều tra, thể hiện sự chủ động trong việc thu thập thông tin để giải quyết vấn đề."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Ivy đã hướng dẫn khách kích hoạt lại huy hiệu thành công và chuyển vấn đề hiển thị trên trang tổng quan cho đội kỹ thuật. Vấn đề đã được giải quyết sau đó bởi John, cho thấy agent đã xử lý đúng hướng và hiệu quả."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Ivy chủ động theo dõi vấn đề sau khi chuyển cho đội kỹ thuật ('I’ll keep an eye on this'), và thông báo rằng sẽ cập nhật qua email nếu khách không online, đây là một hành động rất chủ động."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Ivy đã chuyển vấn đề hiển thị trên trang tổng thể cho đội kỹ thuật ('I got youu. Please let me forward this to our technical team for further investigation') và theo dõi chặt chẽ, đây là cách xử lý đúng đắn."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ tài liệu hoặc link, vì vấn đề ban đầu được giải quyết bằng hướng dẫn trực tiếp và vấn đề sau cần đến đội kỹ thuật."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để gợi ý tính năng hoặc gói khác."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Ivy đã chủ động mời khách để lại đánh giá và khách hàng đã thực hiện, cho thấy agent đã thành công trong việc xin review."
+        }
+      },
+      "overall_summary": "Ivy đã thể hiện một sự hỗ trợ xuất sắc. Từ việc chào hỏi, giao tiếp rõ ràng, lắng nghe tích cực, cho đến việc giải quyết vấn đề bằng cách hướng dẫn và chuyển giao phù hợp. Sự chủ động trong việc theo dõi và xin review cũng rất đáng khen. Không có lỗi đáng kể xuyên suốt cuộc trò chuyện.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_d6952052-8cbc-446c-a95c-1d203a2f8967",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "DECO",
+    "customer": "Aliin Skincare",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Wendy]\n\nAliin Skincare: Hi, I need a customized badge. Could you help me with it?\n\n  Hannah: Hi dear, this is Hannah from DECO team <3  \n      \n      Do you need help with a customized badge ?\n\nAliin Skincare: Hi Hannah, thanks for your support. The badge on the product page is supposed to be visible above the product title, but insteaad it shifts the whole product title to the right side.\n\n  Wendy: Hello, welcome back\n\n  Wendy: Oh I see\n\n  Wendy: Can you please let me know the page LINK so I can check further that badge display problem?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Wendy chào hỏi và giới thiệu đầy đủ, nhưng Hannah đã làm điều này trước đó và đã có tên của agent trước. Khách cũng phản hồi là 'Hi Hannah'. Sau đó Wendy chào 'Hello, welcome back' thì thiếu tên và brand. Mặc dù thông tin bổ sung có ghi là khách vào thẳng kỹ thuật vẫn được đủ điểm, nhưng trong trường hợp này, việc thiếu tên mình hoặc brand của mình sẽ dễ làm khách hàng nhầm lẫn hoặc không biết mình là ai khi giao tiếp. Tuy nhiên, do agent đã chào 'Hello' và 'welcome back' nên vẫn được 0.25 điểm."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gì gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng và đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe vấn đề của khách và nắm bắt được nội dung."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tone và pace phù hợp, không quá nhanh cũng không quá chậm."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đoạn chat chưa có cơ hội thể hiện sự đồng cảm, nhưng agent có vẻ thân thiện và sẵn sàng hỗ trợ."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent thể hiện sự nhiệt tình trong việc hỗ trợ bằng cách muốn kiểm tra lỗi ngay lập tức."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent chủ động hỏi link trang để kiểm tra vấn đề, đây là một bước probing tốt để thu thập thông tin cần thiết."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã bắt đầu đi đúng hướng để tìm giải pháp bằng cách yêu cầu thông tin chi tiết để kiểm tra."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động yêu cầu link để kiểm tra vấn đề, thể hiện sự chủ động trong việc hỗ trợ."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có dấu hiệu cần chuyển tiếp case trong đoạn chat này, nên đủ điểm."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội rõ ràng để sử dụng tài nguyên trong đoạn chat này, nên đủ điểm."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có cơ hội thể hiện extra mile trong đoạn hội thoại ngắn này, đủ điểm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đoạn chat còn rất ngắn và chưa kết thúc, nên chưa có cơ hội yêu cầu review. Đủ điểm."
+        }
+      },
+      "overall_summary": "Wendy đã thể hiện sự chủ động và nhiệt tình trong việc hỗ trợ khách hàng bằng cách yêu cầu cung cấp link để kiểm tra vấn đề. Giao tiếp rõ ràng và đi đúng hướng. Cần lưu ý việc giới thiệu tên và thương hiệu đầy đủ khi tiếp quản cuộc trò chuyện từ agent khác để tránh gây nhầm lẫn cho khách hàng.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

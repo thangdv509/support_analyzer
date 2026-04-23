@@ -1,0 +1,464 @@
+[
+  {
+    "session_id": "session_ce30affa-0e56-479f-a244-aea106168414",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "agent": "Hannah",
+    "app": "SearchPie",
+    "date": "Mar 2, 2026",
+    "rating": 10.0,
+    "deductions": {},
+    "label": "perfect_10",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Hannah]\n\n36ujt0-tx: Hi, is there anyone help me to optimize my SEO score?\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3\n\n  Hannah: Would you like me to check your SEO?\n\n  Hannah: I checked your SEO report and there are some issues with HTML tags\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/9/3/6/8/93689e689b95e000/image_ycif0i.png]\n\n  Hannah: The issues are related to heading tag code in your store. May I ask if you have in-house developer to fix it?\n\n",
+    "expected_output": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        }
+      },
+      "overall_summary": "Điểm 10.0/10. Chat đạt tiêu chuẩn tốt, không có lỗi đáng kể."
+    }
+  },
+  {
+    "session_id": "session_a06da564-5612-4505-94d9-290c5328c480",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "agent": "Jane",
+    "app": "SearchPie",
+    "date": "Mar 3, 2026",
+    "rating": 9.0,
+    "deductions": {
+      "solution": {
+        "got": 1.0,
+        "max": 3.0,
+        "lost": 2.0
+      }
+    },
+    "label": "solution_deducted",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Khách ĐÃ CHO REVIEW 5 sao) ---\n\n[Agent được chấm: Jane]\n\ncash-generator-uk: Can you help me check on my speed performance?\n\n  Jane: it's Jane from Search Pie team here\n\n  Jane: do you want me to check your speed now?\n\ncash-generator-uk: Yes please\n\n  Jane: sure please wait me a second to check :$\n\n",
+    "expected_output": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "solution": {
+          "score": 1.0,
+          "justification": "Agent hướng dẫn sai hoặc bỏ qua vấn đề chính của khách."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        }
+      },
+      "overall_summary": "Điểm 9.0/10. Trừ điểm: solution (1.0/3.0)."
+    }
+  },
+  {
+    "session_id": "session_2f885588-669f-4249-9dd7-b8974be68fdc",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "agent": "Tina",
+    "app": "SearchPie",
+    "date": "4/8/2026",
+    "rating": 8.5,
+    "deductions": {
+      "solution": {
+        "got": 0.0,
+        "max": 3.0,
+        "lost": 3.0
+      }
+    },
+    "label": "solution_zero",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Khách ĐÃ CHO REVIEW 5 sao) ---\n\n[Agent được chấm: Tina]\n\nsecurity-doctors: Activate AMP\n\n  Tina: Hello, I’m Tina here\n\n  Tina: May I ask if you want to activate amp?\n\nsecurity-doctors: Yes, please\n\n  Tina: Yeah\n\n  Tina: https://docs.searchpie.io/app-features/site-speed/accelerated-mobile-pages\n\n  Tina: Please refer this link to activate it :$\n\nsecurity-doctors: Hi, I want to grant access of my store to the app to add internal links\n\nsecurity-doctors: Yes\n\n",
+    "expected_output": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "solution": {
+          "score": 0.0,
+          "justification": "Agent hướng dẫn sai hoặc bỏ qua vấn đề chính của khách."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        }
+      },
+      "overall_summary": "Điểm 8.5/10. Trừ điểm: solution (0.0/3.0)."
+    }
+  },
+  {
+    "session_id": "session_a4aaa77b-8d33-4cb6-ac37-ead365477845",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "agent": "Felicie",
+    "app": "DECO",
+    "date": "Mar 4, 2026",
+    "rating": 9.0,
+    "deductions": {
+      "transferring": {
+        "got": 0.0,
+        "max": 2.0,
+        "lost": 2.0
+      }
+    },
+    "label": "transferring_zero",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Felicie]\n\nEthik Worldwide: Hello, I created a badge based on inventory. but the qty showing is not correct, and is also not showing up consistently on our site. some products show properly, and some do not\n\n  Felicie: Hi, it's Felicie from the DECO team!\n\n  Felicie: Ah, may I ask you for the URL of a product that you're seeing the problem?\n\n  Felicie: So that I can help check it for you!\n\nEthik Worldwide: [File: Screenshot 2026-03-03 at 1.07.04 PM.png - https://storage.crisp.chat/users/upload/session/-/8/a/5/7/8a57a341757c080/screenshot-2026-03-03-at-10704_1froawy.png]\n\nEthik Worldwide: [File: Screenshot 2026-03-03 at 1.07.11 PM.png - https://storage.crisp.chat/users/upload/session/-/8/a/5/7/8a57a341757c080/screenshot-2026-03-03-at-10711_1bflg5o.png]\n\nEthik Worldwide: [File: Screenshot 2026-03-03 at 1.07.20 PM.png - https://storage.crisp.chat/users/upload/session/-/8/a/5/7/8a57a341757c080/screenshot-2026-03-03-at-10720_1vngqfg.png]\n\nEthik Worldwide: [File: Screenshot 2026-03-03 at 1.07.45 PM.png - https://storage.crisp.chat/users/upload/session/-/8/a/5/7/8a57a341757c080/screenshot-2026-03-03-at-10745_22fmbe.png]\n\n  Felicie: Thank you for the information!\n\n  Felicie: I have checked and seen that the badge should display here on the top left right?\n\n  Felicie: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/a/5/7/8a57a341757c080/image_swgy7g.png]\n\nEthik Worldwide: yes\n\nEthik Worldwide: and should say 25 left\n\n  Felicie: Ah sure, let me inform our dev team about your case!\n\n  Felicie: So that they can help fix it for you!\n\nEthik Worldwide: ok\n\n  Felicie: I have informed our technical team about your case!\n\n  Felicie: However, it's night time from our side, so it may takes several hours before our team can help you with your case!\n\n  Felicie: May I ask if it's fine for you?\n\n  Felicie: Hi, may I ask if you're still there?\n\n  Felicie: I'd like to update some news!\n\nEthik Worldwide: ok, no problem\n\n  Felicie: Ah, I saw that you haven't enabled our app embed!\n\n  Felicie: Please get in your theme and enable our app, so that our dev team can help fix the issue for you!\n\nEthik Worldwide: ok\n\nEthik Worldwide: its enabled now but i deactivated the badge for now. i dont want it to show up online until fixed\n\n  Felicie: Ah I understand that!\n\n  Felicie: If so, could you give our app access to your store?\n\n  Felicie: So that when our dev team done fixing the issue, we can help activate it back on to check for the result!\n\n  Felicie: I have just sent a request to your store!\n\n  Felicie: And now, could you please go to Shopify settings > Users & permissions > Accept our request (PIELAB)\n\nEthik Worldwide: i can't do that, sorry. i can reactivate it when needed\n\n  Felicie: Ah I understand that!\n\n  Felicie: If so, when our team is done fixing the issue, we will notice you via mail to let you know!\n\nEthik Worldwide: you can message me here, i can leave the chat wondow open\n\nEthik Worldwide: window*\n\n  Felicie: Ah no worries about that, we will send message to you through this chat!\n\n  Felicie: If you go offline it will go straight to your mail!\n\n  Felicie: However, it's night time from our side, so it may takes several hours before our team can help you with your case!\n\n  Felicie: May I ask if it's fine for you?\n\nEthik Worldwide: oh okay. no problem\n\n  Felicie: Ah that's great to hear it!\n\n  Felicie: By the way, may I ask how would you rate my support today (FELICIE) on a scale 1-5? It would mean a lot to me!\n\nEthik Worldwide: 5\n\n  Felicie: Oh really!!!\n\n  Felicie: Thank you so much mate!\n\n  Felicie: In the meantime, would you mind taking a few seconds to leave a short review about my support (Felicie) today on Shopify App Store? \n      \n      Just 30s to go: [https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal](https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal)\n\n  Felicie: It would be the WORLD to me and our team if you can spend time leaving a short review about today chat <3\n\n",
+    "expected_output": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "transferring": {
+          "score": 0.0,
+          "justification": "Vấn đề cần dev/kỹ thuật nhưng không chuyển case hoặc không xác nhận với team."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        }
+      },
+      "overall_summary": "Điểm 9.0/10. Trừ điểm: transferring (0.0/2.0)."
+    }
+  },
+  {
+    "session_id": "session_b9cdbd6d-6a65-47cc-ae76-c1f3f42b0699",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "agent": "Tina",
+    "app": "DECO",
+    "date": "Mar 2, 2026",
+    "rating": 9.75,
+    "deductions": {
+      "review_asking": {
+        "got": 1.0,
+        "max": 1.5,
+        "lost": 0.5
+      }
+    },
+    "label": "review_only",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Tina]\n\nCMY: huh i didnt even want that why is it charging me the full amount in 1 go\n\nCMY: isnt it supposed to be monthly 15 dollars\n\n  Tina: Hello, I’m Tina from DECO here\n\n  Tina: We have checked and seen that you are in annual Growth plan\n\n  Tina: [File: IMG_0329.jpg - https://storage.crisp.chat/users/upload/operator/-/1/9/6/8/19688061402be100/177238087587700_10a66ii.jpg]\n\n  Tina: That’s why it can’t be 15 dollars x)\n\n",
+    "expected_output": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "review_asking": {
+          "score": 1.0,
+          "justification": "Khách khen ngợi nhiệt tình rõ ràng nhưng support bỏ qua không xin review."
+        }
+      },
+      "overall_summary": "Điểm 9.75/10. Trừ điểm: review_asking (1.0/1.5)."
+    }
+  },
+  {
+    "session_id": "session_490d0a4b-9777-4163-b8b3-df698c0af2a1",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "agent": "Felicie",
+    "app": "SearchPie",
+    "date": "Mar 3, 2026",
+    "rating": 9.5,
+    "deductions": {
+      "communication": {
+        "got": 1.0,
+        "max": 2.0,
+        "lost": 1.0
+      }
+    },
+    "label": "communication_deducted",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Felicie]\n\npdvhit-hc: Hi, is there anyone help me to optimize my SEO score?\n\npdvhit-hc: Fix now\n\npdvhit-hc: yes\n\npdvhit-hc: i want to speed up my page the page loading speed is very slow and your plan is too much expensive also suggest be better plan that you help me to fix broken code and also speed up my website for loading\n\n  Felicie: Hi, it's Felicie from SearchPie team.\n\n  Felicie: I totally understand your concern.\n\n  Felicie: I’m sorry, but **speed optimization is a more complex area that needs to be handled by our expert team**, so this service is only available in our **paid plans**.\n\n  Felicie: At the moment, we can still help by **checking your SEO report and fixing HTML/meta tag issues found there**, which can also help **improve both your SEO score and part of the performance score**.\n\n  Felicie: Would you like me to help check your SEO report?\n\npdvhit-hc: yes and what is the paid plan amount\n\n  Felicie: Ah actually the paid plan I'm talking about is still the package that Wendy has informed you lately!!!\n\n  Felicie: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/9/5/6/b/956b57bd1ae4a000/image_57rq2x.png]\n\n  Felicie: It's our Service package!\n\n  Felicie: As I'm checking here, there are some issues with meta tags and HTML tags in your store right now!\n\n  Felicie: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/9/5/6/b/956b57bd1ae4a000/image_13autog.png]\n\n  Felicie: Normally, only our Enterprise plan users can ask our dev team to help fix those problems!\n\n  Felicie: HOWEVER\n\n  Felicie: As you are a new member to our app, I would like to offer you a FREE fix for the first time!\n\n  Felicie: May I ask if you would like it?\n\npdvhit-hc: yes\n\n  Felicie: Ah that's so great!\n\n  Felicie: I have passed your case to our dev team!\n\npdvhit-hc: ok\n\n  Felicie: So that they can help fix those issues for you!\n\n  Felicie: However we will need access to your store to help fix it!\n\n  Felicie: May I ask if it's fine for you?\n\npdvhit-hc: yes\n\n  Felicie: I have just sent a request to your store!\n\n  Felicie: And now, could you please go to Shopify settings > Users & permissions > Accept our request (PIELAB)\n\n  Felicie: Please inform me when you are done giving us access!!\n\npdvhit-hc: Done\n\n  Felicie: Ah I saw it!!\n\n  Felicie: Thank you very much!\n\n  Felicie: I have passed your case to our dev team!\n\n  Felicie: However, it's night time from our side, so it may takes several hours before our team can help you with your case!\n\n  Felicie: May I ask if it's fine for you?\n\npdvhit-hc: ok\n\n  Felicie: Ah that's great!\n\n  Felicie: In the meantime, could you please go to On-page & Content -> Bulk meta tags -> Choose the pages -> Choose the template you would like to bulk the title and description for those pages?\n\n  Felicie: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/9/5/6/b/956b57bd1ae4a000/image_1escpze.png]\n\n  Felicie: This feature helps bulk meta title and description for the pages in your store!\n\n  Felicie: When you have done it our team can help fix the meta tags issues for you more easily!\n\npdvhit-hc: Done\n\n  Felicie: Perfect!!!\n\n  Felicie: Thank you so much!\n\n  Felicie: Please take a short break for now, when our team is done fixing the issue we will send you an email to inform the result to you right away!\n\npdvhit-hc: ok\n\n  Felicie: In the meantime, would you mind sharing your thoughts on my support (FELICIE) by leaving me a review on Shopify App Store?\n      Just 30s to go: [https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal](https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal) \n      \n      It would be THE WORLD to me & my whole team, big thanks 🙏\n\n  Felicie: Could you please spend just 10 seconds to leave me a short review about my support today dear?\n\n  Felicie: It would means a lot to me and our team to receive your words!\n\npdvhit-hc: Later now i am doing work\n\n  Felicie: Ah I totally understand that!!!\n\n  Felicie: Please take your time to optimize your store!\n\n  Felicie: If so, can you let me know when you are done with your review, since I cannot see it, thank you very much dear <3\n\n",
+    "expected_output": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "communication": {
+          "score": 1.0,
+          "justification": "Câu trả lời không rõ ràng, lan man hoặc gây confused cho khách."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đáp ứng tốt tiêu chí này."
+        }
+      },
+      "overall_summary": "Điểm 9.5/10. Trừ điểm: communication (1.0/2.0)."
+    }
+  }
+]

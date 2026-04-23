@@ -1,0 +1,221 @@
+[
+  {
+    "session_id": "session_a35a2629-6013-4914-9dba-19242a48f9ff",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-15",
+    "app": "SearchPie",
+    "customer": "e8k5ex-0v",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\n[Agent được chấm: Jane. Nếu có nhiều agent trong chat, chỉ chấm phần của Jane, bỏ qua lỗi của agent khác.]\n\ne8k5ex-0v: Hi\n\n  Jane: it's Jane from Search Pie here\n\n  Jane: how can I help you?\n\ne8k5ex-0v: I have added the block but still shows this message\n\ne8k5ex-0v: [File: Screenshot 2026-03-15 103313.png - https://storage.crisp.chat/users/upload/session/-/3/6/c/f/36cf895444681e00/screenshot-2026-03-15-103313_1n9uzhu.png]\n\ne8k5ex-0v: [File: Screenshot 2026-03-15 103313.png - https://storage.crisp.chat/users/upload/session/-/3/6/c/f/36cf895444681e00/screenshot-2026-03-15-103313_1n9uzhu.png]\n\n  Jane: I see, can you try to refresh the page and check again?\n\n  Jane: maybe it's cache issue\n\ne8k5ex-0v: Got it, but just a quick question\n\ne8k5ex-0v: How does this block helps ?\n\ne8k5ex-0v: is it advisable for stronger seo?\n\ne8k5ex-0v: or just an added feature\n\n  Jane: The \"Text below item list\" on a collection page refers to keyword-rich content displayed below the list of items.\n\n  Jane: This content enhances SEO rankings and optimizes the page's data structure\n\ne8k5ex-0v: Ok\n\n  Jane: you can check more info here https://searchpie.io/why-you-should-include-text-below-your-collection-page/\n\n  Jane: :$\n\ne8k5ex-0v: [File: Screenshot 2026-03-15 104043.png - https://storage.crisp.chat/users/upload/session/-/3/6/c/f/36cf895444681e00/screenshot-2026-03-15-104043_8a89aq.png]\n\ne8k5ex-0v: can you help me with paragph alignment on top discription as its alighned to left and not filling the entire width of screen\n\ne8k5ex-0v: whereas at bottom block its proper\n\ne8k5ex-0v: [File: Screenshot 2026-03-15 104220.png - https://storage.crisp.chat/users/upload/session/-/3/6/c/f/36cf895444681e00/screenshot-2026-03-15-104220_1uhumlc.png]\n\n  Jane: I see, let me notify our technician to check it\n\ne8k5ex-0v: how to rectify the top collection page discription\n\n  Jane: I already notified our technician to check it for you\n\ne8k5ex-0v: appreciate\n\n  Jane: we'll get back to advise once done or have more information, no worry :$\n\ne8k5ex-0v: ok\n\n  Jane: :$\n\ne8k5ex-0v: Can we have a similar The \"Text below item list\" on a product page refers to keyword-rich content displayed below the list of items.\n\n  Jane: currently, this feature is for collection page SEO optimization, hope you can understand it\n\n  Jane: I'll double check with our team for your suggestion and we'll get back to advise when we have more info\n\ne8k5ex-0v: ok\n\n  Jane: :$\n\n  John: Hi there, I'm John from SearchPie\nThank you for bringing this to our attention.\nTo make sure our technician can fix the issue exactly as you expect, could you please help clarify a bit more about the top collection page description?\nAt the moment, we understand that the paragraph at the top appears aligned to the left and does not fill the full width of the screen, while the bottom block looks correct. Could you please confirm how you would like the top description to appear?\nFor example:\n* Should the text span the full width of the page?\n* Should it be centered like the bottom block?\n* Or should it match the exact layout and width of the bottom description section?\nIf possible, a screenshot showing the expected layout would also be very helpful for our technician.\nOnce we have this information, we will proceed with the adjustment right away.\nLooking forward to your reply.\nBest regards.\nJohn\n\ne8k5ex-0v: should match the exact layout and width of the bottom description section.\n\nAroon Sharma\nwww.prokare.in\nSuit No 500, Ward 7\nSector 29, Noida\nUP 201301\n\n  Tina: Hi friend, I’m Tina here. \n\nThank you for your response. We will be back as soon as possible?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Jane chào có tên và brand. 'it's Jane from Search Pie here'"
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Clear and concise."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Không bỏ sót ý của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự đồng cảm phù hợp."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Enthusiastic."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Support thu thập đủ thông tin từ khách hàng."
+        },
+        "solution": {
+          "score": 2.0,
+          "justification": "Jane đã báo lại team kỹ thuật về vấn đề của khách, tuy nhiên không giải thích hướng dẫn khách tự xử lý được vấn đề."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để proactive hơn."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Support đã chuyển case cho team kỹ thuật."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Support đã gửi link hướng dẫn."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để extra mile."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 5 sao."
+        }
+      },
+      "overall_summary": "Jane hỗ trợ khách nhiệt tình, tuy nhiên cần hướng dẫn khách xử lý vấn đề trước khi chuyển cho team kỹ thuật.",
+      "total_score_20": 19.0,
+      "final_score_10": 9.5
+    }
+  },
+  {
+    "session_id": "session_b35ae980-00b4-4825-afdc-355ba942689e",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-15",
+    "app": "DECO",
+    "customer": "Perfume-Drops",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Jane. Nếu có nhiều agent trong chat, chỉ chấm phần của Jane, bỏ qua lỗi của agent khác.]\n\nPerfume-Drops: I DONT SEE IT ON THE WEBBSITE\n\n  Jane: it's Jane from DECO team here\n\n  Jane: no worry let me check the issue for you\n\n  Jane: I see that the label shows on search page but no on product page\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/f/4/d/b/f4db5bfd933b3000/image_1l9p2c.png]\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/f/4/d/b/f4db5bfd933b3000/image_6avcb.png]\n\n  Jane: no worry let me notify our team to check it for you\n\n  Jane: We'll get back & let you know when it's done :$\n\nPerfume-Drops: OKEJ\n\n  Jane: if you're offline by that time, email will be sent to perfumedrops.info@gmail.com\n\n  Jane: while waiting, may I ask you a quick favor?\n\n  Jane: may I ask how would you rate my support today (Jane) from 1 to 5?\n\n  Jane: We’d love to know for a better assistance ^^\n\nPerfume-Drops: 5\n\nPerfume-Drops: but my problem isnt solved\n\n  Jane: omg a 5 for me, such an honor\n\n  Jane: no worry I already notified our technician to check and fix it\n\n  Jane: We'll get back & let you know when it's done :$   probably within few hours as it's weekend at our end now\n\n  Jane: hope you can understand it\n\n  John: Hi there\n\n  John: May I ask If you;re still there\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent chào có cả tên người và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nghiêm trọng."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent diễn đạt rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent hiểu và phản hồi đúng trọng tâm vấn đề khách hàng đưa ra."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent giữ nhịp độ trò chuyện tốt, lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Agent không cần thể hiện sự đồng cảm vì khách hàng không có dấu hiệu bực bội."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent không cần khai thác thêm vì vấn đề của khách hàng đã rõ ràng."
+        },
+        "solution": {
+          "score": 2.0,
+          "justification": "Agent nhận biết vấn đề và thông báo chuyển cho team kỹ thuật xử lý. Tuy nhiên, việc đưa ra ước tính thời gian 'probably within few hours' khi chưa chắc chắn có thể khiến khách hàng thất vọng nếu vấn đề không được giải quyết trong khoảng thời gian đó. Nên tránh ước tính cụ thể khi chưa có thông tin chắc chắn."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent không bỏ lỡ cơ hội chủ động giúp đỡ khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent đã chuyển case cho team kỹ thuật."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội sử dụng resource."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để tạo extra mile."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent đã xin review và khách đã cho."
+        }
+      },
+      "overall_summary": "Agent hỗ trợ nhiệt tình, đầy đủ các tiêu chí. Tuy nhiên, nên cẩn trọng hơn với ước tính thời gian xử lý để tránh gây thất vọng cho khách hàng.",
+      "total_score_20": 19.0,
+      "final_score_10": 9.5
+    }
+  },
+  {
+    "session_id": "session_905bc546-1094-4dd8-a171-c0e4c48ce5c0",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-15",
+    "app": "DECO",
+    "customer": "Trophies Plus",
+    "primary_operator": "Ivy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Ivy. Nếu có nhiều agent trong chat, chỉ chấm phần của Ivy, bỏ qua lỗi của agent khác.]\n\nTrophies Plus: I just upgraded to GROWTH 🎉 Could you help me get the most out of this plan?\n\n  Ivy: Hi there. It's Ivy from DECO app\n\n  Ivy: Glad to see you upgrade to GROWTH Plan, please let us know if you need our help~\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Có tên 'Ivy' và tên brand 'DECO app'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu 'Glad to see you upgrade to GROWTH Plan, please let us know if you need our help~' diễn đạt rõ ràng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Nghe hiểu và phản hồi câu hỏi của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự đồng cảm với khách hàng."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Phản hồi nhiệt tình với khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing thêm vì câu hỏi của khách khá rõ ràng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Khách hàng mới chỉ hỏi, chưa cần đưa ra solution."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chưa có cơ hội để proactive hơn, vì khách chưa phản hồi."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không cần sử dụng resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để gợi ý thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc."
+        }
+      },
+      "overall_summary": "Ivy chào hỏi lịch sự, phản hồi nhanh chóng và nhiệt tình, tuy nhiên chat chưa kết thúc.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

@@ -1,0 +1,1462 @@
+[
+  {
+    "session_id": "session_16fc1a4f-995c-4633-b31e-1e95bd1513ce",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "Nordisk Family",
+    "primary_operator": "Hana",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Hana]\n\nNordisk Family: Hi DECO Team! I need help with the badge display problem.\n\n  Hana: Hi there, it's Hana from DECO\n\n  Hana: Thank you for reaching out to us :$\n\n  Hana: Could you please share the link to the product page where the badge isn't showing? That way, I can check it right away and help you fix it! 😊\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có đủ tên agent và thương hiệu, rất tốt."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Truyền đạt thông tin rõ ràng, đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe và hiểu đúng vấn đề của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn thân thiện, chuyên nghiệp, sử dụng emoji phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách chưa bày tỏ sự bức xúc nên chưa cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent thể hiện sự nhiệt tình và sẵn sàng hỗ trợ ngay."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã chủ động hỏi thông tin cần thiết (link sản phẩm) để kiểm tra vấn đề. Đây là một bước probing tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Chat mới bắt đầu và đang trong quá trình thu thập thông tin, chưa đến bước cung cấp giải pháp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Vấn đề đang được xử lý, chưa có cơ hội để agent thể hiện thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chưa xác định được vấn đề có cần chuyển giao hay không."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội rõ ràng để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chat còn quá ngắn, chưa có cơ hội."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc, chưa thích hợp để xin đánh giá."
+        }
+      },
+      "overall_summary": "Điểm 10.0/10. Agent đã có một màn chào hỏi và bắt đầu xử lý vấn đề rất tốt. Giao tiếp thân thiện, chuyên nghiệp và đi thẳng vào việc hỏi thông tin cần thiết để kiểm tra.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_2067c2a4-b704-4f1c-b952-a87f3040d2f4",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "Decollective",
+    "primary_operator": "Hana",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Hana]\n\nDecollective: Hi DECO Team! I need help with the badge display problem.\n\n  Hana: Hi there, it's Hana from DECO\n\n  Hana: Thank you for reaching out to us :$\n\n  Hana: Could you please share with me the link to the product page where the badge isn't showing up? That way, I can check it right away and help you fix it smoothly <3\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi và giới thiệu brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp, từ vựng chuẩn, không có lỗi."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Giao tiếp rõ ràng, đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe và hiểu đúng vấn đề của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi nhanh, giọng chat thân thiện và chuyên nghiệp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Chat mới bắt đầu, chưa có cơ hội thể hiện sự đồng cảm, nhưng giọng điệu đã đủ quan tâm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Thái độ tích cực, sẵn sàng hỗ trợ."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đặt câu hỏi đúng trọng tâm và cần thiết ngay từ đầu để bắt đầu kiểm tra vấn đề."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Vẫn đang trong quá trình xử lý, nhưng các bước agent thực hiện ban đầu là hoàn toàn chính xác. Khách chưa phản hồi nên chưa có giải pháp cuối cùng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chưa có cơ hội để thể hiện vì mới bắt đầu chat."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chưa đến bước cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có cơ hội."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc, chưa đến lúc hỏi review."
+        }
+      },
+      "overall_summary": "Điểm 20/20. Màn chào hỏi và bắt đầu xử lý vấn đề rất tốt. Agent chuyên nghiệp, thân thiện và đi thẳng vào câu hỏi cần thiết để kiểm tra lỗi. Không có điểm nào cần cải thiện ở giai đoạn này.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_890af14d-aad3-49b4-b127-f43a2ba8a4a8",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "Salana",
+    "primary_operator": "Hana",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Hana]\n\nSalana: Hi, I need a customized badge. Could you help me with it?\n\n  Hana: Hi there, it's Hana from DECO\n\n  Hana: Thank you for reaching out to us :$\n\n  Hana: Of course, I’d be happy to help you with your customized badge! Could you please share a bit more about your idea?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi và giới thiệu brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu trả lời rõ ràng, đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe tốt, xác nhận lại đúng yêu cầu của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tonalité rất ổn, thân thiện và nhiệt tình."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Tình huống chưa cần thể hiện sự đồng cảm, agent giữ được thái độ tích cực là đủ."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Rất nhiệt tình và thể hiện rõ mong muốn hỗ trợ qua câu nói 'Of course, I’d be happy to help you'."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Probing rất tốt, đã đặt câu hỏi để làm rõ yêu cầu còn đang mơ hồ của khách."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Chat mới bắt đầu, agent đang đi đúng hướng để tìm giải pháp. Không có lỗi."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chưa có cơ hội để thể hiện vì chat mới bắt đầu."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chưa đến bước cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Chưa có cơ hội rõ ràng để gửi tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có cơ hội để thể hiện."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc, không có lỗi."
+        }
+      },
+      "overall_summary": "Chat ngắn nhưng xử lý hoàn hảo. Agent chào hỏi, thể hiện sự nhiệt tình và đặt câu hỏi để làm rõ vấn đề ngay từ đầu. Không có điểm nào cần cải thiện.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_19725156-53eb-49d6-bf69-2c644e96576a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "SearchPie",
+    "customer": "eco-led-mart",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Jane]\n\neco-led-mart: Hey, can you guide me how to create a Google Business Profile?\n\neco-led-mart: google business and reviews are not connecting properly]\n\neco-led-mart: we have both created already\n\n  Jane: it's Jane from Search Pie team here\n\n  Jane: can you drop me the screenshot if the notification for me to check?\n\neco-led-mart: Sign in with Google\n      No Business Profile found. \n       to know how to create one for your store.\n\n  Jane: oh I see, may I confirm that the email you use to register the GBP is same with the one you use for shopify store?\n\neco-led-mart: yes\n\n  Jane: as per checking with my team, this message usually means that no business profile is linked to your Google account yet.\n\n  Jane: It may happen if:\n      * You’re signing in with a different Google email than the one you registered with\n      * Your account hasn’t completed the store/profile setup\n      * You previously signed up with email & password instead of Google\n\n  Jane: Please try again and:\n      * Making sure you’re using the correct Google account\n      * Completing your business/store profile after signing in\n\neco-led-mart: i am using the correct login\n\n  Jane: since it's related credential so you should check again on the email you used and the set up\n\n  Jane: im checking with my team more and we'll get back to advise you if we have news\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent chào và giới thiệu brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp ổn, có vài lỗi nhỏ nhưng không ảnh hưởng đến nội dung hay gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giải thích các nguyên nhân tiềm tàng một cách rõ ràng và có cấu trúc, giúp khách dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent đọc và hiểu đúng vấn đề của khách, không bỏ sót thông tin."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ và giọng điệu chuyên nghiệp, phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Cuộc trò chuyện thuần về kỹ thuật, không yêu cầu thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent thể hiện sự nhiệt tình qua việc chủ động kiểm tra vấn đề với team."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Làm rất tốt việc đặt câu hỏi để chẩn đoán vấn đề, như hỏi về screenshot và xác nhận email sử dụng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hướng xử lý chính xác. Các nguyên nhân agent đưa ra là những lý do phổ biến nhất cho lỗi này. Việc đề nghị khách kiểm tra lại thông tin đăng nhập là bước đi đúng đắn."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Vấn đề đang trong quá trình xử lý, agent đã chủ động báo sẽ kiểm tra thêm với team."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent đã đề cập đến việc kiểm tra với team ('as per checking with my team', 'im checking with my team more'), đây là hành động phù hợp."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Vấn đề liên quan đến thông tin đăng nhập cá nhân của khách, việc giải thích trực tiếp là phù hợp, không có cơ hội rõ ràng để gửi tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Vấn đề chính chưa được giải quyết, chưa có cơ hội để đi thêm bước xa hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc vì khách chưa trả lời tin nhắn cuối, vì vậy không có yêu cầu phải xin review."
+        }
+      },
+      "overall_summary": "Điểm 10/10. Một cuộc trò chuyện xử lý rất tốt. Agent đã nhanh chóng xác định vấn đề, đưa ra các bước khắc phục tiêu chuẩn và chính xác, đồng thời chủ động liên hệ với team để hỗ trợ thêm khi khách hàng vẫn gặp khó khăn. Giao tiếp rõ ràng và chuyên nghiệp.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_d6e0bdd3-8131-447e-a825-bb9d219f0c9a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "Unknown Site",
+    "customer": "nqpfiz-tg",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Jane]\n\n  Jane: the Enterprise Monthly Plan includes a full set of features to help boost your SEO performance, such as AI tools, automation features, image compression, schema, and snippets, etc\n\n  Jane: Regarding Google Merchant Center/ Google Search Console, these issues can be quite complex. Google’s requirements are strict, and resolving them often requires significant time and effort. Because of that, these types of issues are typically handled under our Customized Plans and are not included in the standard Enterprise Plan.\n\n  Jane: you can consider sign up for the Plus plan, our team will evaluate and come up with a package for you\n\n  Jane: [__https://docs.google.com/forms/d/e/1FAIpQLScuAdaITlLfO3F7v0YfJKej0oAkEDQFlOg5g3F9riJjURjEbw/viewform__](https://docs.google.com/forms/d/e/1FAIpQLScuAdaITlLfO3F7v0YfJKej0oAkEDQFlOg5g3F9riJjURjEbw/viewform)\n\nnqpfiz-tg: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/4/d/8/7/4d873b5818c86c00/image_16glr1x.png]\n\nnqpfiz-tg: What is this offer? This is a monthly price? Lifetime?\n\n  Jane: it's the Summer combo, it will include the Google Search console package and free 30 days of Enterprise plan\n\n  Jane: it's one time package and the Google Search Console will have 6 month warranty\n\nnqpfiz-tg: Okay, this is more or less the service we'd be interested in. Where can I find out exactly what the terms of this offer are for Google Search Console? The offer is for 30 days, but if we identify our issues with GSC in advance and determine what and how to fix them, how much time do you have to fix these errors? Within those 30 days, you typically fix errors with GSC, its configuration, unindexed pages, etc.?\n\n  Jane: let me explain again\n\n  Jane: the Summer combo is the Google Search Console package and free 30 days of Enterprise plan\n\n  Jane: for the 30 days free using Enterprise plan, it will be counted from the date you sign up for the combo\n\n  Jane: for the Google Search Console package, once our team evaluate and done fixing the issue (normally will take around a week), then the 6 months warranty will be activated\n\n  Jane: may I ask if it's clear now? :$\n\nnqpfiz-tg: Okay, that's clear – I was referring to how long it takes, approximately, to fix bugs or make corrections in GSC after purchasing the package. To summarize, these should be completed within a month.\n\nnqpfiz-tg: Thank you for your answers and explanations, now we are testing your tool further ;)\n\n  Jane: sure feel free to explore the app, let me know if you have questions or issues :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chat bắt đầu giữa cuộc hội thoại nên không có lời chào, điều này hoàn toàn bình thường."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng sử dụng tốt, không có lỗi gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Lời giải thích ban đầu về gói 'Summer combo' chưa thật sự rõ ràng, khiến khách phải hỏi lại để làm rõ về thời gian sửa lỗi. Agent đã giải thích lại tốt hơn ở lần thứ hai, nhưng có thể làm tốt hơn ngay từ đầu để tiết kiệm thời gian cho khách. Ví dụ, nên trả lời trực tiếp về timeline sửa lỗi GSC ngay khi khách hỏi."
+        },
+        "listening": {
+          "score": 1.25,
+          "justification": "Agent đã bỏ lỡ câu hỏi cụ thể của khách về khung thời gian sửa lỗi GSC trong lần trả lời đầu tiên: '...how much time do you have to fix these errors? Within those 30 days...?'. Phải đến khi khách hỏi lại, agent mới làm rõ điểm này. Đây là một lỗi nhỏ về việc lắng nghe chi tiết câu hỏi của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi và giọng văn chuyên nghiệp, thân thiện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Cuộc trò chuyện mang tính chất hỏi đáp thông tin, không yêu cầu thể hiện sự đồng cảm đặc biệt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent sẵn lòng giải thích và mời khách đặt thêm câu hỏi, thể hiện thái độ hỗ trợ tích cực."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Khách hàng đã đưa ra câu hỏi rất cụ thể, không cần agent phải hỏi thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã cung cấp thông tin chính xác và rõ ràng về các gói dịch vụ và ưu đãi."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Kết thúc cuộc trò chuyện, agent đã chủ động mời khách tiếp tục khám phá ứng dụng và liên hệ nếu cần hỗ trợ, đây là một hành động tốt."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề không yêu cầu chuyển cho bộ phận khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ thêm tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Agent đã làm tốt vai trò giải đáp thắc mắc cho khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc vì khách mới chỉ seen tin nhắn, agent chưa có cơ hội hỏi xin review."
+        }
+      },
+      "overall_summary": "Điểm 9.5/10. Agent xử lý tốt các câu hỏi của khách về plan, giao tiếp thân thiện. Cần cải thiện một chút ở việc lắng nghe và trả lời đầy đủ tất cả các ý trong câu hỏi của khách ngay từ lần đầu để tránh việc khách phải hỏi lại.",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_4a73c19e-742a-4672-b01b-ef98a28223cf",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "Saf Nutrition",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Jane]\n\nSaf Nutrition: Hi DECO Team! I need help with the badge display problem.\n\n  Jane: it's Jane from DECO team here\n\n  Jane: sure we can help you check the displaying issue\n\n  Jane: could you please me page link that the label is not shown?\n\nSaf Nutrition: I cant see on the website\n\nSaf Nutrition: https://safnutrition.co/collections/all\n\n  Jane: [File: DECO chua bat app embed.jpg - https://storage.crisp.chat/users/upload-1/session/-/1/a/e/b/1aebb017f63b6e00/deco-chua-bat-app-embed_nerr0y.jpg]\n\n  Jane: I see that the app embed hasnt enabled, please enable it first\n\nSaf Nutrition: I did\n\nSaf Nutrition: stilll there is problem\n\nSaf Nutrition: https://safnutrition.co/collections/all\n\n  Jane: alright I see that the app embed is activated already\n\nSaf Nutrition: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/1/a/e/b/1aebb017f63b6e00/image_1fa0jcs.png]\n\nSaf Nutrition: how can I edit the price\n\n  Jane: it's showing at my end\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/1/a/e/b/1aebb017f63b6e00/image_dnd9yh.png]\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/1/a/e/b/1aebb017f63b6e00/image_1wxg3k5.png]\n\n  Jane: ah you mean set up the discount price, right?\n\nSaf Nutrition: yess\n\n  Jane: you can set up the compared at price in shopify admin\n\n  Jane: **Steps to Set Up Compare at Price:**\n      * **Access Product:** Go to your Shopify Admin > **Products**.\n      * **Select Product:** Click the product you want to put on sale.\n      * **Edit Prices:** In the **Pricing** section:\n          * **Price:** Enter the new, lower sale price.\n          * **Compare at price:** Enter the original, higher price.\n      * **Save:** Click **Save**\n\nSaf Nutrition: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/1/a/e/b/1aebb017f63b6e00/image_10er7nd.png]\n\nSaf Nutrition: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/1/a/e/b/1aebb017f63b6e00/image_hsqxmf.png]\n\n  Jane: please make sure that you click Save button\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có đủ tên agent và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp ổn, có lỗi typo nhỏ (\"please me page link\") nhưng không ảnh hưởng đến ý nghĩa."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Hướng dẫn rất rõ ràng, dùng cả hình ảnh và các bước cụ thể để khách dễ theo dõi, đặc biệt khi giải thích cách cài đặt giá."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe và xử lý tốt cả hai vấn đề khách nêu ra: ban đầu là badge không hiển thị, sau đó là cách chỉnh sửa giá."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn chuyên nghiệp, tốc độ phản hồi nhanh."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Cuộc trò chuyện mang tính kỹ thuật, không có yếu tố cảm xúc tiêu cực từ khách nên không cần thể hiện sự đồng cảm đặc biệt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Thể hiện sự sẵn lòng hỗ trợ ngay từ đầu (\"sure we can help you check\")."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đặt câu hỏi làm rõ vấn đề hiệu quả. Ban đầu hỏi xin link trang, sau đó hỏi xác nhận lại ý của khách (\"ah you mean set up the discount price, right?\") để đảm bảo đưa ra giải pháp đúng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Rất tốt. Agent đã đưa ra giải pháp chính xác cho cả hai vấn đề. Vấn đề 1 là do khách chưa bật app embed, và vấn đề 2 được hướng dẫn cụ thể cách set giá trong Shopify admin."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chat chưa kết thúc, không có cơ hội rõ ràng để agent thể hiện thêm sự chủ động."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề được xử lý trực tiếp, không cần chuyển cho team khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã giải thích các bước rất chi tiết bằng lời, không nhất thiết phải gửi thêm tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để đi thêm bước extra mile."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc nên chưa phải thời điểm thích hợp để hỏi xin review."
+        }
+      },
+      "overall_summary": "Tổng điểm: 20/20. Đây là một cuộc hội thoại chất lượng cao. Agent xử lý vấn đề một cách chuyên nghiệp và hiệu quả, xác định đúng nguyên nhân và đưa ra giải pháp chính xác cho cả hai yêu cầu của khách. Giao tiếp rõ ràng, chủ động hỏi để làm rõ vấn đề. Không có điểm nào cần cải thiện.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_e7320de6-2885-4aa1-8195-8ed25a71ceb9",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "Unknown Site",
+    "customer": "Outdoorphoto",
+    "primary_operator": "Tina",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Tina]\n\nOutdoorphoto: Good afternoon\n\n  Tina: Hi, I'm Tina here\n\n  Tina: how can I help you today?\n\nOutdoorphoto: I have a badge that shows products that have a higher quantity than 1 (In Stock). \n      \n      I want to know if it is possible to further filter it with our inventory locations (warehouses).\n\nOutdoorphoto: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/c/e/9/1/ce918ceda2c2d800/image_o0vc0o.png]\n\nOutdoorphoto: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/c/e/9/1/ce918ceda2c2d800/image_glyqyn.png]\n\nOutdoorphoto: Can I show a badge per location?\n\n  Tina: like country?\n\n  Tina: We have this part\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/c/e/9/1/ce918ceda2c2d800/image_1vv62m8.png]\n\n  Tina: Is it all you want?\n\nOutdoorphoto: No, we have 3 locations for our one online store.\n      \n      On Shopify the inventory is split between the locations.\n\nOutdoorphoto: I want to split the badge to show which product is in stock at the different location\n\n  Tina: I understand your mean\n\n  Tina: I'm asking our team\n\n  Tina: I will be back soon\n\nOutdoorphoto: thank you\n\n  Tina: oki my friend :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.0,
+          "justification": "Agent không giới thiệu tên brand trong lời chào đầu. Câu chào chỉ có \"Hi, I'm Tina here\" mà thiếu tên công ty. Cần giới thiệu đầy đủ, ví dụ: \"Hi, I'm Tina from [App Name] here\"."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp ổn, không có lỗi nghiêm trọng."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Giao tiếp rõ ràng, thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent đã lắng nghe và hiểu đúng yêu cầu của khách sau khi được làm rõ."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi tốt, giọng điệu thân thiện. Agent cũng thông báo cho khách khi cần thời gian kiểm tra."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội thể hiện sự đồng cảm vì chat mang tính kỹ thuật, nhưng thái độ vẫn tích cực."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent sẵn sàng hỗ trợ và chủ động hỏi team để tìm câu trả lời."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent có đặt câu hỏi để làm rõ (\"like country?\") và khi hiểu vấn đề, đã biết cần phải hỏi thêm thông tin từ team."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Vấn đề chưa được giải quyết nhưng agent đã đi đúng hướng bằng cách chuyển câu hỏi cho team kỹ thuật. Đây là bước xử lý phù hợp cho một yêu cầu phức tạp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chat đang trong quá trình xử lý nên chưa có cơ hội thể hiện."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Làm rất tốt. Agent nhận ra đây là một yêu cầu kỹ thuật và báo cho khách rằng mình sẽ hỏi team (\"I'm asking our team\")."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ tài liệu cho yêu cầu này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có cơ hội vì vấn đề vẫn đang được kiểm tra."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc nên chưa cần xin review."
+        }
+      },
+      "overall_summary": "Chat tốt. Agent xử lý một câu hỏi kỹ thuật phức tạp một cách hợp lý bằng việc nhanh chóng leo thang vấn đề cho team chuyên môn. Điểm trừ duy nhất là quên giới thiệu tên brand trong lời chào đầu tiên.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+    }
+  },
+  {
+    "session_id": "session_cc17a17b-6503-4d41-8c08-8f01552eac17",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "TYMO",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Jane]\n\nTYMO: I CREATE FREE BADGE BUT NOW ITS NOT SHOWING WHY ?\n\nTYMO: ONLY SHOWS TO BUY PAID PLAN\n\n  Jane: it's Jane from DECO team here\n\n  Jane: can you send me the setting of your badge?\n\n  Jane: it may happen if you use a feature in paid plan and want to publish the badge\n\nTYMO: CAN YOU CHECK IT FROM YOU SELF ?\n\n  Jane: I see that the badge is showing normally at my end\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/d/4/8/6d48439bfba8bc00/image_6ton69.png]\n\nTYMO: Hi DECO Team! I need help with the badge display problem.\n\n  Jane: it also active in the system, meaning there's no issue publishing the badge as well\n\n  Jane: you can refresh the app and check again [+1]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent giới thiệu tên và brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Các câu trả lời ngắn gọn, đi thẳng vào vấn đề, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent đã hiểu đúng vấn đề khách gặp phải về việc badge không hiển thị."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi tốt."
+        },
+        "empathy": {
+          "score": 0.25,
+          "justification": "Khách hàng đang rõ ràng bực bội (viết hoa toàn bộ), nhưng agent không có một lời nào thể hiện sự đồng cảm, chỉ tập trung vào kỹ thuật. Điều này làm cuộc hội thoại có cảm giác hơi máy móc.\n\nVí dụ, agent có thể nói: \"I can understand how frustrating that must be. Let me check this for you right away.\""
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent thể hiện sự sẵn lòng hỗ trợ."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã chủ động kiểm tra từ phía mình khi khách không muốn cung cấp thêm thông tin, đây là cách xử lý tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã kiểm tra và xác nhận badge vẫn hoạt động, đồng thời cung cấp ảnh chụp màn hình làm bằng chứng và đưa ra hướng dẫn cuối cùng cho khách."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội rõ ràng để chủ động hỗ trợ thêm vì vấn đề chính vẫn đang được giải quyết."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề không cần chuyển cho team khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để gửi tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để đi thêm một bước."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hội thoại chưa kết thúc, chưa phải lúc thích hợp để xin review."
+        }
+      },
+      "overall_summary": "Điểm 9.75/10. Agent xử lý vấn đề về mặt kỹ thuật rất tốt, đưa ra bằng chứng và hướng dẫn rõ ràng. Điểm trừ duy nhất là thiếu sự đồng cảm khi khách hàng đang tỏ ra bực bội, agent nên thêm một câu thể hiện sự thấu hiểu để làm dịu tình hình và tạo kết nối tốt hơn.",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_8e392b7c-d4e8-4f1e-83b4-b62f3601fc39",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "Unknown Site",
+    "customer": "Maaak.store",
+    "primary_operator": "Tina",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Tina]\n\nMaaak.store: ok\n\n  Tina: Hello, I’m Tina here\n\n  Tina: Let’s go with our app features :$\n\n  Tina: First, please go to Site Speed on the app > choose Instant Page > then turn on this button\n\n  Tina: Instant page feature is used to speed up your page loading, bringing a better experience to your customers\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/c/a/0/0/ca00a0d3c3906000/image_85gg7g.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.0,
+          "justification": "Agent đã giới thiệu tên nhưng thiếu tên thương hiệu. Câu chào hỏi cần có cả tên agent và tên thương hiệu, ví dụ: 'Hello, I’m Tina from [Brand Name] here'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng sử dụng tốt."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Hướng dẫn rõ ràng, kèm giải thích lợi ích của tính năng, giúp khách hàng dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đây là một cuộc hội thoại agent chủ động dẫn dắt, không có câu hỏi nào từ khách bị bỏ lỡ."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tone giọng thân thiện, nhịp độ nói chuyện tốt."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội thể hiện sự đồng cảm vì khách không gặp khó khăn."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent chủ động bắt đầu buổi hướng dẫn tính năng, thể hiện sự nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần đặt câu hỏi tìm hiểu vì đây là một buổi hướng dẫn sử dụng, không phải xử lý sự cố."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hướng dẫn chính xác và rõ ràng về tính năng của app."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent rất chủ động khi bắt đầu giới thiệu các tính năng của app cho khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có vấn đề kỹ thuật cần chuyển cho team khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã giải thích trực tiếp trong chat, không cần chia sẻ thêm tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Việc chủ động hướng dẫn khách hàng sử dụng app là một điểm cộng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hội thoại còn đang dang dở, chưa đến lúc phù hợp để xin review."
+        }
+      },
+      "overall_summary": "Điểm 9.75/10. Chat có chất lượng rất tốt, agent chủ động và hướng dẫn rõ ràng. Chỉ có một lỗi nhỏ là thiếu tên thương hiệu trong câu chào hỏi. Cần lưu ý để hoàn thiện hơn.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+    }
+  },
+  {
+    "session_id": "session_4f413bd2-a382-4240-a268-f41a45e24a38",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "Unknown Site",
+    "customer": "muj3pd-g1",
+    "primary_operator": "Tina",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Tina]\n\nmuj3pd-g1: hello\n\n  Tina: Hi friend, I'm Tina here\n\n  Tina: How can I help you today?\n\nmuj3pd-g1: wanted to c lance my earlier subscription and need 100% refund\n\nmuj3pd-g1: cancel**\n\n  Tina: I have seen that you are in free plan\n\n  Tina: May I ask if you have received bill from Shopify?\n\nmuj3pd-g1: yes\n\nmuj3pd-g1: i have received a bill on shopfy\n\n  Tina: could you please send me the screenshort of it?\n\nmuj3pd-g1: [File: Screenshot from 2026-04-14 18-14-48.png - https://storage.crisp.chat/users/upload-1/session/-/b/6/7/6/b6763e85f9fc8800/screenshot-from-2026-04-14-18-_uowov9.png]\n\nmuj3pd-g1: [File: Screenshot from 2026-04-14 18-14-48.png - https://storage.crisp.chat/users/upload-1/session/-/b/6/7/6/b6763e85f9fc8800/screenshot-from-2026-04-14-18-_uowov9.png]\n\nmuj3pd-g1: hii\n\n  Tina: Let me check with our team\n\n  Tina: I will be back soon\n\nmuj3pd-g1: ok\n\n  Tina: :$\n\nmuj3pd-g1: hii\n\n  Tina: I'm here\n\nmuj3pd-g1: yes whats update about my charges\n\n  Tina: I have checked that your triel ended at 25/02/2026\n\nmuj3pd-g1: pls cancle it\n\nmuj3pd-g1: ok\n\n  Tina: but you just canceled the plan at 14/04/2026\n\n  Tina: that's why you have to pay for the bill\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/6/7/6/b6763e85f9fc8800/image_1poidjx.png]\n\nmuj3pd-g1: ok\n\n  Tina: the start day is 18/02/2026, my friend\n\nmuj3pd-g1: so what can i do righ now\n\nmuj3pd-g1: you cant cancle the plan\n\n  Tina: so I'm sorry that we can't refund for you\n\n  Tina: you are in free plan now\n\n  Tina: so you don't need to pay for the next circle\n\n  Tina: you just need to pay for the circle you have used before\n\nmuj3pd-g1: ok and i delet the app so my charges will not cut\n\n  Tina: yes my friend, the bill is created before\n\n  Tina: so in case you delete app, you still have to pay for it\n\nmuj3pd-g1: ok\n\n  Tina: Oki my friend\n\n  Tina: Feel free whenever you need our help\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.0,
+          "justification": "Câu chào ban đầu \"Hi friend, I'm Tina here\" đã thiếu tên thương hiệu. Điều này làm giảm tính chuyên nghiệp trong câu mở đầu. Cần cải thiện bằng cách thêm tên brand, ví dụ: \"Hi friend, I'm Tina from [Brand Name] here.\""
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi sai nào gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giải thích lý do về hóa đơn rất rõ ràng và mạch lạc, giúp khách hàng hiểu tại sao họ bị tính phí."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe tốt, trả lời đúng vào các câu hỏi của khách về việc hủy đăng ký và xóa app."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ được giọng điệu thân thiện và lịch sự (\"my friend\") trong một tình huống nhạy cảm về tiền bạc."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội rõ ràng để thể hiện sự đồng cảm, nhưng agent đã nói \"I'm sorry that we can't refund for you\", thể hiện sự lịch sự."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent không né tránh vấn đề và xử lý yêu cầu của khách một cách trực tiếp."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Làm tốt việc hỏi thêm thông tin và yêu cầu ảnh chụp màn hình hóa đơn để xác minh vấn đề."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đưa ra giải pháp chính xác. Agent đã kiểm tra lịch sử đăng ký và giải thích đúng rằng khách đã sử dụng dịch vụ qua thời gian dùng thử nên hóa đơn là hợp lệ."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để thể hiện vì khách hàng đã quyết định hủy và xóa app."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent có báo với khách \"Let me check with our team\", đây là một bước xử lý tốt khi cần xác minh thông tin."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Tình huống này không có cơ hội để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội thực hiện vì đây là yêu cầu hủy dịch vụ."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Không yêu cầu đánh giá trong trường hợp này là hoàn toàn hợp lý, vì khách hàng đang không hài lòng về việc bị tính phí."
+        }
+      },
+      "overall_summary": "Điểm 9.9/10. Agent đã xử lý một tình huống nhạy cảm về hóa đơn rất tốt. Giải pháp và cách giải thích đều chính xác và rõ ràng. Điểm trừ duy nhất là thiếu tên thương hiệu trong lời chào đầu tiên.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+    }
+  },
+  {
+    "session_id": "session_05b9bd27-e1fe-4335-9a8a-c9fab994c471",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "Unknown Site",
+    "customer": "BestBuddy-Pets",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: David]\n\nBestBuddy-Pets: sure\n\n  David: Hi, this is David from PieLab here\n\n  David: Would you like me to have a look and give you some tips on your store\n\nBestBuddy-Pets: sure\n\n  David: I just had a quick look at your store. Everything seems great! However, this is just my opinion, I feel that the CTA on your promotions/offers here are not strong enough. Have you ever thought about changing them around\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/8/2/0/7/82074afb7d80f800/image_130lk94.png]\n\nBestBuddy-Pets: changing them around in what way? :)\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/8/2/0/7/82074afb7d80f800/image_1xeb4av.png]\n\n  David: Maybe have a big banner or a big section on top here, saying that your store is running promotions or offers?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent chào hỏi và giới thiệu tên brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Nội dung trao đổi rõ ràng, dễ hiểu, có hình ảnh minh họa cụ thể."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent trả lời đúng câu hỏi của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn thân thiện, tốc độ phản hồi tốt."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội thể hiện sự đồng cảm, nhưng giọng văn cho thấy sự quan tâm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent rất nhiệt tình khi chủ động đề nghị xem và góp ý cho cửa hàng của khách."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã hỏi khách có muốn nhận góp ý không trước khi bắt đầu, đây là một bước probing tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đây là một cuộc hội thoại tư vấn, và các gợi ý agent đưa ra hợp lý và hữu ích cho khách."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Toàn bộ cuộc trò chuyện là một ví dụ điển hình cho sự chủ động. Agent tự tìm đến khách và đưa ra gợi ý cải thiện."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có vấn đề cần chuyển cho team khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Agent đã làm rất tốt việc đi thêm một dặm khi chủ động review store và đưa ra lời khuyên về marketing cho khách."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc, không có cơ hội xin review."
+        }
+      },
+      "overall_summary": "Điểm 10.0/10. Một cuộc hội thoại mẫu mực về sự chủ động và đi thêm một dặm. Agent đã tự mình kiểm tra và đưa ra những gợi ý hữu ích để cải thiện store cho khách hàng, ngay cả khi khách không yêu cầu. Giao tiếp rõ ràng, thái độ nhiệt tình, không có điểm nào cần cải thiện.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_69abba38-7199-4aae-ad6b-d8a9f8b5880d",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "SearchPie",
+    "customer": "onlydream-6515",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: David]\n\nonlydream-6515: hello\n\nonlydream-6515: hello?\n\n  David: Hi, this is David from SearchPie here. How can I help you today?\n\nonlydream-6515: your app is adding Dream Official Store at the end of every tag title, is there a way to add it only as brand name? this issue is causing titles to be too long\n\nonlydream-6515: [File: Snag_967f96.png - https://storage.crisp.chat/users/upload-1/session/-/7/b/1/9/7b193da757da1400/snag967f96_jnyml9.png]\n\n  David: I see, may I ask if you are using our default meta tags here?\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/7/b/1/9/7b193da757da1400/image_1vcrwgc.png]\n\nonlydream-6515: [File: Snag_99a57f.png - https://storage.crisp.chat/users/upload-1/session/-/7/b/1/9/7b193da757da1400/snag99a57f_1yya9sm.png]\n\n  David: Ah, I see. You have already remove the Dream Official Store right? If so, for Google to update it, you can submit your sitemap again\n\n  David: So that Google can crawl and update it on their end\n\n  David: But if you do not want to, the length of your meta tags won't interfere with your SEO performance\n\nonlydream-6515: ok Thanks so much, it must had been one of my collaborators. Cheers!\n\n  David: My pleasure!!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có đủ tên agent và tên thương hiệu, rất chuyên nghiệp."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng sử dụng tốt, không có lỗi."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Giải thích rõ ràng, đi thẳng vào vấn đề và dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe tốt, hiểu đúng vấn đề của khách ngay từ đầu về việc title tag bị dài."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi nhanh, giọng văn thân thiện và hữu ích."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội thể hiện sự đồng cảm sâu sắc nhưng agent đã thể hiện sự thấu hiểu vấn đề qua câu \"I see\"."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent cho thấy sự sẵn sàng giúp đỡ, kết thúc cuộc trò chuyện một cách tích cực \"My pleasure!!\"."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã chủ động hỏi và gửi ảnh chụp màn hình để xác nhận cài đặt của khách, đây là một bước khai thác thông tin rất tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã xác định đúng là khách đã tự sửa được cài đặt và đưa ra giải pháp chính xác tiếp theo là submit lại sitemap để Google cập nhật. Giải pháp hoàn toàn đúng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Vấn đề được giải quyết nhanh gọn, không có cơ hội rõ ràng để agent thể hiện thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề không cần chuyển cho team khác, agent đã xử lý tốt."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không cần thiết phải chia sẻ tài liệu, giải thích bằng lời là đủ và hiệu quả."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện ngắn và hiệu quả, không có cơ hội rõ ràng để đi thêm bước nữa."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Thông tin bổ sung cho thấy khách đã để lại review 5 sao, vì vậy mục này được chấm đủ điểm."
+        }
+      },
+      "overall_summary": "Tổng điểm: 20/20. Đây là một cuộc hội thoại xuất sắc. Agent xử lý vấn đề rất nhanh chóng, chuyên nghiệp và hiệu quả. Giải pháp đưa ra hoàn toàn chính xác, giúp khách hàng hiểu rõ vấn đề. Việc khách hàng để lại review 5 sao đã khẳng định chất lượng hỗ trợ tuyệt vời.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_7a4d9007-285b-471d-bfd2-a94337af2083",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "SearchPie",
+    "customer": "rstem0-kx",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Wendy]\n\nrstem0-kx: sure\n\n  Wendy: Hello, it's Wendy from SearchPie\n\n  Wendy: Oh, I see some features in the app haven't been activated\n\n  Wendy: Would you like me to guide you now, for FREE?\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/3/9/8/d/398daae94c81c20/image_1srx81x.png]\n\n  Wendy: I found some critical issues in your store\n\nrstem0-kx: yes how i can fix that\n\n  Wendy: May I ask if you have technical expert to fix these important issue?\n\nrstem0-kx: to be honest am not\n\n  Wendy: Oh I understand that\n\n  Wendy: Normally, the fix for this critical issue is available in Enterprise Plan ($99/month)\n\n  Wendy: May I ask if you're interested in the 7-day FREE trial?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi tốt, có tên agent và tên thương hiệu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp tốt, không có lỗi gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Giao tiếp rõ ràng, đi thẳng vào vấn đề và dẫn dắt cuộc trò chuyện tốt."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe và phản hồi đúng các câu trả lời ngắn gọn của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu chuyên nghiệp, thân thiện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự đồng cảm tốt khi khách nói không phải là chuyên gia kỹ thuật với câu \"Oh I understand that\"."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Rất nhiệt tình, chủ động đề nghị hướng dẫn miễn phí."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đặt câu hỏi tốt để xác định khả năng kỹ thuật của khách trước khi đưa ra giải pháp."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đưa ra giải pháp phù hợp là đề nghị một gói dịch vụ có thể giải quyết vấn đề, kèm theo ưu đãi dùng thử miễn phí, đây là một quy trình xử lý chuẩn."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Rất chủ động. Agent tự kiểm tra, phát hiện vấn đề và mở đầu cuộc trò chuyện để giúp khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có dấu hiệu cần chuyển case cho bộ phận khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội cần thiết để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chủ động kiểm tra và tìm ra các vấn đề quan trọng mà khách hàng chưa đề cập là một điểm cộng lớn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc, khách chưa phản hồi tin nhắn cuối nên chưa phải lúc xin review."
+        }
+      },
+      "overall_summary": "Điểm 10/10. Một đoạn chat xuất sắc. Agent thể hiện sự chủ động vượt trội, tự tìm ra vấn đề của khách, dẫn dắt câu chuyện và đưa ra giải pháp (upsell) một cách rất chuyên nghiệp và hiệu quả.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_1713fe09-9ace-44b9-a85d-e09661a4dd32",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "Unknown Site",
+    "customer": "Tongxi Liu1",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nTongxi Liu1: can you share partnership email, we want to discuss app collabration\n\n  David: Hey, this is David from PieLab here\n\n  David: Sure, can you send it to my email at: david@pielab.io\n\nTongxi Liu1: okay, thanks\n\n  David: :$\n\nTongxi Liu1: already send you!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi và giới thiệu brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gì cần sửa."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu trả lời đi thẳng vào vấn đề, rõ ràng và ngắn gọn."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe tốt, trả lời đúng câu hỏi của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi nhanh, giọng điệu thân thiện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Hội thoại đơn giản, không có cơ hội thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Sẵn sàng hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Yêu cầu của khách hàng đã rõ ràng, không cần hỏi thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Cung cấp đúng thông tin khách hàng yêu cầu."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Hội thoại ngắn, không có cơ hội để agent thể hiện sự chủ động."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề không cần chuyển cho team khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để đi thêm bước hỗ trợ khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hội thoại kết thúc bình thường, không bắt buộc phải xin review."
+        }
+      },
+      "overall_summary": "Điểm tuyệt đối 10/10. Agent đã xử lý yêu cầu của khách hàng một cách nhanh chóng và hiệu quả. Một đoạn chat ngắn nhưng hoàn hảo.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_e091ee1c-805b-43bd-b93d-1f73eac41903",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "Dragon Hill Lifestyle",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Jane]\n\nDragon Hill Lifestyle: Hi DECO team, I would like to upload a custom text font that is not available in-app\n\n  Jane: It’s Jane from DECO team here\n\n  Jane: Sure we can help you upload the font you want\n\n  Jane: Please share us the name of the font you want\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi và giới thiệu đầy đủ, chuyên nghiệp."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Truyền đạt thông tin rõ ràng, đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe và hiểu đúng yêu cầu của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi nhanh, giọng điệu thân thiện, nhiệt tình."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội thể hiện, nhưng giọng điệu đã thể hiện sự quan tâm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Thể hiện sự sẵn lòng giúp đỡ ngay từ đầu với câu \"Sure we can help you...\"."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đặt câu hỏi đúng để lấy thông tin cần thiết cho bước tiếp theo."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đang đi đúng hướng để giải quyết vấn đề. Vấn đề chưa được xử lý xong vì khách chưa phản hồi."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chat còn quá ngắn để đánh giá, không có cơ hội thể hiện."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần thiết trong giai đoạn này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội thể hiện."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc nên không thể yêu cầu review."
+        }
+      },
+      "overall_summary": "Agent đã bắt đầu cuộc trò chuyện rất tốt: chào hỏi chuyên nghiệp, xác nhận yêu cầu và đặt câu hỏi để tiến hành hỗ trợ. Các bước xử lý ban đầu hoàn toàn chuẩn xác. Cuộc trò chuyện đang chờ phản hồi từ khách hàng.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_0bdeb939-b862-403a-a40f-8d0ad699c8ab",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "Norvick",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Jane]\n\nNorvick: Hi DECO Team! I need help with the badge display problem.\n\n  Jane: It’s Jane from DECO team here\n\n  Jane: Sure let me help you check the displaying issue\n\n  Jane: Can you send me the product link that supposed to show label?\n\nNorvick: https://www.norvick.in/products/norvick-stright-fit-jeans-grey-shade\n\n  Jane: Got your info, let me check at my end\n\n  Jane: I see that you havent done choosing the product that will display badge, please check again the setting\n\n  Jane: Please click Save button at the end to complete the setting [+1]\n\n  Jane: I see that the badge is displaying now :$   great job\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/e/4/f/f/e4ffd40c96543000/image_1bwsuyf.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có đủ tên agent và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gì cần sửa."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Hướng dẫn của agent rất rõ ràng, đi thẳng vào vấn đề và dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent nắm bắt đúng vấn đề khách báo cáo và xử lý trực tiếp."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi nhanh, giọng văn thân thiện và chuyên nghiệp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Vấn đề không nghiêm trọng nên không cần thể hiện sự đồng cảm đặc biệt. Agent giữ thái độ hỗ trợ là đủ."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent chủ động giúp đỡ (\"Sure let me help you check\") và khen khách (\"great job\"), thể hiện sự nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã hỏi xin link sản phẩm, đây là câu hỏi cần thiết để bắt đầu kiểm tra."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã tìm ra đúng nguyên nhân (khách chưa chọn sản phẩm và lưu) và đưa ra giải pháp chính xác, giúp khách tự khắc phục được."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Sau khi hướng dẫn, agent đã chủ động vào lại trang của khách để kiểm tra và xác nhận vấn đề đã được giải quyết, kèm theo ảnh chụp màn hình làm bằng chứng. Đây là một điểm cộng lớn."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề được xử lý trực tiếp, không cần chuyển cho team khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã giải quyết xong bằng lời, không có cơ hội rõ ràng nào để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Agent xử lý vấn đề hiệu quả, không có cơ hội rõ ràng để đi thêm bước nữa."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc do khách seen và chưa trả lời, nên không trừ điểm mục này."
+        }
+      },
+      "overall_summary": "Tổng điểm: 20/20. Đây là một cuộc hội thoại mẫu mực. Agent xử lý vấn đề rất nhanh chóng, hiệu quả, hướng dẫn rõ ràng và còn chủ động xác nhận lại kết quả cho khách. Không có điểm nào cần cải thiện.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_4db205dd-514d-44eb-84ad-5b37ce2f58b4",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "Unknown Site",
+    "customer": "8aihba-ji",
+    "primary_operator": "Thắng",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Thắng]\n\n8aihba-ji: test\n\n  Thắng: k\n\n  Thắng: hello\n\n8aihba-ji: note\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.0,
+          "justification": "Không có phần giới thiệu tên agent và tên thương hiệu theo yêu cầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Chat quá ngắn để đánh giá, không có lỗi."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Không có câu hỏi nào từ khách bị bỏ qua."
+        },
+        "tone_pace": {
+          "score": 0.0,
+          "justification": "Bị trừ điểm nặng vì trả lời 'k'. Đây là cách phản hồi rất cộc lốc, thiếu chuyên nghiệp và không phù hợp trong môi trường hỗ trợ khách hàng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 0.5,
+          "justification": "Phản hồi 'k' thể hiện thái độ không nhiệt tình, thờ ơ với khách hàng, tạo cảm giác agent không muốn hỗ trợ."
+        },
+        "probing": {
+          "score": 1.0,
+          "justification": "Khi khách nhắn 'test', đây là một yêu cầu rất mơ hồ. Agent cần hỏi thêm để làm rõ mục đích của khách là gì, thay vì chỉ phản hồi cụt lủn. Ví dụ, có thể hỏi 'Bạn đang cần kiểm tra gì ạ, mình có thể giúp gì cho bạn?'."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Không có vấn đề cần giải quyết."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có cơ hội."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat quá ngắn, không có cơ hội."
+        }
+      },
+      "overall_summary": "Mặc dù chat rất ngắn và không có vấn đề kỹ thuật phức tạp, agent đã mắc nhiều lỗi cơ bản nghiêm trọng về giao tiếp chuyên nghiệp. Việc bắt đầu bằng 'k' là không thể chấp nhận được, ảnh hưởng xấu đến các tiêu chí về Tông giọng và Nhiệt tình. Ngoài ra, agent cũng thiếu phần giới thiệu bắt buộc và không chủ động hỏi thêm để tìm hiểu nhu cầu của khách khi nhận được tin nhắn mơ hồ.",
+      "total_score_20": 17.5,
+      "final_score_10": 8.75
+    }
+  },
+  {
+    "session_id": "session_eee602bd-900d-42c2-b686-78ec0d754571",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "Lady Lee Honduras",
+    "primary_operator": "Hannah",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Hannah]\n\nLady Lee Honduras: What would be the recommended dimensions for the badge in a horizontal layout so that it looks well-balanced—not too large or too small?\n\n  Hannah: Hi dear, this is Hannah from DECO team <3  \n      \n      For a horizontal badge, we recommend keeping the height around 20–28px, with flexible width depending on the text. Please ensure enough padding so the text is readable and the badge looks balanced—not too large or too small\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi thân thiện, có tên agent và tên thương hiệu đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng sử dụng chính xác, chuyên nghiệp."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu trả lời đi thẳng vào vấn đề, rõ ràng và cung cấp thông số cụ thể, rất dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe và trả lời đúng trọng tâm câu hỏi của khách hàng về kích thước đề xuất."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu thân thiện, tốc độ phản hồi nhanh."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Cuộc trò chuyện không có yếu tố tiêu cực, không cần thể hiện sự đồng cảm đặc biệt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Thái độ tích cực, sẵn sàng hỗ trợ."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Câu hỏi của khách hàng đã rất rõ ràng và cụ thể, không cần agent hỏi thêm thông tin."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Cung cấp giải pháp chính xác và hữu ích, đưa ra con số cụ thể để khách hàng tham khảo."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chat ngắn và đã giải quyết xong vấn đề, không có cơ hội rõ ràng để thể hiện thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề đơn giản, không cần chuyển cho bộ phận khác."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã trả lời trực tiếp và đầy đủ, không nhất thiết phải gửi thêm tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chat ngắn và chỉ có một câu hỏi, không có cơ hội để đi thêm bước nữa."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat kết thúc nhanh gọn, không bắt buộc phải hỏi xin review."
+        }
+      },
+      "overall_summary": "Tổng điểm: 20/20. Đây là một ví dụ hoàn hảo về một cuộc hội thoại hỗ trợ hiệu quả: agent nhanh chóng cung cấp câu trả lời chính xác, thân thiện và đi thẳng vào vấn đề cho một câu hỏi cụ thể. Không có điểm nào cần cải thiện.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_0aa491ce-acf1-457f-99d1-b4b3d03be1ef",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "DECO DemoStore",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Wendy]\n\nDECO DemoStore: hi david, can i create custom badges with this app?\n\nDECO DemoStore: can I create custom imagery on my computer using Adobe Illustrator and then upload them as a badge?\n\n  Wendy: Hello, it's Wendy from DECO\n\n  Wendy: Of course you can\n\n  Wendy: In our app, we have 2 options: Text badge & Image badge\n\nDECO DemoStore: oh fantastic! thanks for letting me know\n\n  Wendy: Therefore, you can create your own image\n\n  Wendy: Then upload it in our app to custom as a badge\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/3/1/d/d/31dd58b28b12ca00/image_13fh9km.png]\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/3/1/d/d/31dd58b28b12ca00/image_jfbkc.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có đủ tên agent và tên thương hiệu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng sử dụng tốt, không có lỗi."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Giải thích rõ ràng, ngắn gọn và đi kèm hình ảnh minh họa rất hiệu quả."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe tốt, hiểu đúng câu hỏi của khách và trả lời trực tiếp vào vấn đề."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tonalité chuyên nghiệp, tốc độ phản hồi nhanh."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Cuộc trò chuyện không có tình huống cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Thái độ tích cực, sẵn sàng hỗ trợ, thể hiện qua câu trả lời \"Of course you can\"."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Câu hỏi của khách hàng đã rõ ràng, không cần agent hỏi thêm thông tin."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Cung cấp giải pháp chính xác, xác nhận khách hàng có thể upload ảnh tự tạo làm huy hiệu."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Quy trình hỗ trợ nhanh gọn, không có cơ hội rõ ràng để chủ động hỗ trợ thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề không liên quan đến kỹ thuật nên không cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Sử dụng tốt tài nguyên bằng cách gửi ảnh chụp màn hình để hướng dẫn khách."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chat ngắn và đơn giản, không có cơ hội để agent thể hiện thêm."
+        },
+        "review_asking": {
+          "score": 1.0,
+          "justification": "Agent đã bỏ lỡ cơ hội xin review. Khi khách nói \"oh fantastic! thanks for letting me know\", đây là một tín hiệu rất tốt để hỏi xin đánh giá nhưng agent đã không làm vậy."
+        }
+      },
+      "overall_summary": "Chat xử lý rất tốt và hiệu quả. Agent trả lời thẳng vào vấn đề, chính xác và cung cấp hình ảnh minh họa rõ ràng. Một điểm nhỏ cần cải thiện là đã bỏ lỡ cơ hội xin review khi khách hàng tỏ ra rất hài lòng.",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_f0ec75a0-2485-4fa6-937d-f4a770853487",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-14",
+    "app": "DECO",
+    "customer": "Dhruv Kapoor",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Wendy]\n\nDhruv Kapoor: how do i create a label? not on the product image\n\n  Wendy: Hello, it's Wendy from DECO\n\n  Wendy: May i confirm if you create a label but it doesn't display in your product image?\n\nDhruv Kapoor: where do i create label? I can only see create a badge\n\nDhruv Kapoor: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/4/2/2/8/42285600a9ff5400/image_10921yb.png]\n\n  Wendy: Label is the badge Inside the product image\n\nDhruv Kapoor: I dont want it on the image\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/4/2/2/8/42285600a9ff5400/image_1b67riv.png]\n\nDhruv Kapoor: Ah, I see. Thank you\n\n  Wendy: You're welcome <3\n\nDhruv Kapoor: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/4/2/2/8/42285600a9ff5400/image_1z0knvc.png]\n\nDhruv Kapoor: Why is it showing twice?\n\n  Wendy: I see your concern\n\n  Wendy: Maybe it's because your theme is not compatible with our app. but no worries, we'll help you fix it\n\n  Wendy: Can you send me the product LINK above?\n\nDhruv Kapoor: https://dhruvkapoor.com/products/acid-washed-slit-jeans?_pos=1&_sid=eb0fe9d33&_ss=r\n\n  Wendy: Big thanks\n\n  Wendy: Now, we will pass it to our technical expert to help you fix it\n\n  Wendy: When  it's done, we will surely get back & let you know\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có tên agent và tên brand, làm tốt."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gì đáng kể."
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Trừ 0.25 điểm. Câu hỏi đầu tiên của agent hơi khó hiểu và chưa nắm đúng ý khách. Khách hỏi \"how do i create a label? not on the product image\" (làm sao để tạo label không nằm trên ảnh?), nhưng agent lại hỏi lại \"May i confirm if you create a label but it doesn't display in your product image?\" (bạn đã tạo label nhưng nó không hiển thị à?). Cách hỏi này làm khách phải giải thích lại từ đầu. Thay vào đó, agent có thể trả lời thẳng vào vấn đề hoặc hỏi để làm rõ mục tiêu của khách."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent không bỏ sót câu hỏi nào của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ và giọng điệu thân thiện, phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khi khách gặp vấn đề, agent đã thể hiện sự quan tâm \"I see your concern\"."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Nhiệt tình hỗ trợ, thể hiện qua câu \"but no worries, we'll help you fix it\"."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Chủ động hỏi xin link sản phẩm để kiểm tra khi phát sinh vấn đề kỹ thuật. Đã làm tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã giải thích rõ cho khách sự khác biệt về thuật ngữ (label/badge) và đưa ra hướng xử lý chính xác cho vấn đề kỹ thuật (chuyển cho team dev)."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội rõ ràng để thể hiện thêm vì vấn đề đã được chuyển cho team kỹ thuật."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Làm rất tốt việc chuyển case. Agent thông báo rõ ràng cho khách rằng vấn đề sẽ được chuyển cho team kỹ thuật và sẽ cập nhật khi hoàn thành."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để làm thêm cho khách."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc (khách seen chưa reply) nên không bắt buộc phải hỏi xin review."
+        }
+      },
+      "overall_summary": "Tổng điểm: 9.75/10. Một cuộc hội thoại rất tốt. Agent xử lý vấn đề kỹ thuật rất chuyên nghiệp, từ việc xác định nguyên nhân, trấn an khách hàng, đến việc chuyển cho team dev một cách rõ ràng. Điểm trừ nhỏ duy nhất là ở câu hỏi đầu tiên hơi gây khó hiểu, nhưng đã nhanh chóng được khắc phục.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+    }
+  }
+]

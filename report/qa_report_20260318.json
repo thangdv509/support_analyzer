@@ -1,0 +1,221 @@
+[
+  {
+    "session_id": "session_00486f13-046e-4539-948a-eab3f87002a2",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-18",
+    "app": "SearchPie",
+    "customer": "c0qrve-zr",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David. Nếu có nhiều agent trong chat, chỉ chấm phần của David, bỏ qua lỗi của agent khác.]\n\nc0qrve-zr: Can you help me check on my speed performance?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like me to have a look at your site speed?\n\nc0qrve-zr: i want to know how can i speed up my search reseults of overall site\n\nc0qrve-zr: tell key points only not steps\n\n  David: Well, to improve it significantly, you are going to have to do it via coding a lot\n\n  David: Can I interest you in our SpeedUp Package then? It is a one time payment package with a 3 months warranty deal\n\nc0qrve-zr: like what are the points that i should look into\n\nc0qrve-zr: how much for package\n\n  David: To speed up your Shopify site, delete unused apps, optimize image sizes, and use a lightweight theme. Key actions include enabling lazy loading, minimizing JavaScript/CSS, and reducing redirects, Something like that\n\n  David: > how much for package\nIt is for 299$ and if you sign up today, I can even hook you up with a nice discount!\n\nc0qrve-zr: and what are the profits ?\n\n  David: Ah, to be exact let me run a few test for you\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent chào có cả tên và brand: \"Hi, this is David from SearchPie here\"."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu trả lời rõ ràng, mạch lạc."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent không bỏ sót câu hỏi nào của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ nhịp độ phù hợp và lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu khách hàng bực bội hay lo lắng."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình đưa ra giải pháp và ưu đãi."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent nắm bắt được vấn đề khách hàng và đưa ra giải pháp phù hợp."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đưa ra giải pháp tăng tốc website và giới thiệu gói dịch vụ phù hợp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động đề xuất gói SpeedUp."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent không chia sẻ thêm tài liệu tham khảo."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để upsell thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chưa xin review nhưng chat chưa kết thúc."
+        }
+      },
+      "overall_summary": "Nhìn chung, agent đã hỗ trợ khách hàng tốt, đưa ra giải pháp và giới thiệu gói dịch vụ phù hợp. Cần chú ý tận dụng việc chia sẻ tài liệu để khách hàng có thêm thông tin.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_30ae03b4-d14d-4413-9418-f0d5e747c4f3",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-18",
+    "app": "DECO",
+    "customer": "Original Mattress Factory Australia",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Wendy. Nếu có nhiều agent trong chat, chỉ chấm phần của Wendy, bỏ qua lỗi của agent khác.]\n\nOriginal Mattress Factory Australia: hello\n\nOriginal Mattress Factory Australia: i'd like to use css to set the font sizes for desktop and mobile for my badges\n\nOriginal Mattress Factory Australia: can you help me set 0.9rem font size on mobile, and 1.1rem font size on desktop please\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_hxkqu0.png]\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_hxkqu0.png]\n\n  Wendy: Hello, it's Wendy from DECO\n\n  Wendy: Oh I see\n\n  Wendy: Please let me pass it to our technical expert to help you create the css code\n\nOriginal Mattress Factory Australia: thanks, I don\n\nOriginal Mattress Factory Australia: i don't like these settings, they are unreliable\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_12xsinx.png]\n\n  Wendy: I understand your concern\n\n  Wendy: Ah, can you please share me the page LINK that badge will display in?\n\n  Wendy: Hello I'm back\n\n  Wendy: May I ask if you're still there?\n\nOriginal Mattress Factory Australia: hello\n\nOriginal Mattress Factory Australia: it's in the collection pages\n\nOriginal Mattress Factory Australia: collection and product pages\n\n  Wendy: We have discussed with our technical expert, and at the moment our css code feature doesn't apply for separate devices. We hope you can understand that\n\n  Wendy: Therefore, first let's adjust size by our Size function\n\n  Wendy: Then our technical expert will help you custom it\n\nOriginal Mattress Factory Australia: that doesn't make sense\n\n  Wendy: to make sure it meets you requirements\n\nOriginal Mattress Factory Australia: css is meant for repsonsiveness\n\nOriginal Mattress Factory Australia: anyway, we will check if another app can do this. It's very basic\n\n  Wendy: I'm so sorry to hear that\n\n  Wendy: We checked your theme and see 1.1rem = 11px, 0.9rem = 9px. And adjust font size by Px is available in our app\n\n  Wendy: May i ask if you want me to guide you set up now?\n\nOriginal Mattress Factory Australia: no but it needs to be different per device\n\nOriginal Mattress Factory Australia: can we make the background auto adjust with the text?\n\n  Wendy: Hello, welcome back\n\nOriginal Mattress Factory Australia: so it doesn't stack\n\n  Wendy: We are more than ready to help you. And our technical expert can help you custom the size as your request to meet your demands. And to adjust it, we need temporary access to your theme\n\n  Wendy: May I ask if it's fine to you? <3\n\nOriginal Mattress Factory Australia: no i prefer not to give access to our theme\n\nOriginal Mattress Factory Australia: Can we just make the background adjust based on the text?\n\nOriginal Mattress Factory Australia: is that difficult?\n\n  Wendy: > Can we just make the background adjust based on the text?\nYes we can\n\n  Wendy: In our Size function, you click Custome size per screen, then you choose the size to Px\n\n  Wendy: 1.1rem = 11px, 0.9rem = 9px\n\n  Wendy: Then the font size will work as your request :$\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_13opqkm.png]\n\nOriginal Mattress Factory Australia: but the background is static?\n\nOriginal Mattress Factory Australia: i want auto adjust the background depending on the text\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_1luo4xx.png]\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_125wdqs.png]\n\n  Wendy: Let's adjust the percent here to Px then it will work\n\nOriginal Mattress Factory Australia: it will expand depending on the text?\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_1bz9c1y.png]\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_1bz9c1y.png]\n\nOriginal Mattress Factory Australia: it's stacking, i want one line only\n\n  Wendy: I see. If you want to set up one line only, let's increase the background size. With your text size, we will calculate the background size (width, height) to px for you\n\n  Wendy: Please give me some seconds\n\nOriginal Mattress Factory Australia: so it's not dynamic\n\nOriginal Mattress Factory Australia: i need to keep doing this everytime\n\n  Wendy: We think the ideal size should be: \n* desktop: width 105px, height 25px, font size 11px\n* mobile: width 90px, height 22px, font size 9px\n\nOriginal Mattress Factory Australia: thanks\n\n  Wendy: You're welcome! At the moment, dynamic badges aren't supported in the app yet. We hope for your understanding. <3\n\nOriginal Mattress Factory Australia: hello, why is my 25% off tag stacking like this\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_1hfmqc8.png]\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_1hfmqc8.png]\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_17wycd5.png]\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_17wycd5.png]\n\n  David: Ah, might be a coding issue. The preview looks fine. Let me have a look for you\n\nOriginal Mattress Factory Australia: it's in a preview theme\n\n  David: Can you send me the URL to that collection there?\n\n  David: Ah, no worries, a preview link is fine too\n\nOriginal Mattress Factory Australia: https://gxrlfvxgvsgnjrgp-52367294661.shopifypreview.com\n\nOriginal Mattress Factory Australia: homepage just scroll down\n\nOriginal Mattress Factory Australia: the font sizes change for some reason\n\nOriginal Mattress Factory Australia: all the badges have the same settings\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_6k581m.png]\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_6k581m.png]\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_wc06oc.png]\n\n  David: Hmm, did you just change the sizes? I checked on my end and it is still in one row:\n\n  David: The sizes seems to be on point as well\n\nOriginal Mattress Factory Australia: you need to check the homepage, the collection is not the issue\n\nOriginal Mattress Factory Australia: i'm talking about this part\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_jfdubh.png]\n\nOriginal Mattress Factory Australia: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/image_jfdubh.png]\n\nOriginal Mattress Factory Australia: [File: Screen Recording 2026-03-18 at 3.50.42 pm.mov - https://storage.crisp.chat/users/upload/session/-/6/d/2/5/6d25ede361ddac00/screen-recording-2026-03-18-at_1iezy1k.mov]\n\n  David: I see, let me notify our team right away\n\nOriginal Mattress Factory Australia: okay thanks\n\nOriginal Mattress Factory Australia: bye\n\n  David: Thank you! I will notify you as soon as possible\n\n  David: Dear, \n\nThis is David from DECO here. Just a quick update in regards of your sizes. \n\nOur team has checked and noticed that your 2 labels: 50% OFF and 25% OFF are using 2 different sizes definition, one is using percentage and one is using pixels. For them to be consistent in sizes, you are going to need to change them in the same definitions. \n\nIf you want our team can handle it for you with collaborator access to your store. \n\nLet me know what you think. \n\nBest,\nDavid\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Wendy chào với tên cá nhân và tên brand: \"Hello, it's Wendy from DECO\"."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Wendy diễn đạt rõ ràng, mạch lạc."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Wendy lắng nghe và hiểu yêu cầu của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Wendy giữ giọng lịch sự, tốc độ phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Wendy thể hiện sự đồng cảm với khách hàng: \"I understand your concern\", \"I'm so sorry to hear that\"."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Wendy nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Wendy chủ động hỏi thêm thông tin để hiểu rõ vấn đề của khách hàng: \"Ah, can you please share me the page LINK that badge will display in?\", \"May I ask if you're still there?\""
+        },
+        "solution": {
+          "score": 2.0,
+          "justification": "Wendy đưa ra giải pháp nhưng chưa giải quyết triệt để vấn đề của khách hàng về responsive design. Đề xuất đầu tiên không phù hợp với yêu cầu của khách."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Wendy không bỏ lỡ cơ hội giúp đỡ khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Wendy đã trao đổi với technical expert để tìm giải pháp cho khách hàng."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Wendy có chia sẻ hình ảnh hướng dẫn."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Wendy không bỏ lỡ cơ hội gợi ý thêm cho khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách hàng đã seen tin nhắn cuối của Wendy nhưng chưa phản hồi. Chat chưa kết thúc nên không trừ điểm."
+        }
+      },
+      "overall_summary": "Wendy hỗ trợ khách hàng nhiệt tình, chu đáo. Tuy nhiên, giải pháp đưa ra chưa hoàn toàn đáp ứng được yêu cầu của khách về responsive design. Cần cải thiện thêm về khả năng đưa ra giải pháp phù hợp và hiệu quả hơn.",
+      "total_score_20": 19.0,
+      "final_score_10": 9.5
+    }
+  },
+  {
+    "session_id": "session_3d9ee4f2-3d81-41db-b37e-aa31aafa42fd",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-18",
+    "app": "SearchPie",
+    "customer": "fratoindi",
+    "primary_operator": "Hannah",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\n[Agent được chấm: Hannah. Nếu có nhiều agent trong chat, chỉ chấm phần của Hannah, bỏ qua lỗi của agent khác.]\n\nfratoindi: Can you help me check on my Google Merchant Center issues?\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3   \n\nI hope you’re doing well. I noticed that our team reached out to you for the request access, and I just wanted to kindly check if you’ve received the information yet.\n\nTo help our team proceed the removal for you, can you please kindly grant us the access to your product sections? Julie have sent the access request for you. You can follow this access guide to accept it: [ACCESS REQUEST GUIDE](https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request#i.-grant-new-permission-for-searchpie-account)\n\nLooking forward to your response!\n[\n](https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request#i.-grant-new-permission-for-searchpie-account)\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/6/5/6/1656d30ca2f73300/image_bu7beu.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào có tên Hannah từ SearchPie team."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi chính tả/grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Truyền đạt rõ ràng, mạch lạc."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Không bỏ sót ý của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự, tốc độ phản hồi ổn."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu khách hàng bực dọc hay lo lắng."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đã nắm rõ vấn đề của khách."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hướng dẫn cụ thể, đưa ra giải pháp phù hợp cho vấn đề của khách."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để chủ động hơn."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đã cung cấp link hướng dẫn cho khách hàng."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để hỗ trợ thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 5 sao."
+        }
+      },
+      "overall_summary": "Hannah hỗ trợ khách hàng nhiệt tình, giải quyết vấn đề nhanh chóng.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

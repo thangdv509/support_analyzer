@@ -1,0 +1,513 @@
+[
+  {
+    "session_id": "session_5f65e217-2411-48c1-8ba3-1fbe7ca8e84a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-07",
+    "app": "SearchPie",
+    "customer": "mzah3u-3p",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: David]\n\nmzah3u-3p: yes\n\n  David: Hi, this is David from SearchPie here\n\nmzah3u-3p: hey david\n\n  David: Of course, let me have a look at your setup for you\n\n  David: Please give me a few moments!\n\n  David: I'm back with some updates and I noticed that you have not fully utilized your current plan yet\n\n  David: Would you like to do them now?\n\nmzah3u-3p: yes\n\n  David: Let's start with enabling our app embed!\n\n  David: To fully use our app features, you are going to have to enable it\n\n  David: You can enable SearchPie snippet by going to your Themes > Customize > Choose App Embeds > Search for Search Pie app and enable the snippet.\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi và giới thiệu brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp, từ vựng tốt, không có lỗi."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Hướng dẫn các bước cho khách hàng rất rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe và phản hồi đúng với yêu cầu của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tông giọng chuyên nghiệp, lịch sự và giữ nhịp độ chat tốt."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Cuộc trò chuyện bình thường, không cần thể hiện sự đồng cảm đặc biệt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Thái độ tích cực, chủ động đề nghị hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đã chủ động kiểm tra cài đặt của khách và tìm ra vấn đề."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đưa ra hướng dẫn chính xác và cần thiết để khách có thể sử dụng app."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Rất chủ động khi nhận thấy khách chưa cài đặt hoàn chỉnh và đề nghị giúp đỡ ngay lập tức. Đây là điểm sáng của cuộc chat."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề không cần chuyển cho team khác, agent tự xử lý được."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Hướng dẫn bằng lời đã đủ rõ ràng, không nhất thiết phải gửi thêm tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chủ động kiểm tra và giúp khách tối ưu hóa việc sử dụng app là một điểm cộng lớn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Cuộc trò chuyện chưa kết thúc nên chưa có cơ hội hỏi xin review."
+        }
+      },
+      "overall_summary": "Tổng điểm: 10/10. Một cuộc trò chuyện mẫu. Agent rất chủ động, kiểm tra vấn đề cho khách mà không cần được yêu cầu, sau đó đưa ra hướng dẫn rõ ràng, chính xác. Thái độ và cách giao tiếp đều rất chuyên nghiệp.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_4f05fc3c-7181-4f8b-917f-7958e6ed0248",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-07",
+    "app": "DECO",
+    "customer": "Scandinavianlux.com",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nScandinavianlux.com: Hi DECO Team! I need help with the badge display problem.\n\nScandinavianlux.com: It does not show up on my products. Its active and i've selected 4 products\n\n  David: Hey, this is David from DECO here\n\n  David: Ah, I see, can you send me the URL to one of the products?\n\nScandinavianlux.com: https://scandinavianlux-com-2.myshopify.com/products/baby-djaevlehue-i-lyseblaa\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_15pk8uu.png]\n\n  David: Ah, actually, no need to, may I ask if you have enabled our app embed yet? I checked via my admin and did not notice it as on\n\nScandinavianlux.com: Where do i enable it?\n\n  David: To enable it, you can  go to Shopify Admin > Online Store > Theme > Customize\n\n  David: Then choose App Embed > Enable DECO - Product Label > Save\n\nScandinavianlux.com: Thanks. That worked\n\n  David: Ah, my pleasure!\n\n  David: If you can, would you mind taking a few seconds to leave a short review about my support (David)  today on Shopify App Store? :$  \n      Just 30s to go: https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal\n\n  David: It has been slow going on here today so I would love to hear your feedback today!!!!\n\n  David: Ah, due to Shopify's Policy, I cannot see it on my end. Can you let me know when you are done with your review :$\n\nScandinavianlux.com: I got another problem actually\n\nScandinavianlux.com: I now have the badge on my product, but i can still see the other badge (the %) on that product. Can i someone make that if i use this DECO label, it disable the other label. But only if i use DECO label on that product?\n\n  David: Ah, is the % badge from your theme?\n\n  David: If so, I can totally deactivate it for you if want\n\nScandinavianlux.com: yes, so i have other labels with %, but you can see it overlaps some of them.\n\nScandinavianlux.com: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_q5cc5u.png]\n\n  David: Ah, yeah, can you send me the URL there?\n\nScandinavianlux.com: I don't know if it messes up my site if you  disable it? \n      \n      https://scandinavianlux-com-2.myshopify.com/collections/all\n\nScandinavianlux.com: I still want the % on some of my products, but some i  want to add another text such as \"Skarp pris\" instead of the %.\n      But i want the product to still have the % price on the product so its actually reduced in price\n\nScandinavianlux.com: If that makes sense\n\n  David: Ah, it will not affect your site in anyway. I can just disable the % badge for this page only so that the % badge can appear elsewhere\n\n  David: Does that work?\n\nScandinavianlux.com: Try and do that. Otherwise i will want it back again as it was\n\nScandinavianlux.com: If it doesn't work as intened\n\n  David: Yeah, let me try and if you want to revert it back, just let me know.\n\nScandinavianlux.com: Sure\n\nScandinavianlux.com: Any progress?\n\n  David: Ah, a few minutes more, this requires a bit of coding\n\nScandinavianlux.com: Sure thing\n\n  David: Thank you :$\n\n  David: Hang on for a few moments\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_1slz4cg.png]\n\n  David: It should be good now, can you check on your end and let me know?\n\n  David: Remember to refresh your page first!\n\nScandinavianlux.com: Yes, but i still want the % on the other products who isn't using the \"DECO\" badge. I that makes sense?\n\n  David: Ah, if so might I suggest using our badges? That way, you can choose the products that you want the % badge to show on\n\nScandinavianlux.com: oh yes, but i still want the % PRICE on that product. But not the % label, since i wanna use ur new label from DECO.\n      \n      If i disable the 10% label on that product and uses DECO label, it doesn't have a reduced price like i wanted.\n      \n      Idk if this is unable to do using the plugin?\n\nScandinavianlux.com: I think it works now?\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_13o1zwa.png]\n\n  David: Ah, yeah, I change so that it will appear on products that do not have our badges. But on this product, it is still on sale but our badges is overlapping on it\n\n  David: If you want to change it some other way, let me know. Maybe I can have some alternatives\n\nScandinavianlux.com: This is great. But it can see it shortly, when i refresh the page. Is that fixable? Before the badge appears\n\n  David: Ah, it disappears after sometime and only reappears again when you refresh?\n\nScandinavianlux.com: It's working like intended, but when you load a page with the badges, you can still see the other label before the badge appear on top\n\n  David: I see, let me check again\n\n  David: This issue right? https://drive.google.com/file/d/1UQSgIHODPagcz_hhS95MlxwUBgoEiLDQ/view?usp=sharing\n\nScandinavianlux.com: It's the other products. \n      The one with the labels, UNDER the badge :D\n\nScandinavianlux.com: when you refresh\n\nScandinavianlux.com: THe one you pointed is correct\n\nScandinavianlux.com: The other 2 on the right is wrong :D\n\n  David: Ah, I see, this code here should do the trick: \n      ```\n      .product-item__media-wrapper:not(.pl-parent) .product-badge{display: none !important;}\n      ```\n\n  David: You can add it in your theme here:\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_o5birm.png]\n\n  David: Or if you want our team to do,  our devs team can add it for you with collaborator access to your store. Just let me know :$\n\nScandinavianlux.com: I tried adding the custom css, but it still shows shortly when i refresh a page.\n      Its not a huge issue, just wanted to know if it's fixable or i if i should code something.\n      \n      Just wanted to hear if you are able to do it without access to the store\n\nScandinavianlux.com: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_bbafnm.png]\n\n  David: Hmm, I see, let me check the CSS on my end\n\nScandinavianlux.com: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_2r9vyo.png]\n\nScandinavianlux.com: I can still see the 60% behind the badge\n\n  David: Ah, I see the issue, you are adding it to your layout, you have to add it in your settings here:\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_1jw21ye.png]\n\nScandinavianlux.com: I've now added it to the theme settings. Although it doesn't work? \n      \n      I can still quickly see the label behind the badge before the badge appears.\n      \n      If you try and refresh this page, you can see it quickly https://scandinavianlux-com-2.myshopify.com/collections/all\n      \n      Not a huge problem at all, just wanted to know if i can do something about it\n\nScandinavianlux.com: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_41a5sn.png]\n\nScandinavianlux.com: I might have to make a snippet that disable it before i loads?\n\n  David: Hmm, I don't think so, let me get our devs on this, this might be out of my range x)  \n      \n      I get it as this is not a huge problem, but hey, you are our customers and we here strive for the best experience\n\n  David: Hang on for me for a bit\n\nScandinavianlux.com: Its totally fine. I can fix it myself with a snippet. Just wanted to check\n\nScandinavianlux.com: Thanks for the help\n\n  David: Ah, let me know if you need any help!\n\n  David: Also, would you mind taking a few seconds to leave a short review about my support (David)  today on Shopify App Store? :$  \n      Just 30s to go: https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal\n\n  David: It would really make my day!!!\n\nScandinavianlux.com: i've responed with a review\n\n  David: Hmm, may I trouble you for a screenshot since the notification is not popping up on my end x)\n\nScandinavianlux.com: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/6/8/4/8/6848a786dd0e3000/image_by1gyi.png]\n\n  David: Ah, thank you so much!!!!\n\nScandinavianlux.com: Have a great day\n\n  David: You too :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi và giới thiệu brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng sử dụng tốt."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Truyền đạt thông tin rõ ràng, hướng dẫn khách từng bước một cách hiệu quả, kể cả khi xử lý vấn đề kỹ thuật phức tạp."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe rất tốt, hiểu được yêu cầu phức tạp và nhiều lớp của khách hàng về việc hiển thị badge có điều kiện."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu thân thiện, chuyên nghiệp. Luôn cập nhật cho khách khi cần thêm thời gian xử lý, giữ nhịp độ hội thoại tốt."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự đồng cảm và thái độ đặt khách hàng làm trung tâm rất tốt qua câu nói: '...you are our customers and we here strive for the best experience.'"
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Rất nhiệt tình và kiên trì, không ngại xử lý một vấn đề kỹ thuật khó và phức tạp vượt ngoài yêu cầu ban đầu."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Kỹ năng khai thác thông tin xuất sắc. Đặt câu hỏi đúng trọng tâm (badge từ theme?), dùng cả video để xác nhận lại chính xác vấn đề 'flickering' của khách."
+        },
+        "solution": {
+          "score": 2.5,
+          "justification": "Điểm trừ 0.5. Agent đã giải quyết được vấn đề đầu tiên (enable app aEmbed) và phần lớn vấn đề thứ hai (logic ẩn/hiện badge). Tuy nhiên, đoạn code CSS cuối cùng để sửa lỗi 'flickering' đã không hoạt động như mong đợi. Mặc dù đây là một case rất khó và agent đã xử lý rất tốt khi đề nghị chuyển cho dev, giải pháp tự cung cấp cuối cùng vẫn chưa hoàn chỉnh."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Rất chủ động. Agent không chỉ giải quyết vấn đề khách báo mà còn kiên trì xử lý các vấn đề phát sinh, thậm chí khi khách nói 'không phải vấn đề lớn', agent vẫn khẳng định muốn mang lại trải nghiệm tốt nhất."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Thực hiện việc chuyển case rất chuẩn. Khi nhận thấy vấn đề vượt quá khả năng, agent đã ngay lập tức đề nghị 'let me get our devs on this'. Việc khách từ chối không ảnh hưởng đến việc agent đã làm đúng quy trình."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Sử dụng tốt các công cụ hỗ trợ như screenshot và video (Google Drive) để làm rõ vấn đề với khách."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Thể hiện rất rõ tinh thần extra mile. Từ một yêu cầu đơn giản, agent đã dành nhiều thời gian và nỗ lực để thực hiện các yêu cầu code tùy chỉnh phức tạp cho khách."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent có xin review và khách hàng đã xác nhận hoàn thành."
+        }
+      },
+      "overall_summary": "Điểm 9.75/10. Một cuộc hội thoại xuất sắc. Agent David đã thể hiện kỹ năng kỹ thuật, giao tiếp và chăm sóc khách hàng ở mức độ rất cao. Anh xử lý một vấn đề phức tạp, nhiều lớp một cách kiên trì và chuyên nghiệp. Điểm trừ duy nhất rất nhỏ là giải pháp code cuối cùng chưa hoàn thiện, nhưng cách xử lý và đề nghị leo thang vụ việc sau đó là hoàn toàn đúng đắn.",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_6a072ab6-136b-45dc-a6c6-4d2eb5767a13",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-07",
+    "app": "SearchPie",
+    "customer": "h8xccg-pn",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Wendy]\n\nh8xccg-pn: just fix it please\n\n  Wendy: Hello, it's Wendy from SearchPie\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/c/0/a/0/c0a07937176bb800/image_1vlz9i.png]\n\n  Wendy: Oh i see your store has many HTML tags issues\n\n  Wendy: It's related to coding to fix\n\n  Wendy: May i ask if you have in-house technical expert to fix it?\n\nh8xccg-pn: no\n\n  Wendy: I see\n\n  Wendy: No worries, we're more than ready to help you fix it\n\n  Wendy: To fix, we need temporary access to your store (just THEME)\n\n  Wendy: may i ask if it's fine to you also?\n\nh8xccg-pn: ok\n\n  Wendy: The access request is sent\n\n  Wendy: Please go to Shopify settings > Users & approve it (PIELAB)\n\nh8xccg-pn: done\n\n  Wendy: Glad to hear that\n\n  Wendy: Now please let me pass it to our technical expert\n\n  Wendy: When it's done, we will surely let you know\n\nh8xccg-pn: great\n\n  Wendy: Ah, my shift will end in the next 3 minutes. Before I leave, may i ask from 1 to 5, how would you rate my support today from me (WENDY)?\n\nh8xccg-pn: 5\n\n  Wendy: Wooaa thanks a lot\n\n  Wendy: If so, would you mind sharing your thoughts on my support (WENDY) by leaving me a review on Shopify App Store? \n      Just 30s to go: https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal  🥹\n      \n      It would be THE WORLD to me & my whole team, big thanks 🙏🙏🙏🥹🥹🥹\n\n  Wendy: If you don't mind, can you please let me know if the review is submitted? Due to Shopify Policy, I can't see your words atm, thank youuuuu <3  <3  <3\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có đủ tên agent và tên thương hiệu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Giao tiếp rõ ràng, đi thẳng vào vấn đề và hướng dẫn khách các bước cần làm rất cụ thể."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe tốt, phản hồi đúng các thông tin từ khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu chuyên nghiệp, tốc độ phản hồi hợp lý."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Tốt, câu \"No worries, we're more than ready to help you fix it\" thể hiện sự đồng cảm và trấn an khách hàng hiệu quả."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Thái độ nhiệt tình, chủ động đề nghị hỗ trợ khi biết khách không có chuyên viên kỹ thuật."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Chủ động kiểm tra, xác định được vấn đề và hỏi đúng câu hỏi cần thiết (\"May i ask if you have in-house technical expert to fix it?\") để đưa ra giải pháp phù hợp."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đưa ra hướng giải quyết chính xác cho vấn đề kỹ thuật bằng cách xin quyền truy cập để team xử lý."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chủ động đề nghị hỗ trợ sửa lỗi ngay khi biết khách không thể tự làm, không chờ khách phải yêu cầu."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Thực hiện việc chuyển case cho team kỹ thuật rất tốt, thông báo rõ ràng cho khách hàng."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Vấn đề cần team kỹ thuật xử lý nên không có cơ hội chia sẻ tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để đi thêm bước xa hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent đã chủ động xin review và làm rất tốt."
+        }
+      },
+      "overall_summary": "Điểm 10/10. Một cuộc hội thoại mẫu mực. Agent xử lý vấn đề rất chuyên nghiệp, hiệu quả từ đầu đến cuối, giao tiếp rõ ràng và thể hiện sự đồng cảm tốt. Các bước xử lý vấn đề kỹ thuật và xin review đều được thực hiện hoàn hảo.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_ff4efd0c-422b-4ea2-8642-7b41296bbf48",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-07",
+    "app": "DECO",
+    "customer": "avidloveplay",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\navidloveplay: Hello, we plan to create different types of labels & badges with various functions. We currently have at least three categories of superscripts. Which plan would you recommend for us?\n\n  David: Hey, this is David from DECO here. May I ask what functions are you looking for?\n\navidloveplay: Labels & badges with various functions\n\navidloveplay: Labels or badges highlight a product’s features, target audience, discounts, and more.\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/1/5/e/b15e39f61465a800/image_ygfc1u.png]\n\n  David: Ah, yeah, I got that. I was just wondering like which functions are you looking for. We have a variety that you can choose from like so:\n\navidloveplay: Product tags & labels.\n\n  David: For the tags, you are going to need the Growth Plan. But to make the deal better for you, I can hook you up with a 20% discount on our Growth Monthly Plan\n\navidloveplay: Is Starter Plan okay? Or we need to upgrade to Growth Plan?\n\navidloveplay: OKay, Thanks. Please provide us with a 20% discount code.\n\n  David: Great! Please give me a few moments\n\navidloveplay: Okay.\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/1/5/e/b15e39f61465a800/image_3f7bxs.png]\n\n  David: Ah, now, can you go here?\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/1/5/e/b15e39f61465a800/image_ywoafs.png]\n\n  David: Then paste this code: 20%OFF_avidloveplay\n\navidloveplay: Okay. Thanks.\n\n  David: Let me know how it goes!\n\navidloveplay: I have paid for Growth plan already.\n\navidloveplay: Thanks.\n\n  David: Ah, great to hear! Let me know if you need any help!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi và giới thiệu brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Trừ 0.25 điểm. Khi khách chưa trả lời rõ, agent lặp lại câu hỏi y hệt nhau (\"May I ask what functions are you looking for?\" và sau đó là \"I was just wondering like which functions are you looking for\"). Việc này làm cuộc hội thoại hơi vòng vo lúc đầu. Thay vì lặp lại, agent có thể chủ động đưa ra vài ví dụ về tính năng để định hướng cho khách."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và trả lời đúng câu hỏi của khách về việc nên chọn Starter hay Growth Plan."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu thân thiện, nhiệt tình, tốc độ phản hồi tốt."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Tình huống không yêu cầu sự đồng cảm, agent giữ thái độ lịch sự là đủ."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent thể hiện sự nhiệt tình qua việc chủ động đề nghị giảm giá để hỗ trợ khách."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã đặt câu hỏi để làm rõ nhu cầu chưa cụ thể của khách, giúp tư vấn đúng gói cước."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Giải pháp hoàn hảo. Agent đã tư vấn đúng plan khách cần (Growth Plan), cung cấp mã giảm giá và hướng dẫn khách thanh toán thành công."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Làm rất tốt. Agent đã chủ động đề nghị giảm giá 20% (\"I can hook you up with a 20% discount\") để giúp khách đưa ra quyết định mua hàng, thể hiện sự chủ động tuyệt vời."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có cơ hội thể hiện, đây là chat tư vấn bán hàng."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã dùng ảnh chụp màn hình để hướng dẫn rất hiệu quả, không cần cung cấp thêm tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Việc chủ động cung cấp mã giảm giá 20% là một điểm cộng lớn, vượt trên mong đợi của khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat kết thúc một cách bình thường, không có cơ hội rõ ràng để xin review, không bắt buộc."
+        }
+      },
+      "overall_summary": "Tổng điểm: 9.75/10. Một cuộc hội thoại tư vấn bán hàng rất hiệu quả. Agent đã xuất sắc trong việc làm rõ nhu cầu của khách, tư vấn đúng gói sản phẩm và đặc biệt chủ động đưa ra mã giảm giá để chốt đơn thành công. Hướng dẫn thanh toán bằng hình ảnh cũng rất rõ ràng. Điểm nhỏ cần cải thiện là cách đặt câu hỏi khai thác thông tin có thể đa dạng hơn để tránh lặp lại.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+    }
+  },
+  {
+    "session_id": "session_86c84e44-9d40-4229-bd36-9176fec66cb1",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-07",
+    "app": "DECO",
+    "customer": "Studio Trayee",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Wendy]\n\nStudio Trayee: Hi DECO Team! I need help with the badge display problem.\n\nStudio Trayee: Hello, I am not able to see the bade. I addedto only two products - Daisy dreams Feeding and Shravani Feeding\n\n  Wendy: Hello, it's Wendy from DECO\n\n  Wendy: No worries, please let me check it for you\n\nStudio Trayee: ok\n\n  Wendy: Now I will pass the case to our technical expert to help you fix it\n\nStudio Trayee: ok\n\n  Wendy: When it's done, we will get back & let you know :$\n\n  Wendy: Hello I'm back\n\n  Wendy: May I ask if you're still here?\n\nStudio Trayee: okthank youhi\n\nStudio Trayee: hi\n\nStudio Trayee: yes\n\n  Wendy: We fixed the issue\n\n  Wendy: And it's showing now\n\n  Wendy: may I ask if it's showing on your side?\n\nStudio Trayee: what was the issue?\n\nStudio Trayee: I would like to know so that I can do it if it pops up later\n\n  Wendy: It's because the theme isn't compatible with the app. But after the fix, it will not happen anymore in the future\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/e/6/8/be6844de36557800/image_1xrpxex.png]\n\nStudio Trayee: If you check Meera product, I want that same font. Which one should we select?\n\nStudio Trayee: I am going to migrate to dawn theme, in that case, should I embed it separately in to that draft theme?\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/e/6/8/be6844de36557800/image_pyt5u0.png]\n\n  Wendy: may I ask if you need the font like this?\n\nStudio Trayee: the font in the tag \"New Arrival\"\n\n  Wendy: Please let me check\n\nStudio Trayee: ok\n\n  Wendy: Hello I'm back\n\nStudio Trayee: yes\n\n  Wendy: If you want to use the font like \"New Arrival\" badge, you can try to use the Poppins, it's the font for you\n\n  Wendy: > I am going to migrate to dawn theme, in that case, should I embed it separately in to that draft theme?\n      I'll answer this question. My answer is Yes you should. And we fixed the badge displaying issue by adding the regex, for your current theme. If you change new theme, we can help you add the new regex. Don't worry about it\n\nStudio Trayee: yes pls\n\n  Wendy: Perfect\n\n  Wendy: Please let us know if you need any other questions\n\n  Wendy: Ah, from 1 to 5, may I ask how would you rate my support today from me (WENDY)? :$\n\nStudio Trayee: no as of now\n\nStudio Trayee: If I want to add diff tags to diff products, how do i do it?\n\n  Wendy: > If I want to add diff tags to diff products, how do i do it?\n      You just need to create new badge in our app., and select the product you want to display\n\nStudio Trayee: ok done.\n\nStudio Trayee: thank you so much\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/e/6/8/be6844de36557800/image_1g8cx4t.png]\n\n  Wendy: |  |  |  |  |  |\n      If so, would you mind sharing your thoughts on my support (WENDY) by leaving me a review on Shopify App Store?\n      Just 30s to go: [https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal](https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal)\n\n  Wendy: It would be THE WORLD to me & my whole team, big thanks 🙏🙏🙏🥹🥹🥹\n\nStudio Trayee: I don want the tag near the name also. how to remove it?\n\nStudio Trayee: [File: Screenshot 2026-04-07 at 1.09.21 PM.png - https://storage.crisp.chat/users/upload-1/session/-/b/e/6/8/be6844de36557800/screenshot-2026-04-07-at-10921_jnlvdd.png]\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/e/6/8/be6844de36557800/image_10hctb9.png]\n\n  Wendy: Do you want to remove this badge? or change the position?\n\nStudio Trayee: remove it pls\n\n  Wendy: Sure  you can Deactivate the badge, or Remove it here\n\nStudio Trayee: pls remove it\n\nStudio Trayee: I want only on the photo, thats all\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/e/6/8/be6844de36557800/image_1bgix0n.png]\n\n  Wendy: You can do it on your side, very easy ;)\n\nStudio Trayee: But wont it be removed on the photo also?\n\n  Wendy: No they're in 2 sections. On the photo is called Badge inside image, and near your title is called: Badge outside the image\n\n  Wendy: Let's check this section\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/b/e/6/8/be6844de36557800/image_1gm75he.png]\n\nStudio Trayee: cool\n\nStudio Trayee: got it\n\nStudio Trayee: thank you so much\n\n  Wendy: You're welcome\n\n  Wendy: Ah, If you don't mind, can you please let me know if the review is submitted? Due to Shopify Policy, I can't see your words 🥹🥹🥹🙏🙏🙏\n\nStudio Trayee: sure, will do\n\n  Wendy: 🥹\n\n  Wendy: Thank you\n\nStudio Trayee: most welcome\n\n  Wendy: {'type': 'image/gif', 'url': 'https://media2.giphy.com/media/v1.Y2lkPWJjYzgzMTc4dWx4MGhhZjM0cXc0ZGJmczhmenh4djAyaXNhanpsdWVyNW9hbHZoNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Bht33KS4YXaHS5ABOP/100.gif', 'index': 21}\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent chào và giới thiệu tên, brand đầy đủ: \"Hello, it's Wendy from DECO\"."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng sử dụng tốt, không có lỗi gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giải thích các vấn đề và hướng dẫn rất rõ ràng, khúc chiết, có kèm hình ảnh minh họa khi cần thiết, giúp khách hàng dễ dàng nắm bắt thông tin."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent đã lắng nghe và trả lời tất cả các câu hỏi của khách hàng, kể cả những câu hỏi nhỏ phát sinh sau khi vấn đề chính đã được giải quyết."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu thân thiện, nhiệt tình. Tốc độ phản hồi hợp lý, có cập nhật cho khách khi chuyển case và khi quay trở lại."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự thông cảm và sẵn lòng giúp đỡ ngay từ đầu với câu \"No worries, please let me check it for you\"."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent rất nhiệt tình, không chỉ giải quyết vấn đề ban đầu mà còn kiên nhẫn xử lý nhiều câu hỏi phụ của khách."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Làm rất tốt khi hỏi lại để xác nhận yêu cầu của khách: \"Do you want to remove this badge? or change the position?\", tránh được hiểu lầm và xử lý sai."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Cung cấp giải pháp chính xác cho tất cả các vấn đề: từ việc fix lỗi hiển thị, tư vấn về font chữ, đến việc hướng dẫn khách tự thao tác để bỏ badge ở vị trí không mong muốn."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chủ động đề nghị hỗ trợ khách trong tương lai khi họ đổi theme: \"If you change new theme, we can help you add the new regex. Don't worry about it\"."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Thực hiện chuyển case cho team kỹ thuật một cách chuyên nghiệp, thông báo rõ ràng cho khách hàng: \"Now I will pass the case to our technical expert to help you fix it\"."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để sử dụng tài liệu, agent đã giải quyết trực tiếp và hiệu quả bằng hướng dẫn cụ thể kèm ảnh chụp màn hình."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Agent đã hỗ trợ rất chu đáo qua nhiều câu hỏi khác nhau của khách, đảm bảo khách hàng hoàn toàn hài lòng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent đã xin review một cách khéo léo và đầy đủ."
+        }
+      },
+      "overall_summary": "Một cuộc hội thoại chất lượng rất cao. Agent đã thể hiện sự chuyên nghiệp từ đầu đến cuối, chủ động giải quyết vấn đề, kiên nhẫn trả lời tất cả các câu hỏi của khách và thực hiện chuyển case kỹ thuật một cách hoàn hảo. Cách giao tiếp rõ ràng, thân thiện và các giải pháp đưa ra đều chính xác, giúp khách hàng giải quyết triệt để vấn đề của mình. Đây là một ví dụ xuất sắc về hỗ trợ khách hàng.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_51b57317-abbd-4213-9eec-0434893c4465",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-07",
+    "app": "DECO",
+    "customer": "Lethato",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Jane]\n\nLethato: HELLO\n\nLethato: I WANT THE WIDGET TO BE SHOWN ON THE PRODUCT IMAGES\n\nLethato: [File: Screenshot 2026-04-07 153258.jpg - https://storage.crisp.chat/users/upload-1/session/-/8/0/b/f/80bfaa566d24f000/screenshot-2026-04-07-153258_14d6i04.jpg]\n\nLethato: LIKE THIS\n\n  Jane: it's Jane from DECO team here\n\n  Jane: yes our app can help you do it\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/8/0/b/f/80bfaa566d24f000/image_1nsiszf.png]\n\n  Jane: please choose like this\n\nLethato: THEN\n\nLethato: OK\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/8/0/b/f/80bfaa566d24f000/image_1z0x74l.png]\n\n  Jane: there're 2 types of badges\n\n  Jane: Text badge is the one that can edit content\n\nLethato: WHICH ONE SHOULD I CHOOSE\n\n  Jane: Image badge means you upload an image and use it as a badge, this type of badge cant edit content\n\nLethato: HELLO\n\nLethato: I HAVE ADDED THE WIDGETS\n\n  Jane: still Jane here\n\nLethato: BUT THERE IS 1 ISSUE\n\nLethato: THE WIDGET LOOK SMALLER ON OUTSIDE THE PRODUCT PAGE BUT BIGGER INSIDE THE PRODUCT PAGESD\n\n  Jane: I see, you can adjust the size on collection page/ product page\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/8/0/b/f/80bfaa566d24f000/image_erjvjy.png]\n\n  Jane: is everything okay now?\n\nLethato: HELLO\n\nLethato: I GOT STUCK AT ONE PLACE\n\nLethato: [File: Screenshot 2026-04-07 170324.jpg - https://storage.crisp.chat/users/upload-1/session/-/8/0/b/f/80bfaa566d24f000/screenshot-2026-04-07-170324_qjsz6p.jpg]\n\nLethato: THIS PROBLEM IS COMMING\n\n  Jane: got your info, can you send me the product link for me to check at my end?\n\nLethato: https://lethato.com/collections/sale/products/wholecut-oxford-brown?variant=31475748372569\n\n  Jane: I'll pass your case to our technical team to fix your issues\n\n  Jane: We'll get back & let you know when it's done :$\n\nLethato: OK\n\n  Jane: it should be done in 15min only, no worry\n\n  Jane: Our team already fixed your issue\n\n  Jane: Can you double check at your end? :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có đủ tên agent và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Truyền đạt thông tin rõ ràng, đi thẳng vào vấn đề và sử dụng hình ảnh minh họa hiệu quả."
+        },
+        "listening": {
+          "score": 1.25,
+          "justification": "Bỏ lỡ câu hỏi của khách hàng \"WHICH ONE SHOULD I CHOOSE\". Thay vì đưa ra lời khuyên trực tiếp dựa trên yêu cầu ban đầu (khách đã gửi ảnh), agent chỉ lặp lại phần giải thích về 2 loại huy hiệu. Điều này làm agent trông giống bot hơn và không thực sự lắng nghe để tư vấn cho khách. Nên trả lời trực tiếp hơn, ví dụ: \"Based on what you want, you should choose the Text badge.\""
+        },
+        "tone_pace": {
+          "score": 0.5,
+          "justification": "Có một khoảng trễ 18 phút trong lúc khách đang chờ câu trả lời, khiến họ phải nhắn \"HELLO\" để hỏi lại. Nếu cần thời gian kiểm tra, bạn nên chủ động thông báo cho khách biết, ví dụ \"Let me check this for you, it will take a few minutes\" để họ không cảm thấy bị bỏ quên."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội rõ ràng để thể hiện sự đồng cảm, nhưng agent có dùng từ ngữ trấn an như \"no worry\" khi vấn đề cần team kỹ thuật xử lý."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent tích cực hỗ trợ khách hàng qua nhiều vấn đề khác nhau, không có dấu hiệu né tránh."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Chủ động hỏi xin link sản phẩm ngay khi khách báo lỗi để kiểm tra, đây là một bước probing hiệu quả."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Xử lý thành công tất cả các vấn đề của khách, từ hướng dẫn cài đặt ban đầu cho đến việc chuyển cho team kỹ thuật để sửa lỗi và xác nhận lại với khách."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chủ động yêu cầu khách kiểm tra lại sau khi team kỹ thuật đã sửa lỗi."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chuyển vấn đề cho team kỹ thuật rất tốt, có thông báo cho khách và cập nhật thời gian cũng như kết quả sau khi xử lý xong."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ tài liệu, agent đã hướng dẫn trực tiếp bằng hình ảnh rất hiệu quả."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để đi thêm một bước, agent đã tập trung giải quyết tốt các vấn đề của khách."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hội thoại chưa kết thúc hoàn toàn (chờ khách xác nhận lại), vì vậy chưa có cơ hội phù hợp để xin đánh giá."
+        }
+      },
+      "overall_summary": "Điểm: 9.5/10. Agent xử lý vấn đề kỹ thuật của khách hàng rất tốt, qua nhiều bước khác nhau và chuyển giao cho team kỹ thuật hiệu quả để giải quyết triệt để. Tuy nhiên, có hai điểm nhỏ cần cải thiện: tốc độ phản hồi (có khoảng trễ đáng kể) và lắng nghe (bỏ qua câu hỏi cần tư vấn trực tiếp của khách).",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_92c5370b-e523-4b11-9c38-f473c190cbc5",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-04-07",
+    "app": "SearchPie",
+    "customer": "q2xsg0-8b",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Wendy]\n\nq2xsg0-8b: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\n  Wendy: Hello, it's Wendy from SearchPie.\n\nq2xsg0-8b: yes please\n\n  Wendy: Glad to hear that\n\n  Wendy: First step, please go to Site speed > Image Compress > click COMPRESS button below\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/d/f/e/9/dfe9d16b4ce0f000/image_f9xwpk.png]\n\nq2xsg0-8b: where is this\n\n  Wendy: It's in the Site Speed in our app's menu\n\n  Wendy: May I ask if you find out that feature?\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/d/f/e/9/dfe9d16b4ce0f000/image_35pf6s.png]\n\nq2xsg0-8b: Fix now\n\n  Wendy: Hello, it's Wendy from SearchPie\n\n  Wendy: Would you like me to check your store's meta tags issue?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Tốt, chào hỏi và giới thiệu brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng sử dụng ổn, không có lỗi."
+        },
+        "communication": {
+          "score": 1.0,
+          "justification": "Trừ 1.0đ. Tin nhắn cuối cùng của agent hoàn toàn lạc đề. Việc lặp lại lời chào \"Hello, it's Wendy from SearchPie\" và đột ngột chuyển sang vấn đề \"meta tags issue\" đã gây ra sự khó hiểu nghiêm trọng, làm gián đoạn luồng hỗ trợ mà không có lời giải thích."
+        },
+        "listening": {
+          "score": 0.5,
+          "justification": "Trừ 1.0đ. Đây là lỗi nghiêm trọng. Agent đã bỏ qua yêu cầu cốt lõi của khách là \"Can you help me set up the features in your app?\". Thay vì tiếp tục hướng dẫn hoặc làm rõ tin nhắn \"Fix now\", agent đã từ bỏ vấn đề đang dang dở để bắt đầu một chủ đề mới không liên quan."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu thân thiện, lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có cơ hội rõ ràng để thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent có tỏ ra sẵn lòng giúp đỡ qua câu \"Glad to hear that\"."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Tốt. Agent có hỏi lại \"May I ask if you find out that feature?\" để xác nhận khách đã theo kịp hướng dẫn."
+        },
+        "solution": {
+          "score": 1.0,
+          "justification": "Trừ 2.0đ. Giải pháp cho yêu cầu chính của khách (\"help me set up the features\") đã bị bỏ dở hoàn toàn. Agent chỉ bắt đầu với một tính năng rồi bỏ qua vấn đề, không hoàn thành việc hỗ trợ như khách đã yêu cầu."
+        },
+        "proactiveness": {
+          "score": 1.0,
+          "justification": "Trừ 1.0đ. Agent đã không chủ động trong việc hoàn thành yêu cầu của khách. Yêu cầu là \"set up features\" (số nhiều), nhưng agent chỉ xử lý một phần rồi dừng lại. Lẽ ra agent cần vạch ra một lộ trình để hướng dẫn khách qua các tính năng quan trọng khác của gói Premium."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Tốt, có sử dụng ảnh chụp màn hình để hướng dẫn khách."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội vì yêu cầu chính chưa được xử lý xong."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc, không có cơ hội xin review."
+        }
+      },
+      "overall_summary": "Điểm: 16.0/20. Agent khởi đầu tốt nhưng sau đó mắc lỗi nghiêm trọng khi bỏ qua yêu cầu gốc của khách hàng. Có vẻ như tin nhắn \"Fix now\" của khách là một trigger, nhưng agent đã xử lý không tốt bằng cách bắt đầu một chủ đề mới hoàn toàn, gây khó hiểu và không giải quyết được vấn đề khách cần. Cần cải thiện kỹ năng lắng nghe và bám sát ngữ cảnh cuộc trò chuyện để đảm bảo vấn đề của khách được xử lý trọn vẹn.",
+      "total_score_20": 15.0,
+      "final_score_10": 7.5
+    }
+  }
+]
