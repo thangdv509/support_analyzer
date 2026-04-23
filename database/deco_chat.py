@@ -3,9 +3,9 @@ CRUD helpers for the deco_chat collection.
 
 Schema of each document:
 {
-    session_id:        str   (unique, Crisp session ID)
+    session_id:        str   (Crisp session ID)
     website_id:        str
-    date:              str   (YYYY-MM-DD)
+    date:              str   (YYYY-MM-DD — ngày chấm)
     app:               str   ("DECO" | "SearchPie" | ...)
     customer:          str
     primary_operator:  str
@@ -27,7 +27,8 @@ Schema of each document:
     updated_at:        datetime
 }
 
-Primary key: session_id (unique index created on first use).
+Primary key: (session_id, date) — cho phép cùng session được chấm lại vào ngày khác
+(khách quay lại chat tiếp). Trong cùng một ngày, không chấm lại.
 """
 
 from __future__ import annotations
@@ -45,7 +46,13 @@ _COLLECTION = "deco_chat"
 
 def _col() -> Collection:
     col = get_db()[_COLLECTION]
-    col.create_index([("session_id", ASCENDING)], unique=True, background=True)
+    # Migration: drop cũ unique index trên session_id đơn lẻ nếu còn tồn tại
+    try:
+        col.drop_index("session_id_1")
+    except Exception:
+        pass
+    col.create_index([("session_id", ASCENDING), ("date", ASCENDING)], unique=True, background=True)
+    col.create_index([("session_id", ASCENDING)], background=True)
     col.create_index([("date", ASCENDING)], background=True)
     col.create_index([("primary_operator", ASCENDING)], background=True)
     return col
@@ -106,11 +113,11 @@ def upsert_chat(
     crisp_url: str | None = None,
 ) -> str:
     """
-    Insert or replace a graded chat document by session_id.
+    Insert or replace a graded chat document by (session_id, date).
     Returns 'inserted' or 'replaced'.
     """
     col = _col()
-    existing = col.find_one({"session_id": session_id}, {"created_at": 1})
+    existing = col.find_one({"session_id": session_id, "date": date}, {"created_at": 1})
     created_at = existing["created_at"] if existing else None
 
     doc = _build_doc(
@@ -118,13 +125,14 @@ def upsert_chat(
         primary_operator, is_resolved, transcript, grading,
         summary, crisp_url, created_at,
     )
-    result = col.replace_one({"session_id": session_id}, doc, upsert=True)
+    result = col.replace_one({"session_id": session_id, "date": date}, doc, upsert=True)
     return "replaced" if result.matched_count else "inserted"
 
 
 def upsert_many(records: list[dict[str, Any]]) -> dict[str, int]:
     """
     Bulk upsert a list of graded chat dicts (same keys as upsert_chat args).
+    Deduplication key: (session_id, date) — cùng session vào ngày khác vẫn được lưu.
     Returns {"inserted": N, "replaced": M}.
     """
     if not records:
@@ -132,22 +140,27 @@ def upsert_many(records: list[dict[str, Any]]) -> dict[str, int]:
 
     col = _col()
     session_ids = [r["session_id"] for r in records]
+    # Lấy tất cả doc có session_id trùng (có thể nhiều date khác nhau)
     existing = {
-        doc["session_id"]: doc["created_at"]
-        for doc in col.find({"session_id": {"$in": session_ids}}, {"session_id": 1, "created_at": 1})
+        (doc["session_id"], doc["date"]): doc["created_at"]
+        for doc in col.find(
+            {"session_id": {"$in": session_ids}},
+            {"session_id": 1, "date": 1, "created_at": 1},
+        )
     }
 
     ops = []
     inserted = replaced = 0
     for r in records:
-        sid = r["session_id"]
+        sid, date = r["session_id"], r["date"]
+        key = (sid, date)
         doc = _build_doc(
-            sid, r["website_id"], r["date"], r["app"], r["customer"],
+            sid, r["website_id"], date, r["app"], r["customer"],
             r["primary_operator"], r["is_resolved"], r["transcript"], r["grading"],
-            r.get("summary"), r.get("crisp_url"), existing.get(sid),
+            r.get("summary"), r.get("crisp_url"), existing.get(key),
         )
-        ops.append(ReplaceOne({"session_id": sid}, doc, upsert=True))
-        if sid in existing:
+        ops.append(ReplaceOne({"session_id": sid, "date": date}, doc, upsert=True))
+        if key in existing:
             replaced += 1
         else:
             inserted += 1
@@ -196,6 +209,10 @@ def get_chats_by_date_range(
     return list(_col().find(query).sort("date", ASCENDING))
 
 
-def session_exists(session_id: str) -> bool:
-    """Check if a session has already been graded and stored."""
-    return _col().count_documents({"session_id": session_id}, limit=1) > 0
+def session_exists(session_id: str, date: str | None = None) -> bool:
+    """Check if a (session_id, date) pair has already been graded and stored.
+    If date is None, returns True if any graded entry exists for this session."""
+    query: dict[str, Any] = {"session_id": session_id}
+    if date:
+        query["date"] = date
+    return _col().count_documents(query, limit=1) > 0

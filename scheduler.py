@@ -189,11 +189,13 @@ def _export_to_support_analyzer(new_results: list[dict]):
     # --- Tính lại summary từ TOÀN BỘ data trong sheet ---
     all_rows = ws.get_all_values()
     agent_stats: dict[str, list[float]] = {}
-    for row in all_rows[1:]:
+    last_data_row_1idx = 1  # ít nhất là header
+    for i, row in enumerate(all_rows, 1):
         if len(row) < 5 or not row[1].startswith("https://app.crisp.chat"):
             continue
         try:
             agent_stats.setdefault(row[3], []).append(float(row[4]))
+            last_data_row_1idx = i
         except ValueError:
             continue
 
@@ -201,11 +203,10 @@ def _export_to_support_analyzer(new_results: list[dict]):
     for agent, scores in sorted(agent_stats.items()):
         summary_rows.append([agent, round(sum(scores) / len(scores), 2), len(scores)])
 
-    total_data_rows = 1 + existing_data_count + (len(to_add) if to_add else 0)
-    summary_start = total_data_rows + 2  # 1-indexed
+    summary_start = last_data_row_1idx + 2  # 1-indexed, để 1 dòng trống
 
-    # Xóa summary cũ trước khi ghi lại (tránh bị lệch khi số agent thay đổi)
-    ws.batch_clear([f"A{summary_start}:C{summary_start + 20}"])
+    # Xóa toàn bộ vùng sau data (bao gồm summary cũ có thể nằm sai vị trí từ các lần chạy trước)
+    ws.batch_clear([f"A{last_data_row_1idx + 2}:C{last_data_row_1idx + 50}"])
     ws.update(summary_rows, f"A{summary_start}", value_input_option="USER_ENTERED")
 
     # --- Formatting ---
@@ -317,14 +318,18 @@ def _generate_summary(transcript: str) -> str | None:
 
 
 def _save_to_mongo(results: list[dict]):
-    # Chỉ lưu session chưa có trong DB, không overwrite
+    # Chỉ lưu (session_id, date) chưa có trong DB — cùng session ngày khác vẫn lưu được
     try:
         col = get_db()["deco_chat"]
-        saved_ids = {d["session_id"] for d in col.find({}, {"session_id": 1})}
-        to_save = [c for c in results if c["session_id"] not in saved_ids]
+        session_ids = [c["session_id"] for c in results]
+        saved_keys = {
+            (d["session_id"], d["date"])
+            for d in col.find({"session_id": {"$in": session_ids}}, {"session_id": 1, "date": 1})
+        }
+        to_save = [c for c in results if (c["session_id"], c["date"]) not in saved_keys]
         skipped = len(results) - len(to_save)
         if skipped:
-            log.info(f"   ⏭  Bỏ qua {skipped} chat đã có trong DB")
+            log.info(f"   ⏭  Bỏ qua {skipped} chat đã chấm trong ngày này")
         if not to_save:
             return
     except Exception as e:

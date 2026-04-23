@@ -118,12 +118,12 @@ def _score(criteria: dict, key: str) -> float:
 # Grade one date, return results (also saves local JSON)
 # ---------------------------------------------------------------------------
 
-def _already_saved_ids() -> set[str]:
-    """Lấy tất cả session_id đã có trong MongoDB."""
+def _already_saved_keys() -> set[tuple[str, str]]:
+    """Lấy tất cả (session_id, date) đã có trong MongoDB."""
     try:
         ensure_tunnel()
         col = get_db()["deco_chat"]
-        return {doc["session_id"] for doc in col.find({}, {"session_id": 1})}
+        return {(doc["session_id"], doc["date"]) for doc in col.find({}, {"session_id": 1, "date": 1})}
     except Exception:
         return set()
 
@@ -295,9 +295,9 @@ def _export_to_gsheet(all_results: list[dict], sheet_name: str):
 # ---------------------------------------------------------------------------
 
 def _save_to_mongo(results: list[dict]) -> dict[str, int]:
-    # Chỉ lưu các session chưa có trong DB
-    existing_ids = _already_saved_ids()
-    new_results = [c for c in results if c["session_id"] not in existing_ids]
+    # Chỉ lưu (session_id, date) chưa có trong DB — cùng session ngày khác vẫn lưu được
+    existing_keys = _already_saved_keys()
+    new_results = [c for c in results if (c["session_id"], c["date"]) not in existing_keys]
     skipped = len(results) - len(new_results)
     if skipped:
         print(f"   ⏭  Bỏ qua {skipped} chat đã có trong DB")
