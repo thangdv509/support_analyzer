@@ -170,6 +170,12 @@ def _export_to_support_analyzer(new_results: list[dict]):
     if not to_add:
         log.info("  Sheet: không có row mới.")
     else:
+        # Xóa summary cũ trước khi append — nếu không, append_rows sẽ nối SAU summary
+        # thay vì sau dòng data cuối cùng
+        if existed and existing_data_count > 0:
+            old_summary_row = existing_data_count + 3  # header(1) + data(N) + blank(1) + summary
+            ws.batch_clear([f"A{old_summary_row}:C{old_summary_row + 30}"])
+
         new_rows = []
         for chat in to_add:
             g = chat.get("grading", {}).get("criteria", {})
