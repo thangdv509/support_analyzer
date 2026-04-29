@@ -22,7 +22,7 @@ GOOGLE_CREDENTIALS_PATH = os.getenv("GOOGLE_CREDENTIALS_PATH", "credentials.json
 #   google/gemini-2.5-pro-preview   — default, fast & capable
 #   anthropic/claude-opus-4-6       — best Claude, excellent for structured reasoning
 #   openai/o4-mini                  — fast, cost-effective
-MODEL = os.getenv("OPENROUTER_MODEL", "google/gemini-2.5-pro-preview")
+MODEL = os.getenv("OPENROUTER_MODEL", "google/gemini-2.0-flash-001")
 
 # --- Few-shot reference examples ---
 QA_REFERENCES_PATH = os.path.join(os.path.dirname(__file__), "qa_references.json")
