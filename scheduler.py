@@ -195,13 +195,11 @@ def _export_to_support_analyzer(new_results: list[dict]):
     # --- Tính lại summary từ TOÀN BỘ data trong sheet ---
     all_rows = ws.get_all_values()
     agent_stats: dict[str, list[float]] = {}
-    last_data_row_1idx = 1  # ít nhất là header
-    for i, row in enumerate(all_rows, 1):
+    for row in all_rows[1:]:
         if len(row) < 5 or not row[1].startswith("https://app.crisp.chat"):
             continue
         try:
             agent_stats.setdefault(row[3], []).append(float(row[4]))
-            last_data_row_1idx = i
         except ValueError:
             continue
 
@@ -209,9 +207,11 @@ def _export_to_support_analyzer(new_results: list[dict]):
     for agent, scores in sorted(agent_stats.items()):
         summary_rows.append([agent, round(sum(scores) / len(scores), 2), len(scores)])
 
+    # Tính vị trí từ count đã biết — không phụ thuộc vào get_all_values() sau append
+    last_data_row_1idx = 1 + existing_data_count + len(to_add)
     summary_start = last_data_row_1idx + 2  # 1-indexed, để 1 dòng trống
 
-    # Xóa toàn bộ vùng sau data (bao gồm summary cũ có thể nằm sai vị trí từ các lần chạy trước)
+    # Xóa toàn bộ vùng sau data (bao gồm summary cũ có thể nằm sai vị trí)
     ws.batch_clear([f"A{last_data_row_1idx + 2}:C{last_data_row_1idx + 50}"])
     ws.update(summary_rows, f"A{summary_start}", value_input_option="USER_ENTERED")
 
@@ -248,8 +248,20 @@ def _export_to_support_analyzer(new_results: list[dict]):
         "horizontalAlignment": "CENTER"
     }, "backgroundColor,textFormat,horizontalAlignment")
 
-    # Màu score + highlight trừ điểm + notes cho rows mới
+    # Reset background về trắng cho toàn bộ vùng new data rows
+    # (tránh kế thừa formatting tối của summary cũ vẫn còn trên các cell đó)
     new_start_0idx = 1 + existing_data_count
+    if to_add:
+        reqs.insert(0, {"repeatCell": {
+            "range": {"sheetId": sid,
+                      "startRowIndex": new_start_0idx,
+                      "endRowIndex": new_start_0idx + len(to_add),
+                      "startColumnIndex": 0, "endColumnIndex": len(_HEADERS)},
+            "cell": {"userEnteredFormat": {"backgroundColor": {"red": 1, "green": 1, "blue": 1}}},
+            "fields": "userEnteredFormat(backgroundColor)"
+        }})
+
+    # Màu score + highlight trừ điểm + notes cho rows mới
     for offset, chat in enumerate(to_add):
         row_idx = new_start_0idx + offset
         g = chat.get("grading", {}).get("criteria", {})

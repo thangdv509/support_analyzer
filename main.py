@@ -168,7 +168,8 @@ def _export_to_gsheet(all_results: list[dict], sheet_name: str):
     spreadsheet = gc.open_by_key(GOOGLE_SHEET_ID)
 
     # Always create a new sheet (name is timestamp so it won't collide)
-    ws = spreadsheet.add_worksheet(title=sheet_name, rows=1000, cols=25)
+    needed_rows = len(all_results) + 50  # header + data + blank + summary buffer
+    ws = spreadsheet.add_worksheet(title=sheet_name, rows=max(1000, needed_rows), cols=25)
     print(f"📋 Created sheet '{sheet_name}'")
     sid = ws.id
 
