@@ -44,6 +44,7 @@ from analyzer_v2 import (
 from database.tunnel import ensure_tunnel
 from database.deco_chat import upsert_many
 from database.connection import get_db
+from database.sumtag import append_segment as sumtag_append_segment
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -314,12 +315,18 @@ _SUMMARY_PROMPT = (
     "Hành động và giải pháp mà agent đã thực hiện; "
     "Thái độ nổi bật của khách hàng. "
     "Trình bày dạng bullet point, ngôn ngữ chuyên nghiệp."
+    "\n\nCuối cùng, trả về một JSON block theo đúng định dạng sau:\n"
+    '```json\n{"tags": ["tag1", "tag2", "tag3"]}\n```\n'
+    "3 tags phải ngắn gọn (2-4 từ tiếng Anh), là các nhãn chủ đề cụ thể nhất mô tả cuộc hội thoại này."
 )
 
 
-def _generate_summary(transcript: str) -> str | None:
+def _generate_summary_and_tags(transcript: str) -> tuple[str | None, list[str]]:
+    """Generate bullet-point summary + 3 topic tags in one LLM call.
+    Returns (summary_text, tags).
+    """
     if not OPENROUTER_API_KEY:
-        return None
+        return None, []
     try:
         r = requests.post(
             "https://openrouter.ai/api/v1/chat/completions",
@@ -330,9 +337,22 @@ def _generate_summary(transcript: str) -> str | None:
             timeout=60,
         )
         r.raise_for_status()
-        return r.json()["choices"][0]["message"]["content"].strip()
+        raw = r.json()["choices"][0]["message"]["content"].strip()
+
+        tags: list[str] = []
+        summary_text = raw
+        if "```json" in raw:
+            parts = raw.split("```json")
+            summary_text = parts[0].strip()
+            try:
+                tags_raw = parts[1].split("```")[0].strip()
+                tags = json.loads(tags_raw).get("tags", [])
+            except Exception:
+                pass
+
+        return summary_text, tags
     except Exception:
-        return None
+        return None, []
 
 
 def _save_to_mongo(results: list[dict]):
@@ -354,29 +374,60 @@ def _save_to_mongo(results: list[dict]):
         log.warning(f"   Không check được DB: {e}")
         to_save = results
 
-    log.info(f"   Generating summaries for {len(to_save)} chats...")
-    summaries: dict[str, str | None] = {}
+    log.info(f"   Generating summaries + tags for {len(to_save)} chats...")
+    summaries: dict[str, tuple[str | None, list[str]]] = {}
     with ThreadPoolExecutor(max_workers=5) as ex:
-        futs = {ex.submit(_generate_summary, c["transcript"]): c["session_id"] for c in to_save}
+        futs = {ex.submit(_generate_summary_and_tags, c["transcript"]): c["session_id"] for c in to_save}
         for fut in as_completed(futs):
             summaries[futs[fut]] = fut.result()
 
-    records = [{
-        "session_id":       c["session_id"],
-        "website_id":       c["website_id"],
-        "date":             c["date"],
-        "app":              c["app"],
-        "customer":         c["customer"],
-        "primary_operator": c["primary_operator"],
-        "is_resolved":      c["is_resolved"],
-        "transcript":       c["transcript"],
-        "summary":          summaries.get(c["session_id"]),
-        "grading":          c["grading"],
-        "crisp_url":        f"https://app.crisp.chat/website/{c['website_id']}/inbox/{c['session_id']}",
-    } for c in to_save]
+    records = []
+    for c in to_save:
+        summary_text, tags = summaries.get(c["session_id"], (None, []))
+        records.append({
+            "session_id":       c["session_id"],
+            "website_id":       c["website_id"],
+            "date":             c["date"],
+            "app":              c["app"],
+            "customer":         c["customer"],
+            "primary_operator": c["primary_operator"],
+            "is_resolved":      c["is_resolved"],
+            "transcript":       c["transcript"],
+            "summary":          summary_text,
+            "tags":             tags or None,
+            "grading":          c["grading"],
+            "crisp_url":        f"https://app.crisp.chat/website/{c['website_id']}/inbox/{c['session_id']}",
+        })
 
     stats = upsert_many(records)
-    log.info(f"   ✅ MongoDB: {stats['inserted']} inserted, {stats['replaced']} replaced")
+    log.info(f"   ✅ MongoDB deco_chat: {stats['inserted']} inserted, {stats['replaced']} replaced")
+
+    # Also upsert into sumtag — append as new segment for this session
+    sumtag_created = sumtag_appended = 0
+    for c in to_save:
+        summary_text, tags = summaries.get(c["session_id"], (None, []))
+        if not summary_text:
+            continue
+        seg_data = {
+            "start":   c["date"] + " 00:00:00",
+            "end":     c["date"] + " 23:59:59",
+            "tags":    tags,
+            "summary": summary_text,
+        }
+        try:
+            result = sumtag_append_segment(
+                session_id=c["session_id"],
+                segment_data=seg_data,
+                crawl_date=c["date"],
+                website_id=c.get("website_id"),
+            )
+            if result == "created":    sumtag_created += 1
+            elif result == "appended": sumtag_appended += 1
+        except Exception as e:
+            log.warning(f"   sumtag append failed for {c['session_id']}: {e}")
+
+    if sumtag_created or sumtag_appended:
+        log.info(f"   ✅ MongoDB sumtag: {sumtag_created} created, {sumtag_appended} appended")
 
 
 # ---------------------------------------------------------------------------

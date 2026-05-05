@@ -30,42 +30,42 @@ _FEW_SHOT_MESSAGES = []  # populated by load_few_shot_examples()
 
 def load_few_shot_examples(max_examples=4, max_transcript_chars=6000):
     """
-    Load qa_references.json and build few-shot user/assistant message pairs.
-    Prioritizes: perfect, then solution deduction, then review_asking, then transferring.
-    Call once at startup.
+    Load qa_references.json và build few-shot message pairs.
+    Mỗi label có pool nhiều examples — mỗi lần gọi random chọn 1 từ mỗi pool.
     """
+    import random
     global _FEW_SHOT_MESSAGES
     if not os.path.exists(QA_REFERENCES_PATH):
-        print(f"ℹ️  No qa_references.json found at {QA_REFERENCES_PATH}. Run build_references.py to generate it.")
+        print(f"ℹ️  No qa_references.json found at {QA_REFERENCES_PATH}. Run build_references_from_db.py to generate it.")
         return
 
     with open(QA_REFERENCES_PATH, "r", encoding="utf-8") as f:
         refs = json.load(f)
 
-    # Priority order for few-shot selection
+    # Nhóm theo label
     priority_order = ["perfect_10", "solution_zero", "review_only", "transferring_zero",
                       "solution_deducted", "communication_deducted"]
-    refs_sorted = sorted(refs, key=lambda r: priority_order.index(r.get("label", "")) if r.get("label", "") in priority_order else 99)
+    pools: dict[str, list] = {}
+    for ref in refs:
+        label = ref.get("label", "other")
+        pools.setdefault(label, []).append(ref)
+
+    # Random chọn 1 từ mỗi pool, theo priority order, tối đa max_examples
+    chosen = []
+    for label in priority_order:
+        if label in pools and len(chosen) < max_examples:
+            chosen.append(random.choice(pools[label]))
 
     messages = []
-    for ref in refs_sorted[:max_examples]:
+    for ref in chosen:
         transcript = ref["transcript"]
-        # Truncate very long transcripts to keep prompt manageable
         if len(transcript) > max_transcript_chars:
             transcript = transcript[:max_transcript_chars] + "\n\n[... lược bớt phần còn lại ...]"
-
-        expected = ref["expected_output"]
-        messages.append({
-            "role": "user",
-            "content": f"Chấm đoạn chat sau:\n\n{transcript}"
-        })
-        messages.append({
-            "role": "assistant",
-            "content": json.dumps(expected, ensure_ascii=False)
-        })
+        messages.append({"role": "user",      "content": f"Chấm đoạn chat sau:\n\n{transcript}"})
+        messages.append({"role": "assistant", "content": json.dumps(ref["expected_output"], ensure_ascii=False)})
 
     _FEW_SHOT_MESSAGES = messages
-    print(f"✅ Loaded {len(refs_sorted[:max_examples])} few-shot reference examples (labels: {[r.get('label') for r in refs_sorted[:max_examples]]})")
+    print(f"✅ Loaded {len(chosen)} few-shot examples (labels: {[r.get('label') for r in chosen]})")
 
 GRADING_CRITERIA = """
 Bạn là QA Support chấm điểm hội thoại theo 14 tiêu chí. Tổng 20 điểm.
@@ -658,10 +658,14 @@ def _parse_and_cap(raw):
     elif "```" in raw:
         raw = raw.split("```")[1].split("```")[0].strip()
     data = json.loads(raw)
+    criteria = data.get('criteria', {})
+    if len(criteria) < 14:
+        # LLM trả về format sai (thường do transcript quá ngắn/không có nội dung hỗ trợ)
+        raise ValueError(f"Incomplete criteria ({len(criteria)}/14). Response keys: {list(data.keys())}")
     for k, cap in _SCORE_CAPS.items():
-        if k in data.get('criteria', {}):
-            data['criteria'][k]['score'] = min(float(data['criteria'][k].get('score', 0)), cap)
-    total_20 = sum(item.get('score', 0) for item in data.get('criteria', {}).values())
+        if k in criteria:
+            criteria[k]['score'] = min(float(criteria[k].get('score', 0)), cap)
+    total_20 = sum(item.get('score', 0) for item in criteria.values())
     data['total_score_20'] = round(total_20, 2)
     data['final_score_10'] = round(total_20 / 2, 2)
     return data

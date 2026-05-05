@@ -11,7 +11,8 @@ Schema of each document:
     primary_operator:  str
     is_resolved:       bool
     transcript:        str
-    summary:           str | None  (bullet-point summary from crawl.py SUMMARY_PROMPT)
+    summary:           str | None  (bullet-point summary)
+    tags:              list[str] | None  (3 short topic labels from the same LLM call as summary)
     grading: {
         criteria: {
             <criterion>: { score: float, justification: str }
@@ -77,6 +78,7 @@ def _build_doc(
     transcript: str,
     grading: dict[str, Any],
     summary: str | None = None,
+    tags: list[str] | None = None,
     crisp_url: str | None = None,
     created_at: datetime | None = None,
 ) -> dict[str, Any]:
@@ -91,6 +93,7 @@ def _build_doc(
         "is_resolved":      is_resolved,
         "transcript":       transcript,
         "summary":          summary,
+        "tags":             tags,
         "grading":          grading,
         "crisp_url":        crisp_url,
         "ts":               created_at or now,
@@ -110,6 +113,7 @@ def upsert_chat(
     transcript: str,
     grading: dict[str, Any],
     summary: str | None = None,
+    tags: list[str] | None = None,
     crisp_url: str | None = None,
 ) -> str:
     """
@@ -123,7 +127,7 @@ def upsert_chat(
     doc = _build_doc(
         session_id, website_id, date, app, customer,
         primary_operator, is_resolved, transcript, grading,
-        summary, crisp_url, created_at,
+        summary, tags, crisp_url, created_at,
     )
     result = col.replace_one({"session_id": session_id, "date": date}, doc, upsert=True)
     return "replaced" if result.matched_count else "inserted"
@@ -157,7 +161,7 @@ def upsert_many(records: list[dict[str, Any]]) -> dict[str, int]:
         doc = _build_doc(
             sid, r["website_id"], date, r["app"], r["customer"],
             r["primary_operator"], r["is_resolved"], r["transcript"], r["grading"],
-            r.get("summary"), r.get("crisp_url"), existing.get(key),
+            r.get("summary"), r.get("tags"), r.get("crisp_url"), existing.get(key),
         )
         ops.append(ReplaceOne({"session_id": sid, "date": date}, doc, upsert=True))
         if key in existing:
