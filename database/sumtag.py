@@ -8,6 +8,7 @@ Schema:
 {
     session_id:    str,          (Crisp session ID — unique index)
     website_id:    str,
+    app:           str | None,   ("DECO" | "SearchPie" | site_name | None)
     state:         str,
     crawl_date:    str,          (last date this session was crawled/updated)
     start_session: str | None,
@@ -75,6 +76,7 @@ def append_segment(
     segment_data: dict[str, Any],
     crawl_date: str,
     website_id: str | None = None,
+    app: str | None = None,
     state: str | None = None,
     start_session: str | None = None,
     end_session: str | None = None,
@@ -113,6 +115,8 @@ def append_segment(
             update_fields["state"] = state
         if msg_count is not None:
             update_fields["msg_count"] = msg_count
+        if app:
+            update_fields["app"] = app
 
         col.update_one(
             {"session_id": session_id},
@@ -124,6 +128,7 @@ def append_segment(
         doc = {
             "session_id":    session_id,
             "website_id":    website_id or "unknown",
+            "app":           app,
             "state":         state or "unknown",
             "crawl_date":    crawl_date,
             "start_session": start_session,

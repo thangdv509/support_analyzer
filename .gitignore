@@ -5,3 +5,4 @@ credentials.json
 *.log
 .env
 data
+update_sumtag_app.py

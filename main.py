@@ -371,6 +371,7 @@ def _save_to_mongo(results: list[dict]) -> dict[str, int]:
                 segment_data=seg_data,
                 crawl_date=chat["date"],
                 website_id=chat.get("website_id"),
+                app=chat.get("app"),
             )
             if result == "created":    sumtag_created += 1
             elif result == "appended": sumtag_appended += 1

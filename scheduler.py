@@ -22,7 +22,7 @@ import argparse
 from datetime import datetime, timedelta, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-import schedule
+
 import gspread
 import requests
 from dotenv import load_dotenv
@@ -420,6 +420,7 @@ def _save_to_mongo(results: list[dict]):
                 segment_data=seg_data,
                 crawl_date=c["date"],
                 website_id=c.get("website_id"),
+                app=c.get("app"),
             )
             if result == "created":    sumtag_created += 1
             elif result == "appended": sumtag_appended += 1
@@ -461,6 +462,18 @@ def run_daily_job(date_str: str | None = None):
 # Entry point
 # ---------------------------------------------------------------------------
 
+_TZ7 = timezone(timedelta(hours=7))
+
+
+def _seconds_until_9am_vn() -> float:
+    """Tính số giây đến 09:00 sáng giờ Việt Nam (UTC+7) tiếp theo."""
+    now = datetime.now(_TZ7)
+    target = now.replace(hour=9, minute=0, second=0, microsecond=0)
+    if now >= target:
+        target += timedelta(days=1)
+    return (target - now).total_seconds()
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--now",  action="store_true", help="Chấm ngay (hôm qua)")
@@ -475,16 +488,16 @@ if __name__ == "__main__":
     elif args.now:
         run_daily_job()
     else:
-        log.info("⏰ Scheduler khởi động — sẽ chấm lúc 09:00 mỗi ngày")
-        schedule.every().day.at("09:00").do(run_daily_job)
-
-        # Chạy ngay nếu đã qua 9h hôm nay và chưa chấm
-        now = datetime.now(timezone(timedelta(hours=7)))
-        if now.hour >= 9:
-            yesterday = (now - timedelta(days=1)).strftime("%Y-%m-%d")
-            log.info(f"  Đã qua 9:00 hôm nay — chấm bổ sung ngày {yesterday}")
+        # Nếu khởi động sau 9h VN và chưa chấm hôm nay → chấm bổ sung ngay
+        now_vn = datetime.now(_TZ7)
+        if now_vn.hour >= 9:
+            yesterday = (now_vn - timedelta(days=1)).strftime("%Y-%m-%d")
+            log.info(f"  Đã qua 09:00 VN — chấm bổ sung ngày {yesterday}")
             run_daily_job(yesterday)
 
         while True:
-            schedule.run_pending()
-            time.sleep(30)
+            wait = _seconds_until_9am_vn()
+            next_run = datetime.now(_TZ7) + timedelta(seconds=wait)
+            log.info(f"⏰ Chờ đến 09:00 VN — còn {wait/3600:.1f}h ({next_run.strftime('%Y-%m-%d %H:%M VN')})")
+            time.sleep(wait)
+            run_daily_job()
