@@ -1,39 +1,19 @@
 """
-CRUD helpers for the deco_chat collection.
+CRUD helpers for per-app grading collections.
 
-Schema of each document:
-{
-    session_id:        str   (Crisp session ID)
-    website_id:        str
-    date:              str   (YYYY-MM-DD — ngày chấm)
-    app:               str   ("DECO" | "SearchPie" | ...)
-    customer:          str
-    primary_operator:  str
-    is_resolved:       bool
-    transcript:        str
-    summary:           str | None  (bullet-point summary)
-    tags:              list[str] | None  (3 short topic labels from the same LLM call as summary)
-    grading: {
-        criteria: {
-            <criterion>: { score: float, justification: str }
-            ...
-        }
-        overall_summary:  str
-        total_score_20:   float
-        final_score_10:   float
-    }
-    crisp_url:         str | None
-    ts:                datetime   (timestamp when first saved)
-    created_at:        datetime
-    updated_at:        datetime
-}
+Collections:
+    grading_deco       — DECO app
+    grading_searchpie  — SearchPie app
 
-Primary key: (session_id, date) — cho phép cùng session được chấm lại vào ngày khác
-(khách quay lại chat tiếp). Trong cùng một ngày, không chấm lại.
+Unknown / unrecognized app → skipped (not saved).
+
+Primary key: (session_id, date) — same session on different dates saves separately.
+uuid: deterministic UUID5 from (session_id, date) — stable cross-reference key.
 """
 
 from __future__ import annotations
 
+import uuid
 from datetime import datetime, timezone
 from typing import Any
 
@@ -42,26 +22,39 @@ from pymongo.collection import Collection
 
 from .connection import get_db
 
-_COLLECTION = "deco_chat"
+_NS = uuid.UUID("c4f7a2e1-3b8d-5f0a-9e6c-2d1b4a7f8e3c")
+
+ALL_GRADING_COLLECTIONS = ["grading_deco", "grading_searchpie"]
 
 
-def _col() -> Collection:
-    col = get_db()[_COLLECTION]
-    # Migration: drop cũ unique index trên session_id đơn lẻ nếu còn tồn tại
-    try:
-        col.drop_index("session_id_1")
-    except Exception:
-        pass
+def _collection_name(app: str | None) -> str | None:
+    if not app:
+        return None
+    u = app.upper()
+    if "DECO" in u:
+        return "grading_deco"
+    if "SEARCHPIE" in u or "SEARCH PIE" in u:
+        return "grading_searchpie"
+    return None
+
+
+def record_uuid(session_id: str, date: str) -> str:
+    """Deterministic UUID5 from (session_id, date)."""
+    return str(uuid.uuid5(_NS, f"{session_id}:{date}"))
+
+
+def _col(app: str | None) -> Collection | None:
+    name = _collection_name(app)
+    if name is None:
+        return None
+    col = get_db()[name]
     col.create_index([("session_id", ASCENDING), ("date", ASCENDING)], unique=True, background=True)
+    col.create_index([("uuid", ASCENDING)], unique=True, sparse=True, background=True)
     col.create_index([("session_id", ASCENDING)], background=True)
     col.create_index([("date", ASCENDING)], background=True)
     col.create_index([("primary_operator", ASCENDING)], background=True)
     return col
 
-
-# ---------------------------------------------------------------------------
-# Write helpers
-# ---------------------------------------------------------------------------
 
 def _now() -> datetime:
     return datetime.now(timezone.utc)
@@ -84,9 +77,10 @@ def _build_doc(
 ) -> dict[str, Any]:
     now = _now()
     return {
+        "uuid":             record_uuid(session_id, date),
         "session_id":       session_id,
-        "website_id":       website_id,
         "date":             date,
+        "website_id":       website_id,
         "app":              app,
         "customer":         customer,
         "primary_operator": primary_operator,
@@ -102,6 +96,10 @@ def _build_doc(
     }
 
 
+# ---------------------------------------------------------------------------
+# Write
+# ---------------------------------------------------------------------------
+
 def upsert_chat(
     session_id: str,
     website_id: str,
@@ -116,83 +114,90 @@ def upsert_chat(
     tags: list[str] | None = None,
     crisp_url: str | None = None,
 ) -> str:
-    """
-    Insert or replace a graded chat document by (session_id, date).
-    Returns 'inserted' or 'replaced'.
-    """
-    col = _col()
+    """Insert or replace. Returns 'inserted', 'replaced', or 'skipped' (unknown app)."""
+    col = _col(app)
+    if col is None:
+        return "skipped"
     existing = col.find_one({"session_id": session_id, "date": date}, {"created_at": 1})
-    created_at = existing["created_at"] if existing else None
-
     doc = _build_doc(
         session_id, website_id, date, app, customer,
         primary_operator, is_resolved, transcript, grading,
-        summary, tags, crisp_url, created_at,
+        summary, tags, crisp_url,
+        existing["created_at"] if existing else None,
     )
     result = col.replace_one({"session_id": session_id, "date": date}, doc, upsert=True)
     return "replaced" if result.matched_count else "inserted"
 
 
 def upsert_many(records: list[dict[str, Any]]) -> dict[str, int]:
-    """
-    Bulk upsert a list of graded chat dicts (same keys as upsert_chat args).
-    Deduplication key: (session_id, date) — cùng session vào ngày khác vẫn được lưu.
-    Returns {"inserted": N, "replaced": M}.
-    """
+    """Bulk upsert grouped by app → collection. Skips unknown apps."""
     if not records:
         return {"inserted": 0, "replaced": 0}
 
-    col = _col()
-    session_ids = [r["session_id"] for r in records]
-    # Lấy tất cả doc có session_id trùng (có thể nhiều date khác nhau)
-    existing = {
-        (doc["session_id"], doc["date"]): doc["created_at"]
-        for doc in col.find(
-            {"session_id": {"$in": session_ids}},
-            {"session_id": 1, "date": 1, "created_at": 1},
-        )
-    }
-
-    ops = []
-    inserted = replaced = 0
+    by_col: dict[str, list[dict]] = {}
     for r in records:
-        sid, date = r["session_id"], r["date"]
-        key = (sid, date)
-        doc = _build_doc(
-            sid, r["website_id"], date, r["app"], r["customer"],
-            r["primary_operator"], r["is_resolved"], r["transcript"], r["grading"],
-            r.get("summary"), r.get("tags"), r.get("crisp_url"), existing.get(key),
-        )
-        ops.append(ReplaceOne({"session_id": sid, "date": date}, doc, upsert=True))
-        if key in existing:
-            replaced += 1
-        else:
-            inserted += 1
+        name = _collection_name(r.get("app"))
+        if name:
+            by_col.setdefault(name, []).append(r)
 
-    col.bulk_write(ops, ordered=False)
-    return {"inserted": inserted, "replaced": replaced}
+    db = get_db()
+    total_inserted = total_replaced = 0
+
+    for col_name, col_records in by_col.items():
+        col = db[col_name]
+        col.create_index([("session_id", ASCENDING), ("date", ASCENDING)], unique=True, background=True)
+        col.create_index([("uuid", ASCENDING)], unique=True, sparse=True, background=True)
+
+        session_ids = [r["session_id"] for r in col_records]
+        existing = {
+            (doc["session_id"], doc["date"]): doc["created_at"]
+            for doc in col.find(
+                {"session_id": {"$in": session_ids}},
+                {"session_id": 1, "date": 1, "created_at": 1},
+            )
+        }
+
+        ops = []
+        inserted = replaced = 0
+        for r in col_records:
+            sid, date = r["session_id"], r["date"]
+            key = (sid, date)
+            doc = _build_doc(
+                sid, r["website_id"], date, r["app"], r["customer"],
+                r["primary_operator"], r["is_resolved"], r["transcript"], r["grading"],
+                r.get("summary"), r.get("tags"), r.get("crisp_url"), existing.get(key),
+            )
+            ops.append(ReplaceOne({"session_id": sid, "date": date}, doc, upsert=True))
+            if key in existing:
+                replaced += 1
+            else:
+                inserted += 1
+
+        col.bulk_write(ops, ordered=False)
+        total_inserted += inserted
+        total_replaced += replaced
+
+    return {"inserted": total_inserted, "replaced": total_replaced}
 
 
 # ---------------------------------------------------------------------------
-# Read helpers
+# Read
 # ---------------------------------------------------------------------------
 
-def get_chat(session_id: str) -> dict[str, Any] | None:
-    """Fetch a single document by session_id."""
-    return _col().find_one({"session_id": session_id})
+def get_all_saved_keys() -> set[tuple[str, str]]:
+    """Return all (session_id, date) pairs across all grading collections."""
+    db = get_db()
+    keys: set[tuple[str, str]] = set()
+    for name in ALL_GRADING_COLLECTIONS:
+        for doc in db[name].find({}, {"session_id": 1, "date": 1}):
+            keys.add((doc["session_id"], doc["date"]))
+    return keys
 
 
-def get_chats_by_date(date: str) -> list[dict[str, Any]]:
-    """Return all graded chats for a given date (YYYY-MM-DD)."""
-    return list(_col().find({"date": date}))
-
-
-def get_chats_by_operator(operator: str, date: str | None = None) -> list[dict[str, Any]]:
-    """Return all chats for an operator, optionally filtered by date."""
-    query: dict[str, Any] = {"primary_operator": operator}
-    if date:
-        query["date"] = date
-    return list(_col().find(query))
+def get_chats_by_date(date: str, app: str | None = None) -> list[dict[str, Any]]:
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_GRADING_COLLECTIONS
+    return [doc for n in names if n for doc in db[n].find({"date": date})]
 
 
 def get_chats_by_date_range(
@@ -201,22 +206,43 @@ def get_chats_by_date_range(
     operator: str | None = None,
     app: str | None = None,
 ) -> list[dict[str, Any]]:
-    """
-    Return chats where from_date <= date <= to_date.
-    Optionally filter by operator and/or app.
-    """
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_GRADING_COLLECTIONS
     query: dict[str, Any] = {"date": {"$gte": from_date, "$lte": to_date}}
     if operator:
         query["primary_operator"] = operator
-    if app:
-        query["app"] = app
-    return list(_col().find(query).sort("date", ASCENDING))
+    return [
+        doc
+        for n in names if n
+        for doc in db[n].find(query).sort("date", ASCENDING)
+    ]
 
 
-def session_exists(session_id: str, date: str | None = None) -> bool:
-    """Check if a (session_id, date) pair has already been graded and stored.
-    If date is None, returns True if any graded entry exists for this session."""
+def get_chat(session_id: str, app: str | None = None) -> dict[str, Any] | None:
+    """Fetch a single document by session_id, searching all collections if app not given."""
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_GRADING_COLLECTIONS
+    for name in names:
+        if name:
+            doc = db[name].find_one({"session_id": session_id})
+            if doc:
+                return doc
+    return None
+
+
+def get_chats_by_operator(operator: str, date: str | None = None, app: str | None = None) -> list[dict[str, Any]]:
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_GRADING_COLLECTIONS
+    query: dict[str, Any] = {"primary_operator": operator}
+    if date:
+        query["date"] = date
+    return [doc for n in names if n for doc in db[n].find(query)]
+
+
+def session_exists(session_id: str, date: str | None = None, app: str | None = None) -> bool:
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_GRADING_COLLECTIONS
     query: dict[str, Any] = {"session_id": session_id}
     if date:
         query["date"] = date
-    return _col().count_documents(query, limit=1) > 0
+    return any(db[n].count_documents(query, limit=1) > 0 for n in names if n)

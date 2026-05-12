@@ -1,52 +1,55 @@
 """
-CRUD helpers for the sumtag collection.
+CRUD helpers for per-app sumtag collections.
 
-Each document represents one Crisp session with all its segments,
-each segment containing AI-generated topic tags and a bullet-point summary.
+Collections:
+    sumtag_deco       — DECO app
+    sumtag_searchpie  — SearchPie app
 
-Schema:
-{
-    session_id:    str,          (Crisp session ID — unique index)
-    website_id:    str,
-    app:           str | None,   ("DECO" | "SearchPie" | site_name | None)
-    state:         str,
-    crawl_date:    str,          (last date this session was crawled/updated)
-    start_session: str | None,
-    end_session:   str | None,   (updated when new segments are appended)
-    msg_count:     int,
-    segment_count: int,
-    segments: [
-        {
-            segment:   int,
-            msg_count: int | None,
-            start:     str | None,
-            end:       str | None,
-            tags:      list[str],
-            summary:   str,
-        }
-    ],
-    created_at:    datetime,
-    updated_at:    datetime,
-}
+Unknown / unrecognized app → skipped.
+Primary key: (session_id, date) — mirrors grading collections.
+uuid: deterministic UUID5 from (session_id, date).
 """
 
 from __future__ import annotations
 
+import uuid
 from datetime import datetime, timezone
 from typing import Any
 
-from pymongo import ASCENDING
+from pymongo import ASCENDING, ReplaceOne
 from pymongo.collection import Collection
 
 from .connection import get_db
 
-_COLLECTION = "sumtag"
+_NS = uuid.UUID("d5e8b3f2-4c9a-6e1b-0f7d-3a2c5b8e9f4d")
+
+ALL_SUMTAG_COLLECTIONS = ["sumtag_deco", "sumtag_searchpie"]
 
 
-def _col() -> Collection:
-    col = get_db()[_COLLECTION]
-    col.create_index([("session_id", ASCENDING)], unique=True, background=True)
-    col.create_index([("crawl_date", ASCENDING)], background=True)
+def _collection_name(app: str | None) -> str | None:
+    if not app:
+        return None
+    u = app.upper()
+    if "DECO" in u:
+        return "sumtag_deco"
+    if "SEARCHPIE" in u or "SEARCH PIE" in u:
+        return "sumtag_searchpie"
+    return None
+
+
+def record_uuid(session_id: str, date: str) -> str:
+    """Deterministic UUID5 from (session_id, date)."""
+    return str(uuid.uuid5(_NS, f"{session_id}:{date}"))
+
+
+def _col(app: str | None) -> Collection | None:
+    name = _collection_name(app)
+    if name is None:
+        return None
+    col = get_db()[name]
+    col.create_index([("session_id", ASCENDING), ("date", ASCENDING)], unique=True, background=True)
+    col.create_index([("uuid", ASCENDING)], unique=True, sparse=True, background=True)
+    col.create_index([("date", ASCENDING)], background=True)
     return col
 
 
@@ -54,98 +57,107 @@ def _now() -> datetime:
     return datetime.now(timezone.utc)
 
 
-def upsert_session(doc: dict[str, Any]) -> str:
-    """
-    Insert or replace a full session document (for bulk import).
-    Returns 'inserted' or 'replaced'.
-    """
-    col = _col()
-    session_id = doc["session_id"]
-    existing = col.find_one({"session_id": session_id}, {"created_at": 1})
-
+def upsert(
+    session_id: str,
+    date: str,
+    tags: list[str],
+    summary: str | None,
+    app: str | None = None,
+    website_id: str | None = None,
+    primary_operator: str | None = None,
+    start: str | None = None,
+    end: str | None = None,
+    msg_count: int | None = None,
+) -> str:
+    """Insert or replace. Returns 'inserted', 'replaced', or 'skipped' (unknown app)."""
+    col = _col(app)
+    if col is None:
+        return "skipped"
+    existing = col.find_one({"session_id": session_id, "date": date}, {"created_at": 1})
     now = _now()
-    save_doc = {**doc, "updated_at": now}
-    save_doc["created_at"] = existing["created_at"] if existing else now
-
-    result = col.replace_one({"session_id": session_id}, save_doc, upsert=True)
+    doc = {
+        "uuid":             record_uuid(session_id, date),
+        "session_id":       session_id,
+        "date":             date,
+        "website_id":       website_id or "unknown",
+        "app":              app,
+        "primary_operator": primary_operator,
+        "start":            start,
+        "end":              end,
+        "msg_count":        msg_count,
+        "tags":             tags,
+        "summary":          summary,
+        "created_at":       existing["created_at"] if existing else now,
+        "updated_at":       now,
+    }
+    result = col.replace_one({"session_id": session_id, "date": date}, doc, upsert=True)
     return "replaced" if result.matched_count else "inserted"
 
 
-def append_segment(
-    session_id: str,
-    segment_data: dict[str, Any],
-    crawl_date: str,
-    website_id: str | None = None,
-    app: str | None = None,
-    state: str | None = None,
-    start_session: str | None = None,
-    end_session: str | None = None,
-    msg_count: int | None = None,
-) -> str:
-    """
-    Append a new segment to an existing session, or create a new session.
+def upsert_many(records: list[dict[str, Any]]) -> dict[str, int]:
+    """Bulk upsert grouped by app. Skips unknown apps."""
+    if not records:
+        return {"inserted": 0, "replaced": 0}
 
-    segment_data must contain: {summary, tags} and optionally {start, end, msg_count}
+    by_col: dict[str, list[dict]] = {}
+    for r in records:
+        name = _collection_name(r.get("app"))
+        if name:
+            by_col.setdefault(name, []).append(r)
 
-    Returns 'appended', 'created', or 'skipped' (duplicate start time).
-    """
-    col = _col()
-    existing = col.find_one({"session_id": session_id})
-    now = _now()
+    db = get_db()
+    total_inserted = total_replaced = 0
 
-    if existing:
-        seg_start = segment_data.get("start")
-        existing_segments = existing.get("segments", [])
+    for col_name, col_records in by_col.items():
+        col = db[col_name]
+        col.create_index([("session_id", ASCENDING), ("date", ASCENDING)], unique=True, background=True)
+        col.create_index([("uuid", ASCENDING)], unique=True, sparse=True, background=True)
 
-        # Dedup by segment start time
-        if seg_start and any(s.get("start") == seg_start for s in existing_segments):
-            return "skipped"
-
-        next_idx = len(existing_segments) + 1
-        new_seg = {**segment_data, "segment": next_idx}
-
-        update_fields: dict[str, Any] = {
-            "crawl_date":    crawl_date,
-            "segment_count": next_idx,
-            "updated_at":    now,
+        keys = [(r["session_id"], r["date"]) for r in col_records]
+        existing = {
+            (doc["session_id"], doc["date"]): doc["created_at"]
+            for doc in col.find(
+                {"$or": [{"session_id": s, "date": d} for s, d in keys]},
+                {"session_id": 1, "date": 1, "created_at": 1},
+            )
         }
-        if end_session:
-            update_fields["end_session"] = end_session
-        if state:
-            update_fields["state"] = state
-        if msg_count is not None:
-            update_fields["msg_count"] = msg_count
-        if app:
-            update_fields["app"] = app
 
-        col.update_one(
-            {"session_id": session_id},
-            {"$push": {"segments": new_seg}, "$set": update_fields},
-        )
-        return "appended"
-    else:
-        segment_with_idx = {**segment_data, "segment": 1}
-        doc = {
-            "session_id":    session_id,
-            "website_id":    website_id or "unknown",
-            "app":           app,
-            "state":         state or "unknown",
-            "crawl_date":    crawl_date,
-            "start_session": start_session,
-            "end_session":   end_session,
-            "msg_count":     msg_count or 0,
-            "segment_count": 1,
-            "segments":      [segment_with_idx],
-            "created_at":    now,
-            "updated_at":    now,
-        }
-        col.insert_one(doc)
-        return "created"
+        now = _now()
+        ops = []
+        inserted = replaced = 0
+        for r in col_records:
+            sid, date = r["session_id"], r["date"]
+            key = (sid, date)
+            doc = {
+                "uuid":             record_uuid(sid, date),
+                "session_id":       sid,
+                "date":             date,
+                "website_id":       r.get("website_id") or "unknown",
+                "app":              r.get("app"),
+                "primary_operator": r.get("primary_operator"),
+                "start":            r.get("start"),
+                "end":              r.get("end"),
+                "msg_count":        r.get("msg_count"),
+                "tags":             r.get("tags", []),
+                "summary":          r.get("summary"),
+                "created_at":       existing.get(key, now),
+                "updated_at":       now,
+            }
+            ops.append(ReplaceOne({"session_id": sid, "date": date}, doc, upsert=True))
+            if key in existing:
+                replaced += 1
+            else:
+                inserted += 1
 
+        col.bulk_write(ops, ordered=False)
+        total_inserted += inserted
+        total_replaced += replaced
 
-def get_session(session_id: str) -> dict[str, Any] | None:
-    return _col().find_one({"session_id": session_id})
+    return {"inserted": total_inserted, "replaced": total_replaced}
 
 
-def session_exists(session_id: str) -> bool:
-    return _col().count_documents({"session_id": session_id}, limit=1) > 0
+def exists(session_id: str, date: str, app: str | None = None) -> bool:
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_SUMTAG_COLLECTIONS
+    query = {"session_id": session_id, "date": date}
+    return any(db[n].count_documents(query, limit=1) > 0 for n in names if n)

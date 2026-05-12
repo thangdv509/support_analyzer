@@ -42,9 +42,8 @@ from analyzer_v2 import (
     _SCORE_CAPS,
 )
 from database.tunnel import ensure_tunnel
-from database.deco_chat import upsert_many
-from database.connection import get_db
-from database.sumtag import append_segment as sumtag_append_segment
+from database.deco_chat import upsert_many, get_all_saved_keys
+from database.sumtag import upsert as sumtag_upsert
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -358,12 +357,7 @@ def _generate_summary_and_tags(transcript: str) -> tuple[str | None, list[str]]:
 def _save_to_mongo(results: list[dict]):
     # Chỉ lưu (session_id, date) chưa có trong DB — cùng session ngày khác vẫn lưu được
     try:
-        col = get_db()["deco_chat"]
-        session_ids = [c["session_id"] for c in results]
-        saved_keys = {
-            (d["session_id"], d["date"])
-            for d in col.find({"session_id": {"$in": session_ids}}, {"session_id": 1, "date": 1})
-        }
+        saved_keys = get_all_saved_keys()
         to_save = [c for c in results if (c["session_id"], c["date"]) not in saved_keys]
         skipped = len(results) - len(to_save)
         if skipped:
@@ -400,35 +394,34 @@ def _save_to_mongo(results: list[dict]):
         })
 
     stats = upsert_many(records)
-    log.info(f"   ✅ MongoDB deco_chat: {stats['inserted']} inserted, {stats['replaced']} replaced")
+    log.info(f"   ✅ MongoDB grading: {stats['inserted']} inserted, {stats['replaced']} replaced")
 
-    # Also upsert into sumtag — append as new segment for this session
-    sumtag_created = sumtag_appended = 0
+    # Also upsert into sumtag — one record per (session_id, date)
+    sumtag_inserted = sumtag_replaced = 0
     for c in to_save:
         summary_text, tags = summaries.get(c["session_id"], (None, []))
         if not summary_text:
             continue
-        seg_data = {
-            "start":   c["date"] + " 00:00:00",
-            "end":     c["date"] + " 23:59:59",
-            "tags":    tags,
-            "summary": summary_text,
-        }
         try:
-            result = sumtag_append_segment(
+            result = sumtag_upsert(
                 session_id=c["session_id"],
-                segment_data=seg_data,
-                crawl_date=c["date"],
+                date=c["date"],
+                tags=tags,
+                summary=summary_text,
                 website_id=c.get("website_id"),
                 app=c.get("app"),
+                primary_operator=c.get("primary_operator"),
+                start=c.get("seg_start"),
+                end=c.get("seg_end"),
+                msg_count=c.get("seg_msg_count"),
             )
-            if result == "created":    sumtag_created += 1
-            elif result == "appended": sumtag_appended += 1
+            if result == "inserted":  sumtag_inserted += 1
+            else:                     sumtag_replaced += 1
         except Exception as e:
-            log.warning(f"   sumtag append failed for {c['session_id']}: {e}")
+            log.warning(f"   sumtag upsert failed for {c['session_id']}: {e}")
 
-    if sumtag_created or sumtag_appended:
-        log.info(f"   ✅ MongoDB sumtag: {sumtag_created} created, {sumtag_appended} appended")
+    if sumtag_inserted or sumtag_replaced:
+        log.info(f"   ✅ MongoDB sumtag: {sumtag_inserted} inserted, {sumtag_replaced} replaced")
 
 
 # ---------------------------------------------------------------------------

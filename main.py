@@ -43,9 +43,8 @@ from analyzer_v2 import (
 )
 
 from database.tunnel import ensure_tunnel
-from database.deco_chat import upsert_many
-from database.connection import get_db
-from database.sumtag import append_segment as sumtag_append_segment
+from database.deco_chat import upsert_many, get_all_saved_keys
+from database.sumtag import upsert as sumtag_upsert
 
 load_dotenv()
 
@@ -138,11 +137,10 @@ def _score(criteria: dict, key: str) -> float:
 # ---------------------------------------------------------------------------
 
 def _already_saved_keys() -> set[tuple[str, str]]:
-    """Lấy tất cả (session_id, date) đã có trong MongoDB."""
+    """Lấy tất cả (session_id, date) đã có trong tất cả grading collections."""
     try:
         ensure_tunnel()
-        col = get_db()["deco_chat"]
-        return {(doc["session_id"], doc["date"]) for doc in col.find({}, {"session_id": 1, "date": 1})}
+        return get_all_saved_keys()
     except Exception:
         return set()
 
@@ -353,33 +351,32 @@ def _save_to_mongo(results: list[dict]) -> dict[str, int]:
 
     stats = upsert_many(records)
 
-    # Also upsert into sumtag — append as new segment for this session
-    sumtag_created = sumtag_appended = 0
+    # Also upsert into sumtag — one record per (session_id, date)
+    sumtag_inserted = sumtag_replaced = 0
     for chat in new_results:
         summary_text, tags = summaries.get(chat["session_id"], (None, []))
         if not summary_text:
             continue
-        seg_data = {
-            "start":   chat["date"] + " 00:00:00",
-            "end":     chat["date"] + " 23:59:59",
-            "tags":    tags,
-            "summary": summary_text,
-        }
         try:
-            result = sumtag_append_segment(
+            result = sumtag_upsert(
                 session_id=chat["session_id"],
-                segment_data=seg_data,
-                crawl_date=chat["date"],
+                date=chat["date"],
+                tags=tags,
+                summary=summary_text,
                 website_id=chat.get("website_id"),
                 app=chat.get("app"),
+                primary_operator=chat.get("primary_operator"),
+                start=chat.get("seg_start"),
+                end=chat.get("seg_end"),
+                msg_count=chat.get("seg_msg_count"),
             )
-            if result == "created":    sumtag_created += 1
-            elif result == "appended": sumtag_appended += 1
+            if result == "inserted":  sumtag_inserted += 1
+            else:                     sumtag_replaced += 1
         except Exception as e:
-            print(f"   ⚠️  sumtag append failed for {chat['session_id']}: {e}")
+            print(f"   ⚠️  sumtag upsert failed for {chat['session_id']}: {e}")
 
-    if sumtag_created or sumtag_appended:
-        print(f"   ✅ MongoDB sumtag: {sumtag_created} created, {sumtag_appended} appended")
+    if sumtag_inserted or sumtag_replaced:
+        print(f"   ✅ MongoDB sumtag: {sumtag_inserted} inserted, {sumtag_replaced} replaced")
 
     return stats
 

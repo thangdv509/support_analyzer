@@ -414,10 +414,19 @@ def fetch_chats(target_date_str):
                             prefix = f"  {f['sender']}: " if f['is_op'] else f"{f['sender']}: "
                             transcript += f"{prefix}{str(f['content']).replace(chr(10), chr(10) + '      ')}\n\n"
 
+                        # Extract real timestamps and msg_count from valid_segment
+                        chat_msgs = [m for m in valid_segment if m.get("type") not in ("event", "note", "animation") and m.get("timestamp")]
+                        ts_list = [m["timestamp"] for m in chat_msgs]
+                        TZ7 = timezone(timedelta(hours=7))
+                        seg_start = datetime.fromtimestamp(min(ts_list) / 1000, tz=TZ7).strftime("%Y-%m-%d %H:%M:%S") if ts_list else None
+                        seg_end   = datetime.fromtimestamp(max(ts_list) / 1000, tz=TZ7).strftime("%Y-%m-%d %H:%M:%S") if ts_list else None
+
                         all_valid_chats.append({
                             "session_id": sid, "website_id": website_id, "date": target_date_str,
                             "app": app_name, "customer": cust_name, "primary_operator": sole_agent,
-                            "is_resolved": conv_is_resolved, "transcript": transcript
+                            "is_resolved": conv_is_resolved, "transcript": transcript,
+                            "seg_start": seg_start, "seg_end": seg_end,
+                            "seg_msg_count": len(chat_msgs),
                         })
         print(f"  🔍 Drop summary: no_msgs={drop_no_msgs}, no_segment={drop_no_segment}, no_ops={drop_no_ops}, too_short={drop_too_short}")
         return all_valid_chats

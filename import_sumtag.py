@@ -1,12 +1,15 @@
 """
 import_sumtag.py — Import crawl summary JSON → sumtag collection, then catch-up crawl.
 
+Mỗi segment trong JSON (hoặc từ crawl) → một flat record (session_id, date).
+Date = ngày kết thúc segment (end[:10]), mirror logic analyzer_v2.
+
 Steps:
   1. Load data/crawl_20250101_20260325_summary.json → bulk insert into sumtag
-  2. Crawl from 2026-03-26 to today (with do_summary=True) → append new segments
+  2. Crawl từ 2026-03-26 đến hôm nay → thêm records mới
 
 Chạy:
-    python import_sumtag.py                     # full import + catch-up
+    python import_sumtag.py
     python import_sumtag.py --no-import         # chỉ catch-up crawl
     python import_sumtag.py --from 2026-04-01   # catch-up từ ngày cụ thể
 """
@@ -19,7 +22,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from database.tunnel import ensure_tunnel
-from database.sumtag import upsert_session, append_segment, get_session
+from database.sumtag import upsert_many, exists
 from crawl import fetch_websites, fetch_operators, crawl_date, _summarize_segment
 
 load_dotenv()
@@ -31,35 +34,43 @@ JSON_PATH = Path(__file__).resolve().parent / "data" / "crawl_20250101_20260325_
 def import_json():
     print(f"📂 Loading {JSON_PATH.name}...")
     with open(JSON_PATH, encoding="utf-8") as f:
-        records = json.load(f)
-    print(f"  → {len(records)} records")
+        sessions = json.load(f)
+    print(f"  → {len(sessions)} sessions")
 
-    inserted = replaced = 0
-    for rec in records:
-        # Strip raw messages from segments — keep summary/tags/metadata only
-        clean_segments = []
-        for seg in rec.get("segments", []):
-            clean_seg = {k: v for k, v in seg.items() if k != "messages"}
-            clean_segments.append(clean_seg)
+    records = []
+    skipped = 0
+    for sess in sessions:
+        session_id = sess["session_id"]
+        website_id = sess.get("website_id", "unknown")
 
-        doc = {
-            "session_id":    rec["session_id"],
-            "website_id":    rec.get("website_id", "unknown"),
-            "state":         rec.get("state"),
-            "crawl_date":    rec.get("crawl_date", "2026-03-25"),
-            "start_session": rec.get("start_session"),
-            "end_session":   rec.get("end_session"),
-            "msg_count":     rec.get("msg_count", 0),
-            "segment_count": len(clean_segments),
-            "segments":      clean_segments,
-        }
-        result = upsert_session(doc)
-        if result == "inserted":
-            inserted += 1
-        else:
-            replaced += 1
+        for seg in sess.get("segments", []):
+            if not seg.get("summary"):
+                skipped += 1
+                continue
 
-    print(f"  ✅ JSON import done: {inserted} inserted, {replaced} replaced")
+            # Dùng end date làm date — ngày segment kết thúc (activity cuối)
+            end_str   = seg.get("end", "")
+            start_str = seg.get("start", "")
+            date = (end_str or start_str)[:10]
+            if not date:
+                skipped += 1
+                continue
+
+            records.append({
+                "session_id": session_id,
+                "date":       date,
+                "website_id": website_id,
+                "app":        None,   # sẽ backfill bằng update_sumtag_app.py
+                "start":      start_str or None,
+                "end":        end_str or None,
+                "msg_count":  seg.get("msg_count"),
+                "tags":       seg.get("tags", []),
+                "summary":    seg["summary"],
+            })
+
+    print(f"  → {len(records)} records (skipped {skipped} segments without summary)")
+    stats = upsert_many(records)
+    print(f"  ✅ Imported: {stats['inserted']} inserted, {stats['replaced']} replaced")
 
 
 def catchup_crawl(from_date: str, to_date: str):
@@ -75,7 +86,7 @@ def catchup_crawl(from_date: str, to_date: str):
     dates  = [(d_from + timedelta(days=i)).strftime("%Y-%m-%d")
               for i in range((d_to - d_from).days + 1)]
 
-    total_created = total_appended = total_skipped = 0
+    total_inserted = total_skipped = 0
 
     for website in websites:
         website_id = str(website["website_id"])
@@ -83,59 +94,72 @@ def catchup_crawl(from_date: str, to_date: str):
         operators_raw = fetch_operators(website_id)
 
         for date_str in dates:
-            # Fetch conversations WITHOUT summary — raw messages are still in each segment
+            # Fetch conversations without summary — raw messages in each segment
             day_results = crawl_date(website_id, date_str, operators_raw, do_summary=False)
             if not day_results:
                 continue
 
-            created = appended = skipped = 0
+            inserted = skipped = 0
             for conv in day_results:
                 session_id = conv["session_id"]
 
-                # Find which segment starts are already in sumtag for this session
-                existing_doc = get_session(session_id)
-                known_starts: set[str] = set()
-                if existing_doc:
-                    known_starts = {s.get("start") for s in existing_doc.get("segments", []) if s.get("start")}
+                # Find the segment that had activity on this date (mirror analyzer logic)
+                # = last segment with any message timestamp in [date_str 00:00 → date_str 23:59]
+                day_start = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=TZ7)
+                day_end   = day_start + timedelta(days=1)
 
-                for seg in conv.get("segments", []):
-                    seg_start = seg.get("start")
-                    if seg_start and seg_start in known_starts:
-                        skipped += 1
-                        continue
+                valid_seg = None
+                for seg in reversed(conv.get("segments", [])):
+                    msgs = seg.get("messages", [])
+                    if any(
+                        day_start <= datetime.fromtimestamp(m.get("timestamp", 0) / 1000, tz=TZ7) < day_end
+                        and m.get("type") not in ("event", "note")
+                        for m in msgs if m.get("timestamp")
+                    ):
+                        valid_seg = seg
+                        break
 
-                    # Only call LLM for segments we haven't summarized yet
-                    result = _summarize_segment(seg.get("messages", []))
-                    if not result:
-                        continue
+                if valid_seg is None:
+                    skipped += 1
+                    continue
 
-                    seg_data = {
-                        "msg_count": seg.get("msg_count"),
-                        "start":     seg_start,
-                        "end":       seg.get("end"),
-                        "tags":      result["tags"],
-                        "summary":   result["summary"],
-                    }
-                    outcome = append_segment(
-                        session_id=session_id,
-                        segment_data=seg_data,
-                        crawl_date=date_str,
-                        website_id=conv.get("website_id"),
-                        state=conv.get("state"),
-                        start_session=conv.get("start_session"),
-                        end_session=conv.get("end_session"),
-                        msg_count=conv.get("msg_count"),
-                    )
-                    if outcome == "created":    created += 1
-                    elif outcome == "appended": appended += 1
-                    elif outcome == "skipped":  skipped += 1
+                # Skip if already in sumtag
+                if exists(session_id, date_str):
+                    skipped += 1
+                    continue
 
-            total_created  += created
-            total_appended += appended
+                # Summarize only this segment (LLM call)
+                result = _summarize_segment(valid_seg.get("messages", []))
+                if not result:
+                    skipped += 1
+                    continue
+
+                # Real timestamps from messages
+                chat_msgs = [m for m in valid_seg.get("messages", [])
+                             if m.get("type") not in ("event", "note", "animation") and m.get("timestamp")]
+                ts_list = [m["timestamp"] for m in chat_msgs]
+                seg_start = datetime.fromtimestamp(min(ts_list) / 1000, tz=TZ7).strftime("%Y-%m-%d %H:%M:%S") if ts_list else None
+                seg_end   = datetime.fromtimestamp(max(ts_list) / 1000, tz=TZ7).strftime("%Y-%m-%d %H:%M:%S") if ts_list else None
+
+                from database.sumtag import upsert as sumtag_upsert
+                sumtag_upsert(
+                    session_id=session_id,
+                    date=date_str,
+                    tags=result["tags"],
+                    summary=result["summary"],
+                    website_id=conv.get("website_id"),
+                    start=seg_start,
+                    end=seg_end,
+                    msg_count=len(chat_msgs),
+                )
+                inserted += 1
+
+            total_inserted += inserted
             total_skipped  += skipped
-            print(f"  {date_str}: {created} created, {appended} appended, {skipped} skipped")
+            if inserted:
+                print(f"  {date_str}: {inserted} inserted, {skipped} skipped")
 
-    print(f"\n✅ Catch-up done: {total_created} created, {total_appended} appended, {total_skipped} skipped")
+    print(f"\n✅ Catch-up done: {total_inserted} inserted, {total_skipped} skipped")
 
 
 def main():
