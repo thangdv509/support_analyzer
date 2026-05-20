@@ -186,22 +186,22 @@ def _export_to_support_analyzer(new_results: list[dict]):
 
     if to_add:
         new_rows = []
-        for chat in to_add:
+        for i, chat in enumerate(to_add):
+            row_1idx = first_free_1idx + i
             g = chat.get("grading", {}).get("criteria", {})
             url = f"https://app.crisp.chat/website/{chat['website_id']}/inbox/{chat['session_id']}"
             capped = [_score(g, k) for k in _KEY_MAP]
-            total = round(sum(capped) / 2, 2)
             new_rows.append([
                 chat["date"], url, chat["app"], chat["primary_operator"],
-                total, *capped,
+                f"=ROUND(SUM(F{row_1idx}:S{row_1idx})/2,2)",  # formula, tự cập nhật khi sửa điểm
+                *capped,
                 chat.get("grading", {}).get("overall_summary", ""),
                 "✅ Resolved" if chat.get("is_resolved") else "🔄 Open",
             ])
-        # Ghi tại vị trí cụ thể — không dùng append_rows để tránh append sau summary cũ
         ws.update(new_rows, f"A{first_free_1idx}", value_input_option="USER_ENTERED")
         log.info(f"  📊 Sheet: thêm {len(new_rows)} row mới")
 
-    # --- Tính lại summary từ TOÀN BỘ data trong sheet ---
+    # --- Summary: dùng AVERAGEIF/COUNTIF để tự cập nhật khi sửa điểm trực tiếp trên sheet ---
     all_rows = ws.get_all_values()
     agent_stats: dict[str, list[float]] = {}
     for row in all_rows[1:]:
@@ -212,12 +212,17 @@ def _export_to_support_analyzer(new_results: list[dict]):
         except ValueError:
             continue
 
-    summary_rows = [["Support", "Avg Score (/10)", "Total Chats"]]
-    for agent, scores in sorted(agent_stats.items()):
-        summary_rows.append([agent, round(sum(scores) / len(scores), 2), len(scores)])
-
     final_last_data_row_1idx = last_data_row_1idx + len(to_add)
     summary_start = final_last_data_row_1idx + 2  # để 1 dòng trống
+
+    summary_rows = [["Support", "Avg Score (/10)", "Total Chats"]]
+    for i, agent in enumerate(sorted(agent_stats.keys())):
+        r = summary_start + 1 + i  # 1-indexed row của dòng agent này
+        summary_rows.append([
+            agent,
+            f'=IFERROR(ROUND(AVERAGEIF($D$2:$D$9999,A{r},$E$2:$E$9999),2),"")',
+            f'=IFERROR(COUNTIF($D$2:$D$9999,A{r}),"")',
+        ])
     ws.update(summary_rows, f"A{summary_start}", value_input_option="USER_ENTERED")
 
     # --- Formatting ---
@@ -266,14 +271,10 @@ def _export_to_support_analyzer(new_results: list[dict]):
             "fields": "userEnteredFormat(backgroundColor)"
         }})
 
-    # Màu score + highlight trừ điểm + notes cho rows mới
+    # Highlight trừ điểm + notes cho rows mới
     for offset, chat in enumerate(to_add):
         row_idx = new_start_0idx + offset
         g = chat.get("grading", {}).get("criteria", {})
-        capped = [_score(g, k) for k in _KEY_MAP]
-        score = round(sum(capped) / 2, 2)
-        color = "FF6B6B" if score < 7 else "FFD966" if score < 9 else "6BCB77"
-        repeat_cell(row_idx, row_idx + 1, 4, 5, {"backgroundColor": _hex(color)}, "backgroundColor")
         for col_offset, key in enumerate(_KEY_MAP):
             col_idx = 5 + col_offset
             if g.get(key, {}).get("score", 0) < _MAX_SCORES[col_idx]:
@@ -288,12 +289,26 @@ def _export_to_support_analyzer(new_results: list[dict]):
                     "fields": "note"
                 }})
 
-    # Màu avg score trong summary
-    for s_idx, (agent, scores) in enumerate(sorted(agent_stats.items()), 1):
-        avg = sum(scores) / len(scores)
-        color = "FF6B6B" if avg < 7 else "FFD966" if avg < 9 else "6BCB77"
-        r = sum_r0 + s_idx
-        repeat_cell(r, r + 1, 1, 2, {"backgroundColor": _hex(color)}, "backgroundColor")
+    # Conditional formatting cho E (Rating) và B (Avg Score summary)
+    # Chỉ thêm rules khi sheet mới (existing_data_count == 0) — rules persist cho tất cả daily appends
+    if existing_data_count == 0:
+        def _cf_rule(col_start, col_end, condition_type, values, color_hex):
+            vals = [{"userEnteredValue": v} for v in (values if isinstance(values, list) else [values])]
+            return {"addConditionalFormatRule": {
+                "rule": {
+                    "ranges": [{"sheetId": sid, "startRowIndex": 1, "endRowIndex": 9999,
+                                "startColumnIndex": col_start, "endColumnIndex": col_end}],
+                    "booleanRule": {
+                        "condition": {"type": condition_type, "values": vals},
+                        "format": {"backgroundColor": _hex(color_hex)}
+                    }
+                },
+                "index": 0
+            }}
+        for col_s, col_e in [(4, 5), (1, 2)]:  # E (Rating), B (Avg Score summary)
+            reqs.append(_cf_rule(col_s, col_e, "NUMBER_GREATER_EQ", "9", "6BCB77"))
+            reqs.append(_cf_rule(col_s, col_e, "NUMBER_BETWEEN", ["7", "8.9999"], "FFD966"))
+            reqs.append(_cf_rule(col_s, col_e, "NUMBER_LESS", "7", "FF6B6B"))
 
     set_col_width(0, 1, 100); set_col_width(1, 2, 260); set_col_width(2, 3, 100)
     set_col_width(3, 4, 120); set_col_width(4, 5, 80);  set_col_width(5, 19, 70)

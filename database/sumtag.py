@@ -161,3 +161,48 @@ def exists(session_id: str, date: str, app: str | None = None) -> bool:
     names = [_collection_name(app)] if app else ALL_SUMTAG_COLLECTIONS
     query = {"session_id": session_id, "date": date}
     return any(db[n].count_documents(query, limit=1) > 0 for n in names if n)
+
+
+# ---------------------------------------------------------------------------
+# Read
+# ---------------------------------------------------------------------------
+
+def get_by_date(date: str, app: str | None = None) -> list[dict[str, Any]]:
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_SUMTAG_COLLECTIONS
+    return [doc for n in names if n for doc in db[n].find({"date": date})]
+
+
+def get_by_date_range(
+    from_date: str,
+    to_date: str,
+    operator: str | None = None,
+    app: str | None = None,
+) -> list[dict[str, Any]]:
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_SUMTAG_COLLECTIONS
+    query: dict[str, Any] = {"date": {"$gte": from_date, "$lte": to_date}}
+    if operator:
+        query["primary_operator"] = operator
+    return [
+        doc
+        for n in names if n
+        for doc in db[n].find(query).sort("date", ASCENDING)
+    ]
+
+
+def get_by_session(session_id: str, app: str | None = None) -> dict[str, Any] | None:
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_SUMTAG_COLLECTIONS
+    for name in names:
+        if name:
+            doc = db[name].find_one({"session_id": session_id})
+            if doc:
+                return doc
+    return None
+
+
+def get_by_operator(operator: str, app: str | None = None) -> list[dict[str, Any]]:
+    db = get_db()
+    names = [_collection_name(app)] if app else ALL_SUMTAG_COLLECTIONS
+    return [doc for n in names if n for doc in db[n].find({"primary_operator": operator})]
