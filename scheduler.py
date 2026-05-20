@@ -153,29 +153,38 @@ def _export_to_support_analyzer(new_results: list[dict]):
     # --- Đọc data hiện có ---
     existing_urls: set[str] = set()
     existing_data_count = 0
+    last_data_row_1idx = 1  # vị trí thực của dòng data cuối (1-indexed)
     if existed:
-        for row in ws.get_all_values()[1:]:
+        for i, row in enumerate(ws.get_all_values()[1:], 2):  # i = row số 1-indexed
             if row and len(row) > 1 and row[1].startswith("https://app.crisp.chat"):
                 existing_urls.add(row[1])
                 existing_data_count += 1
+                last_data_row_1idx = i  # track vị trí thực, không chỉ đếm
 
-    # --- Lọc chỉ lấy row mới ---
+    # --- Lọc chỉ lấy row mới và có grading hợp lệ ---
     to_add = [
         r for r in new_results
         if f"https://app.crisp.chat/website/{r['website_id']}/inbox/{r['session_id']}" not in existing_urls
+        and r.get("grading", {}).get("criteria")  # bỏ qua record thiếu grading
     ]
-    skipped = len(new_results) - len(to_add)
+    no_grading = sum(1 for r in new_results if not r.get("grading", {}).get("criteria"))
+    skipped = len(new_results) - len(to_add) - no_grading
+    if no_grading:
+        log.info(f"  ⚠️  Bỏ qua {no_grading} record thiếu grading")
     if skipped:
         log.info(f"  ⏭  Sheet: bỏ qua {skipped} row đã có")
     if not to_add:
         log.info("  Sheet: không có row mới.")
-    else:
-        # Xóa summary cũ trước khi append — nếu không, append_rows sẽ nối SAU summary
-        # thay vì sau dòng data cuối cùng
-        if existed and existing_data_count > 0:
-            old_summary_row = existing_data_count + 3  # header(1) + data(N) + blank(1) + summary
-            ws.batch_clear([f"A{old_summary_row}:C{old_summary_row + 30}"])
 
+    # Luôn đảm bảo header đúng
+    ws.update([_HEADERS], "A1", value_input_option="USER_ENTERED")
+
+    # Xóa toàn bộ vùng sau dòng data cuối cùng (tính theo vị trí thực, không phải đếm).
+    # Range rộng 2000 rows để bắt mọi summary lạc chỗ từ các lần chạy trước bị lỗi.
+    first_free_1idx = last_data_row_1idx + 1
+    ws.batch_clear([f"A{first_free_1idx}:Z{first_free_1idx + 2000}"])
+
+    if to_add:
         new_rows = []
         for chat in to_add:
             g = chat.get("grading", {}).get("criteria", {})
@@ -188,8 +197,8 @@ def _export_to_support_analyzer(new_results: list[dict]):
                 chat.get("grading", {}).get("overall_summary", ""),
                 "✅ Resolved" if chat.get("is_resolved") else "🔄 Open",
             ])
-        ws.update([_HEADERS], "A1", value_input_option="USER_ENTERED")
-        ws.append_rows(new_rows, value_input_option="USER_ENTERED")
+        # Ghi tại vị trí cụ thể — không dùng append_rows để tránh append sau summary cũ
+        ws.update(new_rows, f"A{first_free_1idx}", value_input_option="USER_ENTERED")
         log.info(f"  📊 Sheet: thêm {len(new_rows)} row mới")
 
     # --- Tính lại summary từ TOÀN BỘ data trong sheet ---
@@ -207,12 +216,8 @@ def _export_to_support_analyzer(new_results: list[dict]):
     for agent, scores in sorted(agent_stats.items()):
         summary_rows.append([agent, round(sum(scores) / len(scores), 2), len(scores)])
 
-    # Tính vị trí từ count đã biết — không phụ thuộc vào get_all_values() sau append
-    last_data_row_1idx = 1 + existing_data_count + len(to_add)
-    summary_start = last_data_row_1idx + 2  # 1-indexed, để 1 dòng trống
-
-    # Xóa toàn bộ vùng sau data (bao gồm summary cũ có thể nằm sai vị trí)
-    ws.batch_clear([f"A{last_data_row_1idx + 2}:C{last_data_row_1idx + 50}"])
+    final_last_data_row_1idx = last_data_row_1idx + len(to_add)
+    summary_start = final_last_data_row_1idx + 2  # để 1 dòng trống
     ws.update(summary_rows, f"A{summary_start}", value_input_option="USER_ENTERED")
 
     # --- Formatting ---
@@ -250,7 +255,7 @@ def _export_to_support_analyzer(new_results: list[dict]):
 
     # Reset background về trắng cho toàn bộ vùng new data rows
     # (tránh kế thừa formatting tối của summary cũ vẫn còn trên các cell đó)
-    new_start_0idx = 1 + existing_data_count
+    new_start_0idx = last_data_row_1idx  # 0-indexed: dòng đầu tiên của data mới
     if to_add:
         reqs.insert(0, {"repeatCell": {
             "range": {"sheetId": sid,
@@ -437,6 +442,8 @@ def run_daily_job(date_str: str | None = None):
     log.info(f"🚀 Daily job — chấm ngày {date_str}")
     log.info(f"{'='*55}")
     t0 = time.time()
+
+    ensure_tunnel()
 
     try:
         chats = fetch_chats(date_str)

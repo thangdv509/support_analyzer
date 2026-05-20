@@ -84,6 +84,12 @@ NGUYÊN TẮC CHUNG:
 - Tin nhắn agent dạng re-engage/follow-up ("Hi, still here!", "Just checking in", "Let me know if you need help") khi khách không phản hồi = hành động CHỦ ĐỘNG tốt, KHÔNG phải bỏ qua câu hỏi. KHÔNG trừ Listening/Enthusiastic/Solution vì những tin này.
 - Khi THÔNG TIN BỔ SUNG ghi khách đã cho review tốt (4-5 sao): đây là tín hiệu mạnh cho thấy khách hài lòng — không được chấm các tiêu chí giao tiếp quá nghiêm khắc khi mâu thuẫn với review này.
 
+NGUYÊN TẮC CHAT OUTREACH / KHÁCH CHƯA HỒI ÂM:
+- Nếu transcript CHỈ CÓ tin nhắn của agent (khách chưa reply lần nào) → đây là tin nhắn outreach/proactive, KHÔNG phải cuộc hội thoại thất bại.
+- Trong trường hợp này: Listening, Probing, Solution, Case Transferring, Extra Mile, Asking for Review → TẤT CẢ đủ điểm vì không có cơ hội xuất hiện — khách chưa nêu vấn đề gì để agent xử lý.
+- Chỉ chấm những gì thực sự có thể đánh giá: chất lượng tin nhắn (Greetings, Grammar, Concise, Tone, Empathy, Enthusiastic, Pro-activeness).
+- TUYỆT ĐỐI không trừ Solution/Probing/Transfer chỉ vì khách im lặng.
+
 NGUYÊN TẮC CASE CHƯA XỬ LÝ XONG:
 - Chat kết thúc mà vấn đề chưa giải quyết xong là BÌNH THƯỜNG — khách có thể offline giữa chừng, vấn đề cần dev fix, cần thêm thông tin. KHÔNG trừ điểm Solution/Pro-activeness/Transfer chỉ vì case chưa done.
 - Support xin thêm video/screenshot/log để điều tra = Probing TỐT, không phải thất bại. Không trừ điểm.
@@ -399,15 +405,24 @@ def fetch_chats(target_date_str):
                             filtered.append({"sender": label, "content": str(content), "is_op": is_op})
 
                         op_meaningful = [f for f in filtered if f["is_op"] and len(f["content"].strip()) > 3]
-                        if len(filtered) < 2 or not op_meaningful:
+                        if not op_meaningful:
+                            drop_too_short += 1; continue
+
+                        customer_msgs = [f for f in filtered if not f["is_op"]]
+                        is_outreach = len(customer_msgs) == 0
+
+                        # Outreach-only: chỉ có tin agent, khách chưa reply lần nào
+                        # Bỏ qua nếu agent chỉ gửi đúng 1 tin ngắn kiểu trigger tự động
+                        if is_outreach and len(op_meaningful) < 2 and all(len(f["content"].strip()) < 80 for f in op_meaningful):
                             drop_too_short += 1; continue
 
                         customer_seen_no_reply = (
                             last_op_msg is not None and
                             last_op_msg.get("read") == "chat"
                         )
+                        outreach_note = " | 📢 OUTREACH CHAT: Agent chủ động liên hệ, khách CHƯA HỒI ÂM lần nào. Đây KHÔNG phải cuộc hội thoại support thông thường — KHÔNG trừ điểm Listening/Probing/Solution/Transfer/Extra Mile/Review vì không có cơ hội xuất hiện. Chỉ chấm chất lượng tin nhắn của agent." if is_outreach else ""
                         seen_note = " | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này." if customer_seen_no_reply else ""
-                        supp_info = f"{review_info}{seen_note}" if (review_info or seen_note) else "Chưa thấy có thông tin review từ hệ thống"
+                        supp_info = f"{review_info}{outreach_note}{seen_note}" if (review_info or outreach_note or seen_note) else "Chưa thấy có thông tin review từ hệ thống"
                         transcript = f"--- THÔNG TIN BỔ SUNG: {supp_info} ---\n\n"
                         transcript += f"[Agent được chấm: {sole_agent}]\n\n"
                         for f in filtered:
@@ -680,14 +695,15 @@ def _parse_and_cap(raw):
     return data
 
 def _grade_one(args):
-    """Grade một chat, retry tối đa 3 lần khi JSON parse lỗi. Dùng cho parallel."""
+    """Grade một chat, retry tối đa 10 lần. Dùng cho parallel."""
     i, total, chat = args
     chat_start = time.time()
     print(f"  [{i}/{total}] Session: {chat['session_id']}", flush=True)
-    for attempt in range(1, 4):
+    for attempt in range(1, 11):
         grade_raw = grade_chat(chat['transcript'])
         if not grade_raw:
-            print(f"    ❌ No grading returned (attempt {attempt})")
+            print(f"    ❌ No grading returned (attempt {attempt}/10), retry sau 5s...")
+            time.sleep(5)
             continue
         try:
             grading_data = _parse_and_cap(grade_raw)
@@ -695,8 +711,10 @@ def _grade_one(args):
             print(f"    ✅ {grading_data['final_score_10']}/10 — {_fmt_elapsed(time.time() - chat_start)}", flush=True)
             return chat
         except Exception as e:
-            print(f"    ⚠️  JSON Parse Error (attempt {attempt}/3): {e}")
-    print(f"    ❌ Failed after 3 attempts: {chat['session_id']}")
+            wait = min(5 * attempt, 60)
+            print(f"    ⚠️  JSON Parse Error (attempt {attempt}/10): {e} — retry sau {wait}s")
+            time.sleep(wait)
+    print(f"    ❌ Failed after 10 attempts: {chat['session_id']}")
     return None
 
 def _grade_and_export(chats, date_str, is_regraded=False):
