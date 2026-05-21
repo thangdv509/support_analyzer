@@ -513,7 +513,7 @@ _TZ7 = timezone(timedelta(hours=7))
 def _seconds_until_9am_vn() -> float:
     """Tính số giây đến 09:00 sáng giờ Việt Nam (UTC+7) tiếp theo."""
     now = datetime.now(_TZ7)
-    target = now.replace(hour=9, minute=0, second=0, microsecond=0)
+    target = now.replace(hour=2, minute=0, second=0, microsecond=0)
     if now >= target:
         target += timedelta(days=1)
     return (target - now).total_seconds()
@@ -535,7 +535,7 @@ if __name__ == "__main__":
     else:
         # Nếu khởi động sau 9h VN và chưa chấm hôm nay → chấm bổ sung ngay
         now_vn = datetime.now(_TZ7)
-        if now_vn.hour >= 9:
+        if now_vn.hour >= 2:
             yesterday = (now_vn - timedelta(days=1)).strftime("%Y-%m-%d")
             log.info(f"  Đã qua 09:00 VN — chấm bổ sung ngày {yesterday}")
             run_daily_job(yesterday)
