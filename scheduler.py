@@ -125,6 +125,54 @@ def _get_or_create_sheet(spreadsheet, name: str):
         return ws, False
 
 
+def _apply_conditional_formatting(spreadsheet, sid: int):
+    """Xóa CF rules cũ của sheet rồi thêm lại rules cho cột E (Rating) và B (Avg Score).
+    Tách thành batch riêng để tránh lỗi khi batch chính quá lớn.
+    """
+    def _cf(col_start, col_end, condition_type, values, hex_color):
+        vals = [{"userEnteredValue": v} for v in (values if isinstance(values, list) else [values])]
+        return {"addConditionalFormatRule": {
+            "rule": {
+                "ranges": [{"sheetId": sid, "startRowIndex": 1, "endRowIndex": 9999,
+                            "startColumnIndex": col_start, "endColumnIndex": col_end}],
+                "booleanRule": {
+                    "condition": {"type": condition_type, "values": vals},
+                    "format": {"backgroundColorStyle": {"rgbColor": _hex(hex_color)}},
+                }
+            },
+            "index": 0,
+        }}
+
+    # Đọc số CF rules hiện có để xóa trước (tránh duplicate mỗi lần chạy)
+    delete_reqs: list[dict] = []
+    try:
+        sh_meta = spreadsheet.fetch_sheet_metadata()
+        for sh in sh_meta.get("sheets", []):
+            if sh["properties"]["sheetId"] == sid:
+                n = len(sh.get("conditionalFormats", []))
+                for i in range(n - 1, -1, -1):  # xóa từ cuối lên để giữ đúng index
+                    delete_reqs.append({"deleteConditionalFormatRule": {"sheetId": sid, "index": i}})
+                break
+    except Exception as e:
+        log.warning(f"  ⚠️  Không đọc được CF rules cũ: {e}")
+
+    # 3 mức màu: đỏ < 7, vàng 7–8.9999, xanh ≥ 9
+    # NUMBER_GREATER_EQ không hợp lệ trong CF → dùng NUMBER_GREATER với 8.9999
+    # (điểm làm tròn 2 chữ số nên không có giá trị nào nằm giữa 8.9999 và 9.0)
+    add_reqs = []
+    for col_s, col_e in [(4, 5), (1, 2)]:  # E (Rating), B (Avg Score summary)
+        add_reqs.append(_cf(col_s, col_e, "NUMBER_GREATER", "8.9999",           "6BCB77"))
+        add_reqs.append(_cf(col_s, col_e, "NUMBER_BETWEEN", ["7", "8.9999"],    "FFD966"))
+        add_reqs.append(_cf(col_s, col_e, "NUMBER_LESS",    "7",                "FF6B6B"))
+
+    cf_reqs = delete_reqs + add_reqs
+    try:
+        spreadsheet.batch_update({"requests": cf_reqs})
+        log.info(f"  🎨 CF rules: xóa {len(delete_reqs)}, thêm {len(add_reqs)}")
+    except Exception as e:
+        log.error(f"  ❌ CF batch_update lỗi: {e}")
+
+
 def _export_to_support_analyzer(new_results: list[dict]):
     if not GOOGLE_SHEET_ID or not GOOGLE_CREDENTIALS_PATH:
         log.warning("Thiếu Google Sheets config.")
@@ -289,27 +337,6 @@ def _export_to_support_analyzer(new_results: list[dict]):
                     "fields": "note"
                 }})
 
-    # Conditional formatting cho E (Rating) và B (Avg Score summary)
-    # Chỉ thêm rules khi sheet mới (existing_data_count == 0) — rules persist cho tất cả daily appends
-    if existing_data_count == 0:
-        def _cf_rule(col_start, col_end, condition_type, values, color_hex):
-            vals = [{"userEnteredValue": v} for v in (values if isinstance(values, list) else [values])]
-            return {"addConditionalFormatRule": {
-                "rule": {
-                    "ranges": [{"sheetId": sid, "startRowIndex": 1, "endRowIndex": 9999,
-                                "startColumnIndex": col_start, "endColumnIndex": col_end}],
-                    "booleanRule": {
-                        "condition": {"type": condition_type, "values": vals},
-                        "format": {"backgroundColor": _hex(color_hex)}
-                    }
-                },
-                "index": 0
-            }}
-        for col_s, col_e in [(4, 5), (1, 2)]:  # E (Rating), B (Avg Score summary)
-            reqs.append(_cf_rule(col_s, col_e, "NUMBER_GREATER_EQ", "9", "6BCB77"))
-            reqs.append(_cf_rule(col_s, col_e, "NUMBER_BETWEEN", ["7", "8.9999"], "FFD966"))
-            reqs.append(_cf_rule(col_s, col_e, "NUMBER_LESS", "7", "FF6B6B"))
-
     set_col_width(0, 1, 100); set_col_width(1, 2, 260); set_col_width(2, 3, 100)
     set_col_width(3, 4, 120); set_col_width(4, 5, 80);  set_col_width(5, 19, 70)
     set_col_width(19, 20, 360); set_col_width(20, 21, 110)
@@ -318,9 +345,12 @@ def _export_to_support_analyzer(new_results: list[dict]):
         "fields": "gridProperties.frozenRowCount"
     }})
 
+    # Batch 1: formatting chính (headers, màu ô trừ điểm, col width, freeze)
     spreadsheet.batch_update({"requests": reqs + note_reqs})
-    url = f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}/edit#gid={sid}"
-    log.info(f"✅ Sheet '{SHEET_NAME}': {url}")
+
+    # Batch 2: Conditional formatting cho E (Rating) và B (Avg Score summary)
+    # Tách riêng để tránh lỗi batch quá lớn khi reexport nhiều rows
+    _apply_conditional_formatting(spreadsheet, sid)
 
 
 # ---------------------------------------------------------------------------
