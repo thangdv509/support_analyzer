@@ -1,0 +1,586 @@
+[
+  {
+    "session_id": "session_3e25195f-6cb1-412b-97ff-f659dd4b0da4",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-20",
+    "app": "DECO",
+    "customer": "Vintage Wholsale Spain",
+    "primary_operator": "Ivy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Ivy. Nếu có nhiều agent trong chat, chỉ chấm phần của Ivy, bỏ qua lỗi của agent khác.]\n\nVintage Wholsale Spain: Hi DECO team, I would like to upload a custom text font that is not available in-app\n\n  Ivy: Hi there. It's Ivy from DECO app\n\n  Ivy: Would you like to upload your custom text font?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Có tên agent và tên brand: \"It's Ivy from DECO app\"."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu hỏi rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Replying đúng trọng tâm câu hỏi của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Chat bình thường, không cần thể hiện empathy."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Câu hỏi probe phù hợp để hiểu rõ hơn yêu cầu của khách."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Chưa có đủ thông tin để đánh giá solution."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chưa có đủ thông tin để đánh giá proactiveness."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội để chia sẻ resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có cơ hội để tạo extra mile."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc."
+        }
+      },
+      "overall_summary": "Khởi đầu chat tốt, support nhanh chóng phản hồi và chủ động đặt câu hỏi để hiểu rõ hơn yêu cầu của khách hàng.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_1b200915-812d-4a9d-9451-4649a51018ae",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-20",
+    "app": "DECO",
+    "customer": "ZenZaray",
+    "primary_operator": "Ivy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Ivy. Nếu có nhiều agent trong chat, chỉ chấm phần của Ivy, bỏ qua lỗi của agent khác.]\n\nZenZaray: hello\n\nZenZaray: I can give you collaborator access and share the link  to the actual product page\n\n  Ivy: Hi there. It's Ivy from DECO app\n\n  Ivy: Thanks a lot for your reply\n\n  Ivy: To ensure we're on the same page, may I confirm that you would like to change the position of your trust badge?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào có tên agent và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu hỏi rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Trả lời đúng trọng tâm câu hỏi của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Câu chat bình thường, không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Hỏi lại để làm rõ vấn đề của khách."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Vấn đề của khách được giải quyết."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để chủ động giúp đỡ thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần chuyển case trong trường hợp này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không cần chia sẻ thêm resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để gợi ý thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc nên không trừ điểm."
+        }
+      },
+      "overall_summary": "Agent support nhiệt tình, chủ động hỏi để hiểu rõ vấn đề của khách. Chưa có thông tin review nên không trừ điểm.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_cbaddf75-32fa-472c-9f73-3ca4a56937b6",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-20",
+    "app": "DECO",
+    "customer": "Made In Oregon",
+    "primary_operator": "Felicie",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Felicie. Nếu có nhiều agent trong chat, chỉ chấm phần của Felicie, bỏ qua lỗi của agent khác.]\n\nMade In Oregon: Where do the text badges pull the discount information / percent from? If we are using an automatically applied discount and not changing prouct price/compare at price will it still work?\n\n  Felicie: Hi, it's Felicie from the DECO team!\n\n  Felicie: Ah, about the discount and compare at price you are asking, we are taking the information from the Product part in Shopify, where you have set the discount and compare at price\n\nMade In Oregon: We aren't able to do that since sale is not on POS, online only. So what would you recommend if we need to display 3 different types of badges for our automatic discount, is there an option better than just generic \"Sale\" badge?\n\n  Felicie: Since automatic discounts don’t update the product price or compare-at price in Shopify, the badge won’t be able to dynamically calculate the exact discount percentage.\n\n  Felicie: However, as a workaround, you could:\n* Create **custom/manual badges** (e.g. “-18%”, “-20%”, “Bundle Deal”)\n* Then assign them to specific products or collections that match each promotion\n\n  Felicie: This way, you can still display different types of badges instead of a generic “Sale” badge, even though they won’t be calculated automatically.\n\nMade In Oregon: What dimension for creating our own image badge?\n\n  Felicie: There isn’t a strict required dimension for image badges. In most cases, images will be automatically optimized and scaled, so you can upload your design and it should display properly.\n\n  Felicie: Additionally, you can adjust the badge size directly in the app (as shown in the display tab), so the final display will depend on how you configure it there.\n\n  Felicie: [File: image.png - https://storage.crisp.chat/users/upload/session/-/c/6/0/4/c60433f8f864f800/image_xtrrd2.png]\n\n  Felicie: Hi, may I ask if you are still there?\n\n  Felicie: Please feel free to reach out to us if you need further support!\n\nMade In Oregon: Hi DECO team! I just filled the Sidekick survey.\n My Sidekick prompt/keywords: “If we are doing an online only sale for products and don't want to update price and compare at price, is there another way to show the discount amount before they add to cart”.\n Please send my discount code. Thanks!\n\n  Felicie: Hi, could you please send me the screenshot of the Sidekick survey so that I can help check for the discount for you?\n\nMade In Oregon: [File: sidekick 1.png - https://storage.crisp.chat/users/upload/session/-/c/6/0/4/c60433f8f864f800/sidekick-1_ypat2f.png]\n\nMade In Oregon: [File: sidekick 2.png - https://storage.crisp.chat/users/upload/session/-/c/6/0/4/c60433f8f864f800/sidekick-2_gprcoz.png]\n\n  Felicie: Ah I saw that, thank you for the information!\n\n  Felicie: May I ask if you want the discount of 20% for Monthly or 30% for Annual?\n\n  Felicie: So that our manager can help create a coupon for you!\n\nMade In Oregon: 30% off annual would be preferred, thanks!\n\n  Felicie: Ah I understand that!\n\n  Felicie: Let me inform our manager to help create a coupon for you!\n\n  Felicie: However, it's night time from our side, so it may takes several hours before our team can help you with your case!\n\n  Felicie: May I ask if it's fine for you?\n\nMade In Oregon: That should be fine, am I able to just start free trial in meantime for starter plan so I can publish more badges?\n\n  Felicie: Ah sure, you can even sign up for our Unlimited plan now if you want, since you have a 3 day trial!\n\n  Felicie: It's totally free, you do not have to pay any fee!\n\n  Felicie: In the next few hours when we create the coupon for you successfully, we will help you to apply the discount code!\n\nMade In Oregon: Awesome, thank you for your help!\n\n  Felicie: So you can upgrade to higher plan right now!\n\n  Felicie: Would you like me to guide you to upgrade?\n\nMade In Oregon: I just upgraded to GROWTH 🎉 Could you help me get the most out of this plan?\n\n  Felicie: Welcome to our Growth plan!!!\n\n  Felicie: By the way, may I ask how would you rate my support today (FELICIE) on a scale 1-5? It would mean a lot to me!\n\nMade In Oregon: 5 - you've been very helpful and responsive. I should be all good for now, but will keep eye out for next steps on discount. Thanks again\n\n  Felicie: Oh really!!! Thank you so muchhhh\n\n  Felicie: In the meantime, would you mind taking a few seconds to leave a short review about my support (Felicie) today on Shopify App Store? \n\nJust 30s to go: [https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal](https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal)\n\n  Felicie: Could you please spend just 10 seconds to leave me a short review about our chat today?\n\n  Felicie: It would means the WORLD to me!\n\n  Felicie: I have informed your discount case to our manager, so no worries, we will inform you right away when our team goes online!\n\n  Felicie: Can you let me know when you are done with your review, since I cannot see it!\n\n  Felicie: Thank you so much!\n\n  David: Dear, \n\nThis is David from DECO here. Just wanted to reach out with an update on your coupon. \n\nTo successfully use your coupon code, first, you are going to need to downgrade back to the Free Plan first. Then, you can apply your discount code: 30%OFF_Made In Oregon \n\nLet me know how it goes! \n\nBest, \nDavid\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/c/6/0/4/c60433f8f864f800/image_ubc9ck.png]\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/c/6/0/4/c60433f8f864f800/image_13uj00o.png]\n\n  Ivy: Hi there,\n\nIt's Ivy from DECO app. I hope this message finds you well!\n\nI’d like to provide a quick clarification regarding the previous information shared.\n\nYou can absolutely set up a discount amount using Automatic Discounts in Shopify. This means you can configure a fixed discount amount without requiring customers to enter a discount code at checkout.\n\nWe apologize for any confusion earlier. To help you visualize how to set this up, you can also refer to this step-by-step video guide:\nhttps://www.youtube.com/watch?v=zTHXzX-39Uc&list=PLB7LOaV4J2RjQp_haIgiZ4_wkI7O5Ae-P&index=3\n\nPlease feel free to give it a try, and let me know if you need any assistance. I’d be more than happy to help!\n\nBest regards,\nIvy\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent greets with name and brand 'Hi, it's Felicie from the DECO team!'"
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Grammar is correct."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent's communication is clear and concise."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent actively listens and responds to customer's questions."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tone and pace are appropriate. "
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Agent demonstrates empathy by acknowledging the customer's needs. For example: 'Ah I understand that!'."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "The agent is enthusiastic."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent asks clarifying questions: 'May I ask if you want the discount of 20% for Monthly or 30% for Annual?'"
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "The agent provides a solution to the customer's problem and follows up to ensure it is resolved."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent proactively offers assistance with upgrading plans: 'Would you like me to guide you to upgrade?'"
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent escalates the coupon creation to the manager: 'Let me inform our manager to help create a coupon for you!'"
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Not applicable. The agent doesn't have an opportunity to share documents/links."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "The agent guide customer to upgrade plan by suggesting the 3 day trial: 'Ah sure, you can even sign up for our Unlimited plan now if you want, since you have a 3 day trial!'"
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "The agent asks for a review: 'By the way, may I ask how would you rate my support today (FELICIE) on a scale 1-5? It would mean a lot to me!'"
+        }
+      },
+      "overall_summary": "The agent provides excellent support by actively listening, providing solutions, and asking for a review. The agent also goes the extra mile by offering to guide the customer through the upgrade process.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_af3b372b-0575-4ec8-ae6a-5c28004e6a07",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-20",
+    "app": "SearchPie",
+    "customer": "chic-life-com",
+    "primary_operator": "Felicie",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\n[Agent được chấm: Felicie. Nếu có nhiều agent trong chat, chỉ chấm phần của Felicie, bỏ qua lỗi của agent khác.]\n\nchic-life-com: yes please\n\n  Felicie: Hi, it's Felicie from SearchPie team.\n\n  Felicie: Would you like me to help check your SEO?\n\nchic-life-com: yes please\n\n  Felicie: Please give me a second!\n\n  Felicie: I have checked and seen that there are some issues here in the report with meta tags!\n\n  Felicie: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/a/a/3/8aa3d532674cc000/image_h9cbzr.png]\n\n  Felicie: Would you like me to inform our dev team to help fix these problems right away?\n\nchic-life-com: what are the 18 issues\n\nchic-life-com: sure\n\nchic-life-com: I do have a developer on these but I'm starting to question what they're doing\n\n  Felicie: Ah, let me pass your case to our technical team!\n\n  Felicie: However, it's night time from our side, so it may takes several hours before our team can help you with your case!\n\n  Felicie: May I ask if it's fine for you?\n\nchic-life-com: ok, that's fine\n\n  Felicie: Ah that's great!\n\n  Felicie: I have informed our dev team about your case!\n\n  Felicie: When thing's done I will inform you the result via mail to let you know!\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3   \n\nIt seems we've lost access to your store, so we're currently unable to check the issue. Could you please grant collaborator access again so we can continue investigating and assist you further?\n\nLooking forward to hearing from you soon!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Có tên Felicie và SearchPie."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Clear."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Trả lời 'what are the 18 issues' bằng cách chuyển case."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Good tone."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự đồng cảm với khách hàng có developer riêng, nhưng nghi ngờ năng lực."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Enthusiastic."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probe thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Solution."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Proactive."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chuyển case cho dev team."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không cần dùng resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội extra mile."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 5 sao."
+        }
+      },
+      "overall_summary": "Felice hỗ trợ tốt, đầy đủ các tiêu chí.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_900b4b93-14c2-489c-b110-3b805fcedd62",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-20",
+    "app": "SearchPie",
+    "customer": "xxs0mq-d4",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\n[Agent được chấm: Jane. Nếu có nhiều agent trong chat, chỉ chấm phần của Jane, bỏ qua lỗi của agent khác.]\n\nxxs0mq-d4: Hello\n\nxxs0mq-d4: :)\n\nxxs0mq-d4: need to fix :\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_ijvgc1.png]\n\nxxs0mq-d4: how to do with bulk\n\nxxs0mq-d4: ?\n\n  David: Hi, this is David from SearchPie here. Ah, just like I have mentioned before, that is just referring to your meta tags length. No need to worry about them :$\n\nxxs0mq-d4: but i want to fix this errors\n\nxxs0mq-d4: if is possible\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_uawpn8.png]\n\n  David: Ah, if so, to do it in bulk, you can try to AI Generate these tags for you\n\n  David: You can do it like so:\n\nxxs0mq-d4: I had do it like you had tell me\n\nxxs0mq-d4: With IA\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_1mgtnuv.png]\n\n  Jane: it's Jane from Search Pie here\n\nxxs0mq-d4: it's more bad now\n\nxxs0mq-d4: Hello Jane\n\n  Jane: you just need to click on the Pen button and the app will navigate you to the feature to edit meta tags\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_r6pigb.png]\n\nxxs0mq-d4: Then i need one per one\n\nxxs0mq-d4: No bulk solution ?\n\n  Jane: yes if you want to edit in bulk then can choose the Bulk Edit button\n\nxxs0mq-d4: where\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_1erxuw6.png]\n\nxxs0mq-d4: ok\n\nxxs0mq-d4: i will try\n\nxxs0mq-d4: thank you till now for your information :)\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_11je9mg.png]\n\n  Jane: the AI generate also can edit in bulk, just need to select the products you want\n\n  Jane: welcome ya\n\nxxs0mq-d4: then here :\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_1mbqs6f.png]\n\n  Jane: it's the Bulk meta tags feature, you can generate meta tags for all products\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_mhwf87.png]\n\nxxs0mq-d4: where i need to do it, where i'm in this screen\n\n  Jane: please go to tab AI Generate, choose Products, then choose the Product with Long/Short issue to adjust the meta tags's length\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_1al9hnl.png]\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_1e1i6n9.png]\n\nxxs0mq-d4: correct\n\n  Jane: yes\n\nxxs0mq-d4: :)\n\n  Jane: correct\n\nxxs0mq-d4: but nothing change in the seo page\n\n  Jane: choose both to generate meta title and meta description\n\n  Jane: you can check the history here\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_1dohmjf.png]\n\n  Jane: for the SEO report it will update accordingly, you can check it tommorow, no worry\n\nxxs0mq-d4: ok willl se tomorrow\n\nxxs0mq-d4: :)\n\nxxs0mq-d4: Thank you\n\n  Jane: welcome :$\n\nxxs0mq-d4: Can you help me check on my Google Search Console issues?\n\nxxs0mq-d4: Can you help me check on my Google Search Console issues?\n\nxxs0mq-d4: Can you help me check on my Google Search Console issues?\n\nxxs0mq-d4: Can you help me check on my Google Search Console issues?\n\n  Jane: :$\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/2/6/8/4/268425462cd77800/image_1r3eix8.png]\n\nxxs0mq-d4: I give you till Sunday 12AM to resolve the case\n\nxxs0mq-d4: after thaat i will take SEO Shopify because i'm absolutly not satifacted of your services\n\n  Tina: Hi friend, I'm Tina here\n\n  Tina: Let we check\n\nxxs0mq-d4: i'm nowhere\n\n  Tina: We will be back soon\n\nxxs0mq-d4: better, because i will close my subscription\n\nxxs0mq-d4: tomorrow\n\n  Tina: Okay my friend\n\n  Tina: But may I ask the issues you are facing it?\n\nxxs0mq-d4: i'm nowhere when in google i search about : montoutou-shop\n\nxxs0mq-d4: my URL is montoutou-shop.com\n\nxxs0mq-d4: ????\n\n  Tina: Ah I understand your mean\n\n  Tina: I hope that you understand that SEO takes time, my friend\n\nxxs0mq-d4: then you no help me about the meta at all\n\nxxs0mq-d4: i ask a lot of time\n\nxxs0mq-d4: no\n\nxxs0mq-d4: is not the case\n\n  Tina: It takes around 6 months for you to see the best results\n\nxxs0mq-d4: because with montoutou-shop the target point exactly in my site\n\nxxs0mq-d4: no\n\nxxs0mq-d4: is not correct\n\nxxs0mq-d4: you mean what you mean\n\nxxs0mq-d4: then i the same\n\nxxs0mq-d4: i pay and i know what i wait about\n\nxxs0mq-d4: so please\n\nxxs0mq-d4: if something is wrong\n\n  Tina: Okay our team will check further for your store\n\n  Tina: I will be back soon\n\nxxs0mq-d4: resolve or advice me how to resolve it\n\nxxs0mq-d4: and i will do\n\n  Tina: Oki\n\nxxs0mq-d4: waiting you\n\n  Tina: I will be back soon\n\n  Tina: Please wait for me\n\nxxs0mq-d4: ok\n\n  Tina: :$\n\n  Tina: Hi friend, may I ask if you have received any notices from Google Business Profile?\n\nxxs0mq-d4: I will close your services\n\nxxs0mq-d4: immediatly\n\nxxs0mq-d4: and give a maximum bad experience\n\nxxs0mq-d4: your services make me issues\n\nxxs0mq-d4: in my site\n\n  Tina: Sorrry for the inconvenience\n\n  Tina: But we are trying to check for your site\n\n  Tina: Could you please send me the issues you are talking about?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đã có lời chào và tên Agency là Search Pie."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Câu cú của Jane rõ ràng, không sai grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Jane giải thích rõ ràng, mạch lạc. Sử dụng hình ảnh minh họa để hướng dẫn khách hàng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Jane lắng nghe và trả lời các câu hỏi của khách hàng đầy đủ, ví dụ như 'No bulk solution ?' -> 'yes if you want to edit in bulk then can choose the Bulk Edit button'."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone chuyên nghiệp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không bày tỏ thái độ bực dọc hay khó chịu nên không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Jane nhiệt tình, chủ động hướng dẫn khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent hỗ trợ dựa trên thông tin khách cung cấp, không cần khai thác thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Jane cung cấp giải pháp chính xác và hiệu quả, hướng dẫn khách hàng cách chỉnh sửa meta tags hàng loạt."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Jane chủ động gợi ý khách hàng cách chỉnh sửa meta tags hàng loạt bằng tính năng AI."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Jane đã sử dụng hình ảnh minh họa rất tốt để hỗ trợ khách hàng. "
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để làm tốt hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 5 sao."
+        }
+      },
+      "overall_summary": "Jane đã cung cấp giải pháp chính xác, hướng dẫn chi tiết và nhiệt tình giúp khách hàng giải quyết vấn đề. Ngoài ra, agent cũng tận dụng tốt các nguồn lực hỗ trợ và chủ động gợi ý các tính năng hữu ích cho khách hàng.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_fb9eca7a-f21c-4609-81ea-0ca5e2fba11a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-20",
+    "app": "SearchPie",
+    "customer": "brochetperche",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David. Nếu có nhiều agent trong chat, chỉ chấm phần của David, bỏ qua lỗi của agent khác.]\n\nbrochetperche: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\n  David: Hi, this is David from SearchPie here!\n\n  David: Thank you so much for choosing our services!!\n\nbrochetperche: Hi David\n\n  David: Would you like me to guide you on how to fully utilize your plan? :$\n\nbrochetperche: I have a specific question: I’m only testing the app on this shop. I’m looking for an alternative to our current SEO app, which we use on hechtundbarsch.de, hechtundbarsch.ch and hechtundbarsch.at. Unfortunately, our current app doesn’t work well with Shopify Markets when each market is on a top-level domain. Is that the case with yours?\n\n  David: I see, may I ask these 2 domains, are they on different stores or just 2 different versions of a store?\n\nbrochetperche: 3 domains\n\nbrochetperche: same store\n\nbrochetperche: with markets\n\n  David: Ah, I see. We do support SEO for all 3 domains here and we do optimize for all of your markets. However, for targeting each market specifically, you are going to need some external help, like a 3rd party app\n\nbrochetperche: [File: Bildschirmfoto 2026-03-20 um 10.13.40.png - https://storage.crisp.chat/users/upload-1/session/-/8/1/4/0/8140816d4b8ff800/bildschirmfoto-2026-03-20-um-1_t81twy.png]\n\nbrochetperche: However, the URL \"angel-adventskalender.de\" doesn't match the URL in the JSON-LD. Is it possible to ensure that the correct URL is used in the JSON-LD as well?\n\nbrochetperche: same here\n\nbrochetperche: [File: Bildschirmfoto 2026-03-20 um 10.15.25.png - https://storage.crisp.chat/users/upload-1/session/-/8/1/4/0/8140816d4b8ff800/bildschirmfoto-2026-03-20-um-1_1k5d501.png]\n\nbrochetperche: Can you display the domain of the relevant marketplace there?\n\n  David: I see, I saw that the URL is pointing to a product, can you send me the URL to the said product?\n\nbrochetperche: https://angel-adventskalender.de/products/angel-adventskalender\n\n  David: Thank you, let me have a look at this for you\n\nbrochetperche: thx :\n\nbrochetperche: :)\n\n  David: Thank you, please give me a few moments on this!\n\n  David: Ah, this seems like a bit out of my knowledge. I have notified our developers team to have a look at this for you, but it is going to take a bit more time. Does that work for you?\n\nbrochetperche: yes\n\n  David: I have some updates already. Looks like the main domain for your store is still the: http://pikeandperch.shop/\n\nThat is why JSON-LD is still detecting them and displaying theme there.\n\n  David: Our team can customize a custom build so that the JSON-LD manually use the URL that you want\n\nbrochetperche: Could you always display the domain used by each Shopify Market? We have 12 Markets in this shop, and each Market has its own domain.\n\n  David: So 12 different JSON-LDs for each market right?\n\nbrochetperche: Actually, it should only be necessary to adjust the top-level domain for each market. Perhaps we could implement a mapping from market to domain?\n\n  David: Seems plausible, let me just talk with our devs first. Please give me a few moments\n\nbrochetperche: would be nice to have a solution for this\n\n  David: I'm back with some updates. Sorry for the delay, lots of ticket to go through. Our team can carry out the request for you, free of charge! Since it is not too complicated of a request\n\n  David: We would just need collaborator access to your store. Would that be okay for you\n\nbrochetperche: would be ok\n\n  David: Got it, let me send a request on my end\n\n  David: I have sent you a request on my end via our account PieLab, can you approve it and let me know?\n\nbrochetperche: done\n\n  David: Thank you, let me check on my end\n\nbrochetperche: 👍\n\n  David: Yep, we got it. Let me notify our team for you. However, it is just 10 minutes before we end our business hours, is it okay if I update you next week? Tuesday perhaps?\n\nbrochetperche: would be great!\n\nbrochetperche: can you send me an email?\n\nbrochetperche: kevin@hechtundbarsch.de\n\n  David: Of course, I will notify you via email!\n\nbrochetperche: thx!\n\n  David: :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Có tên agent và tên brand: \"this is David from SearchPie here!\""
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Truyền đạt thông tin rõ ràng, mạch lạc."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Lắng nghe và hiểu vấn đề của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ nhịp độ phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự đồng cảm với khách hàng."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Tích cực hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Hỏi thêm thông tin để hiểu rõ vấn đề của khách: \"may I ask these 2 domains, are they on different stores or just 2 different versions of a store?\""
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đưa ra giải pháp phù hợp và hiệu quả cho vấn đề của khách hàng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chủ động giải quyết vấn đề cho khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề cần dev/kỹ thuật và agent đã thông báo: \"I have notified our developers team to have a look at this for you\"."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ docs/link."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội gợi ý tính năng/plan rõ ràng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat kết thúc bình thường không xin review."
+        }
+      },
+      "overall_summary": "Agent hỗ trợ khách hàng nhiệt tình và hiệu quả, đưa ra giải pháp phù hợp cho vấn đề của khách hàng.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_b8604ea9-4e60-4fef-857c-7f16bcc00f0c",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-20",
+    "app": "SearchPie",
+    "customer": "sunjoygroup",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: David. Nếu có nhiều agent trong chat, chỉ chấm phần của David, bỏ qua lỗi của agent khác.]\n\nsunjoygroup: hi， new AMP issue reported.\n\nsunjoygroup: [File: image.png - https://storage.crisp.chat/users/upload-1/session/-/7/6/9/b/769bb79ccf41d400/image_oiby36.png]\n\n  David: Hi, this is David from SearchPie here\n\n  David: I see, let me notify our devs team for you\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent giới thiệu đầy đủ tên và brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu trả lời rõ ràng, không lặp lại."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent phản hồi vấn đề khách báo."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ giọng văn lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu khách cần được thông cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Phản hồi nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đã đủ thông tin từ phía khách hàng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent thông báo sẽ báo cho team dev."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để chủ động hơn."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đã thông báo sẽ cần chuyển cho dev."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ thêm tài liệu."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để tạo thêm giá trị."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc."
+        }
+      },
+      "overall_summary": "Agent phản hồi nhanh chóng, đầy đủ thông tin.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_b71c4778-9c85-4b98-93c7-c30f8e7daa6c",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-20",
+    "app": "SearchPie",
+    "customer": "ij1hzg-0m",
+    "primary_operator": "Hannah",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Hannah. Nếu có nhiều agent trong chat, chỉ chấm phần của Hannah, bỏ qua lỗi của agent khác.]\n\nij1hzg-0m: can you ask the team to review these issues as well?\n\nij1hzg-0m: [File: IMG_1107.png - https://storage.crisp.chat/users/upload-1/session/-/9/3/e/9/93e9860b462e780/img1107_1a5pnwf.png]\n\nij1hzg-0m: [File: IMG_1108.png - https://storage.crisp.chat/users/upload-1/session/-/9/3/e/9/93e9860b462e780/img1108_1aq4r1h.png]\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3  \n\nThanks for the information. We’ve received it and shared it with our team for further checking.\nWe’ll get back to you as soon as we have an update.\n\n  Julie: Hello,\n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out to you via email regarding your Google Merchant Center.\n\nFirst of all, can you please kindly check [ this sheet right here  ](https://docs.google.com/spreadsheets/d/1IeO1xUeLwKV2kFa1vNV_qJi9tYxrFXbTJX6SMlVhZOU/edit?gid=0#gid=0)and provide the SKU so I can help you resolve the Missing inventory data problems? :$  \n\nSecond, regarding the point-of-sale email you sent me, I will help you to work with the provider: Google & Youtube app on this issue. \n\nFinally, according to the API change email you sent us, I have taken a look and it is actually not an issue. It is actually an update and action is needed to ensure smooth syncing after the update. Most of these actions are related to campaigns, ads and budget, which I am not capable of controlling and it is best that I do not resolve to these areas since it will affect your money flow and your campaigns overall. \n\nHowever, I can assure you that you are good for number 2 since you have not exceeded the limit. :$   As for the rest, I can only provide you information assistance when you carry out the process so I hope you can understand.\n\nI will come back to you with update regarding the point-of-sale later once I get a hold of the Google & Youtube app team. \n\nBest regards,\nJulie\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Hannah chào có tên (Hannah) và tên brand (SearchPie)."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Hannah trả lời ngắn gọn, rõ ràng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Hannah xác nhận đã nhận thông tin và báo sẽ phản hồi lại."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Hannah phản hồi lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Hannah phản hồi bình thường."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Hannah phản hồi bình thường."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hannah xác nhận đã chuyển vấn đề cho team."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để chủ động hơn."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Hannah cho biết đã chuyển vấn đề cho team."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ resource."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để làm thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Không bắt buộc phải xin review."
+        }
+      },
+      "overall_summary": "Hannah phản hồi khá tốt, lịch sự và đầy đủ thông tin.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

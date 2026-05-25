@@ -1,0 +1,148 @@
+[
+  {
+    "session_id": "session_a38cf9be-e752-4fac-be4e-2aeeb864ecdf",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-03",
+    "app": "DECO",
+    "customer": "DIALED",
+    "primary_operator": "Jane",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Jane]\n\nDIALED: MY BADGE ISNT SHOWING\n\n  Jane: it's Jane from DECO team here\n\n  Jane: sure we can help you check\n\nDIALED: Please be quick\n\n  Jane: can you send me the product link with issue?\n\nDIALED: i dont have much time\n\nDIALED: dialed.online\n\nDIALED: my products on the home page arent showing the badge '\n\nDIALED: i want it on my home page\n\n  Jane: it's showing at my end on the collection page and product page\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/b/2/9/8b2928fd85620800/image_19pzmoj.png]\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/b/2/9/8b2928fd85620800/image_1x6bi47.png]\n\n  Jane: sure let me check on homepage\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/b/2/9/8b2928fd85620800/image_fc36p8.png]\n\n  Jane: homepage also ok\n\n  Jane: maybe it's cache issue, you can clear your cache, cookies, history and check again [+1]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent Jane chào hỏi đầy đủ, có tên và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp nào gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng, không lạc đề hay gây confusion."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và phản hồi trực tiếp các câu hỏi và vấn đề của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tone lịch sự, nhịp độ phản hồi hợp lý."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không thể hiện sự bức xúc rõ ràng, nên không có cơ hội thể hiện sự đồng cảm đặc biệt. Agent vẫn duy trì thái độ hỗ trợ tốt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent sẵn lòng giúp đỡ và hỗ trợ khách hàng ngay từ đầu."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đã chủ động hỏi link sản phẩm và kiểm tra trên các trang khác nhau để hiểu rõ vấn đề của khách, là một hành động thăm dò tốt."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã kiểm tra vấn đề từ phía mình và đưa ra một giải pháp khả thi (clear cache) ngay lập tức."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động kiểm tra các trang mà khách nói có vấn đề và đưa ra giải pháp khắc phục. Không có cơ hội rõ ràng để giúp thêm khi chat chưa kết thúc."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề nằm trong khả năng của agent, không cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ tài liệu hoặc link trong cuộc trò chuyện này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội hoặc thông tin rõ ràng để agent gợi ý tính năng hoặc plan nâng cao."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã SEEN tin nhắn cuối nhưng chưa reply, nên không trừ điểm ở tiêu chí này."
+        }
+      },
+      "overall_summary": "Agent Jane đã có một buổi chat tốt, chủ động thăm dò và đưa ra giải pháp ngay lập tức cho vấn đề của khách. Khách hàng đã SEEN tin nhắn cuối nhưng chưa trả lời nên chưa thể kết luận toàn bộ quá trình, nhưng các tiêu chí giao tiếp đến thời điểm này đều đạt yêu cầu tốt.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_5fde3e52-5112-42d6-a2b4-dceff90e82c6",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-03",
+    "app": "SearchPie",
+    "customer": "cordoza-nail-supply",
+    "primary_operator": "Wendy",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Wendy]\n\n  David: Dear Tiffany, \n      \n      This is David from SearchPie here. Just a quick follow up on our recent meeting. \n      \n      I want to confirm our meeting tomorrow morning 8:40 AM Thursday, Pacific Time. \n      \n      Let me know if this works for you! \n      \n      Best, \n      David\n\ncordoza-nail-supply: Hi David, yes this will work so much better for me. Thank you!\n\ncordoza-nail-supply: Hi David, will you send me the link to join?\n\n  Ivy: Hi Tiffany,\n      \n      Thanks so much for confirming. I’ll transfer this to our dedicated team for further assistance. They’ll get back to you as soon as possible.\n      \n      Looking forward to speaking with you!\n      \n      Best,\n\ncordoza-nail-supply: Hi David, I’m waiting for the link!\n\ncordoza-nail-supply: I was supposed to have a meeting with David at 8:40 this morning!! I don’t have\n      a link to join him!! I’m waiting :)\n\n  Ivy: Hi again Tiffany,\n      \n      I sincerely apologize for the confusion. Upon checking, it looks like there was a timezone miscalculation on our end. It is currently midnight for our team, and we completely understand how frustrating this must be for you :'(   \n      \n      That was absolutely our mistake, and I’m very sorry for the inconvenience caused.\n      \n      Would you happen to be available at the same time tomorrow (8:40 AM Pacific Time)? We will make sure the meeting link is sent in advance and that everything is properly arranged this time.\n      \n      Again, we truly appreciate your patience, and we’re very sorry for the disruption today.\n      \n      Warm regards,\n\ncordoza-nail-supply: Yes, that would be perfect. Thank you so much. I’m really looking forward to\n      this meeting.\n\n  Ivy: Hi Tiffany,\n      \n      Thank you so much for your understanding. We truly appreciate it.\n      \n      We’ll send over the meeting link well in advance before tomorrow’s session to make sure everything is properly arranged this time.\n      \n      We’re really looking forward to speaking with you and making the meeting valuable for you~\n      \n      See you tomorrow at 8:40 AM Pacific Time 😊\n\n  David: Dear Tiffany, \n      \n      This is David here. Hello Tiffany,\n      \n      I would like to apologize for the oversight regarding our scheduled meeting. I mistakenly confused our appointment dates and appreciate your flexibility in coordinating this.\n      \n      I look forward to seeing you shortly at 8:40 AM Pacific Time. Here is the meeting URL for your reference: https://meet.google.com/kvq-iqqq-vvi\n      \n      Again, my apologies. \n      \n      Best, \n      David\n\ncordoza-nail-supply: I might be just a couple minutes after 840. I am just about to get on my\n      computer. I’m not sure if I need to download a new app but just wanted to let\n      you know I will be on thank you.\n\n  David: Hey Tiffany, of course! Take your time and let me know\n\n  David: Dear Tiffany, \n      \n      This is David from SearchPie here. Just wanted to send you an update. \n      \n      I'm very pleased to inform you that we can carry out the FREE one time fix for your Google Search Console issues. However, like I have mentioned in our last meeting, it is the holidays on our end. The fix includes a detailed report and of course the fix itself. \n      \n      Is next Monday suitable for you? If not, please let me know. \n      \n      Looking forward to your update. \n      \n      Best, \n      David\n\ncordoza-nail-supply: Fix now\n\ncordoza-nail-supply: Hi David did you look into the problems on my site?\n\n  David: Hi Tiffany,  \n      \n      I'm preparing the report as we speak. It should be ready in a bit :$\n\ncordoza-nail-supply: ok\n\n  David: Ah, currently we are handling the speed issue. Can you add our team email: searchpie@pielab.io to your Google Search Console account?\n\n  David: Dear Tiffany,  \n      \n      This is David from SearchPie here. Just a quick update in regards of your speed. \n      \n      Our team has re-optimized your site and we have tested it on our end. It should be good to go now. Can you have a look and let me know? \n      \n      Also, our team offer of fixing your Google Search Console issues still remains, can you provide our team access to your Google Search Console account using our email: searchpie@pielab.io ? \n      \n      Looking forward to your update! \n      \n      Best, \n      David\n\ncordoza-nail-supply: Yes how do I do that?\n      \n      Sincerely,\n      Tiffani Cordoza\n      *Cordoza Nail Supply CEO*\n      Cell: 541-409-8433\n      www.cordozanailsupply.com\n      <http://www.cordozanailsupply.com>\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/d/d/c/0/ddc0f30902461800/image_xz62m4.png]\n\n  Wendy: Welcome back. :$  \n      \n      To grant us access to your Google Search Console property, please follow the guide here and add us via: searchpie@pielab.io \n      When it's done, please let us know, we'll proceed the fix. \n      \n      Thanks & regards, \n      Wendy.\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi đầy đủ tên và brand: 'Welcome back. :)' + tên Wendy."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đủ điểm. Không có lỗi ngữ pháp hoặc dùng từ gây hiểu lầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Đủ điểm. Tin nhắn rõ ràng và dễ hiểu, không lạc đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Agent Wendy đã lắng nghe và phản hồi trực tiếp câu hỏi của khách hàng về cách cấp quyền truy cập."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đủ điểm. Tone giao tiếp thân thiện và chuyên nghiệp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đủ điểm. Khách không thể hiện sự bức xúc hay lo lắng trong đoạn chat agent Wendy tham gia, nên không có cơ hội thể hiện empathy. Mặc định đủ điểm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Agent Wendy thể hiện sự sẵn lòng hỗ trợ rõ ràng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Khách đã xác định vấn đề cụ thể, agent Wendy cung cấp ngay giải pháp mà không cần hỏi thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đủ điểm. Agent Wendy cung cấp hướng dẫn chính xác và rõ ràng bao gồm hình ảnh và email cần thiết để khách hàng thực hiện theo."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đủ điểm. Agent Wendy hỗ trợ khách hàng ngay khi có yêu cầu và cung cấp đầy đủ thông tin cần thiết để giải quyết vấn đề."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đủ điểm. Không có dấu hiệu cần chuyển cuộc trò chuyện."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đủ điểm. Agent Wendy đã chủ động gửi kèm hình ảnh hướng dẫn và nói rõ cần làm gì."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Không có cơ hội rõ ràng để agent Wendy làm thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Cuộc trò chuyện của agent Wendy ngắn gọn và tập trung vào giải bài toán nên không có cơ hội để hỏi review. Thông tin bổ sung cũng ghi chưa có review."
+        }
+      },
+      "overall_summary": "Agent Wendy đã nắm bắt nhanh chóng yêu cầu của khách hàng và cung cấp hướng dẫn rất rõ ràng, chi tiết, bao gồm cả hình ảnh minh họa để giúp khách cấp quyền truy cập. Cách giao tiếp chuyên nghiệp và hiệu quả.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

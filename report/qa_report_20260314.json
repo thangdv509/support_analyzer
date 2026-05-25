@@ -1,0 +1,794 @@
+[
+  {
+    "session_id": "session_b8a3df5f-519c-42e7-aabe-774c6515e941",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "DECO",
+    "customer": "Familo",
+    "primary_operator": "Tina",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  Jane: the label shows at my end how\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/3/d/d/a/3dda1d4b177e5800/image_1ogg4kg.png]\n\n  Jane: may I ask if it's displaying at your end?\n\nFamilo: yes, thanks :)\n\n  Jane: glad to hear that :$\n\nFamilo: Hi Deco Support Team,\n\nI am experiencing significant performance issues on my Shopify store (familo.lt) caused by the Deco: Product Labels & Badges app.\n\nAccording to my WebPageTest waterfall analysis, the app is making multiple synchronous requests to search.js using product handles (e.g., requests 141, 142, and 143 in the waterfall). Each of these requests takes between 1.2s and 1.4s to complete, adding nearly 4 seconds of delay to the page load and significantly increasing my Total Blocking Time (TBT) and Cumulative Layout Shift (CLS).\n\nHere are the specific details of the heavy requests:\n\nURL: www.familo.lt/search.js?q=handle:...&_sc=1&app=deco-labels\n\nImpact: High latency and layout shifts because labels are rendered via JavaScript long after the initial page paint.\n\nCould you please advise on how to optimize this? Specifically:\n\nIs there a way to switch to a Liquid/Native rendering method instead of dynamic JavaScript calls?\n\nCan these requests be batched or deferred to prevent them from blocking the main thread?\n\nAre there any settings I should change to prevent the app from querying dozens of product handles on the homepage?\n\nI have attached a screenshot of the Waterfall chart for your reference. Looking forward to your help to resolve this as it is negatively impacting my SEO and User Experience.\n\nBest regards,\n\nFamilo: [File: export_03132026163159.jpeg - https://storage.crisp.chat/users/upload/session/-/3/d/d/a/3dda1d4b177e5800/export03132026163159_jwwxs4.jpeg]\n\n  Tina: Hello, I’m Tina from Deco App\n\n  Tina: I have received your information\n\n  Tina: Thank you so much for your interested in our app\n\n  Tina: We will discuss about your case and be back as soon as possible\n\nFamilo: ok i will wait, please ASAP, because its big problem, i need to fix it\n\n  Tina: Oki my friend\n\n  Tina: We will be back soon :$\n\nFamilo: hello, any updates ?\n\n  Tina: Hi friend, our dev is checking on your case\n\n  Tina: I will be back as soon as possible\n\nFamilo: ok, thanks\n\n  Tina: Thank you for your understanding <3\n\n  David: Dear, \n\nThis is David from DECO here. Just a quick update in regards of your performance issues. \n\nOur team checked and noticed that most of your badges here exceeds our recommended sizes, see this image for example: \n\nTo help you with this, our team can help you compress your badges with collaborator access to your store. Would you be comfortable with this? \n\nLet me know what you think! \n\nBest, \nDavid\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/3/d/d/a/3dda1d4b177e5800/image_kdwykm.png]\n\nFamilo: Hello,\n\n\n\n\nYes, okay\n\n\n\n\n\n\nFamilo\n\n+37068412588 [tel:+37068412588]\n\nwww.familo.lt [http://www.familo.lt/]\n\ninfo@familo.lt [info@familo.lt]\n\nKaunas, Lithuania\n\nimage [cid:img-821fa11b-3b7b-49ae-87d4-3a421ede9269]\n\n\n\n\n\n\n\n--------------------------------------------------------------------------------\n\nIš: David - PieLab Support <david@pielab.on.crisp.email>\nIšsiųsta: pirmadienis, kovo 16, 2026 6:06:46 priešpiet\nKam: info@familo.lt <info@familo.lt>\nTema: Re: so now, you can choose to upgrade your Starter plan >> then you will\nhave a t...\n\n\nDear,\n\n\n\n\nThis is David from DECO here. Just a quick update in regards of your performance\nissues.\n\n\n\n\nOur team checked and noticed that most of your badges here exceeds our\nrecommended sizes, see this image for example:\n\n\n\n\nTo help you with this, our team can help you compress your badges with\ncollaborator access to your store. Would you be comfortable with this?\n\n\n\n\nLet me know what you think!\n\n\n\n\nBest,\n\n\nDavid\n\nAttached file: image.png\n[https://pielab.on.crisp.email/file/upload/session/-/3/d/d/a/3dda1d4b177e5800/image_kdwykm.png]\n\n[https://pielab.on.crisp.email/image/process/resize/?url=https%3A%2F%2Fstorage.crisp.chat%2Fusers%2Fupload%2Fsession%2F-%2F3%2Fd%2Fd%2Fa%2F3dda1d4b177e5800%2Fimage_kdwykm.png&width=600&height=320&optimize=0]https://pielab.on.crisp.email/file/upload/session/-/3/d/d/a/3dda1d4b177e5800/image_kdwykm.png\n\nFamilo: [File: png-img-821fa11b-3b7b-49ae-87d4-3a421ede9269.png - https://storage.crisp.chat/users/upload/session/-/3/d/d/a/3dda1d4b177e5800/0bcd299a1e3d8746319f6d0c4dfe50d9c0cf6dcf.png]\n\n  David: Hi Familo, \n\nI have just sent you a request on my end via our account PieLab, can you approve it and let me know?\n\nFamilo: Į just accepted\n\n\nFamilo\n\n+37068412588 [tel:+37068412588]\n\nwww.familo.lt [http://www.familo.lt/]\n\ninfo@familo.lt [info@familo.lt]\n\nKaunas, Lithuania\n\nimage [cid:img-821fa11b-3b7b-49ae-87d4-3a421ede9269]\n\n\n\n\n\n\n\n--------------------------------------------------------------------------------\n\nIš: David - PieLab Support <david@pielab.on.crisp.email>\nIšsiųsta: pirmadienis, kovo 16, 2026 6:17:32 priešpiet\nKam: info@familo.lt <info@familo.lt>\nTema: Re: so now, you can choose to upgrade your Starter plan >> then you will\nhave a t...\n\n\nHi Familo,\n\n\n\n\nI have just sent you a request on my end via our account PieLab, can you approve\nit and let me know?\n\nFamilo: [File: png-img-821fa11b-3b7b-49ae-87d4-3a421ede9269.png - https://storage.crisp.chat/users/upload/session/-/3/d/d/a/3dda1d4b177e5800/0bcd299a1e3d8746319f6d0c4dfe50d9c0cf6dcf.png]\n\n  Jane: Hi Familo, it's Jane from DECO team here\n\nThank you so much for the access. I'll notify our technician accordingly and we'll get back to advise you once we done.\n\nRegards,\nJane\n\nFamilo: Hello, how long it can take it ?\n\n  Jane: it's jane from DECO team here\n\n  Jane: our technician already got the access, they're checking and we'll try to finish it asap\n\n  Jane: they're out for lunch break now and will be back within 2hrs, I'll double check with them and inform you later\n\n  David: Dear, \n\nThis is David from DECO here. Just a quick update! \n\nOur team has compressed the said badges for you and it will not be be an interference anymore. \n\nCan you have a look on your end and let me know? \n\nLooking forward to your update! \n\nBest, \nDavid\n\nFamilo: Wrong on mobile, I attach photo, please fit it ASAP\n\nFamilo\n+37068412588\nwww.familo.lt\ninfo@familo.lt\nKaunas, Lithuania\n[cid:27907ab1-abd1-426f-bf8f-6f6062c39cbd]\n\nFamilo: [File: Outlook-hto2w4zf.png - https://storage.crisp.chat/users/upload/session/-/3/d/d/a/3dda1d4b177e5800/ea3c583f04471adc356ba104f5a059aa67591f38.png]\n\nFamilo: [File: deco.jpg - https://storage.crisp.chat/users/upload/session/-/3/d/d/a/3dda1d4b177e5800/deco_1sprctq.jpg]\n\n  David: It should be good now, can you have a look and let me know?\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/3/d/d/a/3dda1d4b177e5800/image_s2zazz.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Tina chào bằng \"Hello, I’m Tina from Deco App\" => có cả tên và brand. David chào bằng \"This is David from DECO here\" => có cả tên và brand. Jane chào bằng \"Hi Familo, it's Jane from DECO team here\" => có cả tên và brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "\"Thank you so much for your interested in our app\" nên sửa thành \"Thank you so much for your interest in our app\". Dùng sai giới từ gây khó hiểu."
+        },
+        "communication": {
+          "score": 2,
+          "justification": "Các bạn support trả lời rõ ràng, đi thẳng vào vấn đề của khách hàng. Ví dụ, David sau khi kiểm tra đã thông báo ngay cho khách về việc team đã nén badge và yêu cầu khách kiểm tra lại."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Support đã lắng nghe và phản hồi đầy đủ các vấn đề khách hàng nêu ra. Khách hàng phàn nàn về performance, Support đã tiếp nhận, kiểm tra và đưa ra giải pháp."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi của support khá nhanh, tuy nhiên một vài chỗ còn hơi cộc lốc. Ví dụ, khi khách báo lỗi hiển thị trên mobile sau khi badge được nén, David chỉ trả lời \"It should be good now, can you have a look and let me know?\" nên thêm chút thông tin để khách an tâm hơn, ví dụ: \"Hi Familo, bên em vừa chỉnh lại hiển thị trên mobile rồi ạ, anh kiểm tra lại giúp em nhé!\"."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng đang gặp vấn đề về hiệu năng ảnh hưởng đến trải nghiệm người dùng và SEO, Support team đã có những phản hồi kịp thời để trấn an khách hàng, cho thấy sự quan tâm đúng mực."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình hỗ trợ khách hàng, David chủ động đề xuất nén badge để cải thiện performance."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Support đã đặt câu hỏi xác nhận thông tin và vấn đề của khách hàng trước khi đưa ra giải pháp. Jane hỏi lại khách hàng về việc hiển thị label ở đầu bên khách để xác nhận vấn đề."
+        },
+        "solution": {
+          "score": 3,
+          "justification": "Support đã đưa ra giải pháp là nén badge, sau đó fix lỗi hiển thị trên mobile. Vấn đề của khách hàng đã được giải quyết."
+        },
+        "proactiveness": {
+          "score": 2,
+          "justification": "Support đã chủ động đưa ra giải pháp nén badge để cải thiện performance, một vấn đề mà khách hàng có thể chưa nghĩ tới."
+        },
+        "transferring": {
+          "score": 2,
+          "justification": "Vấn đề cần đến kỹ thuật, Support đã chuyển case cho team dev kiểm tra và xử lý."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Có thể chia sẻ thêm các tài liệu hướng dẫn về tối ưu kích thước ảnh/badge để khách hàng tự thao tác trong tương lai. Ví dụ: \"Ngoài ra, bên em có một số tài liệu hướng dẫn về tối ưu kích thước ảnh/badge để giúp tăng tốc độ tải trang, anh có thể tham khảo thêm tại [link] ạ.\""
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Support đã đề xuất và thực hiện việc nén badge giúp khách hàng, đây là một hành động vượt ngoài mong đợi, thể hiện sự tận tâm."
+        },
+        "review_asking": {
+          "score": 0,
+          "justification": "Khách hàng không có phản hồi tiêu cực, có những đoạn thể hiện sự hài lòng như \"ok, thanks\", do đó Support nên xin review. Ví dụ: \"Nếu anh thấy hài lòng với hỗ trợ vừa rồi, anh có thể cho em xin review 5 sao để ủng hộ team DECO không ạ?\""
+        }
+      },
+      "overall_summary": "Nhìn chung, Support team đã hỗ trợ khách hàng nhiệt tình và hiệu quả, giải quyết được vấn đề performance mà khách hàng gặp phải. Tuy nhiên, vẫn còn một vài điểm nhỏ có thể cải thiện như câu cú, tốc độ phản hồi và chủ động xin review để tăng trải nghiệm khách hàng. Cụ thể, nên xin review khi khách có tín hiệu hài lòng, và trau chuốt hơn về mặt ngôn ngữ để tránh gây hiểu nhầm và tạo thiện cảm tốt hơn.",
+      "total_score_20": 18.5,
+      "final_score_10": 9.25
+    }
+  },
+  {
+    "session_id": "session_900b4b93-14c2-489c-b110-3b805fcedd62",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "SearchPie",
+    "customer": "xxs0mq-d4",
+    "primary_operator": "Jane",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\n  Wendy: Hello, this is Wendy from SearchPie. \n\nWe checked your Google Search Console issues and see your store has some issues below: \nThere are issues related to Shopping and Indexing, which might prevent your pages from being visible in the Google search results. \n\nThey're all related to coding in theme to fix. May I ask if you have an in-house technical expert to fix it? \nIf not, you can consider signing up for our Google Search Console service. It's a one-time payment service with a 6-month warranty, then our expert can help you fix them all and make sure to keep it healthy in the 6-month warranty. \n\nMay I ask if you're interested in? \n\nRegards, \nWendy.\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_5pc9rw.png]\n\n  Julie: Hello,\n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out via email regarding your GMC free inspection. \n\nYou has Misrepresentation issue, which is hard to resolve as it relates to your representation as a business. It requires consistency and transparency. \n\nFirst of all, I see that **your Refund policy is in French while your Privacy policy is in English **. In this case, I would recommend using one main language only to keep it consistent, and this applies to not only your policy but also all of your website as I see there are many sections where you use both English and French. \n\nSecondly, I noticed that **your contact information isn't providing enough information and it is not consistent to the contact information you have set up in your GMC**  . \n\nFinally, I would recommend **rechecking your reviews as they seem to not coming from sales you make directly from your website** . Google is quite strict on honesty and transparency so it is best to keep genuine reviews only. \n\nThese are the only few things I notice during initial inspection. If you would like a deep and thorough fix, please kindly refer to our Google Merchant Center service. Since you are a good friend of ours, we would be more than ready to **give you 15% off for the service if you purchase** :$  . \n\n![](https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/screenshot88_1lj2slj.png)\n\n\nLooking forward to your response!\n\nBest regards,\nJulie\n\nxxs0mq-d4: Hello\n\n  Jane: It’s Jane from Search Pie here\n\n  Jane: How can I help you?\n\nxxs0mq-d4: I have a big issue, all my site is great, with computer, but when i access into my site by phone, and click to the menu in front and left, everything begin grey all the page\n\nxxs0mq-d4: any idea ?\n\nxxs0mq-d4: Jane, are you here ?\n\n  Jane: Oh i see\n\nxxs0mq-d4: Sorry\n\n  Jane: Let me check at my end\n\nxxs0mq-d4: ok take your time sorry\n\nxxs0mq-d4: Can you help me check on my speed performance?\n\n  Jane: [File: IMG_8447.jpg - https://storage.crisp.chat/users/upload/operator/-/9/6/1/f/961fd1320a0dd000/177348899859900_1gvkrve.jpg]\n\n  Jane: [File: IMG_8448.jpg - https://storage.crisp.chat/users/upload/operator/-/9/6/1/f/961fd1320a0dd000/177348900161700_bzdkqz.jpg]\n\n  Jane: [File: IMG_8449.jpg - https://storage.crisp.chat/users/upload/operator/-/9/6/1/f/961fd1320a0dd000/177348900486300_xczj8.jpg]\n\n  Jane: It’s okay at my end\n\nxxs0mq-d4: your are able to open the menu by phone ?\n\n  Jane: Can you try to clear cache, cookies at your end can check again?\n\nxxs0mq-d4: i had try it from bulgaria, and every phone is the same, then i had try to clear the cache and in private mode\n\nxxs0mq-d4: the same\n\nxxs0mq-d4: when i click in Menu at the up left all appears Grey\n\nxxs0mq-d4: eveything other work\n\n  Jane: Alright let me check again on the menu\n\nxxs0mq-d4: Thank you you are beautifull\n\n  Jane: [File: IMG_8450.jpg - https://storage.crisp.chat/users/upload/operator/-/9/6/1/f/961fd1320a0dd000/177348916888300_extjx7.jpg]\n\nxxs0mq-d4: eyyy\n\nxxs0mq-d4: yes\n\nxxs0mq-d4: this is my issue\n\nxxs0mq-d4: any idea ?\n\n  Jane: Oh it’s also grey abd freezing at my end\n\nxxs0mq-d4: yes\n\n  Jane: I think you should reach out to shopify to check\n\nxxs0mq-d4: axa\n\nxxs0mq-d4: you mean that i contact shopify ?\n\n  Jane: Yes, to check whether Shopify got issue now or not\n\nxxs0mq-d4: ok\n\nxxs0mq-d4: Thanks\n\n  Jane: Or you should check with your developer more\n\nxxs0mq-d4: Hello\n\nxxs0mq-d4: I would like to know wich issue i need to resolve asap ?\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_1seswaf.png]\n\nxxs0mq-d4: I want to create a LLM.txt file!\n\n  John: Hi there! I'm John from SearchPie\n\nxxs0mq-d4: what do you wait for create and to give me the LLM.txt\n\nxxs0mq-d4: https://docs.google.com/spreadsheets/d/1NwtYC7DMhIWHQ16AxuD3oioB27NY4cFDVgdbzFDuAx4/edit?pli=1&gid=0#gid=0\n\nxxs0mq-d4: wait it a long of time\n\nxxs0mq-d4: more of 10 days\n\n  John: Let me check what happened with your request\n\nxxs0mq-d4: Please\n\n  John: I have seen that you request 5 days ago\n\nxxs0mq-d4: yes\n\nxxs0mq-d4: then advice me for :\n\n  John: May I ask If you did not receive anything?\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_1ffhtgv.png]\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_1ffhtgv.png]\n\nxxs0mq-d4: the file, LMM i mean that is not needed 5 days\n\nxxs0mq-d4: i had give it 30min later to David\n\n  John: We're so sorry about the late responsd at the moment! Since it's weekend right now, we need about 10-12 hours to process next steps for you\n\nxxs0mq-d4: ok\n\n  John: Could you please give us tomorrow to give you what you request?\n\n  John: We will inform you ASAP\n\nxxs0mq-d4: ok. Will wait again and again\n\nxxs0mq-d4: and for the other things ?\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_51oysb.png]\n\nxxs0mq-d4: for exemple that ?\n\nxxs0mq-d4: and :\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_z22cf8.png]\n\n  John: > ok. Will wait again and again\nDon't worry, we will answer you all the topic you mention\n\nxxs0mq-d4: please\n\nxxs0mq-d4: because i pay you a lot and after time i see that the result and a lot of question still without answers\n\nxxs0mq-d4: how to resolve this issue :\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_1miwclx.png]\n\nxxs0mq-d4: i m mean that you are here for help me\n\n  John: The reason I schedule for Monday is because a special core team will be available to assist and review your case carefully. Since this issue is related to Google Search Console rather than regular SEO work, it requires a bit more attention so we can properly understand the situation and resolve it for you.\n\nxxs0mq-d4: ok i will take in mind in\n\nxxs0mq-d4: my next payment\n\nxxs0mq-d4: Thank you\n\n  John: Thanks so much for your understanding\n\nxxs0mq-d4: Can you help me check on my Google Search Console issues?\n\n  Tina: Hello, I’m Tina here\n\n  Tina: How can I help you today?\n\nxxs0mq-d4: Will close my plan with you\n\nxxs0mq-d4: Actualy i talk with shopify center\n\n  Tina: So may I ask about the information you want to confirm now?\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_w4x707.png]\n\nxxs0mq-d4: I had already tell your colleéague\n\nxxs0mq-d4: but he do not to do nothing till tomorow\n\n  Tina: Yes my friend\n\n  Tina: It is night from our side\n\nxxs0mq-d4: i pay enought and you make publicity for support 24/7, so isnt the case, i dont will forgot that in my comment for your app if nothing it s append\n\n  Tina: So we can be back a little late\n\n  Tina: But you can rest assured that your case is transferred to our accountant\n\n  Tina: We will be back as soon as possible\n\nxxs0mq-d4: waiting for you for the last time\n\n  Tina: Oki my frien\n\n  Tina: We will be back soon\n\nxxs0mq-d4: Can you help me check on my Google Search Console issues?\n\nxxs0mq-d4: Can you help me check on my Google Search Console issues?\n\n  Tina: Feel free whenever you need our help\n\nxxs0mq-d4: Note that the google Search console do not work at all Of the start for the 2nd month. I had give you a note to you. The answer, yes yes, we will resolve for you asap, after 2 months nothing. Is not correct\n\n  Tina: Okay my friend\n\n  Tina: We got it\n\nxxs0mq-d4: Hi\n\nxxs0mq-d4: From Yesterday i do not have do nothing\n\nxxs0mq-d4: and now i have Critical issues (10)\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_zxiz3u.png]\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Thanks for bringing this issue to our attention\n\nxxs0mq-d4: Hello\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_icqkdu.png]\n\nxxs0mq-d4: I see\n\n  Ivy: Upon checking, these issues related to your meta title and description showing on SEO report\n\n  Ivy: May I ask if you recently make changes on your end?\n\nxxs0mq-d4: i will contact you tomorrow, if you can check it will be better\n\nxxs0mq-d4: i dont have the time,\n\nxxs0mq-d4: its only to tell you, because a high technical issue is appened and fix by shopify this weekend\n\nxxs0mq-d4: and now i had that please inform next\n\n  Ivy: I understand your point\n\n  Ivy: Regarding the “Multiple Meta Title” and “Multiple Meta Description” issues, these are related to the theme code. So I have already informed our technical team to review and fix this for you\n\n  Ivy: So no worries, I will update you as soon as they complete the check\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_1jytkeg.png]\n\n  Ivy: For the “Missing Meta Title” and “Missing Meta Description”, these are related to pages in your store that do not currently have meta information added yet\n\n  Ivy: You can simply:\n\n1. Click on the issue in the report.\n2. Click the pencil icon next to the page.\n3. You will be redirected to the page where you can add the Meta Title and Meta Description.\n\n  Ivy: Once added and saved, the issue should be resolved after rescanning\n\n  Felicie: Hi there,\n\nThis is Felicie from the SearchPie team!\n\nI’m happy to let you know that our dev team has followed up and successfully fixed the issues related to the **MMT tags and HTML tags** in your store.\n\nCould you please visit the **SEO Report** page and reload the page to double-check the results on your end?\n\nIf you still notice anything unusual after refreshing the report, feel free to let us know and we’ll be happy to take another look.\n\nBest regards,\nFelicie\n\n  Felicie: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_4l09hs.png]\n\n  Wendy: Hello, it's Wendy from SearchPie. \n\nWe are currently in the final step of creating the LLM.txt file for you, and we need additional permissions for the **Upload File** and **Redirect URL** sections. Could you please help me with the upload now?\n\nPlease go to Shopify **Setting > Users > Roles > Select PieLab access & click Update permission.** \nLet's tick the permission: \nYou can follow the [GUIDE](https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request#ii.-update-permission-for-searchpie-account) here. \n\nWhen it's done, please let us know. \n\nRegards,\nWendy.\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_192a3gn.png]\n\nxxs0mq-d4: Hello Wendy\n\nxxs0mq-d4: I had give you the adding role that you had ask me. Have a nice day\n\nxxs0mq-d4: An additional question, could you please tell me if the next errors can to be fix in Bulk ?\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_wxqbw0.png]\n\n  Jane: it's Jane from Search Pie here\n\n  Jane: thank you for the access, I'll notify our team accordingly\n\nxxs0mq-d4: Thank You Jane\n\nxxs0mq-d4: :)\n\nxxs0mq-d4: Great Day\n\n  Jane: yes regarding the length of the meta tags, you can adjust it in bulk, however, since some products got this issue only, I suggest you click on the Pen button and edit it manually or by AI generate feature\n\nxxs0mq-d4: Ok. Can i do it with IA in Bulk ?\n\nxxs0mq-d4: Or manualy one per one with IA ?\n\n  Jane: the Bulk meta tags feature will help you generate meta tags for all products with a certain template, which can save time and your meta tags will be synchronized, so you can use it if you want to generate meta tags for all products\n\nxxs0mq-d4: ok\n\n  Jane: the Long/short meta tags issue you got is for some products only, so you can adjust it manually if you want as well by clicking on the Pen button and edit it manually or by AI generate feature\n\nxxs0mq-d4: :)\n\nxxs0mq-d4: Thxs\n\n  Jane: welcome :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Jane, John, Ivy, Felicie, Wendy đều chào có tên và brand SearchPie đầy đủ. Tina chào có tên nhưng không có brand -> Trừ 0. Chưa đạt tiêu chí. Ví dụ: 'Chào bạn, mình là Tina đến từ SearchPie.'"
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp nghiêm trọng nào ảnh hưởng đến nghĩa của câu."
+        },
+        "communication": {
+          "score": 1.5,
+          "justification": "Nhìn chung, Support trả lời rõ ràng và đúng trọng tâm. Tuy nhiên, có một vài chỗ có thể cải thiện để thông tin dễ hiểu hơn nữa. Ví dụ, khi Ivy giải thích về lỗi \"Missing Meta Title\", nên cho khách biết chính xác vị trí tìm thấy các trang này trong app SearchPie, thay vì chỉ hướng dẫn chung chung cách thêm meta title, như vậy sẽ pro-active hơn."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Support lắng nghe và phản hồi các vấn đề khách hàng nêu ra đầy đủ."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn lịch sự. Tốc độ phản hồi của Support khá nhanh."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng có vẻ khá bực bội vì vấn đề chưa được giải quyết nhanh chóng. John đã có câu trấn an 'Don't worry, we will answer you all the topic you mention' nhưng chưa đủ để xoa dịu sự bực dọc của khách. John có thể thêm một câu thể hiện sự đồng cảm hơn, ví dụ: 'Tôi hiểu sự thất vọng của bạn khi phải chờ đợi lâu như vậy. Chúng tôi sẽ cố gắng hết sức để giải quyết vấn đề này cho bạn sớm nhất có thể.'"
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Nhìn chung Support nhiệt tình hỗ trợ khách hàng. Jane đã theo sát vấn đề và đưa ra lời khuyên hữu ích."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Support đặt câu hỏi để hiểu rõ hơn vấn đề của khách hàng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Các Support viên đã đưa ra giải pháp đúng và khách hàng đã xác nhận vấn đề được giải quyết. Felicie đã thông báo dev team fix thành công lỗi MMT tags và HTML tags. Wendy hướng dẫn khách hàng cấp quyền để tạo LLM.txt file thành công."
+        },
+        "proactiveness": {
+          "score": 1.5,
+          "justification": "Support chưa thực sự chủ động cung cấp thông tin hữu ích cho khách hàng. Ví dụ, khi khách hàng hỏi về lỗi meta tag, Jane chỉ hướng dẫn cách sửa thủ công hoặc dùng AI, nhưng lại không chủ động giới thiệu các tài liệu hướng dẫn chi tiết hơn về cách sử dụng tính năng AI để tối ưu meta tag, hoặc chia sẻ các best practice để viết meta tag hiệu quả."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Ivy chủ động thông báo đã chuyển vấn đề liên quan đến theme code cho technical team để review và fix lỗi. Như vậy là Support đã xử lý đúng quy trình."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Wendy đã chia sẻ link hướng dẫn cách cấp quyền cho SearchPie account. Tốt."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Support không có hành động nào vượt ngoài mong đợi của khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hệ thống ghi nhận khách đã cho review 5 sao -> đủ điểm."
+        }
+      },
+      "overall_summary": "Nhìn chung, các bạn Support đã hỗ trợ khách hàng khá tốt, giải quyết được vấn đề và giữ thái độ lịch sự, nhiệt tình. Tuy nhiên, vẫn còn một vài điểm có thể cải thiện như chủ động hơn trong việc cung cấp thông tin hữu ích, thể hiện sự đồng cảm với khách hàng khi họ gặp vấn đề, và giới thiệu đầy đủ về các tính năng của sản phẩm.",
+      "total_score_20": 19.0,
+      "final_score_10": 9.5
+    }
+  },
+  {
+    "session_id": "session_d2678cc2-726a-4304-92a3-b8a4d790f1a2",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "DECO",
+    "customer": "The Beybladers",
+    "primary_operator": "Hannah",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\nThe Beybladers: I just upgraded to STARTER 🎉 Could you help me get the most out of this plan?\n\n  Felicie: Hi, it's Felicie from the DECO team!\n\n  Felicie: Welcome to our STARTER plan!\n\n  Felicie: Would you like to know more about your benefits in this plan?\n\n  PieLab Support: Please check whether the badges shows as you wish. If not, we are here ready to give a hand :$\n\n  PieLab Support: Congrats on creating your first DECO's feature! Is it displaying properly on your site as you expected? Chat with us to run a quick check for your site!\n\nThe Beybladers: Hi DECO Team! I need help with the badge display problem.\n\n  Hannah: Hi dear, this is Hannah from DECO team <3\n\n  Hannah: How can I help you today ?\n\nThe Beybladers: hi\n\n  Hannah: Still Hannah here\n\nThe Beybladers: the badge is not showing up on my home page and collection page\n\n  Hannah: Let me check it, could you please send me the URL of the product ?\n\nThe Beybladers: https://www.buybeyblades.com/collections/unbranded-metal-fusion?filter.v.price.gte=0&filter.v.price.lte=29.95&page=3&sort_by=best-selling\n\n  Hannah: May I confirm both of the badge or just one dear ?\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/a/0/9/ea096ef4ab839000/image_btf5sw.png]\n\nThe Beybladers: first one\n\n  Hannah: Let me notify with my team\n\n  Hannah: We'll get back & let you know when it's done\n\nThe Beybladers: alright thanks\n\n  Hannah: Ah in the meantime, may I ask from 1 to 5, how would you rate my support today from me (Hannah)?\n\nThe Beybladers: the issue hasn't been resolved yet so i can't give a score\n\n  Hannah: I see, we will update as soon as we can\n\n  Hannah: Hi dear, this is Hannah from the DECO support team.\n\nI just wanted to let you know that the issue with the missing badge has been successfully resolved.\n\nThe label should now display properly on your store.\n\nPlease see the screenshot below \nYou can also double-check it here: [LINK](https://www.buybeyblades.com/collections/unbranded-metal-fusion?page=4&sort_by=best-selling)\n\nIf it is functioning correctly now and considering all our efforts and dedication to support you, would you mind taking a moment to share your experience with our app and support team (Hannah) ? We hope that you can drop a quick feedback here. \n\nJust 30s to go: [REVIEW](https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal)\n\nFeel free to double-check and let us know if you need any further support <3  \n\nBest regards,\nHannah\n\n  Hannah: [File: Screenshot 2026-03-17 at 07.51.35.png - https://storage.crisp.chat/users/upload/session/-/e/a/0/9/ea096ef4ab839000/screenshot-2026-03-17-at-07513_9l4f4d.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Hannah chào khách có tên và brand (DECO team), rất tốt. Tuy nhiên, bạn dùng từ 'dear' hơi suồng sã trong ngữ cảnh hỗ trợ khách hàng. Chỉnh lại thành 'Hi, this is Hannah from DECO team' sẽ chuyên nghiệp hơn."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Câu 'Let me notify with my team' sai ngữ pháp. Nên sửa thành 'Let me notify my team' hoặc 'Let me get in touch with my team'."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Hannah giao tiếp rõ ràng, mạch lạc, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Hannah lắng nghe tốt, phản hồi đầy đủ các vấn đề khách hàng nêu ra."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Hannah giữ thái độ lịch sự trong suốt cuộc trò chuyện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Hannah không cần thể hiện sự cảm thông vì khách hàng không có dấu hiệu bực bội hay lo lắng."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Hannah nhiệt tình hỗ trợ khách hàng, chủ động thông báo khi vấn đề được giải quyết."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Hannah đặt câu hỏi xác nhận để hiểu rõ vấn đề của khách hàng ('May I confirm both of the badge or just one dear ?')"
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hannah cung cấp giải pháp chính xác, vấn đề của khách hàng đã được giải quyết."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Hannah chủ động cung cấp link và screenshot để khách hàng tiện kiểm tra, điều này rất tốt."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer vì Hannah đã giải quyết được vấn đề."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Hannah không chia sẻ docs/hướng dẫn, nhưng trong trường hợp này cũng không cần thiết."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Hannah đã làm tốt vai trò của mình, không có cơ hội rõ ràng để làm thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hannah xin review sau khi vấn đề đã được giải quyết, kèm theo lời cảm ơn và link trực tiếp đến trang review, rất tốt."
+        }
+      },
+      "overall_summary": "Nhìn chung, Hannah đã làm tốt vai trò hỗ trợ khách hàng. Bạn nhiệt tình, chủ động, giải quyết vấn đề nhanh chóng và xin review lịch sự. Một vài lỗi nhỏ về ngữ pháp và cách xưng hô có thể được cải thiện để cuộc trò chuyện chuyên nghiệp hơn.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_0bbb2939-776a-41e6-ae20-56085a698120",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "SearchPie",
+    "customer": "sg8xaw-re",
+    "primary_operator": "Jane",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  Jane: it's Jane from Search Pie team here, do you want me to check your speed now?\n\nsg8xaw-re: Can you fix HTML tags issues for me?\n\nsg8xaw-re: yes check my speed please- I want to know the cause of the high LCP\n\n  Jane: sure please wait me a moment to check your speed now\n\nsg8xaw-re: Hi, is there anyone help me to optimize my SEO score?\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/5/d/5/5/5d55aa9a25f13400/image_fiox7m.png]\n\n  Jane: this is your speed score and it's very high\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/5/d/5/5/5d55aa9a25f13400/image_1nouhrl.png]\n\n  Jane: no worry about your speed my friend\n\nsg8xaw-re: Can you help me check on my speed performance?\n\nsg8xaw-re: when i test it everywhere else it says it’s 4 seconds?\n\nsg8xaw-re: it’s shopdebonaire.com\n\nsg8xaw-re: [File: IMG_6082.png - https://storage.crisp.chat/users/upload/session/-/5/d/5/5/5d55aa9a25f13400/img6082_f2fiio.png]\n\n  Jane: got your info, let me check again\n\n  Jane: this is your speed score for now, the mobile speed score is just passed the standard score\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/5/d/5/5/5d55aa9a25f13400/image_1vc5i6p.png]\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/5/d/5/5/5d55aa9a25f13400/image_15xcy1s.png]\n\n  PieLab Support: 6 meta tags need a fix. Want to update them for better results?\n\nsg8xaw-re: Fix now\n\n  Wendy: Hi, it's Wendy from SearchPie\n\n  Wendy: I find some issues in your store\n\n  Wendy: Would you like me to show them now?\n\n  PieLab Support: 2 meta tags need a fix. Want to update them for better results?\n\nsg8xaw-re: Can you help me check on my speed performance?\n\n  John: Hi there! I'm John from SearchPie\n\nMay I ask If you want to check your speed performance?\n\nJohn\n\n  PieLab Support: 2 meta tags need a fix. Want to update them for better results?\n\n  PieLab Support: 2 meta tags need a fix. Want to update them for better results?\n\nsg8xaw-re: Can you help me check on my speed performance?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to take a look at your site’s speed performance?\n\nsg8xaw-re: Can you help me check on my Google Search Console issues?\n\nsg8xaw-re: Can you help me check on my Google Search Console issues?\n\n  Ivy: Still Ivy here. Please feel free to let me know if you need help~\n\n  PieLab Support: 2 meta tags need a fix. Want to update them for better results?\n\nsg8xaw-re: Can you help me check on my Google Merchant Center issues?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like us to take a look at your Google Merchant Center report?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Các bạn Support đều chào hỏi có tên và brand SearchPie đầy đủ. Ví dụ: \"Hi, it's Wendy from SearchPie\". Tuyệt vời!"
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Nhìn chung không có lỗi grammar nào nghiêm trọng ảnh hưởng đến nghĩa của câu. Một vài chỗ có thể diễn đạt tự nhiên hơn, nhưng không trừ điểm."
+        },
+        "communication": {
+          "score": 1.0,
+          "justification": "Support trả lời hơi chậm và không đi thẳng vào vấn đề. Ví dụ, khách hỏi \"Can you fix HTML tags issues for me?\", Jane lại trả lời \"do you want me to check your speed now?\". Jane cần trả lời thẳng vào vấn đề khách đang gặp phải trước, sau đó mới đề nghị kiểm tra tốc độ sau. \n\n**Rewrite:** \"Regarding the HTML tags issues, I'd be happy to take a look. Also, would you like a speed check as well?\" \n\nBên cạnh đó, các bạn CSKH dường như chỉ tập trung vào việc chào mời các vấn đề về meta tags, ngay cả khi khách hàng liên tục yêu cầu khác. Điều này gây ra trải nghiệm không tốt cho khách hàng, vì họ cảm thấy không được lắng nghe."
+        },
+        "listening": {
+          "score": 0.5,
+          "justification": "Support bỏ qua khá nhiều yêu cầu của khách. Ví dụ, khách hỏi \"Can you help me check on my Google Search Console issues?\" nhưng không ai phản hồi về vấn đề này. Điều này khiến khách hàng cảm thấy không được quan tâm và không được hỗ trợ đầy đủ."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi của Support khá chậm, đặc biệt là khi khách hàng liên tục đưa ra các câu hỏi. Điều này có thể khiến khách hàng cảm thấy sốt ruột và không hài lòng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu khách hàng bực bội hay lo lắng, Support làm tốt."
+        },
+        "enthusiastic": {
+          "score": 1.0,
+          "justification": "Các bạn Support cần chủ động hơn trong việc tìm hiểu vấn đề của khách hàng. Thay vì chỉ đưa ra các đề nghị chung chung, hãy đặt câu hỏi để hiểu rõ hơn về những gì khách hàng đang gặp phải. Ví dụ, thay vì chỉ hỏi \"Would you like me to show them now?\", Wendy có thể hỏi \"What kind of issues are you experiencing with your store?\"."
+        },
+        "probing": {
+          "score": 0.5,
+          "justification": "Support chưa đặt đủ câu hỏi để hiểu rõ vấn đề của khách. Ví dụ, khi khách hỏi về \"Google Search Console issues\", Support nên hỏi rõ khách đang gặp vấn đề gì cụ thể trong Search Console, thay vì chỉ bỏ qua câu hỏi này. \n\n**Ví dụ:** \"Could you please specify what kind of issues you are facing in Google Search Console?\""
+        },
+        "solution": {
+          "score": 0.0,
+          "justification": "Không có giải pháp nào được đưa ra cho các vấn đề của khách hàng. Các bạn Support dường như chỉ tập trung vào việc chào mời các dịch vụ, thay vì thực sự giải quyết các vấn đề mà khách hàng đang gặp phải. Vì khách chưa nhận được giải pháp nào nên sẽ trừ điểm rất nặng."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "Support hoàn toàn không chủ động đưa ra thông tin hữu ích cho khách. Ví dụ, khi khách hàng hỏi về tốc độ website, Support có thể chủ động gợi ý các cách để cải thiện tốc độ, hoặc chia sẻ các tài liệu hướng dẫn liên quan đến vấn đề này. Không thấy bất kỳ hành động chủ động nào từ phía Support."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có dấu hiệu nào cho thấy cần phải chuyển case cho team kỹ thuật. Do đó, Support đã làm tốt."
+        },
+        "resources": {
+          "score": 0.0,
+          "justification": "Support không chia sẻ bất kỳ tài liệu hoặc hướng dẫn nào cho khách hàng. Ví dụ, khi khách hàng hỏi về các vấn đề liên quan đến SEO, Support có thể chia sẻ các bài viết hoặc video hướng dẫn về SEO. Nếu khách có vấn đề về HTML tags, Support có thể gửi các tài liệu hướng dẫn chi tiết để khách có thể tham khảo."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "Không có hành động nào vượt quá mong đợi của khách hàng. Support chỉ tập trung vào việc chào mời các dịch vụ, thay vì thực sự giúp đỡ khách hàng giải quyết các vấn đề của họ."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "Không thấy Support xin review từ khách hàng. Chat kết thúc mà không có lời mời đánh giá nào, trừ điểm. \n\n**Ví dụ:** \"If you have a moment, we'd greatly appreciate it if you could leave us a review about your experience today.\""
+        }
+      },
+      "overall_summary": "Nhìn chung, đây là một hội thoại chưa tốt. Các bạn Support cần cải thiện khả năng lắng nghe và phản hồi các vấn đề của khách hàng một cách đầy đủ và chính xác. Thay vì chỉ tập trung vào việc chào mời các dịch vụ, hãy chủ động tìm hiểu và giải quyết các vấn đề mà khách hàng đang gặp phải. Bên cạnh đó, việc chủ động cung cấp thông tin hữu ích và xin review từ khách hàng cũng là những điểm cần được cải thiện.",
+      "total_score_20": 8.0,
+      "final_score_10": 4.0
+    }
+  },
+  {
+    "session_id": "session_adada571-d217-4a8a-97cb-ad71caa21fd8",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "SearchPie",
+    "customer": "awesome-artifact",
+    "primary_operator": "Julie",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\nawesome-artifact: ok\n\n  Ivy: Thank you soo much <3\n\nawesome-artifact: Welcome\n\n  Ivy: <3\n\nawesome-artifact: When will julie connect?\n\n  Ivy: Since it’s almost 2:00 a.m. on our end, our core team is currently offline\n\n  Ivy: No worries though, I’ve already transferred your case to Julie, and she will get back to you as soon as she’s back online and able to review everything\n\nawesome-artifact: Okay Thanks\n\n  Ivy: It's always my pleasure to assist you~\n\n  Julie: Hello, \n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out to you via email regarding your Google Merchant Center. \n\nThank you for your response! I will now proceed as you have allowed me to remove the products. \n\nI will get back to you with updates soon!\n\nBest regards,\nJulie\n\nawesome-artifact: Okay\n\n  Felicie: Hi, it's Felicie from SearchPie team.\n\n  Felicie: Since it's night time from our side, Julie and our technical team has gone offline for now!\n\n  Felicie: However in the next several hours we will inform you the latest news so that you can keep updated!\n\n  Julie: Hello,\n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out to you via email regarding your Google Merchant Center. \n\nI have finished removing the links for you, however, it seems Google Merchant Center is not updating it. On the bright side, the Overcapacity issue is no longer there. You can check it out in the attached picture.\n\n![](https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/screenshot70_1y1rd35.png)\nI will keep an eye on your GMC and let you know once the last issue is approved. \n\nBest regards,\nJulie\n\nawesome-artifact: ok\n\n  Felicie: Hi, it's Felicie from SearchPie team.\n\n  Felicie: Since it's night time from our side, so it may takes several hours before our team can help you with your case!\n\n  Felicie: Please be patient, we will inform you via mail as soon as we have new updates!\n\nawesome-artifact: ok\n\n  Ivy: Thank you so much for your understanding and patience.\n\n  Ivy: We’ve already informed our Google Merchant Center (GMC) experts about the case. They will get back to you as soon as possible with an update <3\n\nawesome-artifact: ok\n\n  Ivy: Thanks a lot, dear~\n\nawesome-artifact: Whats update on merchant centre?\n\n  Felicie: Hi, it's Felicie from SearchPie team.\n\n  Felicie: Thank you for reaching out!\n\n  Felicie: I sincerely apologize for the delay in getting back to you. Our expert team is still reviewing the updates for the Merchant Centre. My manager, who is handling this case, is currently away at the moment.\n\n  Felicie: I have informed our manager about your concern. Once my manager returns, we will send you detailed updates along with screenshots and explanations within the next 8 hours.\n\n  Felicie: Thank you for your patience!\n\nawesome-artifact: Okay\n\n  Felicie: Thank you very much for your understanding!\n\n  Felicie: We will inform you as soon as our team goes online!\n\n  Julie: Hello,\r\n\r\n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out to you via email.\r\n\r\n\nWe are actively working on your new Google Merchant Center issues and **it will be finished by tomorrow**. We apologize for the delayed process as the number of products is quite large ( more than 10K) and they all need to be done manually.\r\n\r\n\nThank you so much for your patience!\r\n\r\n\nBest regards,\r\nJulie\n\n  Julie: Hello,\n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out to you via email.\n\nThe fix has been done for Product pages unavailable, Additional text found, Missing age, Missing gender,... and Google is processing and updating according to the fix.. You can look here that the Product pages issues has gone down from more than 10K to less than 100 pages left. \n\nBesides you are getting more clicks. You can check them both in the attached picture.\n\n\n![](https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/screenshot-2026-03-07-215743_qhasu.png)\n![](https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/screenshot-2026-03-07-215900_2smhl2.png)\n\nOnce again, thank you so much for your patience. I will keep you updated next when Google continues to process the fix I have done.\n\nBesst regards,\nJulie\n\n  Julie: Hello,\n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out to you via email regarding your Google Merchant Center fix. \n\nI am actively optimizing your Google Merchant Center, however everytime I optimize, there are new issues showing up and I suspect most of them are coming from the fact that your data source is not updating anymore.\n\n![](https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/screenshot96_142gxo8.png)\nThis happened due to your disconnection off the Google & Youtube app. Can you kindly connect your GMC account with the app so the source can start updating once again? It should be connected with the email that you used to create your current GMC account. \n\n![](https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/screenshot97_na19yx.png)\n\n\nLooking forward to your response!\n\nBest regards,\nJulie\n\nawesome-artifact: Hi Julie\n\nawesome-artifact: But I use simprosys google shopiing feed from long time\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Thanks a lot for sharing the information with us\n\n  Ivy: Please let me transfer it to Julie so she can continue handling this case for you\n\nawesome-artifact: Yes Please\n\n  Ivy: Thanks for your patience. Rest assured that she will get back to you as soon as possible with an update~\n\nawesome-artifact: ok\n\n  Ivy: Thank you so much, dear!\n\nawesome-artifact: Hi\n\nawesome-artifact: Can you check\n\nawesome-artifact: I think My Google analytics is not working properly\n\n  Ivy: Sorry could you please be more specific about your issue with Google Analytics so I can better assist you?\n\nawesome-artifact: Actually I check Google analytics & see sudden totally traffic loss from last 2 months\n\nawesome-artifact: & I check real time then its not working thats means its not working properly\n\n  Ivy: Thanks a lot for your information. Please let me transfer your case to our team for further investigation\n\nawesome-artifact: Okay\n\n  Ivy: Please rest assured that I’ll keep an eye on this, and the moment I receive any updates from them, I’ll let you know right away!\n\nawesome-artifact: Please do it as soon as possible\n\nawesome-artifact: I want to track AI traffic, notify me when it's ready\n\nawesome-artifact: I want to create a LLM.txt file!\n\n  Ivy: Do you want to create a LLM.txt file, may I confirm?\n\nawesome-artifact: Maybe its created already\n\nawesome-artifact: Can you tell me my current plan ?\n\n  Ivy: Sure thing! You are currently in our Plus plan, as shown in my screenshot below\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/image_17efch1.png]\n\nawesome-artifact: Is everything including in plus plan?\n\n  Ivy: The plus plan will be the custom one and the features included related to each store before signing up\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/image_w5s635.png]\n\n  Ivy: Would you want us to double-check with our account team to confirm?\n\nawesome-artifact: They all are covering in my plan?\n\nawesome-artifact: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/image_uqjk13.png]\n\n  Felicie: Since the Plus Plan is a fairly new offering recently, I want to make sure I provide you with the most accurate information.\n\n  Felicie: I’ll check with my manager to gather the full details about the benefits included in the Plus Plan and get back to you after.\n\nawesome-artifact: ok\n\nawesome-artifact: First try to resolve all the things of google analytics\n\nawesome-artifact: Its Important\n\n  Felicie: Ah that's so great to hear it from you!\n\n  Felicie: Sure, I saw that IVY has informed your case to our technical team!\n\n  Felicie: However, it's night time from our side, so it may takes several hours before our team can help you with your case!\n\nawesome-artifact: OKay\n\n  Felicie: We will notice you the result via mail as soon as thing's improved!\n\nawesome-artifact: only email on nitin.sharma1171998@gmail.com\n\n  Felicie: Ah sure, I have noted that!\n\nawesome-artifact: ok\n\n  Felicie: Please take a break for now, we will inform you right away when thing's done!\n\nawesome-artifact: ok\n\n  Felicie: <3\n\nawesome-artifact: Hi, I just signed up for your SEO Map service\n\nawesome-artifact: Hi, I just signed up for your Google Merchant Center Optimize service\n\n  Felicie: Please take your time to optimize your SEO, I'm still here if you need support!\n\nawesome-artifact: I signup for all your SEO Service , SO Please resolve all the things please\n\n  Felicie: Ah please no worries about that!\n\n  Felicie: We have informed your case to our technical team!\n\nawesome-artifact: ok\n\n  Felicie: When they go online your problem will be fixed right away!\n\nawesome-artifact: ok\n\n  Felicie: Thank you very much for your understanding <3\n\nawesome-artifact: Hi\n\n  Tina: Hello, I’m Tina Here\n\n  Tina: How can I help you today?\n\nawesome-artifact: Can you connect to julie\n\n  Tina: Ah may I ask which information you want to ask her? I can inform her :$\n\nawesome-artifact: Google Merchant Centre Errors\n\n  Tina: Oki\n\n  Tina: So you want to update it, right?\n\nawesome-artifact: Yes\n\n  Tina: Oki let me inform her\n\n  Tina: I will be back soon\n\nawesome-artifact: Okay\n\n  Tina: :$\n\n  Julie: Hello, this is Julie here\n\nawesome-artifact: Hi Julie\n\n  Julie: I read your messages and it seems you are using Simprosy for your product data, am I correct? :$\n\nawesome-artifact: I connected Google & Youtube as well\n\nawesome-artifact: Please you check at once\n\n  Julie: Yes sure, I am still actively going into your GMC and fix your issues. The number is just so large that it takes time to proceed, but be rest assured I am handling them for you\n\nawesome-artifact: Okay\n\nawesome-artifact: But Now Google & Youtube App and Simprosys app also connected\n\n  Julie: I see. Once you connected the Google & Youtube app, it will take around 24 hours for the upload to complete. I will check them both for you\n\nawesome-artifact: Is it can create problems?\n\n  Julie: Usually, I would recommend Google & Youtube app for GMC customers since it is developed by Google themselves. Simprosy is just an assistant tool\n\n  Julie: I think the Simprosy is not creating problems, rather than it is not updating the product source for you\n\nawesome-artifact: SO What you should to me ?\n\n  Julie: Now that the Google & Youtube app connection is established, I will see if the product source work fine. I would also recommend chatting with Simprosy support about the Not updating data problem if you used it to upload product to GMC before\n\n  Julie: A lot of your products have gone 404, but they still get uploaded. And a lot of them are uploaded with the old titles that contain “ free shipping” “ 30 day money return” when in fact the title have been changed with none of those content\n\n  Julie: I had to go through each of the title to ensure the products get promoted normally first which is quite time-consuming x)\n\nawesome-artifact: Okay Means you will handle all the things\n\nawesome-artifact: Right?\n\n  Julie: Yes, I will handle them but it will take time. Meanwhile can you chat with the Simprosy team to see if you can get it resolved? Since you are the store owner and have been using the app x)\n\n  Julie: As for the issues in GMC, I am fixing them all for you\n\n  Julie: So please be rest assured\n\nawesome-artifact: Actually I m thinking unintall simprosys feed\n\n  Julie: I understand but I think it is best to consult with them before doing that to ensure no problems first :$\n\nawesome-artifact: I Think its better if you communicate with them beacuse you have knowledge about it\n\n  Julie: Ah I seee, then no problem, then I will step in for you :$\n\nawesome-artifact: Okay\n\n  Julie: Oh and by the way, about the Google Analytics, I have a colleague who has some knowledge about it. Do you want us to take a look?\n\nawesome-artifact: Yes Please look into it\n\n  Julie: I can’t guaranteed Google Analytics will be fixed but we’ll see what insight we can get into\n\n  Julie: Please give me a moment to look for the GA access guide :$\n\n  Julie: Please kindly follow this guide here: https://support.google.com/analytics/answer/9305788?hl=en#:~:text=Edit%20user%20groups-,Add%20users%20to%20Analytics,Click%20Add.\n\n  Julie: Our email is searchpie@pielab.io\n\n  Julie: I think we will need the Viewer access only :$\n\nawesome-artifact: Done\n\n  Julie: Thank you. I will send this to my colleague to look into for you :$\n\n  Julie: Hello,\r\n\r\n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out to you via email regarding your Google Analytics and your Google Merchant Center. \r\n\r\n\nAfter investigating your Google Analytics, there was indeed a drop in the past two months. However, when I analyzed your Google Search Console, I see quite a difference in the number that GA has offered. My best guess**&#160;is this happened due to Google's core update in January , which makes a lot of site tumbled in terms of traffics** . \r\n\r\n\nMeanwhile, **I see that your Google Search Console is having issues . Would you like us to start the fix for you ?** :$  \r\n\r\nAs for your Google Merchant Center, after launching a deep investigation regarding your data source , I have made the following discoveries:\n\n\r\n* The ReProducts app is generating product listings but most of them are not Google-complied  ( Contains free shipping, 30-day return,..) => Making your products get disapproved. It is also duplicating products which make your product number reach more than 100K. You can check it out here in the attached picture. **May I ask if you would like to remove this app/ remove the data source out of GMC ?**\n* \r\n![](https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/5f85a0f5-2df7-4c90-a7d2-0ce9d9_yqkkt7.png)\n\n![](https://storage.crisp.chat/users/upload/session/-/8/f/f/5/8ff5599ddc11d000/screenshot98_1d46qy0.png)\n\n\n\r\n* The Content API source actually comes from the Google & Youtube App. **The fact that it is not updating may be because you once installed the app but then uninstalled it ? May I ask if it is correct ?**\r\n* The Shopify App API source comes from Simprosys and they seem to be working fine so please be rest assured.\r\n\r\n\nPlease check out the above information and let me know your answer :$   I will proceed accordingly, \r\n\r\n\nBest regards,\r\nJulie\n\nawesome-artifact: Hi Julie,\n\nThank you for the detailed analysis and for checking everything so carefully.\n\nI would like to understand your expert suggestion on this — according to you, what would be the best approach for us here?\n\nPlease suggest what should ideally be done regarding:\n\n1. Google Search Console issues — Yes Please Start it as soon as possible & Resolve all the issues \n\n2. ReProducts app — should we completely remove the app or only remove its data source from Google Merchant Center?\n\n3. Content API source — what would be the best way to restore proper updating if needed?\n\n4. Overall, which setup would be safest and most effective for maintaining stable traffic and product approval going forward?\n\nPlease suggest the best option from your side so we can proceed accordingly.\n\nThank you.\n\nBest regards,\nNitin Sharma\n\n  Ivy: Hello Nitin, \n\nThanks a lot for your reply and for sharing the detailed information with us. I will inform Julie about this information\n\nRest assured that she will get back to you as soon as possible with an update~\n\nawesome-artifact: Thanks\n\n  Ivy: It's always my pleasure, dear <3\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Các bạn Support đều chào hỏi có cả tên và brand (SearchPie) đầy đủ, ví dụ: \"Hi, it's Felicie from SearchPie team.\""
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi nào nghiêm trọng về ngữ pháp hoặc từ vựng."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Support giao tiếp rõ ràng, mạch lạc, đúng trọng tâm. Ví dụ, Julie cung cấp thông tin chi tiết về các vấn đề với Google Merchant Center và đề xuất các bước tiếp theo."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Support lắng nghe và phản hồi đầy đủ các vấn đề khách hàng nêu ra. Ví dụ, khi khách hàng nói Google Analytics có vấn đề, Support đã chuyển cho team kỹ thuật kiểm tra."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn lịch sự, tốc độ phản hồi chấp nhận được."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không có biểu hiện bức xúc hay lo lắng, Support không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình, chủ động giúp đỡ khách hàng. Ví dụ, Julie chủ động kiểm tra và đưa ra các giải pháp cho vấn đề Google Merchant Center."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Support đặt câu hỏi để làm rõ vấn đề khi cần thiết. Ví dụ, Ivy hỏi khách hàng cụ thể về vấn đề với Google Analytics."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Julie đã đưa ra các giải pháp và tư vấn chuyên sâu về Google Merchant Center và Google Analytics, khách hàng cũng phản hồi tích cực về điều này. Các Support khác chuyển đúng case."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Julie chủ động đưa ra thông tin chi tiết về các vấn đề và đề xuất giải pháp, thay vì chỉ trả lời các câu hỏi cụ thể của khách hàng. Ví dụ, phân tích sâu về nguyên nhân có thể gây ra vấn đề với Google Analytics và đề xuất kiểm tra Google Search Console."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Support chuyển case cho team kỹ thuật hoặc Julie khi cần thiết."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Julie đã cung cấp link hướng dẫn về cách cấp quyền truy cập Google Analytics. Rất tốt!"
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Julie đã đưa ra những phân tích và đề xuất chuyên sâu, thể hiện sự nỗ lực vượt xa yêu cầu thông thường."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 5 sao rồi nên không cần xin nữa."
+        }
+      },
+      "overall_summary": "Nhìn chung, Support đã làm rất tốt trong việc hỗ trợ khách hàng. Các Support giao tiếp rõ ràng, nhiệt tình, và đặc biệt là Julie đã đưa ra những phân tích và giải pháp rất chuyên sâu, giúp khách hàng giải quyết được nhiều vấn đề phức tạp. Việc chuyển case cũng được thực hiện nhanh chóng và hiệu quả. Tuyệt vời!",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_309678be-f2b1-4835-b4ab-4c21fa9264f4",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "Unknown Site",
+    "customer": "dev2-aff",
+    "primary_operator": "PieLab",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  PieLab Support: HTML issues detected. A quick cleanup can speed up your site and help rankings.\n\ndev2-aff: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\n  PieLab Support: 7670 meta tags need a fix. Want to update them for better results?\n\ndev2-aff: I want to create a LLM.txt file!\n\n  PieLab: Hi there 😊\n\nThanks for reaching out! Our support team is currently offline.\n\nPlease feel free to share your concerns, and we’ll make sure to prioritize them as soon as we’re back online.\n\nThanks so much for your patience! <3\n\ndev2-aff: Hi, is there anyone help me to optimize my SEO score?\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to track AI traffic, notify me when it's ready\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\ndev2-aff: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\ndev2-aff: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\n  PieLab Support: HTML issues detected. A quick cleanup can speed up your site and help rankings.\n\ndev2-aff: Can you help me check on my speed performance?\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\ndev2-aff: I want to track AI traffic, notify me when it's ready\n\ndev2-aff: Can you help me check on my Google Search Console issues?\n\ndev2-aff: Can you help me check on my Google Search Console issues?\n\ndev2-aff: Can you help me check on my Google Search Console issues?\n\ndev2-aff: I want to track AI traffic, notify me when it's ready\n\ndev2-aff: I want to track AI traffic, notify me when it's ready\n\ndev2-aff: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Support đã chào hỏi bằng PieLab. Tuy nhiên, cần thêm tên của Support để tăng tính cá nhân. Ví dụ: \"Chào bạn, mình là [tên] từ PieLab. Mình có thể giúp gì cho bạn?\""
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp hoặc từ vựng nghiêm trọng."
+        },
+        "communication": {
+          "score": 1.5,
+          "justification": "Support cần tập trung hơn vào việc trả lời đúng trọng tâm câu hỏi của khách. Khách hàng có nhiều câu hỏi khác nhau, việc trả lời chung chung có thể không giải quyết được vấn đề của họ và khiến họ phải hỏi lại nhiều lần. Do đó, trừ 0.5 điểm."
+        },
+        "listening": {
+          "score": 0.0,
+          "justification": "Support đã hoàn toàn bỏ qua các câu hỏi của khách. Khách hàng liên tục hỏi về việc tạo file LLM.txt, theo dõi AI traffic, kiểm tra tốc độ và Google Search Console. Support không hề phản hồi bất kỳ câu hỏi nào trong số này. Cần cải thiện kỹ năng lắng nghe và phản hồi vấn đề của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi chậm trễ do tin nhắn tự động. Không có vấn đề về tông giọng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không cần thiết trong trường hợp này."
+        },
+        "enthusiastic": {
+          "score": 0.0,
+          "justification": "Support hoàn toàn thụ động, chỉ đưa ra tin nhắn tự động và không hề có tương tác chủ động nào với khách hàng. Cần cải thiện sự nhiệt tình và chủ động trong việc hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 0.0,
+          "justification": "Do Support không phản hồi bất kỳ câu hỏi nào của khách nên không có probing. Rất cần đặt câu hỏi để hiểu rõ hơn về nhu cầu của khách hàng, đặc biệt là khi khách hàng lặp lại câu hỏi nhiều lần. Ví dụ: \"Bạn có thể cho mình biết thêm về file LLM.txt mà bạn muốn tạo không?\""
+        },
+        "solution": {
+          "score": 0.0,
+          "justification": "Support không đưa ra bất kỳ giải pháp nào cho khách hàng. Do đó, trừ điểm tối đa."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "Support không chủ động cung cấp bất kỳ thông tin hữu ích nào cho khách hàng. Ví dụ, khi khách hàng đề cập đến việc sử dụng Enterprise Monthly plan, Support có thể chủ động giới thiệu các tính năng nổi bật của gói này."
+        },
+        "transferring": {
+          "score": 0.0,
+          "justification": "Với những vấn đề liên quan đến kỹ thuật như tạo file LLM.txt, theo dõi AI traffic, kiểm tra tốc độ và Google Search Console, Support cần chuyển cho bộ phận kỹ thuật để được hỗ trợ tốt nhất. Tuy nhiên, Support đã không thực hiện việc này."
+        },
+        "resources": {
+          "score": 0.0,
+          "justification": "Có nhiều cơ hội để chia sẻ tài liệu hướng dẫn hữu ích cho khách hàng, đặc biệt là về cách tạo file LLM.txt và các tính năng SEO khác của PieLab. Tuy nhiên, Support đã bỏ qua cơ hội này."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "Không có bất kỳ nỗ lực nào để làm hài lòng khách hàng hơn. Ví dụ, Support có thể chủ động xem xét website của khách hàng và đưa ra các gợi ý tối ưu hóa cụ thể."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Không có tương tác thực tế với khách để xin review, nên cho đủ điểm."
+        }
+      },
+      "overall_summary": "Đây là một hội thoại rất tệ. Support đã hoàn toàn bỏ qua các câu hỏi của khách, không đưa ra bất kỳ giải pháp nào, và không có bất kỳ sự chủ động hay nhiệt tình nào trong việc hỗ trợ. Cần cải thiện rất nhiều về kỹ năng lắng nghe, giải quyết vấn đề, và giao tiếp với khách hàng.",
+      "total_score_20": 6.0,
+      "final_score_10": 3.0
+    }
+  },
+  {
+    "session_id": "session_674f50f6-c98e-42ba-97f1-d85292e23ea4",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "DECO",
+    "customer": "Royal Pharmacy",
+    "primary_operator": "Jane",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\nRoyal Pharmacy: I created a badge on specific discount\n\n  Jane: it's Jane from DECO team here\n\nRoyal Pharmacy: when I activate it it spread on other products not in the discount\n\n  Jane: can you send me the product link to check?\n\nRoyal Pharmacy: label name 50% collection\n\nRoyal Pharmacy: product ski that not included but the badge applied is 45160\n\n  Jane: well noted on the label name\n\n  Jane: I see you set the label to be displayed on selected product\n\n  Jane: can you send me the product link in your store to check as well?\n\nRoyal Pharmacy: label name 50% collection\n\nRoyal Pharmacy: it is deactivated now\n\nRoyal Pharmacy: https://www.oscarintkw.com/products/mounjaro-12-5-mg-0-6-ml-kwikpen-injection-4-doses\n\n  Jane: our technician are unable to check the issue if you deactivated the label\n\n  Jane: in this case, can you grant us the access to your store to check?\n\n  Jane: if it's okay, I'll create request access to your store now\n\n  Jane: hi my friend, are you still there?\n\n  Jane: if you dont want to grant us the access to your store, please activate the label, our team will check and fix the issue accordingly [+1]\n\nRoyal Pharmacy: hi\n\n  Tina: Hello, I’m Tina from DECO app\n\n  Tina: How can I help you today?\n\nRoyal Pharmacy: I made a label named 2+1\n\nRoyal Pharmacy: it is applied on 2 collections\n\nRoyal Pharmacy: but I found them written 3 collections\n\n  Tina: Could you please send me the product link which label is not expected to display?\n\nRoyal Pharmacy: please check this screenshot\n\nRoyal Pharmacy: [File: Screenshot 2026-03-14 at 12.35.59 PM.png - https://storage.crisp.chat/users/upload/session/-/7/6/d/c/76dcdf19f26cf000/screenshot-2026-03-14-at-12355_61v9c2.png]\n\n  Tina: Yes I got it\n\n  Tina: Let me assk our dev to check it\n\n  Tina: I will be back soon\n\nRoyal Pharmacy: خن\n\nRoyal Pharmacy: ok\n\n  Tina: :$\n\nRoyal Pharmacy: Hi\n\n  David: Hi, this is David from DECO here!\n\n  David: How can I help you today?\n\n  David: Ah, may I ask if you have previously chose 3 collections on that label?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David đã chào, nhắc tên mình và brand DECO. Jane thiếu tên ở tin nhắn đầu tiên, nên viết 'Hi, I'm Jane from DECO team'. Tina chào nhưng ở tin nhắn thứ 2, đáng lẽ nên chào ngay ở tin nhắn đầu tiên."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp lớn."
+        },
+        "communication": {
+          "score": 1.5,
+          "justification": "Support có lúc hơi dài dòng. Ví dụ, 'Let me assk our dev to check it' có thể viết ngắn gọn hơn là 'I'll ask our dev to check it'. Câu 'I will be back soon' nghe hơi thừa, vì sau khi dev check xong thì support sẽ trả lời lại thôi."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Support lắng nghe tốt, phản hồi đầy đủ các thông tin khách hàng cung cấp."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự. Pace chấp nhận được."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không có biểu hiện tiêu cực, nên không cần thể hiện sự cảm thông."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "David đã chủ động hỏi lại để hiểu rõ hơn vấn đề: 'Ah, may I ask if you have previously chose 3 collections on that label?'"
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Vấn đề được chuyển cho dev để xử lý, là hướng đi phù hợp."
+        },
+        "proactiveness": {
+          "score": 1.0,
+          "justification": "Sau khi khách hàng cung cấp screenshot, support nên chủ động hỏi thêm thông tin về label và collection đang gặp vấn đề, thay vì chỉ đợi dev check. Ví dụ: 'Thanks for the screenshot! Could you tell me the name of the label and the collections it's applied to?'"
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Support đã chuyển vấn đề cho dev team, phù hợp với tình huống."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Nếu có tài liệu hướng dẫn sử dụng label hoặc quản lý collection, support có thể chủ động chia sẻ cho khách hàng."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "Không có cơ hội rõ ràng để support thể hiện extra mile."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "Cuộc hội thoại kết thúc mà không có yêu cầu review. Nên xin review một cách tự nhiên, ví dụ: 'If you have a moment, we'd really appreciate it if you could leave us a review. It helps us improve and provide the best support possible!'"
+        }
+      },
+      "overall_summary": "Nhìn chung, support xử lý khá ổn, chuyển đúng case cho dev team. Tuy nhiên, cần chú ý hơn đến việc chủ động thu thập thông tin ngay từ đầu và xin review cuối chat. Ngoài ra, nên tinh gọn câu cú để giao tiếp hiệu quả hơn.",
+      "total_score_20": 15.5,
+      "final_score_10": 7.75
+    }
+  },
+  {
+    "session_id": "session_0b59bdd6-ea65-4766-a232-036405523f5c",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "DECO",
+    "customer": "Collectors Vault",
+    "primary_operator": "Tina",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\nCollectors Vault: i can create 2 groups, or the group can only have 2 badges\n\n  Hannah: You can only create 2 groups\n\nCollectors Vault: I just upgraded to GROWTH 🎉 Could you help me get the most out of this plan?\n\n  Hannah: Welcome to Growth Plan, let us know if you need anything :$\n\nCollectors Vault: Hi DECO Team! I need help with the badge display problem.\n\n  Hannah: Still Hannah here\n\n  Hannah: Anything I can help you with ?\n\nCollectors Vault: never mind. i got it\n\n  Hannah: <3  <3\n\nCollectors Vault: Hi DECO Team! I need help with the badge display problem.\n\nCollectors Vault: it's not displaying on the product page\n\n  Tina: Hello, I’m Tina from DECO here\n\n  Tina: Could you please send me the product link?\n\n  Tina: Our dev can check it for you\n\nCollectors Vault: https://collectorsvault.in/products/honda-super-cub-custom-1309\n\nCollectors Vault: it shows on the collections page just fine\n\nCollectors Vault: [File: Screenshot 2026-03-10 at 18.45.17.png - https://storage.crisp.chat/users/upload/session/-/b/3/8/8/b388e01630eec000/screenshot-2026-03-10-at-18451_ikq074.png]\n\n  Tina: Oki thank you\n\n  Tina: Let me inform our dev to check it for you\n\n  Tina: I will be back as soon as possible\n\nCollectors Vault: it seems to be becoming a mess\n\nCollectors Vault: [File: Screenshot 2026-03-10 at 18.49.21.png - https://storage.crisp.chat/users/upload/session/-/b/3/8/8/b388e01630eec000/screenshot-2026-03-10-at-18492_11s1i2d.png]\n\n  Tina: Our dev is working on it\n\n  Tina: no worry\n\n  Tina: Hi friend, could you please check?\n\n  Tina: Our dev finished fixing it\n\nCollectors Vault: yes seems to be working now\n\n  Tina: oki\n\n  Tina: anything else I can help you?\n\nCollectors Vault: no thank you\n\n  Tina: Oki my friend\n\n  Tina: Ah if you don’t mind, would you mind sharing your thoughts on my support (Tina) by leaving me a review on Shopify App Store? \n\nJust 30s to go: https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal\n\n  Tina: It would be THE WORLD to me, my bestie <3\n\n  Tina: If you don't mind, could you please let me know when it's submitted?\n\n  Tina: Due to Shopify policy, I can't see your words, can't wait\n\n  PieLab Support: Congrats on creating your first DECO's feature! Is it displaying properly on your site as you expected? Chat with us to run a quick check for your site!\n\nCollectors Vault: hi this metafield badge is not being displayed. it's showing no data on site\n\nCollectors Vault: [File: Screenshot 2026-03-14 at 19.49.39.png - https://storage.crisp.chat/users/upload/session/-/b/3/8/8/b388e01630eec000/screenshot-2026-03-14-at-19493_187qg23.png]\n\n  Hana: Hi there, it's Hana from DECO\n\n  Hana: Thank you for reaching out to us :$\n\n  Hana: Let me check on it for you\n\nCollectors Vault: also on the product page it's showing 1 extra unnessary place. nudgify app element\n\nCollectors Vault: [File: Screenshot 2026-03-14 at 19.50.37.png - https://storage.crisp.chat/users/upload/session/-/b/3/8/8/b388e01630eec000/screenshot-2026-03-14-at-19503_1em6rz9.png]\n\n  Hana: Thank you let me check on it\n\n  Hana: [File: image.png - https://storage.crisp.chat/users/upload/session/-/b/3/8/8/b388e01630eec000/image_1jev5bs.png]\n\n  Hana: Hi Can you please reload the page to re-check?\n\n  Hana: I saw that the badge is showing information here\n\nCollectors Vault: ok it's showing in incognito.\n\nCollectors Vault: https://collectorsvault.in/products/porsche-cayman-s-290\n\nCollectors Vault: mind looking at the other issue\n\nCollectors Vault: eg product\n\n  Hana: Got it, let us check on it further for you\n\n  Hana: Hey, it should be working properly now, can you please click this link and re-check: https://collectorsvault.in/products/porsche-cayman-s-290\n\n  Hana: [File: image.png - https://storage.crisp.chat/users/upload/session/-/b/3/8/8/b388e01630eec000/image_1yfxahy.png]\n\nCollectors Vault: yes it's fine now. thank you\n\n  Hana: My pleasure. And btw, could I ask for a quick favor? :$\n\n  Hana: Would you mind sharing your thoughts on my support (HANA) by leaving me a review on Shopify App Store?\nJust 30s to go: https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal\n\n  Hana: Nothing is more precious for us than your feedback <3  :$  :$\n\nCollectors Vault: hi i am having a lot of trouble with responsiveness of all the labels\n\nCollectors Vault: what's shown in the preview is not at all how it looks on website\n\nCollectors Vault: see the difference\n\nCollectors Vault: [File: Screenshot 2026-03-14 at 23.23.02.png - https://storage.crisp.chat/users/upload/session/-/b/3/8/8/b388e01630eec000/screenshot-2026-03-14-at-23230_pvacjc.png]\n\nCollectors Vault: [File: Screenshot 2026-03-14 at 23.23.17.png - https://storage.crisp.chat/users/upload/session/-/b/3/8/8/b388e01630eec000/screenshot-2026-03-14-at-23231_ph6jcv.png]\n\nCollectors Vault: even if i try to customise each, it's like each setting is just playing with me\n\n  Ivy: Hi there. It's Ivy from DECO app\n\n  Ivy: Thanks for sharing the detailed information with us\n\n  Ivy: Please let me forward this to our technical team for further investigation\n\n  Ivy: Please rest assured that I’ll keep an eye on this, and the moment I receive any updates from them, I’ll let you know right away!\n\nCollectors Vault: how much time will i have wait\n\n  Ivy: Ah it's related to the team's troubleshooting steps therefore I do not have the estimated time yet, unfortunately\n\n  Ivy: However, if you’re not online when I get back to you, my message will be sent to your email address. So you won’t miss a thing!\n\nCollectors Vault: okk\n\n  Ivy: Thank you so much, dear~\n\n  John: Hi there,\nThank you for your patience.\nOur technician mentioned that in some cases, adjusting the size or layout may require access to your store in order to properly inspect and apply the changes.\nCould you please check your mailbox and accept our request\nOnce we have access, we will review it right away and proceed with the fix as soon as possible.\nThank you so much for your support.\nBest regards.\nJohn\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Hana và Ivy chào có tên và brand, nhưng Hannah và Tina thì không. Hannah chỉ xưng tên, nên trừ 0.125đ. Tina mở đầu 'Hello, I’m Tina from DECO here' – có cả tên và brand, OK. John mở đầu có brand 'Our technician...', OK. Ví dụ, Hannah nên nói: 'Chào bạn, mình là Hannah từ DECO.'"
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nào nghiêm trọng."
+        },
+        "communication": {
+          "score": 1.5,
+          "justification": "Nhìn chung, Support trả lời đúng trọng tâm. Tuy nhiên, ở đoạn 'Collectors Vault: yes seems to be working now', Tina chỉ trả lời 'oki'. Nên thêm một câu xác nhận là vấn đề đã được giải quyết hoàn toàn, ví dụ: 'Tuyệt vời! Vậy là vấn đề đã được giải quyết rồi đúng không ạ?'"
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Support lắng nghe và phản hồi đầy đủ các vấn đề khách nêu ra."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Support giữ lịch sự và tốc độ phản hồi phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Trong đoạn chat Ivy tiếp nhận vấn đề responsiveness, khách hàng có vẻ đang khá thất vọng vì những tùy chỉnh không được như ý. Ivy đã thể hiện sự đồng cảm bằng cách hứa sẽ theo dõi sát sao và thông báo ngay khi có cập nhật từ team kỹ thuật. Vậy là ổn."
+        },
+        "enthusiastic": {
+          "score": 1.25,
+          "justification": "Nhìn chung Support trả lời nhiệt tình. Ở tin nhắn 'Welcome to Growth Plan, let us know if you need anything :$', Hannah có thể nhiệt tình hơn bằng cách gợi ý một vài tính năng nổi bật của Growth Plan mà khách có thể dùng ngay, thay vì chỉ chờ khách hỏi."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Các bạn support đã đặt câu hỏi khi cần thiết để xác nhận vấn đề. Ví dụ như Tina hỏi link sản phẩm để dev check."
+        },
+        "solution": {
+          "score": 3,
+          "justification": "Các vấn đề được giải quyết đúng và khách xác nhận đã hoạt động."
+        },
+        "proactiveness": {
+          "score": 1.5,
+          "justification": "Khi Hannah giải quyết xong lỗi hiển thị badge, lẽ ra bạn có thể chủ động gợi ý thêm cho khách các cách tùy chỉnh badge để tăng hiệu quả hiển thị, hoặc giới thiệu các tính năng liên quan khác của DECO. Vì vậy, trừ nhẹ."
+        },
+        "transferring": {
+          "score": 2,
+          "justification": "Khi gặp vấn đề kỹ thuật, Support đã chuyển cho dev team."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ docs/hướng dẫn."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để làm điều gì đó ngoài yêu cầu."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hana và Tina đều xin review sau khi giải quyết xong vấn đề cho khách."
+        }
+      },
+      "overall_summary": "Nhìn chung các bạn Support đã xử lý các vấn đề của khách khá tốt, giải quyết được vấn đề và xin review đầy đủ. Tuy nhiên, vẫn còn một vài điểm nhỏ có thể cải thiện để tăng trải nghiệm khách hàng, như chủ động hơn trong việc gợi ý các tính năng và tránh trả lời quá ngắn gọn.",
+      "total_score_20": 18.75,
+      "final_score_10": 9.38
+    }
+  },
+  {
+    "session_id": "session_2d974c51-ae02-437b-a859-cc5b62e3fd64",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "DECO",
+    "customer": "Emeraldpr",
+    "primary_operator": "Jane",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\nEmeraldpr: Hi DECO Team! I need help with the label display problem.\n\n  David: Hi, this is David here\n\n  David: I see, may I ask for the URL of the product/collection that is having this issue?\n\nEmeraldpr: https://emeraldcw.com/collections/in-stock-items?_pos=1&_psq=in+stock&_ss=e&_v=1.0\n\n  David: Thank you let me have a look for you\n\n  David: It should be good now, can you have a look and let me know?\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/1/0/8/e1084a6ed37c8800/image_1w4r6tq.png]\n\nEmeraldpr: the bottom items donth show the label\n\nEmeraldpr: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/1/0/8/e1084a6ed37c8800/image_1mwbc1m.png]\n\n  David: Hmm, that is weird, it is showing on my end, can you refresh your page?\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/1/0/8/e1084a6ed37c8800/image_f0affs.png]\n\nEmeraldpr: have done several times and doesnt show on my end.\n\nEmeraldpr: no worries!\n\n  Jane: it's Jane here\n\n  Jane: David already ended his shift so i'm here  to assist you\n\n  Jane: may I confirm that everything is okay at your end now?\n\nEmeraldpr: Hello. Some continue to not show\n\n  Jane: can you send me the link of the product?\n\n  Jane: i'll check it\n\nEmeraldpr: https://emeraldcw.com/collections/short-sleeve?_pos=1&_psq=t&_ss=e&_v=1.0\n\nEmeraldpr: in this collection the first one no sticker displayed\n\n  Jane: alright got your info, i already notified our team to check the issue\n\n  Jane: We'll get back & let you know when it's done :$\n\nEmeraldpr: in this collection doesnt show in several\n\nEmeraldpr: https://emeraldcw.com/collections/in-stock-items?_pos=1&_psq=in&_ss=e&_v=1.0\n\n  Jane: sure\n\n  Jane: please also note that if the product only has some varriants that fit with the condition, the label wont show up\n\n  Jane: Hi there, it's Jane from DECO here. Thank you so much for your patience.\n\nI would like to inform you that our technical team has solved the label display issue.\nPlease access your store and let me know if it works properly.\n\nAlso, if you have free time, would you mind sharing your thoughts on my support (Jane) by leaving me a review on Shopify App Store?\nYou can use this https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal\nIt would be a big motivation for me and my team. Thank you so much!\n\nPlease feel free to get back to us whenever you need help. We are always more than ready to support you as best we can! :$  \n\nRegards,\nJane\n\nEmeraldpr: Hi, my AI created badge don't look as I expected. Could you guys help customizing it for me?\n\n  Tina: Hello, I’m Tina Here\n\n  Tina: How can I help you today?\n\nEmeraldpr: I have some items the the label is not showing\n\nEmeraldpr: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/1/0/8/e1084a6ed37c8800/image_1bq6jcz.png]\n\n  Jane: It’s Jane from DECO team here\n\nEmeraldpr: i found the problem. Thanks for your prompt response\n\n  Jane: Glad to hear that <3\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.0,
+          "justification": "David chỉ xưng tên mà không nhắc đến brand DECO. Nên viết lại là 'Hi, this is David from DECO.' hoặc tương tự."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp nghiêm trọng."
+        },
+        "communication": {
+          "score": 1.5,
+          "justification": "Ở đoạn chat đầu tiên với David, Support đã không đưa ra giải pháp khi khách hàng báo lỗi vẫn còn. Sang đến đoạn chat với Jane, support đã thông báo team kỹ thuật check lỗi ở các dòng 'alright got your info, i already notified our team to check the issue' và 'Hi there, it's Jane from DECO here. Thank you so much for your patience. I would like to inform you that our technical team has solved the label display issue. Please access your store and let me know if it works properly.'. Cần đảm bảo giải pháp được đưa ra nhanh chóng và đồng thời có hướng dẫn cụ thể cho khách hàng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Support lắng nghe và phản hồi đầy đủ các vấn đề khách hàng nêu ra."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi của Support phù hợp. Giọng văn lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu nào cho thấy khách hàng bức xúc hoặc lo lắng, nên không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Support đặt câu hỏi phù hợp để xác định vấn đề của khách hàng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Support đã cung cấp giải pháp đúng và khách hàng đã xác nhận vấn đề được giải quyết. Ở đoạn chat với Jane, support đã thông báo team kỹ thuật check lỗi ở các dòng 'alright got your info, i already notified our team to check the issue' và 'Hi there, it's Jane from DECO here. Thank you so much for your patience. I would like to inform you that our technical team has solved the label display issue. Please access your store and let me know if it works properly.'"
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Support chủ động thông báo về việc team kỹ thuật đã giải quyết vấn đề và hướng dẫn khách hàng kiểm tra."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề được chuyển cho team kỹ thuật xử lý khi cần thiết."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Có thể chia sẻ thêm các tài liệu hướng dẫn sử dụng badge AI hoặc các tùy chỉnh khác để khách hàng tham khảo."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "Có cơ hội để gợi ý khách hàng các tính năng khác của app hoặc các plan phù hợp hơn với nhu cầu sử dụng AI, nhưng Support đã bỏ qua. Ví dụ: 'Ngoài ra, DECO còn có các gói nâng cao với nhiều tùy chỉnh AI badge độc đáo hơn, anh/chị có muốn tìm hiểu thêm không?'"
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Support đã xin review ở cuối đoạn chat với Jane một cách lịch sự."
+        }
+      },
+      "overall_summary": "Nhìn chung, Support đã hỗ trợ khách hàng khá tốt, giải quyết được vấn đề và xin review lịch sự. Tuy nhiên, cần chú ý hơn đến việc giới thiệu brand ngay từ đầu, chủ động gợi ý các tính năng khác, và chia sẻ tài liệu hữu ích khi có cơ hội. Lần sau, David nhớ giới thiệu cả tên và brand nhé, và team mình có thể năng động hơn trong việc giới thiệu các tính năng khác của DECO cho khách hàng, đặc biệt là các tính năng liên quan đến AI mà khách hàng đang quan tâm.",
+      "total_score_20": 17.75,
+      "final_score_10": 8.88
+    }
+  },
+  {
+    "session_id": "session_fe960d5b-96b6-49d3-a6c5-9ea69cbd5eb9",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "DECO",
+    "customer": "Moonelle ",
+    "primary_operator": "Hana",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  PieLab Support: Hi, I am Rossie from the DECO technical support team. I received the information that your badges are not displaying correctly, though you set up everything.\nNo worry, our support team is 24/7, and we can do a FREE check to resolve your problem quickly, do you want us to help you check it?💗\n\n  PieLab Support: Congrats on creating your first DECO's feature! Is it displaying properly on your site as you expected? Chat with us to run a quick check for your site!\n\nMoonelle : hi what perfect size of image to use\n as badge\n\n  Hana: Hi there, it's Hana from the DECO team :$\n\n  Hana: Actually, there isn’t a fixed pixel size requirement for badge images\n\n  Hana: You can customize it based on your requirements\n\n  Hana: We have many customization options :$\n\nMoonelle : prefer size\n\n  Hana: If you choose a square badge, then you can create 96 px x 96 px image :$\n\n  PieLab Support: Hi, I am Rossie from the DECO technical support team. I received the information that your badges are not displaying correctly, though you set up everything.\nNo worry, our support team is 24/7, and we can do a FREE check to resolve your problem quickly, do you want us to help you check it?💗\n\nMoonelle : I just upgraded to STARTER 🎉 Could you help me get the most out of this plan?\n\n  Jane: It’s Jane from DECO team here\n\n  Jane: Welcome to Starter plan\n\n  Jane: It's my pleasure to support you. If you have any questions or concerns, feel free to reach out to us\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Jane đã chào và giới thiệu tên + brand: \"It’s Jane from DECO team here\", đáp ứng yêu cầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar hoặc từ vựng nào gây khó hiểu."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Jane trả lời đúng trọng tâm câu hỏi của khách về plan Starter, không vòng vo."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Jane đã phản hồi đầy đủ câu hỏi của khách về việc tận dụng plan Starter."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn lịch sự, tốc độ phản hồi phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu khách hàng lo lắng hay khó chịu."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Jane thể hiện sự nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Khách hàng đặt câu hỏi rõ ràng nên không cần probing."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Chưa có vấn đề hoặc giải pháp cụ thể nào trong đoạn chat này."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "Jane đã bỏ lỡ cơ hội chủ động giới thiệu các tính năng nổi bật của gói Starter, hoặc hướng dẫn khách hàng cách sử dụng hiệu quả. Ví dụ: \"Gói Starter của DECO có những tính năng [A, B, C] rất hữu ích cho bạn. Bạn có muốn mình giới thiệu chi tiết hơn về tính năng A không?\""
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer trong trường hợp này."
+        },
+        "resources": {
+          "score": 0.0,
+          "justification": "Jane đã bỏ lỡ cơ hội cung cấp link tới trang hướng dẫn sử dụng gói Starter hoặc các tài liệu liên quan khác. Ví dụ: \"Bạn có thể tham khảo thêm hướng dẫn chi tiết về gói Starter tại đây: [link]\""
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "Jane không làm gì đặc biệt hơn yêu cầu hỗ trợ thông thường."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "Chat kết thúc bình thường mà không xin review. Nên xin review ở cuối chat, ví dụ: \"Nếu bạn hài lòng với hỗ trợ của mình, bạn có thể cho DECO xin một review được không ạ? Điều này sẽ giúp DECO cải thiện dịch vụ tốt hơn.\""
+        }
+      },
+      "overall_summary": "Jane đã có một khởi đầu tốt với việc chào hỏi lịch sự và thể hiện sự sẵn sàng hỗ trợ khách hàng. Tuy nhiên, bạn nên chủ động hơn trong việc cung cấp thông tin hữu ích về gói Starter để khách hàng có thể tận dụng tối đa các tính năng của nó. Đừng quên xin review ở cuối cuộc trò chuyện để giúp DECO cải thiện dịch vụ nhé.",
+      "total_score_20": 14.5,
+      "final_score_10": 7.25
+    }
+  },
+  {
+    "session_id": "session_40dc9364-2a88-4379-85ab-268272a05598",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-14",
+    "app": "SearchPie",
+    "customer": "gifting-by-julia-m",
+    "primary_operator": "Jane",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  PieLab Support: 80 meta tags need a fix. Want to update them for better results?\n\ngifting-by-julia-m: Can you help me check on my speed performance?\n\ngifting-by-julia-m: Fix now\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like me to have a look at your meta tags for you?\n\ngifting-by-julia-m: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\ngifting-by-julia-m: yes\n\n  David: Ah, great! Let me have a look and get back to you right away\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/d/5/f/4/d5f4606e8b877800/image_y8ozp7.png]\n\n  David: Ah, may I ask if you are also using meta tags from Shopify?\n\ngifting-by-julia-m: Hi, is there anyone help me to optimize my SEO score?\n\ngifting-by-julia-m: not ure\n\ngifting-by-julia-m: Its hard to do it one by one\n\n  David: I see, then you might currently have the default Shopify meta tags\n\n  David: Since you have the Shopify meta tags and also used our app meta tags, you are currently having 2 set of meta tags in your store\n\n  David: The fix is rather simple, just keep one set and hide one\n\ngifting-by-julia-m: how\n\ngifting-by-julia-m: Can you do it\n\n  David: Ah, may I ask if you are looking to keep our app meta tags or do you want keep Shopify meta tags?\n\ngifting-by-julia-m: Can you help me check on my Google Merchant Center issues?\n\ngifting-by-julia-m: not if they are causing conflict ofcourse not\n\n  Jane: it's Jane from Search Pie team here\n\ngifting-by-julia-m: ok\n\n  Jane: may I confirm that you want to ask about the Multiple meta tags issue?\n\n  Jane: It means that your store has 2 or more versions of Meta Tags, 1 from default Shopify and maybe 1 from other SEO app, in this case is from our app\n\n  Jane: Google may be confused about what to show on the search results page if your page has more than one title and description\n\n  Jane: so you should keep 1 version of meta tags in your store only\n\ngifting-by-julia-m: true\n\n  Jane: yes please check and remove the extra one :$\n\ngifting-by-julia-m: come on!! this is the second time I am about to leave this conversation mid-way!!\n\ngifting-by-julia-m: I just said I need help removing this last night and it went into another lost conversation and you are doing the same.  Two nights of trying to achieve one thing.  If you cannot conclude this I will just go ahead and uninstall your app!!\n\n  Jane: sorry for not getting your request my friend\n\n  Jane: this issue can be fixed by our technical team, and the technical assistance is only available in Enterprise plan\n\n  Jane: however, we'd love to help you fix this time for free :$\n\n  Jane: may I confirm which version of meta tags that you want to remove? Shopify or from our app?\n\ngifting-by-julia-m: Your app if you are going to be supportive\n\n  Jane: then you can go here to remove our meta tags [+1]\n\n  Jane: [File: remove meta tags.png - https://storage.crisp.chat/users/upload/session/-/d/5/f/4/d5f4606e8b877800/remove-meta-tags_ijwwrp.png]\n\ngifting-by-julia-m: I would like to keep your meta tags\n\n  Jane: got it\n\n  Jane: In order to fix the issues, our dev need to access your theme code\n\n  Jane: a request is sent to your store, please check and approve it\n\n  Jane: you can refer to this guideline to accept the request:\n\n1. From your Shopify admin, go to **Settings** > **Users**.\n2. On the **Users** index page, you'll see: PieLab collaborator with the status: Pending. Here, please click on that name\n3. Click **Accept request** at the top-right corner is all done (no need to assign a role + edit permissions, since I already ticked all permissions we need)\n\ngifting-by-julia-m: ok\n\n  Jane: please let me know once the access is granted [+1]\n\ngifting-by-julia-m: granted\n\n  Jane: alright let me check it now\n\n  Jane: I got the access already [+1]\n\n  Jane: I'll pass your case to our technical team to fix your issue\n\n  Jane: We'll get back & let you know when it's done :$\n\n  Jane: if you're offline by that time, email will be sent to poshpouchbyjuliam@gmail.com\n\n  Jane: Hi there, it's Jane from Search Pie. Thank you so much for your patience.\n\nI would like to inform you that our technical team has solved Multiple Meta Tags issue.\nPlease access your store and let me know if it works properly.\n\nAlso, if you have free time, would you mind sharing your thoughts on my support (Jane) by leaving me a review on Shopify App Store?\nJust 30s to go: [__https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal__](https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal)\n\nFeel free to get back to us whenever you need help. We are always more than ready to support you as best we can! :$  \n\nRegards,\nJane\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0,
+          "justification": "David chào thiếu tên brand. Nên viết: 'Hi, this is David from SearchPie'. Jane về sau có nhắc brand nhưng không phải tin nhắn đầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp nào đáng kể."
+        },
+        "communication": {
+          "score": 2,
+          "justification": "Support trả lời rõ ràng, đúng trọng tâm. Ví dụ, sau khi khách hỏi về Google Merchant Center, Jane đã nhanh chóng quay lại vấn đề meta tags và giải thích rõ ràng về nó."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Support lắng nghe và phản hồi đầy đủ các vấn đề khách hàng nêu ra. Ví dụ, khi khách hàng liên tục nhắc về vấn đề 'Multiple Meta Tags', Support đã tập trung giải quyết vấn đề này."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Support giữ thái độ lịch sự trong suốt cuộc trò chuyện, ngay cả khi khách hàng có phần sốt ruột. Tốc độ phản hồi cũng khá nhanh chóng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Support đã thể hiện sự thông cảm khi khách hàng tỏ ra khó chịu vì phải chờ đợi. Câu 'sorry for not getting your request my friend' cho thấy Support hiểu được sự bực bội của khách."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình hỗ trợ khách hàng, đặc biệt là việc đề nghị hỗ trợ miễn phí dù vấn đề này chỉ được hỗ trợ trong gói Enterprise. Điều này cho thấy Support sẵn sàng giúp đỡ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Support đặt câu hỏi xác nhận để hiểu rõ vấn đề của khách hàng. Ví dụ, khi hỏi 'may I confirm which version of meta tags that you want to remove? Shopify or from our app?', Support đã làm rõ yêu cầu của khách."
+        },
+        "solution": {
+          "score": 3,
+          "justification": "Support đã cung cấp giải pháp đúng và khách hàng xác nhận vấn đề đã được giải quyết. Việc chuyển vấn đề cho technical team và thông báo kết quả cho khách hàng cho thấy quy trình giải quyết vấn đề hiệu quả."
+        },
+        "proactiveness": {
+          "score": 2,
+          "justification": "Support chủ động cung cấp hướng dẫn chi tiết để khách hàng cấp quyền truy cập cho technical team. Điều này giúp khách hàng dễ dàng thực hiện theo và đẩy nhanh quá trình giải quyết vấn đề."
+        },
+        "transferring": {
+          "score": 2,
+          "justification": "Support đã chuyển case cho technical team để giải quyết vấn đề 'Multiple Meta Tags' sau khi xác nhận yêu cầu của khách hàng. Đây là một hành động đúng đắn vì vấn đề này cần sự can thiệp của kỹ thuật."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Support có chia sẻ hướng dẫn bằng hình ảnh, nhưng có thể bổ sung thêm các resources khác như link tới trang help của SearchPie để khách hàng tự tìm hiểu thêm thông tin về meta tags."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Support đã đề nghị hỗ trợ miễn phí mặc dù vấn đề của khách hàng chỉ được hỗ trợ trong gói Enterprise. Đây là một hành động vượt ngoài mong đợi và thể hiện sự quan tâm đến khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Support đã xin review vào cuối cuộc trò chuyện. Câu xin review lịch sự và cung cấp đường link trực tiếp đến trang review của ứng dụng."
+        }
+      },
+      "overall_summary": "Nhìn chung, đây là một hội thoại hỗ trợ khách hàng khá tốt. Support nhiệt tình, chu đáo và giải quyết vấn đề hiệu quả. Tuy nhiên, Support cần chú ý hơn đến việc giới thiệu tên và brand ngay từ tin nhắn đầu tiên, và tận dụng thêm các resources có sẵn để cung cấp cho khách hàng. Việc xin review cũng được thực hiện đúng cách.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+                      }
+  }
+]

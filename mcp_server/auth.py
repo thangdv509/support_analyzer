@@ -20,6 +20,7 @@ import hashlib
 import logging
 import secrets
 import time
+from contextlib import asynccontextmanager
 from urllib.parse import urlencode
 
 import httpx
@@ -314,6 +315,12 @@ def build_auth_app(
 
     # ── Compose app ──────────────────────────────────────────────────────
 
+    @asynccontextmanager
+    async def lifespan(app):
+        # Forward lifespan to inner MCP app so its task group gets initialized
+        async with mcp_asgi.router.lifespan_context(app):
+            yield
+
     routes = [
         Route("/.well-known/oauth-authorization-server", well_known_auth_server),
         Route("/.well-known/oauth-protected-resource",   well_known_protected_resource),
@@ -327,4 +334,5 @@ def build_auth_app(
     return Starlette(
         routes=routes,
         middleware=[Middleware(BearerTokenMiddleware, base_url=base_url)],
+        lifespan=lifespan,
     )

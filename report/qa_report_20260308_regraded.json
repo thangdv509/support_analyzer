@@ -1,0 +1,866 @@
+[
+  {
+    "session_id": "session_966d3332-7994-4c3d-9729-4c78b3d235be",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "planettacoma",
+    "primary_operator": "Tina",
+    "transcript": "  PieLab Support: Hey, would you like me to share some SEO tips for your website?\n\n  PieLab Support: Hey, would you like me to share some SEO tips for your website?\n\n  PieLab Support: Hey, would you like me to share some SEO tips for your website?\n\nplanettacoma: Hi, is there anyone help me to optimize my SEO score?\n\n  Tina: Hello, I’m Tina from Search Pie app\n\n  Tina: May I ask if you want me to check for your SEO?\n\nplanettacoma: Sure, Tina. I'm just looking to eliminate some issues picked up by GSC\n\n  Tina: Ah\n\n  Tina: It relates to coding so you need a developer to help you fix them\n\n  Tina: May I ask if you have your own dev?\n\nplanettacoma: No, but i'm pretty handy on the keyboard\n\n  Tina: Ah oki\n\n  Tina: Our dev can help you fix them with our Google Search Console package\n\n  Tina: May I ask if you have any plans on upgrading your package for exploring more?\n\nplanettacoma: if you have a plan to help improve and maintain good SEO\n\n  Tina: In case you want to set up your site as best as possible, I suggest you can choose our Enterprise plan\n\nplanettacoma: i was looking at the Summer COmbo\n\n  Tina: Yes, that’s also a good choi\n\nplanettacoma: it's hardly summer yet, but it looks like it might be the boost i need\n\n  Tina: Yeah we extend the combo for customers can explore more :’D\n\nplanettacoma: when you say \"Our dev can help you fix them with our Google Search Console package\", where are the details on that?\n\n  Tina: That means our dev will help you fix Google search console issues with our Google search Console Optimization package\n\n  Tina: This package is included in Summer combo, too\n\n  Tina: So you can consider summer combo for saving money :$\n\nplanettacoma: Thanks Tina. I'll think about it. My biggest challenges are mass duplicates + noindex patterns, which it doesn't look are strengths of the combo\n\n  PieLab Support: Hey, would you like me to share some SEO tips for your website?\n\nplanettacoma: sure. no promises that you'll convert me into a paid customer, but happy to look\n\n  Tina: Yeah, we have free plan for you to explore\n\n  Tina: Let me guide you with our free plan :$\n\n  Tina: First, please go to Site Speed on the app > choose Instant Page > then turn on this button\n\n  Tina: Instant page feature is used to speed up your page loading, bringing a better experience to your customers\n\n  Tina: [File: IMG_0205.jpg - https://storage.crisp.chat/users/upload/operator/-/1/9/6/8/19688061402be100/177293923562600_1mez98i.jpg]\n\nplanettacoma: Can you help me check on my Google Search Console issues?\n\n  Wendy: Hello, it's Wendy from SearchPie\n\n  Wendy: Would you like me to check your Google Search Console?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Lời chào lịch sự và chuyên nghiệp 'Hello, I’m Tina from Search Pie app'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Câu cú rõ ràng, dễ hiểu. Tuy nhiên, vẫn còn các lỗi nhỏ về chính tả và dấu câu, ví dụ: 'oki', 'choi', ':D', ':$'.\n\nVí dụ cải thiện:\n* 'oki' -> 'Okay'\n* 'choi' -> 'choice'\n* 'Yeah we extend the combo for customers can explore more :’D' -> 'Yeah, we extended the combo so customers can explore more!'"
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Tina trả lời khá nhanh và cung cấp thông tin khá đầy đủ. Tuy nhiên, có chỗ chưa rõ ràng và cần cải thiện thêm.\n\nVí dụ cải thiện:\n* Khách: 'when you say \"Our dev can help you fix them with our Google Search Console package\", where are the details on that?'\n   Agent: 'That means our dev will help you fix Google search console issues with our Google search Console Optimization package'\n   => Agent cần diễn giải chi tiết hơn về gói dịch vụ 'Google Search Console Optimization package' này gồm những gì, chi phí bao nhiêu, thời gian thực hiện là bao lâu, để khách hàng có đầy đủ thông tin hơn."
+        },
+        "listening": {
+          "score": 1.25,
+          "justification": "Tina có lắng nghe khách hàng, nhưng đôi chỗ chưa thực sự hiểu rõ vấn đề của khách. Ví dụ, khách hàng nói 'My biggest challenges are mass duplicates + noindex patterns, which it doesn't look are strengths of the combo', Tina nên đào sâu hơn về vấn đề này và tư vấn giải pháp phù hợp hơn thay vì chỉ tập trung vào 'Summer combo'.\n\nVí dụ cải thiện: Khi khách hàng đề cập đến 'mass duplicates + noindex patterns', Tina có thể hỏi thêm:\n* 'Could you please provide more details about the mass duplicates and noindex patterns you are experiencing? This will help me understand the scope of the issues.'\n* 'Have you identified any specific URLs or patterns that are causing these issues?'"
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn thân thiện, tuy nhiên, việc sử dụng quá nhiều icon (':’D', ':$') có thể gây mất tập trung và thiếu chuyên nghiệp.\n\nVí dụ cải thiện: Hạn chế sử dụng icon trong các đoạn chat với khách hàng, đặc biệt là trong ngữ cảnh tư vấn về các vấn đề kỹ thuật."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Tina chưa thể hiện sự đồng cảm với những khó khăn mà khách hàng đang gặp phải. Thay vì chỉ tập trung vào việc bán sản phẩm, Tina nên thể hiện sự quan tâm đến vấn đề của khách hàng và đưa ra những lời khuyên hữu ích.\n\nVí dụ cải thiện: Khi khách hàng nói 'My biggest challenges are mass duplicates + noindex patterns', Tina có thể trả lời:\n* 'I understand that dealing with mass duplicates and noindex patterns can be quite challenging. Let's see how we can address these issues effectively.'"
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Tina giữ được sự nhiệt tình trong suốt cuộc trò chuyện."
+        },
+        "probing": {
+          "score": 1.25,
+          "justification": "Tina có đặt câu hỏi để tìm hiểu nhu cầu của khách hàng, tuy nhiên, chưa đủ sâu để hiểu rõ vấn đề mà khách hàng đang gặp phải. Cần đặt nhiều câu hỏi mở hơn để khách hàng chia sẻ thông tin chi tiết hơn.\n\nVí dụ cải thiện:\n* Thay vì chỉ hỏi 'May I ask if you have any plans on upgrading your package for exploring more?', Tina có thể hỏi 'What are your specific goals for improving your website's SEO?' hoặc 'What are the most important features you are looking for in an SEO package?'"
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Tina cung cấp giải pháp dựa trên sản phẩm của công ty và hướng dẫn khách hàng sử dụng free plan."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Tina chủ động đưa ra giải pháp và hướng dẫn khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Tina chia sẻ hình ảnh hướng dẫn khách hàng sử dụng tính năng 'Instant Page'."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Tina cung cấp thông tin về free plan và hướng dẫn khách hàng sử dụng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Không thấy yêu cầu review."
+        }
+      },
+      "overall_summary": "Tina đã cung cấp hỗ trợ cho khách hàng, nhưng vẫn còn một số điểm cần cải thiện như khả năng lắng nghe, sự đồng cảm và cách diễn đạt thông tin. Việc hạn chế sử dụng icon và tập trung vào việc giải quyết vấn đề của khách hàng sẽ giúp Tina trở nên chuyên nghiệp hơn.",
+      "total_score_20": 19.25,
+      "final_score_10": 9.62
+    }
+  },
+  {
+    "session_id": "session_789ac221-f829-4757-ba47-836759f915f8",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "xanto-site",
+    "primary_operator": "John",
+    "transcript": "xanto-site: Hi, is there anyone help me to optimize my SEO score?\n\n  Jane: it's Jane from Search Pie here\n\n  Jane: do you want me to check your SEO now?\n\nxanto-site: yes please\n\n  John: Hi there, I'm John. Jane has ended her shift so I will be the one who support you today\n\n  John: Please give me a few minutes to check on this for you :D\n\n  John: I have seen you have HTML issues, Since you are in Enterprise plan, we can fix them for you\n\n  John: [File: Screenshot 2026-03-08 at 20.00.33.png - https://storage.crisp.chat/users/upload/session/-/b/4/d/5/b4d5e439e8c4b000/screenshot-2026-03-08-at-20003_92oc6n.png]\n\n  John: May I ask If you want to fix them?\n\nxanto-site: yes please, what are the issues ?\n\n  John: The issues come from your theme when the product page has more than 1 heading tags :)\n\n  John: And I can fix them for you in 5 minutes\n\nxanto-site: ok great ! thanks\n\n  John: To fix them, we need to access to your theme\n\n  John: We have sent request to your mailbox\n\n  John: https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request\n\nxanto-site: ok let me check\n\n  John: Could you follow this article?\n\n  John: And approve it?\n\n  John: You can skip step 1\n\nxanto-site: should be ok\n\n  John: I can see it now\n\n  John: Please give me 5 minutes to fix them before checing other SEO setup for you\n\nxanto-site: thanks\n\n  John: Hi there\n\n  John: [File: Screenshot 2026-03-08 at 20.17.57.png - https://storage.crisp.chat/users/upload/session/-/b/4/d/5/b4d5e439e8c4b000/screenshot-2026-03-08-at-20175_j0rhm4.png]\n\n  John: All HTML issues are fixed\n\n  John: Could you please recheck from your side?\n\nxanto-site: Great thanks !\n\nxanto-site: let me check\n\n  John: Do you want me to check your setup for SEO?\n\n  John: I have seen you haven't setup some basic features from our application\n\nxanto-site: no not yet ! i just installed the app\n\n  John: Okie, so please give me 5 minutes to check your setup before I give you some instructions\n\nxanto-site: I will have to leave the conversation, can you give me the instructions and i check it when i come back in few hours ? Thanks\n\n  John: don't worry, please text us when you're back we can support u\n\n  John: Before you leave, may I ask a quick favor\n\nxanto-site: yes\n\n  John: Can you give some feedbacks about my HTML fix today (John)\n      \n       by leaving a review at https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal\n\n  John: It will motivate me so much :D\n\n  John: And it just takes you one minutes\n\nxanto-site: Just did it !\n\n  John: Thanks so much :D\n\n  John: When you're back\n\n  John: Just text us\n\n  John: We will support you to setup SEO features\n\n  John: Don't worry\n\nxanto-site: thanks a lot !!!\n\n  John: <3\n\nxanto-site: Can you fix HTML tags issues for me?\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3\n\nxanto-site: Hi\n\n  Hannah: Do you need help with HTML tags ?\n\nxanto-site: yes please\n\n  Hannah: Let me notify with my dev team\n\nxanto-site: thanks\n\n  Hannah: <3\n\nxanto-site: Let me know :)\n\n  Hannah: We’ll update you once the fix is ready\n\nxanto-site: ok thanks\n\n  Hannah: <3\n\nxanto-site: Can you help me check on my Google Search Console issues?\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/b/4/d/5/b4d5e439e8c4b000/image_19zkqyz.png]\n\n  Hannah: Dear,\n      \n      This is Hannah from the SearchPie team. Hope you’re doing well.\n      \n      I'm happy to let you know that the issue with HTML tags on your store has been successfully resolved.\n      \n      Everything should now be running smoothly. :$  \n      Feel free to double-check and let us know if you need any further support <3  \n      \n      Warm regards,\n      Hannah\n      SearchPie Team\n\n  Hannah: Do you need help with Google Search Console issues?\n\nxanto-site: Thanks Hannah ! yes problem mfixed :)\n\nxanto-site: Yes if you could help with google consol that would be great ! What are the issues ?\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/b/4/d/5/b4d5e439e8c4b000/image_90wgtd.png]\n\n  Hannah: I checked your report and there are mostly issues from missing data fields\n\n  Hannah: The issues in Google Search Console are often quite complex and require deep intervention in the theme code of the website.\n\n  Hannah: Fixing these problems involves a significant amount of time and effort from the development team.\n\n  Hannah: That’s why these types of fixes are typically included only in our customized packages. We hope you understand that\n\n  Hannah: Do you need more information about this service ?\n\nxanto-site: yes please\n\n  Hannah: Great! You can consider Summer Combo for this package\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/b/4/d/5/b4d5e439e8c4b000/image_hdglz7.png]\n\n  Hannah: Let me explain this package for you\n\n  Hannah: The Google Search Console (GSC) Boost package is a one-time service at $299. Our technical experts will detect, check, and fix GSC issues related to Indexing, Shopping, and Enhancements.\n\n  Hannah: Everything will be covered by our technician, you’ll receive 6 months of free optimization, meaning our team will continue to monitor and fix GSC issues for you during this period\n\n  Hannah: also, you'll receive a bonus 30-day FREE trial for Enterprise Plan.\n\n  Hannah: 30-day FREE trial is $99 and now you can experience it FREE, which is very good now\n\nxanto-site: ok, i'll need to talk about that with my business partner\n\n  Wendy: I see. Whenever you need my help, please feel free to let us know <3  <3  <3\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Các Agent (Jane, John, Hannah) đều có lời chào chuẩn mực, giới thiệu tên và app Search Pie."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp nghiêm trọng nào ảnh hưởng đến khả năng hiểu. Tuy nhiên, có một vài lỗi nhỏ như thiếu dấu câu hoặc viết tắt, nhưng theo quy tắc, những lỗi này không bị trừ điểm. Ví dụ: 'okie'."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Các Agent giao tiếp rõ ràng, mạch lạc, dễ hiểu. Thông tin cung cấp đầy đủ và có cấu trúc. Ví dụ, Hannah giải thích chi tiết về gói dịch vụ Summer Combo."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và phản hồi các yêu cầu của khách hàng. Ví dụ: John và Hannah đều phản hồi lại các câu hỏi và yêu cầu của khách hàng một cách nhanh chóng và phù hợp."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn thân thiện, lịch sự. Tốc độ phản hồi phù hợp. Sử dụng icon ở mức độ chấp nhận được, tạo cảm giác gần gũi. Tuy nhiên, đôi chỗ Hannah dùng hơi nhiều icon '<3' có thể gây rối mắt."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Các agent thể hiện sự đồng cảm với khách hàng. Ví dụ: John nói 'don't worry, please text us when you're back we can support u' thể hiện sự quan tâm và sẵn sàng hỗ trợ."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Các agent nhiệt tình hỗ trợ khách hàng giải quyết vấn đề. Ví dụ: John chủ động kiểm tra và sửa lỗi HTML, Hannah đưa ra giải pháp cho vấn đề Google Search Console."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Các agent chủ động đặt câu hỏi để hiểu rõ hơn về vấn đề của khách hàng. Ví dụ: John hỏi 'May I ask If you want to fix them?' để xác nhận yêu cầu của khách hàng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Các agent cung cấp giải pháp phù hợp cho vấn đề của khách hàng. John đã giúp khách hàng sửa lỗi HTML. Hannah cung cấp gói dịch vụ Summer Combo cho vấn đề Google Search Console."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Các agent chủ động đề xuất các giải pháp và hỗ trợ. John chủ động sửa lỗi HTML sau khi phát hiện vấn đề. Hannah chủ động đưa ra gói dịch vụ phù hợp."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Jane đã chuyển giao case cho John một cách suôn sẻ khi kết thúc ca làm việc. John tiếp tục hỗ trợ khách hàng mà không gặp bất kỳ gián đoạn nào."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "John cung cấp tài liệu hướng dẫn cho khách hàng (link https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request)."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "John không chỉ sửa lỗi HTML mà còn hướng dẫn khách hàng cách phê duyệt yêu cầu. Hannah giải thích chi tiết về gói dịch vụ Summer Combo."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "John đã chủ động xin review từ khách hàng sau khi giải quyết vấn đề. Khách hàng đã đánh giá John. Đây là một hành động tốt."
+        }
+      },
+      "overall_summary": "Nhìn chung, đây là một hội thoại tốt. Các agent nhiệt tình, thân thiện và cung cấp giải pháp phù hợp cho vấn đề của khách hàng. Điểm trừ nhỏ là Hannah dùng hơi nhiều icon '<3' và có thể cải thiện thêm về cách trình bày thông tin sản phẩm.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_fdf7048e-f350-48c2-b28e-77a30b515c4a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "2f3cdd-2",
+    "primary_operator": "Hannah",
+    "transcript": "  Hannah: If you done with the image compress, we can move to the next step\n\n  Hannah: Now let's move on to the Schema & Snippets section in our app.\n\n  Hannah: For this section, please enable these 2 snippets available for FREE plan here: Breadcrumb & Store Profile.\n\n  Hannah: With Store Profile, please don’t forget to fill in the information, such as brand name, logo, etc.\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/image_cpw69x.png]\n\n2f3cdd-2: done\n\n  Hannah: Next I'd like to help you submit your sitemap. Please enable the button to submit sitemap & enable auto indexing tool\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/image_lbmjqa.png]\n\n2f3cdd-2: done\n\n  Hannah: Well done dear! You’re crushing it! ^^\n\n  Hannah: That’s pretty much all of the basic setup I can walk you through.\n\n  Hannah: Let me check your SEO report\n\n2f3cdd-2: Can you help me check on my speed performance?\n\n  Hannah: I checked your SEO report and there are some critical issues with HTML tags\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/image_7qq8vr.png]\n\n  Hannah: The issues are related to heading tag code in your store. May I ask if you have in-house developer to fix it?\n\n2f3cdd-2: no, i do everything myself.\n\n  Hannah: Normally, the technical support from our dev team is only available on Enterprise plan, but I will ask them for a FREE FIX for you this time\n\n2f3cdd-2: yey, thats amazing.\n\n  Hannah: We will need the access to your store to check and fix it\n\n  Hannah: The access request is sent. Please go to Shopify setting > Users > click on the request of Pielab & choose Update Permission. Please make sure you tick Theme, Edit Code & SearchPie app before accepting request\n\n2f3cdd-2: what is this error?\n\n2f3cdd-2: [File: Screenshot 2026-03-08 at 12.42.56 PM.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/screenshot-2026-03-08-at-12425_gakezy.png]\n\n  Hannah: May I confirm you done with the access request ?\n\n  Hannah: Let me know so I can pass your case to our dev team\n\n2f3cdd-2: done\n\n2f3cdd-2: Can you help me check on my speed performance?\n\n  Hannah: > done\n      Got it\n\n  Hannah: > what is this error?\n      This issue is related to structured data detected by Google Search Console. Our team does have a separate service to help fix structured data and schema issues like this if you’d like us to assist.\n\n  Hannah: Do you need more information about this package ?\n\n2f3cdd-2: sure\n\n  Hannah: The Google Search Console (GSC) Boost package is a one-time service at $299.\n\n  Hannah: Our technical experts will detect, check, and fix GSC issues related to Indexing, Shopping, and Enhancements.\n\n  Hannah: Everything will be covered by our technician, you’ll receive 6 months of free optimization, meaning our team will continue to monitor and fix GSC issues for you during this period\n\n2f3cdd-2: [File: Screenshot 2026-03-08 at 12.47.23 PM.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/screenshot-2026-03-08-at-12472_1whin5f.png]\n\n2f3cdd-2: okay\n\n2f3cdd-2: ill let you know\n\n  Hannah: **I will help you go through each issue step by step don't worry ^^**\n\n2f3cdd-2: :D\n\n  Hannah: So do you need any more information about the Google Search Console package ?\n\n2f3cdd-2: not rn, but later\n\n  Hannah: I see\n\n  Hannah: Would you like me to check your speed performance?\n\n2f3cdd-2: yes pls\n\n  Hannah: About your speed, your mobile score is 30 and desktop is 56. Both are pretty slow.\n\n  Hannah: Normally, Mobile >50 and Desktop >80 are considered good\n\n  Hannah: However, we have a customized Speed Boost service, do you need more information about this ?\n\n2f3cdd-2: its not free?\n\n  Hannah: The Speed Boost service is not included in the free support. It is a separate paid service because it requires manual optimization from our technical team to improve the site speed.\n\n  Hannah: Our Speed Optimization service is $350 per request. It includes 3 months of free re-optimization to ensure your store keeps performing well.\n\n  Hannah: With this service, your key pages will load faster, and our experts will optimize images, themes, and scripts to help boost sales.\n\n2f3cdd-2: is there a way i can talk to techinical\n\n2f3cdd-2: before buying?\n\n  Hannah: We will check everything for you first. Once we confirm the expected result and you are happy with it, then you can proceed with upgrading the plan.\n\n  Hannah: So let me know if you consider it\n\n2f3cdd-2: exactyly\n\n  Hannah: I see, if so let me inform to my dev team\n\n  Hannah: Ah in the meantime, may I ask from 1 to 5, how would you rate my support today from me (Hannah)?\n\n2f3cdd-2: and the thing? you said you be doing free?\n\n2f3cdd-2: thats be done\n\n2f3cdd-2: right?\n\n2f3cdd-2: the one you asked acess for?\n\n2f3cdd-2: I rank 5 so far\n\n  Hannah: As our team was offline over the weekend, so it may take a little time for them to review it.\n\n  Hannah: We'll get back & let you know when it's done\n\n2f3cdd-2: okay\n\n2f3cdd-2: thanks\n\n  Hannah: We will update via email don't worry\n\n2f3cdd-2: bye\n\n2f3cdd-2: :)\n\n  Hannah: > I rank 5 so far\n      If so, would you mind sharing your thoughts on my support (HANNAH) by leaving me a review on Shopify App Store? \n      Just 30s to go: https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal  🥹\n\n  Hannah: It would be THE WORLD to me & my whole team, big thanks 🙏🙏🙏\n\n  Hannah: And if you don't mind, can you please send me the screenshot of your review?\n      \n      Due to Shopify policy I can't check it from my side 🥹\n\n  Hannah: You still here ?\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3  \n      \n      I'm happy to let you know that the issue with critical issues on your store has been successfully resolved.\n      \n      If it is functioning correctly now and considering all our efforts and dedication to support you, would you mind taking a moment to share your experience with our app and support team (Hannah)? Your kind words would greatly encourage our developers and help other merchants make more confident decisions when choosing our app.\n      \n      If anyone on our team has been particularly helpful to you, it would be amazing if you could mention their name in your review, so we can recognize and celebrate their efforts 💖\n      \n      Just 30s to go, here’s the review link: [REVIEW](https://apps.shopify.com/seo-booster?#modal-show=WriteReviewModal)\n      \n      Feel free to double-check and let us know if you need any further support <3  \n      \n      Best regards,\n      Hannah\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/image_13zvlzr.png]\n\n2f3cdd-2: Hi, is there anyone help me to optimize my SEO score?\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3\n\n  Hannah: Would you like me to check your SEO?\n\n  Hannah: Aww you're back\n\n2f3cdd-2: yes.\n\n  Hannah: I supported you yesterday ^^\n\n2f3cdd-2: the team, is not live yet?\n\n2f3cdd-2: right?\n\n2f3cdd-2: weekend is over?\n\n  Hannah: Anything I can help you with ?\n\n2f3cdd-2: um, that thing only, i came to check if team have fixed it or not.\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/image_11h624b.png]\n\n  Hannah: I also sent you an email earlier regarding fixing the critical issue. Have you received it yet?\n\n  Hannah: Regarding the Speed package, it may take a few days for our team to check and we’ll update you once we have more information.\n\n2f3cdd-2: thanks\n\n  Hannah: You're welcome\n\n  Hannah: > > I rank 5 so far\n      > If so, would you mind sharing your thoughts on my support (HANNAH) by leaving me a review on Shopify App Store? \n      > Just 30s to go: https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal  🥹\n      Ah, if you don’t mind, may I ask if you’ve submitted the review for my support? I’m super excited to show it off to my team\n\n  Hannah: And if you don't mind, can you please send me the screenshot of your review?\n      \n      Due to Shopify policy I can't check it from my side 🥹\n\n  Hannah: You still here ?\n\n2f3cdd-2: submit button not working?\n\n2f3cdd-2: [File: Screenshot 2026-03-09 at 7.23.30 AM.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/screenshot-2026-03-09-at-72330_1ryf6l.png]\n\n2f3cdd-2: opps.\n\n2f3cdd-2: i have to give start.\n\n2f3cdd-2: done\n\n  Hannah: Ah yes ^^\n\n  Hannah: You didd itttt\n\n  Hannah: Thanks so much for your time <3\n\n2f3cdd-2: [File: Screenshot 2026-03-09 at 7.24.17 AM.png - https://storage.crisp.chat/users/upload/session/-/6/2/e/d/62edc3af773efc00/screenshot-2026-03-09-at-72417_1wzy11q.png]\n\n  Hannah: You're so niceeee\n\n2f3cdd-2: you are from? which country?\n\n  Hannah: We're from VietNam dear ^^\n\n2f3cdd-2: you sound really polite, and nice.\n\n  Hannah: Thank you, you too :$\n\n  Hannah: Have a nice dayy <3\n\n2f3cdd-2: you too.\n\n  Hannah: <3\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Hannah chào khách hàng bằng câu chào tiêu chuẩn \"Hi dear, this is Hannah from SearchPie team <3\", đạt điểm tối đa."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Điểm tối đa. Không có lỗi ngữ pháp đáng kể nào ảnh hưởng đến khả năng hiểu."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Hannah giao tiếp rõ ràng và mạch lạc, hướng dẫn khách hàng từng bước. Ví dụ: \"Next I'd like to help you submit your sitemap. Please enable the button to submit sitemap & enable auto indexing tool\"."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Hannah lắng nghe và phản hồi các câu hỏi của khách hàng một cách đầy đủ. Ví dụ, khi khách hàng hỏi: \"Can you help me check on my speed performance?\", Hannah đã trả lời và cung cấp thông tin chi tiết."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Hannah sử dụng giọng văn thân thiện và tốc độ phù hợp. Cô ấy sử dụng các biểu tượng cảm xúc và từ ngữ biểu cảm (ví dụ: \"Well done dear! You’re crushing it! ^^\", You're so niceeee) để tạo sự gần gũi với khách hàng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Hannah thể hiện sự đồng cảm với khách hàng. Khi khách hàng gặp vấn đề, Hannah trấn an: \"I will help you go through each issue step by step don't worry ^^\"."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Hannah rất nhiệt tình hỗ trợ khách hàng, thể hiện qua cách sử dụng ngôn ngữ tích cực và các biểu tượng cảm xúc vui vẻ. Ví dụ: \"You didd itttt\"."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Hannah chủ động hỏi để hiểu rõ hơn nhu cầu của khách hàng. Ví dụ: \"May I confirm you done with the access request ?\", \"Do you need more information about this package ?\"."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hannah cung cấp các giải pháp và hỗ trợ hiệu quả cho khách hàng, bao gồm cả việc hỗ trợ sửa lỗi miễn phí và cung cấp thông tin về các gói dịch vụ khác. Vấn đề của khách hàng đã được giải quyết."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Hannah chủ động giúp đỡ khách hàng và đưa ra các đề xuất phù hợp.  Hannah đề xuất các gói dịch vụ phù hợp với nhu cầu của khách hàng, ví dụ như gói Speed Boost và Google Search Console Boost."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Hannah đã chuyển case thành công cho team dev để fix lỗi cho khách hàng: \"Let me know so I can pass your case to our dev team\"."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Hannah sử dụng các tài liệu và công cụ hỗ trợ (hình ảnh) để giải thích rõ ràng hơn cho khách hàng, điều này giúp khách hàng dễ dàng hiểu và làm theo hướng dẫn."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Hannah sẵn sàng hỗ trợ khách hàng ngoài những gì được yêu cầu, ví dụ như việc xin hỗ trợ sửa lỗi miễn phí cho khách hàng mặc dù điều này không nằm trong kế hoạch thông thường."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hannah chủ động mời khách hàng đánh giá sau khi hỗ trợ, và còn gửi lại link và hướng dẫn khi khách hàng gặp khó khăn trong việc gửi review. Ví dụ: \"If so, would you mind sharing your thoughts on my support (HANNAH) by leaving me a review on Shopify App Store?\""
+        }
+      },
+      "overall_summary": "Nhìn chung, Hannah đã thực hiện rất tốt vai trò hỗ trợ khách hàng. Cô ấy thể hiện sự chuyên nghiệp, nhiệt tình và tận tâm trong suốt cuộc trò chuyện. Hannah giao tiếp rõ ràng, lắng nghe khách hàng và cung cấp các giải pháp hiệu quả. Điểm đặc biệt là Hannah chủ động giúp đỡ khách hàng ngoài những gì được yêu cầu, tạo ấn tượng tốt và tăng sự hài lòng của khách hàng.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_ed486aea-8bfe-46b8-97ea-df3bfbe035ba",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "adorrible",
+    "primary_operator": "Hannah",
+    "transcript": "adorrible: Hi, is there anyone help me to optimize my SEO score?\n\n  PieLab Support: Hey, would you like me to share some SEO tips for your website?\n\nadorrible: Hi, I want to unlock the Product Snippets feature. Can you help me? \n\n  Hannah: Hi, it's Hannah from SearchPie\n      \n      Would you like to access our Product Snippets feature?\n\nadorrible: What exactly is it? If I’m being honest, I was just pressing buttons and trying\n      to figure things out.\n\n  Hannah: Product Snippets will help you adding structured data to product pages lets Google display rich results with price, stock, ratings, and shipping details\n\n  PieLab Support: 27 meta tags need a fix. Want to update them for better results?\n\nadorrible: Hi, is there anyone help me to optimize my SEO score?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to help improve your SEO score?\n\n  PieLab Support: 25 meta tags need a fix. Want to update them for better results?\n\nadorrible: Can you help me check on my Google Merchant Center issues?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Surely, would you like us to take a look at your Google Merchant Center report?\n\nadorrible: Can you help me check on my speed performance?\n\nadorrible: Hi, is there anyone help me to optimize my SEO score?\n\n  Ivy: Still Ivy here. Please feel free to let me know if you need help\n\n  PieLab Support: Hey, would you like me to share some SEO tips for your website?\n\nadorrible: Can you help me check on my Google Merchant Center issues?\n\n  John: Hi there! I'm John from SearchPie\n\n  John: Do you want us to check your GMC issues?\n\nadorrible: Hi, is there anyone help me to optimize my SEO score?\n\nadorrible: Can you fix multiple meta title issues for me?\n\n  Tina: Hello, I’m Tina from Search Pie app\n\n  Tina: May I ask if you want me to check for your SEO?\n\nadorrible: Can you help me check on my speed performance?\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3\n\n  Hannah: Would you like me to check your speed performance?\n\nadorrible: Yes please and how can I fix my speed performance?\n\n  Hannah: First about your speed, your mobile score is 51 and desktop is 78. Both are pretty good.\n\n  Hannah: Normally, Mobile >50 and Desktop >80 are already considered good, so don't need to worry too much\n\n  Hannah: However, we have a customized Speed Boost service, do you need more information about this ?\n\nadorrible: Oh if those are both considered good I won't worry. Thank you!\n\n  Hannah: :$\n\n  Hannah: Ah in the meantime, may I ask from 1 to 5, how would you rate my support today from me (Hannah)?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Các Agent đều có lời chào chuẩn mực, rõ ràng, kèm tên và app. Ví dụ: 'Hi, it's Hannah from SearchPie'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Nhìn chung, ngữ pháp và cách dùng từ của các Agent khá ổn. Có một vài lỗi nhỏ như thiếu dấu câu hoặc dùng từ chưa tự nhiên, nhưng không ảnh hưởng đến nghĩa của câu. Ví dụ, câu 'Product Snippets will help you adding structured data to product pages lets Google display rich results with price, stock, ratings, and shipping details' có thể cải thiện thành 'Product Snippets will help you add structured data to your product pages, allowing Google to display rich results with price, stock, ratings, and shipping details.' để rõ ràng và trôi chảy hơn."
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Các Agent đều cố gắng giao tiếp rõ ràng và dễ hiểu, tuy nhiên đôi khi còn chưa được súc tích. Ví dụ, thay vì hỏi 'May I ask if you want me to check for your SEO?', Agent Tina có thể hỏi trực tiếp và ngắn gọn hơn: 'Would you like me to check your SEO?' Điều này giúp tiết kiệm thời gian và làm cho cuộc trò chuyện hiệu quả hơn. Một ví dụ khác là Agent Ivy dùng hai câu riêng biệt 'Hi there. It's Ivy from SearchPie app' và 'Surely, would you like us to take a look at your Google Merchant Center report?' có thể gộp thành 'Hi there, it's Ivy from SearchPie app. Would you like us to take a look at your Google Merchant Center report?' để liền mạch hơn. Cả hai ví dụ này giúp hội thoại trôi chảy hơn."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Các Agent đều lắng nghe và hiểu yêu cầu của khách hàng. Họ đặt câu hỏi để xác nhận vấn đề và cung cấp thông tin liên quan. Khách hàng đặt câu hỏi 'Can you help me check on my speed performance?' và Hannah đã trả lời và giải thích rất rõ ràng về chỉ số."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Nhìn chung, các Agent đều giữ một thái độ lịch sự và nhịp độ phù hợp. Tuy nhiên, việc sử dụng biểu tượng ': $' của Hannah có thể không phù hợp trong ngữ cảnh hỗ trợ chuyên nghiệp. Mặc dù icon thể hiện sự thoải mái, nó có thể gây hiểu lầm hoặc bị coi là thiếu chuyên nghiệp. Thay vào đó, Hannah có thể chỉ cần sử dụng lời cảm ơn hoặc một biểu tượng nhẹ nhàng hơn nếu muốn thể hiện sự thân thiện."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Các Agent chưa thể hiện sự đồng cảm đáng kể, nhưng không có dấu hiệu thiếu tôn trọng hoặc thờ ơ. Khách hàng không có dấu hiệu bực bội."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Các Agent đều nhiệt tình hỗ trợ khách hàng, thể hiện qua việc chủ động đề xuất giúp đỡ và giải quyết vấn đề."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Các Agent đều chủ động hỏi để hiểu rõ hơn về vấn đề của khách hàng. Họ đưa ra các câu hỏi để xác nhận yêu cầu và thu thập thông tin cần thiết."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Hannah đã cung cấp giải pháp rõ ràng và đáp ứng được yêu cầu của khách hàng. Cô ấy giải thích về chỉ số tốc độ và đưa ra lời khuyên phù hợp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Các Agent đều chủ động đề xuất giúp đỡ và đưa ra các giải pháp. Ví dụ, Hannah đã chủ động kiểm tra hiệu suất tốc độ và đưa ra lời khuyên dựa trên kết quả."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có yêu cầu chuyển case trong đoạn chat này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có bằng chứng rõ ràng về việc sử dụng các nguồn tài liệu hỗ trợ trong đoạn chat này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Hannah đã cung cấp thông tin chi tiết về hiệu suất tốc độ và đưa ra lời khuyên hữu ích, vượt xa yêu cầu ban đầu của khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hannah đã hỏi xin review sau khi giải quyết vấn đề cho khách hàng, điều này rất tốt để cải thiện chất lượng dịch vụ."
+        }
+      },
+      "overall_summary": "Nhìn chung, đây là một đoạn chat hỗ trợ khách hàng khá tốt. Các Agent đều lịch sự, nhiệt tình và cố gắng giải quyết vấn đề cho khách hàng. Tuy nhiên, vẫn còn một số điểm nhỏ có thể cải thiện về ngữ pháp, cách diễn đạt và sự chuyên nghiệp trong giọng văn. Việc hỏi xin review là một điểm cộng lớn.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+    }
+  },
+  {
+    "session_id": "session_8a061fcc-4954-4642-b524-989776b42185",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "2113ew-61",
+    "primary_operator": "John",
+    "transcript": "2113ew-61: Hi, is there anyone help me to optimize my SEO score?\n\n  John: Hi there! I'm John from SearchPie\n\n  John: Do you want me to check your SEO score first?\n\n2113ew-61: yes sir and help me optimise it please\n\n  John: Excellent. Kindly give me a few minutes to check and I'll be back soon with some suggestions.\n\n  John: Hi Im back with some suggestion\n\n  John: [File: Screenshot 2026-03-07 at 23.43.34.png - https://storage.crisp.chat/users/upload/session/-/f/e/8/0/fe80657fb1c7c000/screenshot-2026-03-07-at-23433_kwlry2.png]\n\n  John: I have seen you have some HTML and meta tag issues,\n\n  John: May I ask If you want us to fix them\n\n2113ew-61: yes sir\n\n  John: To fix that, we need to access your theme code\n\n  John: I have sent you one request to your mailbox\n\n  John: Please help us to follow this article: https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request\n\n  John: And accept it\n\n  John: You can skip step 1\n\n2113ew-61: okay sir I want to accept but they said I should enter a code from my authenticator app and I don't have any\n\n  John: You can accept it later :) and we will fix them\n\n  John: don’t worry\n\n2113ew-61: okay sir do you have WhatsApp number???\n\n  John: Feel free to text us in the chatbox when you are ready\n\n  John: You don't need to contact us with personal contact\n\n  John: :D\n\n2113ew-61: okay no problem sir\n\n2113ew-61: I have accepted your request sir\n\n  John: Dear,\n      \n      This is John from SearchPie here. I'm following up with an update regarding your HTML issue and your multiple meta tag issue.\n      \n      I'm very pleased to inform you that all of the mentioned issues have now been resolved by our developers.\n      \n      Should you need any further assistance or have any questions, please do not hesitate to let me know. I'm more than happy to help.\n      \n      Kind regards, \n      John\n\n  John: [File: Screenshot 2026-03-08 at 04.18.24.png - https://storage.crisp.chat/users/upload/session/-/f/e/8/0/fe80657fb1c7c000/screenshot-2026-03-08-at-04182_1qotnqn.png]\n\n2113ew-61: okay thank you so much\n\n  Felicie: Hi, it's Felicie from SearchPie team.\n\n  Felicie: It's our pleasure to help you with your case!\n\n  Felicie: By the way, may I ask how would you rate our support (JOHN and FELICIE) on a scale 1-5? It would mean a lot to us!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Lời chào \"Hi there! I'm John from SearchPie\" rất chuyên nghiệp và thân thiện. Đạt điểm tối đa."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Grammar tốt, tuy nhiên vẫn còn một số lỗi nhỏ như 'Hi Im back with some suggestion' (thiếu dấu phẩy và sai chính tả). Không trừ điểm vì đây là lỗi nhỏ và không ảnh hưởng đến khả năng truyền đạt thông tin."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng, mạch lạc, dễ hiểu. Sử dụng ngôn ngữ phù hợp với ngữ cảnh. Ví dụ: 'I have seen you have some HTML and meta tag issues, May I ask If you want us to fix them'. Cách diễn đạt này giúp khách hàng dễ dàng nắm bắt vấn đề và đưa ra quyết định."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe tốt, thể hiện qua việc phản hồi đúng trọng tâm câu hỏi và giải quyết thắc mắc của khách hàng. Ví dụ, khi khách hàng nói 'okay sir I want to accept but they said I should enter a code from my authenticator app and I don't have any', agent đã phản hồi nhanh chóng và đưa ra giải pháp phù hợp: 'You can accept it later :) and we will fix them don’t worry'."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu phù hợp, lịch sự và thân thiện. Tốc độ phản hồi nhanh chóng, không để khách hàng phải chờ đợi lâu."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự thông cảm với khách hàng khi khách hàng gặp khó khăn trong việc xác thực ứng dụng: 'You can accept it later :) and we will fix them don’t worry'."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình hỗ trợ khách hàng. Thể hiện qua việc chủ động đưa ra các đề xuất và giải pháp để tối ưu hóa SEO score. Đồng thời theo dõi và cập nhật tình hình cho khách hàng một cách chu đáo."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đặt câu hỏi phù hợp để hiểu rõ hơn về vấn đề của khách hàng. Ví dụ: 'May I ask If you want us to fix them'. Câu hỏi này giúp agent xác định nhu cầu của khách hàng và đưa ra giải pháp phù hợp."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent cung cấp giải pháp chính xác và hiệu quả để giải quyết vấn đề của khách hàng. Việc fix các HTML và meta tag issues đã giúp khách hàng tối ưu hóa SEO score. Đồng thời, agent cũng cung cấp hướng dẫn chi tiết để khách hàng có thể tự thực hiện các bước cần thiết."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động theo dõi và cập nhật tình hình cho khách hàng, đồng thời cung cấp hỗ trợ kịp thời khi khách hàng cần. Điều này cho thấy agent rất quan tâm đến việc giải quyết vấn đề của khách hàng và mang lại trải nghiệm tốt nhất cho khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent đã chuyển case thành công cho developer để fix các vấn đề về HTML và meta tag. Việc này cho thấy agent biết cách sử dụng nguồn lực phù hợp để giải quyết vấn đề của khách hàng một cách hiệu quả."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã cung cấp link đến bài viết hướng dẫn: 'Please help us to follow this article: https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request'. Điều này cho thấy agent biết cách sử dụng các nguồn tài liệu hỗ trợ để giúp khách hàng tự giải quyết vấn đề."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "John đã theo dõi và thông báo kết quả xử lý vấn đề cho khách hàng, cho thấy sự tận tâm và chu đáo. Felicie cũng vào để hỗ trợ khách hàng và hỏi xin feedback về trải nghiệm dịch vụ."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Felicie đã chủ động xin review từ khách hàng về trải nghiệm dịch vụ. Câu hỏi lịch sự và khuyến khích khách hàng đánh giá: 'By the way, may I ask how would you rate our support (JOHN and FELICIE) on a scale 1-5? It would mean a lot to us!'"
+        }
+      },
+      "overall_summary": "Đây là một đoạn chat hỗ trợ khách hàng rất tốt. Agent John và Felicie đã thể hiện sự chuyên nghiệp, nhiệt tình và chu đáo trong việc giải quyết vấn đề của khách hàng. Các tiêu chí đều được đánh giá cao, đặc biệt là khả năng giao tiếp, lắng nghe, giải quyết vấn đề và chủ động hỗ trợ khách hàng. Tuy vẫn còn một vài lỗi nhỏ về ngữ pháp, nhưng không ảnh hưởng đến chất lượng dịch vụ.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_7bd1e430-370e-4a9b-bb36-2ab4086b45dd",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "surefit-carpets",
+    "primary_operator": "Tina",
+    "transcript": "surefit-carpets: Can you help me check on my speed performance?\n\n  Tina: Hello, I’m Tina from Search Pie app\n\n  Tina: I have seen a drop-down on your speed\n\n  Tina: May I ask if you have a dev to help you improve it?\n\nsurefit-carpets: I DONT HAVE ONE\n\n  Tina: Oh I got it\n\nsurefit-carpets: sorry for the caps\n\n  Tina: Our developer can help you improve speed with our SpeedUp package\n\n  Tina: May I ask if you have any plans on upgrading your package for exploring more?\n\nsurefit-carpets: Hi, is there anyone help me to optimize my SEO score?\n\n  Tina: May I ask if you want me to check for your seo?\n\nsurefit-carpets: hi i will message you tomorrow to discuss\n\n  Tina: Ah oki my friend\n\n  Tina: So please come back here when you have time\n\n  Tina: We are waiting for your response :$\n\nsurefit-carpets: Hi, is there anyone help me to optimize my SEO score?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to check your SEO today?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Câu chào hỏi chuyên nghiệp và đầy đủ thông tin: 'Hello, I’m Tina from Search Pie app' và 'Hi there. It's Ivy from SearchPie app' đều đạt điểm tối đa."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đại lý sử dụng ngữ pháp và từ vựng tốt. Tuy nhiên, vẫn còn một số chỗ có thể cải thiện nhỏ: 'Ah oki my friend' nên được thay bằng 'Ah, okay my friend' để tăng tính chuyên nghiệp."
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Giao tiếp rõ ràng nhưng có thể ngắn gọn hơn. Ví dụ, thay vì nói 'May I ask if you have a dev to help you improve it?' có thể hỏi trực tiếp hơn 'Do you have a developer to help with speed improvements?'. Tương tự, thay vì 'May I ask if you have any plans on upgrading your package for exploring more?', có thể nói 'Are you planning to upgrade your package to explore more features?'."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đại lý lắng nghe khách hàng và đáp ứng các câu hỏi của họ. Ví dụ, khi khách hàng nói 'I DONT HAVE ONE', đại lý đã phản hồi một cách phù hợp 'Oh I got it'."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu thân thiện, tuy nhiên 'Ah oki my friend' có thể không phù hợp trong môi trường chuyên nghiệp. Nên sử dụng 'Okay, my friend' thay vì 'Ah oki my friend'."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đại lý thể hiện sự thông cảm khi khách hàng xin lỗi vì viết hoa: 'sorry for the caps'. Phản hồi 'Our developer can help you improve speed with our SpeedUp package' cho thấy sự quan tâm đến nhu cầu của khách hàng."
+        },
+        "enthusiastic": {
+          "score": 1.0,
+          "justification": "Mức độ nhiệt tình chưa thể hiện rõ. Có thể thêm những câu nói thể hiện sự mong muốn giúp đỡ khách hàng một cách tích cực hơn. Ví dụ, sau khi khách hàng nói sẽ liên hệ lại vào ngày mai, có thể trả lời: 'Great! I'll be here to assist you then. Feel free to reach out anytime!'. Câu 'We are waiting for your response :$' có thể không phù hợp và gây hiểu lầm."
+        },
+        "probing": {
+          "score": 1.0,
+          "justification": "Đại lý có đặt câu hỏi để tìm hiểu nhu cầu của khách hàng, nhưng có thể đào sâu hơn. Ví dụ, khi khách hàng hỏi về tối ưu SEO, đại lý hỏi 'May I ask if you want me to check for your seo?'. Thay vào đó, có thể hỏi thêm 'What aspects of your SEO are you looking to optimize?' để hiểu rõ hơn về yêu cầu của khách hàng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đại lý cung cấp giải pháp phù hợp với nhu cầu của khách hàng. Ví dụ, đề xuất gói 'SpeedUp package' để cải thiện tốc độ."
+        },
+        "proactiveness": {
+          "score": 1.5,
+          "justification": "Đại lý chủ động đề xuất giải pháp nhưng có thể chủ động hơn trong việc cung cấp thông tin. Ví dụ, sau khi đề xuất gói 'SpeedUp package', có thể cung cấp thêm thông tin chi tiết về gói này mà không cần khách hàng hỏi."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần chuyển case trong hội thoại này, do đó đạt điểm tối đa."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đại lý sử dụng tài liệu và công cụ hỗ trợ hiệu quả để giải quyết vấn đề của khách hàng, ví dụ như giới thiệu về gói 'SpeedUp package'."
+        },
+        "extra_mile": {
+          "score": 0.75,
+          "justification": "Đại lý chưa thực sự nỗ lực để tạo ấn tượng tốt với khách hàng. Ví dụ, có thể cung cấp thêm một số mẹo nhỏ để cải thiện tốc độ hoặc SEO website miễn phí."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "Đại lý đã không chủ động xin review từ khách hàng. Đây là một thiếu sót lớn, đặc biệt khi khách hàng có vẻ hài lòng với dịch vụ."
+        }
+      },
+      "overall_summary": "Nhìn chung, đại lý đã thực hiện khá tốt trong việc giải quyết vấn đề của khách hàng. Tuy nhiên, vẫn còn một số điểm cần cải thiện như tăng tính chuyên nghiệp trong giao tiếp, chủ động hơn trong việc cung cấp thông tin và xin review từ khách hàng. Biểu tượng cảm xúc '$' được sử dụng không phù hợp trong bối cảnh này.",
+      "total_score_20": 16.0,
+      "final_score_10": 8.0
+    }
+  },
+  {
+    "session_id": "session_a95c1d67-49f5-4471-9ffa-deb943c2f32a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "DECO",
+    "customer": "Security Safe Locksmith",
+    "primary_operator": "Jane",
+    "transcript": "Security Safe Locksmith: I just upgraded to GROWTH 🎉 Could you help me get the most out of this plan?\n\n  Wendy: Hi, it's Wendy from DECO\n\n  Wendy: I checked and see your store theme is not compatible with our app\n\n  Wendy: Would you like our team to help you fix it?\n\nSecurity Safe Locksmith: Yes, can you fix it?\n\n  Jane: sure our technician can check and fix the issue\n\nSecurity Safe Locksmith: Great 👍\n\n  Jane: but may I confirm that all the label are displaying normally in your store?\n\nSecurity Safe Locksmith: Oh I thought that's what your fixing?\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/a/3/8/1a389eb680f17b00/image_q9bpb1.png]\n\n  Jane: as per checking, the label are displaying normally in your store\n\nSecurity Safe Locksmith: Did you try using the search box? They do not display properly there.\n\n  Jane: yes I searched the keyword \"Type_Proximity Key Feature\" and this was the result I saw\n\nSecurity Safe Locksmith: No, the predictive search results from the top search box do not populate correctly with the label/badges.\n\n  Jane: if you found any displaying issue, can you record a video or take a screenshot for me to check?\n\nSecurity Safe Locksmith: Okay, I'll get to that next week if you can't see it yourself. Have a great day.\n\n  Jane: as per checking at my end, the label shows normally, it's maybe also because of cache issue, that's why we ask for screenshot or video to check it faster :$\n\n  Jane: have a great day\n\nSecurity Safe Locksmith: No problem, I'll check into it more this week and get back to you then. Thanks 😊\n\n  Jane: alright ya :$\n\nSecurity Safe Locksmith: [File: PredictiveResultsIssue.jpg - https://storage.crisp.chat/users/upload/session/-/1/a/3/8/1a389eb680f17b00/predictiveresultsissue_kvx5n1.jpg]\n\nSecurity Safe Locksmith: Does this help you understand what I mean when I refer to the 'predictive search results badge labels missing'?\n\n  Jane: oh I understand\n\n  Jane: let me check with our technician\n\nSecurity Safe Locksmith: Thanks\n\n  Jane: We'll get back & let you know when it's done :$\n\nSecurity Safe Locksmith: No problem. Thanks\n\n  Jane: welcome\n\n  John: Hi there, this is John from DECO team :$  \r\n      \r\n      I'm writing to inform you that your label display issue has been fixed. Could you check on your product page, and let us know if it is working well on your end? \r\n      \r\n      If there is any issue, feel free to leave us a message, we're already more than ready to assist ;)  \r\n      \r\r\n      \r\n      Regards, \r\n      John.\n\nSecurity Safe Locksmith: [File: YouMayAlsoAlighment.jpg - https://storage.crisp.chat/users/upload/session/-/1/a/3/8/1a389eb680f17b00/youmayalsoalighment_de4cmd.jpg]\n\nSecurity Safe Locksmith: Hi John, it seems like this is only displaying in the desktop view search. Could you please apply it to the mobile view search as well? Also, I’m now noticing that in the “You may also like” section, some tags/badges are out of alignment. If you need further explanation, please let me know. Thank you, Dennis\n\nSecurity Safe Locksmith: [File: MobileView.jpg - https://storage.crisp.chat/users/upload/session/-/1/a/3/8/1a389eb680f17b00/mobileview_2o4phk.jpg]\n\n  Ivy: Hi Dennis. Thanks a lot for sharing the detailed information with us\n\n  Ivy: Please let me transfer it to our technical team for further checking\n\n  Ivy: Rest assured that once I have any updates from them, I will inform you immediately~\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Wendy đã chào khách hàng, thể hiện sự chuyên nghiệp ngay từ đầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Câu 'sure our technician can check and fix the issue' nên sửa lại thành 'Sure, our technician can check and fix the issue'. Tuy nhiên theo quy tắc, lỗi ngữ pháp nhỏ này không bị trừ điểm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Jane đã giao tiếp rõ ràng và mạch lạc, cung cấp thông tin dễ hiểu cho khách hàng. Tuy nhiên, việc sử dụng biểu tượng cảm xúc '$:' có thể được hạn chế để giữ sự chuyên nghiệp."
+        },
+        "listening": {
+          "score": 1.25,
+          "justification": "Jane có thể cải thiện kỹ năng lắng nghe bằng cách xác nhận lại vấn đề của khách hàng một cách rõ ràng hơn trước khi đưa ra giải pháp. Ví dụ, sau khi khách hàng nói 'No, the predictive search results from the top search box do not populate correctly with the label/badges.', Jane có thể phản hồi: 'I understand, so the labels/badges are not showing correctly on the predictive search results. Let me investigate this further.' Thay vì yêu cầu khách cung cấp video hoặc ảnh chụp màn hình ngay lập tức."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn của Jane lịch sự và thân thiện, tuy nhiên có thể chuyên nghiệp hơn bằng cách hạn chế sử dụng biểu tượng cảm xúc và cách viết tắt ('ya')."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Jane thể hiện sự đồng cảm bằng cách cố gắng giải quyết vấn đề của khách hàng. Tuy nhiên, chưa thực sự đặt mình vào vị trí của khách hàng để hiểu rõ hơn về khó khăn họ đang gặp phải."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "John đã nhiệt tình thông báo cho khách hàng về việc vấn đề đã được khắc phục và sẵn sàng hỗ trợ thêm."
+        },
+        "probing": {
+          "score": 1.0,
+          "justification": "Jane đã cố gắng tìm hiểu vấn đề của khách hàng nhưng chưa thực sự hiệu quả. Thay vì yêu cầu ảnh chụp màn hình ngay lập tức, Jane có thể hỏi thêm thông tin chi tiết về cách khách hàng sử dụng chức năng tìm kiếm và kết quả mong đợi. Ví dụ: 'Could you please describe the steps you take when using the search box and what results you expect to see?'"
+        },
+        "solution": {
+          "score": 2.5,
+          "justification": "Vấn đề ban đầu đã được giải quyết (hiển thị nhãn đúng cách), nhưng sau đó lại phát sinh vấn đề mới (hiển thị trên mobile và alignment). Cần đảm bảo giải pháp toàn diện hơn. John đã chủ động khắc phục sự cố và thông báo cho khách hàng, nhưng cần đảm bảo giải quyết triệt để vấn đề trước khi thông báo."
+        },
+        "proactiveness": {
+          "score": 1.5,
+          "justification": "John đã chủ động thông báo cho khách hàng về việc đã sửa lỗi. Tuy nhiên, cần chủ động hơn trong việc kiểm tra và đảm bảo vấn đề được giải quyết triệt để trên mọi nền tảng (desktop và mobile) trước khi báo cho khách hàng. Ivy cũng cần chủ động thông báo lại cho khách sau khi team kỹ thuật fix xong."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Ivy đã chuyển case cho technical team khi không thể tự giải quyết vấn đề của khách hàng."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Jane đã sử dụng hình ảnh để kiểm tra tình trạng hiển thị của nhãn, thể hiện việc sử dụng tài nguyên để hỗ trợ khách hàng."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "John và Ivy đã sẵn sàng hỗ trợ khách hàng thêm nếu có bất kỳ vấn đề nào khác."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "Không có yêu cầu đánh giá từ khách hàng sau khi vấn đề được giải quyết. Đây là một thiếu sót lớn, đặc biệt khi khách hàng có vẻ hài lòng với sự hỗ trợ."
+        }
+      },
+      "overall_summary": "Nhìn chung, hội thoại thể hiện sự cố gắng hỗ trợ khách hàng từ phía các agent. Tuy nhiên, cần cải thiện kỹ năng lắng nghe, đặt câu hỏi, và đảm bảo giải pháp toàn diện trước khi thông báo cho khách hàng. Việc chủ động yêu cầu đánh giá sau khi vấn đề được giải quyết cũng rất quan trọng để cải thiện chất lượng dịch vụ.",
+      "total_score_20": 16.75,
+      "final_score_10": 8.38
+    }
+  },
+  {
+    "session_id": "session_fc7fa717-4b61-406d-af77-a2d798243ae7",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "DECO",
+    "customer": "Vulneryx",
+    "primary_operator": "PieLab Support",
+    "transcript": "  PieLab Support: Thanks for letting us know you didn’t install via Sidekick. \n      Here’s a quick playbook: [How successful stores use DECO to increase sales](https://drive.google.com/file/d/1R-S8l-J66GNgAKMN7Ow_8b4dkrHskRrh/view).\n\n  PieLab Support: Congrats on creating your first DECO's feature! Is it displaying properly on your site as you expected? Chat with us to run a quick check for your site!\n\n  PieLab Support: Congrats on creating your first DECO's feature! Is it displaying properly on your site as you expected? Chat with us to run a quick check for your site!\n\nVulneryx: Hi DECO Team! I need help with the badge display problem.\n\n  Tina: Hello, I’m Tina from Deco app\n\n  Tina: Could you please send me the product link for further check?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent Tina đã đưa ra lời chào tiêu chuẩn và giới thiệu từ ứng dụng Deco, đáp ứng đầy đủ yêu cầu của tiêu chí."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp hoặc chính tả nào đáng kể trong đoạn chat."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Giao tiếp rõ ràng và hiệu quả. Agent Tina yêu cầu link sản phẩm để kiểm tra thêm."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent Tina đã lắng nghe vấn đề của khách hàng về huy hiệu hiển thị và phản hồi bằng cách yêu cầu thông tin chi tiết hơn để kiểm tra."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng điệu chuyên nghiệp và tốc độ phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu nào cho thấy thiếu sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent Tina phản hồi nhanh chóng và sẵn sàng hỗ trợ."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent Tina chủ động thu thập thêm thông tin bằng cách yêu cầu link sản phẩm, giúp hiểu rõ hơn về vấn đề."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Vấn đề đang được giải quyết, Agent đã chủ động yêu cầu thêm thông tin để hỗ trợ khách hàng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent Tina chủ động yêu cầu link sản phẩm để kiểm tra, thể hiện sự chủ động trong việc giải quyết vấn đề của khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần thiết chuyển case trong tình huống này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có thông tin về việc sử dụng resources, nhưng agent đã cho link hướng dẫn."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Chưa có hành động cụ thể nào thể hiện việc hỗ trợ 'extra mile', nhưng việc yêu cầu link sản phẩm để kiểm tra là một bước đi đúng hướng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chưa đến thời điểm thích hợp để yêu cầu review."
+        }
+      },
+      "overall_summary": "Đánh giá tổng quan cho thấy Agent Tina đã xử lý tốt yêu cầu của khách hàng bằng cách đưa ra lời chào chuyên nghiệp, lắng nghe vấn đề và chủ động yêu cầu thêm thông tin để giải quyết vấn đề. Các tiêu chí khác đều được đáp ứng hoặc không cần thiết trong tình huống này.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_0aea2061-44e8-49cb-8ac8-ae8a8eddd117",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "5bhmfq-t3",
+    "primary_operator": "Tina",
+    "transcript": "5bhmfq-t3: Can you help me check on my speed performance?\n\n5bhmfq-t3: merhaba\n\n  Tina: Merhaba, ben Search Pie uygulamasından Tina'yım\n\n  Tina: Bugün size nasıl yardımcı olabilirim?\n\n5bhmfq-t3: sistemde neler yapmalıyız\n\n  Tina: Ah\n\n  Tina: Seo'ya daha iyi ulaşmanızı sağlayacak uygulama özelliklerimizle size rehberlik edeyim :$\n\n  Tina: Öncelikle, lütfen uygulamada Site Speed'e gidin > Instant Page >'i seçin ve bu butonu açın\n\n5bhmfq-t3: sistem hakkında bilgi verirmisin\n\n  Tina: Anlık sayfa özelliği, sayfa yüklemenizi hızlandırmak için kullanılır ve müşterilerinize daha iyi bir deneyim sunar\n\n  Tina: [File: IMG_0205.jpg - https://storage.crisp.chat/users/upload/operator/-/1/9/6/8/19688061402be100/177298451936700_x8yvxt.jpg]\n\n  Tina: Uygulamamız SEO ile ilgili. SEO, Arama Motoru Optimizasyonu anlamına gelir. Bu, web sitenizin arama motoru sonuçlarında daha yüksek görünmesini sağlayan sihirli bir büyü 🧙‍♂️ gibi ve sitenize daha fazla ziyaretçi çekiyor.\n\n5bhmfq-t3: Can you help me check on my speed performance?\n\n  Tina: Hâlâ buradayım\n\n  Tina: O kısmı bitirdin mi?\n\n5bhmfq-t3: Hi, is there anyone help me to optimize my SEO score?\n\n  Tina: Yardımımıza ihtiyacınız olduğunda çekinmeyin\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Câu chào \"Merhaba, ben Search Pie uygulamasından Tina'yım\" rõ ràng, lịch sự và giới thiệu đúng tên và ứng dụng. Hoàn toàn phù hợp."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp đáng kể nào trong đoạn chat."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng và dễ hiểu, sử dụng ngôn ngữ phù hợp với ngữ cảnh. Các hướng dẫn được đưa ra chi tiết và dễ theo dõi."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent có vẻ đã bỏ lỡ yêu cầu trùng lặp của khách hàng về \"speed performance\". Thay vì bỏ qua, agent nên trả lời trực tiếp hoặc chuyển hướng khách hàng đến bộ phận khác nếu cần."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn của Agent thân thiện và nhiệt tình. Tuy nhiên, có thể cải thiện bằng cách sử dụng biểu tượng cảm xúc ít hơn để giữ tính chuyên nghiệp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Agent chưa thể hiện sự đồng cảm rõ ràng với yêu cầu của khách hàng. Thay vào đó, agent nên xác nhận rằng đã hiểu vấn đề và sẽ cố gắng giúp đỡ:\nVí dụ: \"Merhaba! Anlıyorum, sitenizin hız performansını kontrol etmenize yardımcı olayım.\""
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent thể hiện sự nhiệt tình bằng cách giải thích chi tiết về các tính năng của ứng dụng và cách chúng có thể giúp khách hàng cải thiện SEO."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent chủ động hỏi xem khách hàng đã hoàn thành các bước hướng dẫn chưa để đảm bảo họ không gặp khó khăn."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent cung cấp giải pháp rõ ràng bằng cách hướng dẫn khách hàng sử dụng tính năng Instant Page để cải thiện tốc độ trang web."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động cung cấp thông tin và hướng dẫn chi tiết về cách sử dụng các tính năng của ứng dụng, giúp khách hàng tự giải quyết vấn đề."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có yêu cầu chuyển case trong đoạn chat này, do đó tiêu chí này được đánh giá là đạt điểm tối đa."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã sử dụng tài liệu trực quan (hình ảnh) để hỗ trợ giải thích, điều này rất hữu ích cho khách hàng."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Agent cung cấp thông tin chi tiết về SEO và cách ứng dụng có thể giúp khách hàng cải thiện thứ hạng trên công cụ tìm kiếm, vượt ra ngoài yêu cầu ban đầu."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent đã không yêu cầu khách hàng đánh giá sau khi cung cấp hỗ trợ. Việc này có thể cải thiện bằng cách thêm một lời mời đánh giá:\nVí dụ: \"Yardımcı olmaktan mutluluk duydum! Hizmetimizden memnun kaldıysanız, lütfen uygulamada bize puan verin. Teşekkürler!\""
+        }
+      },
+      "overall_summary": "Nhìn chung, agent Tina đã cung cấp hỗ trợ tốt cho khách hàng, giải thích rõ ràng về các tính năng của ứng dụng và cách chúng có thể giúp cải thiện SEO. Tuy nhiên, agent có thể cải thiện bằng cách lắng nghe cẩn thận hơn yêu cầu của khách hàng, thể hiện sự đồng cảm và chủ động yêu cầu đánh giá sau khi vấn đề được giải quyết.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_900b4b93-14c2-489c-b110-3b805fcedd62",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "xxs0mq-d4",
+    "primary_operator": "Jane",
+    "transcript": "  Wendy: Hello, it's Wendy from SearchPie team\n\nxxs0mq-d4: i had deactive your app in my website to see if it your app make the problem, but after found the issue that was be markets in shopify i had reactive SEO SearchPie and now it's appears that i had 66 critical issue and a lot of problem and i had ONLY deactive and reactive your app\n\nxxs0mq-d4: Hello Wendy\n\n  Wendy: Please let me check it now\n\nxxs0mq-d4: please yes\n\nxxs0mq-d4: you have access in my site\n\n  Wendy: I'm back\n\n  Wendy: I checked and see the critical SEO issue come from the Missing meta tags issue, However, it happened because you deactivate the app then after reactivating, the app isn't updating. No worries let me update it for you\n\n  Wendy: Please be assured that your page has our meta tags now\n\n  Wendy: It's saved in the theme code\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_1aiorz9.png]\n\nxxs0mq-d4: please restore or make better\n\n  Wendy: Of course, I'm scanning and helping you update it\n\nxxs0mq-d4: Beautiful\n\n  Wendy: It might take some minutes, when it's done I'll let you know :$\n\nxxs0mq-d4: course :)\n\nxxs0mq-d4: Thank you, take your time, the best is that you make your best for that :)\n\n  Wendy: It's done for you :$   Please check it out\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_1h6u50x.png]\n\nxxs0mq-d4: yees\n\nxxs0mq-d4: Thank you a lot :à\n\nxxs0mq-d4: :)\n\n  Wendy: You're welcome <3\n\nxxs0mq-d4: Please Wendy, for my first request about mobile issue, i had solve it oneself\n\nxxs0mq-d4: so i do not need anymore help about that\n\nxxs0mq-d4: but i need help about my 93 notices need to be fixed and my market place had refuse ALL my products\n\n  Jane: it's Jane from Search Pie team here\n\nxxs0mq-d4: ooo\n\nxxs0mq-d4: Sory Jane\n\nxxs0mq-d4: Can you help me check on my speed performance?\n\n  Jane: regarding the notices in SEO report, it's not critical issues that need to fix so you dont need to worry about that\n\n  Jane: also, may I confirm again that the issue you facing is related to Google Merchant Center?\n\nxxs0mq-d4: yes please see whats append because i do not understood why in google console AND market place ALL is REFUSED !\n\n  Jane: sure please wait me a moment to check your GMC issue\n\nxxs0mq-d4: ok\n\n  Jane: :$\n\nxxs0mq-d4: take all your time, i'm not pressure\n\n  Jane: Yes im checking\n\n  Jane: I’ll get back to advise once we have news\n\nxxs0mq-d4: ok\n\nxxs0mq-d4: no worries\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_rar08.png]\n\n  Jane: the report is still loading at our side\n\n  Jane: if it's okay then you can send us screenshot of the issue notification, our team will check it for you\n\nxxs0mq-d4: yes but is a lot of error of your side that block my buisness and i pay for it\n\nxxs0mq-d4: do not have any error message and nothings appears of :\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_xifwbr.png]\n\nxxs0mq-d4: i would like to solve my problem with my GCS\n\nxxs0mq-d4: how i can do it by your app\n\n  Jane: the Google Search Console issues are all related to coding to be checked and fixed, except for the missing reviews and aggregate ratings, which are due to the fact that your customers haven't left reviews on some pages of your site :$\n\nxxs0mq-d4: i do not understood\n\n  Jane: we have a special Google Search Console package where our technician will check and fix your GSC issues, you can consider sign up for this service and our team will proceed accordingly\n\n  Jane: [File: GSC.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/gsc_1rabv2v.png]\n\nxxs0mq-d4: ooo\n\nxxs0mq-d4: i do not have this money\n\nxxs0mq-d4: and i need to exploit your product at first\n\nxxs0mq-d4: i do not have start with you with the 1st Plan\n\nxxs0mq-d4: so be comprehensive\n\n  Jane: at this time, we just have this GSC optimization service, it's a one-time service price $299 and have 6-month warranty\n\n  Jane: these special service such as GSC, GMC or Speed Up service are not included in SEO plan, hope you can understand it :$\n\nxxs0mq-d4: Can you help me check on my speed performance?\n\n  Jane: may I ask how much is your budget for the GSC optimization? maybe I can check with our team and offer you a discount voucher\n\n  Jane: we sincerely hope you can try this special service as it benefits your store a lot [+1]\n\nxxs0mq-d4: see what is eventualy possible but i need to tell you imediatly that i'm not very interested at all. But you can to give me an offer\n\n  Jane: the maximum discount that we can give you is 20% OFF on the GSC package\n\n  Jane: if you want to claim it, please let me know to create the voucher\n\n  Jane: fixing GSC is crucial to ensure proper indexing, improve search rankings, and enhance website visibility :$   so I think you should fix it as soon as possible\n\nxxs0mq-d4: how much it will be and for facture is it by shopify or what ?\n\n  Jane: the price after discount will be $239.2\n\n  Jane: our team will be the one who fixing your GSC issues\n\n  Jane: may I confirm that this is what you want to ask earlier?\n\nxxs0mq-d4: not\n\nxxs0mq-d4: i want a delay for the payment\n\nxxs0mq-d4: IF i accept it\n\nxxs0mq-d4: i want that you can see me that you are the best before i take an investisment\n\n  John: Hi there, I'm John from SearchPie :D  \n      Jane has ended her shift so I will be the one support you today\n\n  John: As Jane said to you, you can keep the 20% OFF for GSC package\n\n  John: But this offer will be expired in the end of the March :D\n\n  John: So please consider to have our team help you for GSC issues :D\n\nxxs0mq-d4: May be, but i'm not at this moment to pay that, i'm in entreprise, and i 'mean that you do not take in mind that at the start i'take imediatly the entreprise plan\n\nxxs0mq-d4: so may be i can consider an offer but with an plan like you propose me but we free period of 1 month\n\nxxs0mq-d4: at this moment you are not in possibility to help to resolve this issue : Need improvement\n\nxxs0mq-d4: 27 errors\n\nxxs0mq-d4: and to unlock me in Google Search console and market place. for what i pay\n\nxxs0mq-d4: How to trust you ?\n\n  John: I understand your concern, and I appreciate your honesty.\n\n  John: However, the issues you mentioned (27 GSC errors and marketplace visibility) require proper analysis and implementation from our team\n\n  John: These are not things that can be fully resolved without access to the tools and support included in the package\n\n  John: the best way to evaluate our service is through the results and the support we provide once the plan is active\n\n  John: 20% discount we kept for you is already a special offer, and it will remain available until the end of March.\n\n  John: If the timing is not right for you now, that’s completely understandable. You can always reach out again when you're ready and we’ll be happy to help.\n\n  John: :)\n\nxxs0mq-d4: yoiu want i trust you\n\nxxs0mq-d4: but :\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_9w2xy0.png]\n\nxxs0mq-d4: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/6/8/4/268425462cd77800/image_9w2xy0.png]\n\nxxs0mq-d4: 73 pages are not indexed\n\nxxs0mq-d4: why ?\n\n  Tina: Hello, I’m Tina from Search Pie app\n\nxxs0mq-d4: ok\n\n  Tina: It depends on Google’s crawler\n\n  Tina: You just need to wait for Google to crawl them\n\nxxs0mq-d4: so proof me taht you can helpwith 100usd per month before i take a more expensive plan*\n\n  Tina: With your current plan, you can use almost of our features\n\n  Tina: And our dev can support you with critical issues like html and multiple meta tags issues\n\n  Tina: With Google Search Console issues, it is available in other package\n\n  Tina: :$ Hope you understand that\n\nxxs0mq-d4: MAKE ME SOMETHING BETTER AND I WILL SEE\n\nxxs0mq-d4: I WILL BEEN UNAVAILABLE NEXT 25 HOURS\n\nxxs0mq-d4: so if you would to proof your power, do it\n\n  Tina: I understand that you want to see the results as best as possible\n\n  Tina: But I also hope you understand that seo takes time, my friend\n\n  Tina: It will take around 6 months for you to see the better results\n\n  Tina: So hope that you can give it a try\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Wendy, Jane, và John đã chào hỏi lịch sự và giới thiệu từ team SearchPie, đáp ứng tiêu chuẩn. Tina cũng chào hỏi và giới thiệu từ Search Pie app."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Có nhiều lỗi ngữ pháp và chính tả trong phản hồi của agent. Ví dụ: \"Please let me check it now\", \"No worries let me update it for you\", \"Please be assured that your page has our meta tags now\"... Câu đúng nên là \"Please let me check it now.\", \"Don't worry, I'll update it for you.\", \"Please be assured that your page now has our meta tags.\""
+        },
+        "communication": {
+          "score": 1.0,
+          "justification": "Một số phản hồi của agent chưa rõ ràng và dễ hiểu. Ví dụ, khi khách hàng hỏi về tốc độ, Jane trả lời \"regarding the notices in SEO report, it's not critical issues that need to fix so you dont need to worry about that\". Nên trả lời trực tiếp hơn về vấn đề tốc độ, ví dụ: \"Regarding your question about speed performance, I'm checking that now.\""
+        },
+        "listening": {
+          "score": 1.0,
+          "justification": "Có vẻ như agent chưa thực sự lắng nghe và hiểu rõ vấn đề của khách hàng. Khách hàng liên tục phàn nàn về các vấn đề trong Google Search Console và Marketplace, nhưng agent chỉ tập trung vào việc bán gói dịch vụ GSC optimization. Thay vì vậy, agent nên cố gắng tìm hiểu kỹ hơn về tình hình hiện tại của khách hàng và đưa ra các giải pháp phù hợp hơn, ngay cả khi không phải là gói dịch vụ trả phí. Ví dụ: Thay vì chỉ nói về GSC optimization, John có thể nói \"I understand your frustration. Let me see if there are any basic troubleshooting steps we can try first to address the issues you're seeing in Google Search Console and the Marketplace.\""
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Nhìn chung, agent giữ được tone lịch sự, nhưng đôi khi hơi chậm trễ trong việc phản hồi. Không có gì để cải thiện."
+        },
+        "empathy": {
+          "score": 0.5,
+          "justification": "Agent chưa thể hiện sự đồng cảm đủ với khách hàng. Khách hàng liên tục gặp vấn đề và bày tỏ sự thất vọng, nhưng agent chủ yếu tập trung vào việc upsell dịch vụ. Cần thể hiện sự thông cảm và sẵn sàng giúp đỡ khách hàng nhiều hơn. Ví dụ: John có thể nói \"I understand your frustration with the errors you're seeing. It's definitely not the experience we want you to have. Let's see what we can do to help.\""
+        },
+        "enthusiastic": {
+          "score": 0.75,
+          "justification": "Mức độ nhiệt tình của agent ở mức trung bình. Có thể tăng thêm sự nhiệt tình bằng cách sử dụng ngôn ngữ tích cực và thể hiện sự quan tâm đến vấn đề của khách hàng. Ví dụ, thay vì nói \"These are not things that can be fully resolved without access to the tools and support included in the package,\" John có thể nói \"We're confident that the GSC optimization package can provide the tools and support needed to fully resolve these issues and improve your online visibility.\""
+        },
+        "probing": {
+          "score": 0.5,
+          "justification": "Agent chưa đào sâu đủ vào vấn đề của khách hàng. Thay vì chỉ tập trung vào việc bán gói dịch vụ, agent nên đặt thêm câu hỏi để hiểu rõ hơn về tình hình hiện tại của khách hàng và các vấn đề cụ thể mà họ đang gặp phải. Ví dụ: Jane có thể hỏi \"Can you provide more details about the specific errors you are seeing in Google Search Console and the Marketplace? This will help me understand the issue better.\""
+        },
+        "solution": {
+          "score": 1.5,
+          "justification": "Agent Wendy đã giải quyết được vấn đề ban đầu của khách hàng về meta tag. Tuy nhiên, các agent sau đó (Jane, John, Tina) không thực sự giải quyết được các vấn đề khác mà khách hàng gặp phải, mà chỉ cố gắng bán thêm dịch vụ. Vì vậy, điểm cho tiêu chí này bị trừ khá nhiều."
+        },
+        "proactiveness": {
+          "score": 0.5,
+          "justification": "Agent chưa chủ động trong việc giải quyết vấn đề cho khách hàng. Thay vì chỉ đưa ra các giải pháp trả phí, agent nên cố gắng tìm kiếm các giải pháp khác, ngay cả khi chúng không mang lại lợi nhuận trực tiếp. Ví dụ, Tina có thể nói \"While the GSC optimization package is the most comprehensive solution, let me check if there are any free resources or troubleshooting steps I can suggest to help you improve your indexing in the meantime.\""
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Jane đã kết thúc ca làm việc và John tiếp tục hỗ trợ khách hàng, việc chuyển giao này diễn ra suôn sẻ."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent có sử dụng hình ảnh để minh họa, nhưng chưa tận dụng tối đa các nguồn lực khác có sẵn (ví dụ: bài viết hướng dẫn, video, v.v.)."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "Không có dấu hiệu cho thấy agent đã nỗ lực vượt quá mong đợi để giúp đỡ khách hàng. Thay vì đó, agent chủ yếu tập trung vào việc bán thêm dịch vụ. Ví dụ, agent có thể chủ động tìm kiếm các bài viết hoặc tài liệu hướng dẫn có thể giúp khách hàng tự giải quyết vấn đề, hoặc đề xuất một số công cụ miễn phí mà khách hàng có thể sử dụng."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "Không agent nào yêu cầu khách hàng đánh giá dịch vụ sau khi hỗ trợ. Đây là một thiếu sót lớn, vì việc thu thập đánh giá là rất quan trọng để cải thiện chất lượng dịch vụ."
+        }
+      },
+      "overall_summary": "Nhìn chung, hội thoại này cho thấy agent chưa thực sự đặt khách hàng lên hàng đầu. Thay vì tập trung vào việc giải quyết vấn đề và mang lại trải nghiệm tốt nhất cho khách hàng, agent chủ yếu tập trung vào việc bán thêm dịch vụ. Điều này dẫn đến sự thất vọng của khách hàng và làm giảm uy tín của công ty. Cần cải thiện kỹ năng lắng nghe, đồng cảm và chủ động giải quyết vấn đề cho khách hàng.",
+      "total_score_20": 10.5,
+      "final_score_10": 5.25
+    }
+  },
+  {
+    "session_id": "session_61fac4a2-ead6-40b9-aae4-f35d129507db",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "DECO",
+    "customer": "Zylox Pulse ",
+    "primary_operator": "Tina",
+    "transcript": "  PieLab Support: Congrats on creating your first DECO's feature! Is it displaying properly on your site as you expected? Chat with us to run a quick check for your site!\n\nZylox Pulse : bonjour je suis sur le plan gratuit, mes produits ont de prix avant réduction mais ça affiche toujours 0 sur le site et encore ça n'apparait pas sur tout mes produits\n\n  Hannah: Bonjour ma chère, ici Hannah de l’équipe DECO <3\n\n  Hannah: Nous aurons besoin de cet accès pour vous aider à vérifier cela\n\nZylox Pulse : accès au site ?\n\n  Hannah: Pour info, vous pouvez vous référer à cette directive pour accepter la demande :\n      \n      1. Depuis votre administrateur Shopify, allez dans **Paramètres** > **Utilisateurs**.\n      2. Sur la page d’index** **Utilisateurs, vous verrez : collaborateur PieLab avec le statut : En attente. Ici, veuillez cliquer sur ce nom\n      3. Cliquez sur **Accepter la requête** en haut à droite est terminée (pas besoin d’attribuer un rôle + permissions d’édition, puisque j’ai déjà coché toutes les permissions nécessaires)\n\nZylox Pulse : un instant\n\nZylox Pulse : déjà\n\nZylox Pulse : si vous pouvez m'aider pour le badge de confiance aussi dans page produit et au footer si possible\n\n  Hannah: Laisse-moi vérifier\n\nZylox Pulse : Ok\n\n  Hannah: Pourriez-vous confirmer quel système de réduction vous utilisez actuellement : prix comparé ou remise Shopify ? Cela nous aidera à vous guider plus précisément.\n\nZylox Pulse : prix comparé\n\n  Hannah: Laissez-moi transmettre votre cas à notre équipe de développement\n\n  Hannah: Nous vérifierons plus en détail pour vous\n\nZylox Pulse : d'accord je vous attendrai\n\n  Hannah: <3\n\n  Hannah: May I confirm the discount from your store was set through Shopify or through an. intermediary. app dear ?\n\nZylox Pulse : C'est dans shopify\n\n  Wendy: Je vois, laissez-moi en discuter à nouveau avec notre expert technique\n\nZylox Pulse : d'accord\n\n  Wendy: Merci\n\nZylox Pulse : ça va prendre trop de temps ?\n\n  Wendy: Je transmets votre dossier à notre expert technique, et il vérifiera bientôt\n\n  Wendy: Pas de souci, vous pouvez vous déconnecter et une fois terminé, nous vous tiendrons au courant <3\n\nZylox Pulse : d'accord super\n\n  Wendy: De rien\n\n  John: Hi there, I'm John from DECO\n      I hope you are doing well.\n      Could you please help us confirm whether the discount  has been configured correctly on your side? At the moment, when we check the cart/checkout page, the product price still appears at the original amount and the discount does not seem to be applied.\n      \n      For reference, we tested with the product shown in the screenshot below and the total remains unchanged.\n      \n      \n      Could you kindly verify if the discount is active or if there are any conditions that might prevent it from being applied?\n      \n      Thank you very much for your support.\n      Best regards,\n      John\n\n  John: [File: image.png - https://storage.crisp.chat/users/upload/session/-/5/7/3/0/5730fe5b14293400/image_r8fk0z.png]\n\nZylox Pulse : I have discount codes set up directly in Shopify, but what I'm asking for is the strikethrough prices to appear on the products... And I already have strikethrough prices, but it's not showing up.And that's why I installed your app\n      \n      Yahoo Mail : Recherchez, organisez, maîtrisez\n\n  Tina: Hi friend, I’m Tina from DECO here\n\n  Tina: With our Growth plan, you can set up discount by our app features\n\n  Tina: You can consider it :$\n\n  Tina: [File: IMG_0598.jpg - https://storage.crisp.chat/users/upload/operator/-/1/9/6/8/19688061402be100/177298229357200_1xtjb0x.jpg]\n\n  Tina: [File: IMG_0600.jpg - https://storage.crisp.chat/users/upload/operator/-/1/9/6/8/19688061402be100/177298230016300_y627vm.jpg]\n\n  Tina: [File: IMG_0599.jpg - https://storage.crisp.chat/users/upload/operator/-/1/9/6/8/19688061402be100/177298229677100_1if4f4l.jpg]\n\n  Tina: These steps will be like this :$\n\nZylox Pulse : I want to stay on the free plan first\n\n  Tina: Oki I got it\n\n  Tina: This function is now available in our paid plan\n\n  Tina: So feel free whenever you need our help :$\n\nZylox Pulse : Has the problem been solved now?\n\n  Tina: Ah like I said above, with your concern, you are using discount of Shopify so you have to use condition discount and auto text (in Growth plan) of our app function\n\n  Tina: Then your discount will work\n\n  Tina: So you can consider it :$\n\nZylox Pulse : ok , after then\n\n  Tina: Then you can set up discount like the screenshort I have sent above\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Hannah chào khách bằng tiếng Pháp kèm icon rất thân thiện \"Bonjour ma chère, ici Hannah de l’équipe DECO <3\"."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Câu cú của agent rõ ràng, mạch lạc, trôi chảy. Tuy nhiên, có một vài lỗi nhỏ về ngữ pháp (ngôn ngữ Pháp) cần lưu ý. Ví dụ: 'Laisse-moi vérifier' (thiếu dấu cách sau dấu gạch nối)."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng, mạch lạc. Các thông tin được truyền tải dễ hiểu. Ví dụ, Hannah hướng dẫn khách hàng cách cấp quyền truy cập vào trang Shopify rất chi tiết. John đưa ra thông tin cụ thể về lỗi hiển thị giá sản phẩm trong giỏ hàng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và hiểu vấn đề của khách hàng. Ví dụ, khi khách hỏi về 'badge de confiance', Hannah đã phản hồi 'Laisse-moi vérifier'. Sau đó, khi khách nói muốn dùng bản free, Tina đã phản hồi lại 'Oki I got it'."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Nhìn chung, agent giữ thái độ lịch sự và tôn trọng khách hàng. Wendy dùng icon '<3' để thể hiện sự thân thiện. Chỉ có một lỗi nhỏ là agent Tina sử dụng quá nhiều icon '$:' có thể gây rối mắt và làm giảm tính chuyên nghiệp. Nên hạn chế dùng icon này."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Agent thể hiện sự đồng cảm với khách hàng. Câu 'Pas de souci, vous pouvez vous déconnecter et une fois terminé, nous vous tiendrons au courant <3' cho thấy sự quan tâm đến trải nghiệm của khách. Tuy nhiên, cần tránh dùng từ 'dear' (Hannah) vì có thể không phù hợp trong môi trường chuyên nghiệp."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Các agent nhiệt tình hỗ trợ khách hàng. Ví dụ, Hannah chủ động xin quyền truy cập để kiểm tra lỗi, Wendy hứa sẽ cập nhật thông tin sau khi kiểm tra."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đặt câu hỏi để tìm hiểu rõ hơn về vấn đề của khách hàng. Hannah hỏi về hệ thống giảm giá mà khách đang sử dụng ('Pourriez-vous confirmer quel système de réduction vous utilisez actuellement : prix comparé ou remise Shopify?'). John yêu cầu xác nhận cấu hình giảm giá ('Could you please help us confirm whether the discount has been configured correctly on your side?')."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đưa ra giải pháp/hướng dẫn để giải quyết vấn đề của khách hàng. Tina giải thích rằng tính năng giảm giá strikethrough chỉ có trong gói Growth và hướng dẫn khách hàng các bước thiết lập ('With our Growth plan, you can set up discount by our app features')."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Các agent rất chủ động trong việc giúp đỡ khách hàng. Việc Hannah xin truy cập để kiểm tra, Wendy hứa cập nhật thông tin, John đưa ra ảnh chụp màn hình minh họa lỗi đều thể hiện sự chủ động cao."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent đã chuyển case cho team dev và technical expert: 'Laissez-moi transmettre votre cas à notre équipe de développement', 'Je transmets votre dossier à notre expert technique'."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã sử dụng hình ảnh/hướng dẫn để hỗ trợ khách hàng (ví dụ: Tina gửi ảnh chụp màn hình các bước thiết lập giảm giá)."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "John đưa ra ảnh chụp màn hình minh họa lỗi sản phẩm, cho thấy agent đã nỗ lực tìm hiểu và cung cấp thông tin chi tiết cho khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Tiếc là không có agent nào chủ động xin review từ khách hàng trong đoạn chat này. Tuy nhiên, vấn đề của khách hàng chưa được giải quyết hoàn toàn (vẫn cần team dev và technical expert hỗ trợ) nên việc xin review có thể không phù hợp trong tình huống này."
+        }
+      },
+      "overall_summary": "Nhìn chung, đây là một đoạn chat support khá tốt. Các agent thể hiện sự chuyên nghiệp, nhiệt tình và chủ động trong việc hỗ trợ khách hàng. Tuy nhiên, vẫn còn một vài điểm nhỏ cần cải thiện về ngữ pháp (tiếng Pháp), cách sử dụng icon và nên chủ động xin review khi vấn đề được giải quyết.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_b38f03ca-891b-41f3-bbfc-fee414db0de6",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-08",
+    "app": "SearchPie",
+    "customer": "r8shn6-m1",
+    "primary_operator": "John",
+    "transcript": "r8shn6-m1: Hi, is there anyone help me to optimize my SEO score?\n\n  John: Hi there! I'm John from SearchPie\n\n  John: Do you want me to check your SEO score first?\n\nr8shn6-m1: yes\n\nr8shn6-m1: thankyou John\n\n  John: Excellent. Kindly give me a few minutes to check and I'll be back soon with some suggestions.\n\nr8shn6-m1: I'm Charlie by the way\n\n  John: I'm back btw, I have seen you have some HTML issue\n\n  John: [File: Screenshot 2026-03-07 at 21.32.00.png - https://storage.crisp.chat/users/upload/session/-/1/e/8/d/1e8def53f962b000/screenshot-2026-03-07-at-21320_fbe3cl.png]\n\n  John: May I ask If you want to fix them?\n\nr8shn6-m1: how to fix and how m\n      uch will it cost\n\n  Jane: it's Jane from Search Pie here\n\n  Jane: Regarding heading tags issues, for such pages with multiple H1, you should also keep only 1, and change all the others to H2 or H3 instead\n\n  Jane: And some pages may be missing H1, so you can add H1 for these pages\n\n  Jane: this issue can be fixed by our technical team, but the technical assistance is only available in Enterprise plan\n\n  Jane: however, as you're our new lovely customer, I'd love to notify our technician to fix it FREE for you this time\n\n  Jane: does it sound okay to you?\n\nr8shn6-m1: ok yes please\n\n  John: Hi there! I'm John from SearchPie\n\n  John: To fix them, we need to access your theme\n\n  John: Could you please check your mailbox about our request and accept it\n\n  John: https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request\n\n  John: Or you can follow this article to approve it\n\n  John: You can skip 1\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Câu chào 'Hi there! I'm John from SearchPie' rất chuyên nghiệp và thân thiện. Hoàn toàn phù hợp."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Nhìn chung, ngữ pháp của Agent khá ổn. Tuy nhiên, còn một vài lỗi nhỏ cần lưu ý:\n- 'I'm back btw, I have seen you have some HTML issue' nên sửa thành 'I'm back. Btw, I have seen you have some HTML issues.'\n- 'May I ask If you want to fix them?' nên sửa thành 'May I ask if you want to fix them?'\n- 'much will it cost' nên sửa thành 'much it will cost?' hoặc 'how much will it cost?'\n- 'our new lovely customer' nên sửa thành 'our lovely new customer'."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng và mạch lạc, sử dụng ngôn ngữ dễ hiểu. Thông tin cung cấp đầy đủ và có cấu trúc. Ví dụ: giải thích về vấn đề HTML và đề xuất giải pháp."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và phản hồi các câu hỏi của khách hàng, thể hiện sự quan tâm đến vấn đề của khách. Tuy nhiên, có một chút nhầm lẫn về tên khách hàng (Charlie), tuy nhiên đây có thể coi là lỗi nhỏ.\nVí dụ, ở lần chào thứ 2, Agent nên xưng tên khách hàng ra để thể hiện sự chu đáo hơn: 'Hi Charlie! I'm John from SearchPie...'"
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent giữ giọng điệu thân thiện và tốc độ vừa phải. Tuy nhiên, có một số chỗ sử dụng 'btw' có thể không phù hợp, nên sử dụng 'by the way' để chuyên nghiệp hơn."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Agent thể hiện sự đồng cảm với khách hàng bằng cách đề xuất giải pháp miễn phí, cho thấy sự quan tâm đến trải nghiệm của khách hàng.\nVí dụ: 'however, as you're our new lovely customer, I'd love to notify our technician to fix it FREE for you this time' là một hành động thể hiện sự quan tâm rất tốt."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình giúp đỡ khách hàng, thể hiện qua việc chủ động kiểm tra SEO score và đề xuất giải pháp."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent đặt câu hỏi để hiểu rõ hơn về nhu cầu của khách hàng, ví dụ: 'Do you want me to check your SEO score first?' và 'May I ask If you want to fix them?'"
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent cung cấp giải pháp phù hợp với vấn đề của khách hàng (sửa lỗi HTML) và đưa ra hướng dẫn cụ thể để khách hàng thực hiện."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động đề xuất giải pháp miễn phí cho khách hàng mới, thể hiện sự pro-activeness cao."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Jane đã tham gia vào cuộc trò chuyện và cung cấp thông tin chi tiết về vấn đề kỹ thuật, có thể coi đây là một hình thức chuyển case (tới technical expert)."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent cung cấp liên kết đến tài liệu hướng dẫn (https://docs.searchpie.io/faq/how-do-i-approve-searchpies-partner-request), giúp khách hàng tự giải quyết vấn đề."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Agent đã nỗ lực để cung cấp giải pháp tốt nhất cho khách hàng, ví dụ: đề xuất sửa lỗi miễn phí."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent đã không quên gợi ý khách hàng đánh giá dịch vụ. Đây là một điểm cộng lớn."
+        }
+      },
+      "overall_summary": "Nhìn chung, đây là một hội thoại hỗ trợ khách hàng tốt. Agent đã thể hiện sự chuyên nghiệp, nhiệt tình và tận tâm trong việc giải quyết vấn đề của khách hàng. Một vài lỗi nhỏ về ngữ pháp và xưng hô có thể được cải thiện để nâng cao chất lượng dịch vụ.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

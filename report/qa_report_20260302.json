@@ -1,0 +1,75 @@
+[
+  {
+    "session_id": "session_5e61b324-6faa-4bf1-b667-eff9dd75b940",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-02",
+    "app": "SearchPie",
+    "customer": "de-clock",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David]\n\nde-clock: yes please\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/7/5/9/9/759946bff8555400/image_lct905.png]\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3   \n      \n      We’ve checked the Google Search Console issues, and most of them are related to missing structured data fields.\n      \n      Regarding GSC-related errors, we actually offer a separate service package specifically for handling and optimizing structured data and fixing Search Console issues.\n      \n      If you’re interested, we can share more details about that package with you.\n      \n      Looking forward to hearing from you soon. ⭐\n      \n      Best regards, \n      Hannah\n\nde-clock: what exactly you telling me ? I’m uninstalled other apps for your services fix my faq indexes as you say, paying for schema you should fix it or I’m cancelling\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/7/5/9/9/759946bff8555400/image_x1rer9.png]\n\n  Hannah: I think there might be a misunderstanding here. In your previous message, you asked us to check the Google Search Console issue so I helped you check it\n\n  Hannah: However, that is a different service, so I’ve sent you a separate email with the report and details about that issue\n\n  Hannah: About the FAQ, let me notify with my team to help you check further\n\n  Hannah: Really sorry for the confusion <3\n\n  David: Dear, \n      \n      This is David from SearchPie here. Just a quick follow up. \n      \n      To handle the said issues for you, can you prove our team access to your Google Search Console account? \n      \n      You can provide our team access using our email: searchpie@pielab.io \n      \n      You can find out how to add our team [HERE](https://support.google.com/webmasters/answer/7687615?hl=en#zippy=%2Cadd-or-remove-verified-owners%2Cadd-or-remove-users-or-delegated-owners)\n      \n      Looking forward to your update, \n      \n      Best, \n      David\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David đã giới thiệu tên và thương hiệu rõ ràng."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Ngữ pháp và từ vựng ổn, không có lỗi gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "David đã truyền đạt thông tin về việc cần truy cập GSC và hướng dẫn rõ ràng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David đã tiếp nối từ cuộc hội thoại trước đó liên quan đến 'said issues' (vấn đề mà Hannah đã đề cập và khách hàng phản ứng) và yêu cầu thông tin cần thiết để giải quyết."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "David có tông giọng lịch sự, chuyên nghiệp. Phản hồi kịp thời sau tin nhắn trước đó của khách hàng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng đang bức xúc về việc bị tính phí nhưng vấn đề chưa giải quyết và 'misunderstanding' với Hannah. David không thể hiện sự cảm thông trực tiếp cho sự bức xúc này. Một câu như 'I understand your frustration' hoặc 'Sorry for the confusion you've experienced' sẽ tốt hơn."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David sẵn lòng hỗ trợ và chủ động đưa ra bước tiếp theo để giải quyết vấn đề."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "David yêu cầu quyền truy cập GSC là một bước probing cần thiết để điều tra và khắc phục vấn đề."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "David đã đưa ra bước tiếp theo hợp lý và cần thiết để bắt đầu quá trình giải quyết vấn đề. Dù chưa có giải pháp cuối cùng, đây là hướng đi đúng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David chủ động theo dõi (follow up) và đưa ra hành động cụ thể để giải quyết vấn đề của khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không có dấu hiệu cần chuyển tiếp case mà David bỏ qua."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "David đã cung cấp link hướng dẫn chi tiết cách cấp quyền truy cập GSC, tận dụng tài nguyên rất tốt."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "David đã làm đầy đủ công việc của mình để hỗ trợ khách hàng, không có cơ hội rõ ràng để đi xa hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc và vấn đề vẫn đang được xử lý, nên chưa có cơ hội để xin review. Khách hàng cũng chưa cho review."
+        }
+      },
+      "overall_summary": "David đã tiếp quản cuộc trò chuyện một cách chuyên nghiệp, chủ động 'follow up' và đưa ra hướng giải quyết cụ thể, cung cấp đầy đủ thông tin cần thiết. David cũng chủ động sử dụng tài nguyên (link hướng dẫn) để hỗ trợ khách hàng. Tuy nhiên, David có thể thể hiện sự đồng cảm nhiều hơn với sự bức xúc và bối rối của khách hàng sau cuộc trao đổi trước đó với Hannah.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

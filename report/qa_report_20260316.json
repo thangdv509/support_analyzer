@@ -1,0 +1,221 @@
+[
+  {
+    "session_id": "session_defa278b-dd31-421e-a20d-87ff94622059",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-16",
+    "app": "DECO",
+    "customer": "Kwakzalver Sports",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David. Nếu có nhiều agent trong chat, chỉ chấm phần của David, bỏ qua lỗi của agent khác.]\n\nKwakzalver Sports: Hi, the labels aren't showing on the homepage.\n\n  David: Hi, this is David from DECO here\n\n  David: I see, let me check this for you\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/2/7/d/227ddf78b2f23000/image_1on24nl.png]\n\n  David: Ah, it is appearing on my end. May I ask if it is not appearing on your end or should it be displaying somewhere else?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đã xưng tên 'David from DECO'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu hỏi rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Không bỏ sót câu hỏi của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không cần thể hiện sự cảm thông."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đã hỏi để hiểu rõ hơn vấn đề của khách, 'May I ask if it is not appearing on your end or should it be displaying somewhere else?'"
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đang trong quá trình tìm giải pháp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội giúp thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không cần sử dụng resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để tạo thêm giá trị."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Không bắt buộc xin review."
+        }
+      },
+      "overall_summary": "David chào hỏi và hỗ trợ khách hàng nhiệt tình, hỏi thêm thông tin để hiểu rõ vấn đề hơn.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_2d4a58ce-ea49-4eb1-b29a-d05d696e183a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-16",
+    "app": "Unknown Site",
+    "customer": "Goldie LeWinter",
+    "primary_operator": "Tina",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Tina. Nếu có nhiều agent trong chat, chỉ chấm phần của Tina, bỏ qua lỗi của agent khác.]\n\nGoldie LeWinter: So now if there are two eligible discounts in this scenario. Extra40 or Buy 3, save 20% - can I have an option in checkout where I can choose which discount I prefer? they can't combine\n\n  Tina: Hello, I'm Tina here\n\n  Tina: You can apply it first in Pricing tab to see the more discount\n\nGoldie LeWinter: Can you explain?\n\n  Tina: then choose that coupon to pay\n\n  Tina: let me explain\n\n  Tina: you can click in the first one\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/c/7/6/2c76c6f08cdcfa00/image_byq64a.png]\n\n  Tina: then go out to see the price\n\n  Tina: After that, you can click to the second one\n\n  Tina: and go to see the price\n\nGoldie LeWinter: How do I add this\n\n  Tina: you can click on it\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/c/7/6/2c76c6f08cdcfa00/image_1taa2ra.png]\n\n  Tina: or paste the code in this blank and click apply\n\nGoldie LeWinter: How do I show these options to apply promo code in the checkout is what I mean\n\n  Tina: Ah\n\n  Tina: maybe we are misunderstanding\n\n  Tina: may I ask if you are talking about the label on your product?\n\nGoldie LeWinter: I am saying in the checkout I would like them to be able to choose what discount to use - either EXTRA40 or Buy 3, Save 20%\n\n  Tina: Yes I understand\n\n  Tina: Sorry for the misunderstanding above\n\n  Tina: Could you please send me one product link which you have added label?\n\n  Tina: I can ask our dev to check it for you\n\nGoldie LeWinter: I have two different discounts running. EXTRA40% off sale items but also if you buy 3, you get 20% off. I want the customer to be able to choose which discount they use when in the cart\n\n  Tina: Yes I understand it\n\n  Tina: Have you added it in your product?\n\n  Tina: Could you please send me a product link?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào hỏi có tên agent (Tina)."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 1.0,
+          "justification": "Hướng dẫn khó hiểu, lặp lại nhiều lần một cách máy móc \"you can click in the first one\", \"then go out to see the price\", \"After that, you can click to the second one\", \"and go to see the price\". Cần diễn giải rõ ràng hơn về cách áp dụng coupon."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và hiểu yêu cầu của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu khách hàng bực bội."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Thể hiện thái độ tích cực."
+        },
+        "probing": {
+          "score": 1.0,
+          "justification": "Agent hỏi thêm thông tin về sản phẩm và discount,tuy nhiên hỏi lặp lại một câu hỏi. Khách đã giải thích rõ ràng về yêu cầu của mình, nhưng agent vẫn hỏi \"Have you added it in your product?\" và \"Could you please send me a product link?\"."
+        },
+        "solution": {
+          "score": 2.0,
+          "justification": "Agent đề nghị kiểm tra với dev, nhưng chưa giải quyết được vấn đề của khách. Chưa có giải pháp rõ ràng cho việc khách hàng muốn có tùy chọn chọn discount trong checkout."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để chủ động hơn trong trường hợp này."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent đề xuất chuyển case cho dev để kiểm tra."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội gợi ý tính năng/plan rõ ràng có lợi cho khách."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Không yêu cầu review."
+        }
+      },
+      "overall_summary": "Agent chào hỏi lịch sự, lắng nghe và cố gắng giải quyết vấn đề của khách hàng. Tuy nhiên, agent giải thích chưa rõ ràng và cần probe hiệu quả hơn. Cần cải thiện kỹ năng giao tiếp và khả năng cung cấp giải pháp.",
+      "total_score_20": 17.5,
+      "final_score_10": 8.75
+    }
+  },
+  {
+    "session_id": "session_2186ef33-3bf4-4fe2-ab6a-27f30b0186bb",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-16",
+    "app": "DECO",
+    "customer": "SHAMTAM",
+    "primary_operator": "David",
+    "is_resolved": false,
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: David. Nếu có nhiều agent trong chat, chỉ chấm phần của David, bỏ qua lỗi của agent khác.]\n\nSHAMTAM: Hi David,\n\nJust wanted to follow up and check how things are going with the size updates.\n\nPlease let me know if there are any updates from your team or if you need anything from my side.\n\nLooking forward to hearing from you.\n\nWith positive vibes,\nAlex Pervov\nCEO & Founder — SHAMTAM\nSlow Living Store\n📷 Follow on Instagram 💼 Connect on LinkedIn 📞 Book a Call\n\n  David: Dear Alex, \n\nThis is David from DECO here. Sorry for the delayed response. \n\nOur team has already changed the said sizes for you and it should be consistent on all platforms! \n\nYou can activate it on your end and let me know how it goes! \n\nBest, \nDavid\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Có tên agent và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu cú rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Trả lời đúng trọng tâm câu hỏi của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ nhịp độ phù hợp, lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu khách hàng bực dọc hay lo lắng."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Tích cực hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần thêm thông tin từ khách."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đã giải quyết vấn đề của khách hàng."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội chủ động giúp khách hàng thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần chuyển case."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ resource."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội đưa thêm gợi ý."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat kết thúc bình thường, không bắt buộc phải xin review."
+        }
+      },
+      "overall_summary": "Agent David đã hỗ trợ khách hàng giải quyết vấn đề nhanh chóng và hiệu quả.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

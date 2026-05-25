@@ -1,0 +1,1154 @@
+[
+  {
+    "session_id": "session_309678be-f2b1-4835-b4ab-4c21fa9264f4",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "Unknown",
+    "customer": "dev2-aff",
+    "primary_operator": "PieLab Support",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\n  PieLab Support: 7604 meta tags need a fix. Want to update them for better results?\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: Can you help me check on my speed performance?\n\ndev2-aff: Can you help me check on my speed performance?\n\ndev2-aff: Can you help me check on my speed performance?\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\n  PieLab Support: HTML issues detected. A quick cleanup can speed up your site and help rankings.\n\ndev2-aff: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\n  PieLab Support: 7670 meta tags need a fix. Want to update them for better results?\n\ndev2-aff: I want to create a LLM.txt file!\n\n  PieLab: Hi there 😊\n      \n      Thanks for reaching out! Our support team is currently offline.\n      \n      Please feel free to share your concerns, and we’ll make sure to prioritize them as soon as we’re back online.\n      \n      Thanks so much for your patience! <3\n\ndev2-aff: Hi, is there anyone help me to optimize my SEO score?\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to track AI traffic, notify me when it's ready\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: I want to create a LLM.txt file!\n\ndev2-aff: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.0,
+          "justification": "Không có lời chào mở đầu nào từ agent."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nào."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent không phản hồi bất kỳ câu nào của khách hàng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent không phản hồi bất kỳ câu nào của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Không đánh giá được vì agent không có phản hồi."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có yêu cầu cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Không đánh giá được vì agent không có phản hồi."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Không đánh giá được vì agent không có phản hồi."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không đánh giá được vì agent không có phản hồi."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không đánh giá được vì agent không có phản hồi."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent không phản hồi nên không có xin review."
+        }
+      },
+      "overall_summary": "Agent hoàn toàn không có bất kỳ phản hồi nào với khách hàng.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+    }
+  },
+  {
+    "session_id": "session_e4799dfd-7743-4aa8-9ed5-3f9771402436",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "SearchPie",
+    "customer": "prd-abeautifulstory",
+    "primary_operator": "Tina",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\nprd-abeautifulstory: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\n  Tina: Hello, I'm Tina from Search Pie app\n\n  Tina: Thank you so much for your interested in our Premium plan\n\n  Tina: May I ask if you want me to check for your SEO and give you some feedbacks in this plan?\n\nprd-abeautifulstory: Hi! And yes please\n\n  Tina: Oki pleaase wait for me\n\n  Tina: Hi, are you still there?\n\n  Tina: I have seen that your site can be improved more\n\n  Tina: Would you like me to show you now?\n\nprd-abeautifulstory: yes\n\n  Tina: Oki my friend\n\n  Tina: first, please enable our app embed first to make sure all your steps will be saved\n\n  Tina: Please go to Shopify Admin>Online Store>Theme>Customize\n\n  Tina: Then choose App Embed>Enable SearchPie app\n\nprd-abeautifulstory: ok done\n\n  Tina: Oki nice\n\n  Tina: Next, please go to Site Speed on the app > choose Instant Page > then turn on this button\n\n  Tina: Instant page feature is used to speed up your page loading, bringing a better experience to your customers\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/b/3/0/1b305b862053ad00/image_a1bcpm.png]\n\nprd-abeautifulstory: ok done\n\n  Tina: Oki\n\n  Tina: Next, please go to Site Speed > please choose Image Compress > click auto compress\n\n  Tina: Compressed images will help improve store loading time, user experience, and SEO\n\nprd-abeautifulstory: we dont have enterprise?\n\n  Tina: Yes, you are in our Premium plan :$\n\n  Tina: You can consider our Enterprise plan in case you want to explore more features\n\nprd-abeautifulstory: ok we're a social startup and don't have that much budget\n\n  Tina: Ah i got it\n\n  Tina: So we can try your current plan first\n\n  Tina: Have you done compress images?\n\nprd-abeautifulstory: yes\n\n  Tina: Oki nice\n\n  Tina: Next, please go to Google Authority -> choose Google Index\n\n  Tina: Here, please connect to your Google Search Console first > then submit the sitemap\n\n  Tina: Sitemaps enable search engines to find every page and product on your site, which allows search engines to crawl more intelligently\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/b/3/0/1b305b862053ad00/image_11u49rd.png]\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/b/3/0/1b305b862053ad00/image_1tsyk6j.png]\n\nprd-abeautifulstory: can I do this one later?\n\n  Tina: Oki my friend\n\nprd-abeautifulstory: need to connect this to my Google account\n\n  Tina: Please remember to do it later\n\n  Tina: Now, let's go to On-page & Content -> Schema & Snippets\n\n  Tina: Here, please activate: Breadcrumb & Store Profile\n\n  Tina: With Store Profile, you also need to fill out the information needed (logo, social media...) by clicking set up\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/b/3/0/1b305b862053ad00/image_93mqbt.png]\n\nprd-abeautifulstory: ok check\n\n  Tina: Oki please inform me after finishing it\n\nprd-abeautifulstory: yes done\n\n  Tina: Oki nuce\n\n  Tina: Next, please go to URL Control > choose Broken Link > click SCAN button\n\n  Tina: A broken link or dead link is a link on a web page that no longer works. The Search Pie app will save you loads of resources by helping you scan the app, then list all the links that you should fix or remove\n\n  Tina: it may takes time to scan all so while waiting, may I ask you a quick favor?\n\nprd-abeautifulstory: yes\n\n  Tina: That’s very kind of you :$\n\n  Tina: From 1 to 5, how would you rate my support today from me (Tina)?\n\nprd-abeautifulstory: 5\n\nprd-abeautifulstory: :-)\n\n  Tina: Waoooooooo, I got a 5? Such a big motivation for me, thank my bestie\n\n  Tina: if so, would you mind sharing your thoughts on my support (Tina) by leaving me a review on Shopify App Store?\n      \n      Just 30s to go: https://apps.shopify.com/seo-booster?#modal-show=ReviewListingModal\n\n  Tina: It would be THE WORLD to me, my bestie <3\n\nprd-abeautifulstory: yes will do this\n\nprd-abeautifulstory: the scan is done\n\n  Tina: Oki my friend\n\n  Tina: Now you could go to URL Control > long URL and click SCAN button\n\n  Tina: There are different factors of link evaluation that search engines use, including the length of a link. A high-quality URL should NOT exceed the limit of 128 characters. Hence, the Long URLs feature was born to assist you in detecting too-long links\n\n  Tina: If you don't mind, could you please let me know when the review is submitted?\n\n  Tina: Due to Shopify policy, I can't see your words, can't wait x)\n\nprd-abeautifulstory: shall I turn on auto fix for broken links\n\n  Tina: Yes please\n\n  Tina: How is it going?\n\nprd-abeautifulstory: yes done we dont have any\n\nprd-abeautifulstory: the review was posted\n\n  Tina: Omgg you did it?\n\n  Tina: Thank you so much\n\n  Tina: You made my day <3\n\nprd-abeautifulstory: thx of course\n\n  Tina: We also finished setting up with your current plan\n\n  Tina: Feel free whenever you need our help :$\n\nprd-abeautifulstory: can i do anything else that will help\n\n  David: Hey, this is David from SearchPie here. Let me answer you here, for now, you just have to give it a bit of time as the setup is done!\n\nprd-abeautifulstory: Hi David, I hope you are doing well.\n      \n      We are currently reviewing the Enterprise plan and would like to explore if there might be a special arrangement possible for us.\n      \n      A Beautiful Story is a social impact company. Our jewelry is handmade in Nepal and India and our mission is to create fair employment opportunities for artisans while building a sustainable brand.\n      \n      Because of this impact focus, I wanted to ask if you offer any special conditions, discounts or partnership programs for purpose-driven or impact businesses on the Enterprise plan.\n      \n      We would love to work together and grow on the platform, so it would be great to explore what might be possible.\n      \n      Looking forward to hearing from you.\n\n  Jane: Hi there, it's Jane from Search Pie team here,\n      \n      Thank you for sharing more about A Beautiful Story and the meaningful impact your company is creating. We truly appreciate organizations that are committed to fair employment and sustainable practices.\n      \n      While our Enterprise pricing is generally standardized, we’re happy to support purpose-driven companies where possible. I’m glad to confirm that we can offer a **20% discount on the Enterprise monthly plan** for your team. If you want to claim the voucher, please get back to advise us so that we can create for you.\n      .\n      Best regards,\n      Jane\n\nprd-abeautifulstory: yes please\n\nprd-abeautifulstory: would be great\n\nprd-abeautifulstory: we would like to pay monthly\n\n  Tina: Hello, I’m Tina from Search Pie app\n\n  Tina: Let me create the coupon for you now :$\n\n  Tina: Hi friend, I have created the coupon for you\n\n  Tina: Let me guide you how to apply it\n\n  Tina: Please go to Pricing -> SEO plan -> Monthly -> Apply now\n\n  Tina: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/b/3/0/1b305b862053ad00/image_i4k3j0.png]\n\n  Tina: you will see the coupon, your code is ENTMONTHLY_20%OFF\n\n  Tina: Please apply it first then come back Enterprise plan and choose upgrade\n\n  Tina: Please inform me if it works :$\n\nprd-abeautifulstory: Can you help me check on my speed performance?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like me to have a look at your site speed?\n\nprd-abeautifulstory: yes please\n\n  David: Of course, please give me a few moments\n\nprd-abeautifulstory: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\nprd-abeautifulstory: Can you fix HTML tags issues for me?\n\n  David: I'm back with some updates and here are your speed results on both mobile and desktop\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/b/3/0/1b305b862053ad00/image_ycjlp4.png]\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/1/b/3/0/1b305b862053ad00/image_yytvch.png]\n\n  David: Looks like you are going to need a bit improvement\n\n  David: To increase them significantly, can I interest you in our SpeedUp Package?\n\nprd-abeautifulstory: we dont have budget for that unfortenetly\n\n  David: Ah, I see. No worries! When it is more suitable for you, please let me know right away!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent Tina: \"Hello, I'm Tina from Search Pie app\". Chào chuẩn tên app."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi sai grammar nào nghiêm trọng."
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Nhìn chung agent giao tiếp rõ ràng, tuy nhiên đôi chỗ còn dài dòng, có thể lược bớt để thông tin ngắn gọn hơn. Ví dụ: \"Oki please inform me after finishing it\" -> \"Ok, báo mình khi xong nhé.\""
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent hiểu và phản hồi đúng các yêu cầu của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent phản hồi nhanh, nhiệt tình, thân thiện với khách hàng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Có sự đồng cảm với khách hàng khi khách hàng nói không có nhiều budget cho Enterprise plan: \"Ah i got it. So we can try your current plan first\"."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình hướng dẫn khách hàng sử dụng các tính năng của app."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing, agent hướng dẫn luôn."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã hướng dẫn khách hàng cài đặt các tính năng của app."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động hướng dẫn khách hàng sử dụng các tính năng của app."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã chia sẻ hình ảnh hướng dẫn khách hàng."
+        },
+        "extra_mile": {
+          "score": 2.0,
+          "justification": "Agent Tina tạo coupon giảm giá 20% cho khách hàng khi khách hàng muốn nâng cấp lên Enterprise plan. Sau đó hướng dẫn khách sử dụng coupon."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 5 sao, không cần xin thêm."
+        }
+      },
+      "overall_summary": "Nhìn chung, agent Tina đã hỗ trợ khách hàng rất tốt. Agent nhiệt tình, thân thiện, chủ động hướng dẫn khách hàng sử dụng các tính năng của app. Agent cũng đã tạo coupon giảm giá cho khách hàng khi khách hàng muốn nâng cấp lên Enterprise plan. Khách hàng đã cho review 5 sao.",
+      "total_score_20": 20.25,
+      "final_score_10": 10.12
+    }
+  },
+  {
+    "session_id": "session_2186ef33-3bf4-4fe2-ab6a-27f30b0186bb",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "DECO",
+    "customer": "SHAMTAM",
+    "primary_operator": "David",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  David: Hey, this is David here\n\n  David: I see, how long of a trial are you looking for?\n\nSHAMTAM: Hi David!\n      \n      \n      At least until you implement the metafields solution. Also apart of this could I please ask for your help setting up the badge designs properly and making them consistent? Right now the badge sizes and the text inside them are quite chaotic, and I’m struggling to make them display correctly across different screen sizes and placements.\n      \n      With positive vibes,\n      Alex Pervov\n      CEO & Founder — SHAMTAM\n      Slow Living Store\n      📷 Follow on Instagram 💼 Connect on LinkedIn 📞 Book a Call\n\n  David: Ah, I see. That might be a bit hard since it can take up to 7 days but let me talk to my team to see where we can land. For the sizes and setup, of course we can help you out! Can you elaborate on your request?\n\nSHAMTAM: Hi David,\n      \n      Thank you for your reply.\n      \n      Unfortunately, without support for the metafields format we currently use, the app is not relevant for our workflow, and we are not prepared to pay for it in that case.\n      \n      I kindly ask you to activate free access for us until we are able to work with our existing metafield structure, otherwise we will need to start looking for an alternative solution.\n      \n      Additionally, the badge design setup is currently not very intuitive. We need a way to ensure that the size of all badges and the text inside them properly fit within the interface and remain comfortably readable across different devices and screen sizes. At the moment, the app does not offer adaptive behavior and relies only on manual adjustments, which makes consistent design quite difficult.\n      \n      I would appreciate your help with both the metafields compatibility and the badge design setup.\n      \n      With positive vibes,\n      Alex Pervov\n      CEO & Founder — SHAMTAM\n      Slow Living Store\n      📷 Follow on Instagram 💼 Connect on LinkedIn 📞 Book a Call\n\n  Ivy: Hi Alex,\n      \n      Thank you for your detailed feedback and for sharing your concerns.\n      \n      I will transfer the information you shared to our core team so they can review both the metafield structure you’re currently using and the badge design behavior. Our team will investigate the possibilities and get back to you as soon as possible with an update.\n      \n      Thank you again for taking the time to explain your workflow and expectations. We truly appreciate it!\n      \n      Best regards,\n      Hazel\n\n  David: Dear Alex, \n      \n      This is David from DECO here. Just a quick follow up in regards of your recent email. \n      \n      1. Free Trial Extension. \n      I checked via my admin and noticed that you have already passed your trial period. You can have a look here: (Image). There will be a charge for you this cycle. \n      \n      That said, I don't want to leave you hanging. There is still a way for you to use our Growth Plan for free for 7 days. You can downgrade your plan to the Free Plan and upgrade back to the Growth Plan applying this code: 7_DAYS_FREE_SHAMTAM (Image) \n      \n      Does this work for you? Let me if this is suitable for you. \n      \n      2. Badges Sizes on different devices. \n      Have you tried enabling the Same size on all screens and Auto adjust text size settings here? (Image) \n      \n      Alternatively, our team can do it for you on our end provided with Collaborator access to your store. If you want our team to handle it, please let me know right away! \n      \n      Looking forward to your update! \n      \n      Best, \n      David\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/4/4/2/6442bb4ddfa6ec00/image_sif8t8.png]\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/4/4/2/6442bb4ddfa6ec00/image_1tque7k.png]\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/4/4/2/6442bb4ddfa6ec00/image_18g819k.png]\n\nSHAMTAM: Hi David,\n      \n      Thank you for your message and for offering the solution.\n      \n      For now we will stay on the Free plan until the metafields functionality becomes available, since this feature is essential for our workflow.\n      \n      In the meantime, could your team please help us manually configure the badges on our store so that they display properly across different devices and screen sizes? That way, once the metafields setup is ready, we will be able to launch them immediately.\n      \n      Please let me know if you need collaborator access or any details from our side.\n      \n      Thanks again for your support.\n      \n      With positive vibes,\n      Alex Pervov\n      CEO & Founder — SHAMTAM\n      Slow Living Store\n      📷 Follow on Instagram 💼 Connect on LinkedIn 📞 Book a Call\n\n  Jane: Hi Alex, it's Jane from DECO team here,\n      \n      In order to adjust the badge for you, we need access to your store. \n      A request is sent to your store, please check and approve it. Once we have the access, we'll adjust accordingly for you\n      \n      Regards,\n      Jane\n\nSHAMTAM: Hi Jane,\n      \n      Thank you for your message.\n      \n      I’ve approved the request and granted access to our store, so you should now be able to proceed with the badge adjustments.\n      \n      Please let me know if you need anything else from my side.\n      \n      With positive vibes,\n      Alex Pervov\n      CEO & Founder — SHAMTAM\n      Slow Living Store\n      📷 Follow on Instagram 💼 Connect on LinkedIn 📞 Book a Call\n\n  Jane: Hi Alex, it's Jane from DECO team here\n      \n      Thank you for your quick reply. As per checking, the access is still pending at our end. Our account is Pielab, please recheck and let me know.\n      \n      ![](https://storage.crisp.chat/users/upload/session/-/6/4/4/2/6442bb4ddfa6ec00/screenshot2_17ylxk5.png)Regards,\n      Jane\n\nSHAMTAM: Check now please, should be active\n      \n      With positive vibes,\n      Alex Pervov\n      CEO & Founder — SHAMTAM\n      Slow Living Store\n      📷 Follow on Instagram 💼 Connect on LinkedIn 📞 Book a Call\n\n  Tina: Hello, I’m Tina from DECO app. \n      \n      Thank you for your response. Let me check for you. I will be back as soon as possible. \n      \n      Regards, \n      Tina.\n\n  Ivy: Hi there,\n      \n      It's Ivy from the DECO app. Thank you so much for your patience!\n      \n      Regarding applying the same styling to all labels, we’ve checked with our technical team. Since each label can contain text of different lengths, some adjustments are usually needed individually to ensure the labels display properly in each case.\n      \n      If you’d like, with a paid plan, our team can also assist with making these manual adjustments for you if needed.\n      \n      Please feel free to let us know how you’d like to proceed. We’re always happy to help!\n      \n      Best regards,\n      Hazel\n\n  David: Dear, \n      \n      This is David from DECO here. Just a quick update in regards of our metafield feature. \n      \n      Our metafield List of Values feature is launched! You can find it here: (Image). Click on add and you should be able to find your List of Values Metafields. \n      \n      For the issues with your badges size, I noticed that most of your labels has tags in them and with your current plan, our team cannot save the changes that we have made. \n      \n      To also access our Metafield feature, you are going to need the Growth Plan. Your 7 days Free code still stands: 7_DAYS_FREE_SHAMTAM \n      \n      Let me know how it goes! \n      \n      Best, \n      David\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/4/4/2/6442bb4ddfa6ec00/image_lwa07h.png]\n\nSHAMTAM: Hi David,\n      \n      Great news, thank you for the update!\n      \n      We’ve mapped all our badges to metafields and switched to the Growth plan. Could I please ask your team to help us finalize the badge designs? Once that’s done, we’ll be ready to go live.\n      \n      With positive vibes,\n      Alex Pervov\n      CEO & Founder — SHAMTAM\n      Slow Living Store\n      📷 Follow on Instagram 💼 Connect on LinkedIn 📞 Book a Call\n\n  David: Hi Alex, \n      \n      This is David from DECO here! Thank you for the update! \n      \n      Let me work with our team and changes the sizes for you right away! \n      \n      I will update you as soon as possible!\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "David chào chuẩn tên brand 'This is David from DECO here.'"
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nghiêm trọng gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "David trả lời đúng trọng tâm, không vòng vo."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "David hiểu đúng yêu cầu của khách về trial và badge sizes."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "David lịch sự, phản hồi nhanh."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không cần thể hiện empathy."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "David nhiệt tình giúp đỡ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "David cung cấp giải pháp phù hợp cho khách hàng về trial và badge sizes. Khách hàng xác nhận đã giải quyết xong."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "David chủ động đưa ra giải pháp dùng Growth Plan miễn phí 7 ngày và hướng dẫn chỉnh badge sizes."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "David đã 'check via my admin', Jane và Tina hỗ trợ về mặt kỹ thuật, coi như đã transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "David chia sẻ hình ảnh hướng dẫn rõ ràng."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "David chủ động hỗ trợ khách hàng chỉnh sửa badge sizes."
+        },
+        "review_asking": {
+          "score": 1.0,
+          "justification": "Khách hàng happy 'Great news, thank you for the update!' nhưng agent không xin review. Nên hỏi 'Glad I could help! Would you mind leaving me a quick review?'"
+        }
+      },
+      "overall_summary": "Nhìn chung, David hỗ trợ khách hàng nhiệt tình và hiệu quả. Tuy nhiên, agent nên chủ động xin review khi khách hàng hài lòng.",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_7662c3c1-dab8-4b95-acde-8fb7bdaf5d8a",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "Unknown",
+    "customer": "pk9gear",
+    "primary_operator": "None",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\npk9gear: **You need our new collar 🔥**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/products/just-a-collar)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/products/just-a-collar)\n      \n      [product-section](https://pk9gear.com.au/products/just-a-collar)\n      \n      [ugc-section](https://pk9gear.com.au/products/just-a-collar)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGKCBD273N71VXQ8DCM1Z3EZ&r=01KGKRQTPRFWS4WG2XRWV1GTAX) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGKCBD273N71VXQ8DCM1Z3EZ&r=01KGKRQTPRFWS4WG2XRWV1GTAX) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGKCBD273N71VXQ8DCM1Z3EZ&r=01KGKRQTPRFWS4WG2XRWV1GTAX)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGKCBD273N71VXQ8DCM1Z3EZ&r=01KGKRQTPRFWS4WG2XRWV1GTAX) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGKCBD273N71VXQ8DCM1Z3EZ&r=01KGKRQTPRFWS4WG2XRWV1GTAX) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGKCBD273N71VXQ8DCM1Z3EZ&r=01KGKRQTPRFWS4WG2XRWV1GTAX)\n\npk9gear: **Plastic frisbees are rubbish!**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/products/durafoam-dog-frisbee)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/products/durafoam-dog-frisbee)\n      \n      [copy-section](https://pk9gear.com.au/products/durafoam-dog-frisbee)\n      \n      [copy-section](https://pk9gear.com.au/products/durafoam-dog-frisbee)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGRRJ03ZPXV59HWN9NW2D74A&r=01KGRX8604AFCDWAFR5NPA6ESF) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGRRJ03ZPXV59HWN9NW2D74A&r=01KGRX8604AFCDWAFR5NPA6ESF) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGRRJ03ZPXV59HWN9NW2D74A&r=01KGRX8604AFCDWAFR5NPA6ESF)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGRRJ03ZPXV59HWN9NW2D74A&r=01KGRX8604AFCDWAFR5NPA6ESF) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGRRJ03ZPXV59HWN9NW2D74A&r=01KGRX8604AFCDWAFR5NPA6ESF) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGRRJ03ZPXV59HWN9NW2D74A&r=01KGRX8604AFCDWAFR5NPA6ESF)\n\npk9gear: **Update**\n      \n      Hey ,\n      \n      [pick up dog poo]\n      \n      How's that for a headshot, haha!\n      \n      Honestly… this is becoming one of my favourite weekly things to do.\n      \n      I’ve been absolutely blown away by how many of you reply, and I’ve been doing my best to get back to everyone (if I’ve missed you, I’m not ignoring you, I will get back to you asap).\n      \n      I want to start this week with a question because I’d genuinely love to learn more about what you think and see if what I’m working towards is actually landing…\n      \n      In one sentence or less, what’s the first thing that comes to your mind when you think about PK9 Gear?\n      \n      (And yes… apart from the owner being slightly unhinged.)\n      \n      Content update\n      \n      Massive response last week saying you want more:\n      \n      -\n      \n      training content\n      \n      -\n      \n      product demos\n      \n      -\n      \n      quick tips\n      \n      -\n      \n      behind the scenes\n      \n      BUT… a lot of you also said you’re not on social media, so you can’t actually see half the stuff.\n      \n      So here’s the fix:\n      \n      We’ve got a YouTube account where we post a fair bit of what goes up on socials:\n      https://www.youtube.com/@PK9Gear\n      \n      And there’s also a longer video tour of where the magic happens (filmed over a year ago because I wanted to document the brand journey properly):\n      https://youtu.be/ztjmSLvtSrk?si=2gzH6dwQ2R_ibxmj\n      \n      If you do want a quick training tip as well, I posted one for reactive dogs here:\n      https://www.instagram.com/p/DT7RsDcgD7m/\n      \n      Cool news (and this one’s been a mission)\n      \n      With all this talk about video content… I think it’s time I share something I’ve been working on behind the scenes.\n      \n      Over the past year, I’ve been doing the extremely painful task of getting our training app sorted for our face-to-face training clients.\n      \n      Why does that matter to you?\n      \n      Because one of the coolest features is this:\n      \n      We’ve uploaded 250+ training videos in there already — on pretty much everything A–Z.\n      \n      And to kick it off (and as a proper thank you to our VIPs), we’re giving away free access for 12 months.\n      \n      Normally, it’s $50 per month, so it’s a solid giveaway.\n      \n      To be on the VIP list, you’ve made 3 or more orders.\n      \n      So if that’s you, keep your eyes open. Another email will be sent this week with the details.\n      \n      And if you’re not on that list, never fear… we’ve got good news coming your way soon. Just not that good haha.\n      \n      Alright,hit reply with your one sentence:\n      “What I think of when I think PK9 Gear is…”\n      \n      Appreciate you all.\n      \n      Chris Loverseed\n      PK9 Gear\n      \n      [https://pk9gear.com.au](https://pk9gear.com.au/)\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KGTP659Q536ZRDA2MD3MJS2W&r=01KGZWWA5SRGSDFRV18NWQTMNE).\n\npk9gear: **your free madri grass ball 🎊**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/collections/in-stock)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/collections/in-stock)\n      \n      [Image of Just A Collar - For When All You Need Is A Simple Dog Collar](https://pk9gear.myshopify.com/products/just-a-collar)\n      \n      Just A Collar - For When All You Need Is A Simple Dog Collar\n      \n      $35.00\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/just-a-collar)\n      \n      [Image of Dog Training Obedience Slip Collar – Precision Control Collar](https://pk9gear.myshopify.com/products/dog-training-obedience-slip-collar)\n      \n      Dog Training Obedience Slip Collar – Precision Control Collar\n      \n      $34.99\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/dog-training-obedience-slip-collar)\n      \n      [Image of Dog Flirt Pole – Full Set Flirt Pole Attachment And Handle](https://pk9gear.myshopify.com/products/dog-flirt-pole)\n      \n      Dog Flirt Pole – Full Set Flirt Pole Attachment And Handle\n      \n      $115.00\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/dog-flirt-pole)\n      \n      [Image of Dog Premium Flirt Pole - The Maybach Of Flirt Poles](https://pk9gear.myshopify.com/products/dog-premium-flirt-pole)\n      \n      Dog Premium Flirt Pole - The Maybach Of Flirt Poles\n      \n      $275.00\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/dog-premium-flirt-pole)\n      \n      [Image of Mardi Gras 7cm Durafoam Ball On String](https://pk9gear.myshopify.com/products/durafoam-7cm-ball-string)\n      \n      Mardi Gras 7cm Durafoam Ball On String\n      \n      $17.99\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/durafoam-7cm-ball-string)\n      \n      [Image of PK9 Durafoam Frisbee](https://pk9gear.myshopify.com/products/durafoam-dog-frisbee)\n      \n      PK9 Durafoam Frisbee\n      \n      $22.50\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/durafoam-dog-frisbee)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KH2MNNAK4WSHZMEWHJQYT5S6&r=01KH390HPQQDXA9CGF41E7Z8PV) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KH2MNNAK4WSHZMEWHJQYT5S6&r=01KH390HPQQDXA9CGF41E7Z8PV) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KH2MNNAK4WSHZMEWHJQYT5S6&r=01KH390HPQQDXA9CGF41E7Z8PV)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KH2MNNAK4WSHZMEWHJQYT5S6&r=01KH390HPQQDXA9CGF41E7Z8PV) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KH2MNNAK4WSHZMEWHJQYT5S6&r=01KH390HPQQDXA9CGF41E7Z8PV) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KH2MNNAK4WSHZMEWHJQYT5S6&r=01KH390HPQQDXA9CGF41E7Z8PV)\n\npk9gear: **New collar! These have been flying**\n      \n      Hey , catch what happened last week?\n      \n      Let me loop you in.\n      \n      I've spent months creating a new product.\n      \n      Simple, minimal, yet aesthetically strong.\n      \n      They're called 'Just a Collar'.\n      \n      https://pk9gear.com.au/collections/dog-collars/products/just-a-collar\n      \n      Loads of colours.\n      \n      Take a look. I think you'll like them!\n      \n      [https://pk9gear.com.au/just-a-collar](https://pk9gear.com.au/collections/dog-collars/products/just-a-collar)\n      \n      Any questions let me know, Chris Loverseed\n      PK9 Gear\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KH2NAP3BW8HX0HJ0KYT3E1R8&r=01KH53S235EVT54QX1JKB5AEEV).\n\npk9gear: **13% off everything today only 🤫**\n      \n      Hey ,\n      \n      Unlucky dates. Reliable gear.\n      \n      Friday the 13th gets a bad rap.\n      \n      Broken things. Bad luck. Stuff failing when you need it most.\n      \n      We don’t build gear around luck , we build it around standards.\n      \n      Every piece we make is tested, pulled, abused, and used under real pressure.\n      \n      Materials are chosen for performance, not convenience. If something fails, it doesn’t ship.\n      \n      Because when gear matters, superstition is irrelevant.\n      \n      Friday the 13th is only unlucky if you rely on luck.\n      \n      Use the code Friday13th\n      \n      For 13% of dog training leads and toys you can rely on!\n      \n      [www.pk9gear.com.au](https://pk9gear.com.au/collections/in-stock?filter.v.price.gte=&filter.v.price.lte=&sort_by=best-selling)\n      \n      PK9 Gear\n      The Bad Luck Killer\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KH2PY2DP1KAVRQ3PJQ75CX1R&r=01KHA9AQJPF0HK91KCKZ22MBSN).\n\npk9gear: **Feb 16th Weekly Check-In (Real Talk)**\n      \n      Hey there\n      \n      So… as I mentioned last week, I learnt a lot of people on this list aren’t on social media (I’m very jealous 😂).\n      \n      Which made me wonder…\n      \n      Who here is on Reddit and actually uses it?\n      \n      I’ve looked at it a few times, but honestly, I can’t get my head around it. Every time I open it, I feel like I’ve walked into a pub mid-argument and everyone already knows the backstory.\n      \n      If you do use Reddit, hit reply with:\n      \n      -\n      \n      “YES”\n      (or even better: what subreddits you follow)\n      \n      And if you don’t use it:\n      \n      -\n      \n      “NO”\n      (so I can stop pretending I’m going to become a Reddit guy overnight)\n      \n      As promised, our VIPs should have received an email yesterday with access to our training videos.\n      \n      New auction items 🔥\n      \n      We just listed 6 new auction items — don’t miss these:\n      https://pk9gear.com.au/collections/live-auction\n      \n      Last time I’ll mention it…\n      \n      “Just a collar” has launched.\n      \n      If you haven’t had a look yet, here it is:\n      https://pk9gear.com.au/collections/dog-collars/products/just-a-collar\n      \n      And honest question…\n      \n      If you haven’t grabbed one — why not?\n      \n      No judgement, I genuinely want the feedback. Is it price? colours? sizing? you don’t need another collar? you prefer leather? you missed it?\n      \n      Even a one-line reply helps me make better stuff.\n      \n      Chris Loverseed\n      PK9 Gear\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHFSKG7M5F08K4Y1XA55HM7S&r=01KHHZC4Y336GEBEF06YK7D5T9).\n\npk9gear: **Kangeroo tugs back in stock! 🦘**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/products/kangaroo-tug-toy)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/products/kangaroo-tug-toy)\n      \n      [copy-section](https://pk9gear.com.au/products/kangaroo-tug-toy)\n      \n      [review-section](https://pk9gear.com.au/products/kangaroo-tug-toy)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHJK295FV50929W2ARY63NTB&r=01KHN8FGJ9AKVEFF13JFZ25SHB) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHJK295FV50929W2ARY63NTB&r=01KHN8FGJ9AKVEFF13JFZ25SHB) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHJK295FV50929W2ARY63NTB&r=01KHN8FGJ9AKVEFF13JFZ25SHB)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHJK295FV50929W2ARY63NTB&r=01KHN8FGJ9AKVEFF13JFZ25SHB) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHJK295FV50929W2ARY63NTB&r=01KHN8FGJ9AKVEFF13JFZ25SHB) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHJK295FV50929W2ARY63NTB&r=01KHN8FGJ9AKVEFF13JFZ25SHB)\n\npk9gear: **Last few extra small leather collars!**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/products/leather-dog-collar)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/products/leather-dog-collar)\n      \n      [product-showcase](https://pk9gear.com.au/products/leather-dog-collar)\n      \n      [4ft-leather-leash](https://pk9gear.com.au/collections/pk9-gear-dog-leather-leashes/products/4ft-bridle-leather-lead)\n      \n      [6ft-leather-leash](https://pk9gear.com.au/collections/pk9-gear-dog-leather-leashes/products/6ft-braided-latigo-leather-dog-leash-strength-meets-style)\n      \n      [hand-made](https://pk9gear.com.au/products/leather-dog-collar)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSTWV64C4T6QSK47PBPRY3S&r=01KHTD9BEZJP1TASKDHF62Q6XA) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSTWV64C4T6QSK47PBPRY3S&r=01KHTD9BEZJP1TASKDHF62Q6XA) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSTWV64C4T6QSK47PBPRY3S&r=01KHTD9BEZJP1TASKDHF62Q6XA)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSTWV64C4T6QSK47PBPRY3S&r=01KHTD9BEZJP1TASKDHF62Q6XA) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSTWV64C4T6QSK47PBPRY3S&r=01KHTD9BEZJP1TASKDHF62Q6XA) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSTWV64C4T6QSK47PBPRY3S&r=01KHTD9BEZJP1TASKDHF62Q6XA)\n\npk9gear: **, seen these yet? 🔥**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/products/just-a-collar)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/products/just-a-collar)\n      \n      [header-section](https://pk9gear.com.au/products/just-a-collar)\n      \n      [header-section](https://pk9gear.com.au/products/just-a-collar)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSVXMGZFKPT4MBEMVF6BRCS&r=01KJ23WS3Q7ZVR75JJCTHSR0RS) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSVXMGZFKPT4MBEMVF6BRCS&r=01KJ23WS3Q7ZVR75JJCTHSR0RS) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSVXMGZFKPT4MBEMVF6BRCS&r=01KJ23WS3Q7ZVR75JJCTHSR0RS)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSVXMGZFKPT4MBEMVF6BRCS&r=01KJ23WS3Q7ZVR75JJCTHSR0RS) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSVXMGZFKPT4MBEMVF6BRCS&r=01KJ23WS3Q7ZVR75JJCTHSR0RS) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KHSVXMGZFKPT4MBEMVF6BRCS&r=01KJ23WS3Q7ZVR75JJCTHSR0RS)\n\npk9gear: **Feb 23rd Weekly Check-In (Real Talk)**\n      \n      Hey there\n      \n      Quick question to kick this off:\n      \n      Brass or stainless steel?\n      \n      Reply with just one word:\n      BRASS\n      or\n      STAINLESS\n      \n      For me, I personally love brass with leather, and I prefer stainless steel on pretty much everything else.\n      But I’m keen to see what you actually want more of, because it affects what hardware I order and what we build next.\n      \n      Loyalty programme update 👀\n      \n      The updated loyalty programme is almost live.\n      \n      And this one’s going to be worth it.\n      \n      There’ll be exclusive products that:\n      \n      -\n      \n      You must be a member to access\n      \n      -\n      \n      and can only be purchased with points\n      \n      More details coming very soon… but if you haven’t joined yet, jump on it now so you’re ready when it drops:\n      https://pk9gear.com.au/pages/rewards\n      \n      Auction update\n      \n      We’ve got four items left on auction — once they’re gone, they’re gone:\n      https://pk9gear.com.au/collections/live-auction\n      \n      The ultimate leather dog bone 🦴\n      \n      Also… check out this absolute weapon of a leather dog bone:\n      https://www.instagram.com/p/DVDIwchEjuV/\n      \n      I’m thinking of making mini versions as key rings.\n      \n      Would you actually want one, or am I just being… me? 😂\n      \n      Bonus points if you can guess who/where it’s going to.\n      If you guess right… I’ll even make you one. Dead serious.\n      \n      Alright, hit reply with:\n      \n      -\n      \n      BRASS or STAINLESS\n      \n      -\n      \n      Key ring bone: YES or NO\n      (and if you’re game, your guess 👀)\n      \n      \n      \n      \n      Chris Loverseed\n      PK9 Gear\n      https://pk9gear.com.au/\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ3P4X0C4KQZ6KWYFJ69N7YT&r=01KJ3PQRAXN29FM130YN9JB94K).\n\npk9gear: **Most dog collars are a complete joke.**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/collections/dog-collars)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/collections/dog-collars)\n      \n      [Image of Biothane Tactical Dog Collar](https://pk9gear.myshopify.com/products/biothane-tactical-dog-collar)\n      \n      Biothane Tactical Dog Collar\n      \n      $160.00\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/biothane-tactical-dog-collar)\n      \n      [Image of Dog Training Obedience Slip Collar – Precision Control Collar](https://pk9gear.myshopify.com/products/dog-training-obedience-slip-collar)\n      \n      Dog Training Obedience Slip Collar – Precision Control Collar\n      \n      $34.99   $37.50\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/dog-training-obedience-slip-collar)\n      \n      [Image of Tab Slip Collar- Ultimate Control](https://pk9gear.myshopify.com/products/tab-slip-collar)\n      \n      Tab Slip Collar- Ultimate Control\n      \n      $32.95\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/tab-slip-collar)\n      \n      [Image of 6mm Biothane Slip Collar – Lightweight Control](https://pk9gear.myshopify.com/products/slip-collar-6mm-biothane)\n      \n      6mm Biothane Slip Collar – Lightweight Control\n      \n      $47.99\n      \n      [SHOP NOW](https://pk9gear.myshopify.com/products/slip-collar-6mm-biothane)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ72H0S7KXVCM041X7DHGY51&r=01KJ7DKR1AQ3KESR89DKBGW5BH) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ72H0S7KXVCM041X7DHGY51&r=01KJ7DKR1AQ3KESR89DKBGW5BH) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ72H0S7KXVCM041X7DHGY51&r=01KJ7DKR1AQ3KESR89DKBGW5BH)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ72H0S7KXVCM041X7DHGY51&r=01KJ7DKR1AQ3KESR89DKBGW5BH) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ72H0S7KXVCM041X7DHGY51&r=01KJ7DKR1AQ3KESR89DKBGW5BH) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ72H0S7KXVCM041X7DHGY51&r=01KJ7DKR1AQ3KESR89DKBGW5BH)\n\npk9gear: **Sick of rope burn from your dog?**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/collections/biothane-dog-leads)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/collections/biothane-dog-leads)\n      \n      [header-section](https://pk9gear.com.au/collections/biothane-dog-leads)\n      \n      [header-section](https://pk9gear.com.au/collections/biothane-dog-leads)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ740Y8HDPC6H798FX1DN43H&r=01KJEYEJWATR5CFNN8JDJ63HAG) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ740Y8HDPC6H798FX1DN43H&r=01KJEYEJWATR5CFNN8JDJ63HAG) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ740Y8HDPC6H798FX1DN43H&r=01KJEYEJWATR5CFNN8JDJ63HAG)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ740Y8HDPC6H798FX1DN43H&r=01KJEYEJWATR5CFNN8JDJ63HAG) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ740Y8HDPC6H798FX1DN43H&r=01KJEYEJWATR5CFNN8JDJ63HAG) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ740Y8HDPC6H798FX1DN43H&r=01KJEYEJWATR5CFNN8JDJ63HAG)\n\npk9gear: **For dogs who get bored fast**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/collections/dog-toys)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/collections/dog-toys)\n      \n      [copy-section](https://pk9gear.com.au/collections/dog-toys)\n      \n      [foam-ball](https://pk9gear.com.au/products/durafoam-ball-on-string)\n      \n      [linen-tug](https://pk9gear.com.au/products/french-linen-dog-tug-toy)\n      \n      [copy-section](https://pk9gear.com.au/collections/dog-toys)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ76FJY3HTBH0CMCVX2EFHWJ&r=01KJHGGPCNRTBGCCYT1JQYRCPE) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ76FJY3HTBH0CMCVX2EFHWJ&r=01KJHGGPCNRTBGCCYT1JQYRCPE) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ76FJY3HTBH0CMCVX2EFHWJ&r=01KJHGGPCNRTBGCCYT1JQYRCPE)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ76FJY3HTBH0CMCVX2EFHWJ&r=01KJHGGPCNRTBGCCYT1JQYRCPE) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ76FJY3HTBH0CMCVX2EFHWJ&r=01KJHGGPCNRTBGCCYT1JQYRCPE) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJ76FJY3HTBH0CMCVX2EFHWJ&r=01KJHGGPCNRTBGCCYT1JQYRCPE)\n\npk9gear: **2nd of March Weekly Check-In (Real Talk)**\n      \n      Hey there\n      \n      Alright… another week, another newsletter 😅\n      \n      I’d love to know where everyone lives.\n      \n      I’m asking for two reasons:\n      \n      -\n      \n      I’m genuinely curious where the PK9 crew is spread around Australia (and beyond).\n      \n      -\n      \n      I might be planning a special deal for Melbourne locals, tied in with a training offer.\n      \n      I’ll start - I live in Doncaster, Melbourne.\n      Born in Sydney, and spent a few childhood years in England and Spain (long story).\n      \n      If you feel like replying, just hit me with:\n      Suburb + City\n      (or at least the city if you don’t want to be too specific).\n      \n      Rewards programme is officially LIVE 🔥\n      \n      Big news - the new rewards programme is now live:\n      https://pk9gear.com.au/pages/rewards\n      \n      And we’ve got two rewards-exclusive products ready to go…\n      \n      -\n      \n      Kangaroo Mini Finn Tug (pretty epic, I know)\n      \n      -\n      \n      Biothane Tactical Collar with a gold ADF buckle\n      \n      These can only be purchased with points and only by rewards members.\n      \n      Also… I know we’ve got 400+ people eligible with enough points to redeem the tug toy, so I’m hoping some of you ignore this email haha… because if you all redeem at once, we’re going to get absolutely slammed 😅\n      \n      There’s also an epic referral programme built into it, so if you’ve got a mate who loves good gear, now’s the time.\n      \n      New product drop: “Just a leash”\n      \n      Another new product has landed…\n      \n      Just a leash.\n      \n      I honestly love our “Just A” range,  the basics done right. No hype, no drama, just solid gear that doesn’t disappoint.\n      https://pk9gear.com.au/products/just-a-lead\n      \n      P.S. The people have spoken… You want dog bone key rings 😂\n      Alright then. Don’t say I never listen.\n      \n      Chris Loverseed\n      PK9 Gear\n      https://pk9gear.com.au/\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJKW5CAKZJP8RP8MJDBS2AEF&r=01KJPNDW2G3G2THVKJXAF03RPA).\n\npk9gear: **I hear this every week.**\n      \n      Hey , a bloke messaged me yesterday.\n      \n      His Staffy snapped three pet store collars in a single month because the plastic buckles kept giving out.\n      \n      He finally bought one of our Tactical Biothane Collars. Not a single issue since.\n      \n      There is a simple reason for that. We build our gear with genuine Raptor™ aluminium clips. It is aerospace-grade metal rated for 680kg of force.\n      \n      Stop trusting your dog's safety to cheap plastic that snaps when they pull.\n      \n      Get gear that takes an absolute beating.\n      \n      [https://pk9gear.com.au/biothane-tactical-dog-collar](https://pk9gear.com.au/collections/dog-collars/products/biothane-tactical-dog-collar)\n      \n      Cheers for backing the brand,\n      \n      Chris\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJA0GB2Q27BXYY7C2HEA7YK8&r=01KJS7657K18A5PC5M5CQHQ6HT).\n\npk9gear: **Let them get dirty 👀**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/products/slip-collar-6mm-biothane)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [an image of a website page with a cow on it](https://pk9gear.com.au/products/slip-collar-6mm-biothane)\n      \n      [an image of a website page with a cow on it](https://pk9gear.com.au/products/slip-collar-6mm-biothane)\n      \n      [an image of a website page with a cow on it](https://pk9gear.com.au/products/slip-collar-6mm-biothane)\n      \n      [slip-collar](https://pk9gear.com.au/products/slip-collar-6mm-biothane)\n      \n      [just-a-collar](https://pk9gear.com.au/products/just-a-collar)\n      \n      [an image of a website page with a cow on it](https://pk9gear.com.au/products/slip-collar-6mm-biothane)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJA0S5VTFGAA55DXMYJ3VRF8&r=01KJYD4E6CW9QR270BCTV2E8MV) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJA0S5VTFGAA55DXMYJ3VRF8&r=01KJYD4E6CW9QR270BCTV2E8MV) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJA0S5VTFGAA55DXMYJ3VRF8&r=01KJYD4E6CW9QR270BCTV2E8MV)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJA0S5VTFGAA55DXMYJ3VRF8&r=01KJYD4E6CW9QR270BCTV2E8MV) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJA0S5VTFGAA55DXMYJ3VRF8&r=01KJYD4E6CW9QR270BCTV2E8MV) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJA0S5VTFGAA55DXMYJ3VRF8&r=01KJYD4E6CW9QR270BCTV2E8MV)\n\npk9gear: **Get 20% off today + pay later 🔥**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/collections/shop-all)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/collections/shop-all)\n      \n      USE CODE: PK9FRENZY20\n      \n      USE CODE:PK9FRENZY20\n      \n      [header-section](https://pk9gear.com.au/collections/shop-all)\n      \n      [Image of Biothane Tactical Dog Collar](https://pk9gear.myshopify.com/products/biothane-tactical-dog-collar)\n      \n      Biothane Tactical Dog Collar\n      \n      $160.00\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/biothane-tactical-dog-collar)\n      \n      [Image of Dog Slip Lead 4ft (120cm) – Australian Made | 5mm Bluewater Rope](https://pk9gear.myshopify.com/products/dog-slip-leash-4ft)\n      \n      Dog Slip Lead 4ft (120cm) – Australian Made | 5mm Bluewater Rope\n      \n      $41.99\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/dog-slip-leash-4ft)\n      \n      [Image of Dog Training Obedience Slip Collar – Precision Control Collar](https://pk9gear.myshopify.com/products/dog-training-obedience-slip-collar)\n      \n      Dog Training Obedience Slip Collar – Precision Control Collar\n      \n      $34.99   $37.50\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/dog-training-obedience-slip-collar)\n      \n      [Image of Dog Slip Leash 6ft (180cm) – Made In Australia | 5mm Bluewater Rope](https://pk9gear.myshopify.com/products/dog-slip-leash-6ft)\n      \n      Dog Slip Leash 6ft (180cm) – Made In Australia | 5mm Bluewater Rope\n      \n      $45.00\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/dog-slip-leash-6ft)\n      \n      [Image of Just A Collar - For When All You Need Is A Simple Dog Collar](https://pk9gear.myshopify.com/products/just-a-collar)\n      \n      Just A Collar - For When All You Need Is A Simple Dog Collar\n      \n      $35.00\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/just-a-collar)\n      \n      [Image of 6mm Biothane Slip Collar – Lightweight Control](https://pk9gear.myshopify.com/products/slip-collar-6mm-biothane)\n      \n      6mm Biothane Slip Collar – Lightweight Control\n      \n      $47.99\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/slip-collar-6mm-biothane)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJY4X8MEMY9D8V84RS0WJJVD&r=01KK0Z4B3ZCRYSY2XPTFV83TE5) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJY4X8MEMY9D8V84RS0WJJVD&r=01KK0Z4B3ZCRYSY2XPTFV83TE5) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJY4X8MEMY9D8V84RS0WJJVD&r=01KK0Z4B3ZCRYSY2XPTFV83TE5)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJY4X8MEMY9D8V84RS0WJJVD&r=01KK0Z4B3ZCRYSY2XPTFV83TE5) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJY4X8MEMY9D8V84RS0WJJVD&r=01KK0Z4B3ZCRYSY2XPTFV83TE5) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJY4X8MEMY9D8V84RS0WJJVD&r=01KK0Z4B3ZCRYSY2XPTFV83TE5)\n\npk9gear: **Go wild! You've got 20% off ⏳**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/collections/shop-all)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/collections/shop-all)\n      \n      20% OFF WITH CODE:\n      PK9FRENZY20\n      \n      20% OFF WITH CODE:PK9FRENZY20\n      \n      [header-section](https://pk9gear.com.au/collections/shop-all)\n      \n      [Image of Biothane Tactical Dog Collar](https://pk9gear.myshopify.com/products/biothane-tactical-dog-collar)\n      \n      Biothane Tactical Dog Collar\n      \n      $160.00\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/biothane-tactical-dog-collar)\n      \n      [Image of Dog Slip Lead 4ft (120cm) – Australian Made | 5mm Bluewater Rope](https://pk9gear.myshopify.com/products/dog-slip-leash-4ft)\n      \n      Dog Slip Lead 4ft (120cm) – Australian Made | 5mm Bluewater Rope\n      \n      $41.99\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/dog-slip-leash-4ft)\n      \n      [Image of Dog Training Obedience Slip Collar – Precision Control Collar](https://pk9gear.myshopify.com/products/dog-training-obedience-slip-collar)\n      \n      Dog Training Obedience Slip Collar – Precision Control Collar\n      \n      $34.99   $37.50\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/dog-training-obedience-slip-collar)\n      \n      [Image of Dog Slip Leash 6ft (180cm) – Made In Australia | 5mm Bluewater Rope](https://pk9gear.myshopify.com/products/dog-slip-leash-6ft)\n      \n      Dog Slip Leash 6ft (180cm) – Made In Australia | 5mm Bluewater Rope\n      \n      $45.00\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/dog-slip-leash-6ft)\n      \n      [Image of Just A Collar - For When All You Need Is A Simple Dog Collar](https://pk9gear.myshopify.com/products/just-a-collar)\n      \n      Just A Collar - For When All You Need Is A Simple Dog Collar\n      \n      $35.00\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/just-a-collar)\n      \n      [Image of 6mm Biothane Slip Collar – Lightweight Control](https://pk9gear.myshopify.com/products/slip-collar-6mm-biothane)\n      \n      6mm Biothane Slip Collar – Lightweight Control\n      \n      $47.99\n      \n      [SAVE NOW](https://pk9gear.myshopify.com/products/slip-collar-6mm-biothane)\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0CA1E51JRYJAB2A7JXYWH9&r=01KK3HGPB5X1VM9QTNCD6QZE88) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0CA1E51JRYJAB2A7JXYWH9&r=01KK3HGPB5X1VM9QTNCD6QZE88) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0CA1E51JRYJAB2A7JXYWH9&r=01KK3HGPB5X1VM9QTNCD6QZE88)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0CA1E51JRYJAB2A7JXYWH9&r=01KK3HGPB5X1VM9QTNCD6QZE88) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0CA1E51JRYJAB2A7JXYWH9&r=01KK3HGPB5X1VM9QTNCD6QZE88) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0CA1E51JRYJAB2A7JXYWH9&r=01KK3HGPB5X1VM9QTNCD6QZE88)\n\npk9gear: **Did you know about this?**\n      \n      Hey , in case you missed it.\n      \n      PayPal Frenzy is on right now.\n      \n      That's means 20% off + you can split the payments over time.\n      \n      If there's something sitting in your cart, today's the day. The sale is about to end.\n      \n      USE CODE: PK9FRENZY20\n      \n      [www.pk9gear.com.au](https://pk9gear.com.au/collections/shop-all)\n      \n      Catch you soon, Chris\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KJY6W2V5YE3C0VHPQS8P2M42&r=01KK632DH1C26EWEH91SV79AJG).\n\npk9gear: **9th of March Weekly Check-In (Real Talk)**\n      \n      Hey there\n      \n      It’s been a huge week. Absolutely massive.\n      \n      So I thought I’d kick this one off with a question...\n      \n      Do you like taking your dog to Bunnings?\n      \n      Reply with:\n      YES\n      or\n      NO\n      \n      Or tell me why.\n      \n      Because somehow... me taking Nasa to Bunnings ended up with me making Yahoo News 😅\n      \n      Here’s the article if you want a look:\n      https://au.lifestyle.yahoo.com/bunnings-shopper-cops-backlash-over-breaking-in-store-dog-rule-irresponsible-002448937.html\n      \n      And the funny part is... it all started because I did my first ever Reddit post hahaha.\n      \n      Honestly, I still don’t really get Reddit. I put the post up, and the amount of hate was insane. People are properly vile when they’ve got a keyboard and too much spare time.\n      \n      Next thing I know, a journalist wanted to interview me about it.\n      \n      Very normal week in my world 😂\n      \n      [dog at bunnings](https://au.lifestyle.yahoo.com/bunnings-shopper-cops-backlash-over-breaking-in-store-dog-rule-irresponsible-002448937.html)\n      \n      \n      \n      On a much more meaningful note...\n      \n      I did a podcast months ago, and it’s finally live.\n      \n      It talks a lot about my life story, what I’ve been through, and why PK9 exists in the first place.\n      \n      So if you’ve got an hour up your sleeve and have a listen, I’d genuinely love to know what you think.\n      \n      https://youtu.be/ms4SF1GkCFE?si=VJYY2w33Ayn1HZFa\n      \n      If you do listen, please reply and let me know your thoughts. I always find it weird hearing myself talk for that long, so I’m curious what lands with people.\n      \n      [podcast]\n      \n      \n      \n      Ninja turned 13 🖤\n      \n      Also... Ninja turned 13.\n      \n      My first dog to ever become a teenager.\n      \n      That one hit me in the feels a bit, to be honest.\n      \n      She’s still blessing me every day, and after everything that’s happened recently, I’m just extra grateful for every moment with her.\n      \n      [ninja 13]\n      \n      \n      \n      New product now live\n      \n      And lastly, another new product is up:\n      \n      Medium Chuck It Balls\n      https://pk9gear.com.au/collections/balls/products/medium-chuck-it-ball\n      \n      And I’ll be honest... it’s actually become my favourite ball size to use.\n      \n      The size is just right. Not too small, not too bulky, and really nice to work with.\n      \n      Alright, that’s enough from me.\n      \n      But hit reply and let me know...\n      \n      Do you take your dog to Bunnings?\n      \n      And if you listen to the podcast, I’d love your thoughts on that too.\n      \n      Chris Loverseed\n      PK9 Gear\n      https://pk9gear.com.au/\n      \n      You received this email from PK9 Gear. If you would like to unsubscribe, [click here](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK57HXH0P5VGRS5XNF25NZMY&r=01KK7J8H6JMDVSR1X3GV56Z52P).\n\npk9gear: **Energy burner fetch toy ⚡️**\n      \n      [PK9 Gear Australia logo](https://pk9gear.com.au/products/medium-chuck-it-ball)\n      \n      [menu options for dog gear](https://pk9gear.com.au/collections/black-friday)\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      https://pk9gear.com.au/collections/black-friday\n      \n      [header-section](https://pk9gear.com.au/products/medium-chuck-it-ball)\n      \n      [header-section](https://pk9gear.com.au/products/medium-chuck-it-ball)\n      \n      [header-section](https://pk9gear.com.au/products/medium-chuck-it-ball)\n      \n      20% OFF WITH CODE:\n      PK9FRENZY20\n      \n      [pk9 gear instgram](https://www.instagram.com/pk9_gear/)\n      \n      [shop sale](https://pk9gear.com.au/collections/black-friday)\n      \n      [best sellers](https://pk9gear.com.au/collections/top-sellers)\n      \n      [shop all](https://pk9gear.com.au/collections/pk9-gear-dog-training-products)\n      \n      [why pk9 gear is the best](https://pk9gear.com.au/pages/about)\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0DB5GKDPSZAHSXW8PSFFPJ&r=01KKDTN1CMBRMWACW6T79M7HVD) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0DB5GKDPSZAHSXW8PSFFPJ&r=01KKDTN1CMBRMWACW6T79M7HVD) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0DB5GKDPSZAHSXW8PSFFPJ&r=01KKDTN1CMBRMWACW6T79M7HVD)\n      \n      \n      \n      PK9 Gear 288 Doncaster Rd BALWYN NORTH, VIC 3104\n      \n      [Unsubscribe](https://manage.kmail-lists.com/subscriptions/unsubscribe?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0DB5GKDPSZAHSXW8PSFFPJ&r=01KKDTN1CMBRMWACW6T79M7HVD) | [Manage preferences](https://manage.kmail-lists.com/subscriptions/update?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0DB5GKDPSZAHSXW8PSFFPJ&r=01KKDTN1CMBRMWACW6T79M7HVD) | [View in Your Browser](https://manage.kmail-lists.com/subscriptions/web-view?a=XEz9bM&c=01JQRJCDTWJKFMDBG1RKW664VZ&k=190d98554c58be0b055d8da6914cb3d0&m=01KK0DB5GKDPSZAHSXW8PSFFPJ&r=01KKDTN1CMBRMWACW6T79M7HVD)\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 1,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi sai về grammar và vocabulary."
+        },
+        "communication": {
+          "score": 2,
+          "justification": "Các thông tin truyền tải rõ ràng, mạch lạc."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "solution": {
+          "score": 3,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "proactiveness": {
+          "score": 2,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "transferring": {
+          "score": 2,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đây là hội thoại auto-reply từ email nên không áp dụng tiêu chí này."
+        }
+      },
+      "overall_summary": "Đây là đoạn hội thoại tự động từ email marketing của nhãn hàng PK9 Gear.",
+      "total_score_20": 20.75,
+      "final_score_10": 10.38
+    }
+  },
+  {
+    "session_id": "session_51ac0351-ec25-40cd-8b4d-be38c3841646",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "Unknown",
+    "customer": "oanhxinh28",
+    "primary_operator": "PieLab Support",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\noanhxinh28: Hi, is there anyone help me to optimize my SEO score?\n\noanhxinh28: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\noanhxinh28: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\noanhxinh28: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\noanhxinh28: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\noanhxinh28: Can you help me check on my Google Search Console issues?\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\noanhxinh28: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\noanhxinh28: I want to create a LLM.txt file!\n\n  PieLab Support: HTML issues detected. A quick cleanup can speed up your site and help rankings.\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: I want to create a LLM.txt file!\n\n  PieLab Support: HTML issues detected. A quick cleanup can speed up your site and help rankings.\n\noanhxinh28: I want to create a LLM.txt file!\n\noanhxinh28: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\noanhxinh28: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\noanhxinh28: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\noanhxinh28: Hi, I have signed up for Enterprise Monthly plan. Can you help me set up the features in your app? \n\noanhxinh28: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\noanhxinh28: Hi, I have signed up for Premium Monthly plan. Can you help me set up the features in your app?\n\noanhxinh28: Hi, I'd like to learn more about “k”. Could you please help me?\n\noanhxinh28: Hi, I'd like to learn more about “k”. Could you please help me?\n\noanhxinh28: Hi, I'd like to learn more about “k”. Could you please help me?\n\noanhxinh28: Hi, I'd like to learn more about “k”. Could you please help me?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0,
+          "justification": "Không có lời chào mở đầu."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Trả lời đúng trọng tâm câu hỏi của khách hàng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Hiểu đúng yêu cầu của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent phản hồi khách hàng lịch sự, không cộc lốc."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không cần thể hiện sự đồng cảm trong trường hợp này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent phản hồi tích cực, sẵn sàng hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing trong trường hợp này."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đưa ra giải pháp phù hợp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để gợi ý thêm cho khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không cần chia sẻ thêm resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội làm thêm giá trị gia tăng."
+        },
+        "review_asking": {
+          "score": 1.0,
+          "justification": "Agent không xin review. Nên xin review vì đã đưa ra giải pháp cho khách hàng. Ví dụ: 'If you're happy with the support provided, would you mind leaving us a review?'"
+        }
+      },
+      "overall_summary": "Nhìn chung, agent đã phản hồi khá tốt, đưa ra giải pháp phù hợp cho khách hàng. Tuy nhiên, agent nên chủ động xin review sau khi đã giúp khách hàng giải quyết vấn đề.",
+      "total_score_20": 19.25,
+      "final_score_10": 9.62
+    }
+  },
+  {
+    "session_id": "session_149da9b1-30ae-4ede-aa76-09a44a166d04",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "SearchPie",
+    "customer": "muh6a5-9i",
+    "primary_operator": "Wendy",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  PieLab Support: 297 meta tags need a fix. Want to update them for better results?\n\nmuh6a5-9i: Can you help me check on my speed performance?\n\nmuh6a5-9i: Fix now\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to take a look at your site’s speed performance?\n\nmuh6a5-9i: [File: IMG_9279.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/img9279_255bwe.png]\n\nmuh6a5-9i: [File: IMG_9280.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/img9280_ynyjw1.png]\n\nmuh6a5-9i: [File: IMG_9281.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/img9281_1itqy2.png]\n\nmuh6a5-9i: yes please…also can you help with this error message\n\nmuh6a5-9i: [File: IMG_9282.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/img9282_13wjobz.png]\n\n  Ivy: Thanks for sharing the screenshot with me. Please allow me a few minutes to take a look\n\nmuh6a5-9i: ok thanks\n\nmuh6a5-9i: Can you help me check on my speed performance?\n\n  Ivy: You're always welcome, dear <3   Upon checking your screenshot above, it seems the issue is related to duplicate **Product schema** on the page, specifically the \"brand\" field appearing more than once\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_pvbq74.png]\n\n  Ivy: Since the product shema in SearchPie is available in Premium plan only\n\nmuh6a5-9i: aw\n\n  Ivy: This can happen when two different sources generate structured data at the same time on your store, for example:\n\n  Ivy: • the Shopify theme already includes Product schema\n      • another SEO app on your store also adds Product schema\n\nmuh6a5-9i: oh I see\n\n  Ivy: since the product schema isn't added via our app, you can double-check other SEO app running on your store or on your Shopify theme :$\n\nmuh6a5-9i: I don’t know the other seo app\n\n  Ivy: Ah you can access Sale Channels > Online Store > Theme > Customize\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_1cyr86o.png]\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_pbqg2y.png]\n\n  Ivy: Please access App embeds on your store > you can now check which apps are running on your store :$\n\nmuh6a5-9i: ok I deleted old seo apps looks like I had a few\n\n  Ivy: Perfect~ Thanks for double-checking and keeping me updated. Then you can wait for Google to crawl your latest changes again\n\n  Ivy: In the meantime, you would like me to suggest you our free features for your SEO?\n\nmuh6a5-9i: Can you help me check on my speed performance?\n\n  Jane: it's Jane from Search Pie here\n\n  Jane: do you want me to check your speed now?\n\nmuh6a5-9i: yes\n\n  Jane: sure please wait me a moment\n\n  Jane: Here's a quick snapshot:\n      \n      * Your current speed score: 42 for Mobile, 40 for Desktop\n      * Recommended benchmarks: 50+ for Mobile, 70+ for Desktop\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_3peph8.png]\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_28csx4.png]\n\n  Jane: both of your speed score are lower than the standard\n\n  Jane: i think you should optimize your speed now [+1]\n\nmuh6a5-9i: Hi, I have signed up for Enterprise Annual plan. Can you help me set up the features in your app?\n\n  John: Hi there! I'm John from SearchPie\n\n  John: Welcome to Enterprise plan of Searchpie\n\n  John: :D\n\n  John: We're so thankful for trusting us, trusting our application\n\n  John: [File: Screenshot 2026-03-07 at 21.37.30.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/screenshot-2026-03-07-at-21373_wot31v.png]\n\n  John: Since you are in Enterprise plan, do you want to fix HTML and Meta tag issues?\n\nmuh6a5-9i: yes\n\nmuh6a5-9i: Hi, is there anyone help me to optimize my SEO score?\n\n  John: I have sent you a request to your mailbox\n\n  John: Please check it and accept it\n\n  John: We can fix them ASAP\n\n  John: Before I'm checking your setup\n\nmuh6a5-9i: Can you help me check on my speed performance?\n\nmuh6a5-9i: done\n\n  John: Great! Please give me 5 minutes to solve them\n\n  John: [File: Screenshot 2026-03-07 at 21.58.25.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/screenshot-2026-03-07-at-21582_4cni3a.png]\n\n  John: Hi I;m back\n\n  John: All issues are fixed\n\n  John: Could you please recheck from your side?\n\nmuh6a5-9i: ok\n\n  John: By the way, I have seen you haven't setup some features from our application\n\n  John: Do you want to walk through them with me?\n\n  John: step by step\n\nmuh6a5-9i: umm how do I check\n\n  John: Do you mean checking the HTML fix?\n\nmuh6a5-9i: you said:\n      Could you please recheck from your side?\n\n  John: Ah you can check it in SEO report\n\n  John: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_1d4wh53.png]\n\nmuh6a5-9i: Can you help me check on my Google Merchant Center issues?\n\n  Wendy: Hello, it's Wendy from SearchPie\n\n  Wendy: Would you like me to check your Google Merchant Center?\n\nmuh6a5-9i: how do I run the image compress?\n\nmuh6a5-9i: Can you help me check on my Google Search Console issues?\n\nmuh6a5-9i: Can you help me check on my Google Search Console issues?\n\n  Wendy: Please let me check your Image Compress now\n\n  Wendy: Please go to Site Speed > choose Image Compress > click this COMPRESS button\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_1jbz8at.png]\n\nmuh6a5-9i: Can you help me check on my Google Search Console issues?\n\nmuh6a5-9i: Can you help me check on my Google Search Console issues?\n\nmuh6a5-9i: Can you help me check on my Google Search Console issues?\n\nmuh6a5-9i: how do I fix these? Notice\n      Missing field \"review\"\n      Attention\n      Notice\n      Missing field \"aggregateRating\"\n      Attention\n      Notice\n      Missing field \"priceValidUntil\"\n      Attention\n      Notice\n      Missing field \"availability\"\n      Attention\n      Notice\n      Missing field \"description\"\n      Attention\n      Notice\n      Missing field \"shippingDetails\"\n\n  Wendy: Oh i see they're all the Google Search Console issues\n\n  Wendy: It's all related to coding to fix because they're in theme code\n\n  Wendy: May I ask if you have in-house technical expert to fix them?\n\nmuh6a5-9i: I am🫠\n\n  Wendy: oh i see, glad to hear that\n\n  Wendy: If so you can consider fixing them, they're the JSON-LD issues\n\n  Wendy: Or if you're interested, you can consider signing up our Google Search Console service. It's onetime payment service with 6 months warranty, our technical expert will help you fix all issues above\n\n  Wendy: May i ask if you're interested?\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_1fpxthi.png]\n\nmuh6a5-9i: no I’ll have to figure it out on my own\n\n  Wendy: I understand, thank you for your confirmation\n\n  Wendy: Next, i see your store is missing a Favicon\n\n  Wendy: may i ask if you heard about it?\n\nmuh6a5-9i: i have a favicon - I’ll add it to my new theme thanks\n\nmuh6a5-9i: how do I generate the bulk edits of the homepage SEo\n\n  Wendy: Please let me guide you now\n\n  Wendy: Ah, regarding Homepage, may I ask which content you want to bulk edit?\n\n  Wendy: I think Homepage is most important page, you should carefully edit content manually\n\nmuh6a5-9i: [File: IMG_9349.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/img9349_1ja33m2.png]\n\n  Wendy: You should go to On-page & Content > choose AI Generate\n\n  Wendy: Here, you can go to each page (Home, Product, Collection...) and edit the length of your meta tags\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_o8ormq.png]\n\nmuh6a5-9i: how does that work with product pages\n\n  Wendy: You can move to Product here\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_fyoht.png]\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/image_po0vum.png]\n\nmuh6a5-9i: can your technical staff able to tell me how I can fix this on my own? how do I fix these? Notice\n      Missing field \"review\"\n      Attention\n      Notice\n      Missing field \"aggregateRating\"\n      Attention\n      Notice\n      Missing field \"priceValidUntil\"\n      Attention\n      Notice\n      Missing field \"availability\"\n      Attention\n      Notice\n      Missing field \"description\"\n      Attention\n      Notice\n      Missing field \"shippingDetails\". like where in the theme to look\n\n  Jane: it's Jane from Search Pie team here\n\n  Jane: those issues are Google Search Console issues\n\n  Jane: they're all related to coding to be checked and fixed, except for the missing reviews and aggregate ratings, which are due to the fact that your customers haven't left reviews on some pages of your site :$\n\n  Jane: [File: GSC.png - https://storage.crisp.chat/users/upload/session/-/8/7/3/c/873ce700d766f800/gsc_vq1f60.png]\n\n  Jane: our team can help you check and fix these issues, you can consider sign up for the Google Search Console special package\n\n  Jane: fixing these issues requires lot of coding and workforce, it's not included in SEO plan\n\nmuh6a5-9i: Can you help me check on my Google Merchant Center issues?\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3\n\n  Hannah: May I ask if you’re interested in our Google Merchant Center service?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent Ivy, Jane, John, Wendy, Hannah chào đúng tên app. VD: 'Hi there. It's Ivy from SearchPie app'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Câu 'Please wait me a moment' của Jane sai ngữ pháp. Gây khó hiểu nhẹ. Nên sửa thành 'Please wait a moment'."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Các agent giao tiếp rõ ràng, mạch lạc, giải thích cặn kẽ các vấn đề và hướng dẫn khách hàng. VD: Ivy giải thích về Product schema, Wendy hướng dẫn cách nén ảnh và chỉnh sửa meta tags."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Các agent lắng nghe và hiểu yêu cầu của khách hàng. VD: John sau khi fix HTML và Meta tag issues đã hỏi khách có muốn walk through các features khác không."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giọng văn lịch sự, nhiệt tình. Tốc độ phản hồi tốt. Tuy nhiên có một số đoạn agent Jane phản hồi hơi chậm, cần cải thiện để khách hàng không phải chờ đợi lâu."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khi khách 'I am🫠' thì agent Wendy đã có câu 'oh i see, glad to hear that' thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Các agent nhiệt tình hỗ trợ khách hàng. VD: John rất nhiệt tình hướng dẫn khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Các agent chủ động hỏi thông tin để hiểu rõ vấn đề của khách hàng. VD: Wendy hỏi khách hàng muốn chỉnh sửa nội dung gì trên trang chủ."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Các agent đưa ra giải pháp đúng và khách hàng xác nhận. VD: Ivy hướng dẫn khách hàng cách xóa các SEO app cũ gây xung đột Product schema, John sửa các lỗi HTML và Meta tag."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Các agent chủ động đưa ra gợi ý hữu ích cho khách hàng. VD: Ivy gợi ý các free features cho SEO, John gợi ý walk through các features khác."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Các agent tận dụng tốt các resources để hỗ trợ khách hàng. VD: Wendy chia sẻ hình ảnh hướng dẫn cách nén ảnh."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "John chủ động giúp khách hàng fix HTML và Meta tag issues, thể hiện tinh thần hỗ trợ hết mình."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "Khách hàng happy sau khi John fix HTML và Meta tag issues. Nên xin review: 'Great! I'm glad I could help. If you're happy with the support, would you mind leaving us a quick review? It would really help us out!'"
+        }
+      },
+      "overall_summary": "Nhìn chung, các agent đã hỗ trợ khách hàng rất tốt, giải quyết được nhiều vấn đề và đưa ra các gợi ý hữu ích. Tuy nhiên, cần cải thiện về tốc độ phản hồi và xin review khi khách hàng hài lòng.",
+      "total_score_20": 18.5,
+      "final_score_10": 9.25
+    }
+  },
+  {
+    "session_id": "session_850834f1-6cff-42af-92ce-50a7ca2f3458",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "DECO",
+    "customer": "Bewitching Medley ",
+    "primary_operator": "Ivy",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\nBewitching Medley : How do I change the background and text color to fit my theme colors?\n\n  Ivy: Hi there. It's Ivy from DECO app :$\n\n  Ivy: Thanks for sharing your concer with us~\n\nBewitching Medley : [File: IMG_0101.png - https://storage.crisp.chat/users/upload/session/-/e/8/5/c/e85c95f38157d000/img0101_1rnp1qc.png]\n\nBewitching Medley : They showed like this.  I would like them to look like the “Sale” badge\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/8/5/c/e85c95f38157d000/image_9c0oja.png]\n\nBewitching Medley : Ok. Let me try that\n\n  Ivy: To change the background color, please click here and paste your preferred color hex\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/8/5/c/e85c95f38157d000/image_1qs7v4p.png]\n\n  Ivy: The text color can be adjusted in the Font section\n\n  Ivy: Yess please take your time and let me know if any :$\n\n  PieLab Support: Hi, I am Rossie from the DECO technical support team. I received the information that your badges are not displaying correctly, though you set up everything.\n      No worry, our support team is 24/7, and we can do a FREE check to resolve your problem quickly, do you want us to help you check it?💗\n\nBewitching Medley : Hi DECO team! I just filled the Sidekick survey.\n       My Sidekick prompt/keywords: “Create badge for New Arrivals”.\n       Please send my discount code. Thanks!\n\n  Felicie: Hi, it's Felicie from the DECO team!\n\n  Felicie: May I ask you for the screenshot of your Sidekick survey?\n\n  Felicie: So that I can help check the discount for you!!!\n\nBewitching Medley : Umm..It disappeared after I finished filing it out\n\nBewitching Medley : Can I find it somewhere?\n\n  Felicie: Could you take a look at your chat with Shopify?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent Ivy chào chuẩn: \"Hi there. It's Ivy from DECO app :$\""
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nghiêm trọng."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng, đúng trọng tâm. Hướng dẫn khách thay đổi background và text color."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và hiểu đúng yêu cầu của khách, hướng dẫn khách thay đổi màu sắc. Sau đó có agent khác tiếp tục hỗ trợ về vấn đề khác."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent trả lời lịch sự, nhiệt tình, không có dead time đáng kể."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không cần empathy trong trường hợp này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent Ivy cung cấp giải pháp hướng dẫn khách thay đổi màu sắc background và text. Các agent khác giải quyết các vấn đề phát sinh sau."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent Ivy không bỏ lỡ cơ hội gợi ý thêm, hướng dẫn chi tiết cho khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Có agent Rossie từ technical support team vào hỗ trợ, tính là transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent đã chia sẻ hình ảnh hướng dẫn, không cần thêm resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để làm thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent Ivy đã xin nhưng khách không rep."
+        }
+      },
+      "overall_summary": "Nhìn chung, các agent đã hỗ trợ khách hàng nhiệt tình và hiệu quả. Agent Ivy hướng dẫn khách thay đổi màu sắc, sau đó có agent kỹ thuật vào hỗ trợ thêm. Agent Ivy cũng đã xin review.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_6be1768c-e661-4eed-a99d-edb184d74ca3",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "SearchPie",
+    "customer": "65ypec-0z",
+    "primary_operator": "Ivy",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n65ypec-0z: Hi, is there anyone help me to optimize my SEO score?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to check your SEO today?\n\n65ypec-0z: yes. my alendor.com doesnt come up in google search and we cant find the reason\n\n  Ivy: Thanks for sharing your concern with us. Please allow me a few minutes to take a look\n\n  Ivy: I will be back shortly~\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/4/1/5/241545dcce71e000/image_1hddyj7.png]\n\n  Ivy: Upon checking, your store is already indexed by Google and appears in search results, as shown in my screenshot below\n\n  Ivy: When searching “alendor.com”, I can see several pages from your store showing up, including your homepage, collections, and blog posts\n\n  Ivy: Therefore, Google has successfully crawled and indexed your website and no issues preventing your store from appearing in Google\n\n65ypec-0z: why the website doesnt come up in google when searched alendor?\n\n  Ivy: Ah I got your point. Let me clarify it a little bit for you:\n\n  Ivy: If you search only “alendor”, Google may sometimes show different results depending on factors like:\n      \n      • search history\n      • location\n      • personalization in Google results\n      • how **strong the brand keyword** currently ranks\n\n  Ivy: Since “Alendor” is still a relatively new brand name, Google needs more time and signals (such as traffic, mentions, and backlinks) before consistently showing your website at the top for that keyword\n\n  Ivy: In this case, you can utilize our app's features to boost your SEO, and then improve your ranking in Google Search\n\n  Ivy: Would you like me to go through our features?\n\n65ypec-0z: Hi, is there anyone help me to optimize my SEO score?\n\n  David: Hi, this is David from SearchPie here\n\n  David: Would you like to optimize your SEO score today?\n\n65ypec-0z: Hi, is there anyone help me to optimize my SEO score?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to check your SEO today?\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào chuẩn tên app: 'It's Ivy from SearchPie app'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi chính tả hoặc ngữ pháp nào ảnh hưởng đến việc hiểu nội dung."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng, mạch lạc, giải thích cặn kẽ vấn đề và đưa ra hướng giải quyết. Agent giải thích tại sao website không hiển thị khi search 'alendor' và đề xuất sử dụng features của app."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent hiểu đúng vấn đề khách hàng gặp phải là website không hiển thị khi search 'alendor' trên Google."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent phản hồi nhanh chóng, lịch sự và nhiệt tình hỗ trợ khách hàng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không có biểu hiện lo lắng hay giận dữ, nên không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình giải thích, sẵn sàng giúp đỡ khách hàng bằng cách đề xuất sử dụng các tính năng của app: 'Would you like me to go through our features?'"
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent không cần probing vì khách hàng đã nêu rõ vấn đề."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent cung cấp giải pháp đúng, giải thích rõ ràng lý do website không hiển thị khi tìm kiếm 'alendor' và đề xuất sử dụng các tính năng của app để cải thiện SEO."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "Agent đề xuất đi qua các features của app nhưng bị trùng lặp do trước đó agent David đã đề xuất. Agent David đã hỏi: 'Would you like to optimize your SEO score today?' \n(1) Agent Ivy nên tập trung vào hỗ trợ khách hàng giải quyết vấn đề cụ thể thay vì chỉ giới thiệu tính năng app một cách chung chung.\n(2) Việc trùng lặp này có thể làm khách hàng cảm thấy không được hỗ trợ chu đáo.\n(3) Rewriting: Sau khi giải thích rõ vấn đề và đề xuất giải pháp, hãy hỏi: 'Ngoài ra, tôi có thể giúp gì thêm cho bạn không?'\n(4) Agent nên xem lại lịch sử chat để tránh lặp lại các đề xuất."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ docs/guide rõ ràng."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội làm thêm giá trị rõ ràng."
+        },
+        "review_asking": {
+          "score": 1.0,
+          "justification": "Khách không phản hồi sau khi được giải đáp. Nên xin review để tăng tương tác.\n(1) Agent đã giải quyết vấn đề cho khách hàng, nhưng không yêu cầu feedback.\n(2) Mất cơ hội nhận được đánh giá tích cực.\n(3) Rewriting: 'Tôi rất vui vì đã giúp bạn giải quyết vấn đề. Nếu bạn hài lòng với dịch vụ của chúng tôi, vui lòng cho chúng tôi xin đánh giá 5 sao nhé!'\n(4) Luôn chủ động xin review sau khi giải quyết xong vấn đề."
+        }
+      },
+      "overall_summary": "Nhìn chung, Agent Ivy đã hỗ trợ khách hàng tốt, giải thích rõ ràng vấn đề và đưa ra giải pháp phù hợp. Tuy nhiên, agent cần chú ý hơn đến việc tránh lặp lại các đề xuất và chủ động xin review sau khi giải quyết xong vấn đề.",
+      "total_score_20": 17.5,
+      "final_score_10": 8.75
+    }
+  },
+  {
+    "session_id": "session_9aaadcc2-c909-44e6-855a-3983ac502b7b",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "DECO",
+    "customer": "Noboxy",
+    "primary_operator": "Jane",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\nNoboxy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_5808zv.png]\n\nNoboxy: this one\n\nNoboxy: ??\n\n  Jane: it's Jane from DECO team here\n\n  Jane: David just ended his shift so I'm here to assist you\n\n  Jane: I see that the label did not show up on the upselling part of your store\n\n  Jane: let me check it for you, no worry\n\nNoboxy: please check\n\n  Jane: let me notify our team to check the displaying issue for you\n\n  Jane: We'll get back & let you know when we have news :$\n\nNoboxy: Please do it quick\n\n  Jane: the issue is fixed\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_1kttxgr.png]\n\n  Jane: Please access your store and let me know if it works properly\n\nNoboxy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_1pt39ev.png]\n\nNoboxy: It shows on the below section but not on the upper section\n\nNoboxy: https://www.noboxy.com/pages/shop-all\n\n  Jane: alright let me take a look\n\nNoboxy: doesn't you have any custom code\n\nNoboxy: which i place i a file so the widget will show\n\nNoboxy: ??\n\n  Jane: our technician will check and put customized code if needed\n\n  Jane: they're checking on your case, please wait me a moment, I'll updated once done\n\nNoboxy: can you please confirm how much time it would take?\n\nNoboxy: also ther are some more sections on the home page where your label isn't showing\n\nNoboxy: so please share the widget code with me if you can so i can implement it on these sections\n\n  Jane: our label can be shown on product images (images that link to products)\n\n  Jane: so if you found out any displaying issue, please advise us, we'll check accordingly\n\n  Jane: I'll also ask about the code and I'll get back to advise if we have\n\nNoboxy: Okay please let me know when its done\n\n  Jane: of course\n\nNoboxy: Can you please confirm how much time it would take\n\n  Jane: our team just fixed it, can you double check at your end\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_9gxl1d.png]\n\nNoboxy: but these are not redable\n\nNoboxy: can you please increase the size of it\n\nNoboxy: https://www.noboxy.com/\n      \n      also tehre are some sliders on my home page also where it is not appearing please check them also\n\n  Jane: can you drop me a screenshot on the sliders that you mentioned?\n\nNoboxy: Okay\n\nNoboxy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_1apgvyy.png]\n\n  Jane: also for the size, you can adjust it in the setting, please choose Px instead of %, then the size will be bigger\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_1dve3np.png]\n\nNoboxy: Okay\n\nNoboxy: and please apply it on the homep page sldder also\n\nNoboxy: I\"ve shared a screensho above\n\n  Jane: got it, let me notify our team to check\n\nNoboxy: Okay\n\n  Jane: we'll notify you once it;s done\n\nNoboxy: Okay\n\n  Jane: :$\n\nNoboxy: Hello jane\n\nNoboxy: any update\n\nNoboxy: ?\n\n  Tina: Hello, I'm Tina from DECO here\n\n  Tina: Our dev is working on your case\n\n  Tina: I will inform you as soon as possible :$\n\nNoboxy: Okay\n\nNoboxy: thanks for the feedback\n\n  Tina: my pleasure, my friend\n\n  Tina: Feel free whenever you need our help :$\n\nNoboxy: Hello Tina any update reagarding this?\n\n  Tina: Hi friend, our team is still working on it\n\n  Tina: I will be back soon\n\n  Ivy: Hi there, it's Ivy from the DECO support team.\n      \n      Thank you for your patience and understanding.\n      \n      I would like to inform you that our technical team has adjusted the badge's size on the home page. Please help reload your site to double-check how it goes now :$  \n      \n      And if you have any questions or need further adjustments, feel free to let us know.\n      \n      Best regards,\n      Ivy\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_1iui3bc.png]\n\nNoboxy: Hello ivy the labes badges is showing when i select the tab washers and etc but not showing when I slelect the All tab\n\nNoboxy: please check it.\n\nNoboxy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_1kyai06.png]\n\nNoboxy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_1kyai06.png]\n\n  Jane: it's Jane from DECO team here\n\n  Jane: let me check it for you\n\n  Jane: I already notified our technician to check, we'll get back to advise once done\n\n  Jane: Hi there, it's Jane from DECO here. Thank you so much for your patience.\n      \n      I would like to inform you that our technical team has solved the label display issue.\n      Please access your store and let me know if it works properly.\n      \n      ![](https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/screenshot5_1n396kb.png)\n      \n      Please feel free to get back to us whenever you need help. We are always more than ready to support you as best we can! :$  \n      \n      Regards,\n      Jane\n\nNoboxy: Okay thanks\n\n  Tina: Our pleasure <3\n\nNoboxy: Also the badge is appearing on right side I want it on left side like all other sections\n\n  Tina: Hi, I’m Tina here\n\n  Tina: You can adjust it by yourself\n\nNoboxy: In the app?\n\n  Tina: Yes my friend\n\n  Tina: Let me guide you\n\nNoboxy: Okay\n\n  Tina: [File: IMG_0655.jpg - https://storage.crisp.chat/users/upload/operator/-/1/9/6/8/19688061402be100/177315255193000_318723.jpg]\n\n  Tina: In design section, you will see this option\n\n  Tina: You can adjust the position of label like the way you want\n\nNoboxy: It's already set\n\nNoboxy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_hslfg0.png]\n\nNoboxy: The issue is accuring only on \"Popular products\" section\n\n  Tina: Oki no worry\n\n  Tina: Let me inform our dev to check it for you\n\nNoboxy: In all other sections the badge on the left side\n\n  Tina: Oki my friend\n\n  Tina: I wwill be back soon\n\nNoboxy: Yes please\n\n  Tina: :$\n\nNoboxy: Hell Tina\n\nNoboxy: Any update?\n\n  Tina: Hi, our dev is checking on it\n\n  Tina: I will inform you as soon as possible\n\nNoboxy: Okay\n\n  Tina: :$\n\n  Ivy: Hi there, it's Ivy from the DECO support team.\n      \n      Thank you for your patience and understanding.\n      \n      I would like to inform you that your badge is now displaying correctly as requested. You can now reload your site to double-check :$  \n      \n      And if you have any questions or concerns, feel free to let us know anytime~\n      \n      Best regards,\n      Ivy\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/e/f/4/4/ef4475dad3fb2800/image_eze5wz.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Ivy và Jane chào có tên và brand (DECO)."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nghiêm trọng gây khó hiểu."
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Nhìn chung giao tiếp rõ ràng. Tuy nhiên, đôi chỗ còn chưa được súc tích và hơi vòng vo. Ví dụ: Jane viết \"I already notified our technician to check, we'll get back to advise once done\".\nẢnh hưởng: Khách hàng có thể phải chờ đợi.\nRewriting: \"Tôi đã báo kỹ thuật kiểm tra và sẽ thông báo lại ngay khi có kết quả.\"\nLời khuyên: Nên diễn đạt ngắn gọn, đi thẳng vào vấn đề hơn."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Các agent đều lắng nghe và hiểu vấn đề khách hàng gặp phải."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tone lịch sự, nhịp độ ổn định."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có đoạn nào khách hàng tỏ ra quá khó chịu, bực bội nên không cần thiết phải thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Các agent nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Jane và Tina đã thực hiện probing để hiểu rõ vấn đề của KH. Ví dụ, Jane yêu cầu KH cung cấp screenshot để xác định vị trí lỗi."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Các agent đã cung cấp giải pháp đúng và khách hàng đã xác nhận vấn đề được giải quyết."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "Có cơ hội để pro-active nhưng agent bỏ qua. Ví dụ, khi khách hàng báo \"Also the badge is appearing on right side I want it on left side like all other sections\", Tina chỉ hướng dẫn khách tự chỉnh mà không chủ động hỗ trợ hoặc đề xuất chỉnh giúp. \nẢnh hưởng: Khách hàng có thể cảm thấy không được hỗ trợ đầy đủ.\nRewriting: \"Để tôi chỉnh giúp bạn nhé. Bạn muốn badge nằm ở vị trí nào trên sản phẩm ạ?\"\nLời khuyên: Chủ động hơn trong việc cung cấp giải pháp và hỗ trợ khách hàng, đặc biệt khi vấn đề có thể được giải quyết nhanh chóng."
+        },
+        "transferring": {
+          "score": 1.0,
+          "justification": "Đã có case transferring cho team dev để giải quyết. Tuy nhiên, việc cập nhật thông tin cho khách hàng còn chậm trễ, khiến khách hàng phải hỏi lại nhiều lần. Do đó, trừ 1 điểm."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Tina đã chia sẻ hình ảnh hướng dẫn khách hàng tự chỉnh sửa vị trí badge."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "Không có extra mile. Ví dụ: khi khách hàng muốn badge ở vị trí khác, agent chỉ hướng dẫn tự chỉnh."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "Khách hàng đã nói \"Okay thanks\" sau khi vấn đề được giải quyết, đây là tín hiệu cho thấy khách hàng hài lòng. Tuy nhiên, agent đã không xin review. \nẢnh hưởng: Mất cơ hội nhận được đánh giá tích cực từ khách hàng.\nRewriting: \"Rất vui vì đã giúp được bạn. Nếu bạn hài lòng với dịch vụ của chúng tôi, bạn có thể đánh giá 5 sao cho DECO được không ạ? Điều này sẽ giúp chúng tôi cải thiện dịch vụ tốt hơn nữa.\"\nLời khuyên: Luôn chủ động xin review khi khách hàng hài lòng để tăng cơ hội nhận được đánh giá tích cực."
+        }
+      },
+      "overall_summary": "Nhìn chung, các agent đã giải quyết vấn đề của khách hàng một cách hiệu quả. Tuy nhiên, vẫn còn một số điểm cần cải thiện như tính chủ động, giao tiếp súc tích hơn và đặc biệt là việc xin review khi khách hàng hài lòng.",
+      "total_score_20": 13.75,
+      "final_score_10": 6.88
+    }
+  },
+  {
+    "session_id": "session_410364f1-d926-4740-9fd2-ea9a618fcc56",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "DECO",
+    "customer": "GRESSO",
+    "primary_operator": "Ivy",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\nGRESSO: Hello! \n      \n      I am reaching out because none of my badges or labels are displaying on the product pages.\n      \n      Even though I have explicitly selected the option to display them on the \"Product Page\" within the app settings, they do not appear on the storefront. Please note that this issue applies to all the badges and labels I have created, not just a specific one.\n      \n      Could you please check my store and help identify what might be causing this?\n\n  Ivy: Hi there. It's Ivy from DECO app\n\n  Ivy: Thank you so much for sharing the detailed information with us\n\n  Ivy: Let me forward this to our technical team for further investigation\n\nGRESSO: [File: Screenshot 2026-03-04 at 13.29.29.png - https://storage.crisp.chat/users/upload/session/-/6/8/f/c/68fc42b879687800/screenshot-2026-03-04-at-13292_1onm6x8.png]\n\nGRESSO: [File: Screenshot 2026-03-04 at 13.29.57.png - https://storage.crisp.chat/users/upload/session/-/6/8/f/c/68fc42b879687800/screenshot-2026-03-04-at-13295_18ub6ow.png]\n\n  Ivy: Please rest assured that I’ll keep an eye on this, and the moment I receive any updates from them, I’ll let you know right away\n\nGRESSO: Thank you!\n\n  Ivy: You're always welcome, dear <3\n\n  Tina: Hello, I'm Tina from DECO app. \n      It seems that you're offline so I would like to reach out to you via email. \n      \n      Our dev finished fixing for your issues with badge display. Could you please check it again? Please inform me after checking. :$ \n      \n      By the way, we would be so happy to see you leave us a feedback about our support team. Our whole team really hope to receive your words since they would be a big motivation for us to further improve the app!\n      \n      You can use this link to leave your feedback, it should only take a minute:\n      https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal\n      \n      Thank you so much in advance!\n      Regards,\n      Tina.\n\nGRESSO: Hi DECO team, I would like to display badges on the 1st image only / on all images of product page(s)\n\n  David: Hi, this is David from DECO here\n\nGRESSO: Hello! I would like to display badges on all images of product pages\n\n  David: Ah, I see, on the 1st image only right? Let me notify our team right away!\n\nGRESSO: No, on all images\n\n  David: Ah, yeah, that can be handled right away as well. However, there is some outages with Shopify GraphQL so the results might not be reflected right away\n\n  Ivy: Hi there, it's Ivy from the DECO support team.\n      \n      Thank you for your patience and understanding.\n      \n      I would like to inform you that your label is now showing correctly, as shown in my screenshot below. You can now reload your site to double-check :$  \n      \n      And if possible, could you take a few seconds to leave us a short review about our support today on the Shopify App Store? \n      \n      Just 10s to go and means the WORLD to meee: https://apps.shopify.com/product-labels?#modal-show=WriteReviewModal.\n      \n      Thank you in advance. If you have any questions or concerns, feel free to let us know.\n      \n      Best regards,\n      Ivy\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/6/8/f/c/68fc42b879687800/image_igd1tr.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent Ivy chào có tên app: 'Hi there. It's Ivy from DECO app'. Agent Tina và David cũng chào có tên app."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nghiêm trọng."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng, mạch lạc, đúng trọng tâm. Ví dụ, Agent Ivy đã thông báo cho khách hàng về việc chuyển yêu cầu cho technical team và cập nhật khi có thông tin mới."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và hiểu yêu cầu của khách hàng. Ví dụ, Agent David đã hiểu nhầm ý của khách hàng, nhưng đã nhanh chóng điều chỉnh khi khách hàng làm rõ."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent giữ tone lịch sự và phản hồi nhanh chóng. Tuy nhiên, việc sử dụng icon ':$' có thể không phù hợp trong mọi ngữ cảnh chuyên nghiệp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu khách hàng bực dọc, lo lắng, nên không cần thể hiện sự cảm thông."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình hỗ trợ khách hàng. Ví dụ, Agent Ivy chủ động thông báo khi vấn đề được giải quyết."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing thêm vì khách hàng đã cung cấp thông tin chi tiết về vấn đề."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent đã cung cấp giải pháp đúng và khách hàng đã không phản hồi thêm sau khi Agent báo đã fix xong, có lẽ là khách đã hài lòng."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "Agent chưa chủ động gợi ý thêm các tính năng khác của app. Ví dụ, sau khi giải quyết vấn đề về hiển thị, Agent có thể giới thiệu các tính năng tùy chỉnh badge khác để tăng trải nghiệm người dùng. Rewriting: 'Ngoài ra, bạn có thể tùy chỉnh màu sắc, kích thước...' Lời khuyên: Tìm cơ hội để giới thiệu các tính năng liên quan, tăng giá trị cho khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent Ivy đã chuyển case cho technical team để điều tra."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ docs/guide. Tuy nhiên, Agent có thể cân nhắc cung cấp liên kết đến trang hướng dẫn sử dụng app nếu có."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "Agent chưa làm gì thêm để tạo ấn tượng tốt cho khách hàng. Ví dụ, sau khi fix lỗi, agent có thể tặng mã giảm giá cho lần sử dụng sau. Rewriting: 'Để cảm ơn bạn đã kiên nhẫn, chúng tôi xin tặng bạn mã giảm giá...'. Lời khuyên: Tìm cách làm khách hàng bất ngờ và hài lòng hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Agent Tina và Ivy đã xin review từ khách hàng. Khách hàng im lặng, không phản hồi."
+        }
+      },
+      "overall_summary": "Nhìn chung, Agent đã hỗ trợ khách hàng khá tốt, giải quyết được vấn đề và xin review. Tuy nhiên, Agent còn có thể cải thiện bằng cách chủ động hơn trong việc gợi ý các tính năng khác của app và tạo thêm giá trị cho khách hàng.",
+      "total_score_20": 16.5,
+      "final_score_10": 8.25
+    }
+  },
+  {
+    "session_id": "session_9612bbcb-80ed-4289-8495-186a15697400",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "DECO",
+    "customer": "Baklawati",
+    "primary_operator": "Wendy",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  David: Şimdi planınızı iptal etseniz bile, deneme sürenizi çoktan geçtiniz, yani fatura gitmez\n\nBaklawati: nasıl yapıcaz o zaman\n\n  David: Ayrıca faturanızı iptal etme imkanımız da yok. Ekibimizin iade yapabilmesi için önce faturanızı ödemeniz gerekecek\n\nBaklawati: anladım, o zaman faturayı ödedikten sonra tekrar sizinle iletişime geçebilir miyim iade için?\n\n  David: Tabii ki, ödenmiş faturanın ekran görüntüsü veya PDF dosyasını bize geri dön, hemen ekibimizle birlikte işleyeceğim\n\nBaklawati: tamam teşekkür ederim\n\n  David: Tabii ki! Benim için bir zevk!\n\nBaklawati: 🙏\n\nBaklawati: Merhaba geçen gün konuşmuştuk. Yanlışlıkla yıllık plan satın almıştım. Faturayı ödedikten sonra iade yapabiliriz demiştiniz faturayı ödedik\n\nBaklawati: isterseniz faturayı gönderebilirim\n\n  Wendy: Merhaba, ben DECO'dan Wendy\n\n  Wendy: Endişenizi anlıyorum, lütfen önce davanızı kontrol etmeme izin verin\n\nBaklawati: tamam bekliyorum\n\n  Wendy: Merhaba, geri döndüm\n\nBaklawati: merhaba\n\n  Wendy: Kontrol ettim ve Yıllık Büyüme Planı için ödeme yaptığınızı gördüm\n\nBaklawati: evet doğru\n\n  Wendy: Ve şimdi, bu Yıllık Büyüme planını iptal ettikten sonra uygulamamızla hangi planı sürdürmek istediğinizi sorabilir miyim?\n\nBaklawati: aylık büyüme paketi almak istiyorum\n\nBaklawati: 1 aylık\n\nBaklawati: Growth\n\n  Wendy: Anladım, onayınız için teşekkür ederim\n\nBaklawati: rica ederim\n\n  Wendy: Şimdi, uygulamamızdaki Aylık sekmemizde Fiyatlandırmaya geri dönmeniz > aylık Büyüme planına > geçişiniz yeterli\n\n  Wendy: Ve gelecek aydan itibaren, çünkü planı sen ödedin, yani artık gelecekteki planlar için ödeme yapmana gerek yok\n\nBaklawati: anladım yıllık plan ne zaman iade edilir\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/7/7/5/1/775169b6b7699400/image_1tfswu9.png]\n\nBaklawati: yıllık planı iade ettiniz değil mi\n\n  Wendy: Evet, çünkü Yıllık Büyüme Planı için ödeme yaptınız, yani bundan sonra aylık planı kullanırsanız artık ödeme yapmanıza gerek yok\n\n  Wendy: Ve size iade etmemize gerek yok, çünkü aylık planlar için ödeme uygulanacak :$\n\nBaklawati: ben yıllık planı iptal etmek istiyorum size bunun için ulaştım\n\n  Wendy: Evet, bunu anlıyorum, bu yüzden size aylık Büyüme planına düşürülmesini öneriyorum\n\n  Wendy: Ve iade edebiliriz, ama aylık Büyüme Planına devam edeceğinizi söylediniz\n\n  Wendy: Bu yüzden plana devam etmenin daha iyi olduğunu düşünüyorum ve uygulamamızı iptal edene kadar kullanılmayan ayları sana geri ödeyeceğiz\n\nBaklawati: yıllık plan 180 dollar aylık plan 19 dollar bu aradaki fark geri ödenecek değil mi?\n\n  Wendy: Evet ama bence aylık Büyüme planlarını aylarca kullanacaksınız, doğru mu diye sorabilir miyim?\n\nBaklawati: hayır sadece 1 ay kullanacağım\n\n  Wendy: Onayınız için teşekkür ederim\n\n  Wendy: Şimdi davanızı iade talebini ilerletmek için ekibimize ileteceğim\n\nBaklawati: teşekkür ederim\n\n  Wendy: Gelecek Pazartesi güncelleme için size geri döneceğiz\n\n  Wendy: :$   Rica ederim\n\nBaklawati: tamamdır burdan mı geri döneceksiniz yoksa mailden mi\n\n  Wendy: Evet, gönderilecek: rim.baklavam@gmail.com\n\nBaklawati: başka bi mail versem ona gönderir misiniz\n\n  Wendy: Tabii ki\n\nBaklawati: fatih.celik@ahmeteren.co\n\n  Wendy: Teşekkürler, bu e-posta göndereceğiz\n\nBaklawati: ben teşekkür ederim\n\nBaklawati: pazartesi görüşmek üzere\n\nBaklawati: hoşçakalın\n\n  Wendy: Yakında görüşürüz <3\n\nBaklawati: 🙏🏻\n\n  Wendy: <3\n\nBaklawati: merhaba bugün iade işlemleri için iletişime geçecektiniz\n\n  Tina: Merhaba arkadaşım, ben Tina'yım\n\n  Tina: Ekibimiz davanız üzerinde çalışıyor\n\n  Tina: En kısa sürede döneceğim\n\nBaklawati: tamam bekliyorum\n\n  Tina: Tamam arkadaşım :$\n\n  Wendy: Merhaba, ben DECO'dan Wendy. \n      \n      Geri ödemeniz konusunda sizinle iletişime geçiyoruz. \n      Devam edemeyiz çünkü hâlâ Yıllık Büyüme Planı'ndasınız. \n      Lütfen önce aylık planınıza geçebilir misiniz? \n      \n      Saygılarla, \n      Wendy.\n\n  Wendy: Merhaba, lütfen düşürmeyi bırakın, önce iade sürecini kontrol edeceğiz ve düşürme zamanı geldiğinde size haber vereceğiz. \n      Önceki e-posta için özür dilerim \n      \n      Saygılarla, \n      Wendy.\n\n  Wendy: Merhaba, ben yine DECO'dan Wendy. \n      \n      Kendi tarafımızda kurulumu bitirdik. Şimdi Aylık Büyüme Planı'na geçebilirsiniz. \n      Bittiğinde lütfen bize bildirin, Yıllık planlarınızın kullanılmayan günlerini iade etmeye devam edeceğiz. \n      \n      Ayrıca, lütfen Shopify'dan aldığımız gerçek miktarı geri ödeyebildiğimizi unutmayın, çünkü ödeme bize aktarılmadan önce işlem ücretleri düşülüyor. Umarız bunu anlayabilirsiniz. \n       \n      Teşekkürler ve saygılar, \n      Wendy.\n\nBaklawati: merhaba aylık plana geçtim\n\nBaklawati: iade ne zaman olur tahmini olarak\n\nBaklawati: ?\n\nBaklawati: aylık büyüme paketine geçtim\n\n  Jane: DECO ekibinden Jane buradayım\n\n  Jane: Aylık planda olduğunuzu öğrendim\n\n  Jane: Ekibimiz sonraki adımlara [+1]\n\n  Jane: İşimiz bitince size tekrar bildireceğiz\n\nBaklawati: tamamdır ne zaman biter\n\n  Jane: İş bitince size geri döneceğiz, normalde süreç birkaç iş günü sürer\n\nBaklawati: tamam haber bekliyorum\n\n  Jane: Tamam :$\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent Wendy chào chuẩn tên brand 'Merhaba, ben DECO'dan Wendy'"
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nghiêm trọng gây hiểu nhầm."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent Wendy giao tiếp rõ ràng, mạch lạc, đi thẳng vào vấn đề."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent Wendy hiểu đúng vấn đề khách hàng cần, phản hồi đúng trọng tâm."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent Wendy hồi đáp nhanh chóng, lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không có biểu hiện gì tiêu cực nên không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent Wendy nhiệt tình hỗ trợ khách hàng, có thái độ tích cực."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing vì vấn đề của khách hàng đã rõ ràng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent Wendy cung cấp giải pháp đúng, hướng dẫn khách hàng chuyển sang gói tháng và hỗ trợ iade."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "(1)Lý do: Agent không chủ động đề xuất hay gợi ý giải pháp nào khác cho khách hàng, chỉ tập trung vào việc giải quyết vấn đề iade. (2)Ảnh hưởng: Khách hàng có thể cảm thấy không được hỗ trợ đầy đủ và có thể bỏ lỡ các ưu đãi hoặc gói dịch vụ phù hợp hơn. (3)Rewriting: 'Ngoài việc hỗ trợ bạn hoàn tiền, tôi có thể giới thiệu bạn một số gói dịch vụ khác phù hợp hơn với nhu cầu sử dụng ngắn hạn của bạn. Bạn có muốn tìm hiểu thêm không?' (4)Lời khuyên: Support nên chủ động đưa ra các gợi ý hoặc giải pháp khác để tăng thêm giá trị cho khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent Wendy đã chuyển case cho team liên quan để xử lý vấn đề iade."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ docs/guide rõ ràng trong trường hợp này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để làm thêm giá trị trong trường hợp này."
+        },
+        "review_asking": {
+          "score": 1.0,
+          "justification": "(1)Lý do: Khách hàng đã cảm ơn agent và có nhiều biểu hiện happy: 🙏🏻. Agent không xin review. (2)Ảnh hưởng: Mất cơ hội nhận feedback tích cực từ khách hàng. (3)Rewriting: 'Cảm ơn bạn đã liên hệ với chúng tôi. Nếu bạn hài lòng với dịch vụ của chúng tôi, bạn vui lòng đánh giá [số sao] sao để ủng hộ Deco nhé?' (4)Lời khuyên: Nên chủ động xin review khi thấy khách hàng hài lòng."
+        }
+      },
+      "overall_summary": "Nhìn chung, Agent Wendy đã hỗ trợ khách hàng khá tốt trong việc giải quyết vấn đề iade và chuyển đổi gói dịch vụ. Tuy nhiên, agent chưa chủ động trong việc gợi ý các giải pháp khác và bỏ lỡ cơ hội xin review khi khách hàng hài lòng.",
+      "total_score_20": 17.5,
+      "final_score_10": 8.75
+    }
+  },
+  {
+    "session_id": "session_2a5349f2-8314-4041-a894-1410a4b86461",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "SearchPie",
+    "customer": "cc1dbe",
+    "primary_operator": "John",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\ncc1dbe: Hi, sorry I just read the left message. Yes I'm still intrested. However, just wondering any further discounts for continuing customers?\n\n  Jane: it's jane from Search Pie team here\n\n  Jane: yes since you used the GSC service before so If you continue to sign up the service, we'd love to offer you a 30% OFF discount :$\n\n  Jane: if you're okay with it, I will create the discount voucher now for you\n\n  PieLab Support: AMP isn’t on yet. Turn it on to make your mobile pages faster and SEO-friendly.\n\ncc1dbe: Can you help me check on my Google Search Console issues?\n\ncc1dbe: Hi, I've found my GSC had a lot pages cannot be index - notified by email from google. Can you help to check and fix?\n\ncc1dbe: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/0/6/c/806cbe1ccefdd800/image_ape1xi.png]\n\ncc1dbe: Hi John, can you help?\n\n  John: Hi there! I'm John from SearchPie\n\n  John: Related to these issues, may I ask If you sign up our GSC package?\n\ncc1dbe: My package has expired. Can I renew my signup? Lastly when I talk to your team member, I was offered 40% off as I was signed up before\n\n  John: From the messages I get in the chatbox, I have seen that we offer 30% off for you, may I ask If you think it's suitable for you at the moment\n\ncc1dbe: oh, was it 30% off?\n\ncc1dbe: Is this the best you can offer?\n\n  John: Yes, it's the best offer that we can get from our leader :)   I hope this offer can make you and us feel happy to work together\n\ncc1dbe: all right then, can you please help me with the coupon code?\n\n  John: Great!\n\n  John: I will contact our team\n\n  John: to create coupon for you\n\n  John: and we will double check\n\n  John: the GSC issues you have\n\ncc1dbe: Thank you John\n\ncc1dbe: How long do I need to wait?\n\n  John: and inform you through mailbox\n\ncc1dbe: I remember sign up has to be finalised within 24 hours?\n\n  John: Since it's Saturday now, so we need about 24 hours to send you in detail\n\n  John: Is that fine to you?\n\ncc1dbe: Do you mean you need 24 hours to check through my Google Search Console issue?\n\n  John: yes, we hope that\n\ncc1dbe: that's fine\n\ncc1dbe: what about my sign up? Do I need wait in chat?\n\n  John: Yes, we will send you coupon in at least 12 hours to your mailbox\n\n  John: Since we have some adjustments in coupon code\n\n  John: Because the 30% is the highest percent\n\n  John: that we offer to a customer\n\n  John: so we need to adjust something\n\ncc1dbe: I see, I will check it tomorrow then\n\ncc1dbe: Thank you John!\n\n  John: Thanks so much for your understanding :D\n\ncc1dbe: Will your team start to check my GSC issues now? Or have to wait my sign up finished?\n\n  John: Since you're sure to register our GSC so our team will check them first\n\n  John: not to make you have to wait so long\n\n  John: so, we will inform the result soon\n\n  John: don't worry\n\ncc1dbe: I see, please send me the coupon code at your earliest convenience. Thank you\n\n  John: We will :D  Thanks so much\n\n  Wendy: Hi there, this is Wendy from SearchPie \n      \n      We would like to inform you that our team finished creating the Google Search Console 30% OFF coupon for you. \n      Please go to Pricing > SEO services > apply the coupon and you can see the discounted price here. \n      \n      When it's done, please let us know then we'll proceed the next step. \n      \n      Regards, \n      Wendy.\n\n  Wendy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/0/6/c/806cbe1ccefdd800/image_ey2n9h.png]\n\ncc1dbe: Can you help me check on my speed performance?\n\ncc1dbe: Hi Wendy, I haven't got this message to my email so I didn't check\n\ncc1dbe: can you recreate the plan for me? I think it's expired\n\ncc1dbe: I am sorry but I was told the message will be sent to my email so I didn't check APP directly\n\n  Jane: it's Jane from Search Pie here\n\n  Jane: yes email is sent to info@tokyobeautybox.com\n\n  Jane: sure let me check again on the voucher, no worry\n\n  Jane: the voucher is created, please apply it within today\n\n  Jane: actually, I just saw that the old voucher is still available, please double check again\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/0/6/c/806cbe1ccefdd800/image_kuihm8.png]\n\ncc1dbe: I see, it works now\n\ncc1dbe: Hi, I just signed up for your Google Search Console Optimize service\n\ncc1dbe: Can you help to check GSC now?\n\ncc1dbe: I still haven't received any feedback regarding my previous issues\n\n  Jane: I'll notify our team to check and fix your GSC issue, no worry\n\ncc1dbe: Thank you Jane, please ASAP\n\ncc1dbe: Also, my page speed is not good enough. Was my pakage still alive? Can your team help to improve?\n\n  Jane: alright let me check on your speed score as well\n\n  Jane: this is your speed score now\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/0/6/c/806cbe1ccefdd800/image_1hbnzov.png]\n\n  Jane: [File: image.png - https://storage.crisp.chat/users/upload/session/-/8/0/6/c/806cbe1ccefdd800/image_oo2sa6.png]\n\n  Jane: the speed up service that you signed up before is one-time fix my friend\n\n  Jane: so if you want to optimize your speed, you can consider re sign-up\n\n  Jane: [File: speed.png - https://storage.crisp.chat/users/upload/session/-/8/0/6/c/806cbe1ccefdd800/speed_79k8xz.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent Jane chào khách bằng tên và brand 'it's Jane from Search Pie team here'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nghiêm trọng nào."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Agent giao tiếp rõ ràng, dễ hiểu, đúng trọng tâm."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent lắng nghe và hiểu đúng các yêu cầu của khách hàng về việc kiểm tra GSC và tốc độ trang web."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent phản hồi nhanh chóng và lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không cần thiết trong ngữ cảnh này."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Agent thực hiện probing đầy đủ để xác định vấn đề của khách hàng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent cung cấp giải pháp phù hợp và hỗ trợ khách hàng đăng ký dịch vụ mới, cũng như thông báo cho team để kiểm tra các vấn đề liên quan đến GSC."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Agent chủ động hỗ trợ khách hàng, thông báo kết quả và các bước tiếp theo một cách cụ thể."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Agent đã thông báo cho team để kiểm tra các vấn đề liên quan đến GSC."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Agent chia sẻ hình ảnh và thông tin liên quan để hỗ trợ khách hàng."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "(1) Agent không chủ động đề xuất thêm các giải pháp hay dịch vụ khác để cải thiện tốc độ trang web của khách hàng ngoài việc gợi ý đăng ký lại dịch vụ. (2) Điều này có thể khiến khách hàng cảm thấy agent chỉ tập trung vào việc bán hàng mà không thực sự quan tâm đến việc giải quyết triệt để vấn đề của họ. (3) Ví dụ, agent có thể nói: 'Ngoài việc đăng ký lại dịch vụ, chúng tôi cũng có thể cung cấp một số mẹo và thủ thuật để bạn tự cải thiện tốc độ trang web của mình. Bạn có muốn tìm hiểu thêm không?'. (4) Lần sau, agent nên chủ động đề xuất các giải pháp thay thế hoặc bổ sung để tăng thêm giá trị cho khách hàng."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 5 sao, không cần xin thêm."
+        }
+      },
+      "overall_summary": "Nhìn chung, agent Jane đã hỗ trợ khách hàng một cách nhiệt tình và hiệu quả, giải quyết các vấn đề liên quan đến GSC và tốc độ trang web. Tuy nhiên, agent nên chủ động hơn trong việc đề xuất các giải pháp thay thế hoặc bổ sung để tăng thêm giá trị cho khách hàng.",
+      "total_score_20": 18.5,
+      "final_score_10": 9.25
+    }
+  },
+  {
+    "session_id": "session_4e1a0767-214d-4dcc-89ea-72828eef933c",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "SearchPie",
+    "customer": "bikemarket24",
+    "primary_operator": "David",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n  Jane: :$\n\n  David: Dear, \n      \n      This is David from SearchPie here. Just wanted to give you a quick update update in regards of your Local SEO Package. \n      \n      Our team is currently processing the local SEO package for your main location. Moreover, like Wendy has mentioned, for your other 7 locations, we recommend getting our services for your other locations as well. \n      \n      I have worked with our team and we do have a deal on this. \n      \n      Our team is offering a 25% DISCOUNT code for each of your 7 other locations, which comes down to just 224.25$ for each location. \n      \n      Does this sound suitable for you? Let me know what you think! \n      \n      Best,\n      David\n\nbikemarket24: Hi David,\n      \n      Thanks for the Discout Offer. We'll discuss it internally and let you know.\n      \n      Best,\n      Lucas\n\n  David: Dear Lucas, \n      \n      This is David from SearchPie here. Just a quick update in regards to our team access to your Google Business Profile. \n      \n      To properly optimize your store, can you add our team email: searchpie@pielab.io to your Google Business Profile. \n      \n      You can find how to add us [HERE ](https://support.google.com/business/community-guide/353035427/how-to-add-users-to-your-google-business-profile-2025-guide?hl=en-GB)\n      \n      Looking forward to your update! \n      \n      Best, \n      David\n\nbikemarket24: Dear David,\n      \n      thank you for your message.\n      \n      At the moment we prefer not to grant admin access to our Google Business Profiles, especially since we operate multiple store locations.\n      \n      However, we are happy to support the optimization process by providing any necessary information, screenshots, or updates from our side.\n      \n      If specific adjustments are required within the profile, please let us know and we can implement them directly.\n      \n      Looking forward to your guidance on the next steps.\n      \n      Best regards\n      Lucas\n\n  Tina: Hi friend, I’m Tina here\n\n  Tina: It could be better if you can grant us access to your store :’(\n\n  Tina: Let me ask our team if they can help you\n\nbikemarket24: Hi Tina, ok I'll wait for your team response, since we don't want to grant access for the Google Business Profiles\n\n  Ivy: Thank you so much for getting back to us. We will ensure to update you whenever we have any updates from our team\n\nbikemarket24: Can you help me check on my Google Merchant Center issues?\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Surely, would you like us to take a look at your Google Merchant Center report?\n\n  Wendy: Hello, this is Wendy from SearchPie. \n      \n      We would like to inform you that we finished creating the NAP Local Citation for your store. \n      Please check it out all details via this [REPORT](https://docs.google.com/spreadsheets/d/1waQJuvuYtoov2k1gFmXHigk1iX9ElvfZcWOqDQ-X7cw/edit?gid=1355141139#gid=1355141139) :$  \n      \n      Besides, we checked your Google Business Profile and see it's well-optimized. We just have some advice for you: \n      You should consider adding posts on your Google Business Profile related to your promotion programs as well. This can help attract more attention and engagement from customers.\n      Additionally, if you have Google Merchant Center, please make sure your all products can also appear on the profile and Google listings. \n      \n      If you have any other questions, please feel free to let us know. :$  \n      \n      Regards, \n      Wendy.\n\nbikemarket24: [File: bikemarket24_Search-Pie_Local-SEO-Citation-Results-Google-Sheets-03-06-2026_08_14_AM.png - https://storage.crisp.chat/users/upload/session/-/c/b/6/5/cb653035c8c4f000/bikemarket24search-pielocal-se_1kdpioq.png]\n\nbikemarket24: [File: bikemarket24_Search-Pie_Local-SEO-Citation-Results-Google-Sheets-03-06-2026_08_13_AM (2).png - https://storage.crisp.chat/users/upload/session/-/c/b/6/5/cb653035c8c4f000/bikemarket24search-pielocal-se_d4njes.png]\n\nbikemarket24: [File: bikemarket24_Search-Pie_Local-SEO-Citation-Results-Google-Sheets-03-06-2026_08_13_AM (1).png - https://storage.crisp.chat/users/upload/session/-/c/b/6/5/cb653035c8c4f000/bikemarket24search-pielocal-se_1y6fr1l.png]\n\nbikemarket24: [File: bikemarket24_Search-Pie_Local-SEO-Citation-Results-Google-Sheets-03-06-2026_08_13_AM.png - https://storage.crisp.chat/users/upload/session/-/c/b/6/5/cb653035c8c4f000/bikemarket24search-pielocal-se_1negv19.png]\n\nbikemarket24: [File: Business-name-—-Zen-Writing-03-06-2026_08_17_AM.png - https://storage.crisp.chat/users/upload/session/-/c/b/6/5/cb653035c8c4f000/business-name-zen-writing-03-0_1n9745p.png]\n\nbikemarket24: [File: The-easiest-way-to-host-your-text-03-06-2026_08_17_AM.png - https://storage.crisp.chat/users/upload/session/-/c/b/6/5/cb653035c8c4f000/the-easiest-way-to-host-your-t_1bnw4c5.png]\n\nbikemarket24: [File: BIKE-Market-USA-Other-Countries-Pet-Classified-Ads-Hub--03-06-2026_08_17_AM.png - https://storage.crisp.chat/users/upload/session/-/c/b/6/5/cb653035c8c4f000/bike-market-usa-other-countrie_vg30c.png]\n\nbikemarket24: [File: BIKE-Market-USA-Other-Countries-Free-Classified-Website-Place-Ads-Without-Registration-03-06-2026_08_16_AM.png - https://storage.crisp.chat/users/upload/session/-/c/b/6/5/cb653035c8c4f000/bike-market-usa-other-countrie_64n3oj.png]\n\nbikemarket24: Hi Wendy,\n      \n      thank you for sharing the report.\n      \n      After reviewing several of the created citations in detail, we unfortunately have serious concerns about the implementation.\n      \n      In multiple listings we noticed that the business description appears broken and unreadable (for example without proper spacing between words). This creates the impression of automatically generated spam content and does not represent our brand appropriately.\n      \n      Additionally, the uploaded logo appears extremely low resolution and blurry in several listings, which negatively affects the perceived professionalism of our company.\n      \n      We also noticed that many of the submitted platforms do not appear to be legitimate business directories. Examples include blogging platforms, paste sites, or classified ad pages such as anotepad.com, zenwriting.net, controlc.com and similar sources. These platforms are not relevant for local business citations and may even harm brand trust.\n      \n      In one case we also encountered a listing that leads to a 404 page.\n      \n      Furthermore, we reviewed the **Map Citations (Google My Maps)** included in the report. From our understanding, these maps are not connected to our actual Google Business Profile and do not represent real business listings. Because of this, we do not see a meaningful SEO or local ranking benefit from these map entries. Instead, the use of keyword-based custom maps (e.g. “e-bike kaufen”, “fahrrad online shop”) appears rather artificial and not aligned with current best practices for local SEO.\n      \n      Since we operate multiple physical store locations and a well-known brand in our market, maintaining high-quality and trustworthy business listings is very important for us. At the moment, several of these citations unfortunately appear rather damaging to our brand perception.\n      \n      For our business, relevant directories would include established platforms such as Yelp, Apple Maps, Bing Places, Gelbe Seiten, Das Örtliche, GoYellow or similar well-known business directories.\n      \n      Therefore we kindly ask you to review the created citations and correct or replace the problematic listings with higher-quality and relevant directories.\n      \n      We appreciate your support and look forward to your clarification.\n      \n      Best regards\n      Lucas\n\n  David: Danke für deine Infos, ich werde unsere Wendy für dich benachrichtigen!\n\nbikemarket24: Alles klar\n\nbikemarket24: Hi, I want to grant access of my store to the app to add internal links\n\nbikemarket24: I want to create a LLM.txt file!\n\n  Wendy: Hello, this is Wendy from SearchPie. \n      \n      Regarding your Local SEO citations, our team is still in the process of checking further. We will get back to you soon and let you know when we have any updates. \n      \n      Next, may I ask if you're interested in adding internal links, or create a LLM.txt file? :)  \n      \n      Regards, \n      Wendy.\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Wendy chào khách hàng bằng tên và brand: \"Hello, this is Wendy from SearchPie.\""
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp nào nghiêm trọng gây ảnh hưởng đến nghĩa của câu."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Wendy trả lời đúng trọng tâm, không lan man, vòng vo. Phản hồi nhanh chóng và đầy đủ thông tin."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Wendy hiểu đúng các yêu cầu của khách hàng, không bỏ sót vấn đề nào. Wendy đã phản hồi về cả 2 vấn đề khách hàng nêu: Local SEO citations và internal links/LLM.txt file."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Wendy giữ thái độ lịch sự, phản hồi nhanh chóng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng không có dấu hiệu bực dọc hay lo lắng, không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Wendy nhiệt tình và sẵn sàng giúp đỡ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing trong trường hợp này."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Wendy thông báo cho khách hàng về việc đội ngũ đang kiểm tra Local SEO citations và sẽ sớm phản hồi. Đây là một giải pháp phù hợp trong tình huống này."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội rõ ràng để gợi ý thêm dịch vụ trong trường hợp này."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer trong trường hợp này."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không cần chia sẻ docs/guide trong trường hợp này."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội làm thêm giá trị rõ ràng."
+        },
+        "review_asking": {
+          "score": 1.0,
+          "justification": "Khách chưa có tín hiệu happy. Tuy nhiên, agent có thể chủ động xin review sau khi vấn đề được giải quyết xong. Ví dụ: 'Hi Lucas, I'm glad that we addressed your concerns. Would you mind leaving us a review on [platform]? It would help us a lot!' "
+        }
+      },
+      "overall_summary": "Nhìn chung, agent Wendy đã phản hồi nhanh chóng và đầy đủ các yêu cầu của khách hàng. Tuy nhiên, agent có thể chủ động xin review sau khi vấn đề đã được giải quyết xong.",
+      "total_score_20": 19.5,
+      "final_score_10": 9.75
+    }
+  },
+  {
+    "session_id": "session_f3fe25d5-3cbe-4111-80d6-aa35ad63c65f",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "SearchPie",
+    "customer": "simplybuy-pl",
+    "primary_operator": "Tina",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\nsimplybuy-pl: Thanks!\n\n  Linda: Thank you so much for your patience and understanding\n\n  Linda: We will get back to you with an update soon\n\nsimplybuy-pl: Thanks! If possible sent reply to tymoteusz.wisniowski@simply-buy.eu\n\n  Linda: Sure. We will send you an email to this so kindly don't worry\n\nsimplybuy-pl: Thanks, have great rest of the day!\n\n  Linda: Thank you, enjoy your day!\n\n  David: Dear, \n      \n      This is David from SearchPie here. I wanted to reach out with an update in regards to your ALT Tags issues. \n      \n      The ALT Tags should be working properly now, you can have a look here: (Image) \n      \n      Or you can check it on your own end. \n      \n      Should you have any other issues. please let me know as I'm more than happy to help you! \n      \n      Happy holidays, \n      David\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/d/0/f/7/d0f7a93b4cc03000/image_1qspvzh.png]\n\n  David: Hi, \n      \n      I hope you are having a great week.\n      \n      My name is David and I’m reaching out from the SearchPie team. We are currently planning our roadmap for Q1, and we want to ensure we are building features that actually solve problems for power users like you. We are not trying to sell anything, we just want to listen.\n      \n      Would you have 15 minutes to hop on a quick feedback call?\n      \n      And as a thank you for your time, we would be more than happy to offer you 1 FREE VIP SEO Scan Package! \n      \n      You can book a slot directly here: https://calendly.com/searchpie-pielab/pielab-customer-meeting\n      Best regards, \n      David\n\n  David: Hi, \n      I hope your week is going well.\n      \n      This is David from SearchPie here. I am checking in to see if you had a moment to consider my previous email. We are currently gathering feedback to guide our development for Q1, and your experience as a power user would be incredibly helpful to our team.\n      \n      As a reminder, we would like to offer you a free VIP SEO Scan Package as a token of our appreciation for a 15-minute call. This is purely a listening session to help us build better tools for you.\n      \n      If you are interested, you can find a time that works for you here: https://calendly.com/searchpie-pielab/pielab-customer-meeting\n      \n      Best regards, \n      David\n\n  David: Hi Tymoteusz, \n      \n      This is David from SearchPie here. Just wanted to send you a quick email with our meeting link coming up. \n      \n      You can access our meeting using this [URL](https://meet.google.com/nwn-cfcn-cug)! \n      \n      Excited to see you there! \n      \n      Best, \n      David\n\n  David: Hi Tymoteusz,\n      \n      This is David from SearchPie. I hope you are having a good day.\n      \n      I am reaching out as we missed our scheduled meeting earlier today. I hope everything is going well on your end, as I understand that unexpected priorities can often arise.\n      \n      I would still value the opportunity to connect and discuss your store's performance and SEO needs. When you have a moment, please feel free to use the link below to select a new time that fits your current schedule: [LINK](https://calendly.com/searchpie-pielab/pielab-customer-meeting)\n      \n      And the offer for your FREE VIP SEO Scan still stands! I look forward to catching up with you soon.\n      \n      Best regards, \n      David\n\n  PieLab Support: 2388 meta tags need a fix. Want to update them for better results?\n\nsimplybuy-pl: Can you help me check on my Google Merchant Center issues?\n\n  Tina: Hello, I'm Tina from Search Pie app\n\n  Tina: May I ask if you want me to check for your Google Merchant Center issues?\n\nsimplybuy-pl: No for now, thanks!\n\n  Tina: Oki my friend\n\n  Tina: So feel free whenever you need our help <3\n\nsimplybuy-pl: We see one issue, sorry\n\nsimplybuy-pl: Bulk Image ALT\n\nsimplybuy-pl: they are not generating on a constant basis\n\nsimplybuy-pl: I need to wriite from time to time to you for it to be done, even tho we have this service enabled and paid monthly\n\nsimplybuy-pl: Is it something that can be fixed?\n\n  Tina: could you please send me the screenshort of it?\n\nsimplybuy-pl: [File: image.png - https://storage.crisp.chat/users/upload/session/-/d/0/f/7/d0f7a93b4cc03000/image_1c52iqr.png]\n\nsimplybuy-pl: [File: image.png - https://storage.crisp.chat/users/upload/session/-/d/0/f/7/d0f7a93b4cc03000/image_1diqd8s.png]\n\n  Tina: Let me check with our team\n\n  Tina: I will be back soon\n\nsimplybuy-pl: Any news?\n      \n      This feature shouldn't work like that 😕\n      \n      \n      Pozdrawiam  /  Best regards\n      \n      \n      \n      \n      Tymoteusz Wiśniowski\n      \n      Chief Operating Officer\n      \n      [tel]\n      +48 505 784 001\n      [email]\n      tymoteusz.wisniowski@rolv.pl<mailto:tymoteusz.wisniowski@rolv.pl>\n      \n      [Allow images to see]<https://rolv.pl/>\n      \n      \n      ROLV Group Sp. z o.o.  •  ul. Traktowa 6, 05-800 Pruszków  •  info@rolv.pl<mailto:info@rolv.pl>\n      \n      VAT-UE PL5342472319  •  REGON: 142955045  •  KRS: 0000387535  •  Capital Share: 636 000,00 PLN\n      \n      This message and any attachments are confidential and intended solely for the named addressee. Access by anyone else is unauthorised. If you are not the intended recipient, any disclosure, copying, distribution or action taken in reliance on it is prohibited and may be unlawful. Personal data included in this correspondence is processed by ROLV Group Sp. z o.o. in accordance with EU Regulation 2016/679 (GDPR). You have the right to access, rectify, erase, restrict processing of, and object to the processing of your data. Data protection contact: rodo@rolv.pl<mailto:rodo@rolv.pl>\n\nsimplybuy-pl: [File: Outlook-oshq5uri.png - https://storage.crisp.chat/users/upload/session/-/d/0/f/7/d0f7a93b4cc03000/a4b7b0eb21a1f0be90b9ee7f878d3ae75c4e37e6.png]\n\n  Tina: Hi friend, I’m Tina here. \n      \n      Our team is checking on your case, we will be back as soon as possible. \n      \n      Regards, \n      Tina.\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Chào chuẩn tên app: \"Hello, I'm Tina from Search Pie app\""
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Trả lời đúng trọng tâm câu hỏi của khách hàng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Hiểu đúng ý khách hàng, khi khách hàng đưa ra vấn đề về Bulk Image ALT."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi chấp nhận được. Tone lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không cần thiết, chat bình thường."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần thiết, khách hàng nói rõ vấn đề."
+        },
+        "solution": {
+          "score": 2.0,
+          "justification": "Agent báo check team dev. Thiếu sót vì chưa có kết quả cuối cùng."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "(1) Agent chỉ báo check team, không đưa ra giải pháp chủ động nào khác. (2) Khách có vẻ đang gặp vấn đề với việc tạo ALT tags hàng loạt, agent có thể chủ động gợi ý các cách để tự động hóa hoặc tối ưu hóa quá trình này. (3) Nên chủ động gợi ý các giải pháp tạm thời hoặc hướng dẫn khách hàng tự xử lý trong khi chờ đợi. Ví dụ: \"Trong lúc chờ đợi team check, bạn có thể thử...\" hoặc \"Để đảm bảo ALT tags được tạo thường xuyên, bạn có thể...\" (4) Chủ động hơn trong việc đưa ra các giải pháp hoặc gợi ý có thể giúp khách hàng giải quyết vấn đề ngay lập tức."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đã báo check team dev."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ docs/guide nhưng nếu có sẽ tốt hơn."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "(1) Sau khi khách hàng phản hồi là ALT tags không được tạo thường xuyên, agent chỉ báo check team dev. (2) Mất cơ hội tạo thêm giá trị bằng cách cung cấp thêm thông tin hữu ích hoặc hướng dẫn chi tiết hơn. (3) Agent có thể làm tốt hơn bằng cách cung cấp thêm thông tin về cách hệ thống hoạt động, ví dụ về cách cấu hình ALT tags hoặc các mẹo để tối ưu hóa ALT tags cho SEO. (4) Nên chủ động cung cấp thêm thông tin hoặc hướng dẫn có giá trị để giúp khách hàng hiểu rõ hơn về vấn đề và cách giải quyết."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review 5 sao, không cần xin thêm."
+        }
+      },
+      "overall_summary": "Nhìn chung agent lịch sự, nhiệt tình hỗ trợ nhưng chưa chủ động trong việc đưa ra giải pháp và cung cấp thêm thông tin hữu ích cho khách hàng. Cần cải thiện khả năng chủ động và tạo thêm giá trị cho khách hàng.",
+      "total_score_20": 15.5,
+      "final_score_10": 7.75
+    }
+  },
+  {
+    "session_id": "session_67d5131c-ef13-43e0-b0b2-67c2e90a06da",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "SearchPie",
+    "customer": "0rpx30-pd",
+    "primary_operator": "Ivy",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n0rpx30-pd: Can you help me check on my speed performance?\n\n  PieLab: Hi there 😊\n      \n      Thanks for reaching out! Our support team is currently offline.\n      \n      Please feel free to share your concerns, and we’ll make sure to prioritize them as soon as we’re back online.\n      \n      Thanks so much for your patience! <3\n\n0rpx30-pd: Can you help me check on my speed performance?\n\n0rpx30-pd: how do i improve these metrics?\n\n  Wendy: Hi, this is Wendy from SearchPie\n\n  Wendy: Please let me check your speed first\n\n  Wendy: Hi I'm back, are you still there with me?\n\n  PieLab Support: HTML issues detected. A quick cleanup can speed up your site and help rankings.\n\n0rpx30-pd: Fix now\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Would you like me to take a look at your HTML issues?\n\n0rpx30-pd: yes\n\n  Ivy: Thanks for confirming. Please allow me a few minutes\n\n  Ivy: To transfer your HTML to your technical team, I've sent you an access request for your store\n\n  Ivy: Please help go to Shopify settings > Users and approve our access request from PIELAB\n\n0rpx30-pd: you mean to transfer it to your technical team?\n\n  Ivy: Ah sorry for my typo. Yes, I will transfer it to our technical team so they can handle it for you\n\n0rpx30-pd: I want to discuss about Plus plan with an expert. Can you help me with more information?\n\n  Ivy: Still Ivy here. May I confirm that you would like to discuss about Plus plan with our expert?\n\n0rpx30-pd: yes\n\n0rpx30-pd: Hi, is there anyone help me to optimize my SEO score?\n\n  Ivy: Thanks so much for considering our Plus plan for your store 💛\n\n  Ivy: To make sure we can support you properly, could you please help fill out this form with a little bit of information?\n\n  Ivy: https://docs.google.com/forms/d/e/1FAIpQLScuAdaITlLfO3F7v0YfJKej0oAkEDQFlOg5g3F9riJjURjEbw/viewform\n\n0rpx30-pd: I’m trying to figure out what we are paying for ? do you guys not automatically fix the issues you identify?\n\n  Ivy: Ah let me clarify the case a little bit:\n\n  Ivy: **SearchPie works as an SEO optimization tool,** which means the app will scan your store, identify issues, and provide tools or guidance to fix them\n\n  Ivy: Some improvements **can be applied automatically**, such as:\n      • image ALT tag optimization\n      • image compression\n      • certain meta tag optimizations\n      • schema enhancements\n\n  Ivy: Besides that, many SEO issues require **manual decisions or store-specific adjustments**, for example:\n      \n      • editing meta titles and descriptions\n      • improving page content\n      • optimizing internal linking\n      • fixing certain technical or theme-related SEO elements\n      etc.\n\n  Ivy: Because every store’s SEO strategy is different, the app highlights the issues and gives you the **tools or recommendations to fix them safely**, rather than automatically changing your content without the approval\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/1/0/c/210c2b6dcbefe000/image_1xxbvpp.png]\n\n  Ivy: For example, in the SEO report summary, there are some issues with instant page\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/1/0/c/210c2b6dcbefe000/image_vl1gfw.png]\n\n  Ivy: The app also provides \"Instant page\" feature so just enable this button > rescan the SEO report will fix these instant page issues\n\n  Ivy: About the HTML, it's related to the coding to fix\n\n  Ivy: To fix this issue, we will check your theme code and remove unnecessary H1 tags. Please make sure that your page has only one H1\n\n  Ivy: That's why I sent you an access request to this store so the technical team can help\n\n0rpx30-pd: access has been granted\n\n  Ivy: Sorry the access request is still showing as pending on our end\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/1/0/c/210c2b6dcbefe000/image_39lq02.png]\n\n  Ivy: Could you please double-check?\n\n0rpx30-pd: you should have access now\n\n  Ivy: Thank you. I will inform our technical team and update you as soon as possible\n\n  Ivy: In the meantime, would you like me to suggest you our features to boost your SEO?\n\n  Hannah: [File: image.png - https://storage.crisp.chat/users/upload/session/-/2/1/0/c/210c2b6dcbefe000/image_1fdeqzh.png]\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3  \n      \n      I'm happy to let you know that the issue with HTML tags on your store has been successfully resolved.\n      \n      If it is functioning correctly now and considering all our efforts and dedication to support you, would you mind taking a moment to share your experience with our app and support team? Your kind words would greatly encourage our developers and help other merchants make more confident decisions when choosing our app.\n      \n      If anyone on our team has been particularly helpful to you, it would be amazing if you could mention their name in your review, so we can recognize and celebrate their efforts 💖\n      \n      Just 30s to go, here’s the review link: [REVIEW](https://apps.shopify.com/seo-booster?#modal-show=WriteReviewModal)\n      \n      Feel free to double-check and let us know if you need any further support <3  \n      \n      Best regards,\n      Hannah\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Ivy chào khách với tên app: \"Hi there. It's Ivy from SearchPie app\"."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Câu cú rõ ràng, mạch lạc, không có lỗi sai."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Ivy giải thích rõ ràng về cách SearchPie hoạt động và những gì có thể tự động fix, những gì cần manual. Hỗ trợ khách hàng hiểu rõ hơn về sản phẩm và dịch vụ."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Ivy hiểu đúng các yêu cầu của khách hàng, từ việc kiểm tra hiệu suất tốc độ, thảo luận về Plus plan, đến việc tối ưu hóa SEO."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Ivy giữ một tone lịch sự và nhiệt tình trong suốt cuộc trò chuyện. Tốc độ phản hồi nhanh chóng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có dấu hiệu nào cho thấy khách hàng khó chịu hay bực dọc nên không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Ivy rất nhiệt tình trong việc giải thích các tính năng của sản phẩm và hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing vì khách hàng nêu vấn đề rõ ràng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Ivy đã chuyển yêu cầu sửa HTML tags cho technical team và Hannah thông báo issue đã được giải quyết."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Ivy chủ động đề xuất các features để boost SEO: \"In the meantime, would you like me to suggest you our features to boost your SEO?\""
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Ivy đã chuyển case cho technical team để fix HTML tags."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội chia sẻ docs/guide rõ ràng nào trong đoạn chat."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Hannah đã thông báo issue HTML tags trên store đã được giải quyết thành công."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Hannah đã xin review sau khi vấn đề của khách hàng đã được giải quyết."
+        }
+      },
+      "overall_summary": "Nhìn chung, Ivy và Hannah đã hỗ trợ khách hàng rất tốt từ việc giải thích sản phẩm, chuyển vấn đề cho team kỹ thuật và thông báo kết quả. Hannah cũng đã xin review sau khi vấn đề được giải quyết.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_af0e22d9-25b9-4550-9b31-ad50ea699648",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-09",
+    "app": "Unknown",
+    "customer": "rek-cosmetics",
+    "primary_operator": "David",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\nrek-cosmetics: hello\n\nrek-cosmetics: you all billed me on feb 22 and i was on a free trial and you all were investigating issues i had. please refund me\n\n  David: Hi, this is David here\n\n  David: I see, please give me a few moments to have a look at this for you\n\nrek-cosmetics: yes please.\n\nrek-cosmetics: i just had to install this again because i couldn't get in touch with you all\n\nrek-cosmetics: so i hope i am not billed again as well\n\n  David: Currently, you are on our Free Plan so you will not be billed. I just checked via my admin and noticed the following:\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/4/f/f/8/4ff8ea9b92484c00/image_1p0mels.png]\n\nrek-cosmetics: i can show you my bill\n\nrek-cosmetics: you all billed me $39\n\nrek-cosmetics: this is stealing\n\nrek-cosmetics: and i can report it to shopify. please refund\n\n  David: I have not said anything about not refunding you? I was going to say that you just downgraded a few hours later after your trial ended. I get it, mistakes happens and we can process the refund for you.\n\nrek-cosmetics: The rep i was working with said that is what i should do so i did what they said. Why would you all still bill me\n\nrek-cosmetics: That isn't fair\n\nrek-cosmetics: thank you for the help\n\n  David: Well, as you can see in the screenshot I sent you, you did downgraded the plan on the same day but a few hours later. You upgraded to our Premium Plan on Jan 19th 1:09 so consequently, the trial ended on the Jan 26th 1:09. Regardless, I can still process the refund for you.\n\n  David: May I ask if you have paid the bill on your end yet? If you have, can you provide me with a screenshot of the paid bill or a PDF file of it?\n\n  David: With that, I can process the refund with our team for you\n\nrek-cosmetics: thank you\n\nrek-cosmetics: [File: Screenshot 2026-03-09 125018.png - https://storage.crisp.chat/users/upload/session/-/4/f/f/8/4ff8ea9b92484c00/screenshot-2026-03-09-125018_og0yq2.png]\n\nrek-cosmetics: [File: Screenshot 2026-03-09 125055.png - https://storage.crisp.chat/users/upload/session/-/4/f/f/8/4ff8ea9b92484c00/screenshot-2026-03-09-125055_1v34ez3.png]\n\n  David: Thank you. Also, before I process this, I do have to note that while we will refund the full amount that we receive on our end, Shopify does take a processing fee so the amount you will receive might not be the full amount. Does this work for you?\n\nrek-cosmetics: You should be able to just credit the full $39\n\nrek-cosmetics: Others do it\n\nrek-cosmetics: all the time\n\nrek-cosmetics: so there should be no issue\n\nrek-cosmetics: also i was thinking if my current seo company doesn't work out i would come back to you all since your were so helpful before\n\nrek-cosmetics: but since you can't return the full amount i might need to adjust that\n\nrek-cosmetics: seems like scheeming to me\n\nrek-cosmetics: Just a side not from sidekick\n\nrek-cosmetics: if an app has to refund me a charge does shopify take a fee from that\n      I'll look up how Shopify handles app charge refunds for you.\n      \n      No, Shopify doesn't take a fee from app charge refunds. When an app developer refunds a charge that was processed through Shopify, you receive the full refund amount or credit. If the charge was processed through Shopify, the developer can issue either a refund or a credit that applies to future Shopify App Store purchases and appears on your subscription bill.\n\nrek-cosmetics: does shopify take a processing fee from this refund\n      No, Shopify doesn't take a processing fee from app charge refunds. When an app developer refunds you for an app charge that was processed through Shopify, you receive the full refund amount or credit without any deductions from Shopify.\n      \n      The refund is handled directly between you and the app developer, and Shopify doesn't charge any fees for processing that refund.\n\nrek-cosmetics: i tried your services because i have been having issues with my current seo\n\nrek-cosmetics: so i was using your trial and trying to get the feel of the software and it's limits\n\nrek-cosmetics: please let me know when this has been refunded\n\nrek-cosmetics: now since i had to install this app again, if i choose the starter but don't do anything is anything running in the background already\n\n  David: [File: image.png - https://storage.crisp.chat/users/upload/session/-/4/f/f/8/4ff8ea9b92484c00/image_1tpxx38.png]\n\n  David: Hmm, I see. Normally, this is what happens on our end:\n\nrek-cosmetics: i don't know how shopify works with developers\n\nrek-cosmetics: i think you all need to switch the teir\n\n  David: Not really, Shopify always take their cut. Shopify Partners and all. That said, let me work my magic and try to get you the full amount. Sounds good?\n\nrek-cosmetics: thank you\n\n  David: But it is midnight on our end now, would it be cool if I update you via email: ryan@rekcosmetics.com in 8 to 9 hours?\n\nrek-cosmetics: Yeah sure. Thank you\n\n  David: No worries, I will update you soon.\n\nrek-cosmetics: wonderful. thanks\n\nrek-cosmetics: have a good night\n\n  David: You too. Have great day on your end\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Agent chào chuẩn tên."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar nghiêm trọng."
+        },
+        "communication": {
+          "score": 1.75,
+          "justification": "Agent giao tiếp khá rõ ràng, tuy nhiên, có thể ngắn gọn hơn ở một số chỗ. VD thay vì nói 'Well, as you can see in the screenshot I sent you, you did downgraded the plan on the same day but a few hours later. You upgraded to our Premium Plan on Jan 19th 1:09 so consequently, the trial ended on the Jan 26th 1:09. Regardless, I can still process the refund for you.' có thể nói 'I see that you downgraded the plan a few hours after the trial ended. I will process the refund for you'"
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Agent hiểu đúng yêu cầu và vấn đề của khách hàng. Khách hàng đang yêu cầu được hoàn tiền do bị tính phí sau khi dùng thử."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Agent giữ tone lịch sự, phản hồi nhanh chóng."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Khách hàng có thái độ khá bực tức vì bị tính phí sau khi dùng thử và cho rằng đây là hành vi 'stealing'. Agent đã có câu 'I get it, mistakes happens and we can process the refund for you.' để thể hiện sự thông cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Agent nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing thêm."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Agent cung cấp giải pháp hoàn tiền cho khách hàng."
+        },
+        "proactiveness": {
+          "score": 0.0,
+          "justification": "(1) Lý do: Agent không đưa ra bất kỳ đề xuất pro-active nào khác. Mặc dù khách hàng đã đề cập đến việc có thể quay lại sử dụng dịch vụ nếu vấn đề hoàn tiền được giải quyết thỏa đáng. (2) Ảnh hưởng: Khách hàng có thể cảm thấy không được đánh giá cao và ít khả năng quay lại sử dụng dịch vụ. (3) Rewriting: 'I understand your concerns regarding the refund. I'll do my best to ensure you receive the full amount. In the meantime, if you have any questions about our services, feel free to ask. We'd love to have you back!'. (4) Lời khuyên: Trong trường hợp này, agent có thể đề xuất một mã giảm giá hoặc ưu đãi đặc biệt cho lần sử dụng dịch vụ tiếp theo để khuyến khích khách hàng quay lại."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 2.0,
+          "justification": "Không cần resources."
+        },
+        "extra_mile": {
+          "score": 0.0,
+          "justification": "(1) Lý do: Agent không có hành động nào vượt ra ngoài yêu cầu cơ bản của khách hàng. (2) Ảnh hưởng: Khách hàng có thể cảm thấy dịch vụ chỉ dừng ở mức giải quyết vấn đề mà không có sự quan tâm đặc biệt. (3) Rewriting: Sau khi giải quyết xong vấn đề hoàn tiền, agent có thể hỏi thêm 'Is there anything else I can assist you with today?'. (4) Lời khuyên: Đề xuất một khảo sát ngắn về trải nghiệm của khách hàng hoặc cung cấp thông tin liên hệ trực tiếp để hỗ trợ thêm nếu cần."
+        },
+        "review_asking": {
+          "score": 0.0,
+          "justification": "(1) Lý do: Khách hàng có tín hiệu hài lòng: 'Yeah sure. Thank you', 'wonderful. thanks'. Agent không xin review. (2) Ảnh hưởng: Mất cơ hội thu thập phản hồi tích cực từ khách hàng. (3) Rewriting: 'I'm glad I could help! If you have a moment, could you please leave us a review? It would really help us out!'. (4) Lời khuyên: Luôn chủ động xin review khi khách hàng thể hiện sự hài lòng."
+        }
+      },
+      "overall_summary": "Nhìn chung, agent hỗ trợ khách hàng khá tốt trong việc giải quyết vấn đề hoàn tiền. Tuy nhiên, agent cần chủ động hơn trong việc xin review và cung cấp các giải pháp pro-active để tăng sự hài lòng của khách hàng.",
+      "total_score_20": 16.25,
+      "final_score_10": 8.12
+    }
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "session_id": "session_b71c4778-9c85-4b98-93c7-c30f8e7daa6c",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-12",
+    "app": "SearchPie",
+    "customer": "ij1hzg-0m",
+    "primary_operator": "Hannah",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Hannah. Nếu có nhiều agent trong chat, chỉ chấm phần của Hannah, bỏ qua lỗi của agent khác.]\n\nij1hzg-0m: Hey team, can you please take another look at my GMC, I keep getting notices like these showing no products?\n\nij1hzg-0m: [File: IMG_0736.png - https://storage.crisp.chat/users/upload/session/-/9/3/e/9/93e9860b462e780/img0736_1diopy.png]\n\n  Hannah: Hi dear, this is Hannah from SearchPie team <3\n\n  Hannah: Let me pass your case to our core team to check for you\n\n  Hannah: We will keep you posted once there’s an update.\n\n  Julie: Hello,\n\nThis is Julie from the SearchPie team here. Since you are offline, I would like to reach out to you via email regarding your Google Merchant Center.\n\nI have checked your Google Merchant Center and please be rest assured that your Google Merchant Center is still showing products. You can check it out in the attached picture. \n\n![](https://storage.crisp.chat/users/upload/session/-/9/3/e/9/93e9860b462e780/screenshot89_td7z2z.png)\n\nSome of the issues have resurfaced so I will take a look at them and start the fixing process for you. So please stay tuned :$   And may I ask if you have a Korean business registration? If no, I think it would be best to delete the South Korea product source off GMC as they will remain disapproved until you provide one. \n\nLooking forward to your response!\n\nBest regards,\nJulie\n\nij1hzg-0m: Hello,\n\nYes, go ahead and delete South Korea and please keep me updated on the fixes.\n\nThanks,\n\n\nJordan\n\nRELIC & RARITY\nFine Artifacts & Antiquities\n[signatureImage]\n7030 Woodbine Ave\nMarkham, ON L3R 6G2\nCanada\nT: +1 365-601-3836\nE: support@relicandrarity.com\nW: relicandrarity.com\n\nij1hzg-0m: [File: Image.jpeg - https://storage.crisp.chat/users/upload/session/-/9/3/e/9/93e9860b462e780/ae62b14d2b6480c7ceea3f2172b228d284625cec.jpeg]\n\n  Tina: Hi friend, I'm Tina here. \n\nThank you for your response. We will be back as soon as possible.\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đủ điểm. Hannah giới thiệu có tên và brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đủ điểm. Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Đủ điểm. Hannah truyền đạt thông tin rõ ràng."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Support chủ động pass case cho core team."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đủ điểm. Giữ tone phù hợp."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đủ điểm. Không có dấu hiệu khách hàng cần được đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Support nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Support pass case vì vấn đề cần chuyên môn."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đủ điểm. Hannah chủ động pass case cho core team."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đủ điểm. Support chủ động pass case."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đủ điểm. Hannah chủ động pass case cho core team."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đủ điểm. Không có cơ hội chia sẻ resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Không có cơ hội để support làm tốt hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đủ điểm. Chat chưa kết thúc."
+        }
+      },
+      "overall_summary": "Hannah chào hỏi và pass case cho core team.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_c2037fbf-eafc-4c4c-a709-8d55294605c0",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-12",
+    "app": "DECO",
+    "customer": "Pebbl Brains",
+    "primary_operator": "Ivy",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Ivy. Nếu có nhiều agent trong chat, chỉ chấm phần của Ivy, bỏ qua lỗi của agent khác.]\n\nPebbl Brains: Hi DECO Team! I need help with the badge display problem.\n\nPebbl Brains: badge not showing in product page\n\n  Ivy: Hi there. It's Ivy from DECO app\n\n  Ivy: Could you please share the URL of the page where your label doesn't display so I can take a look?\n\nPebbl Brains: https://pebblbrains.com/products/pebbl-walker?variant=43119084732500\n\n  Ivy: Thanks a lot. Let me forward this to our technical team for further investigation\n\nPebbl Brains: Okay\n\n  Ivy: Rest assured that once I have any updates from them, I will update you immediately~\n\n  Ivy: Thanks a lot for your patience. Could you please reload your site to double-check how it works now?\n\n  Ivy: [File: image.png - https://storage.crisp.chat/users/upload/session/-/d/4/4/4/d444b146e9c2a000/image_11zanp2.png]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Có tên agent và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi ngữ pháp."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Thông tin rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Không bỏ sót câu hỏi nào của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ nhịp độ tốt."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Chat bình thường, không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Support yêu cầu URL để kiểm tra, phù hợp."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Support chuyển case cho team technical, phù hợp với vấn đề."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội rõ ràng để chủ động giúp thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Vấn đề cần technical team, support đã chuyển."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ docs/link."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để hỗ trợ thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã seen tin nhắn cuối nhưng chưa reply nên chưa trừ điểm vì chat chưa kết thúc."
+        }
+      },
+      "overall_summary": "Nhìn chung, support đã thực hiện tốt các tiêu chí. Đã xác định vấn đề và chuyển cho technical team.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_b53ac274-346a-4eae-a774-fb0c85481221",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-12",
+    "app": "DECO",
+    "customer": "ITS In The Shed",
+    "primary_operator": "Hannah",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Hannah. Nếu có nhiều agent trong chat, chỉ chấm phần của Hannah, bỏ qua lỗi của agent khác.]\n\nITS In The Shed: I just upgraded to STARTER 🎉 Could you help me get the most out of this plan?\n\n  Hannah: Hi dear, this is Hannah from DECO team <3\n\n  Hannah: Welcome to STARTER Plan, let us know if you need anything :$\n\nITS In The Shed: Hi DECO Team! I need help with the badge display problem.\n\nITS In The Shed: i'm having trouble adding a badge to my spice brand that's gluten free I have selected it from the product list but it doesn't appear to show\n\n  Hannah: Still Hannah here\n\n  Hannah: Let me check it\n\n  Hannah: Got it1 Let me pass your case to our dev team\n\n  Hannah: We will handle this for you\n\nITS In The Shed: thank you\n\n  Hannah: <3\n\n  Hannah: Hi dear, this is Hannah from DECO team <3  \n\nWe noticed that the app has been uninstalled, so we are currently unable to investigate the issue on your store.\n\nCould you please reinstall the app so our team can properly review and assist you? Once it is reinstalled, kindly let us know and we will prioritize checking it for you.\n\nLooking forward to hearing from you soon!\n\nBest regards, \nHannah\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Tên agent và brand đầy đủ."
+        },
+        "grammar": {
+          "score": 1.0,
+          "justification": "Câu 'Got it1' sai chính tả, dù không ảnh hưởng nhiều đến nghĩa. Nên viết: 'Got it!'"
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Truyền đạt thông tin rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Không bỏ sót yêu cầu của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi khá nhanh. Tuy nhiên, việc lặp lại 'Hi dear, this is Hannah from DECO team <3' có thể khiến khách cảm thấy hơi robotic."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Thể hiện sự quan tâm bằng '<3'."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Phản hồi nhiệt tình."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Khách cung cấp đủ thông tin về vấn đề gặp phải."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đề xuất chuyển case cho dev team là phù hợp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Chủ động cung cấp thông tin cập nhật cho khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Chuyển case cho dev team."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để sử dụng resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để thể hiện extra mile."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Chat chưa kết thúc, khách đã SEEN tin nhắn cuối của support nhưng CHƯA REPLY."
+        }
+      },
+      "overall_summary": "Nhìn chung, support đã xử lý case khá tốt. Tuy nhiên, cần chú ý hơn đến lỗi chính tả và hạn chế lặp lại câu chào.",
+      "total_score_20": 19.75,
+      "final_score_10": 9.88
+    }
+  },
+  {
+    "session_id": "session_095733a4-9b3b-482e-92e5-421aff5ada43",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-12",
+    "app": "SearchPie",
+    "customer": "s0ajvh-pc",
+    "primary_operator": "Wendy",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Wendy. Nếu có nhiều agent trong chat, chỉ chấm phần của Wendy, bỏ qua lỗi của agent khác.]\n\ns0ajvh-pc: Hi, I want to grant access of my store to the app to add internal links\n\n  Wendy: Hi, this is Wendy from SearchPie\n\n  Wendy: Would you like me to help you unlock internal links?\n\ns0ajvh-pc: yes pls\n\n  Wendy: Sure\n\n  Wendy: Please let me ask the technical expert to help you unlock it\n\n  Wendy: When it's done, we'll surely let you know\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đã có tên agent và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu 'Would you like me to help you unlock internal links?' hơi thừa vì khách đã nói rõ muốn làm gì. Tuy nhiên không trừ vì không gây nhầm lẫn."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Không bỏ sót thông tin."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Tốc độ phản hồi ổn."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Chat diễn ra bình thường, không cần thể hiện sự cảm thông."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Trả lời đầy đủ, không hời hợt."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Thông tin từ khách đủ để xử lý."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đã báo sẽ nhờ kỹ thuật hỗ trợ, coi như là một giải pháp phù hợp."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội rõ ràng để chủ động hơn."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đã báo sẽ 'ask the technical expert', tức là có chuyển giao."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để làm tốt hơn."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách seen nhưng chưa reply nên không trừ."
+        }
+      },
+      "overall_summary": "Chat ngắn, support xử lý ổn, đầy đủ các bước cơ bản. Chưa có cơ hội để thể hiện nhiều hơn.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_674f50f6-c98e-42ba-97f1-d85292e23ea4",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-12",
+    "app": "DECO",
+    "customer": "Royal Pharmacy",
+    "primary_operator": "Jane",
+    "transcript": "--- THÔNG TIN BỔ SUNG: Chưa thấy có thông tin review từ hệ thống ---\n\n[Agent được chấm: Jane. Nếu có nhiều agent trong chat, chỉ chấm phần của Jane, bỏ qua lỗi của agent khác.]\n\nRoyal Pharmacy: Hi DECO Team! I need help with the badge display problem.\n\n  Tina: Hello, I'm Tina from DECO app\n\n  Tina: could you please send me the product link for further check?\n\nRoyal Pharmacy: hello\n\nRoyal Pharmacy: I created a badge on specific discount\n\n  Jane: it's Jane from DECO team here\n\nRoyal Pharmacy: when I activate it it spread on other products not in the discount\n\n  Jane: can you send me the product link to check?\n\nRoyal Pharmacy: label name 50% collection\n\nRoyal Pharmacy: product ski that not included but the badge applied is 45160\n\n  Jane: well noted on the label name\n\n  Jane: I see you set the label to be displayed on selected product\n\n  Jane: can you send me the product link in your store to check as well?\n\nRoyal Pharmacy: label name 50% collection\n\nRoyal Pharmacy: it is deactivated now\n\nRoyal Pharmacy: https://www.oscarintkw.com/products/mounjaro-12-5-mg-0-6-ml-kwikpen-injection-4-doses\n\n  Jane: our technician are unable to check the issue if you deactivated the label\n\n  Jane: in this case, can you grant us the access to your store to check?\n\n  Jane: if it's okay, I'll create request access to your store now\n\n  Jane: hi my friend, are you still there?\n\n  Jane: if you dont want to grant us the access to your store, please activate the label, our team will check and fix the issue accordingly [+1]\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đủ điểm: có cả tên người và tên brand 'it's Jane from DECO team here'."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Đủ điểm: không có lỗi grammar nghiêm trọng."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Đủ điểm: giao tiếp rõ ràng, mạch lạc."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Đủ điểm: lắng nghe và hiểu vấn đề của khách hàng."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Đủ điểm: giữ nhịp độ trò chuyện hợp lý. Tuy nhiên, việc lặp lại 'hi my friend' có thể trừ nhẹ, nhưng không đáng kể."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Đủ điểm: không có dấu hiệu khách hàng khó chịu nên không cần thể hiện sự đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Đủ điểm: thái độ support nhiệt tình, sẵn sàng hỗ trợ."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Đủ điểm: hỏi thông tin cần thiết để xác định vấn đề (product link)."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Đủ điểm: đề xuất giải pháp phù hợp (kích hoạt lại label hoặc cấp quyền truy cập)."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Đủ điểm: chủ động đề xuất các phương án hỗ trợ khách hàng."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đủ điểm: \"our technician are unable to check the issue if you deactivated the label\" -> đã check team technical"
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Đủ điểm: Không có cơ hội rõ ràng để chia sẻ resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Đủ điểm: Không có cơ hội rõ ràng để hỗ trợ thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Đủ điểm: chat chưa kết thúc."
+        }
+      },
+      "overall_summary": "Nhìn chung, agent Jane đã hỗ trợ khách hàng khá tốt, từ việc chào hỏi, xác định vấn đề, đưa ra giải pháp và đề xuất các phương án hỗ trợ. Tuy nhiên, cần tránh lặp lại các cụm từ một cách máy móc để tăng tính tự nhiên trong giao tiếp.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_d71818b5-ff08-46e3-9db5-1799d6bf9796",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-12",
+    "app": "SearchPie",
+    "customer": "10amfactory",
+    "primary_operator": "Ivy",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) ---\n\n[Agent được chấm: Ivy. Nếu có nhiều agent trong chat, chỉ chấm phần của Ivy, bỏ qua lỗi của agent khác.]\n\n10amfactory: Hi David, yes, I am at NewYork and between 10am to 6pm i can be available. Please let me know\n\n  Ivy: Hi there. It's Ivy from SearchPie app\n\n  Ivy: Thanks a lot for sharing your preferred timezone with us. I will inform David about that info\n\n  Ivy: Rest assured that we will get back to you as soon as possible\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Đã có tên agent và tên brand."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Câu trả lời rõ ràng, dễ hiểu."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Hiểu rõ yêu cầu của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Chat bình thường, không cần thể hiện sự cảm thông."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Trả lời đầy đủ."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần thêm thông tin."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Chuyển thông tin cho người liên quan."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội để chủ động hơn."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Không cần transfer."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội để chia sẻ resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội để hỗ trợ thêm."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review."
+        }
+      },
+      "overall_summary": "Hỗ trợ lịch sự và hiệu quả.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  },
+  {
+    "session_id": "session_a35a2629-6013-4914-9dba-19242a48f9ff",
+    "website_id": "17e47fa7-bddf-4074-b627-df66a29a740e",
+    "date": "2026-03-12",
+    "app": "SearchPie",
+    "customer": "e8k5ex-0v",
+    "primary_operator": "Wendy",
+    "transcript": "--- THÔNG TIN BỔ SUNG:  (Hệ thống ghi nhận khách ĐÃ CHO REVIEW 5 sao) | ⚠️ KHÁCH ĐÃ SEEN tin nhắn cuối của support nhưng CHƯA REPLY — đây là lý do chưa kết thúc, không trừ điểm support vì điều này. ---\n\n[Agent được chấm: Wendy. Nếu có nhiều agent trong chat, chỉ chấm phần của Wendy, bỏ qua lỗi của agent khác.]\n\ne8k5ex-0v: Fix now\n\ne8k5ex-0v: is it fixed ?\n\n  Wendy: Hello, it's Wendy from SearchPie\n\n  Wendy: It's not fixed yet, we'll pass it to our technical expert to help you fix it\n\ne8k5ex-0v: Thanks, appreciate\n\n  Wendy: You're welcome ;)\n\n  Jane: Hi there, it's Jane from Search Pie. Thank you so much for your patience.\n\nI would like to inform you that our technical team has solved HTML Tags.\nPlease access your store and let me know if it works properly.\n\nFeel free to get back to us whenever you need help. We are always more than ready to support you as best we can! :$  \n\nRegards,\nJane\n\n",
+    "grading": {
+      "criteria": {
+        "greetings": {
+          "score": 0.25,
+          "justification": "Có tên người và brand: \"it's Wendy from SearchPie\"."
+        },
+        "grammar": {
+          "score": 1.25,
+          "justification": "Không có lỗi grammar."
+        },
+        "communication": {
+          "score": 2.0,
+          "justification": "Truyền đạt thông tin rõ ràng, mạch lạc."
+        },
+        "listening": {
+          "score": 1.5,
+          "justification": "Không bỏ sót ý của khách."
+        },
+        "tone_pace": {
+          "score": 0.75,
+          "justification": "Giữ tone lịch sự, tốc độ phản hồi chấp nhận được."
+        },
+        "empathy": {
+          "score": 0.75,
+          "justification": "Không có tình huống nào khách hàng cần được đồng cảm."
+        },
+        "enthusiastic": {
+          "score": 1.5,
+          "justification": "Support nhiệt tình hỗ trợ khách hàng."
+        },
+        "probing": {
+          "score": 1.5,
+          "justification": "Không cần probing thêm vì vấn đề đã rõ ràng."
+        },
+        "solution": {
+          "score": 3.0,
+          "justification": "Giải pháp chính xác, vấn đề của khách đã được giải quyết."
+        },
+        "proactiveness": {
+          "score": 2.0,
+          "justification": "Không có cơ hội rõ ràng để chủ động giúp thêm."
+        },
+        "transferring": {
+          "score": 2.0,
+          "justification": "Đã chuyển cho technical team: \"we'll pass it to our technical expert\"."
+        },
+        "resources": {
+          "score": 0.5,
+          "justification": "Không có cơ hội rõ ràng để chia sẻ resources."
+        },
+        "extra_mile": {
+          "score": 1.5,
+          "justification": "Không có cơ hội rõ ràng để tạo extra mile."
+        },
+        "review_asking": {
+          "score": 1.5,
+          "justification": "Khách đã cho review rồi."
+        }
+      },
+      "overall_summary": "Chat hỗ trợ giải quyết vấn đề cho khách hàng. Wendy đã chuyển vấn đề cho bộ phận kỹ thuật khi cần thiết. Jane cập nhật thông tin và thông báo vấn đề đã được giải quyết.",
+      "total_score_20": 20.0,
+      "final_score_10": 10.0
+    }
+  }
+]

@@ -499,9 +499,10 @@ if __name__ == "__main__":
         from pyngrok import ngrok as _ngrok
         from mcp_server.auth import build_auth_app
 
-        tunnel     = _ngrok.connect(a.port, bind_tls=True)
-        public_url = tunnel.public_url
-        ngrok_host = public_url.replace("https://", "").replace("http://", "")
+        ngrok_domain = os.getenv("NGROK_DOMAIN", "")
+        tunnel       = _ngrok.connect(a.port, bind_tls=True, **({"domain": ngrok_domain} if ngrok_domain else {}))
+        public_url   = tunnel.public_url
+        ngrok_host   = public_url.replace("https://", "").replace("http://", "")
 
         # Allow ngrok hostname in FastMCP Host header validation
         mcp.settings.transport_security.allowed_hosts.append(ngrok_host)
