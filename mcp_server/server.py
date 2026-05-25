@@ -477,7 +477,12 @@ if __name__ == "__main__":
 
     if a.http:
         import uvicorn
-        print(f"🌐 Starting HTTP MCP server on http://{a.host}:{a.port}/mcp")
+        from pyngrok import ngrok as _ngrok
+        tunnel = _ngrok.connect(a.port, bind_tls=True)
+        public_url = tunnel.public_url
+        print(f"🌐 MCP server  : http://{a.host}:{a.port}/mcp")
+        print(f"🔗 Ngrok URL   : {public_url}/mcp")
+        print(f"👉 Thêm vào Claude.ai connector: {public_url}/mcp")
         uvicorn.run(mcp.streamable_http_app(), host=a.host, port=a.port)
     else:
         mcp.run()

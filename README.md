@@ -236,3 +236,17 @@ SSH_TUNNEL_REMOTE=10.x.x.x:27017
 | `QA Report` | `analyzer_v2.py` | Chạy thủ công |
 | `<timestamp>` | `main.py` | Mỗi lần chạy tạo sheet mới |
 | Tên tùy chọn | `export_history.py` | Xuất lịch sử |
+
+
+Giờ chỉ cần một lệnh:
+
+
+source venv/bin/activate
+python -m mcp_server.server --http
+Output sẽ in ra URL ngrok ngay:
+
+
+🌐 MCP server  : http://0.0.0.0:8765/mcp
+🔗 Ngrok URL   : https://xxxx-xxx.ngrok-free.app/mcp
+👉 Thêm vào Claude.ai connector: https://xxxx-xxx.ngrok-free.app/mcp
+Copy URL đó vào claude.ai → Settings → Integrations → Add MCP server là xong. Nếu chưa có ngrok auth token thì chạy ngrok config add-authtoken <token> một lần trước.
