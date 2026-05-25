@@ -480,6 +480,9 @@ if __name__ == "__main__":
         from pyngrok import ngrok as _ngrok
         tunnel = _ngrok.connect(a.port, bind_tls=True)
         public_url = tunnel.public_url
+        ngrok_host = public_url.replace("https://", "").replace("http://", "")
+        # Allow the ngrok hostname in Host header validation
+        mcp.settings.transport_security.allowed_hosts.append(ngrok_host)
         print(f"🌐 MCP server  : http://{a.host}:{a.port}/mcp")
         print(f"🔗 Ngrok URL   : {public_url}/mcp")
         print(f"👉 Thêm vào Claude.ai connector: {public_url}/mcp")
