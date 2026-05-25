@@ -470,22 +470,58 @@ def qa_prompt_suggest(feedback: str, from_date: str = "", to_date: str = "", app
 if __name__ == "__main__":
     import argparse as _ap
     p = _ap.ArgumentParser()
-    p.add_argument("--http", action="store_true", help="Run as HTTP server (for claude.ai connector)")
-    p.add_argument("--port", type=int, default=8765)
-    p.add_argument("--host", default="0.0.0.0")
+    p.add_argument("--http",         action="store_true", help="Run as HTTP server (for claude.ai connector)")
+    p.add_argument("--port",         type=int, default=8765)
+    p.add_argument("--host",         default="0.0.0.0")
+    p.add_argument("--add-email",    metavar="EMAIL", help="Add email to allow-list")
+    p.add_argument("--remove-email", metavar="EMAIL", help="Remove email from allow-list")
+    p.add_argument("--list-emails",  action="store_true", help="List allowed emails")
     a = p.parse_args()
+
+    # Email management (no server startup needed)
+    if a.add_email or a.remove_email or a.list_emails:
+        from database.auth import add_email, remove_email, list_emails
+        if a.add_email:
+            add_email(a.add_email)
+            print(f"✅ Đã thêm: {a.add_email}")
+        if a.remove_email:
+            ok = remove_email(a.remove_email)
+            print(f"{'✅ Đã xóa' if ok else '⚠️  Không tìm thấy'}: {a.remove_email}")
+        if a.list_emails:
+            emails = list_emails()
+            print(f"📋 Allowed emails ({len(emails)}):")
+            for e in emails:
+                print(f"  • {e}")
+        raise SystemExit(0)
 
     if a.http:
         import uvicorn
         from pyngrok import ngrok as _ngrok
-        tunnel = _ngrok.connect(a.port, bind_tls=True)
+        from mcp_server.auth import build_auth_app
+
+        tunnel     = _ngrok.connect(a.port, bind_tls=True)
         public_url = tunnel.public_url
         ngrok_host = public_url.replace("https://", "").replace("http://", "")
-        # Allow the ngrok hostname in Host header validation
+
+        # Allow ngrok hostname in FastMCP Host header validation
         mcp.settings.transport_security.allowed_hosts.append(ngrok_host)
-        print(f"🌐 MCP server  : http://{a.host}:{a.port}/mcp")
-        print(f"🔗 Ngrok URL   : {public_url}/mcp")
-        print(f"👉 Thêm vào Claude.ai connector: {public_url}/mcp")
-        uvicorn.run(mcp.streamable_http_app(), host=a.host, port=a.port)
+
+        google_client_id     = os.getenv("GOOGLE_CLIENT_ID", "")
+        google_client_secret = os.getenv("GOOGLE_CLIENT_SECRET", "")
+        token_ttl            = int(os.getenv("MCP_TOKEN_TTL", "3600"))
+
+        print(f"🌐 MCP server       : http://{a.host}:{a.port}/mcp")
+        print(f"🔗 Ngrok URL        : {public_url}/mcp")
+        print(f"👉 Claude.ai connector URL: {public_url}/mcp")
+        print(f"🔐 OAuth discovery  : {public_url}/.well-known/oauth-authorization-server")
+
+        app = build_auth_app(
+            mcp.streamable_http_app(),
+            base_url=public_url,
+            google_client_id=google_client_id,
+            google_client_secret=google_client_secret,
+            token_ttl=token_ttl,
+        )
+        uvicorn.run(app, host=a.host, port=a.port)
     else:
         mcp.run()

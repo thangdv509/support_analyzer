@@ -250,3 +250,39 @@ Output sẽ in ra URL ngrok ngay:
 🔗 Ngrok URL   : https://xxxx-xxx.ngrok-free.app/mcp
 👉 Thêm vào Claude.ai connector: https://xxxx-xxx.ngrok-free.app/mcp
 Copy URL đó vào claude.ai → Settings → Integrations → Add MCP server là xong. Nếu chưa có ngrok auth token thì chạy ngrok config add-authtoken <token> một lần trước.
+
+Bước 1 — Tạo Google OAuth credentials
+Vào console.cloud.google.com → APIs & Services → Credentials
+Create Credentials → OAuth 2.0 Client ID → chọn Web application
+Ở phần Authorized redirect URIs, thêm:
+
+https://<ngrok-domain>/oauth/callback
+(nếu dùng ngrok static domain thì URI này cố định, ngrok free có 1 static domain)
+Copy Client ID và Client secret vào .env:
+
+GOOGLE_CLIENT_ID="xxx.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET="GOCSPX-..."
+Bước 2 — Thêm email được phép truy cập
+
+cd support_analyzer && source venv/bin/activate
+python -m mcp_server.server --add-email vietthang.doan@secomus.com
+python -m mcp_server.server --add-email colleague@secomus.com
+python -m mcp_server.server --list-emails
+Bước 3 — Chạy server
+
+python -m mcp_server.server --http
+Output:
+
+
+🔗 Ngrok URL   : https://xyz.ngrok-free.app/mcp
+🔐 Login URL   : https://xyz.ngrok-free.app/login
+Bước 4 — Lấy token
+Mở browser vào https://xyz.ngrok-free.app/login → đăng nhập Google → token hiển thị trên màn hình.
+
+Hoặc Claude.ai sẽ tự chạy OAuth flow (hiện nút Authenticate) khi thêm MCP connector.
+
+Quản lý email
+
+python -m mcp_server.server --add-email new@example.com
+python -m mcp_server.server --remove-email old@example.com
+python -m mcp_server.server --list-emails

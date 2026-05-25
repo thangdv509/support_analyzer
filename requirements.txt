@@ -6,3 +6,5 @@ pymongo
 crisp-api
 mcp
 schedule
+httpx
+pyngrok
