@@ -80,13 +80,15 @@ def validate_token(token: str) -> str | None:
 # ── Middleware ───────────────────────────────────────────────────────────────
 
 class BearerTokenMiddleware(BaseHTTPMiddleware):
-    def __init__(self, app: ASGIApp, base_url: str = "") -> None:
+    def __init__(self, app: ASGIApp, base_url: str = "", reconnect_fn=None) -> None:
         super().__init__(app)
         self._resource_metadata = (
             base_url.rstrip("/") + "/.well-known/oauth-protected-resource"
         )
+        self._reconnect_fn = reconnect_fn  # called before each /mcp request
 
     async def dispatch(self, request: Request, call_next) -> Response:
+        import asyncio
         path = request.url.path
         if not any(path.startswith(p) for p in _PROTECTED_PREFIXES):
             return await call_next(request)
@@ -116,6 +118,10 @@ class BearerTokenMiddleware(BaseHTTPMiddleware):
                 },
             )
 
+        # Ensure SSH tunnel is alive before hitting MongoDB
+        if self._reconnect_fn:
+            await asyncio.to_thread(self._reconnect_fn)
+
         logger.debug("oauth.authorized email=%s path=%s", email, path)
         return await call_next(request)
 
@@ -128,6 +134,7 @@ def build_auth_app(
     google_client_id: str,
     google_client_secret: str,
     token_ttl: int = 3600,
+    reconnect_fn=None,
 ) -> Starlette:
     """Wrap MCP ASGI app with OAuth 2.1 + PKCE routes and Bearer middleware."""
     base            = base_url.rstrip("/")
@@ -333,6 +340,6 @@ def build_auth_app(
 
     return Starlette(
         routes=routes,
-        middleware=[Middleware(BearerTokenMiddleware, base_url=base_url)],
+        middleware=[Middleware(BearerTokenMiddleware, base_url=base_url, reconnect_fn=reconnect_fn)],
         lifespan=lifespan,
     )

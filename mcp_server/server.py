@@ -522,6 +522,7 @@ if __name__ == "__main__":
             google_client_id=google_client_id,
             google_client_secret=google_client_secret,
             token_ttl=token_ttl,
+            reconnect_fn=ensure_tunnel,
         )
         uvicorn.run(app, host=a.host, port=a.port)
     else:
