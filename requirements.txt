@@ -8,3 +8,5 @@ mcp
 schedule
 httpx
 pyngrok
+fastapi
+uvicorn[standard]

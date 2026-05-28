@@ -1,0 +1,616 @@
+import { useCallback, useMemo, useRef, useState } from 'react'
+import { AgGridReact } from 'ag-grid-react'
+import {
+  AllCommunityModule,
+  ModuleRegistry,
+  type ColDef,
+  type ColGroupDef,
+  type ICellRendererParams,
+  type ITooltipParams,
+  type GetRowIdParams,
+  type RowSelectionOptions,
+  type GridReadyEvent,
+} from 'ag-grid-community'
+import {
+  Button,
+  message,
+  Modal,
+  Space,
+  Tag,
+  Tooltip,
+  Typography,
+} from 'antd'
+import {
+  CheckCircleOutlined,
+  DeleteOutlined,
+  EditOutlined,
+  ExportOutlined,
+  EyeOutlined,
+  FormOutlined,
+  SyncOutlined,
+  WarningOutlined,
+} from '@ant-design/icons'
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { deleteRecord, fetchRecords, resolveRecord } from '../api'
+import type { Filters, QARecord } from '../types'
+import { CRITERIA_KEYS, CRITERIA_LABELS, CRITERIA_MAX } from '../types'
+import EditModal from './EditModal'
+import RegradeModal from './RegradeModal'
+import DetailModal from './DetailModal'
+import ScoreEditModal from './ScoreEditModal'
+
+ModuleRegistry.registerModules([AllCommunityModule])
+
+// ── Custom tooltip ────────────────────────────────────────────────────────────
+
+function CriteriaTooltip({ value }: ITooltipParams) {
+  if (!value) return null
+  return (
+    <div style={{
+      background: '#1e293b',
+      color: '#e2e8f0',
+      padding: '10px 14px',
+      borderRadius: 8,
+      maxWidth: 300,
+      fontSize: 12,
+      lineHeight: 1.65,
+      boxShadow: '0 6px 20px #00000055',
+      border: '1px solid #334155',
+      whiteSpace: 'pre-wrap',
+      wordBreak: 'break-word',
+      pointerEvents: 'none',
+    }}>
+      {String(value)}
+    </div>
+  )
+}
+
+// ── Colour helpers ────────────────────────────────────────────────────────────
+
+function scoreColor(score: number) {
+  if (score >= 9) return '#52c41a'
+  if (score >= 7.5) return '#1677ff'
+  if (score >= 5) return '#faad14'
+  return '#ff4d4f'
+}
+
+function criteriaRatio(score: number, max: number) {
+  return max > 0 ? score / max : 1
+}
+
+// ── Cell renderers ────────────────────────────────────────────────────────────
+
+function ScoreCell({ value }: ICellRendererParams) {
+  if (value == null) return <span style={{ color: '#bbb' }}>—</span>
+  const color = scoreColor(value)
+  return (
+    <span
+      style={{
+        fontWeight: 700,
+        fontSize: 14,
+        color,
+        background: `${color}18`,
+        borderRadius: 4,
+        padding: '1px 7px',
+        display: 'inline-block',
+      }}
+    >
+      {(value as number).toFixed(2)}
+    </span>
+  )
+}
+
+function AppCell({ value }: ICellRendererParams) {
+  return (
+    <Tag color={value === 'DECO' ? 'purple' : 'cyan'} style={{ margin: 0, fontSize: 11 }}>
+      {value}
+    </Tag>
+  )
+}
+
+function ResolvedCell({ value }: ICellRendererParams) {
+  return value ? (
+    <Tag color="success" style={{ margin: 0, fontSize: 11 }}>
+      ✓ Resolved
+    </Tag>
+  ) : (
+    <Tag style={{ margin: 0, fontSize: 11 }}>Open</Tag>
+  )
+}
+
+function TagsCell({ value }: ICellRendererParams) {
+  const tags = (value as string[]) || []
+  if (!tags.length) return null
+  return (
+    <span style={{ display: 'flex', flexWrap: 'wrap', gap: 2, lineHeight: '18px' }}>
+      {tags.slice(0, 3).map((t, i) => (
+        <Tag key={i} style={{ fontSize: 11, padding: '0 4px', margin: 0, lineHeight: '16px' }}>
+          {t}
+        </Tag>
+      ))}
+      {tags.length > 3 && (
+        <Tag style={{ fontSize: 11, padding: '0 4px', margin: 0 }}>+{tags.length - 3}</Tag>
+      )}
+    </span>
+  )
+}
+
+function CriteriaCell(params: ICellRendererParams & { criteriaKey?: string }) {
+  const { value } = params
+  const key = params.criteriaKey
+  if (value == null || !key) return <span style={{ color: '#bbb' }}>—</span>
+  const max = CRITERIA_MAX[key as keyof typeof CRITERIA_MAX]
+  const ratio = criteriaRatio(value as number, max)
+  const color = ratio >= 1 ? '#52c41a' : ratio >= 0.7 ? '#faad14' : '#ff4d4f'
+  const deducted = (value as number) < max
+  return (
+    <span
+      style={{
+        color,
+        fontWeight: deducted ? 600 : 400,
+        fontSize: 12,
+      }}
+    >
+      {(value as number)}
+      <span style={{ color: '#999', fontSize: 10 }}>/{max}</span>
+    </span>
+  )
+}
+
+// ── Main component ────────────────────────────────────────────────────────────
+
+interface Props {
+  filters: Filters
+}
+
+export default function QATable({ filters }: Props) {
+  const gridRef = useRef<AgGridReact>(null)
+  const queryClient = useQueryClient()
+
+  const [editRecord, setEditRecord] = useState<QARecord | null>(null)
+  const [regradeRec, setRegradeRec] = useState<QARecord | null>(null)
+  const [detailRec, setDetailRec] = useState<QARecord | null>(null)
+  const [scoreEditRec, setScoreEditRec] = useState<QARecord | null>(null)
+
+  // ── Build API params ──────────────────────────────────────────────────────
+
+  const params = useMemo(() => {
+    const p: Record<string, unknown> = {
+      page_size: 500,
+      sort_by: 'date',
+      sort_dir: -1,
+    }
+    if (filters.app) p.app = filters.app
+    if (filters.agent) p.agent = filters.agent
+    if (filters.date_from) p.date_from = filters.date_from
+    if (filters.date_to) p.date_to = filters.date_to
+    if (filters.score_min > 0) p.score_min = filters.score_min
+    if (filters.score_max < 10) p.score_max = filters.score_max
+    if (filters.is_resolved === 'true') p.is_resolved = true
+    if (filters.is_resolved === 'false') p.is_resolved = false
+    return p
+  }, [filters])
+
+  const { data, isLoading, isFetching, refetch } = useQuery({
+    queryKey: ['records', params],
+    queryFn: () => fetchRecords(params as Parameters<typeof fetchRecords>[0]),
+    staleTime: 15_000,
+  })
+
+  // ── Mutations ─────────────────────────────────────────────────────────────
+
+  const deleteMut = useMutation({
+    mutationFn: deleteRecord,
+    onSuccess: () => {
+      message.success('Record deleted')
+      queryClient.invalidateQueries({ queryKey: ['records'] })
+    },
+    onError: (e: unknown) => {
+      const err = e as { response?: { data?: { detail?: string } } }
+      message.error(err.response?.data?.detail || 'Delete failed')
+    },
+  })
+
+  const resolveMut = useMutation({
+    mutationFn: resolveRecord,
+    onSuccess: () => {
+      message.success('Chat resolved in Crisp ✓')
+      queryClient.invalidateQueries({ queryKey: ['records'] })
+    },
+    onError: (e: unknown) => {
+      const err = e as { response?: { data?: { detail?: string } } }
+      message.error(err.response?.data?.detail || 'Resolve failed')
+    },
+  })
+
+  // ── Action handlers ───────────────────────────────────────────────────────
+
+  const handleDelete = useCallback(
+    (rec: QARecord) => {
+      Modal.confirm({
+        title: 'Delete this record?',
+        content: `${rec.primary_operator} · ${rec.date} · ${rec.app}`,
+        okType: 'danger',
+        okText: 'Delete',
+        onOk: () => deleteMut.mutate(rec.id),
+      })
+    },
+    [deleteMut],
+  )
+
+  const handleResolve = useCallback(
+    (rec: QARecord) => {
+      Modal.confirm({
+        title: 'Resolve in Crisp?',
+        icon: <WarningOutlined style={{ color: '#faad14' }} />,
+        content: (
+          <>
+            <Typography.Paragraph>
+              Resolving <strong>{rec.session_id}</strong> via the Crisp API will mark the
+              conversation as resolved. This action cannot be undone.
+            </Typography.Paragraph>
+            <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+              Agent: {rec.primary_operator} · {rec.date}
+            </Typography.Text>
+          </>
+        ),
+        okText: 'Resolve',
+        onOk: () => resolveMut.mutate(rec.id),
+      })
+    },
+    [resolveMut],
+  )
+
+  // ── Actions cell renderer ─────────────────────────────────────────────────
+
+  const ActionsCell = useCallback(
+    ({ data: rec }: ICellRendererParams<QARecord>) => {
+      if (!rec) return null
+      return (
+        <Space size={2} style={{ height: '100%', alignItems: 'center' }}>
+          <Tooltip title="Xem chi tiết (tags, summary, transcript)">
+            <Button
+              size="small"
+              type="text"
+              icon={<EyeOutlined />}
+              onClick={() => setDetailRec(rec)}
+            />
+          </Tooltip>
+          <Tooltip title="Sửa thông tin (agent, customer, tags…)">
+            <Button
+              size="small"
+              type="text"
+              icon={<EditOutlined />}
+              onClick={() => setEditRecord(rec)}
+            />
+          </Tooltip>
+          <Tooltip title="Sửa điểm từng tiêu chí">
+            <Button
+              size="small"
+              type="text"
+              icon={<FormOutlined style={{ color: '#1677ff' }} />}
+              onClick={() => setScoreEditRec(rec)}
+            />
+          </Tooltip>
+          <Tooltip title="Chấm lại bằng AI">
+            <Button
+              size="small"
+              type="text"
+              icon={<SyncOutlined />}
+              onClick={() => setRegradeRec(rec)}
+            />
+          </Tooltip>
+          {!rec.is_resolved && (
+            <Tooltip title="Resolve in Crisp">
+              <Button
+                size="small"
+                type="text"
+                icon={<CheckCircleOutlined style={{ color: '#52c41a' }} />}
+                onClick={() => handleResolve(rec)}
+                loading={resolveMut.isPending && resolveMut.variables === rec.id}
+              />
+            </Tooltip>
+          )}
+          {rec.crisp_url && (
+            <Tooltip title="Open Crisp URL">
+              <Button
+                size="small"
+                type="text"
+                icon={<ExportOutlined />}
+                onClick={() => window.open(rec.crisp_url!, '_blank')}
+              />
+            </Tooltip>
+          )}
+          <Tooltip title="Delete">
+            <Button
+              size="small"
+              type="text"
+              danger
+              icon={<DeleteOutlined />}
+              onClick={() => handleDelete(rec)}
+            />
+          </Tooltip>
+        </Space>
+      )
+    },
+    [handleDelete, handleResolve, resolveMut.isPending, resolveMut.variables],
+  )
+
+  // ── Column definitions ────────────────────────────────────────────────────
+
+  const columnDefs = useMemo<(ColDef | ColGroupDef)[]>(
+    () => [
+      // Pinned left
+      {
+        checkboxSelection: true,
+        headerCheckboxSelection: true,
+        width: 44,
+        minWidth: 44,
+        maxWidth: 44,
+        pinned: 'left' as const,
+        resizable: false,
+        suppressMovable: true,
+        sortable: false,
+        lockPinned: true,
+      },
+      {
+        field: 'date',
+        headerName: 'Date',
+        width: 108,
+        minWidth: 90,
+        pinned: 'left' as const,
+        sortable: true,
+      },
+      {
+        field: 'app',
+        headerName: 'App',
+        width: 98,
+        minWidth: 80,
+        pinned: 'left' as const,
+        cellRenderer: AppCell,
+        sortable: true,
+      },
+      {
+        field: 'primary_operator',
+        headerName: 'Agent',
+        width: 155,
+        minWidth: 120,
+        pinned: 'left' as const,
+        sortable: true,
+      },
+
+      // Basic info
+      {
+        field: 'customer',
+        headerName: 'Customer',
+        width: 155,
+        sortable: true,
+      },
+      {
+        headerName: 'Score /10',
+        valueGetter: (p) => p.data?.grading?.final_score_10,
+        cellRenderer: ScoreCell,
+        width: 100,
+        minWidth: 90,
+        sortable: true,
+        sort: 'desc',
+        comparator: (a: number, b: number) => (a ?? 0) - (b ?? 0),
+      },
+      {
+        field: 'is_resolved',
+        headerName: 'Status',
+        width: 105,
+        cellRenderer: ResolvedCell,
+        sortable: true,
+      },
+      // Tags — hidden by default, visible via Detail modal
+      {
+        field: 'tags',
+        headerName: 'Tags',
+        width: 220,
+        cellRenderer: TagsCell,
+        sortable: false,
+        hide: true,
+      },
+
+      // Criteria column group — OPEN by default, shows all 14 criteria
+      {
+        headerName: 'Criteria (20pt)',
+        openByDefault: true,
+        children: [
+          // Shown only when group is CLOSED (compact summary)
+          {
+            headerName: 'Total /20',
+            valueGetter: (p: { data?: QARecord }) => p.data?.grading?.total_score_20,
+            width: 90,
+            sortable: true,
+            columnGroupShow: 'closed' as const,
+            cellStyle: { fontWeight: 600 },
+          },
+          // Individual criteria shown when group is OPEN (default)
+          ...CRITERIA_KEYS.map((key) => ({
+            headerName: CRITERIA_LABELS[key],
+            headerTooltip: `${CRITERIA_LABELS[key]} — max: ${CRITERIA_MAX[key]}`,
+            valueGetter: (p: { data?: QARecord }) => p.data?.grading?.criteria?.[key]?.score,
+            tooltipValueGetter: (p: { data?: QARecord }) =>
+              p.data?.grading?.criteria?.[key]?.justification,
+            tooltipComponent: CriteriaTooltip,
+            cellRenderer: CriteriaCell,
+            cellRendererParams: { criteriaKey: key },
+            width: 82,
+            minWidth: 68,
+            sortable: true,
+            columnGroupShow: 'open' as const,
+            comparator: (a: number, b: number) => (a ?? 0) - (b ?? 0),
+          })),
+        ],
+      },
+
+      // Summary — hidden by default, visible via Detail modal
+      {
+        field: 'summary',
+        headerName: 'Summary',
+        width: 320,
+        cellStyle: { fontSize: 12, color: '#555', lineHeight: '18px' },
+        sortable: false,
+        hide: true,
+        wrapText: false,
+      },
+
+      // Actions (pinned right)
+      {
+        headerName: 'Actions',
+        cellRenderer: ActionsCell,
+        width: 210,
+        minWidth: 190,
+        pinned: 'right' as const,
+        sortable: false,
+        resizable: false,
+        suppressMovable: true,
+        lockPinned: true,
+      },
+    ],
+    [ActionsCell],
+  )
+
+  const defaultColDef = useMemo<ColDef>(
+    () => ({
+      resizable: true,
+      suppressMovable: false,
+    }),
+    [],
+  )
+
+  const rowSelection = useMemo<RowSelectionOptions>(
+    () => ({ mode: 'multiRow', checkboxes: true, headerCheckbox: true }),
+    [],
+  )
+
+  const getRowId = useCallback((p: GetRowIdParams<QARecord>) => p.data.id, [])
+
+  const onGridReady = useCallback((e: GridReadyEvent) => {
+    e.api.sizeColumnsToFit()
+  }, [])
+
+  // ── Toolbar: bulk resolve ─────────────────────────────────────────────────
+
+  const handleBulkResolve = () => {
+    const selected = gridRef.current?.api.getSelectedRows() as QARecord[]
+    const unresolved = selected?.filter((r) => !r.is_resolved) || []
+    if (!unresolved.length) {
+      message.info('No unresolved rows selected')
+      return
+    }
+    Modal.confirm({
+      title: `Resolve ${unresolved.length} chats in Crisp?`,
+      icon: <WarningOutlined style={{ color: '#faad14' }} />,
+      content: `This will mark ${unresolved.length} conversation(s) as resolved in Crisp. Cannot be undone.`,
+      okText: `Resolve ${unresolved.length}`,
+      onOk: async () => {
+        for (const rec of unresolved) {
+          await resolveRecord(rec.id).catch((e) => {
+            const err = e as { response?: { data?: { detail?: string } } }
+            message.error(`${rec.session_id}: ${err.response?.data?.detail || 'failed'}`)
+          })
+        }
+        message.success(`Resolved ${unresolved.length} chats`)
+        queryClient.invalidateQueries({ queryKey: ['records'] })
+      },
+    })
+  }
+
+  // ── Render ────────────────────────────────────────────────────────────────
+
+  return (
+    <div>
+      {/* Toolbar */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 12,
+          marginBottom: 8,
+          flexWrap: 'wrap',
+        }}
+      >
+        <Typography.Text type="secondary" style={{ fontSize: 13 }}>
+          {isFetching ? 'Loading…' : `${data?.total ?? 0} total · showing ${data?.records?.length ?? 0}`}
+        </Typography.Text>
+        <Button size="small" onClick={() => refetch()} loading={isFetching}>
+          Refresh
+        </Button>
+        <Button
+          size="small"
+          icon={<CheckCircleOutlined />}
+          onClick={handleBulkResolve}
+        >
+          Bulk resolve selected
+        </Button>
+      </div>
+
+      {/* AG-Grid */}
+      <div
+        className="ag-theme-quartz"
+        style={{ height: 'calc(100vh - 210px)', minHeight: 400 }}
+      >
+        <AgGridReact<QARecord>
+          ref={gridRef}
+          rowData={data?.records ?? []}
+          columnDefs={columnDefs}
+          defaultColDef={defaultColDef}
+          rowSelection={rowSelection}
+          getRowId={getRowId}
+          onGridReady={onGridReady}
+          pagination
+          paginationPageSize={50}
+          paginationPageSizeSelector={[25, 50, 100, 200]}
+          loading={isLoading}
+          tooltipShowDelay={400}
+          enableCellTextSelection
+          suppressCellFocus={false}
+          rowHeight={36}
+          headerHeight={38}
+          groupHeaderHeight={34}
+          suppressAnimationFrame={false}
+        />
+      </div>
+
+      {/* Modals */}
+      {editRecord && (
+        <EditModal
+          record={editRecord}
+          onClose={() => setEditRecord(null)}
+          onSuccess={(updated) => {
+            setEditRecord(null)
+            // Update row in grid directly for instant feedback
+            gridRef.current?.api.applyTransaction({ update: [updated] })
+          }}
+        />
+      )}
+
+      {regradeRec && (
+        <RegradeModal
+          record={regradeRec}
+          onClose={() => setRegradeRec(null)}
+          onSuccess={(updated) => {
+            setRegradeRec(null)
+            gridRef.current?.api.applyTransaction({ update: [updated] })
+          }}
+        />
+      )}
+
+      {detailRec && <DetailModal record={detailRec} onClose={() => setDetailRec(null)} />}
+
+      {scoreEditRec && (
+        <ScoreEditModal
+          record={scoreEditRec}
+          onClose={() => setScoreEditRec(null)}
+          onSuccess={(updated) => {
+            setScoreEditRec(null)
+            gridRef.current?.api.applyTransaction({ update: [updated] })
+          }}
+        />
+      )}
+    </div>
+  )
+}
