@@ -1,14 +1,30 @@
 #!/usr/bin/env bash
-# Start QA Dashboard — FastAPI backend (port 8000) + React Vite dev server (port 5173)
+# Start QA Dashboard
 #
 # Usage:
-#   ./start_ui.sh          — dev mode (both servers, hot-reload)
-#   ./start_ui.sh --prod   — production mode (serve built static files via FastAPI only)
+#   ./start_ui.sh            — dev mode (backend + Vite hot-reload)
+#   ./start_ui.sh --prod     — production (build frontend, serve qua FastAPI)
+#   ./start_ui.sh --prod --port 9000   — chỉ định port
 #
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
+
+# ── Load .env ─────────────────────────────────────────────────────────────────
+if [ -f "$SCRIPT_DIR/.env" ]; then
+  export $(grep -E '^(API_PORT|UI_PORT)=' "$SCRIPT_DIR/.env" | xargs) 2>/dev/null || true
+fi
+
+API_PORT="${API_PORT:-8000}"
+UI_PORT="${UI_PORT:-5173}"
+
+# ── Parse --port flag ─────────────────────────────────────────────────────────
+for arg in "$@"; do
+  if [[ "$arg" =~ ^--port=([0-9]+)$ ]]; then
+    API_PORT="${BASH_REMATCH[1]}"
+  fi
+done
 
 # ── Load nvm if available ─────────────────────────────────────────────────────
 export NVM_DIR="$HOME/.nvm"
@@ -22,28 +38,25 @@ fi
 python -c "import fastapi" 2>/dev/null || pip install fastapi "uvicorn[standard]" --quiet
 
 # ── Production mode ───────────────────────────────────────────────────────────
-if [ "$1" = "--prod" ]; then
-  echo "🏭 Production mode — building frontend first..."
+if [[ "$*" == *"--prod"* ]]; then
+  echo "🏭 Production mode"
   cd "$SCRIPT_DIR/ui"
   [ ! -d "node_modules" ] && npm install
   npm run build
   cd "$SCRIPT_DIR"
-  echo "🚀 Serving on http://localhost:8000"
-  uvicorn api.main:app --port 8000 --host 0.0.0.0
+  echo "🚀 Serving on http://0.0.0.0:$API_PORT  (truy cập: http://<IP_SERVER>:$API_PORT)"
+  uvicorn api.main:app --port "$API_PORT" --host 0.0.0.0
   exit 0
 fi
 
-# ── Dev mode (default) ────────────────────────────────────────────────────────
-echo "🚀 Starting FastAPI backend   → http://localhost:8000"
-echo "   API docs                   → http://localhost:8000/docs"
-uvicorn api.main:app --reload --port 8000 --host 0.0.0.0 &
+# ── Dev mode ──────────────────────────────────────────────────────────────────
+echo "🚀 FastAPI  → http://0.0.0.0:$API_PORT"
+uvicorn api.main:app --reload --port "$API_PORT" --host 0.0.0.0 &
 BACKEND_PID=$!
 
-echo ""
-echo "🎨 Starting React dev server  → http://localhost:5173"
+echo "🎨 Vite dev → http://0.0.0.0:$UI_PORT"
 cd "$SCRIPT_DIR/ui"
 [ ! -d "node_modules" ] && npm install
-npm run dev
+VITE_PORT=$UI_PORT npm run dev -- --host 0.0.0.0 --port "$UI_PORT"
 
-# Cleanup backend when Vite exits
 kill "$BACKEND_PID" 2>/dev/null || true

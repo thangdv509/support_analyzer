@@ -286,3 +286,6 @@ Quản lý email
 python -m mcp_server.server --add-email new@example.com
 python -m mcp_server.server --remove-email old@example.com
 python -m mcp_server.server --list-emails
+
+
+./start_ui.sh
