@@ -18,6 +18,7 @@ const DEFAULT_FILTERS: Filters = {
   score_min: 0,
   score_max: 10,
   is_resolved: 'all',
+  chat_link: '',
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

@@ -176,7 +176,7 @@ export default function QATable({ filters }: Props) {
 
   const params = useMemo(() => {
     const p: Record<string, unknown> = {
-      page_size: 500,
+      page_size: filters.chat_link ? 10 : 10000,
       sort_by: 'date',
       sort_dir: -1,
     }
@@ -188,6 +188,7 @@ export default function QATable({ filters }: Props) {
     if (filters.score_max < 10) p.score_max = filters.score_max
     if (filters.is_resolved === 'true') p.is_resolved = true
     if (filters.is_resolved === 'false') p.is_resolved = false
+    if (filters.chat_link) p.chat_link = filters.chat_link
     return p
   }, [filters])
 
@@ -360,6 +361,7 @@ export default function QATable({ filters }: Props) {
         minWidth: 90,
         pinned: 'left' as const,
         sortable: true,
+        sort: 'desc',
       },
       {
         field: 'app',

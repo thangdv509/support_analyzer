@@ -70,6 +70,7 @@ export interface Filters {
   score_min: number
   score_max: number
   is_resolved: 'all' | 'true' | 'false'
+  chat_link: string
 }
 
 export const CRITERIA_KEYS = [

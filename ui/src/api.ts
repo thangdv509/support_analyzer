@@ -11,6 +11,7 @@ export interface ListParams {
   score_min?: number
   score_max?: number
   is_resolved?: boolean
+  chat_link?: string
   page?: number
   page_size?: number
   sort_by?: string

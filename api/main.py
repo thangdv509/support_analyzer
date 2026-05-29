@@ -176,8 +176,9 @@ def list_records(
     score_min: float = Query(0.0, ge=0, le=10),
     score_max: float = Query(10.0, ge=0, le=10),
     is_resolved: Optional[bool] = Query(None),
+    chat_link: str = Query("", description="session_id or Crisp URL (partial match)"),
     page: int = Query(1, ge=1),
-    page_size: int = Query(100, ge=1, le=1000),
+    page_size: int = Query(100, ge=1, le=10000),
     sort_by: str = Query("date", description="date | final_score_10 | primary_operator | customer | app"),
     sort_dir: int = Query(-1, description="-1 desc | 1 asc"),
 ):
@@ -206,6 +207,14 @@ def list_records(
     if score_min > 0 or score_max < 10:
         query["grading.final_score_10"] = {"$gte": score_min, "$lte": score_max}
 
+    if chat_link:
+        # Extract session_id from Crisp URL if user pastes full link
+        # URL format: .../inbox/session_xxx/ or .../inbox/session_xxx
+        import re
+        m = re.search(r'session_[a-f0-9\-]+', chat_link)
+        sid = m.group(0) if m else chat_link.strip()
+        query["session_id"] = {"$regex": re.escape(sid), "$options": "i"}
+
     sort_field_map = {
         "date": "date",
         "final_score_10": "grading.final_score_10",
@@ -225,13 +234,15 @@ def list_records(
         docs = list(col.find(query).sort(sort_field, sort_dir))
         all_docs.extend(docs)
 
-    # Re-sort combined results in Python
+    # Re-sort: primary by requested field, secondary by score (same direction) within same date
     def _sort_key(d: dict):
+        date_val  = d.get("date", "")
+        score_val = d.get("grading", {}).get("final_score_10", 0) or 0
         if sort_field == "date":
-            return d.get("date", "")
+            return (date_val, score_val)  # reverse=True → newest date first, highest score first
         if sort_field == "grading.final_score_10":
-            return d.get("grading", {}).get("final_score_10", 0) or 0
-        return d.get(sort_field, "") or ""
+            return (score_val, date_val)
+        return (d.get(sort_field, "") or "", "")
 
     all_docs.sort(key=_sort_key, reverse=(sort_dir == -1))
 

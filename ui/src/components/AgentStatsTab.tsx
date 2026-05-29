@@ -1,248 +1,289 @@
 import { useState } from 'react'
 import {
-  Card,
-  DatePicker,
-  Form,
-  Select,
   Button,
+  DatePicker,
+  Divider,
+  Progress,
+  Segmented,
+  Select,
   Table,
   Tag,
   Typography,
-  Space,
-  Statistic,
-  Row,
-  Col,
-  Progress,
 } from 'antd'
-import { SearchOutlined } from '@ant-design/icons'
+import { FilterOutlined, ReloadOutlined } from '@ant-design/icons'
 import { useQuery } from '@tanstack/react-query'
-import dayjs from 'dayjs'
-import { fetchStats } from '../api'
+import dayjs, { type Dayjs } from 'dayjs'
+import { fetchAgents, fetchStats } from '../api'
 import type { Stats } from '../types'
 
 const { RangePicker } = DatePicker
-const { Text, Title } = Typography
+const { Text } = Typography
 
-interface AgentRow {
-  agent: string
-  count: number
-  avg_score: number | null
+// ── Types ─────────────────────────────────────────────────────────────────────
+
+interface AgentRow { agent: string; count: number; avg_score: number | null }
+
+interface Params { app: string; date_from: string; date_to: string; agent: string }
+
+const DEFAULT_PARAMS: Params = { app: '', date_from: '', date_to: '', agent: '' }
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
+const PRESETS: { label: string; range: () => [Dayjs, Dayjs] }[] = [
+  { label: 'Hôm nay',    range: () => [dayjs(), dayjs()] },
+  { label: '7 ngày',     range: () => [dayjs().subtract(6, 'day'), dayjs()] },
+  { label: '30 ngày',    range: () => [dayjs().subtract(29, 'day'), dayjs()] },
+  { label: 'Tháng này',  range: () => [dayjs().startOf('month'), dayjs()] },
+  { label: 'Tháng trước',range: () => [dayjs().subtract(1,'month').startOf('month'), dayjs().subtract(1,'month').endOf('month')] },
+]
+
+function sc(v: number | null) {
+  if (v == null) return '#bbb'
+  if (v >= 9)   return '#22c55e'
+  if (v >= 7.5) return '#3b82f6'
+  if (v >= 5)   return '#f59e0b'
+  return '#ef4444'
 }
 
-function scoreColor(score: number | null) {
-  if (score == null) return '#bbb'
-  if (score >= 9) return '#52c41a'
-  if (score >= 7.5) return '#1677ff'
-  if (score >= 5) return '#faad14'
-  return '#ff4d4f'
-}
-
-function ScoreTag({ score }: { score: number | null }) {
+function ScoreBadge({ score }: { score: number | null }) {
   if (score == null) return <span style={{ color: '#bbb' }}>—</span>
-  const color = scoreColor(score)
+  const color = sc(score)
   return (
-    <span
-      style={{
-        fontWeight: 700,
-        fontSize: 14,
-        color,
-        background: `${color}18`,
-        borderRadius: 4,
-        padding: '1px 8px',
-      }}
-    >
+    <span style={{
+      fontWeight: 700, fontSize: 14, color,
+      background: `${color}18`, borderRadius: 4, padding: '1px 8px',
+    }}>
       {score.toFixed(2)}
     </span>
   )
 }
 
+// ── Component ─────────────────────────────────────────────────────────────────
+
 export default function AgentStatsTab() {
-  const [form] = Form.useForm()
-  const [queryParams, setQueryParams] = useState<{
-    app: string
-    date_from: string
-    date_to: string
-  }>({ app: '', date_from: '', date_to: '' })
+  const [local, setLocal] = useState<Params>(DEFAULT_PARAMS)
+  const [applied, setApplied] = useState<Params>(DEFAULT_PARAMS)
+  const [dateValue, setDateValue] = useState<[Dayjs, Dayjs] | null>(null)
+
+  const { data: agents = [] } = useQuery({
+    queryKey: ['agents', local.app],
+    queryFn: () => fetchAgents(local.app),
+    staleTime: 60_000,
+  })
 
   const { data, isLoading } = useQuery<Stats>({
-    queryKey: ['stats', queryParams.app, queryParams.date_from, queryParams.date_to],
-    queryFn: () =>
-      fetchStats({
-        app: queryParams.app || undefined,
-        date_from: queryParams.date_from || undefined,
-        date_to: queryParams.date_to || undefined,
-      }),
+    queryKey: ['agent-stats', applied.app, applied.date_from, applied.date_to],
+    queryFn: () => fetchStats({
+      app: applied.app || undefined,
+      date_from: applied.date_from || undefined,
+      date_to: applied.date_to || undefined,
+    }),
     staleTime: 30_000,
   })
 
-  const handleFilter = (values: Record<string, unknown>) => {
-    const range = values.dateRange as [dayjs.Dayjs, dayjs.Dayjs] | null
-    setQueryParams({
-      app: (values.app as string) || '',
+  const setDate = (range: [Dayjs, Dayjs] | null) => {
+    setDateValue(range)
+    setLocal(p => ({
+      ...p,
       date_from: range?.[0]?.format('YYYY-MM-DD') || '',
-      date_to: range?.[1]?.format('YYYY-MM-DD') || '',
-    })
+      date_to:   range?.[1]?.format('YYYY-MM-DD') || '',
+    }))
   }
 
-  // Build sorted agent rows
+  const apply = () => setApplied(local)
+
+  const reset = () => {
+    setLocal(DEFAULT_PARAMS)
+    setApplied(DEFAULT_PARAMS)
+    setDateValue(null)
+  }
+
+  // Build rows — optionally filter by selected agent
   const agentRows: AgentRow[] = Object.entries(data?.by_agent || {})
     .map(([agent, v]) => ({ agent, count: v.count, avg_score: v.avg_score }))
+    .filter(r => !applied.agent || r.agent === applied.agent)
     .sort((a, b) => (b.avg_score ?? 0) - (a.avg_score ?? 0))
 
-  const maxScore = Math.max(...agentRows.map((r) => r.avg_score ?? 0), 1)
+  const activeCount = [applied.app, applied.agent, applied.date_from].filter(Boolean).length
+
+  // ── Columns ─────────────────────────────────────────────────────────────────
 
   const columns = [
     {
-      title: '#',
-      key: 'rank',
-      width: 48,
+      title: '#', key: 'rank', width: 44,
       render: (_: unknown, __: AgentRow, idx: number) => (
-        <Text type="secondary" style={{ fontSize: 12 }}>
-          {idx + 1}
-        </Text>
+        <Text type="secondary" style={{ fontSize: 11 }}>{idx + 1}</Text>
       ),
     },
     {
-      title: 'Agent',
-      dataIndex: 'agent',
-      key: 'agent',
-      render: (name: string) => <Text strong>{name}</Text>,
+      title: 'Agent', dataIndex: 'agent', key: 'agent',
+      render: (name: string) => <Text strong style={{ fontSize: 13 }}>{name}</Text>,
     },
     {
-      title: 'Chats',
-      dataIndex: 'count',
-      key: 'count',
-      width: 80,
+      title: 'Chats', dataIndex: 'count', key: 'count', width: 76,
       sorter: (a: AgentRow, b: AgentRow) => a.count - b.count,
-      render: (v: number) => <Tag>{v}</Tag>,
+      render: (v: number) => (
+        <Tag style={{ margin: 0, fontWeight: 600 }}>{v.toLocaleString()}</Tag>
+      ),
     },
     {
-      title: 'Avg Score /10',
-      dataIndex: 'avg_score',
-      key: 'avg_score',
-      width: 200,
+      title: 'Avg /10', dataIndex: 'avg_score', key: 'avg_score',
+      width: 220,
       defaultSortOrder: 'descend' as const,
       sorter: (a: AgentRow, b: AgentRow) => (a.avg_score ?? 0) - (b.avg_score ?? 0),
-      render: (score: number | null, row: AgentRow) => (
-        <Space size={8} style={{ width: '100%' }}>
-          <ScoreTag score={score} />
+      render: (score: number | null) => (
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <ScoreBadge score={score} />
           <Progress
             percent={score != null ? Math.round((score / 10) * 100) : 0}
             showInfo={false}
-            strokeColor={scoreColor(score)}
-            trailColor="#f0f0f0"
-            style={{ width: 120, marginBottom: 0 }}
+            strokeColor={sc(score)}
+            trailColor="#e2e8f0"
+            style={{ flex: 1, marginBottom: 0, minWidth: 80 }}
             size="small"
           />
-        </Space>
+        </div>
       ),
     },
   ]
 
   return (
-    <div style={{ padding: '0 0 24px' }}>
-      {/* Filter */}
-      <Card size="small" style={{ marginBottom: 16 }}>
-        <Form form={form} layout="inline" onFinish={handleFilter}>
-          <Form.Item name="dateRange" label="Date range">
-            <RangePicker size="small" format="YYYY-MM-DD" style={{ width: 240 }} allowClear />
-          </Form.Item>
-          <Form.Item name="app" label="App">
-            <Select
-              size="small"
-              style={{ width: 120 }}
-              placeholder="All apps"
-              allowClear
-              options={[
-                { label: 'DECO', value: 'DECO' },
-                { label: 'SearchPie', value: 'SearchPie' },
-              ]}
-            />
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit" size="small" icon={<SearchOutlined />}>
-              Load
-            </Button>
-          </Form.Item>
-        </Form>
-      </Card>
+    <div>
+      {/* ── Filter bar ────────────────────────────────────────────── */}
+      <div style={{
+        background: '#fff', borderRadius: 10,
+        boxShadow: '0 1px 4px #0001',
+        padding: '10px 16px', marginBottom: 10,
+        display: 'flex', flexWrap: 'wrap', gap: '8px 20px', alignItems: 'flex-end',
+      }}>
 
-      {/* Overview stats */}
+        {/* Date */}
+        <div>
+          <Text style={{ fontSize: 11, color: '#888', display: 'block', marginBottom: 4 }}>KHOẢNG NGÀY</Text>
+          <RangePicker
+            size="small" format="DD/MM/YYYY"
+            value={dateValue}
+            onChange={v => setDate(v as [Dayjs, Dayjs] | null)}
+            style={{ width: 210 }} allowClear
+            placeholder={['Từ ngày', 'Đến ngày']}
+          />
+          <div style={{ marginTop: 4, display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+            {PRESETS.map(p => (
+              <Tag key={p.label}
+                style={{ cursor: 'pointer', fontSize: 11, padding: '0 6px', margin: 0 }}
+                color={dateValue?.[0]?.format('YYYY-MM-DD') === p.range()[0].format('YYYY-MM-DD') ? 'blue' : undefined}
+                onClick={() => setDate(p.range())}
+              >
+                {p.label}
+              </Tag>
+            ))}
+          </div>
+        </div>
+
+        <Divider type="vertical" style={{ height: 44, margin: '0 4px' }} />
+
+        {/* App */}
+        <div>
+          <Text style={{ fontSize: 11, color: '#888', display: 'block', marginBottom: 4 }}>APP</Text>
+          <Segmented size="small"
+            value={local.app || '__all__'}
+            onChange={v => setLocal(p => ({ ...p, app: v === '__all__' ? '' : String(v) }))}
+            options={[
+              { label: 'All', value: '__all__' },
+              { label: <span style={{ color: '#722ed1', fontWeight: 600 }}>DECO</span>, value: 'DECO' },
+              { label: <span style={{ color: '#13c2c2', fontWeight: 600 }}>SearchPie</span>, value: 'SearchPie' },
+            ]}
+          />
+        </div>
+
+        <Divider type="vertical" style={{ height: 44, margin: '0 4px' }} />
+
+        {/* Agent */}
+        <div>
+          <Text style={{ fontSize: 11, color: '#888', display: 'block', marginBottom: 4 }}>AGENT</Text>
+          <Select size="small" style={{ width: 170 }}
+            placeholder="Tất cả" allowClear showSearch
+            value={local.agent || undefined}
+            onChange={v => setLocal(p => ({ ...p, agent: v || '' }))}
+            filterOption={(input, opt) =>
+              (opt?.label as string)?.toLowerCase().includes(input.toLowerCase())
+            }
+            options={agents.map(a => ({ label: a, value: a }))}
+          />
+        </div>
+
+        {/* Buttons */}
+        <div style={{ marginLeft: 'auto', display: 'flex', gap: 8, alignItems: 'flex-end' }}>
+          <Button size="small" icon={<ReloadOutlined />} onClick={reset} style={{ color: '#888' }}>
+            Reset
+          </Button>
+          <Button type="primary" size="small" icon={<FilterOutlined />} onClick={apply} style={{ minWidth: 90 }}>
+            Filter{activeCount > 0 ? ` (${activeCount})` : ''}
+          </Button>
+        </div>
+      </div>
+
+      {/* ── Overview strip ───────────────────────────────────────── */}
       {data && (
-        <Row gutter={16} style={{ marginBottom: 16 }}>
-          {[
-            { title: 'Total chats', value: data.total },
-            {
-              title: 'Avg score',
-              value: data.avg_score ?? '—',
-              suffix: data.avg_score != null ? '/10' : '',
-              precision: 2,
-              valueStyle: { color: scoreColor(data.avg_score) },
-            },
-            {
-              title: 'Min score',
-              value: data.min_score ?? '—',
-              suffix: data.min_score != null ? '/10' : '',
-              precision: 2,
-              valueStyle: { color: scoreColor(data.min_score) },
-            },
-            {
-              title: 'Max score',
-              value: data.max_score ?? '—',
-              suffix: data.max_score != null ? '/10' : '',
-              precision: 2,
-              valueStyle: { color: scoreColor(data.max_score) },
-            },
-            ...Object.entries(data.by_app).map(([app, count]) => ({
-              title: app,
-              value: count,
-              suffix: 'chats',
-            })),
-          ].map((s, i) => (
-            <Col key={i} xs={12} sm={8} md={6} lg={4}>
-              <Card size="small">
-                <Statistic
-                  title={s.title}
-                  value={s.value}
-                  suffix={s.suffix}
-                  precision={(s as { precision?: number }).precision}
-                  valueStyle={(s as { valueStyle?: React.CSSProperties }).valueStyle}
-                />
-              </Card>
-            </Col>
+        <div style={{
+          display: 'flex', gap: 20, alignItems: 'center',
+          background: '#fff', borderRadius: 10,
+          boxShadow: '0 1px 4px #0001',
+          padding: '8px 20px', marginBottom: 10,
+          flexWrap: 'wrap',
+        }}>
+          {([
+            ['Total', data.total, null],
+            ['Avg', data.avg_score, '/10'],
+            ['Min', data.min_score, '/10'],
+            ['Max', data.max_score, '/10'],
+          ] as [string, number | null, string | null][]).map(([lbl, val, suffix]) => (
+            <div key={lbl} style={{ display: 'flex', alignItems: 'baseline', gap: 4 }}>
+              <Text type="secondary" style={{ fontSize: 11, letterSpacing: 0.5 }}>{lbl}</Text>
+              <span style={{ fontWeight: 800, fontSize: 16, color: lbl === 'Total' ? '#0f172a' : sc(val as number | null), letterSpacing: -0.5 }}>
+                {val != null ? (lbl === 'Total' ? (val as number).toLocaleString() : (val as number).toFixed(2)) : '—'}
+              </span>
+              {suffix && val != null && <Text type="secondary" style={{ fontSize: 11 }}>{suffix}</Text>}
+            </div>
           ))}
-        </Row>
+
+          {Object.entries(data.by_app).map(([app, count]) => (
+            <div key={app} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+              <span style={{
+                fontSize: 11, fontWeight: 700, padding: '2px 8px', borderRadius: 99,
+                background: app === 'DECO' ? '#4f46e5' : '#0e7490', color: '#fff',
+              }}>{app}</span>
+              <Text style={{ fontWeight: 600 }}>{(count as number).toLocaleString()}</Text>
+            </div>
+          ))}
+
+          {(applied.date_from || applied.date_to) && (
+            <Text type="secondary" style={{ fontSize: 11, marginLeft: 'auto' }}>
+              {applied.date_from || '…'} → {applied.date_to || 'now'}
+            </Text>
+          )}
+        </div>
       )}
 
-      {/* Agent table */}
-      <Card
-        title={
-          <Title level={5} style={{ margin: 0 }}>
-            Agent performance — {agentRows.length} agents
-            {queryParams.date_from && (
-              <Text
-                type="secondary"
-                style={{ fontSize: 13, fontWeight: 400, marginLeft: 12 }}
-              >
-                {queryParams.date_from} → {queryParams.date_to || 'now'}
-              </Text>
-            )}
-          </Title>
-        }
-        size="small"
-      >
+      {/* ── Table ────────────────────────────────────────────────── */}
+      <div style={{ background: '#fff', borderRadius: 10, boxShadow: '0 1px 4px #0001', overflow: 'hidden' }}>
+        <div style={{ padding: '10px 16px 8px', borderBottom: '1px solid #f1f5f9' }}>
+          <Text strong style={{ fontSize: 14 }}>
+            Agent performance
+          </Text>
+          <Text type="secondary" style={{ fontSize: 12, marginLeft: 8 }}>
+            {agentRows.length} agents
+          </Text>
+        </div>
         <Table<AgentRow>
           dataSource={agentRows}
           columns={columns}
           rowKey="agent"
           loading={isLoading}
-          pagination={{ pageSize: 50, hideOnSinglePage: true }}
+          pagination={{ pageSize: 50, hideOnSinglePage: true, size: 'small' }}
           size="small"
-          rowClassName={(row) =>
-            (row.avg_score ?? 0) < 7 ? 'ant-table-row-danger' : ''
-          }
         />
-      </Card>
+      </div>
     </div>
   )
 }

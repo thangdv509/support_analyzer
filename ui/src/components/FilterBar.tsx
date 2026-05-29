@@ -3,6 +3,7 @@ import {
   Button,
   DatePicker,
   Divider,
+  Input,
   InputNumber,
   Segmented,
   Select,
@@ -11,7 +12,7 @@ import {
   Tooltip,
   Typography,
 } from 'antd'
-import { FilterOutlined, ReloadOutlined } from '@ant-design/icons'
+import { FilterOutlined, LinkOutlined, ReloadOutlined } from '@ant-design/icons'
 import { useQuery } from '@tanstack/react-query'
 import dayjs, { type Dayjs } from 'dayjs'
 import { fetchAgents } from '../api'
@@ -48,6 +49,7 @@ const DEFAULT: Filters = {
   score_min: 0,
   score_max: 10,
   is_resolved: 'all',
+  chat_link: '',
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -256,6 +258,25 @@ export default function FilterBar({ filters, onChange }: Props) {
             </Tag>
           ))}
         </div>
+      </div>
+
+      <Divider type="vertical" style={{ height: 44, margin: '0 4px' }} />
+
+      {/* ── Chat link / session_id ──────────────────────────────────── */}
+      <div>
+        <Text style={{ fontSize: 11, color: '#888', display: 'block', marginBottom: 4 }}>
+          LINK ĐOẠN CHAT
+        </Text>
+        <Input
+          size="small"
+          prefix={<LinkOutlined style={{ color: '#bbb' }} />}
+          placeholder="Dán link Crisp hoặc session_id…"
+          value={local.chat_link}
+          onChange={(e) => setLocal((p) => ({ ...p, chat_link: e.target.value }))}
+          onPressEnter={apply}
+          allowClear
+          style={{ width: 260 }}
+        />
       </div>
 
       {/* ── Buttons ─────────────────────────────────────────────────── */}
