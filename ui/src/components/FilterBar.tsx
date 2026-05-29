@@ -29,10 +29,11 @@ interface Props {
 // ── Quick date presets ────────────────────────────────────────────────────────
 
 const PRESETS: { label: string; range: () => [Dayjs, Dayjs] }[] = [
-  { label: 'Hôm nay', range: () => [dayjs(), dayjs()] },
-  { label: '7 ngày', range: () => [dayjs().subtract(6, 'day'), dayjs()] },
-  { label: '30 ngày', range: () => [dayjs().subtract(29, 'day'), dayjs()] },
-  { label: 'Tháng này', range: () => [dayjs().startOf('month'), dayjs()] },
+  { label: 'Hôm qua',    range: () => [dayjs().subtract(1, 'day'), dayjs().subtract(1, 'day')] },
+  { label: 'Hôm nay',    range: () => [dayjs(), dayjs()] },
+  { label: '7 ngày',     range: () => [dayjs().subtract(6, 'day'), dayjs()] },
+  { label: '30 ngày',    range: () => [dayjs().subtract(29, 'day'), dayjs()] },
+  { label: 'Tháng này',  range: () => [dayjs().startOf('month'), dayjs()] },
   { label: 'Tháng trước', range: () => [
     dayjs().subtract(1, 'month').startOf('month'),
     dayjs().subtract(1, 'month').endOf('month'),

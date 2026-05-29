@@ -30,6 +30,7 @@ const DEFAULT_PARAMS: Params = { app: '', date_from: '', date_to: '', agent: '' 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 const PRESETS: { label: string; range: () => [Dayjs, Dayjs] }[] = [
+  { label: 'Hôm qua',    range: () => [dayjs().subtract(1, 'day'), dayjs().subtract(1, 'day')] },
   { label: 'Hôm nay',    range: () => [dayjs(), dayjs()] },
   { label: '7 ngày',     range: () => [dayjs().subtract(6, 'day'), dayjs()] },
   { label: '30 ngày',    range: () => [dayjs().subtract(29, 'day'), dayjs()] },

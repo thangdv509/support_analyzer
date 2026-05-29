@@ -33,6 +33,7 @@ import {
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import axios from 'axios'
 import { deleteRecord, fetchRecords, resolveRecord } from '../api'
+import { invalidateAll } from '../cache'
 import type { Filters, QARecord } from '../types'
 import { CRITERIA_KEYS, CRITERIA_LABELS, CRITERIA_MAX } from '../types'
 import EditModal from './EditModal'
@@ -205,7 +206,7 @@ export default function QATable({ filters }: Props) {
     mutationFn: deleteRecord,
     onSuccess: () => {
       message.success('Record deleted')
-      queryClient.invalidateQueries({ queryKey: ['records'] })
+      invalidateAll(queryClient)
     },
     onError: (e: unknown) => {
       const err = e as { response?: { data?: { detail?: string } } }
@@ -217,7 +218,7 @@ export default function QATable({ filters }: Props) {
     mutationFn: resolveRecord,
     onSuccess: () => {
       message.success('Chat resolved in Crisp ✓')
-      queryClient.invalidateQueries({ queryKey: ['records'] })
+      invalidateAll(queryClient)
     },
     onError: (e: unknown) => {
       const err = e as { response?: { data?: { detail?: string } } }
@@ -517,7 +518,7 @@ export default function QATable({ filters }: Props) {
           })
         }
         message.success(`Resolved ${unresolved.length} chats`)
-        queryClient.invalidateQueries({ queryKey: ['records'] })
+        invalidateAll(queryClient)
       },
     })
   }
@@ -562,8 +563,7 @@ export default function QATable({ filters }: Props) {
           size="small"
           style={{ color: '#6366f1', borderColor: '#e0e7ff' }}
           onClick={async () => {
-            await axios.post('/api/cache/clear').catch(() => {})
-            queryClient.invalidateQueries()
+            await invalidateAll(queryClient)
             message.success('Cache cleared')
           }}
         >
@@ -613,8 +613,8 @@ export default function QATable({ filters }: Props) {
           onClose={() => setEditRecord(null)}
           onSuccess={(updated) => {
             setEditRecord(null)
-            // Update row in grid directly for instant feedback
             gridRef.current?.api.applyTransaction({ update: [updated] })
+            invalidateAll(queryClient)
           }}
         />
       )}
@@ -626,6 +626,7 @@ export default function QATable({ filters }: Props) {
           onSuccess={(updated) => {
             setRegradeRec(null)
             gridRef.current?.api.applyTransaction({ update: [updated] })
+            invalidateAll(queryClient)
           }}
         />
       )}
@@ -639,6 +640,7 @@ export default function QATable({ filters }: Props) {
           onSuccess={(updated) => {
             setScoreEditRec(null)
             gridRef.current?.api.applyTransaction({ update: [updated] })
+            invalidateAll(queryClient)
           }}
         />
       )}
