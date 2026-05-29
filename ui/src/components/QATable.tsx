@@ -31,6 +31,7 @@ import {
   WarningOutlined,
 } from '@ant-design/icons'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import axios from 'axios'
 import { deleteRecord, fetchRecords, resolveRecord } from '../api'
 import type { Filters, QARecord } from '../types'
 import { CRITERIA_KEYS, CRITERIA_LABELS, CRITERIA_MAX } from '../types'
@@ -536,11 +537,39 @@ export default function QATable({ filters }: Props) {
         }}
       >
         <Typography.Text type="secondary" style={{ fontSize: 13 }}>
-          {isFetching ? 'Loading…' : `${data?.total ?? 0} total · showing ${data?.records?.length ?? 0}`}
+          {isFetching
+            ? 'Loading…'
+            : `${data?.total ?? 0} total · showing ${data?.records?.length ?? 0}`}
         </Typography.Text>
+
+        {/* Last fetched time from cached_at field */}
+        {data?.cached_at && !isFetching && (
+          <Typography.Text type="secondary" style={{ fontSize: 11, color: '#94a3b8' }}>
+            · cached {(() => {
+              const s = Math.round((Date.now() - new Date(data.cached_at as string).getTime()) / 1000)
+              if (s < 60) return `${s}s ago`
+              return `${Math.round(s / 60)}m ago`
+            })()}
+          </Typography.Text>
+        )}
+
         <Button size="small" onClick={() => refetch()} loading={isFetching}>
           Refresh
         </Button>
+
+        {/* Clear server cache + refetch */}
+        <Button
+          size="small"
+          style={{ color: '#6366f1', borderColor: '#e0e7ff' }}
+          onClick={async () => {
+            await axios.post('/api/cache/clear').catch(() => {})
+            queryClient.invalidateQueries()
+            message.success('Cache cleared')
+          }}
+        >
+          Clear cache
+        </Button>
+
         <Button
           size="small"
           icon={<CheckCircleOutlined />}

@@ -51,6 +51,7 @@ export interface RecordsResponse {
   page: number
   page_size: number
   records: QARecord[]
+  cached_at?: string
 }
 
 export interface Stats {

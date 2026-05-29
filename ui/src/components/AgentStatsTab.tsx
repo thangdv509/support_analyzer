@@ -110,37 +110,45 @@ export default function AgentStatsTab() {
 
   const columns = [
     {
-      title: '#', key: 'rank', width: 44,
+      title: '#', key: 'rank', width: 36,
       render: (_: unknown, __: AgentRow, idx: number) => (
-        <Text type="secondary" style={{ fontSize: 11 }}>{idx + 1}</Text>
+        <span style={{ fontSize: 11, color: '#94a3b8', fontWeight: 500 }}>{idx + 1}</span>
       ),
     },
     {
       title: 'Agent', dataIndex: 'agent', key: 'agent',
-      render: (name: string) => <Text strong style={{ fontSize: 13 }}>{name}</Text>,
+      render: (name: string) => (
+        <span style={{ fontSize: 13, fontWeight: 600, color: '#0f172a' }}>{name}</span>
+      ),
     },
     {
-      title: 'Chats', dataIndex: 'count', key: 'count', width: 76,
+      title: 'Chats', dataIndex: 'count', key: 'count', width: 64,
+      align: 'right' as const,
       sorter: (a: AgentRow, b: AgentRow) => a.count - b.count,
       render: (v: number) => (
-        <Tag style={{ margin: 0, fontWeight: 600 }}>{v.toLocaleString()}</Tag>
+        <span style={{ fontSize: 12, color: '#64748b', fontWeight: 500 }}>{v.toLocaleString()}</span>
       ),
     },
     {
       title: 'Avg /10', dataIndex: 'avg_score', key: 'avg_score',
-      width: 220,
+      width: 180,
       defaultSortOrder: 'descend' as const,
       sorter: (a: AgentRow, b: AgentRow) => (a.avg_score ?? 0) - (b.avg_score ?? 0),
       render: (score: number | null) => (
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <ScoreBadge score={score} />
+          <span style={{
+            fontSize: 13, fontWeight: 700, color: sc(score),
+            minWidth: 36, textAlign: 'right',
+          }}>
+            {score != null ? score.toFixed(2) : '—'}
+          </span>
           <Progress
             percent={score != null ? Math.round((score / 10) * 100) : 0}
             showInfo={false}
             strokeColor={sc(score)}
             trailColor="#e2e8f0"
-            style={{ flex: 1, marginBottom: 0, minWidth: 80 }}
-            size="small"
+            style={{ flex: 1, marginBottom: 0 }}
+            size={[undefined, 6] as unknown as 'small'}
           />
         </div>
       ),
@@ -266,22 +274,24 @@ export default function AgentStatsTab() {
       )}
 
       {/* ── Table ────────────────────────────────────────────────── */}
-      <div style={{ background: '#fff', borderRadius: 10, boxShadow: '0 1px 4px #0001', overflow: 'hidden' }}>
-        <div style={{ padding: '10px 16px 8px', borderBottom: '1px solid #f1f5f9' }}>
-          <Text strong style={{ fontSize: 14 }}>
-            Agent performance
-          </Text>
-          <Text type="secondary" style={{ fontSize: 12, marginLeft: 8 }}>
-            {agentRows.length} agents
-          </Text>
+      <div style={{
+        background: '#fff', borderRadius: 10,
+        boxShadow: '0 1px 4px #0001', overflow: 'hidden',
+        maxWidth: 560,  // compact width — không cần full width
+      }}>
+        <div style={{ padding: '8px 14px 6px', borderBottom: '1px solid #f1f5f9', display: 'flex', alignItems: 'center', gap: 8 }}>
+          <Text strong style={{ fontSize: 13 }}>Agent performance</Text>
+          <Text type="secondary" style={{ fontSize: 11 }}>{agentRows.length} agents</Text>
         </div>
         <Table<AgentRow>
           dataSource={agentRows}
           columns={columns}
           rowKey="agent"
           loading={isLoading}
-          pagination={{ pageSize: 50, hideOnSinglePage: true, size: 'small' }}
+          pagination={false}
           size="small"
+          style={{ fontSize: 12 }}
+          rowClassName={() => 'agent-row'}
         />
       </div>
     </div>

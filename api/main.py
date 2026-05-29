@@ -9,6 +9,8 @@ from __future__ import annotations
 import os
 import sys
 import json
+import time
+import hashlib
 import requests
 from datetime import datetime, timezone
 from typing import Any, Optional
@@ -32,6 +34,40 @@ from database.connection import get_db
 from database.deco_chat import ALL_GRADING_COLLECTIONS
 from database.prompts import get_prompt_content
 from analyzer_v2 import _parse_and_cap, GRADING_CRITERIA
+
+# ---------------------------------------------------------------------------
+# TTL Cache (in-memory, thread-safe enough for single-process uvicorn)
+# ---------------------------------------------------------------------------
+
+_CACHE: dict[str, tuple[float, Any]] = {}
+CACHE_TTL = int(os.getenv("CACHE_TTL", "300"))  # seconds, default 5 min
+
+
+def _ck(*args: Any) -> str:
+    """Build a cache key from arbitrary args."""
+    raw = json.dumps(args, sort_keys=True, default=str)
+    return hashlib.md5(raw.encode()).hexdigest()
+
+
+def _cget(key: str) -> Any | None:
+    if key in _CACHE:
+        ts, val = _CACHE[key]
+        if time.time() - ts < CACHE_TTL:
+            return val
+        del _CACHE[key]
+    return None
+
+
+def _cset(key: str, val: Any) -> None:
+    _CACHE[key] = (time.time(), val)
+
+
+def cache_clear() -> int:
+    """Invalidate all cached responses. Returns number of entries cleared."""
+    n = len(_CACHE)
+    _CACHE.clear()
+    return n
+
 
 # ---------------------------------------------------------------------------
 # Startup
@@ -182,6 +218,13 @@ def list_records(
     sort_by: str = Query("date", description="date | final_score_10 | primary_operator | customer | app"),
     sort_dir: int = Query(-1, description="-1 desc | 1 asc"),
 ):
+    # Check cache first
+    ck = _ck("records", app, agent, date_from, date_to, score_min, score_max,
+             is_resolved, chat_link, page, page_size, sort_by, sort_dir)
+    cached = _cget(ck)
+    if cached is not None:
+        return cached
+
     db = get_db()
 
     if app:
@@ -250,12 +293,15 @@ def list_records(
     skip = (page - 1) * page_size
     page_docs = all_docs[skip : skip + page_size]
 
-    return {
+    result = {
         "total": total,
         "page": page,
         "page_size": page_size,
         "records": [_serialize(d) for d in page_docs],
+        "cached_at": datetime.now(timezone.utc).isoformat(),
     }
+    _cset(ck, result)
+    return result
 
 
 @app.get("/api/records/{record_id}")
@@ -283,6 +329,7 @@ def update_record(record_id: str, body: RecordUpdate):
         updates["grading"] = body.grading
 
     get_db()[col_name].update_one({"_id": doc["_id"]}, {"$set": updates})
+    cache_clear()
     updated = get_db()[col_name].find_one({"_id": doc["_id"]})
     return _serialize(updated)
 
@@ -291,6 +338,7 @@ def update_record(record_id: str, body: RecordUpdate):
 def delete_record(record_id: str):
     doc, col_name = _find_doc(record_id)
     get_db()[col_name].delete_one({"_id": doc["_id"]})
+    cache_clear()
     return {"ok": True, "deleted": record_id}
 
 
@@ -390,7 +438,7 @@ def regrade_record(record_id: str, body: RegradeRequest = RegradeRequest()):
         {"_id": doc["_id"]},
         {"$set": {"grading": grading, "updated_at": now}},
     )
-
+    cache_clear()
     updated = get_db()[col_name].find_one({"_id": doc["_id"]})
     return _serialize(updated)
 
@@ -444,7 +492,7 @@ def resolve_record(record_id: str):
         {"_id": doc["_id"]},
         {"$set": {"is_resolved": True, "updated_at": now}},
     )
-
+    cache_clear()
     updated = get_db()[col_name].find_one({"_id": doc["_id"]})
     return {"ok": True, "record": _serialize(updated)}
 
@@ -472,6 +520,11 @@ def get_stats(
     date_from: str = Query(""),
     date_to: str = Query(""),
 ):
+    ck = _ck("stats", app, date_from, date_to)
+    cached = _cget(ck)
+    if cached is not None:
+        return cached
+
     db = get_db()
     col_names = [_app_to_col(app)] if app else list(ALL_GRADING_COLLECTIONS)
     col_names = [n for n in col_names if n]
@@ -521,7 +574,7 @@ def get_stats(
         app_name = d.get("app") or "Unknown"
         by_app[app_name] = by_app.get(app_name, 0) + 1
 
-    return {
+    result = {
         "total": len(all_docs),
         "avg_score": round(sum(scores) / len(scores), 2) if scores else None,
         "min_score": min(scores) if scores else None,
@@ -529,6 +582,15 @@ def get_stats(
         "by_agent": agent_stats,
         "by_app": by_app,
     }
+    _cset(ck, result)
+    return result
+
+
+@app.post("/api/cache/clear")
+def clear_cache():
+    """Manually invalidate all cached responses."""
+    n = cache_clear()
+    return {"ok": True, "cleared": n}
 
 
 # ---------------------------------------------------------------------------

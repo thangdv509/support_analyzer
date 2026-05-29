@@ -9,8 +9,10 @@ import 'ag-grid-community/styles/ag-theme-quartz.css'
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 30_000,
+      staleTime: 5 * 60_000,   // 5 min — dùng cache, không refetch liên tục
+      gcTime: 10 * 60_000,     // 10 min — giữ cache trong memory
       retry: 1,
+      refetchOnWindowFocus: false,  // không refetch khi switch tab
     },
   },
 })
