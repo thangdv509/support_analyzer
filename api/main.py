@@ -316,33 +316,74 @@ def regrade_record(record_id: str, body: RegradeRequest = RegradeRequest()):
     else:
         prompt = base_prompt
 
-    messages = [
-        {"role": "system", "content": prompt},
-        {"role": "user", "content": f"Chấm đoạn chat sau:\n\n{transcript}"},
-    ]
+    _FORMAT_REMINDER = (
+        "\n\nQUAN TRỌNG: Chỉ trả về JSON với đúng cấu trúc sau, không thêm gì khác:\n"
+        '{"criteria": {"greetings": {"score": ..., "justification": "..."}, '
+        '"grammar": {"score": ..., "justification": "..."}, '
+        '"communication": {"score": ..., "justification": "..."}, '
+        '"listening": {"score": ..., "justification": "..."}, '
+        '"tone_pace": {"score": ..., "justification": "..."}, '
+        '"empathy": {"score": ..., "justification": "..."}, '
+        '"enthusiastic": {"score": ..., "justification": "..."}, '
+        '"probing": {"score": ..., "justification": "..."}, '
+        '"solution": {"score": ..., "justification": "..."}, '
+        '"proactiveness": {"score": ..., "justification": "..."}, '
+        '"transferring": {"score": ..., "justification": "..."}, '
+        '"resources": {"score": ..., "justification": "..."}, '
+        '"extra_mile": {"score": ..., "justification": "..."}, '
+        '"review_asking": {"score": ..., "justification": "..."}}, '
+        '"overall_summary": "..."}'
+    )
 
-    try:
-        r = requests.post(
-            "https://openrouter.ai/api/v1/chat/completions",
-            headers={
-                "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "model": MODEL,
-                "messages": messages,
-                "response_format": {"type": "json_object"},
-                "max_tokens": 4096,
-            },
-            timeout=120,
+    import time as _time
+    last_err = ""
+    grading = None
+    for attempt in range(1, 4):  # retry up to 3 times
+        # On retry, append explicit format reminder to user message
+        user_content = f"Chấm đoạn chat sau:\n\n{transcript}"
+        if attempt > 1:
+            user_content += _FORMAT_REMINDER
+
+        call_messages = [
+            {"role": "system", "content": prompt},
+            {"role": "user", "content": user_content},
+        ]
+
+        try:
+            r = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": MODEL,
+                    "messages": call_messages,
+                    "response_format": {"type": "json_object"},
+                    "max_tokens": 4096,
+                },
+                timeout=120,
+            )
+            if r.status_code == 429:
+                _time.sleep(10 * attempt)
+                continue
+            r.raise_for_status()
+            raw = r.json()["choices"][0]["message"]["content"]
+            grading = _parse_and_cap(raw)
+            break
+        except HTTPException:
+            raise
+        except Exception as e:
+            last_err = str(e)
+            print(f"[regrade] attempt {attempt}/3 failed: {last_err}")
+            if attempt < 3:
+                _time.sleep(3 * attempt)
+
+    if grading is None:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Re-grading failed after 3 attempts: {last_err}",
         )
-        r.raise_for_status()
-        raw = r.json()["choices"][0]["message"]["content"]
-        grading = _parse_and_cap(raw)
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Re-grading failed: {str(e)}")
 
     now = datetime.now(timezone.utc)
     get_db()[col_name].update_one(
