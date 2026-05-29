@@ -277,7 +277,8 @@ export default function AgentStatsTab() {
       <div style={{
         background: '#fff', borderRadius: 10,
         boxShadow: '0 1px 4px #0001', overflow: 'hidden',
-        maxWidth: 560,  // compact width — không cần full width
+        maxWidth: 560,
+        margin: '0 auto',
       }}>
         <div style={{ padding: '8px 14px 6px', borderBottom: '1px solid #f1f5f9', display: 'flex', alignItems: 'center', gap: 8 }}>
           <Text strong style={{ fontSize: 13 }}>Agent performance</Text>
