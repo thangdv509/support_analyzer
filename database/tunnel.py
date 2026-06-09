@@ -56,6 +56,17 @@ def ensure_tunnel() -> bool:
         print("⚠️  SSH_TUNNEL_HOST / SSH_TUNNEL_REMOTE not set in .env — skipping tunnel")
         return False
 
+    # Kill any stale ssh process holding the local port
+    try:
+        result = subprocess.run(["fuser", f"{port}/tcp"], capture_output=True, text=True)
+        pids = result.stdout.split()
+        for pid in pids:
+            subprocess.run(["kill", pid], capture_output=True)
+        if pids:
+            time.sleep(0.5)
+    except Exception:
+        pass
+
     remote_host, remote_port = ssh_remote.rsplit(":", 1)
     local_fwd = f"{port}:{remote_host}:{remote_port}"
 
