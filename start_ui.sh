@@ -44,7 +44,20 @@ if [[ "$*" == *"--prod"* ]]; then
   [ ! -d "node_modules" ] && npm install
   npm run build
   cd "$SCRIPT_DIR"
-  echo "🚀 Serving on http://0.0.0.0:$API_PORT  (truy cập: http://<IP_SERVER>:$API_PORT)"
+
+  # Start ngrok in background if available and --ngrok flag passed
+  NGROK_PID=""
+  if [[ "$*" == *"--ngrok"* ]] && command -v ngrok &>/dev/null; then
+    echo "🌐 Starting ngrok on port $API_PORT..."
+    ngrok http "$API_PORT" --log=stdout > /tmp/ngrok_qa.log 2>&1 &
+    NGROK_PID=$!
+    sleep 2
+    NGROK_URL=$(curl -s http://localhost:4040/api/tunnels 2>/dev/null | grep -o '"public_url":"https://[^"]*"' | head -1 | cut -d'"' -f4)
+    [ -n "$NGROK_URL" ] && echo "🔗 ngrok URL: $NGROK_URL" || echo "⚠️  ngrok started, check http://localhost:4040"
+  fi
+
+  echo "🚀 Serving on http://0.0.0.0:$API_PORT"
+  trap '[[ -n "$NGROK_PID" ]] && kill "$NGROK_PID" 2>/dev/null' EXIT
   uvicorn api.main:app --port "$API_PORT" --host 0.0.0.0
   exit 0
 fi
