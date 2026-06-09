@@ -8,3 +8,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Review Performance — larger font + row height */
+.review-grid {
+  --ag-font-size: 14px;
+  --ag-row-height: 44px;
+  --ag-header-height: 40px;
+  --ag-header-column-separator-display: block;
+}
+
+.review-grid .ag-cell {
+  font-size: 14px !important;
+  display: flex;
+  align-items: center;
+}
+
+.review-grid .ag-header-cell-text {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+.review-grid .ag-cell-wrapper {
+  align-items: center;
+  width: 100%;
+}

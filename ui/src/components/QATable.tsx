@@ -34,6 +34,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import axios from 'axios'
 import { deleteRecord, fetchRecords, resolveRecord } from '../api'
 import { invalidateAll } from '../cache'
+import { useAuth } from '../context/AuthContext'
 import type { Filters, QARecord } from '../types'
 import { CRITERIA_KEYS, CRITERIA_LABELS, CRITERIA_MAX } from '../types'
 import EditModal from './EditModal'
@@ -166,6 +167,8 @@ interface Props {
 }
 
 export default function QATable({ filters }: Props) {
+  const { user } = useAuth()
+  const canEdit = user?.role === 'admin' || user?.role === 'manager'
   const gridRef = useRef<AgGridReact>(null)
   const queryClient = useQueryClient()
 
@@ -271,39 +274,26 @@ export default function QATable({ filters }: Props) {
       if (!rec) return null
       return (
         <Space size={2} style={{ height: '100%', alignItems: 'center' }}>
-          <Tooltip title="Xem chi tiết (tags, summary, transcript)">
-            <Button
-              size="small"
-              type="text"
-              icon={<EyeOutlined />}
-              onClick={() => setDetailRec(rec)}
-            />
+          {/* View detail — all roles */}
+          <Tooltip title="Xem chi tiết">
+            <Button size="small" type="text" icon={<EyeOutlined />} onClick={() => setDetailRec(rec)} />
           </Tooltip>
-          <Tooltip title="Sửa thông tin (agent, customer, tags…)">
-            <Button
-              size="small"
-              type="text"
-              icon={<EditOutlined />}
-              onClick={() => setEditRecord(rec)}
-            />
-          </Tooltip>
-          <Tooltip title="Sửa điểm từng tiêu chí">
-            <Button
-              size="small"
-              type="text"
-              icon={<FormOutlined style={{ color: '#1677ff' }} />}
-              onClick={() => setScoreEditRec(rec)}
-            />
-          </Tooltip>
-          <Tooltip title="Chấm lại bằng AI">
-            <Button
-              size="small"
-              type="text"
-              icon={<SyncOutlined />}
-              onClick={() => setRegradeRec(rec)}
-            />
-          </Tooltip>
-          {!rec.is_resolved && (
+
+          {/* Edit actions — manager/admin only */}
+          {canEdit && (
+            <>
+              <Tooltip title="Sửa thông tin">
+                <Button size="small" type="text" icon={<EditOutlined />} onClick={() => setEditRecord(rec)} />
+              </Tooltip>
+              <Tooltip title="Sửa điểm từng tiêu chí">
+                <Button size="small" type="text" icon={<FormOutlined style={{ color: '#1677ff' }} />} onClick={() => setScoreEditRec(rec)} />
+              </Tooltip>
+              <Tooltip title="Chấm lại bằng AI">
+                <Button size="small" type="text" icon={<SyncOutlined />} onClick={() => setRegradeRec(rec)} />
+              </Tooltip>
+            </>
+          )}
+          {canEdit && !rec.is_resolved && (
             <Tooltip title="Resolve in Crisp">
               <Button
                 size="small"
@@ -316,27 +306,22 @@ export default function QATable({ filters }: Props) {
           )}
           {rec.crisp_url && (
             <Tooltip title="Open Crisp URL">
-              <Button
-                size="small"
-                type="text"
-                icon={<ExportOutlined />}
-                onClick={() => window.open(rec.crisp_url!, '_blank')}
-              />
+              <Button size="small" type="text" icon={<ExportOutlined />} onClick={() => window.open(rec.crisp_url!, '_blank')} />
             </Tooltip>
           )}
+          {canEdit && (
           <Tooltip title="Delete">
             <Button
-              size="small"
-              type="text"
-              danger
+              size="small" type="text" danger
               icon={<DeleteOutlined />}
               onClick={() => handleDelete(rec)}
             />
           </Tooltip>
+          )}
         </Space>
       )
     },
-    [handleDelete, handleResolve, resolveMut.isPending, resolveMut.variables],
+    [handleDelete, handleResolve, resolveMut.isPending, resolveMut.variables, canEdit],
   )
 
   // ── Column definitions ────────────────────────────────────────────────────

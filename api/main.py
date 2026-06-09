@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from dotenv import load_dotenv
 load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -89,7 +89,12 @@ app.add_middleware(
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_credentials=True,
 )
+
+# Auth router (OAuth + JWT + /me + /logout)
+from api.auth import router as auth_router, get_current_user, require_admin, require_manager_or_admin
+app.include_router(auth_router)
 
 # Mount /assets early (sub-app, path-prefix matched before routes)
 if os.path.isdir(_STATIC_DIR):
@@ -588,9 +593,264 @@ def get_stats(
 
 @app.post("/api/cache/clear")
 def clear_cache():
-    """Manually invalidate all cached responses."""
     n = cache_clear()
     return {"ok": True, "cleared": n}
+
+
+# ---------------------------------------------------------------------------
+# Routes — User management
+# ---------------------------------------------------------------------------
+
+class AddUserBody(BaseModel):
+    email: str
+    role: str  # admin | manager | support
+
+
+class UpdateRoleBody(BaseModel):
+    role: str
+
+
+@app.get("/api/users")
+def list_users_endpoint(user: dict = Depends(require_manager_or_admin)):
+    from database.users import list_users
+    return list_users()
+
+
+@app.post("/api/users")
+def add_user(body: AddUserBody, user: dict = Depends(require_manager_or_admin)):
+    from database.users import create_user, VALID_ROLES
+    if body.role not in VALID_ROLES:
+        raise HTTPException(status_code=400, detail=f"Invalid role. Must be one of: {VALID_ROLES}")
+    if user["role"] == "manager" and body.role != "support":
+        raise HTTPException(status_code=403, detail="Managers can only add supporters")
+    create_user(body.email.lower().strip(), body.role, user["sub"])
+    return {"ok": True}
+
+
+@app.put("/api/users/{email}/role")
+def update_user_role(email: str, body: UpdateRoleBody, user: dict = Depends(require_admin)):
+    from database.users import update_role, VALID_ROLES
+    if body.role not in VALID_ROLES:
+        raise HTTPException(status_code=400, detail=f"Invalid role")
+    if not update_role(email, body.role):
+        raise HTTPException(status_code=404, detail="User not found")
+    return {"ok": True}
+
+
+@app.delete("/api/users/{email}")
+def remove_user(email: str, user: dict = Depends(require_admin)):
+    if email.lower() == user["sub"]:
+        raise HTTPException(status_code=400, detail="Cannot delete your own account")
+    from database.users import delete_user
+    if not delete_user(email):
+        raise HTTPException(status_code=404, detail="User not found")
+    return {"ok": True}
+
+
+# ---------------------------------------------------------------------------
+# Routes — Review Performance
+# ---------------------------------------------------------------------------
+
+class ReviewBody(BaseModel):
+    status:        str = "Live"
+    star:          str = "5"
+    review_date:   str = ""
+    customer_name: str = ""
+    link:          str = ""
+    app_plan:      str = "Free"
+    mentioned:     str = ""
+    cs1:           str = ""
+    cs2:           str = ""
+    tech:          str = ""
+    count:         int = 1
+    point:         float = 1.0
+    he_so:         int = 1
+    notes:         str = ""
+
+
+class ReviewRequestBody(BaseModel):
+    reason:  str = ""
+    changes: dict = {}   # for update requests
+
+
+class HandleRequestBody(BaseModel):
+    note: str = ""
+
+
+@app.get("/api/reviews")
+def list_reviews(user: dict = Depends(get_current_user)):
+    from database.reviews import list_reviews as _list
+    return _list(viewer_email=user["sub"], viewer_role=user["role"])
+
+
+@app.post("/api/reviews")
+def create_review(body: ReviewBody, user: dict = Depends(get_current_user)):
+    from database.reviews import create_review as _create
+    return _create(body.model_dump(), created_by=user["sub"])
+
+
+@app.put("/api/reviews/{review_id}")
+def update_review(review_id: str, body: ReviewBody, user: dict = Depends(get_current_user)):
+    from database.reviews import update_review as _update, get_review
+    review = get_review(review_id)
+    if not review:
+        raise HTTPException(404, "Review not found")
+    if user["role"] in ("admin", "manager"):
+        _update(review_id, body.model_dump())
+        return get_review(review_id)
+    raise HTTPException(403, "Use /api/reviews/{id}/request to propose changes")
+
+
+@app.delete("/api/reviews/{review_id}")
+def delete_review(review_id: str, user: dict = Depends(get_current_user)):
+    from database.reviews import delete_review as _delete, get_review
+    review = get_review(review_id)
+    if not review:
+        raise HTTPException(404, "Review not found")
+    if user["role"] in ("admin", "manager"):
+        _delete(review_id)
+        return {"ok": True}
+    raise HTTPException(403, "Use /api/reviews/{id}/request to propose deletion")
+
+
+@app.post("/api/reviews/{review_id}/request")
+def request_review_change(review_id: str, body: ReviewRequestBody,
+                           action: str = Query("update", description="update | delete"),
+                           user: dict = Depends(get_current_user)):
+    from database.reviews import get_review
+    from database.review_requests import create_request
+    if not get_review(review_id):
+        raise HTTPException(404, "Review not found")
+    req = create_request(review_id, action, body.changes, body.reason, user["sub"])
+    return req
+
+
+@app.get("/api/review-requests")
+def list_review_requests(status: str = Query("pending"),
+                         user: dict = Depends(require_manager_or_admin)):
+    from database.review_requests import list_requests
+    return list_requests(status=status if status != "all" else None)
+
+
+@app.post("/api/review-requests/{req_id}/approve")
+def approve_review_request(req_id: str, body: HandleRequestBody = HandleRequestBody(),
+                            user: dict = Depends(require_manager_or_admin)):
+    from database.review_requests import get_request, handle_request
+    from database.reviews import update_review as _update, delete_review as _delete
+
+    req = get_request(req_id)
+    if not req:
+        raise HTTPException(404, "Request not found")
+    if req["status"] != "pending":
+        raise HTTPException(400, f"Request is already {req['status']}")
+
+    if req["action"] == "delete":
+        _delete(req["review_id"])
+    elif req["action"] == "update":
+        _update(req["review_id"], req["changes"])
+
+    handle_request(req_id, "approved", user["sub"], body.note)
+    return {"ok": True}
+
+
+@app.post("/api/review-requests/{req_id}/reject")
+def reject_review_request(req_id: str, body: HandleRequestBody = HandleRequestBody(),
+                           user: dict = Depends(require_manager_or_admin)):
+    from database.review_requests import get_request, handle_request
+    req = get_request(req_id)
+    if not req:
+        raise HTTPException(404, "Request not found")
+    if req["status"] != "pending":
+        raise HTTPException(400, f"Request is already {req['status']}")
+    handle_request(req_id, "rejected", user["sub"], body.note)
+    return {"ok": True}
+
+
+# ---------------------------------------------------------------------------
+# Routes — Review Stats
+# ---------------------------------------------------------------------------
+
+@app.get("/api/review-stats")
+def review_stats(
+    date_from: str = Query(""),
+    date_to:   str = Query(""),
+    user:      dict = Depends(get_current_user),
+):
+    """Aggregate review points per agent.
+    - admin/manager: all agents
+    - support: own stats only
+    """
+    from database.connection import get_db as _gdb
+
+    db  = _gdb()
+    col = db["qa_reviews"]
+
+    query: dict[str, Any] = {}
+    if date_from and date_to:
+        query["review_date"] = {"$gte": date_from, "$lte": date_to}
+    elif date_from:
+        query["review_date"] = {"$gte": date_from}
+    elif date_to:
+        query["review_date"] = {"$lte": date_to}
+
+    projection = {"mentioned": 1, "cs1": 1, "cs2": 1, "tech": 1,
+                  "point": 1, "he_so": 1, "review_date": 1, "status": 1}
+    reviews = list(col.find(query, projection))
+
+    def _empty_stat(email: str) -> dict:
+        return {"email": email, "total_count": 0, "total_point": 0.0,
+                "by_role": {"mentioned": 0, "cs1": 0, "cs2": 0, "tech": 0}}
+
+    stats: dict[str, dict] = {}
+    for rev in reviews:
+        # ── 1. Tính tổng điểm của review ────────────────────────────────────
+        star            = (rev.get("star") or "").strip()
+        plan            = (rev.get("app_plan") or "Free").strip()
+        mentioned_email = (rev.get("mentioned") or "").strip()
+
+        if star == "5":
+            base  = 6.0 if plan == "Paid" else 1.0   # Free=1, Paid=6
+            he_so = 2.0 if mentioned_email else 1.0   # có mention → x2
+            total_point = base * he_so
+        else:
+            total_point = float(rev.get("point", 0) or 0)  # nhập thủ công
+
+        # ── 2. Danh sách agent duy nhất tham gia review ─────────────────────
+        unique_agents: list[str] = []
+        seen: set[str] = set()
+        for role in ("mentioned", "cs1", "cs2", "tech"):
+            e = (rev.get(role) or "").strip().lower()
+            if e and e not in seen:
+                unique_agents.append(e)
+                seen.add(e)
+
+        n          = max(len(unique_agents), 1)
+        each_point = round(total_point / n, 4)  # chia đều
+
+        # ── 3. Cộng điểm cho từng agent (một lần mỗi review) ────────────────
+        for email in unique_agents:
+            if email not in stats:
+                stats[email] = _empty_stat(email)
+            stats[email]["total_count"] += 1
+            stats[email]["total_point"]  = round(stats[email]["total_point"] + each_point, 2)
+
+        # ── 4. Đếm số lần theo vai trò (không dedup) ────────────────────────
+        for role in ("mentioned", "cs1", "cs2", "tech"):
+            email = (rev.get(role) or "").strip().lower()
+            if email:
+                if email not in stats:
+                    stats[email] = _empty_stat(email)
+                stats[email]["by_role"][role] += 1
+
+    if user["role"] == "support":
+        own_email = user["sub"].lower()
+        own = stats.get(own_email, {
+            "email": own_email, "total_count": 0, "total_point": 0.0,
+            "by_role": {"mentioned": 0, "cs1": 0, "cs2": 0, "tech": 0},
+        })
+        return [own]
+
+    return sorted(stats.values(), key=lambda x: -x["total_point"])
 
 
 # ---------------------------------------------------------------------------

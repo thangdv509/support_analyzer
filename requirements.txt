@@ -10,3 +10,4 @@ httpx
 pyngrok
 fastapi
 uvicorn[standard]
+python-jose[cryptography]
