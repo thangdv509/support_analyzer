@@ -45,6 +45,10 @@ if [[ "$*" == *"--prod"* ]]; then
   npm run build
   cd "$SCRIPT_DIR"
 
+  # Kill any existing process on API_PORT
+  fuser -k "${API_PORT}/tcp" 2>/dev/null || true
+  sleep 0.5
+
   # Start ngrok in background if available and --ngrok flag passed
   NGROK_PID=""
   if [[ "$*" == *"--ngrok"* ]] && command -v ngrok &>/dev/null; then
