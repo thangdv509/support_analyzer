@@ -51,7 +51,7 @@ if [[ "$*" == *"--prod"* ]]; then
     NGROK_DOMAIN=$(grep -E '^BACKEND_URL=' "$SCRIPT_DIR/.env" 2>/dev/null | sed 's/.*="https:\/\///' | sed 's/".*//')
     echo "🌐 Starting ngrok on port $API_PORT..."
     if [ -n "$NGROK_DOMAIN" ] && [[ "$NGROK_DOMAIN" == *.ngrok* ]]; then
-      ngrok http --domain="$NGROK_DOMAIN" "$API_PORT" --log=stdout > /tmp/ngrok_qa.log 2>&1 &
+      ngrok http --url="$NGROK_DOMAIN" "$API_PORT" --log=stdout > /tmp/ngrok_qa.log 2>&1 &
       sleep 3
       echo "🔗 ngrok URL: https://$NGROK_DOMAIN"
     else

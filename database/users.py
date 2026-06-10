@@ -124,3 +124,57 @@ def update_nickname(email: str, nickname: str) -> bool:
 def delete_user(email: str) -> bool:
     result = _col().delete_one({"email": email.lower()})
     return result.deleted_count > 0
+
+
+def sync_crisp_agents(operators: list[dict]) -> dict:
+    """Bulk-add Crisp operators as support users. Skip if email already exists (any role).
+    Always updates crisp_nickname so the agent column can link records to users.
+    """
+    added = 0
+    updated = 0
+    now = _now()
+    for op in operators:
+        details = op.get("details") or {}
+        email = (details.get("email") or op.get("email") or "").lower().strip()
+        if not email:
+            continue
+        crisp_nickname = (
+            details.get("nickname")
+            or details.get("first_name")
+            or email.split("@")[0]
+        ).strip()
+        avatar = details.get("avatar") or ""
+
+        existing = _col().find_one({"email": email})
+        if existing:
+            _col().update_one(
+                {"email": email},
+                {"$set": {"crisp_nickname": crisp_nickname, "updated_at": now}},
+            )
+            updated += 1
+        else:
+            _col().insert_one({
+                "email": email,
+                "name": crisp_nickname,
+                "nickname": "",
+                "picture": avatar,
+                "role": "support",
+                "crisp_nickname": crisp_nickname,
+                "added_by": "crisp_sync",
+                "created_at": now,
+                "updated_at": now,
+                "last_login": None,
+            })
+            added += 1
+
+    return {"added": added, "updated": updated}
+
+
+def get_agent_map() -> dict:
+    """Returns {crisp_nickname: user_info} for linking records to users."""
+    result = {}
+    for u in list_users():
+        cn = (u.get("crisp_nickname") or "").strip()
+        if cn:
+            result[cn] = u
+    return result

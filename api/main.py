@@ -647,6 +647,68 @@ def remove_user(email: str, user: dict = Depends(require_admin)):
     return {"ok": True}
 
 
+@app.get("/api/users/agent-map")
+def get_agent_map_endpoint():
+    """Public: returns {crisp_nickname: user_info} for agent column linking."""
+    from database.users import get_agent_map
+    return get_agent_map()
+
+
+def _fetch_crisp_operators() -> list[dict]:
+    """Fetch all unique operators across all Crisp websites."""
+    if not CRISP_IDENTIFIER or not CRISP_KEY:
+        raise HTTPException(status_code=503, detail="Crisp credentials not configured")
+    headers = {"X-Crisp-Tier": "plugin"}
+    auth = (CRISP_IDENTIFIER, CRISP_KEY)
+    try:
+        r = requests.get(
+            "https://api.crisp.chat/v1/plugin/connect/websites/all/1",
+            headers=headers, auth=auth,
+            params={"filter_configured": "false"}, timeout=15,
+        )
+        websites = r.json().get("data", [])
+    except Exception as e:
+        raise HTTPException(status_code=502, detail=f"Crisp API error: {e}")
+
+    all_ops: list[dict] = []
+    seen: set[str] = set()
+    for site in (websites if isinstance(websites, list) else []):
+        wid = site.get("website_id") if isinstance(site, dict) else None
+        if not wid:
+            continue
+        try:
+            r2 = requests.get(
+                f"https://api.crisp.chat/v1/website/{wid}/operators/list",
+                headers=headers, auth=auth, timeout=15,
+            )
+            ops = r2.json().get("data", [])
+            for op in (ops if isinstance(ops, list) else []):
+                details = op.get("details") or {}
+                email = (details.get("email") or op.get("email") or "").lower().strip()
+                if email and email not in seen:
+                    seen.add(email)
+                    all_ops.append(op)
+        except Exception:
+            continue
+    return all_ops
+
+
+@app.get("/api/crisp/agents", dependencies=[Depends(require_manager_or_admin)])
+def list_crisp_operators():
+    """List all operators from Crisp (for preview before sync)."""
+    return _fetch_crisp_operators()
+
+
+@app.post("/api/crisp/sync-agents", dependencies=[Depends(require_manager_or_admin)])
+def sync_crisp_agents_endpoint():
+    """Sync all Crisp operators to qa_users as support role."""
+    operators = _fetch_crisp_operators()
+    from database.users import sync_crisp_agents
+    result = sync_crisp_agents(operators)
+    cache_clear()
+    return {**result, "total_fetched": len(operators)}
+
+
 # ---------------------------------------------------------------------------
 # Routes — Review Performance
 # ---------------------------------------------------------------------------

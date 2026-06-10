@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {
+  Avatar,
   Button,
   DatePicker,
   Divider,
@@ -8,13 +9,17 @@ import {
   Select,
   Table,
   Tag,
+  Tooltip,
   Typography,
 } from 'antd'
-import { FilterOutlined, ReloadOutlined } from '@ant-design/icons'
+import { FilterOutlined, ReloadOutlined, UserOutlined } from '@ant-design/icons'
 import { useQuery } from '@tanstack/react-query'
+import axios from 'axios'
 import dayjs, { type Dayjs } from 'dayjs'
 import { fetchAgents, fetchStats } from '../api'
 import type { Stats } from '../types'
+
+const http = axios.create({ baseURL: '/api', withCredentials: true })
 
 const { RangePicker } = DatePicker
 const { Text } = Typography
@@ -22,6 +27,7 @@ const { Text } = Typography
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 interface AgentRow { agent: string; count: number; avg_score: number | null }
+interface UserInfo { email: string; name: string; nickname: string; picture: string; role: string }
 
 interface Params { app: string; date_from: string; date_to: string; agent: string }
 
@@ -82,6 +88,12 @@ export default function AgentStatsTab() {
     staleTime: 30_000,
   })
 
+  const { data: agentMap = {} } = useQuery<Record<string, UserInfo>>({
+    queryKey: ['agent-map'],
+    queryFn: () => http.get('/users/agent-map').then(r => r.data),
+    staleTime: 5 * 60_000,
+  })
+
   const setDate = (range: [Dayjs, Dayjs] | null) => {
     setDateValue(range)
     setLocal(p => ({
@@ -99,9 +111,10 @@ export default function AgentStatsTab() {
     setDateValue(null)
   }
 
-  // Build rows — optionally filter by selected agent
+  // Only show agents linked to a user account
   const agentRows: AgentRow[] = Object.entries(data?.by_agent || {})
     .map(([agent, v]) => ({ agent, count: v.count, avg_score: v.avg_score }))
+    .filter(r => agentMap[r.agent] !== undefined)
     .filter(r => !applied.agent || r.agent === applied.agent)
     .sort((a, b) => (b.avg_score ?? 0) - (a.avg_score ?? 0))
 
@@ -118,9 +131,30 @@ export default function AgentStatsTab() {
     },
     {
       title: 'Agent', dataIndex: 'agent', key: 'agent',
-      render: (name: string) => (
-        <span style={{ fontSize: 13, fontWeight: 600, color: '#0f172a' }}>{name}</span>
-      ),
+      render: (name: string) => {
+        const u = agentMap[name]
+        if (!u) return <span style={{ fontSize: 13, fontWeight: 600, color: '#0f172a' }}>{name}</span>
+        const displayName = u.nickname?.trim() || u.name
+        return (
+          <Tooltip title={<div>
+            {u.nickname?.trim() && u.nickname !== u.name && <div style={{ fontSize: 11, color: '#94a3b8' }}>{u.name}</div>}
+            <div style={{ fontSize: 11, color: '#94a3b8' }}>{u.email}</div>
+          </div>} placement="right">
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              {u.picture
+                ? <img src={u.picture} alt="" style={{ width: 28, height: 28, borderRadius: '50%', flexShrink: 0 }} />
+                : <Avatar size={28} icon={<UserOutlined />} style={{ flexShrink: 0 }} />
+              }
+              <div>
+                <div style={{ fontWeight: 600, fontSize: 13, lineHeight: 1.3 }}>{displayName}</div>
+                {u.nickname?.trim() && u.nickname !== u.name && (
+                  <div style={{ fontSize: 11, color: '#64748b', lineHeight: 1.2 }}>{u.name}</div>
+                )}
+              </div>
+            </div>
+          </Tooltip>
+        )
+      },
     },
     {
       title: 'Chats', dataIndex: 'count', key: 'count', width: 64,

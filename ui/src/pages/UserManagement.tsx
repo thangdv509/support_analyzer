@@ -17,8 +17,10 @@ import {
   DeleteOutlined,
   EditOutlined,
   PlusOutlined,
+  SyncOutlined,
   UserOutlined,
 } from '@ant-design/icons'
+import axios from 'axios'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import {
   addUser,
@@ -29,6 +31,8 @@ import {
   type UserRecord,
 } from '../authApi'
 import { useAuth } from '../context/AuthContext'
+
+const http = axios.create({ baseURL: '/api', withCredentials: true })
 
 const { Text } = Typography
 
@@ -56,6 +60,16 @@ export default function UserManagement() {
     queryKey: ['users'],
     queryFn: fetchUsers,
     staleTime: 30_000,
+  })
+
+  const syncMut = useMutation({
+    mutationFn: () => http.post('/crisp/sync-agents').then(r => r.data),
+    onSuccess: (res) => {
+      message.success(`Sync xong: +${res.added} mới, ${res.updated} cập nhật`)
+      qc.invalidateQueries({ queryKey: ['users'] })
+      qc.invalidateQueries({ queryKey: ['agent-map'] })
+    },
+    onError: () => message.error('Sync thất bại'),
   })
 
   const addMut = useMutation({
@@ -210,14 +224,28 @@ export default function UserManagement() {
           <Text strong style={{ fontSize: 15 }}>User Management</Text>
           <Text type="secondary" style={{ fontSize: 12, marginLeft: 8 }}>{users.length} users</Text>
         </div>
-        <Button
-          type="primary"
-          size="small"
-          icon={<PlusOutlined />}
-          onClick={() => setAddOpen(true)}
-        >
-          Add user
-        </Button>
+        <div style={{ display: 'flex', gap: 8 }}>
+          {isAdmin && (
+            <Popconfirm
+              title="Sync agents từ Crisp?"
+              description="Sẽ thêm tất cả operators Crisp chưa có vào danh sách với role Support."
+              okText="Sync"
+              onConfirm={() => syncMut.mutate()}
+            >
+              <Button size="small" icon={<SyncOutlined />} loading={syncMut.isPending}>
+                Sync from Crisp
+              </Button>
+            </Popconfirm>
+          )}
+          <Button
+            type="primary"
+            size="small"
+            icon={<PlusOutlined />}
+            onClick={() => setAddOpen(true)}
+          >
+            Add user
+          </Button>
+        </div>
       </div>
 
       {/* Table */}

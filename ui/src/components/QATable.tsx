@@ -160,6 +160,51 @@ function CriteriaCell(params: ICellRendererParams & { criteriaKey?: string }) {
   )
 }
 
+// ── AgentCell ─────────────────────────────────────────────────────────────────
+
+interface UserInfo { email: string; name: string; nickname: string; picture: string; role: string; crisp_nickname?: string }
+
+const http = axios.create({ baseURL: '/api', withCredentials: true })
+
+function AgentCell({ value, agentMap }: { value: string; agentMap: Record<string, UserInfo> }) {
+  const user = value ? agentMap[value] : undefined
+  if (!user) {
+    return <span style={{ fontSize: 13, color: '#374151' }}>{value || '—'}</span>
+  }
+  const displayName = user.nickname?.trim() || user.name
+  return (
+    <Tooltip
+      title={
+        <div style={{ padding: '4px 0' }}>
+          <div style={{ fontWeight: 600, fontSize: 13 }}>{displayName}</div>
+          {user.nickname?.trim() && user.nickname !== user.name && (
+            <div style={{ fontSize: 11, color: '#94a3b8' }}>{user.name}</div>
+          )}
+          <div style={{ fontSize: 11, color: '#94a3b8' }}>{user.email}</div>
+          <div style={{ marginTop: 4 }}>
+            <span style={{
+              fontSize: 10, fontWeight: 600, padding: '1px 6px', borderRadius: 99,
+              background: user.role === 'admin' ? '#6366f122' : user.role === 'manager' ? '#0891b222' : '#16a34a22',
+              color: user.role === 'admin' ? '#6366f1' : user.role === 'manager' ? '#0891b2' : '#16a34a',
+            }}>
+              {user.role}
+            </span>
+          </div>
+        </div>
+      }
+      placement="right"
+    >
+      <div style={{ display: 'flex', alignItems: 'center', gap: 6, cursor: 'default' }}>
+        {user.picture
+          ? <img src={user.picture} alt="" style={{ width: 22, height: 22, borderRadius: '50%', flexShrink: 0 }} />
+          : <div style={{ width: 22, height: 22, borderRadius: '50%', background: '#e2e8f0', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, color: '#64748b' }}>{displayName[0]?.toUpperCase()}</div>
+        }
+        <span style={{ fontSize: 13, fontWeight: 500, color: '#111827', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{displayName}</span>
+      </div>
+    </Tooltip>
+  )
+}
+
 // ── Main component ────────────────────────────────────────────────────────────
 
 interface Props {
@@ -201,6 +246,12 @@ export default function QATable({ filters }: Props) {
     queryKey: ['records', params],
     queryFn: () => fetchRecords(params as Parameters<typeof fetchRecords>[0]),
     staleTime: 15_000,
+  })
+
+  const { data: agentMap = {} } = useQuery<Record<string, UserInfo>>({
+    queryKey: ['agent-map'],
+    queryFn: () => http.get('/users/agent-map').then(r => r.data),
+    staleTime: 5 * 60_000,
   })
 
   // ── Mutations ─────────────────────────────────────────────────────────────
@@ -362,10 +413,13 @@ export default function QATable({ filters }: Props) {
       {
         field: 'primary_operator',
         headerName: 'Agent',
-        width: 155,
+        width: 165,
         minWidth: 120,
         pinned: 'left' as const,
         sortable: true,
+        cellRenderer: (params: ICellRendererParams) => (
+          <AgentCell value={params.value} agentMap={agentMap} />
+        ),
       },
 
       // Basic info
