@@ -48,12 +48,19 @@ if [[ "$*" == *"--prod"* ]]; then
   # Start ngrok in background if available and --ngrok flag passed
   NGROK_PID=""
   if [[ "$*" == *"--ngrok"* ]] && command -v ngrok &>/dev/null; then
+    NGROK_DOMAIN=$(grep -E '^BACKEND_URL=' "$SCRIPT_DIR/.env" 2>/dev/null | sed 's/.*="https:\/\///' | sed 's/".*//')
     echo "🌐 Starting ngrok on port $API_PORT..."
-    ngrok http "$API_PORT" --log=stdout > /tmp/ngrok_qa.log 2>&1 &
+    if [ -n "$NGROK_DOMAIN" ] && [[ "$NGROK_DOMAIN" == *.ngrok* ]]; then
+      ngrok http --domain="$NGROK_DOMAIN" "$API_PORT" --log=stdout > /tmp/ngrok_qa.log 2>&1 &
+      sleep 3
+      echo "🔗 ngrok URL: https://$NGROK_DOMAIN"
+    else
+      ngrok http "$API_PORT" --log=stdout > /tmp/ngrok_qa.log 2>&1 &
+      sleep 2
+      NGROK_URL=$(curl -s http://localhost:4040/api/tunnels 2>/dev/null | grep -o '"public_url":"https://[^"]*"' | head -1 | cut -d'"' -f4)
+      [ -n "$NGROK_URL" ] && echo "🔗 ngrok URL: $NGROK_URL" || echo "⚠️  ngrok started, check http://localhost:4040"
+    fi
     NGROK_PID=$!
-    sleep 2
-    NGROK_URL=$(curl -s http://localhost:4040/api/tunnels 2>/dev/null | grep -o '"public_url":"https://[^"]*"' | head -1 | cut -d'"' -f4)
-    [ -n "$NGROK_URL" ] && echo "🔗 ngrok URL: $NGROK_URL" || echo "⚠️  ngrok started, check http://localhost:4040"
   fi
 
   echo "🚀 Serving on http://0.0.0.0:$API_PORT"
