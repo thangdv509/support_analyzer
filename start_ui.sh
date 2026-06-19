@@ -2,9 +2,10 @@
 # Start QA Dashboard
 #
 # Usage:
-#   ./start_ui.sh            — dev mode (backend + Vite hot-reload)
-#   ./start_ui.sh --prod     — production (build frontend, serve qua FastAPI)
-#   ./start_ui.sh --prod --port 9000   — chỉ định port
+#   ./start_ui.sh            — dev mode (backend + Vite HMR, port 5173)
+#   ./start_ui.sh --watch    — watch mode (auto rebuild → api/static, serve qua FastAPI port 5090)
+#   ./start_ui.sh --prod     — production (build once, serve qua FastAPI)
+#   ./start_ui.sh --prod --ngrok   — production + ngrok tunnel
 #
 set -e
 
@@ -36,6 +37,35 @@ if [ -f "$SCRIPT_DIR/venv/bin/activate" ]; then
 fi
 
 python -c "import fastapi" 2>/dev/null || pip install fastapi "uvicorn[standard]" --quiet
+
+# ── Watch mode (auto rebuild → api/static, serve qua FastAPI) ────────────────
+if [[ "$*" == *"--watch"* ]]; then
+  echo "👀 Watch mode — auto rebuild on save, serve on http://0.0.0.0:$API_PORT"
+  cd "$SCRIPT_DIR/ui"
+  [ ! -d "node_modules" ] && npm install
+
+  # Initial build to ensure api/static/assets exists before uvicorn starts
+  echo "⚙️  Initial build..."
+  npm run build
+  cd "$SCRIPT_DIR"
+
+  fuser -k "${API_PORT}/tcp" 2>/dev/null || true
+  sleep 0.5
+
+  uvicorn api.main:app --port "$API_PORT" --host 0.0.0.0 &
+  BACKEND_PID=$!
+
+  trap 'kill "$BACKEND_PID" 2>/dev/null; kill "$WATCH_PID" 2>/dev/null' EXIT
+
+  cd "$SCRIPT_DIR/ui"
+  npx vite build --watch &
+  WATCH_PID=$!
+
+  echo "  Backend : http://localhost:$API_PORT"
+  echo "  Frontend: http://localhost:$API_PORT  (refresh sau khi save)"
+  wait "$WATCH_PID"
+  exit 0
+fi
 
 # ── Production mode ───────────────────────────────────────────────────────────
 if [[ "$*" == *"--prod"* ]]; then

@@ -4,6 +4,7 @@ import {
   Button,
   DatePicker,
   Divider,
+  Modal,
   Progress,
   Segmented,
   Select,
@@ -12,10 +13,14 @@ import {
   Tooltip,
   Typography,
 } from 'antd'
-import { FilterOutlined, ReloadOutlined, UserOutlined } from '@ant-design/icons'
+import { BarChartOutlined, FilterOutlined, ReloadOutlined, UserOutlined } from '@ant-design/icons'
 import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 import dayjs, { type Dayjs } from 'dayjs'
+import {
+  LineChart, Line, XAxis, YAxis, CartesianGrid,
+  Tooltip as RTooltip, Legend, ResponsiveContainer,
+} from 'recharts'
 import { fetchAgents, fetchStats } from '../api'
 import type { Stats } from '../types'
 
@@ -44,6 +49,86 @@ const PRESETS: { label: string; range: () => [Dayjs, Dayjs] }[] = [
   { label: 'Tháng trước',range: () => [dayjs().subtract(1,'month').startOf('month'), dayjs().subtract(1,'month').endOf('month')] },
 ]
 
+const APP_COLOR: Record<string, string> = { SearchPie: '#7c3aed', DECO: '#0e7490' }
+
+// ── Trend Modal ───────────────────────────────────────────────────────────────
+
+interface TrendPoint { date: string; [app: string]: number | string }
+
+function AgentTrendModal({ agent, name, onClose }: { agent: string; name: string; onClose: () => void }) {
+  const [groupBy, setGroupBy] = useState<'day'|'month'|'year'>('month')
+  const [range, setRange] = useState<[Dayjs,Dayjs]|null>([dayjs().subtract(5,'month').startOf('month'), dayjs()])
+
+  const dateFrom = range?.[0]?.format('YYYY-MM-DD') || ''
+  const dateTo   = range?.[1]?.format('YYYY-MM-DD') || ''
+
+  const { data, isLoading } = useQuery({
+    queryKey: ['review-trend', agent, groupBy, dateFrom, dateTo],
+    queryFn: async () => {
+      const params = new URLSearchParams({ agent, group_by: groupBy })
+      if (dateFrom) params.set('date_from', dateFrom)
+      if (dateTo)   params.set('date_to', dateTo)
+      return (await http.get(`/review-trend?${params}`)).data as { data: TrendPoint[]; apps: string[] }
+    },
+    staleTime: 60_000,
+    enabled: !!agent,
+  })
+
+  const apps = data?.apps || []
+  const chartData = data?.data || []
+
+  return (
+    <Modal
+      title={<span>Trend reviews — <strong>{name}</strong></span>}
+      open onCancel={onClose} footer={null} width={700}
+    >
+      {/* Controls */}
+      <div style={{ display:'flex', gap:16, alignItems:'flex-end', marginBottom:16, flexWrap:'wrap' }}>
+        <div>
+          <Typography.Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>KHOẢNG NGÀY</Typography.Text>
+          <DatePicker.RangePicker size="small" format="DD/MM/YYYY" value={range}
+            onChange={v => setRange(v as [Dayjs,Dayjs]|null)} style={{ width:220 }} allowClear />
+        </div>
+        <div>
+          <Typography.Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>NHÓM THEO</Typography.Text>
+          <Segmented size="small" value={groupBy} onChange={v => setGroupBy(v as 'day'|'month'|'year')}
+            options={[
+              { label:'Ngày',   value:'day'   },
+              { label:'Tháng',  value:'month' },
+              { label:'Năm',    value:'year'  },
+            ]}
+          />
+        </div>
+      </div>
+
+      {/* Chart */}
+      {isLoading ? (
+        <div style={{ height:280, display:'flex', alignItems:'center', justifyContent:'center', color:'#94a3b8' }}>Đang tải…</div>
+      ) : chartData.length === 0 ? (
+        <div style={{ height:280, display:'flex', alignItems:'center', justifyContent:'center', color:'#94a3b8' }}>Không có dữ liệu</div>
+      ) : (
+        <ResponsiveContainer width="100%" height={280}>
+          <LineChart data={chartData} margin={{ top:4, right:12, left:-10, bottom:4 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
+            <XAxis dataKey="date" tick={{ fontSize:11 }} />
+            <YAxis allowDecimals={false} tick={{ fontSize:11 }} />
+            <RTooltip contentStyle={{ fontSize:12 }} />
+            <Legend iconType="circle" wrapperStyle={{ fontSize:12 }} />
+            {apps.map(a => (
+              <Line key={a} type="monotone" dataKey={a}
+                stroke={APP_COLOR[a] || '#6366f1'}
+                strokeWidth={2} dot={{ r:3 }} activeDot={{ r:5 }}
+              />
+            ))}
+          </LineChart>
+        </ResponsiveContainer>
+      )}
+    </Modal>
+  )
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
 function sc(v: number | null) {
   if (v == null) return '#bbb'
   if (v >= 9)   return '#22c55e'
@@ -71,6 +156,7 @@ export default function AgentStatsTab() {
   const [local, setLocal] = useState<Params>(DEFAULT_PARAMS)
   const [applied, setApplied] = useState<Params>(DEFAULT_PARAMS)
   const [dateValue, setDateValue] = useState<[Dayjs, Dayjs] | null>(null)
+  const [trendAgent, setTrendAgent] = useState<{ email: string; name: string } | null>(null)
 
   const { data: agents = [] } = useQuery({
     queryKey: ['agents', local.app],
@@ -187,6 +273,20 @@ export default function AgentStatsTab() {
           />
         </div>
       ),
+    },
+    {
+      title: '', key: 'trend', width: 40,
+      render: (_: unknown, row: AgentRow) => {
+        const u = agentMap[row.agent]
+        const name = u ? (u.nickname?.trim() || u.name) : row.agent
+        return (
+          <Tooltip title="Xem trend reviews">
+            <Button size="small" type="text" icon={<BarChartOutlined />}
+              style={{ color: '#6366f1' }}
+              onClick={() => setTrendAgent({ email: row.agent, name })} />
+          </Tooltip>
+        )
+      },
     },
   ]
 
@@ -330,6 +430,14 @@ export default function AgentStatsTab() {
           rowClassName={() => 'agent-row'}
         />
       </div>
+
+      {trendAgent && (
+        <AgentTrendModal
+          agent={trendAgent.email}
+          name={trendAgent.name}
+          onClose={() => setTrendAgent(null)}
+        />
+      )}
     </div>
   )
 }

@@ -9,6 +9,8 @@ import QATable from './components/QATable'
 import AgentStatsTab from './components/AgentStatsTab'
 import ReviewPerformance from './pages/ReviewPerformance'
 import ReviewStats from './pages/ReviewStats'
+import Analytics from './pages/Analytics'
+import UserAnalysis from './pages/UserAnalysis'
 import UserManagement from './pages/UserManagement'
 import LoginPage from './pages/LoginPage'
 import { AuthProvider, useAuth } from './context/AuthContext'
@@ -257,6 +259,16 @@ function Dashboard() {
               key: 'review-stats',
               label: <span style={{ fontWeight: 600 }}>📈 Review Stats</span>,
               children: <ReviewStats />,
+            }] : []),
+            ...(canManageUsers ? [{
+              key: 'analytics',
+              label: <span style={{ fontWeight: 600 }}>📊 Analytics</span>,
+              children: <Analytics />,
+            }] : []),
+            ...(canManageUsers ? [{
+              key: 'analysis',
+              label: <span style={{ fontWeight: 600 }}>👤 User Analysis</span>,
+              children: <UserAnalysis />,
             }] : []),
             ...(canManageUsers ? [{
               key: 'users',

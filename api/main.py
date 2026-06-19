@@ -97,8 +97,9 @@ from api.auth import router as auth_router, get_current_user, require_admin, req
 app.include_router(auth_router)
 
 # Mount /assets early (sub-app, path-prefix matched before routes)
-if os.path.isdir(_STATIC_DIR):
-    app.mount("/assets", StaticFiles(directory=os.path.join(_STATIC_DIR, "assets")), name="assets")
+_ASSETS_DIR = os.path.join(_STATIC_DIR, "assets")
+os.makedirs(_ASSETS_DIR, exist_ok=True)
+app.mount("/assets", StaticFiles(directory=_ASSETS_DIR), name="assets")
 
 
 # ---------------------------------------------------------------------------
@@ -714,8 +715,9 @@ def sync_crisp_agents_endpoint():
 # ---------------------------------------------------------------------------
 
 class ReviewBody(BaseModel):
-    status:        str = "Live"
     star:          str = "5"
+    package:       str = ""
+    app:           str = ""
     review_date:   str = ""
     customer_name: str = ""
     link:          str = ""
@@ -724,10 +726,29 @@ class ReviewBody(BaseModel):
     cs1:           str = ""
     cs2:           str = ""
     tech:          str = ""
-    count:         int = 1
-    point:         float = 1.0
-    he_so:         int = 1
     notes:         str = ""
+
+
+class ReviewUpdateBody(BaseModel):
+    status:        str = "Pending"
+    star:          str = "5"
+    package:       str = ""
+    app:           str = ""
+    review_date:   str = ""
+    customer_name: str = ""
+    link:          str = ""
+    app_plan:      str = "Free"
+    mentioned:     str = ""
+    cs1:           str = ""
+    cs2:           str = ""
+    tech:          str = ""
+    notes:         str = ""
+
+
+class ReviewScoreBody(BaseModel):
+    count: int   = 1
+    point: float = 0.0
+    he_so: int   = 1
 
 
 class ReviewRequestBody(BaseModel):
@@ -752,15 +773,29 @@ def create_review(body: ReviewBody, user: dict = Depends(get_current_user)):
 
 
 @app.put("/api/reviews/{review_id}")
-def update_review(review_id: str, body: ReviewBody, user: dict = Depends(get_current_user)):
+def update_review(review_id: str, body: ReviewUpdateBody, user: dict = Depends(get_current_user)):
     from database.reviews import update_review as _update, get_review
     review = get_review(review_id)
     if not review:
         raise HTTPException(404, "Review not found")
-    if user["role"] in ("admin", "manager"):
-        _update(review_id, body.model_dump())
-        return get_review(review_id)
-    raise HTTPException(403, "Use /api/reviews/{id}/request to propose changes")
+    data = body.model_dump()
+    if user["role"] not in ("admin", "manager"):
+        data.pop("status", None)  # support cannot change status
+        raise HTTPException(403, "Use /api/reviews/{id}/request to propose changes")
+    _update(review_id, data)
+    cache_clear()
+    return get_review(review_id)
+
+
+@app.patch("/api/reviews/{review_id}/score")
+def update_review_score(review_id: str, body: ReviewScoreBody,
+                        user: dict = Depends(require_manager_or_admin)):
+    from database.reviews import update_score, get_review
+    if not get_review(review_id):
+        raise HTTPException(404, "Review not found")
+    update_score(review_id, body.count, body.point, body.he_so)
+    cache_clear()
+    return get_review(review_id)
 
 
 @app.delete("/api/reviews/{review_id}")
@@ -836,9 +871,10 @@ def reject_review_request(req_id: str, body: HandleRequestBody = HandleRequestBo
 def review_stats(
     date_from: str = Query(""),
     date_to:   str = Query(""),
+    app_name:  str = Query("", alias="app"),
     user:      dict = Depends(get_current_user),
 ):
-    """Aggregate review points per agent.
+    """Aggregate review points per agent (Live reviews only).
     - admin/manager: all agents
     - support: own stats only
     """
@@ -847,7 +883,9 @@ def review_stats(
     db  = _gdb()
     col = db["qa_reviews"]
 
-    query: dict[str, Any] = {}
+    query: dict[str, Any] = {"status": "Live"}
+    if app_name:
+        query["app"] = app_name
     if date_from and date_to:
         query["review_date"] = {"$gte": date_from, "$lte": date_to}
     elif date_from:
@@ -913,6 +951,324 @@ def review_stats(
         return [own]
 
     return sorted(stats.values(), key=lambda x: -x["total_point"])
+
+
+# ---------------------------------------------------------------------------
+# Routes — QA Score Trend (per-agent, grouped by time)
+# ---------------------------------------------------------------------------
+
+@app.get("/api/qa-score-trend")
+def qa_score_trend(
+    agent:     str = Query(""),
+    group_by:  str = Query("month"),   # day | month | year
+    date_from: str = Query(""),
+    date_to:   str = Query(""),
+    app_filter: str = Query("", alias="app"),
+    user:      dict = Depends(get_current_user),
+):
+    from collections import defaultdict
+    slice_len = {"day": 10, "month": 7, "year": 4}.get(group_by, 7)
+
+    col_names = [_app_to_col(app_filter)] if app_filter else list(ALL_GRADING_COLLECTIONS)
+    col_names = [n for n in col_names if n]
+
+    query: dict[str, Any] = {}
+    if agent:
+        query["primary_operator"] = agent
+    if date_from and date_to:
+        query["date"] = {"$gte": date_from, "$lte": date_to}
+    elif date_from:
+        query["date"] = {"$gte": date_from}
+    elif date_to:
+        query["date"] = {"$lte": date_to}
+
+    db = get_db()
+    buckets: dict[str, list[float]] = defaultdict(list)
+    for col_name in col_names:
+        for doc in db[col_name].find(query, {"date": 1, "grading.final_score_10": 1}):
+            bucket = (doc.get("date") or "")[:slice_len]
+            if not bucket:
+                continue
+            score = doc.get("grading", {}).get("final_score_10")
+            if score is not None:
+                buckets[bucket].append(float(score))
+
+    result = sorted([
+        {
+            "date":      b,
+            "avg_score": round(sum(scores) / len(scores), 2),
+            "count":     len(scores),
+        }
+        for b, scores in buckets.items()
+    ], key=lambda x: x["date"])
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Routes — Review Trend (per-agent, grouped by time + app)
+# ---------------------------------------------------------------------------
+
+@app.get("/api/review-trend")
+def review_trend(
+    agent:     str = Query(""),
+    group_by:  str = Query("month"),   # day | month | year
+    date_from: str = Query(""),
+    date_to:   str = Query(""),
+    app_name:  str = Query("", alias="app"),
+    user:      dict = Depends(get_current_user),
+):
+    from database.connection import get_db as _gdb
+    from database.reviews import APP_OPTIONS
+
+    db  = _gdb()
+    col = db["qa_reviews"]
+
+    # Slice length for grouping
+    slice_len = {"day": 10, "month": 7, "year": 4}.get(group_by, 7)
+
+    match: dict[str, Any] = {"status": "Live"}
+    if app_name:
+        match["app"] = app_name
+    if date_from and date_to:
+        match["review_date"] = {"$gte": date_from, "$lte": date_to}
+    elif date_from:
+        match["review_date"] = {"$gte": date_from}
+    elif date_to:
+        match["review_date"] = {"$lte": date_to}
+    if agent:
+        match["$or"] = [
+            {"mentioned": agent}, {"cs1": agent}, {"cs2": agent}, {"tech": agent}
+        ]
+
+    pipeline = [
+        {"$match": match},
+        {"$addFields": {
+            "bucket": {"$substrCP": ["$review_date", 0, slice_len]},
+            "app_key": {"$ifNull": ["$app", ""]},
+        }},
+        {"$group": {
+            "_id": {"date": "$bucket", "app": "$app_key"},
+            "count": {"$sum": 1},
+            "point": {"$sum": "$point"},
+        }},
+        {"$sort": {"_id.date": 1}},
+    ]
+
+    raw = list(col.aggregate(pipeline))
+
+    # Collect all dates and apps, then pivot
+    all_dates: list[str] = sorted({r["_id"]["date"] for r in raw if r["_id"]["date"]})
+    all_apps  = APP_OPTIONS  # fixed order
+
+    # Build {date: {app: count}}
+    pivot: dict[str, dict[str, int]] = {d: {a: 0 for a in all_apps} for d in all_dates}
+    for r in raw:
+        d = r["_id"]["date"]
+        a = r["_id"]["app"]
+        if d in pivot and a in all_apps:
+            pivot[d][a] = r["count"]
+
+    result = [{"date": d, **pivot[d]} for d in all_dates]
+    return {"data": result, "apps": all_apps}
+
+
+# ---------------------------------------------------------------------------
+# Routes — Analytics overview (Crisp-style)
+# ---------------------------------------------------------------------------
+
+@app.get("/api/analytics", dependencies=[Depends(require_manager_or_admin)])
+def get_analytics(
+    app_filter: str = Query("", alias="app"),
+    date_from:  str = Query(""),
+    date_to:    str = Query(""),
+    group_by:   str = Query("day"),   # day | month | year
+):
+    from collections import defaultdict
+
+    slice_len = {"day": 10, "month": 7, "year": 4}.get(group_by, 10)
+
+    col_names = [_app_to_col(app_filter)] if app_filter else list(ALL_GRADING_COLLECTIONS)
+    col_names = [n for n in col_names if n]
+
+    query: dict[str, Any] = {}
+    if date_from and date_to:
+        query["date"] = {"$gte": date_from, "$lte": date_to}
+    elif date_from:
+        query["date"] = {"$gte": date_from}
+    elif date_to:
+        query["date"] = {"$lte": date_to}
+
+    db = get_db()
+    projection = {"date": 1, "grading.final_score_10": 1, "primary_operator": 1, "app": 1}
+    all_docs: list[dict] = []
+    for col_name in col_names:
+        all_docs.extend(db[col_name].find(query, projection))
+
+    APP_KEYS = ["DECO", "SearchPie"]
+    DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+    # ── Time series ──────────────────────────────────────────────────────────
+    ts_map: dict[str, dict] = {}
+    for doc in all_docs:
+        bucket = (doc.get("date") or "")[:slice_len]
+        if not bucket:
+            continue
+        if bucket not in ts_map:
+            ts_map[bucket] = {"total": 0, "scores": [], **{ak: 0 for ak in APP_KEYS}, **{f"_s_{ak}": [] for ak in APP_KEYS}}
+        score = doc.get("grading", {}).get("final_score_10")
+        ak = doc.get("app") or ""
+        ts_map[bucket]["total"] += 1
+        if ak in APP_KEYS:
+            ts_map[bucket][ak] += 1
+            if score is not None:
+                ts_map[bucket][f"_s_{ak}"].append(score)
+        if score is not None:
+            ts_map[bucket]["scores"].append(score)
+
+    time_series = []
+    for bucket in sorted(ts_map.keys()):
+        d = ts_map[bucket]
+        entry: dict[str, Any] = {
+            "date": bucket,
+            "total": d["total"],
+            "avg_score": round(sum(d["scores"]) / len(d["scores"]), 2) if d["scores"] else None,
+        }
+        for ak in APP_KEYS:
+            entry[ak] = d[ak]
+            s = d[f"_s_{ak}"]
+            entry[f"avg_{ak}"] = round(sum(s) / len(s), 2) if s else None
+        time_series.append(entry)
+
+    # ── By agent ─────────────────────────────────────────────────────────────
+    agent_map: dict[str, dict] = {}
+    for doc in all_docs:
+        ag = doc.get("primary_operator") or "Unknown"
+        score = doc.get("grading", {}).get("final_score_10")
+        ak = doc.get("app") or ""
+        if ag not in agent_map:
+            agent_map[ag] = {"count": 0, "scores": [], **{ak2: 0 for ak2 in APP_KEYS}}
+        agent_map[ag]["count"] += 1
+        if ak in APP_KEYS:
+            agent_map[ag][ak] += 1
+        if score is not None:
+            agent_map[ag]["scores"].append(score)
+
+    by_agent = sorted([
+        {
+            "agent": a,
+            "count": v["count"],
+            "avg_score": round(sum(v["scores"]) / len(v["scores"]), 2) if v["scores"] else None,
+            **{ak: v[ak] for ak in APP_KEYS},
+        }
+        for a, v in agent_map.items()
+    ], key=lambda x: -x["count"])
+
+    # ── Day of week ──────────────────────────────────────────────────────────
+    dow_map: dict[str, dict] = {d: {"count": 0, **{ak: 0 for ak in APP_KEYS}} for d in DAY_NAMES}
+    for doc in all_docs:
+        date_str = (doc.get("date") or "")[:10]
+        try:
+            idx = datetime.strptime(date_str, "%Y-%m-%d").weekday()
+            day_name = DAY_NAMES[idx]
+        except (ValueError, IndexError):
+            continue
+        ak = doc.get("app") or ""
+        dow_map[day_name]["count"] += 1
+        if ak in APP_KEYS:
+            dow_map[day_name][ak] += 1
+
+    by_day_of_week = [{"day": d, **dow_map[d]} for d in DAY_NAMES]
+
+    # ── Score distribution ────────────────────────────────────────────────────
+    SCORE_BUCKETS = [("0–4", 0, 4), ("4–6", 4, 6), ("6–7", 6, 7), ("7–8", 7, 8), ("8–9", 8, 9), ("9–10", 9, 11)]
+    sdist: dict[str, dict] = {label: {"count": 0, **{ak: 0 for ak in APP_KEYS}} for label, _, _ in SCORE_BUCKETS}
+    for doc in all_docs:
+        score = doc.get("grading", {}).get("final_score_10")
+        if score is None:
+            continue
+        ak = doc.get("app") or ""
+        for label, lo, hi in SCORE_BUCKETS:
+            if lo <= score < hi:
+                sdist[label]["count"] += 1
+                if ak in APP_KEYS:
+                    sdist[label][ak] += 1
+                break
+
+    score_distribution = [{"range": label, **sdist[label]} for label, _, _ in SCORE_BUCKETS]
+
+    # ── App totals ────────────────────────────────────────────────────────────
+    by_app: dict[str, int] = {ak: 0 for ak in APP_KEYS}
+    all_scores: list[float] = []
+    for doc in all_docs:
+        ak = doc.get("app") or ""
+        if ak in APP_KEYS:
+            by_app[ak] += 1
+        sc = doc.get("grading", {}).get("final_score_10")
+        if sc is not None:
+            all_scores.append(sc)
+
+    return {
+        "total": len(all_docs),
+        "avg_score": round(sum(all_scores) / len(all_scores), 2) if all_scores else None,
+        "by_app": by_app,
+        "time_series": time_series,
+        "by_agent": by_agent,
+        "by_day_of_week": by_day_of_week,
+        "score_distribution": score_distribution,
+    }
+
+
+# ---------------------------------------------------------------------------
+# Routes — Day × Hour heatmap  (uses sumtag.end_session timestamps)
+# ---------------------------------------------------------------------------
+
+@app.get("/api/heatmap", dependencies=[Depends(require_manager_or_admin)])
+def get_heatmap(
+    app_filter: str = Query("", alias="app"),
+    date_from:  str = Query(""),
+    date_to:    str = Query(""),
+):
+    from datetime import datetime as _dt
+
+    db = get_db()
+
+    # Date filter on sumtag.crawl_date
+    sumtag_q: dict[str, Any] = {"end_session": {"$ne": None}}
+    if date_from and date_to:
+        sumtag_q["crawl_date"] = {"$gte": date_from, "$lte": date_to}
+    elif date_from:
+        sumtag_q["crawl_date"] = {"$gte": date_from}
+    elif date_to:
+        sumtag_q["crawl_date"] = {"$lte": date_to}
+
+    # App filter: join via session_id from grading collection
+    if app_filter:
+        col_name = _app_to_col(app_filter)
+        if col_name:
+            grading_q: dict[str, Any] = {}
+            if date_from and date_to:
+                grading_q["date"] = {"$gte": date_from, "$lte": date_to}
+            elif date_from:
+                grading_q["date"] = {"$gte": date_from}
+            elif date_to:
+                grading_q["date"] = {"$lte": date_to}
+            grading_ids = db[col_name].distinct("session_id", grading_q)
+            if not grading_ids:
+                return {"grid": [[0] * 24 for _ in range(7)], "total": 0}
+            sumtag_q["session_id"] = {"$in": grading_ids}
+
+    docs = list(db["sumtag"].find(sumtag_q, {"end_session": 1}))
+
+    grid = [[0] * 24 for _ in range(7)]   # grid[day 0=Mon][hour 0-23]
+    for doc in docs:
+        es = doc.get("end_session") or ""
+        try:
+            dt = _dt.strptime(str(es)[:19], "%Y-%m-%d %H:%M:%S")
+            grid[dt.weekday()][dt.hour] += 1
+        except (ValueError, TypeError):
+            continue
+
+    return {"grid": grid, "total": sum(c for row in grid for c in row)}
 
 
 # ---------------------------------------------------------------------------

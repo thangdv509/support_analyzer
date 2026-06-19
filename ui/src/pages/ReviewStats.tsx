@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import {
-  Avatar, Button, DatePicker, Divider, Progress, Table, Tag, Typography,
+  Avatar, Button, DatePicker, Divider, Progress, Segmented, Table, Tag, Typography,
 } from 'antd'
 import { FilterOutlined, ReloadOutlined, UserOutlined } from '@ant-design/icons'
 import { useQuery } from '@tanstack/react-query'
@@ -21,10 +21,14 @@ interface AgentStat {
 
 interface UserInfo { email: string; name: string; nickname: string; picture: string }
 
-async function fetchReviewStats(dateFrom='', dateTo=''): Promise<AgentStat[]> {
+const APP_OPTIONS = ['SearchPie', 'DECO']
+const APP_COLOR: Record<string,string> = { SearchPie: '#7c3aed', DECO: '#0e7490' }
+
+async function fetchReviewStats(dateFrom='', dateTo='', appName=''): Promise<AgentStat[]> {
   const params = new URLSearchParams()
   if (dateFrom) params.set('date_from', dateFrom)
   if (dateTo)   params.set('date_to',   dateTo)
+  if (appName)  params.set('app', appName)
   return (await http.get(`/review-stats?${params}`)).data
 }
 
@@ -51,12 +55,13 @@ function pointColor(v: number) {
 export default function ReviewStats() {
   const [dateFrom, setDateFrom] = useState('')
   const [dateTo,   setDateTo]   = useState('')
+  const [appName,  setAppName]  = useState('')
   const [dateVal,  setDateVal]  = useState<[Dayjs,Dayjs]|null>(null)
-  const [applied,  setApplied]  = useState({ dateFrom:'', dateTo:'' })
+  const [applied,  setApplied]  = useState({ dateFrom:'', dateTo:'', appName:'' })
 
   const { data: rows = [], isLoading } = useQuery({
-    queryKey: ['review-stats', applied.dateFrom, applied.dateTo],
-    queryFn: () => fetchReviewStats(applied.dateFrom, applied.dateTo),
+    queryKey: ['review-stats', applied.dateFrom, applied.dateTo, applied.appName],
+    queryFn: () => fetchReviewStats(applied.dateFrom, applied.dateTo, applied.appName),
     staleTime: 60_000,
   })
 
@@ -190,12 +195,29 @@ export default function ReviewStats() {
 
         <Divider type="vertical" style={{ height:44, margin:'0 4px' }} />
 
+        {/* App */}
+        <div>
+          <Typography.Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>APP</Typography.Text>
+          <Segmented size="small" value={appName||'__all__'}
+            onChange={v => setAppName(v==='__all__'?'':String(v))}
+            options={[
+              { label:'All', value:'__all__' },
+              ...APP_OPTIONS.map(a=>({
+                label: <span style={{ color:APP_COLOR[a], fontWeight:600 }}>{a}</span>,
+                value: a,
+              }))
+            ]}
+          />
+        </div>
+
+        <Divider type="vertical" style={{ height:44, margin:'0 4px' }} />
+
         <div style={{ display:'flex', gap:8, alignItems:'flex-end' }}>
           <Button type="primary" size="small" icon={<FilterOutlined />}
-            onClick={() => setApplied({ dateFrom, dateTo })}>
+            onClick={() => setApplied({ dateFrom, dateTo, appName })}>
             Xem
           </Button>
-          <Button size="small" icon={<ReloadOutlined />} onClick={() => { setDate(null); setApplied({ dateFrom:'', dateTo:'' }) }}>
+          <Button size="small" icon={<ReloadOutlined />} onClick={() => { setDate(null); setAppName(''); setApplied({ dateFrom:'', dateTo:'', appName:'' }) }}>
             Reset
           </Button>
         </div>

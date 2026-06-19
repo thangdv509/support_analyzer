@@ -28,9 +28,13 @@ const { RangePicker } = DatePicker
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const STAR_OPTIONS   = ['5','GSC package','SEO Map Package','GMC Package','VIP Scan','Upgrade','Plus','Vip AI','Speed Plan']
-const STATUS_OPTIONS = ['Live','Pending']
-const PLAN_OPTIONS   = ['Free','Paid']
+const STAR_RATINGS    = ['1','2','3','4','5']
+const PACKAGE_OPTIONS = ['GSC package','SEO Map Package','GMC Package','VIP Scan','Upgrade','Plus','Vip AI','Speed Plan']
+const APP_OPTIONS     = ['SearchPie','DECO']
+const STATUS_OPTIONS  = ['Live','Pending']
+const PLAN_OPTIONS    = ['Free','Paid']
+
+const APP_COLOR: Record<string,string> = { SearchPie: '#7c3aed', DECO: '#0e7490' }
 
 const STATUS_COLOR: Record<string,string> = { Live: '#16a34a', Pending: '#f59e0b' }
 const PLAN_COLOR:   Record<string,string>  = { Free: '#475569', Paid: '#6366f1' }
@@ -49,7 +53,7 @@ const DATE_PRESETS: { label: string; range: () => [Dayjs,Dayjs] }[] = [
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 interface Review {
-  id: string; status: string; star: string; review_date: string
+  id: string; seq?: number; status: string; star: string; package: string; app: string; review_date: string
   customer_name: string; link: string; app_plan: string
   mentioned: string; cs1: string; cs2: string; tech: string
   count: number; point: number; he_so: number; notes: string; created_by: string
@@ -62,7 +66,7 @@ interface ReviewRequest {
 }
 
 interface Filters {
-  status: string; plan: string; star: string; agent: string
+  status: string; plan: string; star: string; pkg: string; app: string; agent: string
   dateFrom: string; dateTo: string; dateRange: [Dayjs,Dayjs] | null
 }
 
@@ -79,6 +83,7 @@ const buildUserMap  = (users: UserInfo[]): Record<string,string> =>
 const fetchReviews    = async (): Promise<Review[]>     => (await http.get('/reviews')).data
 const createReview    = async (d: object): Promise<Review> => (await http.post('/reviews', d)).data
 const updateReview    = async (id: string, d: object)   => (await http.put(`/reviews/${id}`, d)).data
+const updateScore     = async (id: string, d: object)   => (await http.patch(`/reviews/${id}/score`, d)).data
 const deleteReview    = async (id: string)              => { await http.delete(`/reviews/${id}`) }
 const submitRequest   = async (id: string, action: string, body: object) =>
   (await http.post(`/reviews/${id}/request?action=${action}`, body)).data
@@ -99,6 +104,8 @@ function applyFilters(rows: Review[], f: Filters, userMap: Record<string,string>
     if (f.status   && r.status   !== f.status)   return false
     if (f.plan     && r.app_plan !== f.plan)      return false
     if (f.star     && r.star     !== f.star)      return false
+    if (f.pkg      && r.package  !== f.pkg)       return false
+    if (f.app      && r.app      !== f.app)       return false
     if (f.dateFrom && r.review_date < f.dateFrom) return false
     if (f.dateTo   && r.review_date > f.dateTo)   return false
     if (f.agent) {
@@ -165,12 +172,12 @@ function PointCell({ value }: ICellRendererParams) {
 
 // ── Filter Bar ────────────────────────────────────────────────────────────────
 
-const EMPTY: Filters = { status:'', plan:'', star:'', agent:'', dateFrom:'', dateTo:'', dateRange:null }
+const EMPTY: Filters = { status:'', plan:'', star:'', pkg:'', app:'', agent:'', dateFrom:'', dateTo:'', dateRange:null }
 
 function ReviewFilterBar({ value, onChange, showAgent }: { value: Filters; onChange: (f:Filters)=>void; showAgent: boolean }) {
   const set = (patch: Partial<Filters>) => onChange({ ...value, ...patch })
 
-  const activeCount = [value.status, value.plan, value.star, value.agent, value.dateFrom].filter(Boolean).length
+  const activeCount = [value.status, value.plan, value.star, value.pkg, value.app, value.agent, value.dateFrom].filter(Boolean).length
 
   return (
     <div style={{
@@ -219,10 +226,35 @@ function ReviewFilterBar({ value, onChange, showAgent }: { value: Filters; onCha
 
       {/* Star */}
       <div>
-        <Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>STAR / PACKAGE</Text>
-        <Select size="small" style={{ width:150 }} value={value.star||undefined}
+        <Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>STAR</Text>
+        <Select size="small" style={{ width:100 }} value={value.star||undefined}
           placeholder="All" allowClear onChange={v => set({ star:v??'' })}
-          options={STAR_OPTIONS.map(s=>({ label:s, value:s }))} />
+          options={STAR_RATINGS.map(s=>({ label:`${'⭐'.repeat(Number(s))}`, value:s }))} />
+      </div>
+
+      <Divider type="vertical" style={{ height:44, margin:'0 4px' }} />
+
+      {/* Package */}
+      <div>
+        <Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>PACKAGE</Text>
+        <Select size="small" style={{ width:150 }} value={(value as Filters & { pkg?: string }).pkg||undefined}
+          placeholder="All" allowClear onChange={v => set({ ...value, pkg: v??'' } as Filters)}
+          options={PACKAGE_OPTIONS.map(s=>({ label:s, value:s }))} />
+      </div>
+
+      <Divider type="vertical" style={{ height:44, margin:'0 4px' }} />
+
+      {/* App */}
+      <div>
+        <Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>APP</Text>
+        <Segmented size="small" value={value.app||'__all__'}
+          onChange={v => set({ app: v==='__all__'?'':String(v) })}
+          options={[
+            { label:'All', value:'__all__' },
+            { label:<span style={{ color:APP_COLOR['SearchPie'], fontWeight:600 }}>SearchPie</span>, value:'SearchPie' },
+            { label:<span style={{ color:APP_COLOR['DECO'], fontWeight:600 }}>DECO</span>, value:'DECO' },
+          ]}
+        />
       </div>
 
       {/* Agent — manager/admin only */}
@@ -250,33 +282,44 @@ function ReviewFilterBar({ value, onChange, showAgent }: { value: Filters; onCha
 
 // ── Review Form ───────────────────────────────────────────────────────────────
 
-function ReviewForm({ form, users }: { form: ReturnType<typeof Form.useForm>[0]; users: UserInfo[] }) {
+function ReviewForm({
+  form, users, isEdit = false, isManager = false,
+}: {
+  form: ReturnType<typeof Form.useForm>[0]
+  users: UserInfo[]
+  isEdit?: boolean
+  isManager?: boolean
+}) {
   const agentOptions = users.map(u => ({
     label: u.nickname?.trim() || u.name,
     value: u.email,
   }))
 
-  // Watch relevant fields to auto-calculate point & he_so for 5-star reviews
-  const star      = Form.useWatch('star',     form)
-  const plan      = Form.useWatch('app_plan', form)
-  const mentioned = Form.useWatch('mentioned',form)
-
-  const isFiveStar = star === '5'
-  const autoHeSo   = isFiveStar ? (mentioned ? 2 : 1) : null
-  const autoPoint  = isFiveStar ? (plan === 'Paid' ? 6 : 1) * (mentioned ? 2 : 1) : null
-
-  // Sync calculated values into form when dependencies change
-  if (isFiveStar) {
-    form.setFieldsValue({ he_so: autoHeSo, point: autoPoint })
-  }
-
   return (
     <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0 16px' }}>
-      <Form.Item name="status" label="Status" rules={[{ required:true }]} initialValue="Live">
-        <Select options={STATUS_OPTIONS.map(s=>({ label:s, value:s }))} />
+      {/* Status — edit mode only, manager/admin only */}
+      {isEdit && isManager && (
+        <Form.Item name="status" label="Status" rules={[{ required:true }]}>
+          <Select options={STATUS_OPTIONS.map(s=>({ label:s, value:s }))} />
+        </Form.Item>
+      )}
+      <Form.Item name="app" label="App" rules={[{ required:true }]}>
+        <Select
+          options={APP_OPTIONS.map(a=>({ label:a, value:a }))}
+          placeholder="Chọn app…"
+        />
       </Form.Item>
-      <Form.Item name="star" label="Star / Package" rules={[{ required:true }]} initialValue="5">
-        <Select options={STAR_OPTIONS.map(s=>({ label:s, value:s }))} />
+      <Form.Item name="star" label="Star" rules={[{ required:true }]} initialValue="5">
+        <Select
+          options={STAR_RATINGS.map(s=>({ label: '⭐'.repeat(Number(s)) + ` (${s})`, value:s }))}
+          placeholder="Chọn số sao…"
+        />
+      </Form.Item>
+      <Form.Item name="package" label="Package">
+        <Select
+          options={PACKAGE_OPTIONS.map(s=>({ label:s, value:s }))}
+          allowClear placeholder="Chọn package…"
+        />
       </Form.Item>
       <Form.Item name="review_date" label="Review date" rules={[{ required:true }]}>
         <DatePicker format="DD/MM/YYYY" style={{ width:'100%' }} />
@@ -306,25 +349,6 @@ function ReviewForm({ form, users }: { form: ReturnType<typeof Form.useForm>[0];
         <Select options={agentOptions} allowClear showSearch
           optionFilterProp="label" placeholder="Chọn agent…" />
       </Form.Item>
-      <Form.Item name="count" label="Count" initialValue={1}>
-        <InputNumber min={0} style={{ width:'100%' }} />
-      </Form.Item>
-      <Form.Item
-        name="point"
-        label={isFiveStar ? `Point (tự tính: ${autoPoint})` : 'Point'}
-        initialValue={1.0}
-      >
-        <InputNumber min={0} step={0.5} style={{ width:'100%' }}
-          disabled={isFiveStar} />
-      </Form.Item>
-      <Form.Item
-        name="he_so"
-        label={isFiveStar ? `Hệ số (tự tính: ${autoHeSo})` : 'Hệ số'}
-        initialValue={1}
-      >
-        <InputNumber min={1} style={{ width:'100%' }}
-          disabled={isFiveStar} />
-      </Form.Item>
       <Form.Item name="notes" label="Notes" style={{ gridColumn:'span 2' }}>
         <Input.TextArea rows={2} />
       </Form.Item>
@@ -332,9 +356,58 @@ function ReviewForm({ form, users }: { form: ReturnType<typeof Form.useForm>[0];
   )
 }
 
+// ── Edit Score Modal ──────────────────────────────────────────────────────────
+
+function EditScoreModal({
+  rev, onClose, onSaved,
+}: {
+  rev: Review
+  onClose: () => void
+  onSaved: () => void
+}) {
+  const [form] = Form.useForm()
+  const qc = useQueryClient()
+
+  const scoreMut = useMutation({
+    mutationFn: (vals: Record<string,unknown>) =>
+      updateScore(rev.id, { count: vals.count, point: vals.point, he_so: vals.he_so }),
+    onSuccess: () => {
+      message.success('Score updated')
+      qc.invalidateQueries({ queryKey: ['reviews'] })
+      qc.invalidateQueries({ queryKey: ['review-stats-own'] })
+      onSaved()
+    },
+    onError: () => message.error('Failed to update score'),
+  })
+
+  return (
+    <Modal
+      title={`Edit Score — ${rev.customer_name || rev.id.slice(-6)}`}
+      open onCancel={onClose}
+      onOk={() => form.submit()} confirmLoading={scoreMut.isPending}
+      okText="Save" width={400}
+    >
+      <Form form={form} layout="vertical" initialValues={{ count: rev.count, point: rev.point, he_so: rev.he_so }}
+        onFinish={v => scoreMut.mutate(v as Record<string,unknown>)}>
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:'0 16px' }}>
+          <Form.Item name="count" label="Count" rules={[{ required:true }]}>
+            <InputNumber min={0} style={{ width:'100%' }} />
+          </Form.Item>
+          <Form.Item name="point" label="Point" rules={[{ required:true }]}>
+            <InputNumber min={0} step={0.5} style={{ width:'100%' }} />
+          </Form.Item>
+          <Form.Item name="he_so" label="Hệ số" rules={[{ required:true }]}>
+            <InputNumber min={1} style={{ width:'100%' }} />
+          </Form.Item>
+        </div>
+      </Form>
+    </Modal>
+  )
+}
+
 // ── Pending Requests Panel ────────────────────────────────────────────────────
 
-function RequestsPanel() {
+function RequestsPanel({ reviewSeqMap }: { reviewSeqMap: Record<string, number> }) {
   const qc = useQueryClient()
   const [noteMap, setNoteMap] = useState<Record<string,string>>({})
   const { data:requests=[], isLoading } = useQuery({ queryKey:['review-requests','pending'], queryFn:()=>fetchRequests('pending'), staleTime:15_000 })
@@ -359,7 +432,9 @@ function RequestsPanel() {
         <div key={req.id} style={{ background:'#fff', border:'1px solid #e2e8f0', borderRadius:10, padding:'12px 16px', marginBottom:10 }}>
           <div style={{ display:'flex', alignItems:'center', gap:10, marginBottom:8 }}>
             <Tag color={req.action==='delete'?'error':'processing'}>{req.action==='delete'?'Delete':'Update'}</Tag>
-            <Text style={{ fontSize:12 }}>Review: <code>{req.review_id.slice(-8)}</code></Text>
+            <Text style={{ fontSize:12 }}>Review: <code style={{ background:'#f1f5f9', padding:'1px 6px', borderRadius:4 }}>
+              {reviewSeqMap[req.review_id] != null ? `#${reviewSeqMap[req.review_id]}` : `#${req.review_id.slice(-4)}`}
+            </code></Text>
             <Text type="secondary" style={{ fontSize:11 }}>by {req.requested_by}</Text>
             <Text type="secondary" style={{ fontSize:11, marginLeft:'auto' }}>{new Date(req.created_at).toLocaleDateString('vi-VN')}</Text>
           </div>
@@ -392,10 +467,11 @@ export default function ReviewPerformance() {
   const qc = useQueryClient()
   const gridRef = useRef<AgGridReact>(null)
   const [filters, setFilters]   = useState<Filters>(EMPTY)
-  const [addOpen, setAddOpen]   = useState(false)
-  const [editRev, setEditRev]   = useState<Review|null>(null)
-  const [reqRev,  setReqRev]    = useState<Review|null>(null)
-  const [reqAction,setReqAction]= useState<'update'|'delete'>('update')
+  const [addOpen,   setAddOpen]   = useState(false)
+  const [editRev,   setEditRev]   = useState<Review|null>(null)
+  const [scoreRev,  setScoreRev]  = useState<Review|null>(null)
+  const [reqRev,    setReqRev]    = useState<Review|null>(null)
+  const [reqAction, setReqAction] = useState<'update'|'delete'>('update')
   const [addForm]  = Form.useForm()
   const [editForm] = Form.useForm()
   const [reqForm]  = Form.useForm()
@@ -422,6 +498,10 @@ export default function ReviewPerformance() {
   })
 
   const reviews = useMemo(() => applyFilters(rawReviews, filters, userMap), [rawReviews, filters, userMap])
+
+  const reviewSeqMap = useMemo(() =>
+    Object.fromEntries(rawReviews.filter(r => r.seq != null).map(r => [r.id, r.seq as number])),
+  [rawReviews])
 
   // ── Mutations ────────────────────────────────────────────────────────────────
 
@@ -478,6 +558,9 @@ export default function ReviewPerformance() {
             <Tooltip title="Edit">
               <Button size="small" type="text" icon={<EditOutlined />} onClick={()=>openEdit(rev)} />
             </Tooltip>
+            <Tooltip title="Edit Score">
+              <Button size="small" type="text" icon={<FilterOutlined />} onClick={()=>setScoreRev(rev)} />
+            </Tooltip>
             <Tooltip title="Delete">
               <Button size="small" type="text" danger icon={<DeleteOutlined />}
                 onClick={()=>Modal.confirm({ title:'Delete this review?', okType:'danger', okText:'Delete', onOk:()=>deleteMut.mutate(rev.id) })} />
@@ -498,8 +581,25 @@ export default function ReviewPerformance() {
   }, [isEditor, deleteMut])
 
   const columnDefs = useMemo<ColDef[]>(()=>[
+    { field:'seq', headerName:'#', width:52, pinned:'left',
+      cellRenderer:({ value }:ICellRendererParams) =>
+        value != null
+          ? <span style={{ fontWeight:600, fontSize:12, color:'#64748b' }}>{value}</span>
+          : null,
+    },
     { field:'status',        headerName:'Status',    width:92,  pinned:'left', cellRenderer:StatusCell },
-    { field:'star',          headerName:'Star',      width:130 },
+    { field:'app',           headerName:'App',       width:100,
+      cellRenderer:({ value }:ICellRendererParams) => {
+        if (!value) return null
+        const c = APP_COLOR[value] ?? '#888'
+        return <Tag style={{ background:`${c}18`, color:c, border:`1px solid ${c}44`, fontWeight:600, fontSize:11, margin:0 }}>{value}</Tag>
+      }
+    },
+    { field:'star', headerName:'Star', width:72,
+      cellRenderer:({ value }:ICellRendererParams) => value
+        ? <span style={{ fontWeight:700, fontSize:13 }}>⭐ <span style={{ color:'#0f172a' }}>{value}</span></span>
+        : null },
+    { field:'package',       headerName:'Package',   width:140 },
     { field:'review_date',   headerName:'Date',      width:105, sort:'desc' },
     { field:'customer_name', headerName:'Customer',  width:175 },
     { field:'link',          headerName:'Link',      width:80,
@@ -511,11 +611,9 @@ export default function ReviewPerformance() {
     { field:'cs1',       headerName:'CS 1 (*)',  width:165, cellRenderer:AgentCell, cellRendererParams:{ userMap } },
     { field:'cs2',       headerName:'CS 2',      width:165, cellRenderer:AgentCell, cellRendererParams:{ userMap } },
     { field:'tech',      headerName:'Tech',      width:165, cellRenderer:AgentCell, cellRendererParams:{ userMap } },
-    { field:'count',     headerName:'Count',     width:72,  type:'numericColumn' },
     { field:'point',     headerName:'Point',     width:80,  type:'numericColumn', cellRenderer:PointCell },
-    { field:'he_so',     headerName:'Hệ số',    width:76,  type:'numericColumn' },
     { field:'notes',     headerName:'Notes',     width:230, tooltipField:'notes' },
-    { headerName:'', cellRenderer:ActionsCell, width:78, pinned:'right',
+    { headerName:'', cellRenderer:ActionsCell, width:isEditor ? 110 : 78, pinned:'right',
       sortable:false, resizable:false, suppressMovable:true },
   ], [ActionsCell, userMap])
 
@@ -601,17 +699,17 @@ export default function ReviewPerformance() {
           key:'table',
           label:'Reviews',
           children:(
-            <div className="ag-theme-quartz review-grid" style={{ height:'calc(100vh - 260px)', minHeight:400 }}>
+            <div className="review-grid" style={{ height:'calc(100vh - 260px)', minHeight:400 }}>
               <AgGridReact<Review>
                 ref={gridRef}
                 rowData={reviews}
                 columnDefs={columnDefs}
-                defaultColDef={{ resizable:true, sortable:true, cellStyle:{ fontSize:13 } }}
+                defaultColDef={{ resizable:true, sortable:true, cellStyle:{ fontSize:13 }, cellDataType:false }}
                 getRowId={(p:GetRowIdParams<Review>)=>p.data.id}
                 loading={isLoading}
                 pagination paginationPageSize={50}
                 paginationPageSizeSelector={[25,50,100]}
-                rowHeight={38} headerHeight={38}
+                rowHeight={32} headerHeight={34}
                 tooltipShowDelay={400}
                 enableCellTextSelection
               />
@@ -625,7 +723,7 @@ export default function ReviewPerformance() {
               <span style={{ paddingRight: pendingCount ? 8 : 0 }}>Pending requests</span>
             </Badge>
           ),
-          children:<RequestsPanel />,
+          children:<RequestsPanel reviewSeqMap={reviewSeqMap} />,
         }] : []),
       ]} />
 
@@ -634,7 +732,7 @@ export default function ReviewPerformance() {
         onCancel={()=>{ setAddOpen(false); addForm.resetFields() }}
         onOk={()=>addForm.submit()} confirmLoading={addMut.isPending} okText="Add" width={640}>
         <Form form={addForm} layout="vertical" onFinish={v=>addMut.mutate(v as Record<string,unknown>)}>
-          <ReviewForm form={addForm} users={rawUsers} />
+          <ReviewForm form={addForm} users={rawUsers} isEdit={false} isManager={isEditor} />
         </Form>
       </Modal>
 
@@ -644,9 +742,14 @@ export default function ReviewPerformance() {
           onCancel={()=>setEditRev(null)} onOk={()=>editForm.submit()}
           confirmLoading={editMut.isPending} okText="Save" width={640}>
           <Form form={editForm} layout="vertical" onFinish={v=>editMut.mutate(v as Record<string,unknown>)}>
-            <ReviewForm form={editForm} users={rawUsers} />
+            <ReviewForm form={editForm} users={rawUsers} isEdit isManager={isEditor} />
           </Form>
         </Modal>
+      )}
+
+      {/* Edit Score Modal — admin/manager only */}
+      {scoreRev && isEditor && (
+        <EditScoreModal rev={scoreRev} onClose={()=>setScoreRev(null)} onSaved={()=>setScoreRev(null)} />
       )}
 
       {/* Request Change Modal */}
@@ -664,7 +767,7 @@ export default function ReviewPerformance() {
             <Form.Item name="reason" label="Lý do" rules={[{ required:true }]}>
               <Input.TextArea rows={2} placeholder="Vì sao bạn muốn thay đổi/xóa review này?" />
             </Form.Item>
-            {reqAction==='update' && <ReviewForm form={reqForm} users={rawUsers} />}
+            {reqAction==='update' && <ReviewForm form={reqForm} users={rawUsers} isEdit={false} isManager={false} />}
           </Form>
         </Modal>
       )}

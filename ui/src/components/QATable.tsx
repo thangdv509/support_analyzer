@@ -379,19 +379,6 @@ export default function QATable({ filters }: Props) {
 
   const columnDefs = useMemo<(ColDef | ColGroupDef)[]>(
     () => [
-      // Pinned left
-      {
-        checkboxSelection: true,
-        headerCheckboxSelection: true,
-        width: 44,
-        minWidth: 44,
-        maxWidth: 44,
-        pinned: 'left' as const,
-        resizable: false,
-        suppressMovable: true,
-        sortable: false,
-        lockPinned: true,
-      },
       {
         field: 'date',
         headerName: 'Date',
@@ -520,6 +507,7 @@ export default function QATable({ filters }: Props) {
     () => ({
       resizable: true,
       suppressMovable: false,
+      cellDataType: false,
     }),
     [],
   )
@@ -620,7 +608,7 @@ export default function QATable({ filters }: Props) {
 
       {/* AG-Grid */}
       <div
-        className="ag-theme-quartz"
+        className="review-grid"
         style={{ height: 'calc(100vh - 210px)', minHeight: 400 }}
       >
         <AgGridReact<QARecord>
