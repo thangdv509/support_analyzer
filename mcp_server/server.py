@@ -496,23 +496,20 @@ if __name__ == "__main__":
 
     if a.http:
         import uvicorn
-        from pyngrok import ngrok as _ngrok
         from mcp_server.auth import build_auth_app
 
-        ngrok_domain = os.getenv("NGROK_DOMAIN", "")
-        tunnel       = _ngrok.connect(a.port, bind_tls=True, **({"domain": ngrok_domain} if ngrok_domain else {}))
-        public_url   = tunnel.public_url
-        ngrok_host   = public_url.replace("https://", "").replace("http://", "")
+        public_url   = os.getenv("PUBLIC_URL", f"http://localhost:{a.port}").rstrip("/")
+        public_host  = public_url.replace("https://", "").replace("http://", "")
 
-        # Allow ngrok hostname in FastMCP Host header validation
-        mcp.settings.transport_security.allowed_hosts.append(ngrok_host)
+        # Allow the public hostname in FastMCP Host header validation
+        mcp.settings.transport_security.allowed_hosts.append(public_host)
 
         google_client_id     = os.getenv("GOOGLE_CLIENT_ID", "")
         google_client_secret = os.getenv("GOOGLE_CLIENT_SECRET", "")
         token_ttl            = int(os.getenv("MCP_TOKEN_TTL", "3600"))
 
         print(f"🌐 MCP server       : http://{a.host}:{a.port}/mcp")
-        print(f"🔗 Ngrok URL        : {public_url}/mcp")
+        print(f"🔗 Public URL       : {public_url}/mcp")
         print(f"👉 Claude.ai connector URL: {public_url}/mcp")
         print(f"🔐 OAuth discovery  : {public_url}/.well-known/oauth-authorization-server")
 

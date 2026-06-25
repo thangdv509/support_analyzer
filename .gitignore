@@ -6,3 +6,4 @@ credentials.json
 .env
 data
 update_sumtag_app.py
+ui/node_modules/
