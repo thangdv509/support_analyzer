@@ -1,22 +1,3 @@
-"""
-main.py — upgraded entry point for the QA analyzer.
-
-Extends analyzer_v2 by saving graded chats to MongoDB (deco_chat collection)
-in addition to Google Sheets and local JSON.
-
-Google Sheets behaviour:
-- All dates in one run → one sheet named by run timestamp (e.g. "14:35")
-- Never touches other existing sheets
-- Agent summary table at the bottom (same as original)
-
-Usage:
-    python3 main.py                        # grade today
-    python3 main.py --date 2026-04-12      # grade specific date
-    python3 main.py --from 2026-04-07 --to 2026-04-13
-    python3 main.py --regrade qa_report_20260412.json
-    python3 main.py --no-mongo             # skip MongoDB (no tunnel needed)
-"""
-
 import os
 import json
 import argparse

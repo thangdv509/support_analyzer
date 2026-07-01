@@ -12,6 +12,7 @@ Usage:
 import os
 import socket
 import subprocess
+import threading
 import time
 import atexit
 from pathlib import Path
@@ -22,6 +23,7 @@ _env_path = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(_env_path)
 
 _tunnel_proc: subprocess.Popen | None = None
+_watchdog_thread: threading.Thread | None = None
 
 
 def _port_open(host: str, port: int) -> bool:
@@ -75,26 +77,60 @@ def ensure_tunnel() -> bool:
         "-p", ssh_port,
         "-o", "StrictHostKeyChecking=no",
         "-o", "ServerAliveInterval=30",
+        "-o", "ServerAliveCountMax=3",
+        "-o", "TCPKeepAlive=yes",
         "-o", "ExitOnForwardFailure=yes",
+        "-o", "ConnectTimeout=10",
     ]
     if ssh_key:
         cmd += ["-i", ssh_key]
     cmd.append(f"{ssh_user}@{ssh_host}")
 
+    import tempfile
+    _stderr_file = tempfile.NamedTemporaryFile(delete=False, suffix=".log", mode="w")
     print(f"🔌 Opening SSH tunnel → {ssh_remote} via {ssh_user}@{ssh_host}:{ssh_port}")
-    _tunnel_proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    _tunnel_proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=_stderr_file)
     atexit.register(_close_tunnel)
 
-    # Wait up to 8s for port to become available
-    for _ in range(16):
+    # Wait up to 15s for port to become available
+    for _ in range(30):
         time.sleep(0.5)
         if _port_open(host, port):
             print(f"   ✅ Tunnel ready on {host}:{port}")
+            _stderr_file.close()
+            _start_watchdog()
             return True
+
+    _stderr_file.flush()
+    _stderr_file.close()
+    try:
+        with open(_stderr_file.name) as f:
+            err = f.read().strip()
+        if err:
+            print(f"   SSH error: {err}")
+    except Exception:
+        pass
 
     print(f"   ❌ Tunnel did not open in time")
     _close_tunnel()
     return False
+
+
+def _start_watchdog():
+    """Start a background thread that restarts the tunnel if the SSH process dies."""
+    global _watchdog_thread
+    if _watchdog_thread and _watchdog_thread.is_alive():
+        return
+
+    def _watch():
+        while True:
+            time.sleep(30)
+            if _tunnel_proc is not None and _tunnel_proc.poll() is not None:
+                print("⚠️  SSH tunnel process died — restarting...")
+                ensure_tunnel()
+
+    _watchdog_thread = threading.Thread(target=_watch, daemon=True, name="tunnel-watchdog")
+    _watchdog_thread.start()
 
 
 def _close_tunnel():

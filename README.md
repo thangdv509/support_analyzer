@@ -289,3 +289,5 @@ python -m mcp_server.server --list-emails
 
 
 ./start_ui.sh
+
+kill $(pgrep -u thangdv uvicorn) 2>/dev/null; sleep 1; ./start_ui.sh --prod

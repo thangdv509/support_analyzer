@@ -612,7 +612,7 @@ class UpdateRoleBody(BaseModel):
 
 
 @app.get("/api/users")
-def list_users_endpoint(user: dict = Depends(require_manager_or_admin)):
+def list_users_endpoint(user: dict = Depends(get_current_user)):
     from database.users import list_users
     return list_users()
 
