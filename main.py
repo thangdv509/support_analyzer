@@ -13,6 +13,7 @@ import requests
 
 from analyzer_v2 import (
     fetch_chats,
+    fetch_pending_chats,
     load_few_shot_examples,
     _grade_one,
     _fmt_elapsed,
@@ -328,6 +329,7 @@ def _save_to_mongo(results: list[dict]) -> dict[str, int]:
             "tags":             tags or None,
             "grading":          chat["grading"],
             "crisp_url":        f"https://app.crisp.chat/website/{chat['website_id']}/inbox/{chat['session_id']}",
+            "shop_domain":      chat.get("shop_domain"),
         })
 
     stats = upsert_many(records)
@@ -350,6 +352,7 @@ def _save_to_mongo(results: list[dict]) -> dict[str, int]:
                 start=chat.get("seg_start"),
                 end=chat.get("seg_end"),
                 msg_count=chat.get("seg_msg_count"),
+                shop_domain=chat.get("shop_domain"),
             )
             if result == "inserted":  sumtag_inserted += 1
             else:                     sumtag_replaced += 1
@@ -381,6 +384,25 @@ def main():
 
     all_results: list[dict] = []
 
+    # Tunnel + pending callback (skip for --no-mongo and --regrade)
+    _tunnel_ready = False
+    def _ensure_tunnel_once():
+        nonlocal _tunnel_ready
+        if not _tunnel_ready:
+            ensure_tunnel()
+            _tunnel_ready = True
+
+    def _handle_pending(session_id, website_id, app, original_date):
+        """Callback: save session to pending_chats when LLM marks it incomplete."""
+        try:
+            _ensure_tunnel_once()
+            from database.pending import add as pending_add
+            pending_add(session_id, website_id, app, original_date)
+        except Exception as e:
+            print(f"  ⚠️  Could not save pending {session_id}: {e}")
+
+    on_pending = _handle_pending if not args.no_mongo else None
+
     if args.regrade:
         if not os.path.exists(args.regrade):
             print(f"❌ File {args.regrade} not found.")
@@ -404,14 +426,23 @@ def main():
         while current <= d_to:
             date_str = current.strftime("%Y-%m-%d")
             print(f"\n{'='*50}\n📆 {date_str}\n{'='*50}")
-            chats = fetch_chats(date_str)
+            chats = fetch_chats(date_str, on_pending=on_pending)
             all_results += _grade_date(chats, date_str)
             current += timedelta(days=1)
 
     else:
         date_str = args.date or datetime.now().strftime("%Y-%m-%d")
-        chats = fetch_chats(date_str)
-        all_results = _grade_date(chats, date_str)
+        # Retry pending sessions from previous days first
+        if not args.no_mongo:
+            try:
+                _ensure_tunnel_once()
+                pending_chats = fetch_pending_chats()
+                if pending_chats:
+                    all_results += _grade_date(pending_chats, date_str)
+            except Exception as e:
+                print(f"  ⚠️  Pending retry failed (non-fatal): {e}")
+        chats = fetch_chats(date_str, on_pending=on_pending)
+        all_results += _grade_date(chats, date_str)
 
     if not all_results:
         print("No results to export.")
@@ -425,7 +456,7 @@ def main():
     if not args.no_mongo:
         print(f"🍃 Saving {len(all_results)} chats to MongoDB...")
         try:
-            ensure_tunnel()
+            _ensure_tunnel_once()
             stats = _save_to_mongo(all_results)
             print(f"   ✅ MongoDB: {stats['inserted']} inserted, {stats['replaced']} replaced")
         except Exception as e:

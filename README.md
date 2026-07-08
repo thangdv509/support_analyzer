@@ -274,7 +274,7 @@ python -m mcp_server.server --http
 Output:
 
 
-🔗 Ngrok URL   : https://xyz.ngrok-free.app/mcp
+🔗 Ngrok URL   :                                                                                                                                                                                                                                                                                                
 🔐 Login URL   : https://xyz.ngrok-free.app/login
 Bước 4 — Lấy token
 Mở browser vào https://xyz.ngrok-free.app/login → đăng nhập Google → token hiển thị trên màn hình.
@@ -291,3 +291,4 @@ python -m mcp_server.server --list-emails
 ./start_ui.sh
 
 kill $(pgrep -u thangdv uvicorn) 2>/dev/null; sleep 1; ./start_ui.sh --prod
+                                                                                                                                                                                                                                                                                                                                                     

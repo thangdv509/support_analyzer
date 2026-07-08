@@ -153,7 +153,49 @@ TRẢ VỀ JSON:
 }
 """
 
-def fetch_chats(target_date_str):
+def _check_completion(transcript_text: str) -> bool:
+    """Quick LLM check: đoạn chat đã kết thúc chưa? Returns True = đã kết thúc."""
+    COMPLETION_PROMPT = (
+        "Đọc đoạn chat giữa customer và support agent.\n"
+        "Đánh giá: đoạn chat này đã KẾT THÚC chưa?\n\n"
+        "KẾT THÚC (true) = không còn câu hỏi nào đang chờ agent trả lời. "
+        "Ví dụ: vấn đề giải quyết xong, khách cảm ơn, chat resolved, "
+        "agent hỏi thêm rồi khách không reply (agent đã làm phần của mình), "
+        "agent hẹn follow-up và đang chờ dev/team xử lý.\n\n"
+        "CHƯA KẾT THÚC (false) = khách vừa đặt câu hỏi và đang chờ agent phản hồi, "
+        "hoặc agent nói 'để tôi check' mà chưa reply lại.\n\n"
+        "Trả về JSON DUY NHẤT, không có text thêm:\n"
+        "{\"completed\": true} hoặc {\"completed\": false}"
+    )
+    try:
+        r = requests.post(
+            "https://openrouter.ai/api/v1/chat/completions",
+            headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}", "Content-Type": "application/json"},
+            json={
+                "model": "google/gemini-2.0-flash-001",
+                "messages": [
+                    {"role": "system", "content": COMPLETION_PROMPT},
+                    {"role": "user", "content": transcript_text[-3000:]},
+                ],
+                "max_tokens": 50,
+            },
+            timeout=30,
+        )
+        content = r.json()["choices"][0]["message"]["content"].strip()
+        if content.startswith("```"):
+            parts = content.split("```")
+            content = parts[1][4:].strip() if parts[1].startswith("json") else parts[1].strip()
+        return bool(json.loads(content).get("completed", True))
+    except Exception:
+        return True  # fail open — grade it anyway
+
+
+def fetch_chats(target_date_str, on_pending=None):
+    """Fetch and prepare chats for target_date_str.
+
+    on_pending: optional callback(session_id, website_id, app, original_date)
+                called when LLM marks a segment as incomplete → caller saves to pending DB.
+    """
     if not all([IDENTIFIER, KEY]):
         print("❌ Missing Crisp credentials.")
         return []
@@ -206,11 +248,13 @@ def fetch_chats(target_date_str):
                         break
 
 
-            # Fetch cả resolved và unresolved, dedup theo session_id
-            # Crisp trả về newest-first, dùng filter_date_start=target_day và scan đến khi tìm đủ
+            # Fetch conversations updated within target day only.
+            # "Kết thúc trong ngày" = updated_at trong ngày xét.
+            # LLM completion check sẽ lọc thêm các segment chưa kết thúc thực sự.
+            fetch_window_end = day_end
             conv_list = []; seen_sids = set()
             for resolved_filter in [False, True]:
-                for conv_page in range(1, 51):  # tối đa 50 pages (~1000 conv) cho ngày xa trong quá khứ
+                for conv_page in range(1, 51):  # tối đa 50 pages (~1000 conv)
                     try:
                         kwargs = {"filter_date_start": str(day_start_ts)}
                         if resolved_filter:
@@ -229,18 +273,17 @@ def fetch_chats(target_date_str):
                     passed_target = False
                     for conv in conversations:
                         sid = str(conv.get("session_id", ""))
-                        updated_at_ts_conv = conv.get("updated_at", 0)
-                        updated_at = datetime.fromtimestamp(updated_at_ts_conv / 1000, tz=timezone(timedelta(hours=7)))
+                        updated_at = datetime.fromtimestamp(conv.get("updated_at", 0) / 1000, tz=timezone(timedelta(hours=7)))
                         if updated_at < day_start:
-                            passed_target = True  # đã qua ngày target, conv còn lại cũ hơn
-                        elif updated_at < day_end:
+                            passed_target = True
+                        elif updated_at < fetch_window_end:
                             if sid not in seen_sids:
                                 seen_sids.add(sid)
                                 conv_list.append(conv)
-                    if passed_target: break  # không cần scan thêm page
+                    if passed_target: break
             print(f"  📋 Found {len(conv_list)} conversations to process for {site_name}")
 
-            drop_no_msgs = 0; drop_no_segment = 0; drop_no_ops = 0; drop_too_short = 0
+            drop_no_msgs = 0; drop_no_segment = 0; drop_no_ops = 0; drop_too_short = 0; drop_not_completed = 0
             for conv in conv_list:
                     time.sleep(0.5)
                     conv_is_resolved = conv.get("state") == "resolved"
@@ -278,45 +321,48 @@ def fetch_chats(target_date_str):
 
                     all_messages.sort(key=lambda x: x.get("timestamp", 0))
                     
-                    # Split into segments by resolved event, track resolved status
-                    # Split into segments by resolved event
-                    segments = []; current_segment = []
+                    # Split into segments by: (1) resolved event, (2) 8h time gap.
+                    # Time-gap handles conversations with no resolved event.
+                    GAP_MS = 8 * 3600 * 1000
+                    segments = []; current_segment = []; prev_ts = 0
                     for m in all_messages:
+                        ts = m.get("timestamp", 0)
+                        # Split on 8-hour gap between consecutive messages
+                        if prev_ts and ts and (ts - prev_ts) > GAP_MS and current_segment:
+                            segments.append(current_segment)
+                            current_segment = []
                         current_segment.append(m)
+                        # Split on resolved event
                         m_type = m.get("type")
                         m_content = m.get("content")
                         is_res = False
                         if m_type == "event":
                             if isinstance(m_content, dict):
-                                if m_content.get("namespace") == "state:resolved" or m_content.get("type") == "resolved" or m_content.get("action") == "resolved" or m_content.get("state") == "resolved":
+                                if (m_content.get("namespace") == "state:resolved" or
+                                        m_content.get("type") == "resolved" or
+                                        m_content.get("action") == "resolved" or
+                                        m_content.get("state") == "resolved"):
                                     is_res = True
-                            elif str(m_content) == "resolved": is_res = True
+                            elif str(m_content) == "resolved":
+                                is_res = True
                         if is_res:
                             segments.append(current_segment); current_segment = []
+                        if ts:
+                            prev_ts = ts
                     if current_segment: segments.append(current_segment)
-
-                    # Lấy segment CUỐI CÙNG chưa resolved (last segment không kết thúc bằng resolved event)
-                    # Theo logic crawl.py: segment cuối = segments[-1], chỉ chưa resolved nếu
-                    # nó không kết thúc bằng resolved event (tức là còn dở)
-                    def _is_resolved_event(m):
-                        if m.get("type") != "event": return False
-                        c = m.get("content", "")
-                        if isinstance(c, dict):
-                            return (c.get("namespace") == "state:resolved" or
-                                    c.get("type") == "resolved" or
-                                    c.get("action") == "resolved" or
-                                    c.get("state") == "resolved")
-                        return str(c) == "resolved"
 
                     if not segments:
                         drop_no_segment += 1; continue
 
-                    # Tìm segment cuối có activity trong ngày target
-                    # (kể cả segment đã resolved — chat xong trong ngày vẫn phải chấm)
+                    BOT_NAMES = {"pielab support", "pielab"}
+                    TZ7 = timezone(timedelta(hours=7))
+
+                    # Lấy segment CUỐI CÙNG có bất kỳ tin nhắn nào trong target day.
+                    # LLM completion check bên dưới sẽ lọc các segment chưa kết thúc.
                     valid_seg = None
                     for seg in reversed(segments):
                         if any(
-                            day_start <= datetime.fromtimestamp(m.get("timestamp", 0) / 1000, tz=timezone(timedelta(hours=7))) < day_end
+                            day_start <= datetime.fromtimestamp(m.get("timestamp", 0) / 1000, tz=TZ7) < day_end
                             and m.get("type") not in ["event", "note"]
                             for m in seg if m.get("timestamp")
                         ):
@@ -328,7 +374,6 @@ def fetch_chats(target_date_str):
                     last_seg = valid_seg
 
                     # Kiểm tra đúng 1 agent (không kể bot) đảm nhiệm segment này
-                    BOT_NAMES = {"pielab support", "pielab"}
                     seg_operators = set()
                     for m in last_seg:
                         if m.get("from") == "operator" and m.get("type") not in ["event", "note"]:
@@ -357,6 +402,28 @@ def fetch_chats(target_date_str):
                         if not agent_msg_count:
                             drop_no_ops += 1; continue
                         sole_agent = max(agent_msg_count, key=lambda k: agent_msg_count[k])
+
+                    # LLM completion check: chỉ grade nếu đoạn chat đã kết thúc
+                    _preview_lines = []
+                    for m in last_seg[-40:]:
+                        if m.get("type") in ["note", "event"]: continue
+                        _is_op = m.get("from") == "operator"
+                        if _is_op:
+                            _u = m.get("user") or {}
+                            _uid = str(_u.get("user_id", ""))
+                            _nm = str(_u.get("nickname") or op_map.get(_uid) or "Agent")
+                            if _nm.lower() in BOT_NAMES: continue
+                            _label = _nm
+                        else:
+                            _label = "Customer"
+                        _c = m.get("content", "")
+                        if isinstance(_c, dict): _c = _c.get("text") or str(_c)
+                        _preview_lines.append(f"{_label}: {str(_c)[:300]}")
+                    if not _check_completion("\n".join(_preview_lines)):
+                        if on_pending:
+                            on_pending(sid, website_id, app_name, target_date_str)
+                        drop_not_completed += 1; continue
+
                     valid_segment = last_seg
                     meta = None
 
@@ -428,9 +495,19 @@ def fetch_chats(target_date_str):
                         # Extract real timestamps and msg_count from valid_segment
                         chat_msgs = [m for m in valid_segment if m.get("type") not in ("event", "note", "animation") and m.get("timestamp")]
                         ts_list = [m["timestamp"] for m in chat_msgs]
-                        TZ7 = timezone(timedelta(hours=7))
                         seg_start = datetime.fromtimestamp(min(ts_list) / 1000, tz=TZ7).strftime("%Y-%m-%d %H:%M:%S") if ts_list else None
                         seg_end   = datetime.fromtimestamp(max(ts_list) / 1000, tz=TZ7).strftime("%Y-%m-%d %H:%M:%S") if ts_list else None
+
+                        if "DECO" in app_name.upper():
+                            # "shop" chứa full domain như "natural-sloth.myshopify.com"
+                            shop_domain = meta_data.get("shop") or None
+                        else:
+                            # SearchPie: "name" là myshopify subdomain (string) hoặc store ID (int)
+                            _sp_name = meta_data.get("name")
+                            if isinstance(_sp_name, str) and _sp_name.strip():
+                                shop_domain = f"{_sp_name.strip()}.myshopify.com"
+                            else:
+                                shop_domain = None
 
                         all_valid_chats.append({
                             "session_id": sid, "website_id": website_id, "date": target_date_str,
@@ -438,8 +515,9 @@ def fetch_chats(target_date_str):
                             "is_resolved": conv_is_resolved, "transcript": transcript,
                             "seg_start": seg_start, "seg_end": seg_end,
                             "seg_msg_count": len(chat_msgs),
+                            "shop_domain": shop_domain,
                         })
-        print(f"  🔍 Drop summary: no_msgs={drop_no_msgs}, no_segment={drop_no_segment}, no_ops={drop_no_ops}, too_short={drop_too_short}")
+        print(f"  🔍 Drop summary: no_msgs={drop_no_msgs}, no_segment={drop_no_segment}, no_ops={drop_no_ops}, not_completed={drop_not_completed}, too_short={drop_too_short}")
         return all_valid_chats
     except Exception:
         traceback.print_exc()
@@ -451,6 +529,279 @@ def _get_active_prompt() -> str:
         return get_prompt_content() or GRADING_CRITERIA
     except Exception:
         return GRADING_CRITERIA
+
+
+def fetch_pending_chats() -> list[dict]:
+    """
+    Re-process sessions previously marked as incomplete by LLM check.
+    Returns chat dicts (with original_date) that are now complete and ready to grade.
+    Sessions that are still incomplete get their retry_count incremented;
+    those that exceed MAX_RETRIES are dropped.
+    """
+    try:
+        from database.pending import get_all, remove, increment_retry, MAX_RETRIES
+        from database.connection import get_db
+    except Exception:
+        return []
+
+    pending = get_all()
+    if not pending:
+        return []
+
+    print(f"🔄 Retrying {len(pending)} pending session(s) from previous days...")
+
+    client = Crisp()
+    client.set_tier("plugin")
+    client.authenticate(IDENTIFIER, KEY)
+
+    TZ7 = timezone(timedelta(hours=7))
+    BOT_NAMES = {"pielab support", "pielab"}
+    GAP_MS = 8 * 3600 * 1000
+
+    sites = None
+    for _ in range(3):
+        try:
+            sites = client.plugin.list_all_connect_websites(1, False)
+            break
+        except Exception as e:
+            if "rate_limited" in str(e): time.sleep(60)
+            else: raise
+    if not sites:
+        return []
+
+    website_id = str(sites[0]["website_id"])
+    op_map = {}
+    try:
+        operators = client.website.list_website_operators(website_id)
+        op_map = {str(op["details"]["user_id"]): (op["details"].get("first_name") or op["details"].get("email"))
+                  for op in operators if op and "details" in op}
+    except Exception:
+        pass
+
+    db = get_db()
+    results = []
+
+    for p in pending:
+        sid = p["session_id"]
+        original_date = p["original_date"]
+        retry_count = p.get("retry_count", 0)
+
+        # If already graded for this session on a later date → skip (covered by normal fetch)
+        already_later = (
+            db["grading_deco"].find_one({"session_id": sid, "date": {"$gt": original_date}}, {"_id": 1}) or
+            db["grading_searchpie"].find_one({"session_id": sid, "date": {"$gt": original_date}}, {"_id": 1})
+        )
+        if already_later:
+            remove(sid)
+            continue
+
+        orig_dt = datetime.strptime(original_date, "%Y-%m-%d").replace(tzinfo=TZ7)
+        day_start = orig_dt.replace(hour=0, minute=0, second=0, microsecond=0)
+        day_end = day_start + timedelta(days=1)
+
+        time.sleep(0.5)
+
+        # Fetch messages
+        all_messages = []; last_timestamp = None
+        for _retry in range(5):
+            query = {}
+            if last_timestamp: query["timestamp_before"] = str(last_timestamp)
+            try:
+                msgs = client.website.get_messages_in_conversation(website_id, sid, query)
+                if not msgs: break
+                all_messages.extend(msgs)
+                msgs.sort(key=lambda x: x.get("timestamp", 0))
+                last_timestamp = msgs[0].get("timestamp")
+                if datetime.fromtimestamp(last_timestamp / 1000, tz=TZ7) < day_start - timedelta(days=1):
+                    break
+                time.sleep(0.5)
+            except Exception as e:
+                if "rate_limited" in str(e): time.sleep(90); continue
+                break
+
+        if not all_messages:
+            if retry_count >= MAX_RETRIES:
+                remove(sid)
+            else:
+                increment_retry(sid)
+            continue
+
+        all_messages.sort(key=lambda x: x.get("timestamp", 0))
+
+        # Segment detection: resolved events + 8h gaps
+        segments = []; cur_seg = []; prev_ts = 0
+        for m in all_messages:
+            ts = m.get("timestamp", 0)
+            if prev_ts and ts and (ts - prev_ts) > GAP_MS and cur_seg:
+                segments.append(cur_seg); cur_seg = []
+            cur_seg.append(m)
+            mc = m.get("content", "")
+            is_res = False
+            if m.get("type") == "event":
+                if isinstance(mc, dict):
+                    if (mc.get("namespace") == "state:resolved" or mc.get("type") == "resolved" or
+                            mc.get("action") == "resolved" or mc.get("state") == "resolved"):
+                        is_res = True
+                elif str(mc) == "resolved":
+                    is_res = True
+            if is_res:
+                segments.append(cur_seg); cur_seg = []
+            if ts: prev_ts = ts
+        if cur_seg: segments.append(cur_seg)
+
+        # Find segment with activity on original_date
+        valid_seg = None
+        for seg in reversed(segments):
+            if any(
+                day_start <= datetime.fromtimestamp(m.get("timestamp", 0) / 1000, tz=TZ7) < day_end
+                and m.get("type") not in ["event", "note"]
+                for m in seg if m.get("timestamp")
+            ):
+                valid_seg = seg; break
+
+        if valid_seg is None:
+            remove(sid); continue
+
+        # Operator check
+        seg_operators = set()
+        for m in valid_seg:
+            if m.get("from") == "operator" and m.get("type") not in ["event", "note"]:
+                u_info = m.get("user") or {}
+                op_uid = str(u_info.get("user_id", ""))
+                name = str(u_info.get("nickname") or op_map.get(op_uid) or "Operator")
+                if name.lower() not in BOT_NAMES:
+                    seg_operators.add(name)
+        if not seg_operators:
+            remove(sid); continue
+
+        if len(seg_operators) == 1:
+            sole_agent = next(iter(seg_operators))
+        else:
+            agent_msg_count: dict[str, int] = {}
+            for m in valid_seg:
+                if m.get("from") != "operator" or m.get("type") in ["event", "note"]: continue
+                m_dt = datetime.fromtimestamp(m.get("timestamp", 0) / 1000, tz=TZ7)
+                if not (day_start <= m_dt < day_end): continue
+                u_info = m.get("user") or {}
+                op_uid = str(u_info.get("user_id", ""))
+                name = str(u_info.get("nickname") or op_map.get(op_uid) or "Operator")
+                if name.lower() not in BOT_NAMES:
+                    agent_msg_count[name] = agent_msg_count.get(name, 0) + 1
+            if not agent_msg_count:
+                remove(sid); continue
+            sole_agent = max(agent_msg_count, key=lambda k: agent_msg_count[k])
+
+        # LLM completion check
+        _preview_lines = []
+        for m in valid_seg[-40:]:
+            if m.get("type") in ["note", "event"]: continue
+            _is_op = m.get("from") == "operator"
+            if _is_op:
+                _u = m.get("user") or {}
+                _uid = str(_u.get("user_id", ""))
+                _nm = str(_u.get("nickname") or op_map.get(_uid) or "Agent")
+                if _nm.lower() in BOT_NAMES: continue
+                _label = _nm
+            else:
+                _label = "Customer"
+            _c = m.get("content", "")
+            if isinstance(_c, dict): _c = _c.get("text") or str(_c)
+            _preview_lines.append(f"{_label}: {str(_c)[:300]}")
+
+        if not _check_completion("\n".join(_preview_lines)):
+            if retry_count >= MAX_RETRIES:
+                print(f"  ⏰ Giving up on pending {sid} (max retries reached)")
+                remove(sid)
+            else:
+                new_count = increment_retry(sid)
+                print(f"  🔄 Still incomplete: {sid} (retry {new_count}/{MAX_RETRIES})")
+            continue
+
+        # Complete! Build chat dict
+        remove(sid)
+        try:
+            meta = client.website.get_conversation_metas(website_id, sid)
+        except Exception:
+            meta = {}
+        cust_name = str(meta.get("nickname") or "Customer")
+        meta_data = meta.get("data", {})
+        review_value = meta_data.get("review_value")
+        review_info = f" (Hệ thống ghi nhận khách ĐÃ CHO REVIEW {review_value} sao)" if review_value else ""
+
+        app_name = p.get("app", "Unknown")
+        filtered = []; last_op_msg = None
+
+        for m in valid_seg:
+            if m.get("type") in ["note", "event"]: continue
+            is_op = m.get("from") == "operator"
+            u_info = m.get("user") or {}
+            content = m.get("content", "")
+            if is_op:
+                op_uid = str(u_info.get("user_id", ""))
+                name = str(u_info.get("nickname") or op_map.get(op_uid) or "Operator")
+                if name.lower() in BOT_NAMES: continue
+                last_op_msg = m
+                if "DECO" in str(content).upper(): app_name = "DECO"
+                elif "SEARCHPIE" in str(content).upper() or "SEARCH PIE" in str(content).upper(): app_name = "SearchPie"
+                label = name
+            else:
+                label = cust_name
+                last_op_msg = None
+            if m.get("type") == "file" and isinstance(content, dict):
+                content = f"[File: {content.get('name', 'unnamed')} - {content.get('url', '')}]"
+            elif isinstance(content, dict):
+                content = content.get("text") or str(content)
+            filtered.append({"role": label, "content": str(content)})
+
+        customer_msgs = [f for f in filtered if f["role"] == cust_name]
+        if not customer_msgs:
+            continue
+        op_meaningful = [f for f in filtered if f["role"] != cust_name and len(f["content"].strip()) > 3]
+        if not op_meaningful:
+            continue
+
+        seen_info = ""
+        if last_op_msg:
+            try:
+                reads = client.website.get_message_in_conversation(
+                    website_id, sid, str(last_op_msg.get("fingerprint", "")))
+                if reads and reads.get("read"):
+                    seen_info = " (Khách đã SEEN tin nhắn cuối)"
+            except Exception:
+                pass
+
+        transcript = "\n".join(f"{f['role']}: {f['content']}" for f in filtered)
+
+        ts_list = [m.get("timestamp") for m in valid_seg
+                   if m.get("timestamp") and m.get("type") not in ["event", "note"]]
+        seg_start = datetime.fromtimestamp(min(ts_list) / 1000, tz=TZ7).strftime("%Y-%m-%d %H:%M:%S") if ts_list else None
+        seg_end   = datetime.fromtimestamp(max(ts_list) / 1000, tz=TZ7).strftime("%Y-%m-%d %H:%M:%S") if ts_list else None
+
+        if "DECO" in app_name.upper():
+            shop_domain = meta_data.get("shop") or None
+        else:
+            _sp_name = meta_data.get("name")
+            shop_domain = f"{_sp_name.strip()}.myshopify.com" if isinstance(_sp_name, str) and _sp_name.strip() else None
+
+        results.append({
+            "session_id": sid,
+            "website_id": website_id,
+            "date": original_date,
+            "app": app_name,
+            "customer": cust_name,
+            "primary_operator": sole_agent,
+            "is_resolved": False,
+            "transcript": transcript + review_info + seen_info,
+            "seg_start": seg_start,
+            "seg_end": seg_end,
+            "seg_msg_count": len([m for m in valid_seg if m.get("type") not in ["event", "note"]]),
+            "shop_domain": shop_domain,
+        })
+        print(f"  ✅ Pending resolved: {sid} (originally {original_date}, graded for {sole_agent})")
+
+    if results:
+        print(f"  ✅ {len(results)} pending chat(s) now complete")
+    return results
 
 
 def grade_chat(transcript):

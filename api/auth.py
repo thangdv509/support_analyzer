@@ -176,7 +176,7 @@ def callback(code: str):
         max_age=COOKIE_MAX_AGE,
         samesite="lax",
         secure=BACKEND_URL.startswith("https"),
-    )
+    )                                                                                                                                                                                 
     return redirect
 
 

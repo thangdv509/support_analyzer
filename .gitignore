@@ -7,3 +7,4 @@ credentials.json
 data
 update_sumtag_app.py
 ui/node_modules/
+*.md

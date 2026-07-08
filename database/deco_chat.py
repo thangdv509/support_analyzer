@@ -74,6 +74,7 @@ def _build_doc(
     tags: list[str] | None = None,
     crisp_url: str | None = None,
     created_at: datetime | None = None,
+    shop_domain: str | None = None,
 ) -> dict[str, Any]:
     now = _now()
     return {
@@ -90,6 +91,7 @@ def _build_doc(
         "tags":             tags,
         "grading":          grading,
         "crisp_url":        crisp_url,
+        "shop_domain":      shop_domain,
         "ts":               created_at or now,
         "created_at":       created_at or now,
         "updated_at":       now,
@@ -113,6 +115,7 @@ def upsert_chat(
     summary: str | None = None,
     tags: list[str] | None = None,
     crisp_url: str | None = None,
+    shop_domain: str | None = None,
 ) -> str:
     """Insert or replace. Returns 'inserted', 'replaced', or 'skipped' (unknown app)."""
     col = _col(app)
@@ -124,6 +127,7 @@ def upsert_chat(
         primary_operator, is_resolved, transcript, grading,
         summary, tags, crisp_url,
         existing["created_at"] if existing else None,
+        shop_domain,
     )
     result = col.replace_one({"session_id": session_id, "date": date}, doc, upsert=True)
     return "replaced" if result.matched_count else "inserted"
@@ -166,6 +170,7 @@ def upsert_many(records: list[dict[str, Any]]) -> dict[str, int]:
                 sid, r["website_id"], date, r["app"], r["customer"],
                 r["primary_operator"], r["is_resolved"], r["transcript"], r["grading"],
                 r.get("summary"), r.get("tags"), r.get("crisp_url"), existing.get(key),
+                r.get("shop_domain"),
             )
             ops.append(ReplaceOne({"session_id": sid, "date": date}, doc, upsert=True))
             if key in existing:

@@ -68,6 +68,7 @@ def upsert(
     start: str | None = None,
     end: str | None = None,
     msg_count: int | None = None,
+    shop_domain: str | None = None,
 ) -> str:
     """Insert or replace. Returns 'inserted', 'replaced', or 'skipped' (unknown app)."""
     col = _col(app)
@@ -85,6 +86,7 @@ def upsert(
         "start":            start,
         "end":              end,
         "msg_count":        msg_count,
+        "shop_domain":      shop_domain,
         "tags":             tags,
         "summary":          summary,
         "created_at":       existing["created_at"] if existing else now,
@@ -138,6 +140,7 @@ def upsert_many(records: list[dict[str, Any]]) -> dict[str, int]:
                 "start":            r.get("start"),
                 "end":              r.get("end"),
                 "msg_count":        r.get("msg_count"),
+                "shop_domain":      r.get("shop_domain"),
                 "tags":             r.get("tags", []),
                 "summary":          r.get("summary"),
                 "created_at":       existing.get(key, now),
