@@ -495,7 +495,6 @@ def run_daily_job(date_str: str | None = None):
         results = _grade_date(chats, date_str)
 
         if results:
-            _export_to_support_analyzer(results)
             _save_to_mongo(results)
 
         log.info(f"✅ Xong — {_fmt_elapsed(time.time() - t0)}")
