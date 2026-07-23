@@ -1,0 +1,1382 @@
+{
+  "welcome": {
+    "filename": "welcome",
+    "title": "Welcome",
+    "segments": [
+      "welcome"
+    ],
+    "order_index": 0,
+    "parent": null,
+    "prev": null,
+    "next": "ourfeatures_decoproductbadges",
+    "siblings": [
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourfeatures_decoproductbadges": {
+    "filename": "ourfeatures_decoproductbadges",
+    "title": "DECO Product Badges",
+    "segments": [
+      "our-features",
+      "deco-product-badges"
+    ],
+    "order_index": 1,
+    "parent": null,
+    "prev": "welcome",
+    "next": "ourfeatures_decodiscounts",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": [
+      "ourfeatures_decoproductbadges_textbadge",
+      "ourfeatures_decoproductbadges_imagebadge"
+    ]
+  },
+  "ourfeatures_decoproductbadges_textbadge": {
+    "filename": "ourfeatures_decoproductbadges_textbadge",
+    "title": "1️⃣ TEXT BADGE",
+    "segments": [
+      "our-features",
+      "deco-product-badges",
+      "1-text-badge"
+    ],
+    "order_index": 2,
+    "parent": "ourfeatures_decoproductbadges",
+    "prev": null,
+    "next": "ourfeatures_decoproductbadges_imagebadge",
+    "siblings": [
+      "ourfeatures_decoproductbadges_imagebadge"
+    ],
+    "children": []
+  },
+  "ourfeatures_decoproductbadges_imagebadge": {
+    "filename": "ourfeatures_decoproductbadges_imagebadge",
+    "title": "2️⃣ IMAGE BADGE",
+    "segments": [
+      "our-features",
+      "deco-product-badges",
+      "2-image-badge"
+    ],
+    "order_index": 3,
+    "parent": "ourfeatures_decoproductbadges",
+    "prev": "ourfeatures_decoproductbadges_textbadge",
+    "next": null,
+    "siblings": [
+      "ourfeatures_decoproductbadges_textbadge"
+    ],
+    "children": []
+  },
+  "ourfeatures_decodiscounts": {
+    "filename": "ourfeatures_decodiscounts",
+    "title": "DECO Discounts",
+    "segments": [
+      "our-features",
+      "deco-discounts"
+    ],
+    "order_index": 4,
+    "parent": null,
+    "prev": "ourfeatures_decoproductbadges",
+    "next": "ourfeatures_decoproductbadges1",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": [
+      "ourfeatures_decodiscounts_automaticdiscount",
+      "ourfeatures_decodiscounts_discountcode"
+    ]
+  },
+  "ourfeatures_decodiscounts_automaticdiscount": {
+    "filename": "ourfeatures_decodiscounts_automaticdiscount",
+    "title": "Automatic Discount",
+    "segments": [
+      "our-features",
+      "deco-discounts",
+      "automatic-discount"
+    ],
+    "order_index": 5,
+    "parent": "ourfeatures_decodiscounts",
+    "prev": null,
+    "next": "ourfeatures_decodiscounts_discountcode",
+    "siblings": [
+      "ourfeatures_decodiscounts_discountcode"
+    ],
+    "children": []
+  },
+  "ourfeatures_decodiscounts_discountcode": {
+    "filename": "ourfeatures_decodiscounts_discountcode",
+    "title": "Discount Code",
+    "segments": [
+      "our-features",
+      "deco-discounts",
+      "discount-code"
+    ],
+    "order_index": 6,
+    "parent": "ourfeatures_decodiscounts",
+    "prev": "ourfeatures_decodiscounts_automaticdiscount",
+    "next": null,
+    "siblings": [
+      "ourfeatures_decodiscounts_automaticdiscount"
+    ],
+    "children": []
+  },
+  "ourfeatures_decoproductbadges1": {
+    "filename": "ourfeatures_decoproductbadges1",
+    "title": "DECO Product Badges",
+    "segments": [
+      "our-features",
+      "deco-product-badges-1"
+    ],
+    "order_index": 7,
+    "parent": null,
+    "prev": "ourfeatures_decodiscounts",
+    "next": "ourfeatures_decoproductbanners",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": [
+      "ourfeatures_decoproductbadges1_textbadge",
+      "ourfeatures_decoproductbadges1_imagebadge"
+    ]
+  },
+  "ourfeatures_decoproductbadges1_textbadge": {
+    "filename": "ourfeatures_decoproductbadges1_textbadge",
+    "title": "1️⃣ TEXT BADGE",
+    "segments": [
+      "our-features",
+      "deco-product-badges-1",
+      "1-text-badge"
+    ],
+    "order_index": 8,
+    "parent": "ourfeatures_decoproductbadges1",
+    "prev": null,
+    "next": "ourfeatures_decoproductbadges1_imagebadge",
+    "siblings": [
+      "ourfeatures_decoproductbadges1_imagebadge"
+    ],
+    "children": []
+  },
+  "ourfeatures_decoproductbadges1_imagebadge": {
+    "filename": "ourfeatures_decoproductbadges1_imagebadge",
+    "title": "2️⃣ IMAGE BADGE",
+    "segments": [
+      "our-features",
+      "deco-product-badges-1",
+      "2-image-badge"
+    ],
+    "order_index": 9,
+    "parent": "ourfeatures_decoproductbadges1",
+    "prev": "ourfeatures_decoproductbadges1_textbadge",
+    "next": null,
+    "siblings": [
+      "ourfeatures_decoproductbadges1_textbadge"
+    ],
+    "children": []
+  },
+  "ourfeatures_decoproductbanners": {
+    "filename": "ourfeatures_decoproductbanners",
+    "title": "DECO Product Banners",
+    "segments": [
+      "our-features",
+      "deco-product-banners"
+    ],
+    "order_index": 10,
+    "parent": null,
+    "prev": "ourfeatures_decoproductbadges1",
+    "next": "ourfeatures_decotrustbadges",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourfeatures_decotrustbadges": {
+    "filename": "ourfeatures_decotrustbadges",
+    "title": "DECO Trust Badges",
+    "segments": [
+      "our-features",
+      "deco-trust-badges"
+    ],
+    "order_index": 11,
+    "parent": null,
+    "prev": "ourfeatures_decoproductbanners",
+    "next": "ourfeatures_decobadgegroup",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourfeatures_decobadgegroup": {
+    "filename": "ourfeatures_decobadgegroup",
+    "title": "DECO Badge Group",
+    "segments": [
+      "our-features",
+      "deco-badge-group"
+    ],
+    "order_index": 12,
+    "parent": null,
+    "prev": "ourfeatures_decotrustbadges",
+    "next": "ourfeatures_decoanalytics",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": [
+      "ourfeatures_decobadgegroup_badgegroup",
+      "ourfeatures_decobadgegroup_badgegroup1"
+    ]
+  },
+  "ourfeatures_decobadgegroup_badgegroup": {
+    "filename": "ourfeatures_decobadgegroup_badgegroup",
+    "title": "Badge Group",
+    "segments": [
+      "our-features",
+      "deco-badge-group",
+      "badge-group"
+    ],
+    "order_index": 13,
+    "parent": "ourfeatures_decobadgegroup",
+    "prev": null,
+    "next": "ourfeatures_decobadgegroup_badgegroup1",
+    "siblings": [
+      "ourfeatures_decobadgegroup_badgegroup1"
+    ],
+    "children": []
+  },
+  "ourfeatures_decobadgegroup_badgegroup1": {
+    "filename": "ourfeatures_decobadgegroup_badgegroup1",
+    "title": "Badge Group",
+    "segments": [
+      "our-features",
+      "deco-badge-group",
+      "badge-group-1"
+    ],
+    "order_index": 14,
+    "parent": "ourfeatures_decobadgegroup",
+    "prev": "ourfeatures_decobadgegroup_badgegroup",
+    "next": null,
+    "siblings": [
+      "ourfeatures_decobadgegroup_badgegroup"
+    ],
+    "children": []
+  },
+  "ourfeatures_decoanalytics": {
+    "filename": "ourfeatures_decoanalytics",
+    "title": "DECO Analytics",
+    "segments": [
+      "our-features",
+      "deco-analytics"
+    ],
+    "order_index": 15,
+    "parent": null,
+    "prev": "ourfeatures_decobadgegroup",
+    "next": "ourspecialfeatures_productmetafields",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourspecialfeatures_productmetafields": {
+    "filename": "ourspecialfeatures_productmetafields",
+    "title": "Product Metafields",
+    "segments": [
+      "our-special-features",
+      "product-metafields"
+    ],
+    "order_index": 16,
+    "parent": null,
+    "prev": "ourfeatures_decoanalytics",
+    "next": "ourspecialfeatures_adddynamiccontent",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": [
+      "ourspecialfeatures_productmetafields_listofvaluesmetafield"
+    ]
+  },
+  "ourspecialfeatures_productmetafields_listofvaluesmetafield": {
+    "filename": "ourspecialfeatures_productmetafields_listofvaluesmetafield",
+    "title": "List of Values Metafield",
+    "segments": [
+      "our-special-features",
+      "product-metafields",
+      "list-of-values-metafield"
+    ],
+    "order_index": 17,
+    "parent": "ourspecialfeatures_productmetafields",
+    "prev": null,
+    "next": null,
+    "siblings": [],
+    "children": []
+  },
+  "ourspecialfeatures_adddynamiccontent": {
+    "filename": "ourspecialfeatures_adddynamiccontent",
+    "title": "Add Dynamic Content",
+    "segments": [
+      "our-special-features",
+      "add-dynamic-content"
+    ],
+    "order_index": 18,
+    "parent": null,
+    "prev": "ourspecialfeatures_productmetafields",
+    "next": "ourspecialfeatures_customerconditions",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourspecialfeatures_customerconditions": {
+    "filename": "ourspecialfeatures_customerconditions",
+    "title": "Customer Conditions",
+    "segments": [
+      "our-special-features",
+      "customer-conditions"
+    ],
+    "order_index": 19,
+    "parent": null,
+    "prev": "ourspecialfeatures_adddynamiccontent",
+    "next": "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourspecialfeatures_showdecobadgesonbogosiogiftoffer": {
+    "filename": "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+    "title": "Show DECO Badges On BOGOS.io Gift Offer",
+    "segments": [
+      "our-special-features",
+      "show-deco-badges-on-bogos.io-gift-offer"
+    ],
+    "order_index": 20,
+    "parent": null,
+    "prev": "ourspecialfeatures_customerconditions",
+    "next": "ourspecialfeatures_addtranslationsforcontent",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourspecialfeatures_addtranslationsforcontent": {
+    "filename": "ourspecialfeatures_addtranslationsforcontent",
+    "title": "Add Translations For Content",
+    "segments": [
+      "our-special-features",
+      "add-translations-for-content"
+    ],
+    "order_index": 21,
+    "parent": null,
+    "prev": "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+    "next": "ourspecialfeatures_priority",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourspecialfeatures_priority": {
+    "filename": "ourspecialfeatures_priority",
+    "title": "Priority",
+    "segments": [
+      "our-special-features",
+      "priority"
+    ],
+    "order_index": 22,
+    "parent": null,
+    "prev": "ourspecialfeatures_addtranslationsforcontent",
+    "next": "ourspecialfeatures_showbadgebasedonstorelanguages",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourspecialfeatures_showbadgebasedonstorelanguages": {
+    "filename": "ourspecialfeatures_showbadgebasedonstorelanguages",
+    "title": "Show Badge Based On Store Languages",
+    "segments": [
+      "our-special-features",
+      "show-badge-based-on-store-languages"
+    ],
+    "order_index": 23,
+    "parent": null,
+    "prev": "ourspecialfeatures_priority",
+    "next": "ourspecialfeatures_countdowntimer",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourspecialfeatures_countdowntimer": {
+    "filename": "ourspecialfeatures_countdowntimer",
+    "title": "Countdown Timer",
+    "segments": [
+      "our-special-features",
+      "countdown-timer"
+    ],
+    "order_index": 24,
+    "parent": null,
+    "prev": "ourspecialfeatures_showbadgebasedonstorelanguages",
+    "next": "ourspecialfeatures_transfersettings",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "ourspecialfeatures_transfersettings": {
+    "filename": "ourspecialfeatures_transfersettings",
+    "title": "Transfer Settings",
+    "segments": [
+      "our-special-features",
+      "transfer-settings"
+    ],
+    "order_index": 25,
+    "parent": null,
+    "prev": "ourspecialfeatures_countdowntimer",
+    "next": "showproductreviewvalues",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "showproductreviewvalues": {
+    "filename": "showproductreviewvalues",
+    "title": "Show Product Review Values",
+    "segments": [
+      "show-product-review-values"
+    ],
+    "order_index": 26,
+    "parent": null,
+    "prev": "ourspecialfeatures_transfersettings",
+    "next": "fundamentals_faqs",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs": {
+    "filename": "fundamentals_faqs",
+    "title": "FAQs",
+    "segments": [
+      "fundamentals",
+      "faqs"
+    ],
+    "order_index": 27,
+    "parent": null,
+    "prev": "showproductreviewvalues",
+    "next": "skyrocketconversionratewithdecobannerbars",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "skyrocketconversionratewithdecobannerbars",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ]
+  },
+  "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator": {
+    "filename": "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+    "title": "How To Create An Effective Prompt For Our AI Image Generator?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-to-create-an-effective-prompt-for-our-ai-image-generator"
+    ],
+    "order_index": 28,
+    "parent": "fundamentals_faqs",
+    "prev": null,
+    "next": "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+    "siblings": [
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates": {
+    "filename": "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+    "title": "What Is The Recommendation For Self-Uploading Templates?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "what-is-the-recommendation-for-self-uploading-templates"
+    ],
+    "order_index": 29,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+    "next": "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite": {
+    "filename": "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+    "title": "How Do I Fix The Missing Label/Badge Issue On My Website ?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-do-i-fix-the-missing-label-badge-issue-on-my-website"
+    ],
+    "order_index": 30,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+    "next": "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_howtopositionlabelsanywhereonproductimages": {
+    "filename": "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+    "title": "How To Position Labels Anywhere On Product Images ?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-to-position-labels-anywhere-on-product-images"
+    ],
+    "order_index": 31,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+    "next": "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice": {
+    "filename": "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+    "title": "How To Make Label/Badge Have Same Size on Any Screen/Device ?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-to-make-label-badge-have-same-size-on-any-screen-device"
+    ],
+    "order_index": 32,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+    "next": "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme": {
+    "filename": "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+    "title": "How To Display DECO's Features on An Unpublished Theme?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-to-display-decos-features-on-an-unpublished-theme"
+    ],
+    "order_index": 33,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+    "next": "fundamentals_faqs_caniusetheappforfree",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_caniusetheappforfree": {
+    "filename": "fundamentals_faqs_caniusetheappforfree",
+    "title": "Can I use the app for free?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "can-i-use-the-app-for-free"
+    ],
+    "order_index": 34,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+    "next": "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing": {
+    "filename": "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+    "title": "I own or manage multiple stores. Do I qualify for special pricing?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "i-own-or-manage-multiple-stores.-do-i-qualify-for-special-pricing"
+    ],
+    "order_index": 35,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_caniusetheappforfree",
+    "next": "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge": {
+    "filename": "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+    "title": "What is the difference between a Label & a badge ?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "what-is-the-difference-between-a-label-and-a-badge"
+    ],
+    "order_index": 36,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+    "next": "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_howdoiapprovedecospartnerrequest": {
+    "filename": "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+    "title": "How do I approve DECO's partner request ?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-do-i-approve-decos-partner-request"
+    ],
+    "order_index": 37,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+    "next": "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_howdoiupdatedecopartnersrequest": {
+    "filename": "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+    "title": "How do I update DECO partner's request?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-do-i-update-deco-partners-request"
+    ],
+    "order_index": 38,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+    "next": "fundamentals_faqs_howcanifindthecollaboratorcode",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_howcanifindthecollaboratorcode": {
+    "filename": "fundamentals_faqs_howcanifindthecollaboratorcode",
+    "title": "How can I find the collaborator code?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-can-i-find-the-collaborator-code"
+    ],
+    "order_index": 39,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+    "next": "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent": {
+    "filename": "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+    "title": "Mandatory rules for Text Label/ Text Badge/ Banner Content",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "mandatory-rules-for-text-label-text-badge-banner-content"
+    ],
+    "order_index": 40,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howcanifindthecollaboratorcode",
+    "next": "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": []
+  },
+  "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate": {
+    "filename": "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+    "title": "How to remove old code left from the big update?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-to-remove-old-code-left-from-the-big-update"
+    ],
+    "order_index": 41,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+    "next": "fundamentals_faqs_howtodisplaylabelsonallproductimages",
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtodisplaylabelsonallproductimages"
+    ],
+    "children": [
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate_whathappenafteryouuninstalldeco"
+    ]
+  },
+  "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate_whathappenafteryouuninstalldeco": {
+    "filename": "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate_whathappenafteryouuninstalldeco",
+    "title": "What happen after you uninstall DECO ?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-to-remove-old-code-left-from-the-big-update",
+      "what-happen-after-you-uninstall-deco"
+    ],
+    "order_index": 42,
+    "parent": "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+    "prev": null,
+    "next": null,
+    "siblings": [],
+    "children": []
+  },
+  "fundamentals_faqs_howtodisplaylabelsonallproductimages": {
+    "filename": "fundamentals_faqs_howtodisplaylabelsonallproductimages",
+    "title": "How To Display Labels On All Product Images?",
+    "segments": [
+      "fundamentals",
+      "faqs",
+      "how-to-display-labels-on-all-product-images"
+    ],
+    "order_index": 43,
+    "parent": "fundamentals_faqs",
+    "prev": "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate",
+    "next": null,
+    "siblings": [
+      "fundamentals_faqs_howtocreateaneffectivepromptforouraiimagegenerator",
+      "fundamentals_faqs_whatistherecommendationforselfuploadingtemplates",
+      "fundamentals_faqs_howdoifixthemissinglabelbadgeissueonmywebsite",
+      "fundamentals_faqs_howtopositionlabelsanywhereonproductimages",
+      "fundamentals_faqs_howtomakelabelbadgehavesamesizeonanyscreendevice",
+      "fundamentals_faqs_howtodisplaydecosfeaturesonanunpublishedtheme",
+      "fundamentals_faqs_caniusetheappforfree",
+      "fundamentals_faqs_iownormanagemultiplestoresdoiqualifyforspecialpricing",
+      "fundamentals_faqs_whatisthedifferencebetweenalabelandabadge",
+      "fundamentals_faqs_howdoiapprovedecospartnerrequest",
+      "fundamentals_faqs_howdoiupdatedecopartnersrequest",
+      "fundamentals_faqs_howcanifindthecollaboratorcode",
+      "fundamentals_faqs_mandatoryrulesfortextlabeltextbadgebannercontent",
+      "fundamentals_faqs_howtoremoveoldcodeleftfromthebigupdate"
+    ],
+    "children": []
+  },
+  "skyrocketconversionratewithdecobannerbars": {
+    "filename": "skyrocketconversionratewithdecobannerbars",
+    "title": "Skyrocket Conversion Rate with DECO Banner Bars! ✨",
+    "segments": [
+      "skyrocket-conversion-rate-with-deco-banner-bars"
+    ],
+    "order_index": 44,
+    "parent": null,
+    "prev": "fundamentals_faqs",
+    "next": "differentiateyourbrandthestrategyforyoursuccess",
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "differentiateyourbrandthestrategyforyoursuccess"
+    ],
+    "children": []
+  },
+  "differentiateyourbrandthestrategyforyoursuccess": {
+    "filename": "differentiateyourbrandthestrategyforyoursuccess",
+    "title": "Differentiate Your Brand: The Strategy For Your Success! 🪭",
+    "segments": [
+      "differentiate-your-brand-the-strategy-for-your-success"
+    ],
+    "order_index": 45,
+    "parent": null,
+    "prev": "skyrocketconversionratewithdecobannerbars",
+    "next": null,
+    "siblings": [
+      "welcome",
+      "ourfeatures_decoproductbadges",
+      "ourfeatures_decodiscounts",
+      "ourfeatures_decoproductbadges1",
+      "ourfeatures_decoproductbanners",
+      "ourfeatures_decotrustbadges",
+      "ourfeatures_decobadgegroup",
+      "ourfeatures_decoanalytics",
+      "ourspecialfeatures_productmetafields",
+      "ourspecialfeatures_adddynamiccontent",
+      "ourspecialfeatures_customerconditions",
+      "ourspecialfeatures_showdecobadgesonbogosiogiftoffer",
+      "ourspecialfeatures_addtranslationsforcontent",
+      "ourspecialfeatures_priority",
+      "ourspecialfeatures_showbadgebasedonstorelanguages",
+      "ourspecialfeatures_countdowntimer",
+      "ourspecialfeatures_transfersettings",
+      "showproductreviewvalues",
+      "fundamentals_faqs",
+      "skyrocketconversionratewithdecobannerbars"
+    ],
+    "children": []
+  }
+}

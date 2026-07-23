@@ -1,0 +1,1579 @@
+{
+  "master": {
+    "filename": "master",
+    "title": "About Search Pie",
+    "segments": [
+      "master"
+    ],
+    "order_index": 0,
+    "parent": null,
+    "prev": null,
+    "next": "basicknowledge_aguideforbeginners",
+    "siblings": [
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "basicknowledge_aguideforbeginners": {
+    "filename": "basicknowledge_aguideforbeginners",
+    "title": "A guide for Beginners",
+    "segments": [
+      "basic-knowledge",
+      "a-guide-for-beginners"
+    ],
+    "order_index": 1,
+    "parent": null,
+    "prev": "master",
+    "next": "basicknowledge_basicseoterms",
+    "siblings": [
+      "master",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "basicknowledge_basicseoterms": {
+    "filename": "basicknowledge_basicseoterms",
+    "title": "Basic SEO terms",
+    "segments": [
+      "basic-knowledge",
+      "basic-seo-terms"
+    ],
+    "order_index": 2,
+    "parent": null,
+    "prev": "basicknowledge_aguideforbeginners",
+    "next": "basicknowledge_checklistforseosuccess",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "basicknowledge_checklistforseosuccess": {
+    "filename": "basicknowledge_checklistforseosuccess",
+    "title": "App Dashboard",
+    "segments": [
+      "basic-knowledge",
+      "checklist-for-seo-success"
+    ],
+    "order_index": 3,
+    "parent": null,
+    "prev": "basicknowledge_basicseoterms",
+    "next": "appfeatures_yourseotoday",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "appfeatures_yourseotoday": {
+    "filename": "appfeatures_yourseotoday",
+    "title": "SEO Report",
+    "segments": [
+      "app-features",
+      "your-seo-today"
+    ],
+    "order_index": 4,
+    "parent": null,
+    "prev": "basicknowledge_checklistforseosuccess",
+    "next": "appfeatures_onpageandcontent",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "appfeatures_onpageandcontent": {
+    "filename": "appfeatures_onpageandcontent",
+    "title": "On-page & Content",
+    "segments": [
+      "app-features",
+      "on-page-and-content"
+    ],
+    "order_index": 5,
+    "parent": null,
+    "prev": "appfeatures_yourseotoday",
+    "next": "appfeatures_optimizeforai",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": [
+      "appfeatures_onpageandcontent_schemaandsnippets",
+      "appfeatures_onpageandcontent_bulkmetatags",
+      "appfeatures_onpageandcontent_bulkimagealt",
+      "appfeatures_onpageandcontent_aigeneration",
+      "appfeatures_onpageandcontent_keywordexplore",
+      "appfeatures_onpageandcontent_keywordaudit",
+      "appfeatures_onpageandcontent_positiontracking"
+    ]
+  },
+  "appfeatures_onpageandcontent_schemaandsnippets": {
+    "filename": "appfeatures_onpageandcontent_schemaandsnippets",
+    "title": "Schema & Snippets",
+    "segments": [
+      "app-features",
+      "on-page-and-content",
+      "schema-and-snippets"
+    ],
+    "order_index": 6,
+    "parent": "appfeatures_onpageandcontent",
+    "prev": null,
+    "next": "appfeatures_onpageandcontent_bulkmetatags",
+    "siblings": [
+      "appfeatures_onpageandcontent_bulkmetatags",
+      "appfeatures_onpageandcontent_bulkimagealt",
+      "appfeatures_onpageandcontent_aigeneration",
+      "appfeatures_onpageandcontent_keywordexplore",
+      "appfeatures_onpageandcontent_keywordaudit",
+      "appfeatures_onpageandcontent_positiontracking"
+    ],
+    "children": []
+  },
+  "appfeatures_onpageandcontent_bulkmetatags": {
+    "filename": "appfeatures_onpageandcontent_bulkmetatags",
+    "title": "Bulk Meta Tags",
+    "segments": [
+      "app-features",
+      "on-page-and-content",
+      "bulk-meta-tags"
+    ],
+    "order_index": 7,
+    "parent": "appfeatures_onpageandcontent",
+    "prev": "appfeatures_onpageandcontent_schemaandsnippets",
+    "next": "appfeatures_onpageandcontent_bulkimagealt",
+    "siblings": [
+      "appfeatures_onpageandcontent_schemaandsnippets",
+      "appfeatures_onpageandcontent_bulkimagealt",
+      "appfeatures_onpageandcontent_aigeneration",
+      "appfeatures_onpageandcontent_keywordexplore",
+      "appfeatures_onpageandcontent_keywordaudit",
+      "appfeatures_onpageandcontent_positiontracking"
+    ],
+    "children": []
+  },
+  "appfeatures_onpageandcontent_bulkimagealt": {
+    "filename": "appfeatures_onpageandcontent_bulkimagealt",
+    "title": "Bulk Image ALT",
+    "segments": [
+      "app-features",
+      "on-page-and-content",
+      "bulk-image-alt"
+    ],
+    "order_index": 8,
+    "parent": "appfeatures_onpageandcontent",
+    "prev": "appfeatures_onpageandcontent_bulkmetatags",
+    "next": "appfeatures_onpageandcontent_aigeneration",
+    "siblings": [
+      "appfeatures_onpageandcontent_schemaandsnippets",
+      "appfeatures_onpageandcontent_bulkmetatags",
+      "appfeatures_onpageandcontent_aigeneration",
+      "appfeatures_onpageandcontent_keywordexplore",
+      "appfeatures_onpageandcontent_keywordaudit",
+      "appfeatures_onpageandcontent_positiontracking"
+    ],
+    "children": []
+  },
+  "appfeatures_onpageandcontent_aigeneration": {
+    "filename": "appfeatures_onpageandcontent_aigeneration",
+    "title": "AI Generation",
+    "segments": [
+      "app-features",
+      "on-page-and-content",
+      "ai-generation"
+    ],
+    "order_index": 9,
+    "parent": "appfeatures_onpageandcontent",
+    "prev": "appfeatures_onpageandcontent_bulkimagealt",
+    "next": "appfeatures_onpageandcontent_keywordexplore",
+    "siblings": [
+      "appfeatures_onpageandcontent_schemaandsnippets",
+      "appfeatures_onpageandcontent_bulkmetatags",
+      "appfeatures_onpageandcontent_bulkimagealt",
+      "appfeatures_onpageandcontent_keywordexplore",
+      "appfeatures_onpageandcontent_keywordaudit",
+      "appfeatures_onpageandcontent_positiontracking"
+    ],
+    "children": []
+  },
+  "appfeatures_onpageandcontent_keywordexplore": {
+    "filename": "appfeatures_onpageandcontent_keywordexplore",
+    "title": "Keyword Explore",
+    "segments": [
+      "app-features",
+      "on-page-and-content",
+      "keyword-explore"
+    ],
+    "order_index": 10,
+    "parent": "appfeatures_onpageandcontent",
+    "prev": "appfeatures_onpageandcontent_aigeneration",
+    "next": "appfeatures_onpageandcontent_keywordaudit",
+    "siblings": [
+      "appfeatures_onpageandcontent_schemaandsnippets",
+      "appfeatures_onpageandcontent_bulkmetatags",
+      "appfeatures_onpageandcontent_bulkimagealt",
+      "appfeatures_onpageandcontent_aigeneration",
+      "appfeatures_onpageandcontent_keywordaudit",
+      "appfeatures_onpageandcontent_positiontracking"
+    ],
+    "children": []
+  },
+  "appfeatures_onpageandcontent_keywordaudit": {
+    "filename": "appfeatures_onpageandcontent_keywordaudit",
+    "title": "Keyword Audit",
+    "segments": [
+      "app-features",
+      "on-page-and-content",
+      "keyword-audit"
+    ],
+    "order_index": 11,
+    "parent": "appfeatures_onpageandcontent",
+    "prev": "appfeatures_onpageandcontent_keywordexplore",
+    "next": "appfeatures_onpageandcontent_positiontracking",
+    "siblings": [
+      "appfeatures_onpageandcontent_schemaandsnippets",
+      "appfeatures_onpageandcontent_bulkmetatags",
+      "appfeatures_onpageandcontent_bulkimagealt",
+      "appfeatures_onpageandcontent_aigeneration",
+      "appfeatures_onpageandcontent_keywordexplore",
+      "appfeatures_onpageandcontent_positiontracking"
+    ],
+    "children": []
+  },
+  "appfeatures_onpageandcontent_positiontracking": {
+    "filename": "appfeatures_onpageandcontent_positiontracking",
+    "title": "Position Tracking",
+    "segments": [
+      "app-features",
+      "on-page-and-content",
+      "position-tracking"
+    ],
+    "order_index": 12,
+    "parent": "appfeatures_onpageandcontent",
+    "prev": "appfeatures_onpageandcontent_keywordaudit",
+    "next": null,
+    "siblings": [
+      "appfeatures_onpageandcontent_schemaandsnippets",
+      "appfeatures_onpageandcontent_bulkmetatags",
+      "appfeatures_onpageandcontent_bulkimagealt",
+      "appfeatures_onpageandcontent_aigeneration",
+      "appfeatures_onpageandcontent_keywordexplore",
+      "appfeatures_onpageandcontent_keywordaudit"
+    ],
+    "children": []
+  },
+  "appfeatures_optimizeforai": {
+    "filename": "appfeatures_optimizeforai",
+    "title": "Optimize for AI",
+    "segments": [
+      "app-features",
+      "optimize-for-ai"
+    ],
+    "order_index": 13,
+    "parent": null,
+    "prev": "appfeatures_onpageandcontent",
+    "next": "appfeatures_seobasic",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "appfeatures_seobasic": {
+    "filename": "appfeatures_seobasic",
+    "title": "URL Control ",
+    "segments": [
+      "app-features",
+      "seo-basic"
+    ],
+    "order_index": 14,
+    "parent": null,
+    "prev": "appfeatures_optimizeforai",
+    "next": "appfeatures_sitespeed",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": [
+      "appfeatures_seobasic_brokenlink",
+      "appfeatures_seobasic_longurls",
+      "appfeatures_seobasic_internallink"
+    ]
+  },
+  "appfeatures_seobasic_brokenlink": {
+    "filename": "appfeatures_seobasic_brokenlink",
+    "title": "Broken Link",
+    "segments": [
+      "app-features",
+      "seo-basic",
+      "broken-link"
+    ],
+    "order_index": 15,
+    "parent": "appfeatures_seobasic",
+    "prev": null,
+    "next": "appfeatures_seobasic_longurls",
+    "siblings": [
+      "appfeatures_seobasic_longurls",
+      "appfeatures_seobasic_internallink"
+    ],
+    "children": []
+  },
+  "appfeatures_seobasic_longurls": {
+    "filename": "appfeatures_seobasic_longurls",
+    "title": "Long URLs",
+    "segments": [
+      "app-features",
+      "seo-basic",
+      "long-urls"
+    ],
+    "order_index": 16,
+    "parent": "appfeatures_seobasic",
+    "prev": "appfeatures_seobasic_brokenlink",
+    "next": "appfeatures_seobasic_internallink",
+    "siblings": [
+      "appfeatures_seobasic_brokenlink",
+      "appfeatures_seobasic_internallink"
+    ],
+    "children": []
+  },
+  "appfeatures_seobasic_internallink": {
+    "filename": "appfeatures_seobasic_internallink",
+    "title": "Internal Link",
+    "segments": [
+      "app-features",
+      "seo-basic",
+      "internal-link"
+    ],
+    "order_index": 17,
+    "parent": "appfeatures_seobasic",
+    "prev": "appfeatures_seobasic_longurls",
+    "next": null,
+    "siblings": [
+      "appfeatures_seobasic_brokenlink",
+      "appfeatures_seobasic_longurls"
+    ],
+    "children": []
+  },
+  "appfeatures_sitespeed": {
+    "filename": "appfeatures_sitespeed",
+    "title": "Site Speed",
+    "segments": [
+      "app-features",
+      "site-speed"
+    ],
+    "order_index": 18,
+    "parent": null,
+    "prev": "appfeatures_seobasic",
+    "next": "appfeatures_keywordresearch",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": [
+      "appfeatures_sitespeed_speedoptimization",
+      "appfeatures_sitespeed_instantpage",
+      "appfeatures_sitespeed_imagecompress",
+      "appfeatures_sitespeed_acceleratedmobilepages"
+    ]
+  },
+  "appfeatures_sitespeed_speedoptimization": {
+    "filename": "appfeatures_sitespeed_speedoptimization",
+    "title": "Speed Optimization",
+    "segments": [
+      "app-features",
+      "site-speed",
+      "speed-optimization"
+    ],
+    "order_index": 19,
+    "parent": "appfeatures_sitespeed",
+    "prev": null,
+    "next": "appfeatures_sitespeed_instantpage",
+    "siblings": [
+      "appfeatures_sitespeed_instantpage",
+      "appfeatures_sitespeed_imagecompress",
+      "appfeatures_sitespeed_acceleratedmobilepages"
+    ],
+    "children": []
+  },
+  "appfeatures_sitespeed_instantpage": {
+    "filename": "appfeatures_sitespeed_instantpage",
+    "title": "Instant Page",
+    "segments": [
+      "app-features",
+      "site-speed",
+      "instant-page"
+    ],
+    "order_index": 20,
+    "parent": "appfeatures_sitespeed",
+    "prev": "appfeatures_sitespeed_speedoptimization",
+    "next": "appfeatures_sitespeed_imagecompress",
+    "siblings": [
+      "appfeatures_sitespeed_speedoptimization",
+      "appfeatures_sitespeed_imagecompress",
+      "appfeatures_sitespeed_acceleratedmobilepages"
+    ],
+    "children": []
+  },
+  "appfeatures_sitespeed_imagecompress": {
+    "filename": "appfeatures_sitespeed_imagecompress",
+    "title": "Image Compress",
+    "segments": [
+      "app-features",
+      "site-speed",
+      "image-compress"
+    ],
+    "order_index": 21,
+    "parent": "appfeatures_sitespeed",
+    "prev": "appfeatures_sitespeed_instantpage",
+    "next": "appfeatures_sitespeed_acceleratedmobilepages",
+    "siblings": [
+      "appfeatures_sitespeed_speedoptimization",
+      "appfeatures_sitespeed_instantpage",
+      "appfeatures_sitespeed_acceleratedmobilepages"
+    ],
+    "children": []
+  },
+  "appfeatures_sitespeed_acceleratedmobilepages": {
+    "filename": "appfeatures_sitespeed_acceleratedmobilepages",
+    "title": "Accelerated Mobile Pages",
+    "segments": [
+      "app-features",
+      "site-speed",
+      "accelerated-mobile-pages"
+    ],
+    "order_index": 22,
+    "parent": "appfeatures_sitespeed",
+    "prev": "appfeatures_sitespeed_imagecompress",
+    "next": null,
+    "siblings": [
+      "appfeatures_sitespeed_speedoptimization",
+      "appfeatures_sitespeed_instantpage",
+      "appfeatures_sitespeed_imagecompress"
+    ],
+    "children": []
+  },
+  "appfeatures_keywordresearch": {
+    "filename": "appfeatures_keywordresearch",
+    "title": "Keyword Research",
+    "segments": [
+      "app-features",
+      "keyword-research"
+    ],
+    "order_index": 23,
+    "parent": null,
+    "prev": "appfeatures_sitespeed",
+    "next": "appfeatures_googleauthority",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "appfeatures_googleauthority": {
+    "filename": "appfeatures_googleauthority",
+    "title": "Google Authority",
+    "segments": [
+      "app-features",
+      "google-authority"
+    ],
+    "order_index": 24,
+    "parent": null,
+    "prev": "appfeatures_keywordresearch",
+    "next": "appfeatures_emailreport",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": [
+      "appfeatures_googleauthority_seoadvanced",
+      "appfeatures_googleauthority_backlink",
+      "appfeatures_googleauthority_sitemap",
+      "appfeatures_googleauthority_googlebusinessprofile",
+      "appfeatures_googleauthority_googlesearchconsoleandgoogleanalytics"
+    ]
+  },
+  "appfeatures_googleauthority_seoadvanced": {
+    "filename": "appfeatures_googleauthority_seoadvanced",
+    "title": "Google Search Console",
+    "segments": [
+      "app-features",
+      "google-authority",
+      "seo-advanced"
+    ],
+    "order_index": 25,
+    "parent": "appfeatures_googleauthority",
+    "prev": null,
+    "next": "appfeatures_googleauthority_backlink",
+    "siblings": [
+      "appfeatures_googleauthority_backlink",
+      "appfeatures_googleauthority_sitemap",
+      "appfeatures_googleauthority_googlebusinessprofile",
+      "appfeatures_googleauthority_googlesearchconsoleandgoogleanalytics"
+    ],
+    "children": []
+  },
+  "appfeatures_googleauthority_backlink": {
+    "filename": "appfeatures_googleauthority_backlink",
+    "title": "Backlink",
+    "segments": [
+      "app-features",
+      "google-authority",
+      "backlink"
+    ],
+    "order_index": 26,
+    "parent": "appfeatures_googleauthority",
+    "prev": "appfeatures_googleauthority_seoadvanced",
+    "next": "appfeatures_googleauthority_sitemap",
+    "siblings": [
+      "appfeatures_googleauthority_seoadvanced",
+      "appfeatures_googleauthority_sitemap",
+      "appfeatures_googleauthority_googlebusinessprofile",
+      "appfeatures_googleauthority_googlesearchconsoleandgoogleanalytics"
+    ],
+    "children": []
+  },
+  "appfeatures_googleauthority_sitemap": {
+    "filename": "appfeatures_googleauthority_sitemap",
+    "title": "Indexing",
+    "segments": [
+      "app-features",
+      "google-authority",
+      "sitemap"
+    ],
+    "order_index": 27,
+    "parent": "appfeatures_googleauthority",
+    "prev": "appfeatures_googleauthority_backlink",
+    "next": "appfeatures_googleauthority_googlebusinessprofile",
+    "siblings": [
+      "appfeatures_googleauthority_seoadvanced",
+      "appfeatures_googleauthority_backlink",
+      "appfeatures_googleauthority_googlebusinessprofile",
+      "appfeatures_googleauthority_googlesearchconsoleandgoogleanalytics"
+    ],
+    "children": []
+  },
+  "appfeatures_googleauthority_googlebusinessprofile": {
+    "filename": "appfeatures_googleauthority_googlebusinessprofile",
+    "title": "Google Business Profile",
+    "segments": [
+      "app-features",
+      "google-authority",
+      "google-business-profile"
+    ],
+    "order_index": 28,
+    "parent": "appfeatures_googleauthority",
+    "prev": "appfeatures_googleauthority_sitemap",
+    "next": "appfeatures_googleauthority_googlesearchconsoleandgoogleanalytics",
+    "siblings": [
+      "appfeatures_googleauthority_seoadvanced",
+      "appfeatures_googleauthority_backlink",
+      "appfeatures_googleauthority_sitemap",
+      "appfeatures_googleauthority_googlesearchconsoleandgoogleanalytics"
+    ],
+    "children": []
+  },
+  "appfeatures_googleauthority_googlesearchconsoleandgoogleanalytics": {
+    "filename": "appfeatures_googleauthority_googlesearchconsoleandgoogleanalytics",
+    "title": "Tracking",
+    "segments": [
+      "app-features",
+      "google-authority",
+      "google-search-console-and-google-analytics"
+    ],
+    "order_index": 29,
+    "parent": "appfeatures_googleauthority",
+    "prev": "appfeatures_googleauthority_googlebusinessprofile",
+    "next": null,
+    "siblings": [
+      "appfeatures_googleauthority_seoadvanced",
+      "appfeatures_googleauthority_backlink",
+      "appfeatures_googleauthority_sitemap",
+      "appfeatures_googleauthority_googlebusinessprofile"
+    ],
+    "children": []
+  },
+  "appfeatures_emailreport": {
+    "filename": "appfeatures_emailreport",
+    "title": "Setting",
+    "segments": [
+      "app-features",
+      "email-report"
+    ],
+    "order_index": 30,
+    "parent": null,
+    "prev": "appfeatures_googleauthority",
+    "next": "appfeatures_searchpieloyaltyprogram",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "appfeatures_searchpieloyaltyprogram": {
+    "filename": "appfeatures_searchpieloyaltyprogram",
+    "title": "SearchPie Loyalty Program",
+    "segments": [
+      "app-features",
+      "searchpie-loyalty-program"
+    ],
+    "order_index": 31,
+    "parent": null,
+    "prev": "appfeatures_emailreport",
+    "next": "pricingplan_pricingplans",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "pricingplan_pricingplans": {
+    "filename": "pricingplan_pricingplans",
+    "title": "Pricing Plans",
+    "segments": [
+      "pricing-plan",
+      "pricing-plans"
+    ],
+    "order_index": 32,
+    "parent": null,
+    "prev": "appfeatures_searchpieloyaltyprogram",
+    "next": "pricingplan_refundpolicy",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": [
+      "pricingplan_pricingplans_speedoptimization",
+      "pricingplan_pricingplans_gmcoptimization",
+      "pricingplan_pricingplans_vipampcustomization",
+      "pricingplan_pricingplans_gscoptimization",
+      "pricingplan_pricingplans_localseo",
+      "pricingplan_pricingplans_plusplan"
+    ]
+  },
+  "pricingplan_pricingplans_speedoptimization": {
+    "filename": "pricingplan_pricingplans_speedoptimization",
+    "title": "Speed Optimization",
+    "segments": [
+      "pricing-plan",
+      "pricing-plans",
+      "speed-optimization"
+    ],
+    "order_index": 33,
+    "parent": "pricingplan_pricingplans",
+    "prev": null,
+    "next": "pricingplan_pricingplans_gmcoptimization",
+    "siblings": [
+      "pricingplan_pricingplans_gmcoptimization",
+      "pricingplan_pricingplans_vipampcustomization",
+      "pricingplan_pricingplans_gscoptimization",
+      "pricingplan_pricingplans_localseo",
+      "pricingplan_pricingplans_plusplan"
+    ],
+    "children": []
+  },
+  "pricingplan_pricingplans_gmcoptimization": {
+    "filename": "pricingplan_pricingplans_gmcoptimization",
+    "title": "GMC Optimization",
+    "segments": [
+      "pricing-plan",
+      "pricing-plans",
+      "gmc-optimization"
+    ],
+    "order_index": 34,
+    "parent": "pricingplan_pricingplans",
+    "prev": "pricingplan_pricingplans_speedoptimization",
+    "next": "pricingplan_pricingplans_vipampcustomization",
+    "siblings": [
+      "pricingplan_pricingplans_speedoptimization",
+      "pricingplan_pricingplans_vipampcustomization",
+      "pricingplan_pricingplans_gscoptimization",
+      "pricingplan_pricingplans_localseo",
+      "pricingplan_pricingplans_plusplan"
+    ],
+    "children": []
+  },
+  "pricingplan_pricingplans_vipampcustomization": {
+    "filename": "pricingplan_pricingplans_vipampcustomization",
+    "title": "VIP AMP Customization",
+    "segments": [
+      "pricing-plan",
+      "pricing-plans",
+      "vip-amp-customization"
+    ],
+    "order_index": 35,
+    "parent": "pricingplan_pricingplans",
+    "prev": "pricingplan_pricingplans_gmcoptimization",
+    "next": "pricingplan_pricingplans_gscoptimization",
+    "siblings": [
+      "pricingplan_pricingplans_speedoptimization",
+      "pricingplan_pricingplans_gmcoptimization",
+      "pricingplan_pricingplans_gscoptimization",
+      "pricingplan_pricingplans_localseo",
+      "pricingplan_pricingplans_plusplan"
+    ],
+    "children": []
+  },
+  "pricingplan_pricingplans_gscoptimization": {
+    "filename": "pricingplan_pricingplans_gscoptimization",
+    "title": "GSC Optimization",
+    "segments": [
+      "pricing-plan",
+      "pricing-plans",
+      "gsc-optimization"
+    ],
+    "order_index": 36,
+    "parent": "pricingplan_pricingplans",
+    "prev": "pricingplan_pricingplans_vipampcustomization",
+    "next": "pricingplan_pricingplans_localseo",
+    "siblings": [
+      "pricingplan_pricingplans_speedoptimization",
+      "pricingplan_pricingplans_gmcoptimization",
+      "pricingplan_pricingplans_vipampcustomization",
+      "pricingplan_pricingplans_localseo",
+      "pricingplan_pricingplans_plusplan"
+    ],
+    "children": []
+  },
+  "pricingplan_pricingplans_localseo": {
+    "filename": "pricingplan_pricingplans_localseo",
+    "title": "Local SEO",
+    "segments": [
+      "pricing-plan",
+      "pricing-plans",
+      "local-seo"
+    ],
+    "order_index": 37,
+    "parent": "pricingplan_pricingplans",
+    "prev": "pricingplan_pricingplans_gscoptimization",
+    "next": "pricingplan_pricingplans_plusplan",
+    "siblings": [
+      "pricingplan_pricingplans_speedoptimization",
+      "pricingplan_pricingplans_gmcoptimization",
+      "pricingplan_pricingplans_vipampcustomization",
+      "pricingplan_pricingplans_gscoptimization",
+      "pricingplan_pricingplans_plusplan"
+    ],
+    "children": []
+  },
+  "pricingplan_pricingplans_plusplan": {
+    "filename": "pricingplan_pricingplans_plusplan",
+    "title": "Plus Plan",
+    "segments": [
+      "pricing-plan",
+      "pricing-plans",
+      "plus-plan"
+    ],
+    "order_index": 38,
+    "parent": "pricingplan_pricingplans",
+    "prev": "pricingplan_pricingplans_localseo",
+    "next": null,
+    "siblings": [
+      "pricingplan_pricingplans_speedoptimization",
+      "pricingplan_pricingplans_gmcoptimization",
+      "pricingplan_pricingplans_vipampcustomization",
+      "pricingplan_pricingplans_gscoptimization",
+      "pricingplan_pricingplans_localseo"
+    ],
+    "children": []
+  },
+  "pricingplan_refundpolicy": {
+    "filename": "pricingplan_refundpolicy",
+    "title": "Refund Policy",
+    "segments": [
+      "pricing-plan",
+      "refund-policy"
+    ],
+    "order_index": 39,
+    "parent": null,
+    "prev": "pricingplan_pricingplans",
+    "next": "faq_generalquestions",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "faq_generalquestions": {
+    "filename": "faq_generalquestions",
+    "title": "General Questions",
+    "segments": [
+      "faq",
+      "general-questions"
+    ],
+    "order_index": 40,
+    "parent": null,
+    "prev": "pricingplan_refundpolicy",
+    "next": "faq_howdoiapprovesearchpiespartnerrequest",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "faq_howdoiapprovesearchpiespartnerrequest": {
+    "filename": "faq_howdoiapprovesearchpiespartnerrequest",
+    "title": "How do I approve SearchPie's partner request?",
+    "segments": [
+      "faq",
+      "how-do-i-approve-searchpies-partner-request"
+    ],
+    "order_index": 41,
+    "parent": null,
+    "prev": "faq_generalquestions",
+    "next": "faq_howtoclaimsearchpiescoupon",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "faq_howtoclaimsearchpiescoupon": {
+    "filename": "faq_howtoclaimsearchpiescoupon",
+    "title": "How to claim SearchPie's coupon?",
+    "segments": [
+      "faq",
+      "how-to-claim-searchpies-coupon"
+    ],
+    "order_index": 42,
+    "parent": null,
+    "prev": "faq_howdoiapprovesearchpiespartnerrequest",
+    "next": "faq_howtosetupfaq",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "faq_howtosetupfaq": {
+    "filename": "faq_howtosetupfaq",
+    "title": "How to set up FAQ?",
+    "segments": [
+      "faq",
+      "how-to-set-up-faq"
+    ],
+    "order_index": 43,
+    "parent": null,
+    "prev": "faq_howtoclaimsearchpiescoupon",
+    "next": "privacypolicy",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "privacypolicy": {
+    "filename": "privacypolicy",
+    "title": "Privacy Policy",
+    "segments": [
+      "privacy-policy"
+    ],
+    "order_index": 44,
+    "parent": null,
+    "prev": "faq_howtosetupfaq",
+    "next": "termsandconditions",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "termsandconditions": {
+    "filename": "termsandconditions",
+    "title": "Terms and Conditions",
+    "segments": [
+      "terms-and-conditions"
+    ],
+    "order_index": 45,
+    "parent": null,
+    "prev": "privacypolicy",
+    "next": "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration": {
+    "filename": "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+    "title": "Increase your product visibility on Google with SearchPie x BON Loyalty integration",
+    "segments": [
+      "further-readings",
+      "increase-your-product-visibility-on-google-with-searchpie-x-bon-loyalty-integration"
+    ],
+    "order_index": 46,
+    "parent": null,
+    "prev": "termsandconditions",
+    "next": "furtherreadings_seoforshopifyseoprocessandplan",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "furtherreadings_seoforshopifyseoprocessandplan": {
+    "filename": "furtherreadings_seoforshopifyseoprocessandplan",
+    "title": "SEO for Shopify: SEO process and plan",
+    "segments": [
+      "further-readings",
+      "seo-for-shopify-seo-process-and-plan"
+    ],
+    "order_index": 47,
+    "parent": null,
+    "prev": "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+    "next": "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "furtherreadings_howcantechnicalseomakeyouvisibleongoogle": {
+    "filename": "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+    "title": "How can technical SEO make you visible on Google?",
+    "segments": [
+      "further-readings",
+      "how-can-technical-seo-make-you-visible-on-google"
+    ],
+    "order_index": 48,
+    "parent": null,
+    "prev": "furtherreadings_seoforshopifyseoprocessandplan",
+    "next": "furtherreadings_seotrendsthatwillblossomin2021",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_seotrendsthatwillblossomin2021",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "furtherreadings_seotrendsthatwillblossomin2021": {
+    "filename": "furtherreadings_seotrendsthatwillblossomin2021",
+    "title": "6 SEO Trends That Will Blossom in 2021",
+    "segments": [
+      "further-readings",
+      "6-seo-trends-that-will-blossom-in-2021"
+    ],
+    "order_index": 49,
+    "parent": null,
+    "prev": "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+    "next": "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores",
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores"
+    ],
+    "children": []
+  },
+  "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores": {
+    "filename": "furtherreadings_ecomposerxsearchpiehowtobuildseofriendlyshopifypagesforyourecommercestores",
+    "title": "EComposer x SearchPie: How to build SEO-friendly Shopify pages for your E-Commerce stores?",
+    "segments": [
+      "further-readings",
+      "ecomposer-x-searchpie-how-to-build-seo-friendly-shopify-pages-for-your-e-commerce-stores"
+    ],
+    "order_index": 50,
+    "parent": null,
+    "prev": "furtherreadings_seotrendsthatwillblossomin2021",
+    "next": null,
+    "siblings": [
+      "master",
+      "basicknowledge_aguideforbeginners",
+      "basicknowledge_basicseoterms",
+      "basicknowledge_checklistforseosuccess",
+      "appfeatures_yourseotoday",
+      "appfeatures_onpageandcontent",
+      "appfeatures_optimizeforai",
+      "appfeatures_seobasic",
+      "appfeatures_sitespeed",
+      "appfeatures_keywordresearch",
+      "appfeatures_googleauthority",
+      "appfeatures_emailreport",
+      "appfeatures_searchpieloyaltyprogram",
+      "pricingplan_pricingplans",
+      "pricingplan_refundpolicy",
+      "faq_generalquestions",
+      "faq_howdoiapprovesearchpiespartnerrequest",
+      "faq_howtoclaimsearchpiescoupon",
+      "faq_howtosetupfaq",
+      "privacypolicy",
+      "termsandconditions",
+      "furtherreadings_increaseyourproductvisibilityongooglewithsearchpiexbonloyaltyintegration",
+      "furtherreadings_seoforshopifyseoprocessandplan",
+      "furtherreadings_howcantechnicalseomakeyouvisibleongoogle",
+      "furtherreadings_seotrendsthatwillblossomin2021"
+    ],
+    "children": []
+  }
+}

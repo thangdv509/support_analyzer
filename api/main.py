@@ -883,7 +883,7 @@ def review_stats(
     db  = _gdb()
     col = db["qa_reviews"]
 
-    query: dict[str, Any] = {"status": "Live"}
+    query: dict[str, Any] = {"status": "Live", "package": {"$ne": "Upgrade"}}
     if app_name:
         query["app"] = app_name
     if date_from and date_to:
@@ -894,7 +894,7 @@ def review_stats(
         query["review_date"] = {"$lte": date_to}
 
     projection = {"mentioned": 1, "cs1": 1, "cs2": 1, "tech": 1,
-                  "point": 1, "he_so": 1, "review_date": 1, "status": 1}
+                  "point": 1, "he_so": 1, "review_date": 1, "status": 1, "package": 1}
     reviews = list(col.find(query, projection))
 
     def _empty_stat(email: str) -> dict:
@@ -931,8 +931,15 @@ def review_stats(
         for email in unique_agents:
             if email not in stats:
                 stats[email] = _empty_stat(email)
-            stats[email]["total_count"] += 1
-            stats[email]["total_point"]  = round(stats[email]["total_point"] + each_point, 2)
+            stats[email]["total_point"] = round(stats[email]["total_point"] + each_point, 2)
+
+        # "Tổng reviews" chỉ tính cho CS1 — mentioned/cs2/tech chỉ liên quan thưởng,
+        # không tính là review.
+        cs1_email = (rev.get("cs1") or "").strip().lower()
+        if cs1_email:
+            if cs1_email not in stats:
+                stats[cs1_email] = _empty_stat(cs1_email)
+            stats[cs1_email]["total_count"] += 1
 
         # ── 4. Đếm số lần theo vai trò (không dedup) ────────────────────────
         for role in ("mentioned", "cs1", "cs2", "tech"):

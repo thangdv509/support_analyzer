@@ -11,3 +11,8 @@ pyngrok
 fastapi
 uvicorn[standard]
 python-jose[cryptography]
+langdetect
+beautifulsoup4
+lxml
+markdownify
+numpy

@@ -21,8 +21,8 @@ interface AgentStat {
 
 interface UserInfo { email: string; name: string; nickname: string; picture: string }
 
-const APP_OPTIONS = ['SearchPie', 'DECO']
-const APP_COLOR: Record<string,string> = { SearchPie: '#7c3aed', DECO: '#0e7490' }
+const APP_OPTIONS = ['SearchPie', 'DECO', 'PAI']
+const APP_COLOR: Record<string,string> = { SearchPie: '#7c3aed', DECO: '#0e7490', PAI: '#b45309' }
 
 async function fetchReviewStats(dateFrom='', dateTo='', appName=''): Promise<AgentStat[]> {
   const params = new URLSearchParams()

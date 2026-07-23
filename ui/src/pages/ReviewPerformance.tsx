@@ -30,11 +30,11 @@ const { RangePicker } = DatePicker
 
 const STAR_RATINGS    = ['1','2','3','4','5']
 const PACKAGE_OPTIONS = ['GSC package','SEO Map Package','GMC Package','VIP Scan','Upgrade','Plus','Vip AI','Speed Plan']
-const APP_OPTIONS     = ['SearchPie','DECO']
+const APP_OPTIONS     = ['SearchPie','DECO','PAI']
 const STATUS_OPTIONS  = ['Live','Pending']
 const PLAN_OPTIONS    = ['Free','Paid']
 
-const APP_COLOR: Record<string,string> = { SearchPie: '#7c3aed', DECO: '#0e7490' }
+const APP_COLOR: Record<string,string> = { SearchPie: '#7c3aed', DECO: '#0e7490', PAI: '#b45309' }
 
 const STATUS_COLOR: Record<string,string> = { Live: '#16a34a', Pending: '#f59e0b' }
 const PLAN_COLOR:   Record<string,string>  = { Free: '#475569', Paid: '#6366f1' }
@@ -67,6 +67,7 @@ interface ReviewRequest {
 
 interface Filters {
   status: string; plan: string; star: string; pkg: string; app: string; agent: string
+  mentionedAgent: string; cs1Agent: string
   dateFrom: string; dateTo: string; dateRange: [Dayjs,Dayjs] | null
 }
 
@@ -117,6 +118,8 @@ function applyFilters(rows: Review[], f: Filters, userMap: Record<string,string>
       })
       if (!match) return false
     }
+    if (f.mentionedAgent && r.mentioned.toLowerCase() !== f.mentionedAgent.toLowerCase()) return false
+    if (f.cs1Agent && r.cs1.toLowerCase() !== f.cs1Agent.toLowerCase()) return false
     return true
   })
 }
@@ -172,12 +175,21 @@ function PointCell({ value }: ICellRendererParams) {
 
 // ── Filter Bar ────────────────────────────────────────────────────────────────
 
-const EMPTY: Filters = { status:'', plan:'', star:'', pkg:'', app:'', agent:'', dateFrom:'', dateTo:'', dateRange:null }
+const EMPTY: Filters = {
+  status:'', plan:'', star:'', pkg:'', app:'', agent:'', mentionedAgent:'', cs1Agent:'',
+  dateFrom:'', dateTo:'', dateRange:null,
+}
 
-function ReviewFilterBar({ value, onChange, showAgent }: { value: Filters; onChange: (f:Filters)=>void; showAgent: boolean }) {
+function ReviewFilterBar({ value, onChange, showAgent, userOpts }: {
+  value: Filters; onChange: (f:Filters)=>void; showAgent: boolean
+  userOpts: { label:string; value:string }[]
+}) {
   const set = (patch: Partial<Filters>) => onChange({ ...value, ...patch })
 
-  const activeCount = [value.status, value.plan, value.star, value.pkg, value.app, value.agent, value.dateFrom].filter(Boolean).length
+  const activeCount = [
+    value.status, value.plan, value.star, value.pkg, value.app,
+    value.agent, value.mentionedAgent, value.cs1Agent, value.dateFrom,
+  ].filter(Boolean).length
 
   return (
     <div style={{
@@ -253,6 +265,7 @@ function ReviewFilterBar({ value, onChange, showAgent }: { value: Filters; onCha
             { label:'All', value:'__all__' },
             { label:<span style={{ color:APP_COLOR['SearchPie'], fontWeight:600 }}>SearchPie</span>, value:'SearchPie' },
             { label:<span style={{ color:APP_COLOR['DECO'], fontWeight:600 }}>DECO</span>, value:'DECO' },
+            { label:<span style={{ color:APP_COLOR['PAI'], fontWeight:600 }}>PAI</span>, value:'PAI' },
           ]}
         />
       </div>
@@ -265,6 +278,22 @@ function ReviewFilterBar({ value, onChange, showAgent }: { value: Filters; onCha
             <Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>AGENT</Text>
             <Input size="small" style={{ width:180 }} value={value.agent}
               placeholder="Tìm tên hoặc email…" allowClear onChange={e => set({ agent:e.target.value })} />
+          </div>
+
+          <div style={{ flexBasis:'100%', height:0 }} />
+          <div>
+            <Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>MENTIONED</Text>
+            <Select size="small" style={{ width:150 }} value={value.mentionedAgent||undefined}
+              placeholder="All" allowClear showSearch optionFilterProp="label"
+              options={userOpts} onChange={v => set({ mentionedAgent:v??'' })} />
+          </div>
+
+          <Divider type="vertical" style={{ height:44, margin:'0 4px' }} />
+          <div>
+            <Text style={{ fontSize:11, color:'#888', display:'block', marginBottom:4 }}>CS 1</Text>
+            <Select size="small" style={{ width:150 }} value={value.cs1Agent||undefined}
+              placeholder="All" allowClear showSearch optionFilterProp="label"
+              options={userOpts} onChange={v => set({ cs1Agent:v??'' })} />
           </div>
         </>
       )}
@@ -678,7 +707,7 @@ export default function ReviewPerformance() {
       )}
 
       {/* Filter bar */}
-      <ReviewFilterBar value={filters} onChange={setFilters} showAgent={isEditor} />
+      <ReviewFilterBar value={filters} onChange={setFilters} showAgent={isEditor} userOpts={userOpts} />
 
       {/* Toolbar */}
       <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:8 }}>

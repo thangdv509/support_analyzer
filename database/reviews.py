@@ -17,7 +17,7 @@ _COL = "qa_reviews"
 STAR_RATINGS    = ["1", "2", "3", "4", "5"]
 PACKAGE_OPTIONS = ["GSC package", "SEO Map Package", "GMC Package",
                    "VIP Scan", "Upgrade", "Plus", "Vip AI", "Speed Plan"]
-APP_OPTIONS     = ["SearchPie", "DECO"]
+APP_OPTIONS     = ["SearchPie", "DECO", "PAI"]
 STATUS_OPTIONS  = ["Live", "Pending"]
 PLAN_OPTIONS    = ["Free", "Paid"]
 

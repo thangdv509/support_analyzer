@@ -8,3 +8,6 @@ data
 update_sumtag_app.py
 ui/node_modules/
 *.md
+!docs/app_guides/**/*.md
+chatbot/tickets_mock.jsonl
+chatbot/ticket_state.json
