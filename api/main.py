@@ -593,6 +593,156 @@ def get_stats(
     return result
 
 
+def _extract_customer_issue(transcript: str) -> str:
+    """Lấy 1-2 tin nhắn đầu của KHÁCH trong transcript — để biết chat này về vấn đề gì.
+    (overall_summary chỉ đánh giá hiệu suất agent, không mô tả nội dung vấn đề khách hỏi).
+    Format transcript (xem analyzer_v2.py): operator lines thụt "  " (2 space), customer thì không."""
+    blocks = transcript.split("\n\n")
+    found = []
+    for block in blocks:
+        if not block.strip():
+            continue
+        if block.startswith("---") or block.startswith("[Agent"):
+            continue
+        if block.startswith("  "):  # operator
+            continue
+        first_line = block.strip().split("\n")[0]
+        content = first_line.split(":", 1)[1].strip() if ":" in first_line else first_line.strip()
+        if content:
+            found.append(content)
+        if len(found) >= 2:
+            break
+    return " / ".join(found)[:250]
+
+
+@app.get("/api/agent-summary", dependencies=[Depends(require_manager_or_admin)])
+def agent_summary(
+    agent:     str = Query(...),
+    app:       str = Query(""),
+    date_from: str = Query(""),
+    date_to:   str = Query(""),
+):
+    """Tổng hợp đánh giá tổng quan 1 agent (Ưu điểm/Nhược điểm/Cần cải thiện) bằng LLM,
+    dựa trên toàn bộ chat đã chấm của agent đó trong khoảng ngày được chọn."""
+    from database.deco_chat import get_chats_by_date_range
+
+    ck = _ck("agent-summary", agent, app, date_from, date_to)
+    cached = _cget(ck)
+    if cached is not None:
+        return cached
+
+    chats = get_chats_by_date_range(
+        date_from or "0000-01-01", date_to or "9999-12-31",
+        operator=agent, app=app or None,
+    )
+    if not chats:
+        raise HTTPException(status_code=404, detail="Không có chat nào của agent này trong khoảng thời gian đã chọn")
+
+    MAX_CHATS = 150  # tránh prompt quá dài nếu khoảng ngày rất rộng
+    truncated = len(chats) > MAX_CHATS
+    sample = chats[-MAX_CHATS:] if truncated else chats
+
+    digest_lines = []
+    for c in sample:
+        g = c.get("grading") or {}
+        score = g.get("final_score_10")
+        summary = (g.get("overall_summary") or "").strip()
+        issue = _extract_customer_issue(c.get("transcript", ""))
+        digest_lines.append(f"- [{c.get('date')}] ({c.get('app')}) Điểm: {score}/10")
+        if issue:
+            digest_lines.append(f"    Khách hỏi: {issue}")
+        digest_lines.append(f"    Đánh giá: {summary}")
+
+        criteria = g.get("criteria") or {}
+        weak = sorted(
+            ((k, v) for k, v in criteria.items() if isinstance(v, dict)),
+            key=lambda kv: kv[1].get("score", 999),
+        )[:2]
+        for key, val in weak:
+            justification = (val.get("justification") or "").strip()[:200]
+            if justification:
+                digest_lines.append(f"    · {key} ({val.get('score')}đ): {justification}")
+
+    digest = "\n".join(digest_lines)
+    note = f"\n(Lưu ý: agent có {len(chats)} chat trong khoảng này, chỉ lấy mẫu {MAX_CHATS} chat gần nhất để tổng hợp.)" if truncated else ""
+
+    system_prompt = (
+        "Bạn là quản lý QA đang tổng hợp đánh giá tổng quan hiệu suất của 1 agent support, "
+        "dựa trên dữ liệu chấm điểm chi tiết từng chat được cung cấp. Chỉ trả lời bằng JSON "
+        "đúng format được yêu cầu, không thêm chữ nào khác ngoài JSON."
+    )
+    user_prompt = f"""Tổng hợp đánh giá TỔNG QUAN cho agent support "{agent}", dựa trên {len(sample)}
+cuộc chat đã được chấm điểm trong khoảng thời gian được chọn.{note}
+
+DỮ LIỆU CHẤM ĐIỂM TỪNG CHAT (điểm số + khách hỏi gì + tóm tắt đánh giá + tiêu chí bị trừ điểm nếu có):
+{digest}
+
+Hãy tổng hợp đánh giá TỔNG QUAN về agent này (nhìn xu hướng lặp lại qua nhiều chat, KHÔNG liệt kê
+lại từng chat riêng lẻ), gồm đúng 4 phần:
+- "strengths": các ưu điểm nổi bật, nhất quán qua nhiều chat
+- "weaknesses": các nhược điểm/vấn đề lặp lại nhiều lần
+- "improvements": gợi ý cụ thể, hành động được, để agent cải thiện
+- "common_issues": tổng quan các LOẠI vấn đề/câu hỏi mà khách hàng hay hỏi agent này nhất
+  (gộp nhóm theo chủ đề, vd "hỏi cách setup schema markup", "khiếu nại billing/refund",
+  "báo lỗi hiển thị badge trên theme", ... — KHÔNG phải đánh giá hiệu suất, chỉ là nội dung vấn đề)
+
+Mỗi phần là 1 danh sách các câu ngắn gọn, cụ thể (không chung chung), viết bằng tiếng Việt.
+Nếu không đủ dữ liệu cho 1 phần nào đó, để danh sách rỗng, không bịa.
+Trả về BẮT BUỘC đúng JSON sau, không thêm chữ nào khác:
+{{"strengths": ["..."], "weaknesses": ["..."], "improvements": ["..."], "common_issues": ["..."]}}
+"""
+
+    import time as _time
+    last_err = ""
+    parsed = None
+    for attempt in range(1, 4):
+        try:
+            r = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={
+                    "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+                    "Content-Type": "application/json",
+                },
+                json={
+                    "model": "google/gemini-3.6-flash",  # riêng cho summarize, không dùng MODEL/OPENROUTER_MODEL chung
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    "response_format": {"type": "json_object"},
+                    "max_tokens": 2048,
+                },
+                timeout=120,
+            )
+            if r.status_code == 429:
+                _time.sleep(10 * attempt)
+                continue
+            r.raise_for_status()
+            raw = r.json()["choices"][0]["message"]["content"]
+            parsed = json.loads(raw)
+            break
+        except Exception as e:
+            last_err = str(e)
+            print(f"[agent-summary] attempt {attempt}/3 failed: {last_err}")
+            if attempt < 3:
+                _time.sleep(3 * attempt)
+
+    if parsed is None:
+        raise HTTPException(status_code=500, detail=f"Summarize failed after 3 attempts: {last_err}")
+
+    result = {
+        "agent": agent,
+        "chat_count": len(chats),
+        "sampled_count": len(sample),
+        "strengths": parsed.get("strengths", []),
+        "weaknesses": parsed.get("weaknesses", []),
+        "improvements": parsed.get("improvements", []),
+        "common_issues": parsed.get("common_issues", []),
+    }
+    _cset(ck, result)
+    return result
+
+
 @app.post("/api/cache/clear")
 def clear_cache():
     n = cache_clear()

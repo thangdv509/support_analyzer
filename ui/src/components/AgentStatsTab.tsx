@@ -8,12 +8,13 @@ import {
   Progress,
   Segmented,
   Select,
+  Spin,
   Table,
   Tag,
   Tooltip,
   Typography,
 } from 'antd'
-import { BarChartOutlined, FilterOutlined, ReloadOutlined, UserOutlined } from '@ant-design/icons'
+import { BarChartOutlined, BulbOutlined, FilterOutlined, ReloadOutlined, UserOutlined } from '@ant-design/icons'
 import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 import dayjs, { type Dayjs } from 'dayjs'
@@ -127,6 +128,83 @@ function AgentTrendModal({ agent, name, onClose }: { agent: string; name: string
   )
 }
 
+// ── Summary Modal ─────────────────────────────────────────────────────────────
+
+interface AgentSummary {
+  chat_count: number
+  sampled_count: number
+  strengths: string[]
+  weaknesses: string[]
+  improvements: string[]
+  common_issues: string[]
+}
+
+const SUMMARY_SECTIONS: { key: keyof Pick<AgentSummary, 'strengths'|'weaknesses'|'improvements'|'common_issues'>; label: string; color: string }[] = [
+  { key: 'common_issues', label: 'Vấn đề thường gặp', color: '#6366f1' },
+  { key: 'strengths',     label: 'Ưu điểm',           color: '#16a34a' },
+  { key: 'weaknesses',    label: 'Nhược điểm',         color: '#ef4444' },
+  { key: 'improvements',  label: 'Cần cải thiện',      color: '#f59e0b' },
+]
+
+function AgentSummaryModal({ agent, name, app, dateFrom, dateTo, onClose }: {
+  agent: string; name: string; app: string; dateFrom: string; dateTo: string; onClose: () => void
+}) {
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ['agent-summary', agent, app, dateFrom, dateTo],
+    queryFn: async () => {
+      const params = new URLSearchParams({ agent })
+      if (app)      params.set('app', app)
+      if (dateFrom) params.set('date_from', dateFrom)
+      if (dateTo)   params.set('date_to', dateTo)
+      return (await http.get(`/agent-summary?${params}`)).data as AgentSummary
+    },
+    staleTime: 5 * 60_000,
+    retry: false,
+    enabled: !!agent,
+  })
+
+  return (
+    <Modal
+      title={<span>Tổng hợp đánh giá — <strong>{name}</strong></span>}
+      open onCancel={onClose} footer={null} width={640}
+    >
+      {isLoading && (
+        <div style={{ height: 220, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Spin tip="Đang tổng hợp bằng AI…" />
+        </div>
+      )}
+      {isError && (
+        <div style={{ padding: 20, textAlign: 'center', color: '#ef4444', fontSize: 13 }}>
+          {(error as { response?: { data?: { detail?: string } } })?.response?.data?.detail
+            || 'Không thể tổng hợp — thử lại sau.'}
+        </div>
+      )}
+      {data && (
+        <div>
+          <Text type="secondary" style={{ fontSize: 12 }}>
+            Dựa trên {data.chat_count.toLocaleString()} chat đã chấm
+            {data.sampled_count < data.chat_count ? ` (lấy mẫu ${data.sampled_count} chat gần nhất)` : ''} trong khoảng ngày đã chọn.
+          </Text>
+          {SUMMARY_SECTIONS.map(s => (
+            <div key={s.key} style={{ marginTop: 18 }}>
+              <Text strong style={{ color: s.color, fontSize: 13 }}>{s.label}</Text>
+              {data[s.key].length === 0 ? (
+                <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 4 }}>Không có dữ liệu</div>
+              ) : (
+                <ul style={{ margin: '6px 0 0', paddingLeft: 20 }}>
+                  {data[s.key].map((line, i) => (
+                    <li key={i} style={{ fontSize: 13, marginBottom: 4, lineHeight: 1.5 }}>{line}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+    </Modal>
+  )
+}
+
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function sc(v: number | null) {
@@ -157,6 +235,7 @@ export default function AgentStatsTab() {
   const [applied, setApplied] = useState<Params>(DEFAULT_PARAMS)
   const [dateValue, setDateValue] = useState<[Dayjs, Dayjs] | null>(null)
   const [trendAgent, setTrendAgent] = useState<{ email: string; name: string } | null>(null)
+  const [summaryAgent, setSummaryAgent] = useState<{ email: string; name: string } | null>(null)
 
   const { data: agents = [] } = useQuery({
     queryKey: ['agents', local.app],
@@ -275,16 +354,23 @@ export default function AgentStatsTab() {
       ),
     },
     {
-      title: '', key: 'trend', width: 40,
+      title: '', key: 'actions', width: 76,
       render: (_: unknown, row: AgentRow) => {
         const u = agentMap[row.agent]
         const name = u ? (u.nickname?.trim() || u.name) : row.agent
         return (
-          <Tooltip title="Xem trend reviews">
-            <Button size="small" type="text" icon={<BarChartOutlined />}
-              style={{ color: '#6366f1' }}
-              onClick={() => setTrendAgent({ email: row.agent, name })} />
-          </Tooltip>
+          <span style={{ display: 'flex', gap: 2 }}>
+            <Tooltip title="Xem trend reviews">
+              <Button size="small" type="text" icon={<BarChartOutlined />}
+                style={{ color: '#6366f1' }}
+                onClick={() => setTrendAgent({ email: row.agent, name })} />
+            </Tooltip>
+            <Tooltip title="Tổng hợp đánh giá bằng AI">
+              <Button size="small" type="text" icon={<BulbOutlined />}
+                style={{ color: '#f59e0b' }}
+                onClick={() => setSummaryAgent({ email: row.agent, name })} />
+            </Tooltip>
+          </span>
         )
       },
     },
@@ -436,6 +522,17 @@ export default function AgentStatsTab() {
           agent={trendAgent.email}
           name={trendAgent.name}
           onClose={() => setTrendAgent(null)}
+        />
+      )}
+
+      {summaryAgent && (
+        <AgentSummaryModal
+          agent={summaryAgent.email}
+          name={summaryAgent.name}
+          app={applied.app}
+          dateFrom={applied.date_from}
+          dateTo={applied.date_to}
+          onClose={() => setSummaryAgent(null)}
         />
       )}
     </div>
