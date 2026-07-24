@@ -171,10 +171,22 @@ def sync_crisp_agents(operators: list[dict]) -> dict:
 
 
 def get_agent_map() -> dict:
-    """Returns {crisp_nickname: user_info} for linking records to users."""
+    """Returns {nickname: user_info} for linking QA records to users.
+
+    Ưu tiên crisp_nickname (đồng bộ tự động từ Crisp operator qua sync_crisp_agents —
+    đáng tin hơn vì khớp trực tiếp với nickname Crisp trả về trong record chấm điểm).
+    User chưa từng được sync (vd tạo thủ công, chỉ tự đặt "nickname" qua profile) sẽ dùng
+    "nickname" làm fallback — nhưng KHÔNG ghi đè lên key đã có từ crisp_nickname, để tránh
+    2 người trùng tên tự đặt gây hiển thị nhầm avatar của người khác.
+    """
+    users = list_users()
     result = {}
-    for u in list_users():
+    for u in users:
         cn = (u.get("crisp_nickname") or "").strip()
-        if cn:
+        if cn and cn not in result:
             result[cn] = u
+    for u in users:
+        nn = (u.get("nickname") or "").strip()
+        if nn and nn not in result:
+            result[nn] = u
     return result

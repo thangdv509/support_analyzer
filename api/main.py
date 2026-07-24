@@ -33,6 +33,7 @@ from database.tunnel import ensure_tunnel
 from database.connection import get_db
 from database.deco_chat import ALL_GRADING_COLLECTIONS
 from database.prompts import get_prompt_content
+from database.crawl_stats import get_stats as get_crawl_stats
 from analyzer_v2 import _parse_and_cap, GRADING_CRITERIA
 
 # ---------------------------------------------------------------------------
@@ -1204,18 +1205,35 @@ def get_analytics(
     score_distribution = [{"range": label, **sdist[label]} for label, _, _ in SCORE_BUCKETS]
 
     # ── App totals ────────────────────────────────────────────────────────────
+    # Luôn tính "by_app" trên CẢ 2 collection, bất kể app_filter — filter chỉ nên thu hẹp
+    # time_series/by_agent/by_day_of_week/score_distribution, không nên làm app kia hiện "0"
+    # (trước đây app_filter thu hẹp cả col_names khiến app không được chọn luôn ra 0).
     by_app: dict[str, int] = {ak: 0 for ak in APP_KEYS}
     all_scores: list[float] = []
-    for doc in all_docs:
+    if app_filter:
+        by_app_docs = list(get_db()[col].find(query, {"app": 1}) for col in ALL_GRADING_COLLECTIONS)
+        by_app_docs = [d for sub in by_app_docs for d in sub]
+    else:
+        by_app_docs = all_docs
+    for doc in by_app_docs:
         ak = doc.get("app") or ""
         if ak in APP_KEYS:
             by_app[ak] += 1
+    for doc in all_docs:
         sc = doc.get("grading", {}).get("final_score_10")
         if sc is not None:
             all_scores.append(sc)
 
+    # ── Real Crisp total (crawl_stats) ──────────────────────────────────────────
+    # Số conversation THẬT trên Crisp (trước khi lọc/chấm) cho khoảng ngày này — dùng để đối
+    # chiếu với "total" (số đã chấm). KHÔNG tách được theo app (1 inbox Crisp chung cho mọi
+    # app, phân loại app chỉ xảy ra lúc chấm) — chỉ có tổng gộp.
+    crawl_stats_docs = get_crawl_stats(date_from or None, date_to or None)
+    real_total = sum(d.get("total_fetched", 0) for d in crawl_stats_docs) if crawl_stats_docs else None
+
     return {
         "total": len(all_docs),
+        "real_total": real_total,
         "avg_score": round(sum(all_scores) / len(all_scores), 2) if all_scores else None,
         "by_app": by_app,
         "time_series": time_series,

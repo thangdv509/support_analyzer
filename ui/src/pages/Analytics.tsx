@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Card, DatePicker, Segmented, Select, Spin, Typography } from 'antd'
+import { Card, DatePicker, Segmented, Select, Spin, Tooltip, Typography } from 'antd'
 import { useQuery } from '@tanstack/react-query'
 import axios from 'axios'
 import dayjs, { type Dayjs } from 'dayjs'
@@ -49,6 +49,7 @@ interface ScoreRow { range: string; count: number; DECO: number; SearchPie: numb
 
 interface AnalyticsData {
   total: number
+  real_total: number | null
   avg_score: number | null
   by_app: Record<string, number>
   time_series: TimePt[]
@@ -461,6 +462,19 @@ export default function Analytics() {
                 <div style={{ fontSize: 26, fontWeight: 800, color: c.color, lineHeight: 1.25, marginTop: 2 }}>{c.value}</div>
               </Card>
             ))}
+            {data.real_total != null && (
+              <Tooltip title="Số conversation THẬT trên Crisp cho khoảng ngày này (trước khi lọc chat ngắn/không đạt yêu cầu). Không tách được theo app vì DECO & SearchPie dùng chung 1 Crisp inbox.">
+                <Card style={{ flex: 1, textAlign: 'center', cursor: 'help' }} styles={{ body: { padding: '14px 12px' } }}>
+                  <div style={{ fontSize: 10, color: '#94a3b8', fontWeight: 700, letterSpacing: 0.8, textTransform: 'uppercase' }}>Tổng thật (Crisp)</div>
+                  <div style={{ fontSize: 26, fontWeight: 800, color: '#0f766e', lineHeight: 1.25, marginTop: 2 }}>{data.real_total.toLocaleString()}</div>
+                  {data.total > 0 && (
+                    <div style={{ fontSize: 11, color: '#94a3b8', marginTop: 2 }}>
+                      {Math.round((data.total / data.real_total) * 100)}% đã chấm
+                    </div>
+                  )}
+                </Card>
+              </Tooltip>
+            )}
           </div>
 
           {/* ── Trend chart ───────────────────────────────────────────────── */}

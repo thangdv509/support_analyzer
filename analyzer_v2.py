@@ -10,6 +10,8 @@ from dotenv import load_dotenv
 import gspread
 from google.oauth2.service_account import Credentials
 
+from database.crawl_stats import upsert_stats
+
 load_dotenv()
 
 # --- Config ---
@@ -284,6 +286,7 @@ def fetch_chats(target_date_str, on_pending=None):
             print(f"  📋 Found {len(conv_list)} conversations to process for {site_name}")
 
             drop_no_msgs = 0; drop_no_segment = 0; drop_no_ops = 0; drop_too_short = 0; drop_not_completed = 0
+            site_valid_count = 0
             for conv in conv_list:
                     time.sleep(0.5)
                     conv_is_resolved = conv.get("state") == "resolved"
@@ -517,7 +520,18 @@ def fetch_chats(target_date_str, on_pending=None):
                             "seg_msg_count": len(chat_msgs),
                             "shop_domain": shop_domain,
                         })
-        print(f"  🔍 Drop summary: no_msgs={drop_no_msgs}, no_segment={drop_no_segment}, no_ops={drop_no_ops}, not_completed={drop_not_completed}, too_short={drop_too_short}")
+                        site_valid_count += 1
+            print(f"  🔍 Drop summary [{site_name}]: no_msgs={drop_no_msgs}, no_segment={drop_no_segment}, no_ops={drop_no_ops}, not_completed={drop_not_completed}, too_short={drop_too_short}")
+            try:
+                upsert_stats(
+                    target_date_str, website_id, site_name, source="live",
+                    total_fetched=len(conv_list), graded_count=site_valid_count,
+                    drop_no_msgs=drop_no_msgs, drop_no_segment=drop_no_segment,
+                    drop_no_ops=drop_no_ops, drop_not_completed=drop_not_completed,
+                    drop_too_short=drop_too_short,
+                )
+            except Exception:
+                print(f"  ⚠️ Không lưu được crawl_stats cho {site_name}/{target_date_str}")
         return all_valid_chats
     except Exception:
         traceback.print_exc()
