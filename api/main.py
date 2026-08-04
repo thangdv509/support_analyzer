@@ -704,7 +704,7 @@ Trả về BẮT BUỘC đúng JSON sau, không thêm chữ nào khác:
                     "Content-Type": "application/json",
                 },
                 json={
-                    "model": "google/gemini-3.6-flash",  # riêng cho summarize, không dùng MODEL/OPENROUTER_MODEL chung
+                    "model": MODEL,
                     "messages": [
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_prompt},

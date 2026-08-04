@@ -174,7 +174,7 @@ def _check_completion(transcript_text: str) -> bool:
             "https://openrouter.ai/api/v1/chat/completions",
             headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}", "Content-Type": "application/json"},
             json={
-                "model": "google/gemini-2.0-flash-001",
+                "model": MODEL,
                 "messages": [
                     {"role": "system", "content": COMPLETION_PROMPT},
                     {"role": "user", "content": transcript_text[-3000:]},

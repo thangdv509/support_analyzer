@@ -24,7 +24,7 @@ HEADERS    = {"X-Crisp-Tier": "plugin"}
 AUTH       = (IDENTIFIER, KEY)
 TZ7        = timezone(timedelta(hours=7))
 BASE       = "https://api.crisp.chat/v1"
-MODEL      = "google/gemini-2.0-flash-001"
+MODEL      = os.getenv("OPENROUTER_MODEL", "google/gemini-2.0-flash-001")
 
 SUMMARY_PROMPT = (
     "You are an AI assistant specialized in summarizing customer support conversations."
