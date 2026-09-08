@@ -1,7 +1,5 @@
 requests
 python-dotenv
-gspread
-google-auth
 pymongo
 crisp-api
 mcp

@@ -1,6 +1,41 @@
 # Support Analyzer
 
-Hệ thống QA tự động chấm điểm hội thoại support của PieLab (DECO & SearchPie) từ Crisp, lưu vào MongoDB, và xuất báo cáo Google Sheets.
+Hệ thống QA tự động chấm điểm hội thoại support của PieLab (DECO & SearchPie) từ Crisp, lưu vào MongoDB.
+
+> Xem `OPERATIONS.md` để biết cách chạy QA Dashboard, deploy lên server, và vận hành/quản lý hệ thống (users, model LLM, MCP server, ...). File này chỉ liệt kê từng script và cách dùng.
+
+---
+
+## Cấu trúc thư mục (theo tính năng)
+
+```
+support_analyzer/
+├── grading/          # Pipeline chấm điểm chính (chạy hàng ngày / thủ công)
+│   ├── analyzer_v2.py        # Engine cốt lõi: fetch Crisp + chấm LLM
+│   ├── main.py                # Chấm thủ công + lưu MongoDB
+│   ├── scheduler.py           # Daemon tự động chấm 9h sáng mỗi ngày
+│   ├── crawl.py                # Crawl Crisp về JSON thô
+│   ├── build_references_from_db.py
+│   ├── import_sumtag.py
+│   ├── delete_range.py
+│   ├── qa_references.json     # few-shot examples (sinh ra bởi build_references_from_db.py)
+│   ├── data/                   # dữ liệu crawl lịch sử co-located
+│   └── PIPELINE.md             # tài liệu kỹ thuật chi tiết analyzer_v2.py & scheduler.py
+├── scripts/          # Công cụ bảo trì / migration / one-off (không chạy thường xuyên)
+│   ├── migrate_collections.py
+│   ├── backfill_shop_domain.py
+│   ├── backfill_crawl_stats.py
+│   ├── update_sumtag_app.py
+│   └── diagnose_fetch.py
+├── api/              # Backend QA Dashboard (FastAPI)
+├── mcp_server/       # MCP connector cho Claude.ai
+├── database/         # Data-access layer dùng chung (MongoDB, SSH tunnel)
+├── docs/app_guides/  # RAG knowledge base (DECO Guidelines + SearchPie Docs)
+├── ui/               # Frontend QA Dashboard (React), src/features/ chia theo tính năng
+└── report/           # File JSON/Excel xuất ra từ các lần chấm điểm
+```
+
+Mọi script trong `grading/` và `scripts/` vẫn chạy trực tiếp bằng `python <đường dẫn>.py` như trước — chỉ đổi đường dẫn, cú pháp tham số (`--from`, `--to`, ...) không đổi. Luôn chạy từ thư mục gốc repo (nơi có `.env`, `report/`).
 
 ---
 
@@ -16,147 +51,159 @@ Tạo file `.env` (xem mục [Biến môi trường](#biến-môi-trường)).
 
 ---
 
-## Các file chính
+## Các file chính (`grading/`)
 
-### `scheduler.py` — Chấm điểm tự động hàng ngày
+### `grading/scheduler.py` — Chấm điểm tự động hàng ngày
 
 Chạy daemon, tự động chấm ngày hôm trước lúc **09:00 sáng giờ Việt Nam** mỗi ngày.
 
-Quy trình mỗi ngày: fetch Crisp → chấm LLM (song song) → xuất Google Sheet → lưu MongoDB.
+Quy trình mỗi ngày: fetch Crisp → chấm LLM (song song) → lưu MongoDB.
 
 ```bash
 # Chạy daemon (chấm 9h sáng mỗi ngày)
-python scheduler.py
+python grading/scheduler.py
 
 # Chấm ngay lập tức (ngày hôm qua)
-python scheduler.py --now
+python grading/scheduler.py --now
 
 # Chấm ngày cụ thể rồi thoát
-python scheduler.py --date 2026-05-10
+python grading/scheduler.py --date 2026-05-10
 ```
 
 **Lưu vào:**
-- Google Sheet `"Support Analyzer"` (append + tính lại summary)
 - MongoDB `grading_deco` / `grading_searchpie`
 - MongoDB `sumtag_deco` / `sumtag_searchpie`
 - File `qa_report_YYYYMMDD.json` (thư mục hiện tại)
 
 ---
 
-### `analyzer_v2.py` — Chấm điểm thủ công
+### `grading/analyzer_v2.py` — Chấm điểm thủ công
 
-Chấm thủ công theo ngày hoặc khoảng ngày, xuất ra sheet riêng `"QA Report"`.
+Chấm thủ công theo ngày hoặc khoảng ngày, xuất ra file JSON local (không lưu MongoDB — dùng `main.py` nếu cần lưu DB).
 
 ```bash
 # Chấm hôm nay
-python analyzer_v2.py
+python grading/analyzer_v2.py
 
 # Chấm ngày cụ thể
-python analyzer_v2.py --date 2026-05-10
+python grading/analyzer_v2.py --date 2026-05-10
 
 # Chấm khoảng ngày
-python analyzer_v2.py --from 2026-05-01 --to 2026-05-10
+python grading/analyzer_v2.py --from 2026-05-01 --to 2026-05-10
 
 # Chấm lại từ file JSON đã có (không fetch Crisp lại)
-python analyzer_v2.py --regrade ./report/qa_report_20260510.json
+python grading/analyzer_v2.py --regrade ./report/qa_report_20260510.json
 ```
 
-**Lưu vào:**
-- Google Sheet `"QA Report"`
-- File `./report/qa_report_YYYYMMDD.json`
+**Lưu vào:** File `./report/qa_report_YYYYMMDD.json`
 
 ---
 
-### `main.py` — Chấm thủ công + lưu MongoDB
+### `grading/main.py` — Chấm thủ công + lưu MongoDB
 
-Giống `analyzer_v2.py` nhưng **có lưu vào MongoDB** và tạo sheet theo timestamp (không ghi đè).
+Giống `analyzer_v2.py` nhưng **có lưu vào MongoDB**. Dùng để **chấm bổ sung** khi phát hiện thiếu dữ liệu ở ngày/khoảng ngày cụ thể.
 
 ```bash
-python main.py
-python main.py --date 2026-05-10
-python main.py --from 2026-05-01 --to 2026-05-10
-python main.py --regrade qa_report_20260510.json
-python main.py --no-mongo    # bỏ qua MongoDB, không cần tunnel
+python grading/main.py
+python grading/main.py --date 2026-05-10
+python grading/main.py --from 2026-05-01 --to 2026-05-10
+python grading/main.py --regrade qa_report_20260510.json
+python grading/main.py --no-mongo    # bỏ qua MongoDB, không cần tunnel
 ```
 
 ---
 
-### `reexport_sheet.py` — Xuất lại sheet từ MongoDB
-
-Dùng khi sheet bị lỗi format. Xóa sheet và ghi lại toàn bộ từ MongoDB.
-
-```bash
-# Xuất lại khoảng ngày cụ thể
-python reexport_sheet.py --from 2026-05-03 --to 2026-05-18
-
-# Xuất lại toàn bộ dữ liệu trong DB
-python reexport_sheet.py
-```
-
----
-
-### `export_history.py` — Xuất lịch sử vào sheet tùy chọn
-
-Xuất lịch sử nhiều ngày vào một sheet Google Sheets tùy đặt tên. Ưu tiên dùng data MongoDB, ngày nào thiếu thì fetch + chấm mới.
-
-```bash
-python export_history.py --from 2026-01-01
-python export_history.py --from 2026-01-01 --to 2026-04-30
-python export_history.py --from 2026-01-01 --sheet "History Q1 2026"
-```
-
----
-
-### `crawl.py` — Crawl Crisp về JSON
+### `grading/crawl.py` — Crawl Crisp về JSON
 
 Crawl dữ liệu hội thoại Crisp ra file JSON thô (không chấm điểm). Dùng để lấy dữ liệu lịch sử hoặc debug.
 
 ```bash
-python crawl.py --date 2026-05-10
-python crawl.py --from 2026-03-01 --to 2026-03-31
-python crawl.py --date 2026-05-10 --website <website_id>
+python grading/crawl.py --date 2026-05-10
+python grading/crawl.py --from 2026-03-01 --to 2026-03-31
+python grading/crawl.py --date 2026-05-10 --website <website_id>
 ```
 
 ---
 
-### `build_references_from_db.py` — Tạo few-shot examples
+### `grading/build_references_from_db.py` — Tạo few-shot examples
 
-Đọc dữ liệu đã chấm từ MongoDB, chọn các ví dụ đại diện theo nhãn (perfect_10, solution_zero, ...) và tạo file `qa_references.json` dùng cho few-shot prompting khi chấm.
+Đọc dữ liệu đã chấm từ MongoDB, chọn các ví dụ đại diện theo nhãn (perfect_10, solution_zero, ...) và tạo file `grading/qa_references.json` dùng cho few-shot prompting khi chấm.
 
 Chạy lại mỗi khi muốn cập nhật ví dụ mẫu.
 
 ```bash
-python build_references_from_db.py
+python grading/build_references_from_db.py
 ```
 
 ---
 
-### `migrate_collections.py` — Migration dữ liệu cũ
+### `grading/import_sumtag.py` — Import sumtag từ JSON lịch sử
+
+Import file JSON crawl lịch sử (`grading/data/`) vào collection sumtag, sau đó crawl catch-up đến hiện tại.
+
+```bash
+python grading/import_sumtag.py
+python grading/import_sumtag.py --no-import          # chỉ catch-up, bỏ qua import JSON
+python grading/import_sumtag.py --from 2026-04-01    # catch-up từ ngày cụ thể
+```
+
+---
+
+### `grading/delete_range.py` — Xóa data trong khoảng ngày
+
+Xóa dữ liệu trong khoảng ngày khỏi tất cả collection grading + sumtag. Luôn chạy `--dry-run` trước để xem thống kê trước khi xóa thật.
+
+```bash
+python grading/delete_range.py --from 2026-05-10 --to 2026-05-18 --dry-run
+python grading/delete_range.py --from 2026-05-10 --to 2026-05-18
+```
+
+---
+
+## Công cụ bảo trì (`scripts/`)
+
+Các script one-off / migration, không chạy thường xuyên như pipeline trong `grading/`.
+
+### `scripts/migrate_collections.py` — Migration dữ liệu cũ
 
 Chuyển dữ liệu từ collections cũ (`deco_chat`, `sumtag`) sang collections mới chia theo app.
 
 ```bash
-python migrate_collections.py            # chạy thật
-python migrate_collections.py --dry-run  # chỉ xem thống kê, không ghi
+python scripts/migrate_collections.py            # chạy thật
+python scripts/migrate_collections.py --dry-run  # chỉ xem thống kê, không ghi
 ```
 
----
+### `scripts/backfill_shop_domain.py` — Backfill `shop_domain`
 
-### `import_sumtag.py` — Import sumtag từ JSON lịch sử
-
-Import file JSON crawl lịch sử vào collection sumtag, sau đó crawl catch-up đến hiện tại.
+Backfill trường `shop_domain` cho các record grading/sumtag đã có, lấy từ Crisp conversation meta.
 
 ```bash
-python import_sumtag.py
-python import_sumtag.py --no-import          # chỉ catch-up, bỏ qua import JSON
-python import_sumtag.py --from 2026-04-01    # catch-up từ ngày cụ thể
+python scripts/backfill_shop_domain.py
 ```
+
+### `scripts/backfill_crawl_stats.py` — Đối soát số liệu Crisp thật
+
+Quét toàn bộ conversation Crisp một lượt (không chấm điểm), lưu tổng số thật vào `crawl_stats` để so sánh với số đã chấm (dùng cho tile "Tổng thật (Crisp)" trong Analytics).
+
+```bash
+python scripts/backfill_crawl_stats.py --from 2026-04-01 --to 2026-07-23
+```
+
+### `scripts/update_sumtag_app.py` — Backfill trường `app` cho sumtag
+
+```bash
+python scripts/update_sumtag_app.py
+```
+
+### `scripts/diagnose_fetch.py` — Diagnostic fetch theo ngày
+
+Phân tích chi tiết từng bước drop khi fetch chat cho một ngày cụ thể (debug, không chấm điểm).
 
 ---
 
-### `mcp_server/server.py` — MCP Server
+## `mcp_server/server.py` — MCP Server
 
-Cung cấp tools cho Claude (MCP) để query dữ liệu QA và quản lý prompt.
+Cung cấp tools cho Claude (MCP) để query dữ liệu QA và quản lý prompt. Xem `OPERATIONS.md` §5.5 để biết cách expose ra Internet (ngrok/domain) và quản lý email truy cập.
 
 | Tool | Công dụng |
 |------|-----------|
@@ -194,6 +241,8 @@ python -m mcp_server.server
 | `sumtag_searchpie` | Summary + tags segment SearchPie | `(session_id, date)` |
 | `prompts` | Lịch sử versions prompt chấm điểm | `version` |
 
+Xem `OPERATIONS.md` §5.1 cho danh sách đầy đủ collections (bao gồm `qa_reviews`, `qa_users`, `crawl_stats`, `deco_docs`/`searchpie_docs`).
+
 ---
 
 ## Biến môi trường
@@ -205,13 +254,9 @@ Tạo file `.env` ở thư mục gốc:
 CRISP_IDENTIFIER=...
 CRISP_KEY=...
 
-# OpenRouter (LLM)
+# OpenRouter (LLM) — MỘT biến duy nhất cho toàn bộ model chat trong hệ thống
 OPENROUTER_API_KEY=...
-OPENROUTER_MODEL=google/gemini-2.0-flash-001   # tùy chọn
-
-# Google Sheets
-GOOGLE_SHEET_ID=...
-GOOGLE_CREDENTIALS_PATH=credentials.json
+OPENROUTER_MODEL=deepseek/deepseek-v4-flash
 
 # MongoDB
 MONGO_HOST=127.0.0.1
@@ -226,68 +271,4 @@ SSH_TUNNEL_KEY=/path/to/key.pem    # nếu dùng key file
 SSH_TUNNEL_REMOTE=10.x.x.x:27017
 ```
 
----
-
-## Google Sheets
-
-| Sheet | Tạo bởi | Nội dung |
-|-------|---------|----------|
-| `Support Analyzer` | `scheduler.py` | Chạy tự động, cộng dồn theo ngày |
-| `QA Report` | `analyzer_v2.py` | Chạy thủ công |
-| `<timestamp>` | `main.py` | Mỗi lần chạy tạo sheet mới |
-| Tên tùy chọn | `export_history.py` | Xuất lịch sử |
-
-
-Giờ chỉ cần một lệnh:
-
-
-source venv/bin/activate
-python -m mcp_server.server --http
-Output sẽ in ra URL ngrok ngay:
-
-
-🌐 MCP server  : http://0.0.0.0:8765/mcp
-🔗 Ngrok URL   : https://xxxx-xxx.ngrok-free.app/mcp
-👉 Thêm vào Claude.ai connector: https://xxxx-xxx.ngrok-free.app/mcp
-Copy URL đó vào claude.ai → Settings → Integrations → Add MCP server là xong. Nếu chưa có ngrok auth token thì chạy ngrok config add-authtoken <token> một lần trước.
-
-Bước 1 — Tạo Google OAuth credentials
-Vào console.cloud.google.com → APIs & Services → Credentials
-Create Credentials → OAuth 2.0 Client ID → chọn Web application
-Ở phần Authorized redirect URIs, thêm:
-
-https://<ngrok-domain>/oauth/callback
-(nếu dùng ngrok static domain thì URI này cố định, ngrok free có 1 static domain)
-Copy Client ID và Client secret vào .env:
-
-GOOGLE_CLIENT_ID="xxx.apps.googleusercontent.com"
-GOOGLE_CLIENT_SECRET="GOCSPX-..."
-Bước 2 — Thêm email được phép truy cập
-
-cd support_analyzer && source venv/bin/activate
-python -m mcp_server.server --add-email vietthang.doan@secomus.com
-python -m mcp_server.server --add-email colleague@secomus.com
-python -m mcp_server.server --list-emails
-Bước 3 — Chạy server
-
-python -m mcp_server.server --http
-Output:
-
-
-🔗 Ngrok URL   :                                                                                                                                                                                                                                                                                                
-🔐 Login URL   : https://xyz.ngrok-free.app/login
-Bước 4 — Lấy token
-Mở browser vào https://xyz.ngrok-free.app/login → đăng nhập Google → token hiển thị trên màn hình.
-
-Hoặc Claude.ai sẽ tự chạy OAuth flow (hiện nút Authenticate) khi thêm MCP connector.
-
-Quản lý email
-
-python -m mcp_server.server --add-email new@example.com
-python -m mcp_server.server --remove-email old@example.com
-python -m mcp_server.server --list-emails
-
-
-./start_ui.sh
-
-kill $(pgrep -u thangdv uvicorn) 2>/dev/null; sleep 1; ./start_ui.sh --prod
+Xem `OPERATIONS.md` §2 cho các biến còn lại (OAuth, JWT, dashboard, MCP).

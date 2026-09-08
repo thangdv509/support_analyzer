@@ -34,7 +34,7 @@ from database.connection import get_db
 from database.deco_chat import ALL_GRADING_COLLECTIONS
 from database.prompts import get_prompt_content
 from database.crawl_stats import get_stats as get_crawl_stats
-from analyzer_v2 import _parse_and_cap, GRADING_CRITERIA
+from grading.analyzer_v2 import _parse_and_cap, GRADING_CRITERIA
 
 # ---------------------------------------------------------------------------
 # TTL Cache (in-memory, thread-safe enough for single-process uvicorn)

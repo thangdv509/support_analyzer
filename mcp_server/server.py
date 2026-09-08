@@ -45,7 +45,7 @@ from database.sumtag import (
     get_by_operator   as get_sumtags_by_operator,
 )
 from database.prompts import get_active_prompt, get_prompt_content, save_prompt
-from analyzer_v2 import _parse_and_cap, GRADING_CRITERIA
+from grading.analyzer_v2 import _parse_and_cap, GRADING_CRITERIA
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 MODEL = os.getenv("OPENROUTER_MODEL", "google/gemini-2.0-flash-001")
